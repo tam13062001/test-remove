@@ -33,7 +33,7 @@ deploy_uat:
   trigger:
     project: datumhq-consulting-vn/management/common-services/datumhq-websites/wordpress-application
     branch: main
-    # strategy: depend
+    strategy: depend
   only:
     - main
     - dev
