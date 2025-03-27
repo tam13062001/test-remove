@@ -27,7 +27,7 @@ build_job:
 deploy_uat:
   stage: deploy
   variables:
-    PARENT_PIPELINE_ID: $CI_PIPELINE_ID
+    UPSTREAM_REF: $CI_MERGE_REQUEST_REF_PATH
   needs:
     - build_job   
   trigger:
