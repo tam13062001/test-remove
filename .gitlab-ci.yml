@@ -27,12 +27,8 @@ deploy_uat:
   stage: deploy
   trigger:
     project: "datumhq-consulting-vn/management/common-services/datumhq-websites/wordpress-application"  # Replace with your actual target project path
-    branch: main  # Change if needed
-    strategy: depend  # Ensures the downstream pipeline depends on this one
-    forward:
-      artifacts: true  # This ensures artifacts (theme/) are available in the downstream pipeline
-      variables:
-        ARTIFACT_PATH: "theme/"
+    branch: main
+    strategy: depend
   only:
     - main
     - dev
