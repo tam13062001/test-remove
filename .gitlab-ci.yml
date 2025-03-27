@@ -26,6 +26,8 @@ build_job:
 
 deploy_uat:
   stage: deploy
+  variables:
+    PARENT_PIPELINE_ID: $CI_PIPELINE_ID  
   trigger:
     project: datumhq-consulting-vn/management/common-services/datumhq-websites/wordpress-application
     branch: main
