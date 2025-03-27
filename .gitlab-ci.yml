@@ -19,6 +19,7 @@ build_job:
   artifacts:
     paths:
       - theme/
+    expire_in: 1 hour
   only:
     - main
     - dev
@@ -26,7 +27,7 @@ build_job:
 deploy_uat:
   stage: deploy
   trigger:
-    project: "datumhq-consulting-vn/management/common-services/datumhq-websites/wordpress-application"  # Replace with your actual target project path
+    project: 269
     branch: main
     strategy: depend
   only:
