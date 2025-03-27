@@ -27,7 +27,7 @@ build_job:
 deploy_uat:
   stage: deploy
   trigger:
-    project: 269
+    project: datumhq-consulting-vn/management/common-services/datumhq-websites/wordpress-application
     branch: main
     strategy: depend
   only:
