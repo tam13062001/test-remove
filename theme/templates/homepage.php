@@ -79,10 +79,10 @@
     Game-Changing Solutions
   </h2>
 
-  <div class="space-y-20">
+  <div class="space-y-2 lg:space-y-20">
     <!-- Platform Engineering -->
-      <div class="w-full flex justify-start h-[453px]">
-          <div class="w-2/3 bg-white p-10 rounded-lg shadow-lg">
+      <div class="w-full flex h-[453px]">
+          <div class="lg:w-2/3 bg-white p-10 rounded-lg shadow-lg">
               <!-- Title -->
               <h3 class="text-2xl font-bold text-[#315CD4] mb-4">
                   Platform Engineering
@@ -102,8 +102,8 @@
           </div>
       </div>
       <!-- Digital Transformation -->
-    <div class="w-full flex justify-end h-[453px]">
-        <div class="w-2/3 bg-white p-10 rounded-lg shadow-lg ml-1/2">
+    <div class="w-full flex lg:justify-end h-[453px]">
+        <div class="lg:w-2/3 bg-white p-10 rounded-lg shadow-lg ml-1/2">
             <!-- Title -->
             <h3 class="text-2xl font-bold text-[#315CD4] mb-4">
                 Digital Transformation
@@ -122,8 +122,8 @@
         </div>
     </div>
       <!-- Integration Solutions -->
-      <div class="w-full flex justify-start h-[453px]">
-          <div class="w-2/3 bg-white p-10 rounded-lg shadow-lg ">
+      <div class="w-full flex h-[453px]">
+          <div class="lg:w-2/3 bg-white p-10 rounded-lg shadow-lg ">
               <!-- Title -->
               <h3 class="text-2xl font-bold text-[#315CD4] mb-4">
                   Integration Solutions
