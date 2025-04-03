@@ -1,29 +1,31 @@
 <?php
-namespace Rocket;
 
-use includes\AdminLoader;
-use includes\PortalLoader;
-
-class Rocket {
+class RocketTheme
+{
     public string $name;
     public string $version;
     public Registry $loader;
+    public Helper $helper;
     public bool $development_mode;
 
-    public function __construct(array $options) {
+    public function __construct(array $options)
+    {
         $this->version = $options['version'];
         $this->name = $options['name'];;
         $this->development_mode = $options['development_mode'];
         $this->loader = new Registry();
+        $this->helper = new Helper();
     }
 
-    private function load_dependencies(): void {
+    private function load_dependencies(): void
+    {
         $this->load_admin();
         $this->load_public();
         $this->load_parent_theme();
     }
 
-    private function load_admin() {
+    private function load_admin()
+    {
         $admin = new AdminLoader();
 
         $this->loader->add_action('admin_enqueue_scripts', $admin, 'enqueue_styles');
@@ -46,16 +48,17 @@ class Rocket {
                 'App Config',
                 'manage_options',
                 'app',
-                function() {
+                function () {
                     echo '<div class="root"></div>';
                 },
-                "data:image/svg+xml;base64,".base64_encode($svg),
+                "data:image/svg+xml;base64," . base64_encode($svg),
                 2
             );
         });
     }
 
-    private function load_public() {
+    private function load_public()
+    {
         $public = new PortalLoader();
 
         $this->loader->add_action('wp_enqueue_scripts', $public, 'enqueue_styles');
@@ -67,14 +70,17 @@ class Rocket {
     private function load_parent_theme()
     {
         if (is_child_theme()) {
-            function enqueue_parent_styles() {
+            function enqueue_parent_styles()
+            {
 //      wp_enqueue_style( 'parent-type', get_template_directory_uri() . '/style.css' );
             }
-            add_action( 'wp_enqueue_scripts', 'enqueue_parent_styles');
+
+            add_action('wp_enqueue_scripts', 'enqueue_parent_styles');
         }
     }
 
-    public function load() {
+    public function load()
+    {
         $this->load_dependencies();
         $this->loader->run();
     }

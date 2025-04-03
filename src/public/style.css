@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    button {
+        @apply px-10 py-[10px] text-white bg-gradient-to-r from-secondary to-primary
+    }
+}
+
+body {
+    margin: 0;
+    @apply font-sans
+}

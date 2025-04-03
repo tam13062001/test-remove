@@ -1,5 +1,4 @@
 <?php
-namespace Rocket;
 
 class BaseLoader
 {

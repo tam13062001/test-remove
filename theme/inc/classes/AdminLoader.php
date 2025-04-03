@@ -1,6 +1,4 @@
 <?php
-namespace includes;
-use Rocket\BaseLoader;
 
 class AdminLoader extends BaseLoader
 {
