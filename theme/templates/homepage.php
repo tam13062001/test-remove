@@ -79,64 +79,68 @@
     Game-Changing Solutions
   </h2>
 
-  <div class="flex flex-wrap gap-8">
+  <div class="space-y-2 lg:space-y-20">
     <!-- Platform Engineering -->
-    <div class="w-1/2 bg-white p-10 rounded-lg shadow-lg">
-        <!-- Title -->
-        <h3 class="text-2xl font-bold text-[#315CD4] mb-4">
-            Platform Engineering
-        </h3>
-        
-        <!-- Description -->
-        <p class="text-gray-600 mb-6 leading-relaxed">
-            Build a strong digital foundation with scalable and
-            agile infrastructure solutions.
-        </p>
-        
-        <!-- Learn More Link -->
-        <a href="#" class=" text-[#0DC0E2]  mt-12">
-            Learn more
-            <span class="ml-1 transform translate-y-px">></span>
-        </a>
-    </div>
+      <div class="w-full flex h-[453px]">
+          <div class="lg:w-2/3 bg-white p-10 rounded-lg shadow-lg">
+              <!-- Title -->
+              <h3 class="text-2xl font-bold text-[#315CD4] mb-4">
+                  Platform Engineering
+              </h3>
 
-    <!-- Digital Transformation -->
-    <div class="w-1/2 bg-white p-10 rounded-lg shadow-lg ">
-        <!-- Title -->
-        <h3 class="text-2xl font-bold text-[#315CD4] mb-4">
-        Digital Transformation
-        </h3>
-        
-        <!-- Description -->
-        <p class="text-gray-600 mb-6 leading-relaxed">
-        Harness the latest technologies to streamline operations, enhance customer experiences, and drive business innovation.
-        </p>
-        
-        <!-- Learn More Link -->
-        <a href="#" class=" text-[#0DC0E2]  mt-12">
-            Learn more
-            <span class="ml-1 transform translate-y-px">></span>
-        </a>
-    </div>
+              <!-- Description -->
+              <p class="text-gray-600 mb-6 leading-relaxed">
+                  Build a strong digital foundation with scalable and
+                  agile infrastructure solutions.
+              </p>
 
-    <!-- Integration Solutions -->
-    <div class="w-1/2 bg-white p-10 rounded-lg shadow-lg ">
-        <!-- Title -->
-        <h3 class="text-2xl font-bold text-[#315CD4] mb-4">
-        Integration Solutions
-        </h3>
-        
-        <!-- Description -->
-        <p class="text-gray-600 mb-6 leading-relaxed">
-        Connect and unify your business systems seamlessly for optimized performance and enhanced security.
-        </p>
-        
-        <!-- Learn More Link -->
-        <a href="#" class=" text-[#0DC0E2]  mt-12">
-            Learn more
-            <span class="ml-1 transform translate-y-px">></span>
-        </a>
+              <!-- Learn More Link -->
+              <a href="#" class=" text-[#0DC0E2]  mt-12">
+                  Learn more
+                  <span class="ml-1 transform translate-y-px">></span>
+              </a>
+          </div>
+      </div>
+      <!-- Digital Transformation -->
+    <div class="w-full flex lg:justify-end h-[453px]">
+        <div class="lg:w-2/3 bg-white p-10 rounded-lg shadow-lg ml-1/2">
+            <!-- Title -->
+            <h3 class="text-2xl font-bold text-[#315CD4] mb-4">
+                Digital Transformation
+            </h3>
+
+            <!-- Description -->
+            <p class="text-gray-600 mb-6 leading-relaxed">
+                Harness the latest technologies to streamline operations, enhance customer experiences, and drive business innovation.
+            </p>
+
+            <!-- Learn More Link -->
+            <a href="#" class=" text-[#0DC0E2]  mt-12">
+                Learn more
+                <span class="ml-1 transform translate-y-px">></span>
+            </a>
+        </div>
     </div>
+      <!-- Integration Solutions -->
+      <div class="w-full flex h-[453px]">
+          <div class="lg:w-2/3 bg-white p-10 rounded-lg shadow-lg ">
+              <!-- Title -->
+              <h3 class="text-2xl font-bold text-[#315CD4] mb-4">
+                  Integration Solutions
+              </h3>
+
+              <!-- Description -->
+              <p class="text-gray-600 mb-6 leading-relaxed">
+                  Connect and unify your business systems seamlessly for optimized performance and enhanced security.
+              </p>
+
+              <!-- Learn More Link -->
+              <a href="#" class=" text-[#0DC0E2]  mt-12">
+                  Learn more
+                  <span class="ml-1 transform translate-y-px">></span>
+              </a>
+          </div>
+      </div>
   </div>
 </div>
 <!-- Why Datum -->
