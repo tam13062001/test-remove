@@ -1,5 +1,5 @@
 <!-- TODO load dynamic from config -->
-<div class="flex font-bold">
+<div class="hidden lg:flex font-bold">
     <div class="px-6">
         <div class="border-b-2 border-white">
             Our services
