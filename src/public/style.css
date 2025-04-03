@@ -4,11 +4,11 @@
 
 @layer components {
     button {
-        @apply px-10 py-[10px] text-white bg-gradient-to-r from-secondary to-primary
+        @apply px-10 py-[10px] text-white bg-gradient-to-r from-secondary to-primary text-[16px]
     }
 }
 
 body {
     margin: 0;
-    @apply font-sans
+    @apply font-sans text-[20px]
 }

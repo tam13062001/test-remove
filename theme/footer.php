@@ -3,7 +3,7 @@
             <div class="">
                 <img class="w-[142px]" alt="" src="<?php echo get_stylesheet_directory_uri().'/assets/images/logo.png' ?>" />
             </div>
-            <div class="lg:w-[626px] flex flex-row items-start justify-center py-0 px-5 box-border max-w-full text-sm">
+            <div class="flex flex-row items-start justify-center py-0 px-5 box-border max-w-full">
                 <div class="space-x-[50px]">
                     <a href="#">Term of use</a>
                     <a href="#">Privacy statement</a>
