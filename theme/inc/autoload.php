@@ -12,3 +12,7 @@ function rocket_theme_autoload($class_name) {
 
 // Register the autoload function
 spl_autoload_register('rocket_theme_autoload');
+
+include_once __DIR__.'/helpers/components.php';
+include_once __DIR__.'/helpers/menu.php';
+include_once __DIR__.'/helpers/utils.php';

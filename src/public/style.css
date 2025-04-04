@@ -3,12 +3,17 @@
 @tailwind utilities;
 
 @layer components {
-    button {
+    button, .btn {
         @apply px-10 py-[10px] text-white bg-gradient-to-r from-secondary to-primary text-[16px]
+        inline-block
     }
 }
 
 body {
     margin: 0;
     @apply font-sans text-[20px]
+}
+
+.container {
+    @apply px-5 lg:px-0
 }
