@@ -1,4 +1,4 @@
-<div class="flex items-center space-x-5 font-bold">
+<div class="items-center space-x-5 font-bold hidden lg:flex">
     <div class="border-b-2 border-white">
         Get in touch
     </div>
