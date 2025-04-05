@@ -17,7 +17,7 @@ build_job:
     - echo "Building application..."
     - npm run build
   after_script:
-    - echo "BUILD_JOB_ID=$CI_JOB_ID" >> job.env  
+    - echo "BUILD_JOB_ID=$CI_JOB_ID" >> build_job.env  
   artifacts:
     paths:
       - theme/
