@@ -29,7 +29,7 @@ deploy_uat:
   variables:
     UPSTREAM_PROJECT_ID: $CI_PROJECT_ID
     UPSTREAM_REF_NAME: $CI_COMMIT_REF_NAME
-    UPSTREAM_JOB_NAME: build_job
+    UPSTREAM_JOB_ID: $CI_JOB_ID
   trigger:
     project: datumhq-consulting-vn/management/common-services/datumhq-websites/wordpress-application
     branch: main
