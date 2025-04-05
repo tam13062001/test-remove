@@ -16,20 +16,26 @@ build_job:
     - npm ci
     - echo "Building application..."
     - npm run build
+  after_script:
+    - echo "BUILD_JOB_ID=$CI_JOB_ID" >> build_job.env  
   artifacts:
     paths:
       - theme/
     expire_in: 1 hour
+    reports:
+      dotenv: build_job.env    
   only:
     - main
     - dev
 
 deploy_uat:
   stage: deploy
+  needs:
+    - build_job
   variables:
     UPSTREAM_PROJECT_ID: $CI_PROJECT_ID
     UPSTREAM_REF_NAME: $CI_COMMIT_REF_NAME
-    UPSTREAM_JOB_NAME: build_job
+    UPSTREAM_JOB_ID: $BUILD_JOB_ID
   trigger:
     project: datumhq-consulting-vn/management/common-services/datumhq-websites/wordpress-application
     branch: main
