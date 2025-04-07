@@ -11,12 +11,16 @@ $background_image = $args['background_image'] ?? '';
             <div class="font-[700] text-white">
                 <div class="flex text-[14px] items-center space-x-2 mb-5">
                     <?php foreach ($breadcrumbs as $index => $item): ?>
-                    <div><?php echo $item ?></div>
                     <div>
-                        <svg width="4" height="7" viewBox="0 0 4 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M4 3.5L0.25 6.53109L0.25 0.468911L4 3.5Z" fill="white"/>
-                        </svg>
+                        <?php echo $item ?>
                     </div>
+                    <?php if ($index < sizeof($breadcrumbs) - 1): ?>
+                        <div>
+                            <svg width="4" height="7" viewBox="0 0 4 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 3.5L0.25 6.53109L0.25 0.468911L4 3.5Z" fill="white"/>
+                            </svg>
+                        </div>
+                    <?php endif; ?>
                     <?php endforeach; ?>
 
                 </div>

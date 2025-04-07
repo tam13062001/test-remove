@@ -29,7 +29,7 @@ export default function CardSlider(props: BaseProps<CardSliderProps>) {
         data.map((item: any, index: number) => (
           <SwiperSlide key={index}>
             <div className="bg-white  flex border border-gray-300">
-              <p className="text-gray-600 p-8 mt-4">
+              <p className="text-primary p-8 mt-4">
                 {item.title}
               </p>
               <img
