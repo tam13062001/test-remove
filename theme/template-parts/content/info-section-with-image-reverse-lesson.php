@@ -25,9 +25,9 @@ $image_url = $args['image_url'] ?? '';
             </div>
         </div>
     </div>
-    <div class="lg:w-3/5 py-[40px] lg:py-0 lg:absolute left-0 top-0 h-full overflow-hidden container">
-        <div class="flex items-end h-full">
-            <img class="object-cover h-[636px] w-full" src="<?php echo $image_url?>" alt="" />
+    <div class="lg:w-3/5 py-[40px] lg:py-0 lg:absolute left-0 top-0 aspect-[1/1] overflow-hidden container">
+        <div class="flex lg:items-end items-start h-full">
+            <img class="object-cover w-full" src="<?php echo $image_url?>" alt="" />
         </div>
     </div>
 </div>
