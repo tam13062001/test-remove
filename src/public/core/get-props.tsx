@@ -1,10 +1,10 @@
 import { PropsWithChildren } from "react"
 
 export type BaseProps<T> = PropsWithChildren<{
-  id: string
-  className: string
-  dom: HTMLElement
-  data: T
+  id?: string
+  className?: string
+  dom?: HTMLElement
+  data?: T
 }>
 
 export function getProps(container: HTMLElement) {

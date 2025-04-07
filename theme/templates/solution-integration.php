@@ -1,1 +1,1 @@
-<?php /* Template Name: Service: Solution Integration Template */ ?>
+<?php /* Template Name: Solution: Integration Template */ ?>

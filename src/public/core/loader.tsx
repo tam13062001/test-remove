@@ -9,6 +9,7 @@ export const load = (container: HTMLElement) => {
 
   if (ReactDOM.version.startsWith('18')) {
     const root = createRoot(container)
+    // @ts-ignore
     root.render(<Component {...props} />)
   }
 }

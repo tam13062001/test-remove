@@ -1,1 +1,1 @@
-<?php /* Template Name: Service: Solution Digital Transformation Template */ ?>
+<?php /* Template Name: Solution: Digital Transformation Template */ ?>
