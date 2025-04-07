@@ -12,7 +12,7 @@ get_template_part('template-parts/content/call-to-action-story', null, array(
     'title' => 'Call for Change',
     'heading' => 'As part of its Better Banking Experience (BBX) initiative, a leading financial institution sought to modernize its digital banking services.',
     'content' => 'They aim to do this by refreshing channels, integrating third-party banking processors, and enhancing operational efficiency. However, security vulnerabilities, governance challenges, rising infrastructure costs, and manual inefficiencies posed significant obstacles to transformation, making it clear that a new approach was necessary.',
-    'image_url' => get_assets_from_path('images/img_1.png'),
+    'image_url' => get_assets_from_path('images/Frame 236.png'),
     'cta_text' => 'Download detail case study',
     'cta_link' => '#'
 ));

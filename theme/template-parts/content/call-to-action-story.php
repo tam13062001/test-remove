@@ -21,7 +21,7 @@ $image_url = $args['image_url'] ?? '';
             <?php echo $cta_text; ?>
         </a>
     </div>
-    <div class="absolute lg:h-full bottom-0 lg:top-0 right-0 overflow-hidden lg:block hidden">
+    <div class="absolute lg:h-full bottom-0 lg:top-[0px] right-0  lg:mr-[-488px] overflow-hidden lg:block hidden">
         <img class="h-full py-16 scale-150 lg:scale-100" src="<?php echo $image_url;  ?>" />
     </div>
 </div>
