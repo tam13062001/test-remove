@@ -20,7 +20,7 @@
         </div>
     <?php endforeach; ?>
 </div>
-<div>
+<div class="lg:hidden">
     <?php
     global $rocket;
     $logo_url = $rocket->helper->get_custom_logo_url();
