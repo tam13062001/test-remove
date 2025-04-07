@@ -1,10 +1,9 @@
-
 <?php $primary_menu_items = get_menu_tree('primary-menu'); ?>
 
 <div class="hidden lg:flex font-bold">
     <?php foreach ($primary_menu_items as $menu) : ?>
         <div class="group relative">
-            <a class="px-4" href="<?php echo $menu['url'];?>">
+            <a class="px-4" href="<?php echo $menu['url']; ?>">
                 <?php echo $menu['title']; ?>
             </a>
             <?php if (!empty($menu['children'])) { ?>
@@ -20,6 +19,16 @@
             <?php } ?>
         </div>
     <?php endforeach; ?>
+</div>
+<div>
+    <?php
+    global $rocket;
+    $logo_url = $rocket->helper->get_custom_logo_url();
+    render_rocket_block('mobile-menu', array(
+        'data' => array_values($primary_menu_items),
+        'logo_url' => $logo_url
+    ));
 
+    ?>
 
 </div>
