@@ -2,7 +2,8 @@
 <?php get_header(); ?>
 
 <div class="h-[603px] relative">
-    <img class="absolute top-0 object-cover h-full w-full" src="<?php echo get_assets_from_path('images/spe_banne.png')  ?>" />
+    <img class="absolute top-0 object-cover h-full w-full"
+         src="<?php echo get_assets_from_path('images/spe_banne.png') ?>"/>
     <div class="container relative flex items-center h-full">
         <div class="">
             <div class="font-[700] text-white">
@@ -16,7 +17,7 @@
                     <div>Platform engineering</div>
                 </div>
                 <div class="text-[32px] lg:text-[40px]">
-                    Platform engineering, the foundation for<br class="hidden lg:block" />
+                    Platform engineering, the foundation for<br class="hidden lg:block"/>
                     your digital transformation
                 </div>
             </div>
@@ -46,7 +47,7 @@ get_template_part('template-parts/content/info-section-list', null, array(
         ),
         array(
             'title' => 'Containerization and  <br class="hidden lg:block" /> Orchestration',
-           'content' => 'Using technologies like Docker and Kubernetes to manage containers that encapsulate application components',
+            'content' => 'Using technologies like Docker and Kubernetes to manage containers that encapsulate application components',
         ),
         array(
             'title' => 'API Management',
@@ -90,7 +91,7 @@ get_template_part('template-parts/content/info-section-list', null, array(
             'content' => 'Designed to be easily scalable, allowing for quick and efficient horizontal scaling as demand increases',
         ),
     ),
-)) ;
+));
 ?>
 
 <?php
@@ -111,11 +112,46 @@ get_template_part('template-parts/content/info-section-with-image', null, array(
             'content' => 'Work closely with your team and other developers even after the platform completion to guarantee implementation and scale up according to your specific needs. ',
         )
     ),
-)) ;
+));
 ?>
 
 <?php get_template_part('template-parts/content/successful-stories'); ?>
-<?php get_template_part('template-parts/content/frequently-asked-questions'); ?>
+<?php
+get_template_part('template-parts/content/frequently-asked-questions', null, array(
+
+    'items' => array(
+        array(
+            'title' => 'What is platform engineering?',
+            'content' => 'Platform engineering is the discipline of designing and building self-service internal platforms to streamline software development and operations. It enables teams to deliver applications efficiently by providing standardized tools, automation, and infrastructure management.',
+        ),
+        array(
+            'title' => 'How does platform engineering differ from DevOps and SRE?',
+            'content' => 'While DevOps focuses on collaboration and automation across development and operations, and Site Reliability Engineering (SRE) emphasizes system reliability, platform engineering builds internal developer platforms (IDPs) to provide self-service capabilities, reducing cognitive load and improving developer productivity.',
+        ),
+        array(
+            'title' => 'Why is platform engineering important for modern enterprises?',
+            'content' => 'Platform engineering enhances developer efficiency, reduces operational overhead, and improves system reliability. It allows enterprises to scale software delivery by automating workflows, standardizing infrastructure, and enabling self-service access to development environments.',
+        ),
+        array(
+            'title' => 'What are the key components of a platform engineering strategy?',
+            'content' => 'A strong platform engineering strategy includes automation, self-service developer platforms, security policies, observability tools, and integration with CI/CD pipelines. It should align with business objectives to enhance software delivery speed and reliability.',
+        ),
+        array(
+            'title' => 'How does platform engineering improve developer experience (DevEx)?',
+            'content' => 'Platform engineering simplifies infrastructure management, automates repetitive tasks, and provides intuitive self-service tools, reducing friction in the development process. This improves developer productivity, job satisfaction, and overall software quality.',
+        ),
+        array(
+            'title' => 'What are the benefits of implementing an internal developer platform (IDP)?',
+            'content' => 'An IDP centralizes development tools, automates workflows, and enforces best practices, reducing complexity and improving deployment speed. It enables developers to focus on coding rather than infrastructure, leading to faster innovation and reduced operational costs.',
+        ),
+        array(
+            'title' => 'What is platform engineering?',
+            'content' => 'Platform engineering is the discipline of designing and building self-service internal platforms to streamline software development and operations. It enables teams to deliver applications efficiently by providing standardized tools, automation, and infrastructure management.',
+        ),
+    )
+
+));
+?>
 <?php get_template_part('template-parts/content/Expert-insight'); ?>
 <?php get_template_part('template-parts/content/team'); ?>
 

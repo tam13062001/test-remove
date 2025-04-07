@@ -128,7 +128,33 @@ get_template_part('template-parts/content/info-section-list', null, array(
 
 <?php get_template_part('template-parts/content/partners'); ?>
 <?php get_template_part('template-parts/content/successful-stories'); ?>
-<?php get_template_part('template-parts/content/frequently-asked-questions'); ?>
+<?php get_template_part('template-parts/content/frequently-asked-questions', null, array(
+    'items' => array(
+    array(
+        'title' => 'What is Cloud Computing?',
+        'content' => 'Cloud computing is the delivery of computing services—such as storage, servers, databases, networking, and software—over the internet, enabling flexible and scalable IT solutions.'
+    ),
+    array(
+        'title' => 'What are the benefits of cloud computing?',
+        'content' => 'Cloud computing offers cost savings, scalability, enhanced security, remote accessibility, and automatic updates, helping businesses improve efficiency and agility.'
+    ),
+    array(
+        'title' => 'Is cloud migration suitable for my business/enterprise application?',
+        'content' => 'Cloud migration is ideal for businesses seeking scalability, cost-efficiency, and better performance. A cloud readiness assessment can help determine the best approach for your enterprise.'),
+    array(
+        'title' => 'What are the costs involved in cloud adoption?',
+        'content' => 'Cloud costs depend on factors like infrastructure, storage, data transfer, and security needs. Pay-as-you-go pricing helps optimize expenses based on actual usage.'),
+    array(
+        'title' => 'How does virtualized platform help in implementing cloud solutions?',
+        'content' => 'Virtualization enables efficient resource allocation, scalability, and flexibility, making it easier to deploy and manage cloud-based applications.'),
+    array(
+        'title' => 'What workloads can I move to the cloud?',
+        'Common workloads include web applications, databases, analytics, DevOps environments, and enterprise software like CRM and ERP systems'),
+    array(
+        'title' => 'What are the basic characteristics of cloud computing?',
+        'content' => 'Key characteristics include on-demand self-service, scalability, resource pooling, rapid elasticity, pay-per-use pricing, and broad network access.'),
+)
+)); ?>
 <?php get_template_part('template-parts/content/team'); ?>
 
 <?php get_footer(); ?>
