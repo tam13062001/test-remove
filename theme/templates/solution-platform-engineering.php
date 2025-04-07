@@ -1,4 +1,4 @@
-<?php /* Template Name: Service: Solution Platform Engineering Template */ ?>
+<?php /* Template Name: Solution: Platform Engineering Template */ ?>
 <?php get_header(); ?>
 
 <div class="h-[603px] relative">
