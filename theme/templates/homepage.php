@@ -25,14 +25,21 @@ get_template_part('template-parts/content/call-to-action', null, array(
 
 <!-- What Sets Us Apart -->
 <div class="container py-[100px] mx-auto px-4 xl:px-0">
-    <h1 class="text-4xl xl:text-5xl font-bold text-gray-900 mb-16">
+    <h1 class="text-[40px] font-bold text-gray-900 mb-16">
         What Sets Us Apart
     </h1>
     
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8 xl:gap-12">
         <!-- Data & AI Card -->
         <div class="bg-white rounded-lg">
-            <img class="w-full h-[224px] object-cover" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/img_2.png' ?>" alt="Data & AI" />
+        <video 
+            class="w-full h-[224px] object-cover" 
+            autoplay 
+            loop 
+            muted 
+            playsinline
+            poster="<?php echo get_stylesheet_directory_uri() . '/assets/video/1.mp4' ?>"
+        >
             <h2 class="text-2xl font-bold mb-4 mt-4 text-[#315CD4]">Data & AI</h2>
             <p class="text-gray-600">
                 Unlock the full potential of your data with AI-driven insights. We transform raw data into intelligent strategies, enabling smarter decision-making and competitive advantage.
@@ -83,7 +90,8 @@ get_template_part('template-parts/content/info-section-with-image', null, array(
     ),
 )) ;
 ?>
-
+<!-- successful-stories -->
+<?php get_template_part('template-parts/content/hp-successful-stories'); ?>
 <!-- Our Story -->
 <?php get_template_part('template-parts/content/our-story'); ?>
 
