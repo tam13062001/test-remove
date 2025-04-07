@@ -1,4 +1,4 @@
-<header class="absolute w-full z-[9999]">
+<header class="absolute w-full z-[10]">
     <div class="container">
         <div class="flex py-[32px] items-center justify-between text-[16px] text-white">
             <a href="/">
