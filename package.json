@@ -22,10 +22,7 @@
   "author": "",
   "license": "ISC",
   "description": "",
-  "devDependencies": {},
   "dependencies": {
-    "inquirer": "^10.0.1",
-    "tailwindcss": "^3.3.2",
     "@ant-design/icons": "^5.6.1",
     "@types/wordpress__block-editor": "^11.5.15",
     "@wordpress/block-editor": "^13.2.0",
@@ -38,8 +35,10 @@
     "dotenv": "^16.4.5",
     "glob": "^10.4.5",
     "handlebars": "^4.7.8",
+    "inquirer": "^10.0.1",
     "rimraf": "^6.0.1",
     "swiper": "^11.2.6",
+    "tailwindcss": "^3.3.2",
     "yargs": "^17.7.2"
   }
 }
