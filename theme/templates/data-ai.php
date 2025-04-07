@@ -1,7 +1,11 @@
 <?php /* Template Name: Service: Data & AI Template */ ?>
 <?php get_header(); ?>
 
-<?php get_template_part('template-parts/content/banner'); ?>
+<?php get_template_part('template-parts/content/banner', null, array(
+    'title' => 'Empowering data-driven innovation with AI-powered intelligence',
+    'background_image' => get_assets_from_path('images/service-banner.png'),
+    'breadcrumbs' => array('Our Solution', 'Data & AI'),
+)); ?>
 
 <?php
 get_template_part('template-parts/content/call-to-action', null, array(

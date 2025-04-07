@@ -1,6 +1,7 @@
 <?php
 $title = $args['title'] ?? '';
 $breadcrumbs = $args['breadcrumbs'] ?? array();
+$background_image = $args['background_image'] ?? '';
 ?>
 
 <div class="h-[603px] relative">

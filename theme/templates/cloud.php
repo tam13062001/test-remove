@@ -1,7 +1,11 @@
 <?php /* Template Name: Service: Cloud Template */ ?>
 <?php get_header(); ?>
 
-<?php get_template_part('template-parts/content/banner'); ?>
+<?php get_template_part('template-parts/content/banner', null, array(
+    'title' => 'Designing cloud ecosystems that scale with your ambition',
+    'breadcrumbs' => array('Our Solution', 'Digital Transformation'),
+    'background_image' => get_assets_from_path('images/service-banner.png')
+)); ?>
 
 <?php
 get_template_part('template-parts/content/call-to-action', null, array(
