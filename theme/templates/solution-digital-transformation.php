@@ -1,35 +1,11 @@
 <?php /* Template Name: Solution: Digital Transformation Template */ ?>
 <?php get_header(); ?>
 
-<?php get_template_part('template-parts/content/banner', array(
+<?php get_template_part('template-parts/content/banner', null, array(
     'background_image' => get_assets_from_path('images/service-banner.png'),
-    'title' => 'Empower your business with cutting-edge technology to stay ahead in the digital era.',
-    'breadcrumbs' => array('Our Solution', 'Digital Transformation'),
+    'title' => 'Platform engineering, the foundation for your digital transformation',
+    'breadcrumbs' => array('Our Solution', 'Platform engineering'),
 )); ?>
-
-<div class="h-[603px] relative">
-    <img class="absolute top-0 object-cover h-full w-full" src="<?php echo get_assets_from_path('images/spe_banne.png')  ?>" />
-    <div class="container relative flex items-center h-full">
-        <div class="">
-            <div class="font-[700] text-white">
-                <div class="flex text-[14px] items-center space-x-2 mb-5">
-                    <div>Our Solution</div>
-                    <div>
-                        <svg width="4" height="7" viewBox="0 0 4 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M4 3.5L0.25 6.53109L0.25 0.468911L4 3.5Z" fill="white"/>
-                        </svg>
-                    </div>
-                    <div>Platform engineering</div>
-                </div>
-                <div class="text-[32px] lg:text-[40px]">
-                    Platform engineering, the foundation for<br class="hidden lg:block" />
-                    your digital transformation
-                </div>
-            </div>
-        </div>
-    </div>
-
-</div>
 
 <?php
 get_template_part('template-parts/content/call-to-action', null, array(
