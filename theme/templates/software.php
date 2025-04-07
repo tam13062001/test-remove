@@ -4,6 +4,7 @@
 <?php get_template_part('template-parts/content/banner', null, array(
     'title' => 'Pioneering software engineering for Future-Ready Enterprises',
     'breadcrumbs' => array('Our Services', 'Software'),
+    'background_image' => get_assets_from_path('images/banner_software.png'),
 )); ?>
 
 <?php
@@ -113,7 +114,33 @@ get_template_part('template-parts/content/info-section-list', null, array(
 
 <?php get_template_part('template-parts/content/partners'); ?>
 <?php get_template_part('template-parts/content/successful-stories'); ?>
-<?php get_template_part('template-parts/content/frequently-asked-questions'); ?>
+<?php get_template_part('template-parts/content/frequently-asked-questions', null, array(
+    'items' => array(
+        array(
+            'title' => 'What are the benefits of custom software development?',
+            'content' => 'Custom software is tailored to your business needs, improving efficiency, scalability, and security. It offers greater flexibility than off-the-shelf solutions and enhances integration with existing systems, ensuring long-term growth and competitive advantage.'
+        ),
+        array(
+            'title' => 'How do I determine the right software solution for my business?',
+            'content' => 'Start by assessing your business goals, workflows, and challenges. Consult with a software development expert to identify whether a custom-built, off-the-shelf, or hybrid solution best fits your needs in terms of functionality, budget, and scalability.'
+        ),
+        array(
+            'title' => 'What makes enterprise software scalable?',
+            'content' => 'Scalable enterprise software is designed with modular architecture, cloud-based infrastructure, and microservices to handle growing data, users, and workloads efficiently. It ensures seamless performance, flexibility, and cost-effectiveness as your business expands'),
+        array(
+            'title' => 'How can AI improve software applications?',
+            'content' => 'AI enhances software by automating tasks, improving decision-making, and personalizing user experiences. Features like predictive analytics, natural language processing (NLP), and machine learning (ML) help businesses optimize operations and drive innovation.'),
+        array(
+            'title' => 'How do cloud-based solutions integrate with existing software?',
+            'content' => 'Cloud solutions integrate via APIs, middleware, or hybrid cloud architectures. They enable seamless data exchange, scalability, and security, allowing businesses to modernize operations while maintaining compatibility with legacy systems.'),
+        array(
+            'title' => 'How to ensure data security in software development?',
+            'Implement strong encryption, secure coding practices, and access controls. Regular security testing, compliance with industry standards (e.g., GDPR, ISO 27001), and cloud security measures help protect sensitive business data from cyber threats.'),
+        array(
+            'title' => 'What are the benefits of custom software development?',
+            'content' => 'Custom software is tailored to your business needs, improving efficiency, scalability, and security. It offers greater flexibility than off-the-shelf solutions and enhances integration with existing systems, ensuring long-term growth and competitive advantage.'),
+    )
+)); ?>
 <?php get_template_part('template-parts/content/team'); ?>
 
 <?php get_footer(); ?>

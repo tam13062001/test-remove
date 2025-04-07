@@ -4,7 +4,7 @@
 <?php get_template_part('template-parts/content/banner', null, array(
     'background_image' => get_assets_from_path('images/banner_solution_2.png'),
     'title' => 'Platform engineering, the foundation for your digital transformation',
-    'breadcrumbs' => array('Our Solution', 'Platform engineering'),
+    'breadcrumbs' => array('Our Solution', 'Digital Transformation'),
 )); ?>
 
 <?php
@@ -84,7 +84,40 @@ get_template_part('template-parts/content/info-section-with-image', null, array(
 ?>
 
 <?php get_template_part('template-parts/content/successful-stories'); ?>
-<?php get_template_part('template-parts/content/frequently-asked-questions'); ?>
+<?php get_template_part('template-parts/content/frequently-asked-questions', null, array(
+    'items' => array(
+        array(
+            'title' => 'What is digital transformation?',
+            'content' => 'Digital transformation is the integration of digital technologies into all areas of a business, improving processes, customer experiences, and operational efficiency. It enables organizations to stay competitive, agile, and data-driven in an evolving digital landscape.',
+        ),
+        array(
+            'title' => 'How can digital transformation improve business efficiency?',
+            'content' => 'By automating workflows, enhancing data accessibility, and enabling real-time insights, digital transformation helps businesses reduce costs, improve productivity, and streamline operations. It also fosters innovation and enhances decision-making through AI and analytics.',
+        ),
+        array(
+            'title' => 'What are the key technologies driving digital transformation?',
+            'content' => 'Core technologies include cloud computing, AI and machine learning, big data analytics, IoT (Internet of Things), automation, and blockchain. These innovations enable businesses to optimize operations, enhance security, and deliver personalized experiences.',
+        ),
+
+
+        array(
+            'title' => 'How do I start my digital transformation journey?',
+            'content' => 'Begin by assessing your current technology, identifying key business challenges, and setting clear transformation goals. Adopt cloud-based solutions, implement data-driven strategies, and invest in automation tools to enhance efficiency and scalability.',
+        ),
+        array(
+            'title' => 'How can automation optimize digital transformation efforts?',
+            'content' => 'Automation reduces manual tasks, accelerates workflows, and minimizes human error. From robotic process automation (RPA) to AI-driven analytics, automation enhances scalability, speeds up digital adoption, and improves customer interactions.',
+        ),
+        array(
+            'title' => 'What is digital transformation?',
+            'content' => 'Digital transformation is the integration of digital technologies into all areas of a business, improving processes, customer experiences, and operational efficiency. It enables organizations to stay competitive, agile, and data-driven in an evolving digital landscape.',
+        ),
+        array(
+            'title' => 'How can digital transformation improve business efficiency?',
+            'content' => 'By automating workflows, enhancing data accessibility, and enabling real-time insights, digital transformation helps businesses reduce costs, improve productivity, and streamline operations. It also fosters innovation and enhances decision-making through AI and analytics.',
+        )
+    )
+)); ?>
 <?php get_template_part('template-parts/content/Expert-insight'); ?>
 <?php get_template_part('template-parts/content/team'); ?>
 
