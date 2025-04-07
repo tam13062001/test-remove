@@ -2,7 +2,7 @@
 <?php get_header(); ?>
 
 <?php get_template_part('template-parts/content/banner', null, array(
-    'background_image' => get_assets_from_path('images/service-banner.png'),
+    'background_image' => get_assets_from_path('images/banner_solution_2.png'),
     'title' => 'Platform engineering, the foundation for your digital transformation',
     'breadcrumbs' => array('Our Solution', 'Platform engineering'),
 )); ?>
@@ -20,56 +20,43 @@ get_template_part('template-parts/content/call-to-action', null, array(
 
 <?php
 get_template_part('template-parts/content/info-section-list', null, array(
-    'title' => 'Our platform engineer approach',
+    'title' => 'Our digital transformation approach',
     'items' => array(
         array(
-            'title' => 'CI/CD Pipelines',
-            'content' => 'Automating the software delivery process to enable frequent and reliable code changes and releases.',
+            'title' => 'Data Lakehouse',
+            'content' => 'Build a scalable data infrastructure to store, process, and manage vast amounts of business data efficiently.',
         ),
         array(
-            'title' => 'Containerization and  <br class="hidden lg:block" /> Orchestration',
-            'content' => 'Using technologies like Docker and Kubernetes to manage containers that encapsulate application components',
+            'title' => 'BI Dashboards & Reporting ',
+            'content' => 'Develop interactive dashboards for real-time business insights, helping you make data-driven decisions.',
         ),
         array(
-            'title' => 'API Management',
-            'content' => 'Providing tools and services to create, manage, and secure APIs.',
+            'title' => 'Custom Machine Learning',
+            'content' => 'Implement AI-driven models to enhance predictive analytics, risk assessment, and automation.',
         ),
         array(
-            'title' => 'Infrastructure as Code  <br class="hidden lg:block" /> (IaC)',
-            'content' => 'Managing and provisioning infrastructure through code instead of through manual processes.',
+            'title' => 'MLOps',
+            'content' => 'Deploy and monitor machine learning models to ensure continuous optimization and performance.',
         ),
         array(
-            'title' => 'Cloud-Native <br class="hidden lg:block" /> Development',
-            'content' => 'Building and deploying applications that are designed to run in the cloud, taking full advantage of cloud computing benefits',
+            'title' => 'Load Balancing & Scaling',
+            'content' => 'Enable your digital ecosystem to handle high-volume transactions seamlessly without sacrificing speed or performance.',
         ),
         array(
-            'title' => 'DevSecOps',
-            'content' => 'Integrating security practices within the DevOps process to ensure secure code development and deployment.',
+            'title' => 'Real-Time Data Streaming',
+            'content' => 'Implement AI-driven models to enhance predictive analytics, risk assessment, and automation.',
         ),
         array(
-            'title' => 'Monitoring and Logging
-',
-            'content' => 'Implementing systems that track application performance and user activities, providing insights into system health.',
+            'title' => 'Generative AI Model Training',
+            'content' => 'Train AI models to automate content creation, generate reports, and improve business intelligence.',
         ),
         array(
-            'title' => 'Security and Compliance',
-            'content' => 'Ensuring that the platform adheres to security best practices and meets regulatory compliance requirements',
+            'title' => 'NLP Model Development',
+            'content' => 'Utilize natural language processing to improve customer interactions and sentiment analysis.',
         ),
         array(
-            'title' => 'Resilience',
-            'content' => 'Designed to handle failure gracefully such as circuit breaking, graceful degradation, HA, DR ...',
-        ),
-        array(
-            'title' => 'Microservices <br class="hidden lg:block" /> Architecture',
-            'content' => 'Designing and implementing a microservices architecture to make applications more scalable and easier to develop.',
-        ),
-        array(
-            'title' => 'Developer Portals and  <br class="hidden lg:block" /> Documentation',
-            'content' => 'Creating comprehensive documentation and developer portals to improve the developer experience',
-        ),
-        array(
-            'title' => 'Scalability',
-            'content' => 'Designed to be easily scalable, allowing for quick and efficient horizontal scaling as demand increases',
+            'title' => 'Chatbot Implementation',
+            'content' => 'Deploy AI-powered chatbots for 24/7 customer engagement, streamlining communication and support.',
         ),
     ),
 )) ;

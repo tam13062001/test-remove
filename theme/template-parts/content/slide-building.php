@@ -19,7 +19,8 @@
                 'title' => 'Enhanced operational efficiency',
                 'image_url' => get_assets_from_path('images/slide3.png')
             )
-        )
+        ),
+        'slidesPerView' => 2.5,
     );
     render_rocket_block('card-slider', $props);
     ?>
