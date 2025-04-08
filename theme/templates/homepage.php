@@ -2,13 +2,13 @@
 <?php get_header(); ?>
 
 <!-- Hero Section -->
-<div class="h-[824px] relative">
+<div class="h-[670px] lg:h-[824px] relative">
     <img class="object-cover h-full w-full" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/img.png' ?>" alt="Hero Background" />
-    <div class="absolute top-1/2 -translate-y-1/2 z-10 font-bold text-white text-4xl xl:text-[72px] leading-[120%] w-full px-4 xl:px-0">
+    <div class="absolute bottom-0 lg:top-1/2 -translate-y-1/2 z-10 font-bold text-white text-4xl xl:text-[72px] leading-[120%] w-full px-4 xl:px-0">
         <div class="container mx-auto">
             <div>Pioneering</div>
             <div>the Future of</div>
-            <div class="text-[#0DC0E2]">Digital Innovation</div>
+            <div>Digital Innovation</div>
         </div>
     </div>
 </div>
@@ -24,44 +24,57 @@ get_template_part('template-parts/content/call-to-action', null, array(
 ?>
 
 <!-- What Sets Us Apart -->
-<div class="container py-[100px] mx-auto px-4 xl:px-0">
-    <h1 class="text-[40px] font-bold text-gray-900 mb-16">
+<div class="container py-[60px] lg:py-[100px]">
+    <h1 class="text-[32px] lg:text-[40px] font-bold mb-10 lg:mb-16">
         What Sets Us Apart
     </h1>
     
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8 xl:gap-12">
         <!-- Data & AI Card -->
-        <div class="bg-white rounded-lg">
-        <video 
-            class="w-full h-[224px] object-cover" 
-            autoplay 
-            loop 
-            muted 
-            playsinline
-            poster="<?php echo get_stylesheet_directory_uri() . '/assets/video/1.mp4' ?>"
-        >
-            <h2 class="text-2xl font-bold mb-4 mt-4 text-[#315CD4]">Data & AI</h2>
-            <p class="text-gray-600">
-                Unlock the full potential of your data with AI-driven insights. We transform raw data into intelligent strategies, enabling smarter decision-making and competitive advantage.
-            </p>
+        <div class="bg-white rounded-lg relative h-[346px] lg:h-[520px]">
+            <video
+                class="w-full h-full object-cover absolute top-0 left-0"
+                autoplay
+                muted
+                loop
+            >
+                <source src="<?php echo get_assets_from_path('videos/homepage_data_ai.mp4') ?>" type="video/mp4">
+            </video>
+            <div class="text-white relative p-10 flex flex-col justify-between h-full">
+                <h2 class="text-2xl font-bold mb-4 mt-4">Data & AI</h2>
+                <p>
+                    Harness AI insights to turn raw data into smart strategies for better decision-making.
+                </p>
+            </div>
         </div>
-        
-        <!-- Cloud Solutions Card -->
-        <div class="bg-white rounded-lg">
-            <img class="w-full h-[224px] object-cover" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/img_3.png' ?>" alt="Cloud Solutions" />
-            <h2 class="text-2xl font-bold mb-4 mt-4 text-[#315CD4]">Cloud Solutions</h2>
-            <p class="text-gray-600">
-                Build a scalable and resilient cloud ecosystem tailored to your needs. We help businesses optimize their cloud infrastructure, enhance security, and drive operational efficiency.
-            </p>
+
+        <div class="bg-white rounded-lg relative h-[346px] lg:h-[520px]">
+            <img
+                    class="w-full h-full object-cover absolute top-0 left-0 brightness-50"
+                    src="<?php echo get_assets_from_path('images/img_3.png') ?>"
+            />
+            <div class="text-white relative p-10 flex flex-col justify-between h-full">
+                <h2 class="text-2xl font-bold mb-4 mt-4">Cloud Solutions</h2>
+                <p>
+                    Create a robust cloud ecosystem designed for your needs, optimizing security and efficiency.
+                </p>
+            </div>
         </div>
-        
-        <!-- Software Engineering Card -->
-        <div class="bg-white rounded-lg">
-            <img class="w-full h-[224px] object-cover" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/img_4.png' ?>" alt="Software Engineering" />
-            <h2 class="text-2xl font-bold mb-4 mt-4 text-[#315CD4]">Software Engineering</h2>
-            <p class="text-gray-600">
-                Elevate your business with future-ready software solutions. From custom application development to enterprise systems, we craft intuitive and powerful software that accelerates growth.
-            </p>
+        <div class="bg-white rounded-lg relative h-[346px] lg:h-[520px]">
+            <video
+                    class="w-full h-full object-cover absolute top-0 left-0"
+                    autoplay
+                    muted
+                    loop
+            >
+                <source src="<?php echo get_assets_from_path('videos/homepage_software_engineering.mp4') ?>" type="video/mp4">
+            </video>
+            <div class="text-white relative p-10 flex flex-col justify-between h-full">
+                <h2 class="text-2xl font-bold mb-4 mt-4">Software Engineering</h2>
+                <p>
+                    Boost your business with tailored software solutions that drive growth.
+                </p>
+            </div>
         </div>
     </div>
 </div>
@@ -99,19 +112,27 @@ get_template_part('template-parts/content/info-section-with-image', null, array(
 <?php get_template_part('template-parts/content/partners'); ?>
 
 <!-- Join the Digital Revolution -->
-<div class="container py-[100px] mx-auto px-4 xl:px-0">
-    <div class="text-center">
-        <h1 class="text-4xl xl:text-5xl font-bold text-[#315CD4] mb-8">
-            Join the Digital Revolution
-        </h1>
-        
-        <p class="text-xl text-gray-600 mb-12 leading-normal max-w-3xl mx-auto">
-            Future-proof your business with Datum. Let's build smarter, faster, and more powerful digital solutions together.
-        </p>
+<div class="relative">
+    <div class="absolute top-1/2 left-0 max-h-[450px] -translate-y-1/2">
+        <img class="h-[200px] lg:h-[450px]" src="<?php echo get_assets_from_path('images/why_datum_bg.png') ?>" alt="{$title}">
+    </div>
+    <div class="absolute top-1/2 right-0 max-h-[450px] -translate-y-1/2 rotate-180">
+        <img class="h-[200px] lg:h-[450px]" src="<?php echo get_assets_from_path('images/why_datum_bg.png') ?>" alt="{$title}">
+    </div>
+    <div class="container py-[100px] lg:py-[200px] mx-auto px-4 xl:px-0">
+        <div class="text-center">
+            <h1 class="text-4xl xl:text-5xl font-bold text-primary mb-8">
+                Join the Digital Revolution
+            </h1>
 
-        <button class="bg-[#315CD4] text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-[#0DC0E2] transition-colors">
-            Schedule a consultation with our expert
-        </button>
+            <p class="text-xl mb-12 leading-normal max-w-3xl mx-auto">
+                Future-proof your business with Datum. Let's build smarter, faster, and more powerful digital solutions together.
+            </p>
+
+            <button class="btn hover:bg-[#0DC0E2] transition-colors">
+                Schedule a consultation with our expert
+            </button>
+        </div>
     </div>
 </div>
 

@@ -35,7 +35,7 @@ get_template_part('template-parts/content/percentage-column-info', null, array(
 <?php
 get_template_part('template-parts/content/info-section-with-image', null, array(
     'title' => 'Your Cloud, Reinvented',
-    'image_url' => get_assets_from_path('images/mainframe.png'),
+    'image_url' => get_assets_from_path('images/img_7.png'),
     'items' => array(
         array(
             'title' => '',
@@ -47,7 +47,7 @@ get_template_part('template-parts/content/info-section-with-image', null, array(
 <?php
 get_template_part('template-parts/content/info-section-with-image', null, array(
     'title' => 'Why Datum',
-    'image_url' => get_assets_from_path('images/green-rack.png'),
+    'image_url' => get_assets_from_path('images/img_9.png'),
     'items' => array(
         array(
             'title' => 'Business-Centric Approach',
