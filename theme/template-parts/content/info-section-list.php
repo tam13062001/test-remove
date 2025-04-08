@@ -3,7 +3,7 @@ $title = $args['title'] ?? '';
 $items = $args['items'] ?? array();
 ?>
 
-<div class="relative py-[100px]">
+<div class="relative py-[40px] lg:py-[100px]">
     <div class="container">
         <h2 class="font-[700] text-[40px] mb-5 lg:mb-[50px]">
             <?php echo $title ?>
@@ -17,7 +17,8 @@ $items = $args['items'] ?? array();
                     </div>
                     <div class="block lg:hidden">
                         <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M5.44 11.14V7.2H1.5V5.94H5.44V2H6.7V5.94H10.63V7.2H6.7V11.14H5.44Z" fill="#315CD4"/>
+                            <path d="M5.44 11.14V7.2H1.5V5.94H5.44V2H6.7V5.94H10.63V7.2H6.7V11.14H5.44Z"
+                                fill="#315CD4" />
                         </svg>
                     </div>
                 </div>
