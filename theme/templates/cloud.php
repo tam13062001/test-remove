@@ -4,7 +4,8 @@
 <?php get_template_part('template-parts/content/banner', null, array(
     'title' => 'Designing cloud ecosystems that scale with your ambition',
     'breadcrumbs' => array('Our Solution', 'Digital Transformation'),
-    'background_image' => get_assets_from_path('images/service-banner.png')
+    'background_image' => get_assets_from_path('videos/cloud_banner_video.mp4'),
+    'type' => 'video'
 )); ?>
 
 <?php

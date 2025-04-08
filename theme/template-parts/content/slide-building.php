@@ -1,6 +1,6 @@
 
 <div class="py-[100px] mx-auto px-4 xl:px-0">
-    <h1 class="container text-4xl xl:text-5xl font-bold text-gray-900 mb-16">
+    <h1 class="container text-4xl xl:text-5xl font-bold mb-16">
         Building from the ground up
     </h1>
 

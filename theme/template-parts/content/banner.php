@@ -2,13 +2,23 @@
 $title = $args['title'] ?? '';
 $breadcrumbs = $args['breadcrumbs'] ?? array();
 $background_image = $args['background_image'] ?? '';
+$type = $args['type'] ?? 'image';
 ?>
 
 <div class="h-[603px] relative">
-    <img class="absolute top-0 object-cover h-full w-full" src="<?php echo get_assets_from_path('images/service-banner.png')  ?>" />
+
+    <?php if($type === 'image'): ?>
+    <img class="absolute top-0 object-cover h-full w-full" src="<?php echo $background_image;  ?>" />
+    <?php elseif ($type === 'video'): ?>
+    <video class="absolute top-0 object-cover h-full w-full" muted autoplay loop>
+        <source src="<?php echo $background_image ?>">
+    </video>
+    <?php endif; ?>
+
     <div class="container relative flex items-center h-full">
         <div class="">
             <div class="font-[700] text-white">
+                <?php if (!empty($breadcrumbs)): ?>
                 <div class="flex text-[14px] items-center space-x-2 mb-5">
                     <?php foreach ($breadcrumbs as $index => $item): ?>
                     <div>
@@ -22,12 +32,10 @@ $background_image = $args['background_image'] ?? '';
                         </div>
                     <?php endif; ?>
                     <?php endforeach; ?>
-
                 </div>
+                <?php endif; ?>
                 <div class="text-[32px] lg:text-[40px] w-3/5">
                     <?php echo $title; ?>
-<!--                    Designing cloud ecosystems that <br class="hidden lg:block" />-->
-<!--                    scale with your ambition-->
                 </div>
             </div>
         </div>
