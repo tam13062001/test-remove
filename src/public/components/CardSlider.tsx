@@ -28,7 +28,7 @@ export default function CardSlider(props: BaseProps<CardSliderProps>) {
       {
         data.map((item: any, index: number) => (
           <SwiperSlide key={index}>
-            <div className="ml-4 mx-auto bg-white flex flex-col md:flex-row justify-between border border-gray-300 md:h-[314px] w-full max-w-[785px]">
+            <div className="sm:w-[300px] sm:h-[145px] ml-4 mx-auto bg-white flex flex-col md:flex-row sm:flex justify-between shadow-[0_0_10px_rgba(0,0,0,0.1)] mb-1 mt-1 md:h-[314px] w-full max-w-[785px]">
               <p className="ml-16 text-primary p-4 mt-16 text-Regular text-[24px]">
                 {item.title}
               </p>
