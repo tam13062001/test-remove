@@ -15,13 +15,13 @@
             <!-- Platform Engineering -->
             <div class="w-full flex h-auto lg:h-[453px]">
                 <div class="w-full lg:w-2/3 bg-white p-6 lg:p-10 shadow-lg ">
-                    <h3 class="lg:text-[36px] text-primary mb-4 lg:mb-5">
+                    <h3 class="lg:text-[36px] text-primary mb-4 lg:mb-5 ml-20">
                         Platform Engineering
                     </h3>
-                    <p class="text-[16px] lg:text-[24px] mb-3 lg:mb-6 leading-[170%]">
-                        Build a strong digital foundation with scalable and agile infrastructure solutions.
+                    <p class="text-[16px] lg:text-[24px] mb-3 lg:mb-6 leading-[170%] ml-20">
+                        Build a strong digital foundation with scalable and </br> agile infrastructure solutions.
                     </p>
-                    <a href="#" class="text-primary inline-flex items-center text-[16px] lg:text-[20px]">
+                    <a href="#" class="text-primary inline-flex items-center text-[16px] lg:text-[20px] mt-20 ml-20">
                         Learn more
                         <span class="ml-1">
                             <i class="fas fa-chevron-right"></i>
@@ -33,12 +33,12 @@
             <!-- Digital Transformation -->
             <div class="w-full flex justify-end h-auto xl:h-[453px]">
                 <div class="w-full lg:w-2/3 bg-white p-6 lg:p-10 shadow-lg ">
-                    <h3 class="lg:text-[36px] text-primary mb-4 lg:mb-5">
+                    <h3 class="lg:text-[36px] text-primary mb-4 lg:mb-5 ml-20">
                         Digital Transformation
                     </h3>
-                    <p class="text-[16px] lg:text-[24px] mb-3 lg:mb-6 leading-[170%]">
+                    <p class="text-[16px] lg:text-[24px] mb-3 lg:mb-6 leading-[170%] ml-20">
                         Harness the latest technologies to streamline operations, enhance customer experiences, and drive business innovation.                    </p>
-                    <a href="#" class="text-primary inline-flex items-center text-[16px] lg:text-[20px]">
+                    <a href="#" class="text-primary inline-flex items-center text-[16px] lg:text-[20px] mt-20 ml-20">
                         Learn more
                         <span class="ml-1">
                             <i class="fas fa-chevron-right"></i>
@@ -50,13 +50,13 @@
             <!-- Integration Solutions -->
             <div class="w-full flex h-auto xl:h-[453px]">
                 <div class="w-full lg:w-2/3 bg-white p-6 lg:p-10 shadow-lg ">
-                    <h3 class="lg:text-[36px] text-primary mb-4 lg:mb-5">
+                    <h3 class="lg:text-[36px] text-primary mb-4 lg:mb-5 ml-20">
                         Integration Solutions
                     </h3>
-                    <p class="text-[16px] lg:text-[24px] mb-3 lg:mb-6 leading-[170%]">
+                    <p class="text-[16px] lg:text-[24px] mb-3 lg:mb-6 leading-[170%] ml-20">
                         Connect and unify your business systems seamlessly for optimized performance and enhanced security.
                     </p>
-                    <a href="#" class="text-primary inline-flex items-center text-[16px] lg:text-[20px]">
+                    <a href="#" class="text-primary inline-flex items-center text-[16px] lg:text-[20px] mt-20 ml-20">
                         Learn more
                         <span class="ml-1">
                             <i class="fas fa-chevron-right"></i>
