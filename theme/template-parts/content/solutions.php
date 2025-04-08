@@ -14,7 +14,7 @@
         <div class="space-y-8 lg:space-y-20">
             <!-- Platform Engineering -->
             <div class="w-full flex h-auto lg:h-[453px]">
-                <div class="w-full lg:w-2/3 bg-white p-6 lg:p-10 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                <div class="w-full lg:w-2/3 bg-white p-6 lg:p-10 shadow-lg ">
                     <h3 class="lg:text-[36px] text-primary mb-4 lg:mb-5">
                         Platform Engineering
                     </h3>
@@ -32,7 +32,7 @@
 
             <!-- Digital Transformation -->
             <div class="w-full flex justify-end h-auto xl:h-[453px]">
-                <div class="w-full lg:w-2/3 bg-white p-6 lg:p-10 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                <div class="w-full lg:w-2/3 bg-white p-6 lg:p-10 shadow-lg ">
                     <h3 class="lg:text-[36px] text-primary mb-4 lg:mb-5">
                         Digital Transformation
                     </h3>
@@ -49,7 +49,7 @@
 
             <!-- Integration Solutions -->
             <div class="w-full flex h-auto xl:h-[453px]">
-                <div class="w-full lg:w-2/3 bg-white p-6 lg:p-10 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                <div class="w-full lg:w-2/3 bg-white p-6 lg:p-10 shadow-lg ">
                     <h3 class="lg:text-[36px] text-primary mb-4 lg:mb-5">
                         Integration Solutions
                     </h3>
