@@ -6,32 +6,33 @@ $summembers = $args['summembers'] ?? array();
 
 <div class="container mb-[92px]">
 
-    <h2 class="text-[40px] font-bold text-black ml-[155px] mt-[139px] mb-[131px]">
+    <h2
+        class="text-[32px] lg:text-[40px] font-bold text-black lg:ml-[155px] mt-[60px] lg:mt-[139px] mb-[40px] lg:mb-[131px]">
         <?php echo $title ?>
     </h2>
 
     <!-- Team Grid -->
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
         <?php foreach($members as $member): ?>
 
         <!-- Member  -->
         <div class="flex flex-col items-center">
             <!-- Replace with your image source -->
             <img src="<?php echo $member['image_url']?>" alt="<?php echo $member['name']?>"
-                class="w-full object-cover mb-4" />
+                class="w-full object-cover lg:mb-4" />
 
-            <div class="ml-[30px] mt-4 flex flex-col items-start w-full">
-                <div class="flex items-center gap-2">
+            <div class="pl-[35px] mt-4 flex flex-col items-start w-full">
+                <div class="flex items-center gap-5">
                     <div class="">
                         <div class="w-[60px] h-1 bg-blue-600"></div>
                         <p>&nbsp;</p>
                     </div>
 
                     <div class="">
-                        <h3 class="text-2xl font-bold text-primary">
+                        <h3 class="text-xl lg:text-2xl font-bold text-primary">
                             <?php echo $member['name']?>
                         </h3>
-                        <p class="text-xl text-black mb-2">
+                        <p class="text-[16px] lg:text-xl text-black">
                             <?php echo $member['title']?>
                         </p>
                     </div>
@@ -50,41 +51,26 @@ $summembers = $args['summembers'] ?? array();
     </div>
 
     <!-- 2 Grid -->
-    <div class="container grid grid-cols-1 md:grid-cols-2 mt-[92px] ml-[155px]">
+    <div class="lg:container">
+        <div class="grid grid-cols-2 mt-[40px] lg:mt-[92px] lg:pl-[114px] gap-6 lg:gap-0">
 
-        <?php foreach($summembers as $member): ?>
-        <!-- Column 1 -->
-        <div class="max-w-[326px] text-left">
+            <?php foreach($summembers as $member): ?>
+            <!-- Column 1 -->
+            <div class="lg:max-w-[326px] text-left">
 
-            <p class="text-[64px] font-bold text-black">
-                <?php echo $member['number']?>
-            </p>
-            <p class="text-gray-700">
-                <?php echo $member['description']?>
-            </p>
-        </div>
-        <?php endforeach; ?>
-        <!-- Column 1 -->
-        <!-- <div class="max-w-[326px] text-left">
-
-                <p class="text-[64px] font-bold text-black">
-                    30+
+                <p class="text-[48px] lg:text-[64px] font-normal text-black pb-3">
+                    <?php echo $member['number']?>
                 </p>
-                <p class="text-gray-700">
-                    Solution Architects &amp; Technical Leads
+                <p class="text-[16px] lg:text-xl leading-[170%] font-normal tracking-tighter">
+                    <?php echo $member['description']?>
+                </p>
+                </p>
                 </p>
             </div>
+            <?php endforeach; ?>
 
-            
-            <div class="max-w-[326px]">
-                <p class="text-[64px] font-bold text-black">
-                    120+
-                </p>
-                <p class="text-gray-700">
-                    Cloud, AI, DevOps, and Software Engineering Specialists
-                </p>
-            </div> -->
 
+        </div>
     </div>
 
 </div>
