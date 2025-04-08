@@ -29,7 +29,7 @@
 <?php
 get_template_part('template-parts/content/call-to-action', null, array(
     'content' => 'Empower your infrastructure with agility, scalability, security, and efficiency—boosting productivity while reducing overhead.',
-    'image_url' => get_assets_from_path('images/cta_bg_2.png'),
+    'image_url' => get_assets_from_path('images/cta_bg_4.png'),
     'cta_text' => 'Schedule a consultation with our expert',
     'cta_link' => '#'
 ));

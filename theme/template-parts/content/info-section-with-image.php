@@ -12,20 +12,20 @@ $image_url = $args['image_url'] ?? '';
         <h2 class="text-[40px] font-bold mb-6 lg:mb-10">
             <?php echo $title ?>
         </h2>
-        <div class="lg:w-1/2 bg-white lg:py-10 lg:pr-[100px] leading-[170%]">
+        <div class="lg:w-1/2 h-[630px] bg-white lg:py-10 lg:pr-[100px] leading-[170%] ">
             <?php foreach($items as $item): ?>
             <div class="mb-10">
                 <?php if(!empty($item['title'])) {?>
-                    <div class="text-primary text-[24px] font-[700] mb-5">
+                    <div class="text-primary lg:text-[24px] text-[20px] font-bold font-[700] mb-5 mt-4">
                         <?php echo $item['title'] ?>
                     </div>
                 <?php } ?>
-                <div><?php echo $item['content']; ?></div>
+                <div class="lg:text-[20px] text-[16px] font-Regular "><?php echo $item['content']; ?></div>
             </div>
             <?php endforeach; ?>
         </div>
     </div>
-    <div class="lg:w-3/5 lg:absolute right-0 top-0 h-full overflow-hidden">
+    <div class="lg:w-3/5 lg:absolute right-0 top-0 h-[825px] w-[715px] overflow-hidden">
         <div class="flex items-end h-full">
             <img class="object-cover h-auto w-full" src="<?php echo $image_url?>" alt="" />
         </div>
