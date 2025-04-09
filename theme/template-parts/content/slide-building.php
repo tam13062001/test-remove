@@ -9,16 +9,16 @@
     $props = array(
         'data' => array(
             array(
-                'title' => 'Improves security and compliance',
-                'image_url' => get_assets_from_path('images/slide1.png')
+                'title' => 'Modernizing legacy systems for seamless integration',
+                'image_url' => get_assets_from_path('images/slide-digital1.jpg')
             ),
             array(
-                'title' => 'Increased development velocity',
-                'image_url' => get_assets_from_path('images/slide2.png')
+                'title' => 'Enhancing business agility with digital innovation',
+                'image_url' => get_assets_from_path('images/slide-digital2.jpg')
             ),
             array(
-                'title' => 'Enhanced operational efficiency',
-                'image_url' => get_assets_from_path('images/slide3.png')
+                'title' => 'Driving operational efficiency and customer engagement ',
+                'image_url' => get_assets_from_path('images/slide-digital3.jpg')
             )
         ),
         'slidesPerView' => 2.5,

@@ -13,7 +13,7 @@ $items = $args['items'] ?? array();
             </div>
         <?php endforeach; ?>
     </div>
-    <div class="flex flex-col lg:flex-row lg:space-x-4 space-y-4 lg:space-y-0 lg:items-center">
+    <div class="font-bold lg:text-[16px] flex flex-col lg:flex-row lg:space-x-4 space-y-4 lg:space-y-0 lg:items-center">
         <a class="btn">
             More FAQs on our Cloud Services
         </a>

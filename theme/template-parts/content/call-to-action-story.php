@@ -11,13 +11,13 @@ $image_url = $args['image_url'] ?? '';
         <div class="mb-6 lg:mb-5 text-[32px] lg:text-[40px] font-bold">
             <?php echo $title ?>
         </div>
-        <div class="mb-6 lg:mb-5 text-[16px] lg:text-[32px] text-primary">
+        <div class="mb-6 lg:mb-5 text-[20px] lg:text-[32px] text-primary">
             <?php echo $heading ?>
         </div>
         <div class="text-[16px] lg:text-xl leading-[170%]">
             <?php echo $content ?>
         </div>
-        <a href="<?php echo $cta_link; ?>" class="btn mt-[40px] lg:mt-[88px]">
+        <a href="<?php echo $cta_link; ?>" class="btn font-bold text-[14px] mt-[40px] lg:mt-[88px]">
             <?php echo $cta_text; ?>
         </a>
     </div>

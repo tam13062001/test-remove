@@ -7,7 +7,7 @@ $image_url = $args['image_url'] ?? '';
 
 <div class="relative lg:min-h-[880px] lg:mb-[88px]">
 
-    <div class="container pt-[40px] lg:pt-0 z-10 relative lg:translate-x-1/2">
+    <div class="container pt-[30px] lg:pt-0 z-10 relative lg:translate-x-1/2">
         <div class="lg:w-1/2 font-bold text-[32px] lg:text-[40px] lg:pl-[115px]">
             <h2>
                 <?php echo $title ?>
@@ -16,7 +16,7 @@ $image_url = $args['image_url'] ?? '';
 
         <div class="lg:w-1/2 bg-white pt-6 lg:pt-5 lg:pb-[80px] lg:pl-[115px]">
             <div class=>
-                <div class=" text-primary text-[16px] lg:text-[32px] font-normal leading-[150%]">
+                <div class=" text-primary text-[20px] lg:text-[32px] font-normal leading-[150%]">
                     <?php echo $heading ?>
                 </div>
             </div>

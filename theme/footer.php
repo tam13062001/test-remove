@@ -1,7 +1,7 @@
     <div class="py-[60px] lg:py-[122px] border-t border-primary lg:mt-[60px]">
-        <div class="container mx-auto px-4 lg:px-0">
-            <div class="flex flex-col lg:flex-row mb-[100px] space-y-9 lg:space-y-0">
-                <div class="w-1/5">
+        <div class="container mx-auto lg:px-4 lg:px-0">
+            <div class="flex flex-col lg:flex-row lg:mb-[100px] space-y-9 lg:space-y-0">
+                <div class="w-1/5 sm:w-full">
                     <img class="w-[142px]" alt="" src="<?php echo get_stylesheet_directory_uri().'/assets/images/logo.png' ?>" />
                 </div>
                 <div class="w-full lg:w-2/5 space-y-6">
@@ -39,15 +39,20 @@
                     </div>
                 </div>
             </div>
-            <div class="flex flex-row lg:justify-center py-0 px-5 box-border max-w-full">
-                <div class="lg:space-x-[50px] text-[16px] lg:flex">
-                    <div class="space-x-[50px] mb-9 lg:mb-0">
-                        <a href="#">Term of use</a>
-                        <a href="#">Privacy statement</a>
+
+            <div class="flex flex-col lg:flex-row mb-[100px] space-y-9 lg:space-y-0">
+                <div class="w-1/5"> </div>
+                <div class="flex flex-row lg:justify-start  py-0  box-border max-w-full">
+                    <div class="lg:space-x-[50px] text-[16px] lg:flex">
+                        <div class="space-x-[50px] mb-9 lg:mb-0">
+                            <a href="#">Term of use</a>
+                            <a href="#">Privacy statement</a>
+                        </div>
+                        <a href="#">Copyright © 2025 by Datum</a>
                     </div>
-                    <a href="#">Copyright © 2025 by Datum</a>
                 </div>
             </div>
+            
         </div>
     </div>
 </div>

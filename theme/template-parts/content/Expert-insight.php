@@ -7,14 +7,14 @@
   <!-- Cột 1: Platform Engineering -->
   <div class="bg-[#E4EFF1] w-full lg:w-1/2 h-[400px] lg:h-[585px] mb-4 lg:mr-4 lg:mb-0">
     <div class="flex flex-col h-full">
-      <div class="h-[200px] lg:h-[333px]">
+      <div class="h-[150px] lg:h-[333px]">
         <img class="h-full w-full object-cover" src="<?php echo get_assets_from_path('images/image 15.png') ?>" alt="Platform Engineering" />
       </div>
-      <div class="flex flex-col flex-grow p-6 lg:p-8 xl:p-10"> 
-        <p class="mb-4 lg:mb-6 leading-relaxed text-primary text-lg lg:text-[24px]">
+      <div class="flex flex-col justify-between flex-grow p-6 lg:p-8 xl:p-10"> 
+        <p class="mb-4 lg:mb-6 leading-relaxed text-primary text-[20px] lg:text-[24px]">
           Platform Engineering Is The New DevOps
         </p>
-        <a href="#" class="mt-auto text-[#1E1E1E] inline-flex items-center font-semibold text-sm lg:text-[16px]">
+        <a href="#" class="mt-4 lg:mt-auto text-[#1E1E1E] inline-flex items-center font-semibold text-sm lg:text-[16px]">
           Read more
           <span class="ml-1">></span>
         </a>
@@ -25,13 +25,12 @@
   <!-- Cột 2: Digital Transformation + Integration Solutions -->
   <div class="w-full lg:w-1/2 flex flex-col">
     <!-- Div 2: Digital Transformation -->
-    <div class="w-full h-[200px] lg:h-[284.5px] bg-[#E4EFF1]">
-      <div class="h-full p-6 lg:p-8 xl:p-10 flex flex-col">
-        <p class="mb-4 lg:mb-6 leading-relaxed text-primary text-lg lg:text-[24px]">
-          Platform Engineering : A Workshop to Help <br class="hidden lg:block"/>
-          Map Your Strategy
+    <div class="w-full h-[191px] lg:h-[284.5px] bg-[#E4EFF1] mt-4">
+      <div class="flex flex-col justify-between h-full p-6 lg:p-8 xl:p-10 flex flex-col">
+        <p class="mb-4 lg:mb-6 leading-relaxed text-primary text-[20px] lg:text-[24px]">
+          Platform Engineering: A Workshop to Help Map Your Strategy
         </p>
-        <a href="#" class="mt-auto text-[#1E1E1E] inline-flex items-center font-semibold text-sm lg:text-[16px]">
+        <a href="#" class="mt-6 lg:mt-auto text-[#1E1E1E] inline-flex items-center font-semibold text-sm lg:text-[16px]">
           Read more
           <span class="ml-1">></span>
         </a>
@@ -39,13 +38,13 @@
     </div>
 
     <!-- Div 3: Integration Solutions -->
-    <div class="w-full h-[200px] lg:h-[284.5px] bg-[#E4EFF1] mt-4">
-      <div class="h-full p-6 lg:p-8 xl:p-10 flex flex-col">
-        <p class="mb-4 lg:mb-6 leading-relaxed text-primary text-lg lg:text-[24px]">
-          Curating Developer Experience: Practical <br class="hidden lg:block"/>
+    <div class="w-full h-[191px] lg:h-[284.5px] bg-[#E4EFF1] mt-4">
+      <div class="flex flex-col justify-between h-full p-6 lg:p-8 xl:p-10 flex flex-col">
+        <p class="mb-4 lg:mb-6 leading-relaxed text-primary text-[20px] lg:text-[24px]">
+          Curating Developer Experience: Practical
           Insights from Building a Platform Team
         </p>
-        <a href="#" class="mt-auto text-[#1E1E1E] inline-flex items-center font-semibold text-sm lg:text-[16px]">
+        <a href="#" class="mt-6 lg:mt-auto text-[#1E1E1E] inline-flex items-center font-semibold text-sm lg:text-[16px]">
           Read more
           <span class="ml-1">></span>
         </a>

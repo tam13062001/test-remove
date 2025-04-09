@@ -127,13 +127,13 @@ get_template_part('template-parts/content/info-section-with-image', null, array(
     <div class="absolute top-1/2 right-0 max-h-[450px] -translate-y-1/2 rotate-180">
         <img class="h-[200px] lg:h-[450px]" src="<?php echo get_assets_from_path('images/why_datum_bg.png') ?>" alt="{$title}">
     </div>
-    <div class="container py-[100px] lg:py-[200px] mx-auto px-4 xl:px-0">
+    <div class="container py-[100px] lg:py-[100px] mx-auto px-4 xl:px-0">
         <div class="text-center">
             <h1 class="sm:text-[32px] text-4xl font-bold text-primary mb-8 ">
                 Join the Digital Revolution
             </h1>
 
-            <p class="text-[20px] sm:text-[16px] font-Regular mb-12 leading-normal max-w-3xl mx-auto text-center">
+            <p class="text-[20px] sm:text-[16px] font-Regular mb-12 leading-normal lg:max-w-3xl mx-auto text-center">
                 Future-proof your business with Datum. Let's build smarter, faster, and more powerful digital solutions together.
             </p>
 

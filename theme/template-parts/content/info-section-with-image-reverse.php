@@ -18,14 +18,14 @@ $image_url = $args['image_url'] ?? '';
 
         <div class="lg:w-1/2 bg-white lg:py-5 lg:pl-[115px]">
             <div>
-                <div class=" text-primary text-[16px] lg:text-[32px] font-normal leading-[170%]">
+                <div class=" text-primary text-[20px] lg:text-[32px] font-normal leading-[170%]">
                     <?php echo $heading ?>
                 </div>
             </div>
             <div class="[&>:not(:last-child)]:border-b leading-[170%]">
                 <?php foreach($items as $item): ?>
                 <div class="border-primary lg:py-5 flex flex-col lg:flex-row lg:space-x-5">
-                    <div class="lg:w-full mt-3 lg:mt-0 text-[16px] lg:text-[20px]">
+                    <div class="lg:w-full mt-3 mb-3 lg:mt-0 text-[16px] lg:text-[20px]">
                         <?php echo $item['content']; ?>
                     </div>
                 </div>
