@@ -1,4 +1,4 @@
-<?php /* Template Name: Service: About Datum Template */ ?>
+<?php /* Template Name: About Datum Template */ ?>
 
 <?php get_header(); ?>
 

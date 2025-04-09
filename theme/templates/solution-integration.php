@@ -2,7 +2,7 @@
 <?php get_header(); ?>
 
 <?php get_template_part('template-parts/content/banner', null, array(
-    'background_image' => get_assets_from_path('images/banner_solution_3.png'),
+    'background_image' => get_assets_from_path('images/banner_solution_3.jpg'),
     'title' => 'Seamless Integration for Scalable & Secure Digital Transformation',
     'breadcrumbs' => array('Our Solution', 'Integration'),
 )); ?>

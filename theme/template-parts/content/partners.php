@@ -18,8 +18,8 @@ $bg_image_url = $args['bg_image_url'] ?? '';
                     ensure that our technology solutions are seamlessly integrated with your business strategy, creating a comprehensive roadmap that paves the way for sustainable growth and success.
                 </div>
             </div>
-            <div class="py-10 lg:py-0 lg:w-1/2 lg:ml-12 lg:mb-20">
-                <img class="w-[200px] h-[200px] lg:w-[450px] lg:h-[450px] " src="<?php echo get_assets_from_path('images/aws-partner.png') ?>" alt="" />
+            <div class="py-10 lg:py-0 lg:w-1/2 lg:ml-12 lg:mb-20 text-right">
+                <img class="inline-block w-[200px] h-[200px] lg:w-[450px] lg:h-[450px] " src="<?php echo get_assets_from_path('images/aws-partner.png') ?>" alt="" />
             </div>
         </div>
     </div>

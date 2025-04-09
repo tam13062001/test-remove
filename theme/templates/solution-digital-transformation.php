@@ -2,8 +2,8 @@
 <?php get_header(); ?>
 
 <?php get_template_part('template-parts/content/banner', null, array(
-    'background_image' => get_assets_from_path('images/banner_solution_2.png'),
-    'title' => 'Platform engineering, the foundation for your digital transformation',
+    'background_image' => get_assets_from_path('images/banner_solution_2.jpg'),
+    'title' => 'Empower your business with <br />cutting-edge technology to stay ahead in the digital era.',
     'breadcrumbs' => array('Our Solution', 'Digital Transformation'),
 )); ?>
 
@@ -119,6 +119,11 @@ get_template_part('template-parts/content/info-section-with-image', null, array(
     )
 )); ?>
 <?php get_template_part('template-parts/content/Expert-insight'); ?>
-<?php get_template_part('template-parts/content/team'); ?>
+<?php get_template_part('template-parts/content/team', null, array(
+    'title' => 'Get consulted by our expert',
+    'content' => 'Talk with our expert to start building your platform',
+    'btn_text' => 'Schedule a consultation with our expert',
+    'btn_link' => '#'
+)); ?>
 
 <?php get_footer(); ?>
