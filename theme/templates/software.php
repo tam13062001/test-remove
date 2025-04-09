@@ -4,7 +4,8 @@
 <?php get_template_part('template-parts/content/banner', null, array(
     'title' => 'Pioneering software engineering for Future-Ready Enterprises',
     'breadcrumbs' => array('Our Services', 'Software'),
-    'background_image' => get_assets_from_path('images/banner_software.png'),
+    'background_image' => get_assets_from_path('videos/homepage_software_engineering.mp4'),
+    'type' => 'video'
 )); ?>
 
 <?php
@@ -141,6 +142,11 @@ get_template_part('template-parts/content/info-section-list', null, array(
             'content' => 'Custom software is tailored to your business needs, improving efficiency, scalability, and security. It offers greater flexibility than off-the-shelf solutions and enhances integration with existing systems, ensuring long-term growth and competitive advantage.'),
     )
 )); ?>
-<?php get_template_part('template-parts/content/team'); ?>
+<?php get_template_part('template-parts/content/team', null, array(
+    'title' => 'Ready to Software?',
+    'content' => 'Talk with our expert to start your cloud journey today',
+    'btn_text' => 'Schedule a Free Strategy Session',
+    'btn_link' => '#'
+)); ?>
 
 <?php get_footer(); ?>

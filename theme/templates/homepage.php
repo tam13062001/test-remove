@@ -2,17 +2,17 @@
 <?php get_header(); ?>
 
 <!-- Hero Section -->
-<div class="h-[670px] w-full sm:h-[550px] lg:h-[670px] xl:h-[824px] relative">
+<div class="h-[670px] w-full lg:h-[824px] relative">
     <!-- Mobile: Fixed 390x670, Desktop: Cover full container -->
     <img 
-        class="w-full h-full object-cover sm:object-cover sm:w-[390px] sm:h-[670px]" 
-        src="<?php echo get_stylesheet_directory_uri() . '/assets/images/1.png' ?>" 
+        class="w-full h-full object-cover sm:object-cover"
+        src="<?php echo get_stylesheet_directory_uri() . '/assets/images/BG 1.jpg' ?>"
         alt="Hero Background"
 
     />
     <div class="absolute inset-0 flex items-end lg:items-center z-10 px-4 pb-8 lg:pb-0">
         <div class="container mx-auto">
-            <h1 class="font-bold text-white text-3xl sm:text-4xl xl:text-[72px] leading-[120%] space-y-9 sm:space-y-4 line">
+            <h1 class="font-bold text-white text-[32px] lg:text-[72px] lg:leading-[120%]">
                 <div class="ml-0 sm:ml-0 md:ml-0 lg:ml-0">Pioneering</div>
                 <div class="ml-8 sm:ml-12 md:ml-24 lg:ml-36">the Future of</div>
                 <div class="ml-4 sm:ml-6 md:ml-8 lg:ml-12">Digital Innovation</div>

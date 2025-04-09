@@ -1,4 +1,4 @@
-<?php /* Template Name: Service: Successful Story Template */ ?>
+<?php /* Template Name: Successful Story Template */ ?>
 <?php get_header(); ?>
 
 <?php get_template_part('template-parts/content/banner', null, array(
@@ -58,7 +58,12 @@ get_template_part('template-parts/content/info-section-with-image-reverse-lesson
 )) ;
 ?>
 
-<?php get_template_part('template-parts/content/team'); ?>
+<?php get_template_part('template-parts/content/team', null, array(
+    'title' => 'Lay you foundation now',
+    'content' => 'Talk with our expert to start building your platform',
+    'btn_text' => 'Schedule a consultation with our expert',
+    'btn_link' => '#'
+)); ?>
 
 
 <?php get_footer(); ?>

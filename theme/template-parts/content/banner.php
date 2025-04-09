@@ -6,7 +6,6 @@ $type = $args['type'] ?? 'image';
 ?>
 
 <div class="h-[603px] relative">
-
     <?php if($type === 'image'): ?>
     <img class="absolute top-0 object-cover h-full w-full" src="<?php echo $background_image;  ?>" />
     <?php elseif ($type === 'video'): ?>
@@ -18,7 +17,7 @@ $type = $args['type'] ?? 'image';
     <div class="container relative flex items-center h-full">
         <div class="">
             <div class="font-[700] text-white">
-                <?php if (!empty($breadcrumbs)): ?>
+                <?php if (!empty($breadcrumbs) && sizeof($breadcrumbs) > 0): ?>
                 <div class="flex text-[14px] items-center space-x-2 mb-5">
                     <?php foreach ($breadcrumbs as $index => $item): ?>
                     <div>

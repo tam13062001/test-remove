@@ -3,8 +3,9 @@
 
 <?php get_template_part('template-parts/content/banner', null, array(
     'title' => 'Empowering data-driven innovation with AI-powered intelligence',
-    'background_image' => get_assets_from_path('images/banner_data-ai.png'),
+    'background_image' => get_assets_from_path('videos/homepage_data_ai.mp4'),
     'breadcrumbs' => array('Our Solution', 'Data & AI'),
+    'type' => 'video'
 )); ?>
 
 <?php
@@ -150,6 +151,11 @@ Our experts help design robust, scalable data architectures to support AI and an
         )
     ));
 ?>
-<?php get_template_part('template-parts/content/team'); ?>
+<?php get_template_part('template-parts/content/team', null, array(
+    'title' => 'Ready to Innovate with AI?',
+    'content' => 'Talk with our expert to start your cloud journey today',
+    'btn_text' => 'Schedule a Free Strategy Session',
+    'btn_link' => '#'
+)); ?>
 
 <?php get_footer(); ?>

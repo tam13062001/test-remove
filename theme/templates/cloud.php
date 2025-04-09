@@ -156,6 +156,11 @@ get_template_part('template-parts/content/info-section-list', null, array(
         'content' => 'Key characteristics include on-demand self-service, scalability, resource pooling, rapid elasticity, pay-per-use pricing, and broad network access.'),
 )
 )); ?>
-<?php get_template_part('template-parts/content/team'); ?>
+<?php get_template_part('template-parts/content/team', null, array(
+    'title' => 'Ready to Cloud ?',
+    'content' => 'Talk with our expert to start your cloud journey today',
+    'btn_text' => 'Schedule a consultation with our expert',
+    'btn_link' => '#'
+)); ?>
 
 <?php get_footer(); ?>
