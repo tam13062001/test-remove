@@ -1,5 +1,5 @@
 
-<div class="py-[100px] mx-auto px-4 xl:px-0 mt-20">
+<div class="py-[60px] lg:py-[100px] mx-auto px-4 xl:px-0 lg:mt-20">
     <h1 class="container font-[700] text-[40px] mb-5 lg:mb-[50px]">
         Building from the ground up
     </h1>

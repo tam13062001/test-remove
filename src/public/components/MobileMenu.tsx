@@ -1,6 +1,6 @@
 import {BaseProps} from "../core/get-props";
 import {Button, ConfigProvider, Drawer, Menu} from "antd";
-import {useCallback, useMemo, useState} from "@wordpress/element";
+import {useCallback, useMemo, useRef, useState} from "@wordpress/element";
 import {CloseOutlined} from "@ant-design/icons";
 
 type MenuItem = {
@@ -19,12 +19,16 @@ type MobileMenuProps = {
 export default function MobileMenu(props: BaseProps<MobileMenuProps>) {
   const { data, logo_url } = props.data
   const [open, setOpen] = useState(false)
+  const dataRef = useRef<Map<string, any>>(new Map())
   const menuData = useMemo(() => {
     const getItems = (item: any) => {
       const data: any = {
         key: item.ID,
         label: item.title
       }
+
+      dataRef.current.set(item.ID.toString(), item)
+
       if (Array.isArray(item.children) && item.children.length > 0) {
         data.children = data.children.map(getItems)
       }
@@ -38,6 +42,8 @@ export default function MobileMenu(props: BaseProps<MobileMenuProps>) {
         label: item.title
       }
 
+      dataRef.current.set(item.ID.toString(), item)
+
       if (Array.isArray(item.children) && item.children.length > 0) {
         data.children = item.children.map(getItems)
       }
@@ -45,8 +51,9 @@ export default function MobileMenu(props: BaseProps<MobileMenuProps>) {
     })
   }, [data])
 
-  const onItemSelect = (info: any) => {
-    const item = data.find(item => info.key == item.ID)
+  const onItemSelect = (info: any, info2: any) => {
+    const item = dataRef.current.get(info.key.toString())
+    console.log(info, dataRef.current)
     if (item) {
       window.location.href = item.url
     }

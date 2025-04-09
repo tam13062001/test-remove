@@ -33,7 +33,7 @@ $type = $args['type'] ?? 'image';
                     <?php endforeach; ?>
                 </div>
                 <?php endif; ?>
-                <div class="text-[32px] lg:text-[40px] w-3/5">
+                <div class="text-[32px] lg:text-[40px] lg:w-3/5">
                     <?php echo $title; ?>
                 </div>
             </div>
