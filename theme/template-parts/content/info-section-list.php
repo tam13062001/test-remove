@@ -5,7 +5,7 @@ $items = $args['items'] ?? array();
 
 <div class="relative py-[40px] lg:py-[100px]">
     <div class="container">
-        <h2 class="font-[700] text-[40px] mb-5 lg:mb-[50px]">
+        <h2 class="font-[700] text-[32px] lg:text-[40px] mb-5 lg:mb-[50px]">
             <?php echo $title ?>
         </h2>
         <div class="[&>:not(:last-child)]:border-b">

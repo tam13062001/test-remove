@@ -16,7 +16,23 @@ get_template_part('template-parts/content/call-to-action', null, array(
 ));
 ?>
 
-<?php get_template_part('template-parts/content/slide-building'); ?>
+<?php get_template_part('template-parts/content/slide-building', null, array(
+    'title' => 'Building from the ground up',
+    'data' => array(
+        array(
+            'title' => 'Modernizing legacy systems for seamless integration',
+            'image_url' => get_assets_from_path('images/slide-digital1.jpg')
+        ),
+        array(
+            'title' => 'Enhancing business agility with digital innovation',
+            'image_url' => get_assets_from_path('images/slide-image-2.jpeg')
+        ),
+        array(
+            'title' => 'Driving operational efficiency and customer engagement ',
+            'image_url' => get_assets_from_path('images/slide-digital3.jpg')
+        )
+    )
+)); ?>
 
 <?php
 get_template_part('template-parts/content/info-section-list', null, array(
