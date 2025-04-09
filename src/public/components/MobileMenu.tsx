@@ -51,9 +51,8 @@ export default function MobileMenu(props: BaseProps<MobileMenuProps>) {
     })
   }, [data])
 
-  const onItemSelect = (info: any, info2: any) => {
+  const onItemSelect = (info: any) => {
     const item = dataRef.current.get(info.key.toString())
-    console.log(info, dataRef.current)
     if (item) {
       window.location.href = item.url
     }
