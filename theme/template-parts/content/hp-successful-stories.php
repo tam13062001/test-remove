@@ -12,17 +12,17 @@ $slides = $args['slides'] ?? [
         'link_text' => 'Read more'
     ],
     [
-        'image_url' => get_stylesheet_directory_uri() . '/assets/images/hp-successful-stories.png',
-        'title' => 'Second Success Story',
-        'description' => 'Another example of our excellent consulting services.',
+        'image_url' => get_stylesheet_directory_uri() . '/assets/images/slide-ss.jpg',
+        'title' => 'EKS Workload Platform for Better Banking Experience',
+        'description' => 'Datum delivered a resilient, secure, and automated EKS platform tailored for enterprise microservices.',
         'link' => '#',
         'link_text' => 'Read more'
     ]
 ];
 ?>
 
-<div class="success-stories-block">
-    <h1 class="container text-2xl md:text-3xl lg:text-[40px] font-bold mb-8 lg:mb-[60px] px-4 lg:px-0">
+<div class="success-stories-block ">
+    <h1 class="container text-2xl pt-[50px] lg:py-[100px] md:text-3xl lg:text-[40px] font-bold mb-8 lg:mb-[60px] px-4 lg:px-0">
         <?php echo $title; ?>
     </h1>
 
@@ -75,64 +75,64 @@ $slides = $args['slides'] ?? [
         </div>
 
         <!-- Desktop Slider -->
-        <div class="hidden lg:block swiper-desktop">
-            <div class="swiper-wrapper">
-                <?php foreach ($slides as $slide): ?>
-                <div class="swiper-slide">
-                    <div class="w-full relative">
-                        <!-- Background Image (Left Side) -->
-                        <div class="relative">
-                            <img class="object-cover h-full w-full lg:w-3/5" src="<?php echo $slide['image_url']; ?>" alt="Success Stories" />
-                        </div>
-                        
-                        <!-- Navigation -->
-                        <div class="swiper-navigation-desktop absolute bottom-10 left-20 ml-60 transform -translate-x-1/2 z-10">
-                            <div class="flex items-center justify-center gap-4 bg-white px-6 py-4 rounded-full shadow-md">
-                                <!-- Prev -->
-                                <div class="swiper-button-prev-desktop cursor-pointer">
-                                    <svg class="w-5 h-5 text-blue-600 hover:text-blue-800" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
-                                    </svg>
-                                </div>
+<!-- Desktop Slider -->
+<div class="hidden lg:block swiper-desktop relative">
+    <div class="swiper-wrapper">
+        <?php foreach ($slides as $slide): ?>
+        <div class="swiper-slide">
+            <div class="w-full relative">
+                <!-- Background Image (Left Side) -->
+                <div class="relative">
+                    <img class="object-cover h-full w-full lg:w-3/5" src="<?php echo $slide['image_url']; ?>" alt="Success Stories" />
+                </div>
 
-                                <!-- Dots -->
-                                <div class="swiper-pagination-desktop flex items-center gap-2"></div>
-
-                                <!-- Next -->
-                                <div class="swiper-button-next-desktop cursor-pointer">
-                                    <svg class="w-5 h-5 text-blue-600 hover:text-blue-800" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-                        <!-- Content Container (Right Side) -->
-                        <div class="lg:absolute top-0 h-full w-full flex items-center">
-                            <div class="w-full flex justify-end pl-10 lg:pl-0 pr-10">
-                                <div class="w-full lg:w-3/5 bg-white p-5 lg:py-[70px] lg:px-[116px] shadow-[0_0_10px_rgba(0,0,0,0.1)]">
-                                    <h3 class="lg:text-[36px] text-primary font-Regular mb-6">
-                                        <?php echo $slide['title']; ?>
-                                    </h3>
-                                    <p class="text-[20px] font-Regular lg:text-[24px] mb-6">
-                                        <?php echo $slide['description']; ?>
-                                    </p>
-                                    <a href="<?php echo $slide['link']; ?>" class="text-primary inline-flex items-center font-mixed text-[20px] lg:text-[20px]">
-                                        <?php echo $slide['link_text'] ?? 'About Datum'; ?>
-                                        <span class="ml-1">
-                                            <i class="fa fa-chevron-right"></i>
-                                        </span>
-                                    </a>
-                                </div>
-                            </div>
+                <!-- Content Container (Right Side) -->
+                <div class="lg:absolute top-0 h-full w-full flex items-center">
+                    <div class="w-full flex justify-end pl-10 lg:pl-0 pr-10">
+                        <div class="w-full lg:w-3/5 bg-white p-5 lg:py-[70px] lg:px-[116px] shadow-[0_0_10px_rgba(0,0,0,0.1)]">
+                            <h3 class="lg:text-[36px] text-primary font-Regular mb-6">
+                                <?php echo $slide['title']; ?>
+                            </h3>
+                            <p class="text-[20px] font-Regular lg:text-[24px] mb-6">
+                                <?php echo $slide['description']; ?>
+                            </p>
+                            <a href="<?php echo $slide['link']; ?>" class="text-primary inline-flex items-center font-mixed text-[20px] lg:text-[20px]">
+                                <?php echo $slide['link_text'] ?? 'About Datum'; ?>
+                                <span class="ml-1">
+                                    <i class="fa fa-chevron-right"></i>
+                                </span>
+                            </a>
                         </div>
                     </div>
                 </div>
-                <?php endforeach; ?>
             </div>
         </div>
+        <?php endforeach; ?>
+    </div>
+
+    <!-- ✅ Di chuyển phần navigation/pagination ra khỏi .swiper-slide -->
+    <div class="swiper-navigation-desktop absolute bottom-10 left-20 ml-80 mb-10 transform -translate-x-1/2 z-10">
+        <div class="flex items-center justify-center gap-4 bg-white px-6 py-4 rounded-full shadow-md">
+            <!-- Prev -->
+            <div class="swiper-button-prev-desktop cursor-pointer">
+                <svg class="w-5 h-5 text-blue-600 hover:text-blue-800" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+                </svg>
+            </div>
+
+            <!-- Dots -->
+            <div class="swiper-pagination-desktop flex items-center gap-2"></div>
+
+            <!-- Next -->
+            <div class="swiper-button-next-desktop cursor-pointer">
+                <svg class="w-5 h-5 text-blue-600 hover:text-blue-800" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                </svg>
+            </div>
+        </div>
+    </div>
+</div>
+
     </div>
 </div>
 

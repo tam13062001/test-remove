@@ -77,7 +77,7 @@ get_template_part('template-parts/content/info-section-list', null, array(
 <?php
 get_template_part('template-parts/content/info-section-with-image', null, array(
     'title' => 'Why Datum',
-    'image_url' => get_assets_from_path('images/WhyDatum-Solution.png'),
+    'image_url' => get_assets_from_path('images/integration-whydatum.jpg'),
     'items' => array(
         array(
             'title' => ' Top-level experts',
@@ -125,6 +125,11 @@ get_template_part('template-parts/content/info-section-with-image', null, array(
     ),
 )); ?>
 <?php get_template_part('template-parts/content/Expert-insight'); ?>
-<?php get_template_part('template-parts/content/team'); ?>
+<?php get_template_part('template-parts/content/team', null, array(
+    'title' => 'Get consulted by our expert',
+    'content' => 'Talk with our expert to start building your platform',
+    'btn_text' => 'Schedule a consultation with our expert',
+    'btn_link' => '#'
+)); ?>
 
 <?php get_footer(); ?>

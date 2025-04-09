@@ -70,7 +70,7 @@
         ),
     )) ;
     ?>
-    <hr class="border-primary mt-[-100px]" />
+    <hr class=" mt-[-100px]" />
 </div>
 
 <!-- We dont just -->

@@ -17,17 +17,17 @@ $user_avatar_url = $args['user_avatar_url'] ?? get_assets_from_path('images/user
             <img class="w-full lg:w-fit" src="<?php echo $user_avatar_url ?>" />
         </div>
         <div class="lg:w-3/4 py-5 lg:py-[75px] lg:px-[135px]">
-            <div class="text-primary font-[700] text-[24px] mb-11">
+            <div class="text-primary font-[700] text-[20px] lg:text-[24px] mb-11">
                 <?php echo $content ?>
             </div>
-            <a class="btn" href="<?php echo $btn_url ?>">
+            <a class="btn font-bold" href="<?php echo $btn_url ?>">
                 <?php echo $btn_text ?>
             </a>
             <div class="mt-11">
-                <div class="text-primary font-[700] text-[24px]">
+                <div class="text-primary font-[700] text-[20px] lg:text-[24px]">
                     <?php echo $user_name ?>
                 </div>
-                <div><?php echo $user_title ?></div>
+                <div class="text-[14px] lg:text-[20px]"><?php echo $user_title ?></div>
             </div>
         </div>
     </div>

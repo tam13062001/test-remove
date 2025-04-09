@@ -3,7 +3,7 @@
 
 <?php get_template_part('template-parts/content/banner', null, array(
     'title' => 'Designing cloud ecosystems that scale with your ambition',
-    'breadcrumbs' => array('Our Solution', 'Digital Transformation'),
+    'breadcrumbs' => array('Our Services', 'Cloud'),
     'background_image' => get_assets_from_path('videos/cloud_banner_video.mp4'),
     'type' => 'video'
 )); ?>
@@ -34,7 +34,7 @@ get_template_part('template-parts/content/percentage-column-info', null, array(
 ?>
 
 <?php
-get_template_part('template-parts/content/info-section-with-image', null, array(
+get_template_part('template-parts/content/info-section-with-image-cloud', null, array(
     'title' => 'Your Cloud, Reimagined',
     'image_url' => get_assets_from_path('images/mainframe.png'),
     'items' => array(

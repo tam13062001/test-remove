@@ -59,7 +59,7 @@ get_template_part('template-parts/content/info-section-with-image-reverse-lesson
 ?>
 
 <?php get_template_part('template-parts/content/team', null, array(
-    'title' => 'Lay you foundation now',
+    'title' => 'Get consulted by our expert',
     'content' => 'Talk with our expert to start building your platform',
     'btn_text' => 'Schedule a consultation with our expert',
     'btn_link' => '#'

@@ -4,7 +4,7 @@
     </h2>
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
         <div class="border-b border-secondary">
-            <div class="py-12 px-10 text-[24px] font-[700] text-primary leading-[170%] bg-gradient-to-r from-secondary/20 to-primary/20 h-[220px]">
+            <div class="flex items-center  lg:py-12 px-8 lg:text-[24px] text-[16px] font-[700] text-primary leading-[170%] bg-gradient-to-r from-secondary/20 to-primary/20 h-[140px] lg:h-[220px]">
                 Drive digital transformation <br class="hidden lg:inline-block" />
                 through cloud adoption and data <br class="hidden lg:inline-block" />
                 integration
@@ -14,7 +14,7 @@
             </div>
         </div>
         <div class="border-b border-secondary">
-            <div class="py-12 px-10 text-[24px] font-[700] text-primary leading-[170%] bg-gradient-to-r from-secondary/20 to-primary/20 h-[220px]">
+            <div class="flex items-center lg:py-12 px-8 lg:text-[24px] text-[16px] font-[700] text-primary leading-[170%] bg-gradient-to-r from-secondary/20 to-primary/20 h-[140px] lg:h-[220px]">
                 Improve customer experiences <br class="hidden lg:inline-block" />
                 and operational processes <br class="hidden lg:inline-block" />
                 through AI and machine learning
