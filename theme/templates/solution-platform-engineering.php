@@ -17,7 +17,23 @@ get_template_part('template-parts/content/call-to-action', null, array(
 ));
 ?>
 
-<?php get_template_part('template-parts/content/slide-building'); ?>
+<?php get_template_part('template-parts/content/slide-building', null, array(
+    'title' => 'Building from the ground up',
+    'data' => array(
+        array(
+            'title' => 'Improves security and compliance',
+            'image_url' => get_assets_from_path('images/slide-digital3.jpg')
+        ),
+        array(
+            'title' => 'Increased development velocity',
+            'image_url' => get_assets_from_path('images/slide-image-4.jpeg')
+        ),
+        array(
+            'title' => 'Enhanced operational efficiency',
+            'image_url' => get_assets_from_path('images/slide-image-5.jpeg')
+        )
+    )
+)); ?>
 
 <?php
 get_template_part('template-parts/content/info-section-list', null, array(

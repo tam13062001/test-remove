@@ -4,7 +4,7 @@ type ExampleData = {
   title: string
 }
 
-export function Example(props: BaseProps<ExampleData>) {
+export function ExampleBlock(props: BaseProps<ExampleData>) {
   const { data } = props
   return (
     <div>

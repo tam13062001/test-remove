@@ -1,25 +1,27 @@
 import * as React from "react";
-import {Example} from "../components/Example";
-import CardSlider from "../components/CardSlider";
+import {ExampleBlock} from "../blocks/ExampleBlock";
+import CardSliderBlock from "../blocks/CardSliderBlock";
 import CollapseBlock from "../components/CollapseBlock";
 import MobileMenu from "../components/MobileMenu";
 
+const components = new Map<string, React.FC>()
+
+export const registerComponent = (name: string, element: React.FC) => {
+  components.set(name, element)
+}
+
 export function getComponent(container: HTMLElement) {
-  const classList = container.classList
-  switch (true) {
-    case classList.contains('wp-block-rocket-card-slider'):
-      return CardSlider
-    case classList.contains('wp-block-rocket-collapse-block'):
-      return CollapseBlock
-    case classList.contains('wp-block-rocket-mobile-menu'):
-      return MobileMenu
-    case classList.contains('wp-block-rocket-example'):
-      return (props: any) => React.cloneElement(<Example />, props)
-    default:
-      return (props: any) => React.createElement('div', {
-        dangerouslySetInnerHTML: {
-          __html: props.children
-        }
-      })
+  const classList = Array.from(container.classList).filter(i => i.startsWith('wp-block-rocket-'))
+  const componentName = classList[0].replace('wp-block-rocket-', '')
+  const Component = components.get(componentName)
+
+  if (!Component) {
+    return (props: any) => React.createElement('div', {
+      dangerouslySetInnerHTML: {
+        __html: props?.children
+      }
+    })
   }
+
+  return Component
 }
