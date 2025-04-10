@@ -1,6 +1,6 @@
 {
   "name": "example",
-  "version": "1.0.0",
+  "version": "1.0.10",
   "scripts": {
     "build": "npm run css:build && wp-scripts build",
     "check-engines": "wp-scripts check-engines",
@@ -33,7 +33,6 @@
     "antd": "^5.24.3",
     "concurrently": "^8.2.2",
     "dotenv": "^16.4.5",
-    "example": "file:",
     "glob": "^10.4.5",
     "handlebars": "^4.7.8",
     "inquirer": "^10.0.1",
