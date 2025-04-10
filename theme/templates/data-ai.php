@@ -46,7 +46,7 @@ get_template_part('template-parts/content/info-section-with-image-cloud', null, 
 )); ?>
 
 <?php
-get_template_part('template-parts/content/info-section-with-image', null, array(
+get_template_part('template-parts/content/info-section-with-image-why-datum-test', null, array(
     'title' => 'Why Datum',
     'image_url' => get_assets_from_path('images/sv-ai-whydatum.png'),
     'items' => array(

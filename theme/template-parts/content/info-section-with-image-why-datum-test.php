@@ -1,0 +1,37 @@
+<?php
+$title = $args['title'] ?? '';
+$items = $args['items'] ?? array();
+$image_url = $args['image_url'] ?? '';
+?>
+
+<div class="relative lg:min-h-[880px] lg:mb-20 overflow-hidden">
+    <h2 class="text-[40px] font-bold mb-6 lg:mb-10">
+        <?php echo $title ?>
+    </h2>
+    <div class="z-10 relative flex flex-col md:flex-row">
+        <div class="container w-full lg:w-1/2 lg:mr-[5%]">
+            <div class="lg:h-[630px] bg-white lg:py-10 leading-[170%] ">
+                <?php foreach($items as $item): ?>
+                <div class="mb-8">
+                    <?php if(!empty($item['title'])) {?>
+                    <div class="text-primary lg:text-[24px] text-[20px] font-[700] mb-5 mt-4">
+                        <?php echo $item['title'] ?>
+                    </div>
+                    <?php } ?>
+                    <div class="lg:text-[20px] text-[16px]"><?php echo $item['content']; ?></div>
+                </div>
+                <?php endforeach; ?>
+            </div>
+        </div>
+
+        <div class="w-full lg:w-1/2 lg:absolute right-0 top-0 lg:h-[825px] ml-5 lg:ml-[-5%] overflow-hidden">
+            <div class="flex items-end h-full relative">
+                <div class="hidden lg:block absolute bottom-0  w-1/6 bg-white h-[80%]"></div>
+                <img class="object-cover h-auto w-full" src="<?php echo $image_url?>" alt="" />
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
