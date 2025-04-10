@@ -4,12 +4,8 @@
 <!-- Hero Section -->
 <div class="h-[670px] w-full lg:h-[824px] relative">
     <!-- Mobile: Fixed 390x670, Desktop: Cover full container -->
-    <img 
-        class="w-full h-full object-cover sm:object-cover"
-        src="<?php echo get_stylesheet_directory_uri() . '/assets/images/BG 1.jpg' ?>"
-        alt="Hero Background"
-
-    />
+    <img class="w-full h-full object-cover sm:object-cover"
+        src="<?php echo get_stylesheet_directory_uri() . '/assets/images/BG 1.jpg' ?>" alt="Hero Background" />
     <div class="absolute inset-0 flex items-end lg:items-center z-10 px-4 pb-8 lg:pb-0">
         <div class="container mx-auto">
             <h1 class="font-bold text-white text-[32px] lg:text-[72px] lg:leading-[120%]">
@@ -33,53 +29,42 @@ get_template_part('template-parts/content/call-to-action', null, array(
 
 <!-- What Sets Us Apart -->
 <div class="container py-[60px] lg:py-[100px]">
-    <h1 class="text-[32px] lg:text-[40px] font-bold mb-10 lg:mb-16">
+    <h1 class="text-[32px] lg:text-[40px] font-[600] mb-10 lg:mb-16">
         What Sets Us Apart
     </h1>
-    
+
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8 xl:gap-12">
         <!-- Data & AI Card -->
         <div class="bg-white rounded-lg relative h-[346px] lg:h-[520px]">
-            <video
-                class="w-full h-full object-cover absolute top-0 left-0"
-                autoplay
-                muted
-                loop
-            >
+            <video class="w-full h-full object-cover absolute top-0 left-0" autoplay muted loop>
                 <source src="<?php echo get_assets_from_path('videos/homepage_data_ai.mp4') ?>" type="video/mp4">
             </video>
-            <div class="text-white relative p-10 flex flex-col justify-between h-full">
-                <h2 class="text-2xl font-bold mb-4 mt-4">Data & AI</h2>
-                <p>
+            <div class="text-white relative p-10 flex flex-col justify-start h-full">
+                <h2 class="text-2xl font-[500] mb-4 mt-4">Data & AI</h2>
+                <p class="font-[200] lg:mt-[250px]">
                     Harness AI insights to turn raw data into smart strategies for better decision-making.
                 </p>
             </div>
         </div>
 
         <div class="bg-white rounded-lg relative h-[346px] lg:h-[520px]">
-            <img
-                    class="w-full h-full object-cover absolute top-0 left-0 brightness-50"
-                    src="<?php echo get_assets_from_path('images/img_3.png') ?>"
-            />
-            <div class="text-white relative p-10 flex flex-col justify-between h-full">
-                <h2 class="text-2xl font-bold mb-4 mt-4">Cloud Solutions</h2>
-                <p>
+            <img class="w-full h-full object-cover absolute top-0 left-0 brightness-50"
+                src="<?php echo get_assets_from_path('images/img_3.png') ?>" />
+            <div class="text-white relative p-10 flex flex-col justify-start h-full">
+                <h2 class="text-2xl font-[500] mb-4 mt-4">Cloud Solutions</h2>
+                <p class="font-[200] lg:mt-[250px]">
                     Create a robust cloud ecosystem designed for your needs, optimizing security and efficiency.
                 </p>
             </div>
         </div>
         <div class="bg-white rounded-lg relative h-[346px] lg:h-[520px]">
-            <video
-                    class="w-full h-full object-cover absolute top-0 left-0"
-                    autoplay
-                    muted
-                    loop
-            >
-                <source src="<?php echo get_assets_from_path('videos/homepage_software_engineering.mp4') ?>" type="video/mp4">
+            <video class="w-full h-full object-cover absolute top-0 left-0" autoplay muted loop>
+                <source src="<?php echo get_assets_from_path('videos/homepage_software_engineering.mp4') ?>"
+                    type="video/mp4">
             </video>
-            <div class="text-white relative p-10 flex flex-col justify-between h-full">
-                <h2 class="text-2xl font-bold mb-4 mt-4">Software Engineering</h2>
-                <p>
+            <div class="text-white relative p-10 flex flex-col justify-start h-full">
+                <h2 class="text-2xl font-[500] mb-4 mt-4">Software Engineering</h2>
+                <p class="font-[200] lg:mt-[250px]">
                     Boost your business with tailored software solutions that drive growth.
                 </p>
             </div>
@@ -122,10 +107,12 @@ get_template_part('template-parts/content/info-section-with-image', null, array(
 <!-- Join the Digital Revolution -->
 <div class="relative">
     <div class="absolute top-1/2 left-0 max-h-[450px] -translate-y-1/2">
-        <img class="h-[200px] lg:h-[450px]" src="<?php echo get_assets_from_path('images/why_datum_bg.png') ?>" alt="{$title}">
+        <img class="h-[200px] lg:h-[450px]" src="<?php echo get_assets_from_path('images/why_datum_bg.png') ?>"
+            alt="{$title}">
     </div>
     <div class="absolute top-1/2 right-0 max-h-[450px] -translate-y-1/2 rotate-180">
-        <img class="h-[200px] lg:h-[450px]" src="<?php echo get_assets_from_path('images/why_datum_bg.png') ?>" alt="{$title}">
+        <img class="h-[200px] lg:h-[450px]" src="<?php echo get_assets_from_path('images/why_datum_bg.png') ?>"
+            alt="{$title}">
     </div>
     <div class="container py-[100px] lg:py-[100px] mx-auto px-4 xl:px-0">
         <div class="text-center">
@@ -134,7 +121,8 @@ get_template_part('template-parts/content/info-section-with-image', null, array(
             </h1>
 
             <p class="text-[20px] sm:text-[16px] font-Regular mb-12 leading-normal lg:max-w-3xl mx-auto text-center">
-                Future-proof your business with Datum. Let's build smarter, faster, and more powerful digital solutions together.
+                Future-proof your business with Datum. Let's build smarter, faster, and more powerful digital solutions
+                together.
             </p>
 
             <button class="btn hover:bg-[#0DC0E2] lg:text-[16px] text-[14px] font-bold transition-colors">
