@@ -17,5 +17,5 @@ body {
 }
 
 .container {
-    @apply px-5 lg:px-0
+    @apply px-10 lg:px-16
 }
