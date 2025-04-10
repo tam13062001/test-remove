@@ -7,19 +7,20 @@
                 Our Story
             </h2>
 
-            <p class="leading-relaxed text-Regular text-base sm:text-lg lg:text-[20px] mb-4 lg:mb-6 ml-0 sm:ml-8 lg:ml-20">
+            <p class="lg:leading-10 text-Regular text-base sm:text-lg lg:text-[20px] mb-4 lg:mb-6 ml-0 sm:ml-8 lg:ml-20">
                 Founded in 2017, Datum Consulting is an engineering and <br class="hidden sm:block"/>
                 digital transformation consultancy based in Auckland, New <br class="hidden sm:block"/>
                 Zealand. We've partnered with businesses of all sizes—from <br class="hidden sm:block"/>
                 ambitious startups to one of Australia's Big Four banks—to <br class="hidden sm:block"/>
                 deliver high-quality software and drive digital transformation.
             </p>
+
             
-            <a href="#" class="text-primary text-base sm:text-lg lg:text-[20px] inline-flex items-center mt-8 sm:mt-12 lg:mt-20 ml-0 sm:ml-8 lg:ml-20">
+            <a href="#" class="text-primary text-base sm:text-lg lg:text-[20px] inline-flex items-center mt-8 sm:mt-12 lg:mt-8 ml-0 sm:ml-8 lg:ml-20">
                 About Datum
-                <span class="ml-2">
-                    <i class="fas fa-arrow-right"></i>
-                </span>
+                <span class="ml-1">
+                            <i class="fas fa-chevron-right"></i>
+                        </span>
             </a>
         </div>
     </div>

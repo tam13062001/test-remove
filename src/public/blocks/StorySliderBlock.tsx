@@ -24,7 +24,7 @@ export default function StorySliderBlock(props: BaseProps<CardSliderProps>) {
 
   return (
     <div className={'relative'}>
-      <div className={'absolute top-[180px] lg:top-[600px] z-10 shadow-md left-1/2 lg:left-1/3 -translate-x-1/2'}>
+      <div className={'lg:w-[11%] absolute top-[180px] lg:top-[500px] z-10 shadow-md left-1/2 lg:left-1/3 -translate-x-1/2'}>
         <div
           className="flex items-center justify-center gap-2 lg:gap-4 bg-white px-2 lg:px-6 py-2 lg:py-4 rounded-full">
           <div className="story-prev cursor-pointer">
@@ -33,7 +33,7 @@ export default function StorySliderBlock(props: BaseProps<CardSliderProps>) {
               <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/>
             </svg>
           </div>
-          <div className="story-pagination flex items-center gap-1 lg:gap-2"></div>
+          <div className="story-pagination flex items-center justify-center gap-1 lg:gap-2"></div>
           <div className="story-next cursor-pointer">
             <svg className="w-5 h-5 text-blue-600 hover:text-blue-800" fill="none" stroke="currentColor" stroke-width="2"
                  viewBox="0 0 24 24">
@@ -66,12 +66,12 @@ export default function StorySliderBlock(props: BaseProps<CardSliderProps>) {
                   />
                 </div>
                 <div
-                  className={'px-5 lg:px-0 lg:absolute w-full lg:w-1/2 bg-white lg:right-0  lg:top-1/2 lg:-translate-y-1/2'}>
+                  className={'px-5 lg:px-0 lg:absolute w-full lg:w-1/2 bg-white lg:right-14  lg:top-1/2 lg:-translate-y-1/2'}>
                   <div className={'px-5 lg:px-[116px] shadow-xl py-5 lg:py-[70px]'}>
                     <h2 className="lg:text-[36px] text-[20px] text-primary mb-[10px] lg:mb-8">
                       {item.title}
                     </h2>
-                    <p className="lg:text-[20px] text-[16px] mb-[10px] lg:mb-8">
+                    <p className="lg:text-[20px] text-[16px] mb-[10px] lg:mb-8 font-regular">
                       {item.description}
                     </p>
                     <a
