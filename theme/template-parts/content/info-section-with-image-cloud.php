@@ -17,7 +17,7 @@ $image_url = $args['image_url'] ?? '';
             <?php foreach($items as $item): ?>
             <div class="mb-10">
                 <?php if(!empty($item['title'])) {?>
-                    <div class="text-primary lg:text-[24px] text-[20px] font-bold font-[700] mb-5 mt-4">
+                    <div class="text-primary lg:text-[24px] text-[20px] font-bold mb-5 mt-4">
                         <?php echo $item['title'] ?>
                     </div>
                 <?php } ?>
