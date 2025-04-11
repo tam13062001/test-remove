@@ -1,4 +1,4 @@
-<div class="items-center space-x-5 font-bold hidden lg:flex">
+<!-- <div class="items-center space-x-5 font-bold hidden lg:flex">
     <div class="border-b-2 border-white">
         Get in touch
     </div>
@@ -11,4 +11,4 @@
             <path d="M4 5L0.535899 0.499999L7.4641 0.5L4 5Z" fill="white"/>
         </svg>
     </div>
-</div>
+</div> -->

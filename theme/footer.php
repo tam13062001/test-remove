@@ -1,7 +1,7 @@
     <div class="py-[60px] lg:py-[122px] border-t border-primary w-full lg:mt-[150px]">
         <div class="container mx-auto lg:px-4 lg:px-0">
             <div class="flex flex-col lg:flex-row lg:mb-[100px] space-y-9 lg:space-y-0">
-                <div class="container lg:w-1/5 ">
+                <div class="lg:container lg:w-1/5 ">
                     <img class="w-[142px]" alt="" src="<?php echo get_stylesheet_directory_uri().'/assets/images/logo.png' ?>" />
                 </div>
                 <div class="w-full lg:w-2/5 space-y-6">
@@ -10,9 +10,9 @@
                         <div class="font-[700] text-[16px]">Successful stories</div>
                         <div class="font-[700] text-[16px]">Our solutions</div>
                         <div class="font-[700] text-[16px]">About us</div>
-                        <div class="font-[700] text-[16px]">Industry</div>
+                        <!-- <div class="font-[700] text-[16px]">Industry</div>
                         <div class="font-[700] text-[16px]">Career</div>
-                        <div class="font-[700] text-[16px]">Insights</div>
+                        <div class="font-[700] text-[16px]">Insights</div> -->
                     </div>
 
                 </div>

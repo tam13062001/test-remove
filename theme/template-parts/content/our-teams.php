@@ -7,7 +7,7 @@ $summembers = $args['summembers'] ?? array();
 <div class="container mb-[92px]">
 
     <h2
-        class="text-[32px] lg:text-[40px] font-bold text-black lg:ml-[155px] mt-[60px] lg:mt-[139px] mb-[40px] lg:mb-[131px]">
+        class="text-[32px] lg:text-[40px] font-bold text-black lg:ml-[114px] mt-[60px] lg:mt-[139px] mb-[40px] lg:mb-[131px]">
         <?php echo $title ?>
     </h2>
 

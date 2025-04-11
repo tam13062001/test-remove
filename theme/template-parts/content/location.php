@@ -4,8 +4,7 @@ $content = $args['content'] ?? 'Default Content';
 $image_url = $args['image_url'] ?? '';
 $bg_image_url = $args['bg_image_url'] ?? '';
 ?>
-<div class=" container">
-    
+<div class=" container lg:ml-9">    
     <h1 class=" text-2xl md:text-3xl pt-[50px] lg:py-[100px] lg:text-[40px] font-bold mb-6 lg:mb-0 px-4 lg:px-0">
         Locations
     </h1>
@@ -70,7 +69,7 @@ $bg_image_url = $args['bg_image_url'] ?? '';
                             <h2 class="text-lg md:text-xl lg:text-[24px] font-bold text-primary  ml-4 lg:ml-12">
                                 Australia
                             </h2>
-                            <i :class="showA ? 'fa-solid fa-minus' : 'fa-regular fa-plus'" class="mt-4 lg:mt-7 text-[#3DA7F2] mr-4 lg:mr-12"></i>
+                            <i :class="showA ? 'fa-solid fa-minus' : 'fa-regular fa-plus'" class="mt-4 lg:mt-2 text-[#3DA7F2] mr-4 lg:mr-12"></i>
                         </div>
 
                         <div class="space-y-4 lg:space-y-6" x-show="showA" x-transition>
@@ -88,7 +87,7 @@ $bg_image_url = $args['bg_image_url'] ?? '';
                                 <h2 class="text-lg md:text-xl lg:text-[24px] font-bold text-primary  ml-4 lg:ml-12">
                                     VietNam
                                 </h2>
-                                <i :class="showVN ? 'fa-solid fa-minus' : 'fa-regular fa-plus'" class="mt-4 lg:mt-7 text-[#3DA7F2] mr-4 lg:mr-12"></i>
+                                <i :class="showVN ? 'fa-solid fa-minus' : 'fa-regular fa-plus'" class="mt-4 lg:mt-2 text-[#3DA7F2] mr-4 lg:mr-12"></i>
                             </div>
 
                             <div class="space-y-4 lg:space-y-6" x-show="showVN" x-transition>
@@ -105,7 +104,7 @@ $bg_image_url = $args['bg_image_url'] ?? '';
                                     <h2 class="text-lg md:text-xl lg:text-[24px] font-bold text-primary  ml-4 lg:ml-12">
                                         Philippines
                                     </h2>
-                                    <i :class="showP ? 'fa-solid fa-minus' : 'fa-regular fa-plus'" class="mt-4 lg:mt-7 text-[#3DA7F2] mr-4 lg:mr-12"></i>
+                                    <i :class="showP ? 'fa-solid fa-minus' : 'fa-regular fa-plus'" class="mt-4 lg:mt-2 text-[#3DA7F2] mr-4 lg:mr-12"></i>
                                 </div>
 
                                 <div class="space-y-4 lg:space-y-6" x-show="showP" x-transition>
