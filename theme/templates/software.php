@@ -4,7 +4,7 @@
 <?php get_template_part('template-parts/content/banner', null, array(
     'title' => 'Pioneering software engineering for Future-Ready Enterprises',
     'breadcrumbs' => array('Our Services', 'Software'),
-    'background_image' => get_assets_from_path('videos/homepage_software_engineering.mp4'),
+    'background_image' => get_assets_from_path('videos/software_banner_video.mp4'),
     'type' => 'video'
 )); ?>
 
