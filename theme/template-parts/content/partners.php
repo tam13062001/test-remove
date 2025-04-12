@@ -19,7 +19,7 @@ $bg_image_url = $args['bg_image_url'] ?? '';
                 </div>
             </div>
             <div class="py-10 lg:py-0 lg:w-1/2 lg:mb-20 ">
-                <img class="inline-block w-[200px] h-[200px] lg:w-[450px] lg:h-[450px] sm:ml-8 " src="<?php echo get_assets_from_path('images/aws-partner.png') ?>" alt="" />
+                <img class="inline-block w-[200px] h-[200px] lg:w-[450px] lg:h-[450px] sm:ml-8 " src="<?php echo get_assets_from_path('images/aws-partner1.png') ?>" alt="" />
             </div>
         </div>
     </div>

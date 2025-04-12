@@ -1,7 +1,10 @@
 <?php /* Template Name: Terms of use Template */ ?>
 <?php get_header(); ?>
 
-
+<?php get_template_part('template-parts/content/banner', null, array(
+    'title' => '',
+    'background_image' => get_assets_from_path('images/contact_datum.jpg')
+)); ?>
 
 <div class="container lg:pt-[200px] leading-[170%]">
     <h3 class="lg:text-[40px] font-bold">Terms of Use</h3>

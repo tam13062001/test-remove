@@ -45,8 +45,8 @@
                 <div class="flex flex-row lg:justify-start  py-0  box-border max-w-full">
                     <div class="lg:space-x-[50px] text-[16px] lg:flex">
                         <div class="space-x-[50px] mb-9 lg:mb-0">
-                            <a href="<?php echo get_permalink(100); ?>">Term of use</a>
-                            <a href="<?php echo get_permalink(103); ?>">Privacy statement</a>
+                            <a href="/term-of-use/">Term of use</a>
+                            <a href="/privacy/">Privacy statement</a>
                         </div>
                         <a href="#">Copyright © 2025 by Datum</a>
                     </div>

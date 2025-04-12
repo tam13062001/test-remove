@@ -6,11 +6,11 @@ $image_url = $args['image_url'] ?? '';
 ?>
 
 <div class="container">
-    <h1 class="text-[36px] lg:pt-[100px] mb-6 lg:w-7/12">
+    <h1 class="w-[100%] text-[20px] pt-[50px] lg:text-[36px] lg:pt-[100px] mb-6 lg:w-7/12">
         <?php echo $title ?>
     </h1>
 
-    <form class="relative pt-[60px] lg:pt-[100px] "action="?page_id=76" method="POST">
+    <form class="relative pt-[60px] lg:pt-[100px] "action="/contact-success/" method="POST">
         <div class="flex flex-col lg:flex-row w-full">
             <!-- FORM -->
             <!-- todo move form to src, to handle script on frontend -->
