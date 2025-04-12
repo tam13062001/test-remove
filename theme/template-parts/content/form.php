@@ -51,7 +51,7 @@ $image_url = $args['image_url'] ?? '';
             <button type="submit">
                 Submit
             </button>
-            <div class="text-xs text-center font-bold flex-1">Please complete this form and a member of our team will be in touch.</div>
+            <div class="text-[14px] text-center font-bold flex-1">Please complete this form and a member of our team will be in touch.</div>
         </div>
     </form>
 
