@@ -11,7 +11,7 @@ $items = $args['items'] ?? array();
         <div class="[&>:not(:last-child)]:border-b">
             <?php foreach($items as $item): ?>
             <div class="border-primary py-6 lg:py-[50px] flex flex-col lg:flex-row lg:space-x-5">
-                <div class="text-primary lg:w-2/5 text-[20px] lg:text-[36px] flex justify-between items-center">
+                <div class="text-primary lg:w-2/5 text-[20px] lg:text-[36px] flex justify-between ">
                     <div>
                         <?php echo $item['title']; ?>
                     </div>
@@ -22,7 +22,7 @@ $items = $args['items'] ?? array();
                         </svg>
                     </div>
                 </div>
-                <div class="lg:w-3/5 mt-3 lg:mt-0">
+                <div class="lg:w-3/5 mt-3 ">
                     <?php echo $item['content']; ?>
                 </div>
             </div>
