@@ -1,5 +1,5 @@
     <div class="py-[60px] lg:py-[122px] border-t border-primary w-full lg:mt-[150px]">
-        <div class="container mx-auto lg:px-4 lg:px-0">
+        <div class="container">
             <div class="flex flex-col lg:flex-row lg:mb-[100px] space-y-9 lg:space-y-0">
                 <div class="lg:container lg:w-1/5 ">
                     <img class="w-[142px]" alt="" src="<?php echo get_stylesheet_directory_uri().'/assets/images/logo.png' ?>" />
@@ -40,7 +40,7 @@
                 </div>
             </div>
 
-            <div class="flex flex-col lg:flex-row mb-[100px] space-y-9 lg:space-y-0">
+            <div class="flex flex-col lg:flex-row lg:mb-[100px] space-y-9 lg:space-y-0">
                 <div class="w-1/5"> </div>
                 <div class="flex flex-row lg:justify-start  py-0  box-border max-w-full">
                     <div class="lg:space-x-[50px] text-[16px] lg:flex">

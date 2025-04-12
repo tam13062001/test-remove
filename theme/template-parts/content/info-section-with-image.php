@@ -4,10 +4,10 @@ $items = $args['items'] ?? array();
 $image_url = $args['image_url'] ?? '';
 ?>
 
-<div class="relative lg:mb-20 overflow-hidden">
+<div class="relative overflow-hidden">
     <div class="container relative">
         <div class="z-10 relative">
-            <div class="w-full lg:w-3/5 lg:pr-4">
+            <div class="w-full lg:w-3/5">
                 <h2 class="text-[40px] font-bold mb-6 lg:mb-10">
                     <?php echo $title ?>
                 </h2>
@@ -32,7 +32,7 @@ $image_url = $args['image_url'] ?? '';
 
     <div class="lg:w-3/5 lg:absolute right-0 top-0 lg:h-[825px] ml-5 w-full overflow-hidden">
         <div class="flex items-end h-full relative">
-            <div class="hidden lg:block absolute bottom-0  w-1/6 bg-white h-[80%]"></div>
+<!--            <div class="hidden lg:block absolute bottom-0  w-1/6 bg-white h-[80%]"></div>-->
             <img class="object-cover h-auto w-full" src="<?php echo $image_url?>" alt="" />
         </div>
     </div>
