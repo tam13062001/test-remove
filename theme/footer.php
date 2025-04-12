@@ -1,4 +1,4 @@
-    <div class="py-[60px] lg:py-[122px] border-t border-primary w-full lg:mt-[150px]">
+    <div class="py-[60px] lg:py-[122px] border-t border-primary w-full">
         <div class="container">
             <div class="flex flex-col lg:flex-row lg:mb-[100px] space-y-9 lg:space-y-0">
                 <div class="lg:container lg:w-1/5 ">

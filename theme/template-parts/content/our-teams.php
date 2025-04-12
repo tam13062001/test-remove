@@ -4,12 +4,9 @@ $members = $args['members'] ?? array();
 $summembers = $args['summembers'] ?? array();
 ?>
 
-<div class="container mb-[92px]">
+<div class="container py-[92px]">
 
-    <h2
-        class="text-[32px] lg:text-[40px] font-bold text-black lg:ml-[114px] mt-[60px] lg:mt-[139px] mb-[40px] lg:mb-[131px]">
-        <?php echo $title ?>
-    </h2>
+    <h2 class="text-[32px] lg:text-[40px] font-bold mb-[53px]"><?php echo $title; ?></h2>
 
     <!-- Team Grid -->
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
@@ -52,19 +49,17 @@ $summembers = $args['summembers'] ?? array();
 
     <!-- 2 Grid -->
     <div class="lg:container">
-        <div class="grid grid-cols-2 mt-[40px] lg:mt-[92px] lg:pl-[114px] gap-6 lg:gap-0">
+        <div class="grid grid-cols-2 mt-[40px] lg:mt-[92px] gap-6 lg:gap-0">
 
             <?php foreach($summembers as $member): ?>
             <!-- Column 1 -->
-            <div class="lg:max-w-[326px] text-left">
+            <div class="text-left">
 
                 <p class="text-[48px] lg:text-[64px] font-normal text-black pb-3">
                     <?php echo $member['number']?>
                 </p>
                 <p class="text-[16px] lg:text-xl leading-[170%] font-normal tracking-tighter">
                     <?php echo $member['description']?>
-                </p>
-                </p>
                 </p>
             </div>
             <?php endforeach; ?>

@@ -159,7 +159,7 @@ get_template_part('template-parts/content/our-teams', null, array(
         ),
         array(
             'number' => '120+',
-            'description' => 'Cloud, AI, DevOps, and Software Engineering Specialists',
+            'description' => 'Cloud, AI, DevOps, and Software<br />Engineering Specialists',
         )
     )
 )) ;
