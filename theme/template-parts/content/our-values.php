@@ -31,25 +31,25 @@ $image_url = $args['image_url'] ?? '';
                     <i :class="showA ? 'fa-solid fa-minus' : 'fa-regular fa-plus'"
                         class="mt-2 lg:mt-[2px] text-[#3DA7F2]"></i>
                 </div>
-    
-            <!-- Nội dung chi tiết (ẩn/hiện) -->
-            <div class="space-y-4 lg:space-y-6" x-show="showA" x-transition>
-                <div>
-                    <?php if (isset($item['content_heading'])): ?>
-                    <h3 class="text-lg md:text-xl lg:text-[24px] font-semibold mt-2 lg:mt-4">
-                        <?php echo $item['content_heading']; ?>
-                    </h3>
-                    <?php endif; ?>
-                    <p class="text-gray-800 text-base md:text-lg lg:text-[20px] font-mixed ">
-                        <?php echo $item['content_text']; ?>
-                    </p>
+                
+                <!-- Nội dung chi tiết (ẩn/hiện) -->
+                <div class="space-y-4 lg:space-y-6" x-show="showA" x-transition>
+                    <div>
+                        <?php if (isset($item['content_heading'])): ?>
+                        <h3 class="text-lg md:text-xl lg:text-[24px] font-semibold mt-2 lg:mt-4">
+                            <?php echo $item['content_heading']; ?>
+                        </h3>
+                        <?php endif; ?>
+                        <p class="text-gray-800 text-base md:text-lg lg:text-[20px] font-mixed ">
+                            <?php echo $item['content_text']; ?>
+                        </p>
+                    </div>
                 </div>
-            </div>
 
-    <?php if ($index !== array_key_last($items)): ?>
-    <div class="border-b border-[#FFFFFF] mt-6"></div>
-    <?php endif; ?>
-<?php endforeach; ?>
+                <?php if ($index !== array_key_last($items)): ?>
+                <div class="border-b border-[#FFFFFF] mt-6"></div>
+                <?php endif; ?>
+            <?php endforeach; ?>
 
             </div>
         </div>

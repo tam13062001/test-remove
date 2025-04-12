@@ -2,14 +2,6 @@
 
 <?php get_header(); ?>
 
-<!-- <div class="h-[603px] relative">
-    <img class="object-cover h-full w-full"
-        src="<?php echo get_stylesheet_directory_uri() . '/assets/images/datum-about-slide.jpg'  ?>" />
-    <div class="absolute top-1/2 -translate-y-1/2 z-10 font-[700] text-white text-[40px] leading-[120%]">
-        <div>About Datum</div>
-    </div>
-</div> -->
-
 <?php get_template_part('template-parts/content/banner', null, array(
     'title' => 'About Datum',
     'background_image' => get_assets_from_path('images/datum-about-slide.jpg')

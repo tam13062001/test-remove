@@ -1,7 +1,10 @@
 <?php /* Template Name: Contract success Template */ ?>
 <?php get_header(); ?>
 
-
+<?php get_template_part('template-parts/content/banner', null, array(
+    'title' => '',
+    'background_image' => get_assets_from_path('images/contact_datum.jpg')
+)); ?>
 
 <?php
 get_template_part('template-parts/content/thanks', null, array(
