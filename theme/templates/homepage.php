@@ -37,7 +37,7 @@ get_template_part('template-parts/content/call-to-action', null, array(
                 array(
                     'title' => 'Software Engineering',
                     'content' => 'Boost your business with tailored software solutions that drive growth.',
-                    'media_url' => get_assets_from_path('videos/software_banner_video.mp4'),
+                    'media_url' => get_assets_from_path('videos/homepage_software_engineering.mp4'),
                     'media_type' => 'video',
                 )
             ) ?>

@@ -15,27 +15,25 @@ $type = $args['type'] ?? 'image';
     <?php endif; ?>
 
     <div class="container relative flex items-center h-full">
-        <div class="">
-            <div class="font-[700] text-white">
-                <?php if (!empty($breadcrumbs) && sizeof($breadcrumbs) > 0): ?>
+        <div class="font-[700] text-white lg:w-1/2">
+            <?php if (!empty($breadcrumbs) && sizeof($breadcrumbs) > 0): ?>
                 <div class="flex text-[14px] items-center space-x-2 mb-5">
                     <?php foreach ($breadcrumbs as $index => $item): ?>
-                    <div>
-                        <?php echo $item ?>
-                    </div>
-                    <?php if ($index < sizeof($breadcrumbs) - 1): ?>
                         <div>
-                            <svg width="4" height="7" viewBox="0 0 4 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M4 3.5L0.25 6.53109L0.25 0.468911L4 3.5Z" fill="white"/>
-                            </svg>
+                            <?php echo $item ?>
                         </div>
-                    <?php endif; ?>
+                        <?php if ($index < sizeof($breadcrumbs) - 1): ?>
+                            <div>
+                                <svg width="4" height="7" viewBox="0 0 4 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4 3.5L0.25 6.53109L0.25 0.468911L4 3.5Z" fill="white"/>
+                                </svg>
+                            </div>
+                        <?php endif; ?>
                     <?php endforeach; ?>
                 </div>
-                <?php endif; ?>
-                <div class="text-[32px] lg:text-[40px] w-3/5">
-                    <?php echo $title; ?>
-                </div>
+            <?php endif; ?>
+            <div class="text-[32px] lg:text-[40px]">
+                <?php echo $title; ?>
             </div>
         </div>
     </div>

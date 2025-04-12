@@ -4,14 +4,14 @@
 <?php get_template_part('template-parts/content/banner', null, array(
     'title' => 'Empowering data-driven innovation with AI-powered intelligence',
     'background_image' => get_assets_from_path('videos/homepage_data_ai.mp4'),
-    'breadcrumbs' => array('Our Solution', 'Data & AI'),
+    'breadcrumbs' => array('Our Services', 'Data & AI'),
     'type' => 'video'
 )); ?>
 
 <?php
 get_template_part('template-parts/content/call-to-action', null, array(
     'content' => 'Transform raw data into actionable insights and intelligent automation—fueling smarter decisions, seamless operations, and sustainable growth ',
-    'image_url' => get_assets_from_path('images/cta_bg_1.png'),
+    'image_url' => get_assets_from_path('images/Layer_1.png'),
     'cta_text' => 'Schedule a consultation with our expert',
     'cta_link' => '#'
 ));
@@ -19,7 +19,7 @@ get_template_part('template-parts/content/call-to-action', null, array(
 
 <?php
 get_template_part('template-parts/content/percentage-column-info', null, array(
-    'title' => 'Cloud now',
+    'title' => 'Innovate with Data & AI',
     'items' => array(
         array(
             'percent' => '30%',
@@ -34,9 +34,9 @@ get_template_part('template-parts/content/percentage-column-info', null, array(
 ?>
 
 <?php
-get_template_part('template-parts/content/info-section-with-image', null, array(
-    'title' => 'Your Cloud, Reimagined',
-    'image_url' => get_assets_from_path('images/mainframe.png'),
+get_template_part('template-parts/content/info-section-with-image-cloud', null, array(
+    'title' => 'Your Data, Reimagined ',
+    'image_url' => get_assets_from_path('images/mainframe2.png'),
     'items' => array(
         array(
             'title' => '',
@@ -48,22 +48,19 @@ get_template_part('template-parts/content/info-section-with-image', null, array(
 <?php
 get_template_part('template-parts/content/info-section-with-image', null, array(
     'title' => 'Why Datum',
-    'image_url' => get_assets_from_path('images/green-rack.png'),
+    'image_url' => get_assets_from_path('images/sv-ai-whydatum.png'),
     'items' => array(
         array(
-            'title' => 'Strategic Alignment',
-            'content' => 'AI solutions built around your business needs, not just technical feasibility.
-Leverage data science and machine learning to drive tangible outcomes.',
+            'title' => 'Outcome-Driven Innovation ',
+            'content' => 'We start with your goals and craft tailored solutions that solve real business challenges. ',
         ),
         array(
-            'title' => 'End-to-End Expertise',
-            'content' => 'From data engineering to AI model deployment and ongoing optimization. <br />
-Industry-compliant solutions (GDPR, HIPAA, PCI DSS) tailored for your sector.',
+            'title' => 'Seamless Collaboration',
+            'content' => 'Open, honest, and frequent communication ensures transparency and alignment at every step. ',
         ),
         array(
-            'title' => 'ROI You Can Measure',
-            'content' => 'Optimize operations and reduce costs by up to 40% with AI-driven efficiencies. <br />
-Unlock new revenue streams with predictive analytics and intelligent automation.',
+            'title' => 'Trusted Expertise',
+            'content' => 'We deliver IT solutions right the first time, acting as a reliable partner invested in your success.',
         )
     ),
 ));
@@ -153,7 +150,7 @@ Our experts help design robust, scalable data architectures to support AI and an
 ?>
 <?php get_template_part('template-parts/content/team', null, array(
     'title' => 'Ready to Innovate with AI?',
-    'content' => 'Talk with our expert to start your cloud journey today',
+    'content' => 'Talk with our expert to start your data journey today',
     'btn_text' => 'Schedule a Free Strategy Session',
     'btn_link' => '#'
 )); ?>

@@ -22,8 +22,8 @@ $image_url = $args['image_url'] ?? '';
 
             <!-- Strategic Sections -->
             <div class="space-y-4 lg:space-y-6" x-data="{ showA: false }">
-                <?php foreach($items as $item): ?>
-                <div class="border-b border-[#FFFFFF] pb-4 lg:pb-6 flex justify-between cursor-pointer"
+            <?php foreach($items as $index => $item): ?>
+                <div class=" pb-4 lg:pb-6 flex justify-between cursor-pointer"
                     @click="showA = !showA">
                     <h2 class="text-lg md:text-xl lg:text-[24px] font-bold text-primary">
                         <?php echo $item['title']; ?>
@@ -31,7 +31,7 @@ $image_url = $args['image_url'] ?? '';
                     <i :class="showA ? 'fa-solid fa-minus' : 'fa-regular fa-plus'"
                         class="mt-2 lg:mt-[2px] text-[#3DA7F2]"></i>
                 </div>
-
+                
                 <!-- Nội dung chi tiết (ẩn/hiện) -->
                 <div class="space-y-4 lg:space-y-6" x-show="showA" x-transition>
                     <div>
@@ -45,7 +45,12 @@ $image_url = $args['image_url'] ?? '';
                         </p>
                     </div>
                 </div>
-                <?php endforeach; ?>
+
+                <?php if ($index !== array_key_last($items)): ?>
+                <div class="border-b border-[#FFFFFF] mt-6"></div>
+                <?php endif; ?>
+            <?php endforeach; ?>
+
             </div>
         </div>
     </div>

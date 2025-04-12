@@ -8,34 +8,41 @@
 )); ?>
 
 <!-- second section -->
-<div class="container pb-[146px]">
-    <div class="flex pt-[60px] lg:pt-[93px] lg:w-[723px]">
-        <div class="text-[24px] lg:text-[36px] font-normal lg:leading-[170%] text-black">
-            <div>
-                At Datum, we are more than just a technology consultancy—we are your strategic partner in digital
-                transformation.
+<div class=" pb-[146px]">
+    <div class="container">
+        <div class="flex pt-[60px] lg:pt-[93px] lg:w-[723px]">
+            <div class="text-[24px] lg:text-[36px] font-normal lg:leading-[170%] text-black">
+                <div>
+                    At Datum, we are more than just a technology consultancy—we are your strategic partner in digital
+                    transformation.
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="flex pt-6 lg:pt-[93px] lg:w-[785px]">
-        <div class="text-[16px] lg:text-[20px] font-normal leading-[170%] text-black tracking-[-0.2px]">
-            <div>
-                <p class="mb-8">
-                    We specialize in cloud engineering, data and AI, platform engineering, and software integration,
-                    helping
-                    businesses scale, optimize, and secure their technology landscape.
-                </p>
-                <p>
-                    With deep expertise across banking, finance, energy, consumer goods, and digital enterprises, we
-                    deliver
-                    tailored, high-impact solutions that drive efficiency, innovation, and competitive advantage.
-                </p>
+        <div class="flex pt-6 lg:pt-[93px] lg:w-[785px]">
+            <div class="text-[16px] lg:text-[20px] font-normal leading-[170%] text-black tracking-[-0.2px]">
+                <div>
+                    <p class="mb-8">
+                        We specialize in cloud engineering, data and AI, platform engineering, and software integration,
+                        helping
+                        businesses scale, optimize, and secure their technology landscape.
+                    </p>
+                    <p>
+                        With deep expertise across banking, finance, energy, consumer goods, and digital enterprises, we
+                        deliver
+                        tailored, high-impact solutions that drive efficiency, innovation, and competitive advantage.
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="flex pt-[60px] lg:pt-[126px] w-full">
+    </div>
+    
+
+    
+</div>
+
+    <div class="container flex pt-[60px] lg:pt-[126px] w-full">
         <div class="text-[32px] lg:text-[40px] font-[700] text-black tracking-[-0.4px]">
             <div>
                 We help businesses unlock the full<br>potential of their technology<br>investments through:
@@ -44,7 +51,7 @@
     </div>
 
     <?php
-    get_template_part('template-parts/content/info-section-list', null, array(
+    get_template_part('template-parts/content/info-section-list-about', null, array(
         'title' => '',
         'items' => array(
             array(
@@ -62,8 +69,7 @@
         ),
     )) ;
     ?>
-    <hr class="border-primary mt-[-100px]" />
-</div>
+    <div class=" mt-[-100px] pb-[146px]" ></div>
 
 <!-- We dont just -->
 <?php
@@ -107,15 +113,17 @@ get_template_part('template-parts/content/our-values', null, array(
         ),
         array(
             'title' => 'Speed with Precision',
-            'content_text' => '',
+            'content_text' => 'Time-to-value matters. Whether modernizing systems or deploying AI, we accelerate outcomes with surgical precision, minimizing risk while maximizing ROI.',
         ),
         array(
             'title' => 'Client Centric Approach',
-            'content_text' => '',
+            'content_text' => 'You’re the hero of your transformation story. We listen first, act second, and co-create solutions that align with your unique goals, culture, and challenges.
+',
         ),
         array(
             'title' => 'Global Mindset Local Expertise',
-            'content_text' => '',
+            'content_text' => 'Your local challenges meet our global perspective. We design solutions that respect regional nuances while harnessing best practices from industries worldwide.
+',
         )
        
     )

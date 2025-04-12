@@ -11,7 +11,7 @@
 <?php
 get_template_part('template-parts/content/call-to-action', null, array(
     'content' => 'Elevate your software from a functional tool to a strategic driver of efficiency, innovation, and growth.',
-    'image_url' => get_assets_from_path('images/cta_bg_2.png'),
+    'image_url' => get_assets_from_path('images/sv-s-bg.png'),
     'cta_text' => 'Schedule a consultation with our expert',
     'cta_link' => '#'
 ));
@@ -19,7 +19,7 @@ get_template_part('template-parts/content/call-to-action', null, array(
 
 <?php
 get_template_part('template-parts/content/percentage-column-info', null, array(
-    'title' => 'Cloud now',
+    'title' => 'Innovate with Software',
     'items' => array(
         array(
             'percent' => '40%',
@@ -34,8 +34,8 @@ get_template_part('template-parts/content/percentage-column-info', null, array(
 ?>
 
 <?php
-get_template_part('template-parts/content/info-section-with-image', null, array(
-    'title' => 'Your Cloud, Reinvented',
+get_template_part('template-parts/content/info-section-with-image-cloud', null, array(
+    'title' => 'Your Software, Reinvented',
     'image_url' => get_assets_from_path('images/img_7.png'),
     'items' => array(
         array(
@@ -144,7 +144,7 @@ get_template_part('template-parts/content/info-section-list', null, array(
 )); ?>
 <?php get_template_part('template-parts/content/team', null, array(
     'title' => 'Ready to Software?',
-    'content' => 'Talk with our expert to start your cloud journey today',
+    'content' => 'Talk with our expert to start your software journey today',
     'btn_text' => 'Schedule a Free Strategy Session',
     'btn_link' => '#'
 )); ?>

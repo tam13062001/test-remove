@@ -16,7 +16,23 @@ get_template_part('template-parts/content/call-to-action', null, array(
 ));
 ?>
 
-<?php get_template_part('template-parts/content/slide-building'); ?>
+<?php get_template_part('template-parts/content/slide-building', null, array(
+    'title' => 'Building from the ground up',
+    'data' => array(
+        array(
+            'title' => 'Connecting disparate systems for a cohesive infrastructure',
+            'image_url' => get_assets_from_path('images/slide-image-7.jpeg')
+        ),
+        array(
+            'title' => 'Automating workflows to reduce manual processes',
+            'image_url' => get_assets_from_path('images/slide-image-8.png')
+        ),
+        array(
+            'title' => 'Driving operational efficiency and customer engagement',
+            'image_url' => get_assets_from_path('images/slide-image-2.jpeg')
+        )
+    )
+)); ?>
 
 <?php
 get_template_part('template-parts/content/info-section-list', null, array(
@@ -77,7 +93,7 @@ get_template_part('template-parts/content/info-section-list', null, array(
 <?php
 get_template_part('template-parts/content/info-section-with-image', null, array(
     'title' => 'Why Datum',
-    'image_url' => get_assets_from_path('images/WhyDatum-Solution.png'),
+    'image_url' => get_assets_from_path('images/integration-whydatum.jpg'),
     'items' => array(
         array(
             'title' => ' Top-level experts',
@@ -125,6 +141,11 @@ get_template_part('template-parts/content/info-section-with-image', null, array(
     ),
 )); ?>
 <?php get_template_part('template-parts/content/Expert-insight'); ?>
-<?php get_template_part('template-parts/content/team'); ?>
+<?php get_template_part('template-parts/content/team', null, array(
+    'title' => 'Get consulted by our expert',
+    'content' => 'Talk with our expert to start building your platform',
+    'btn_text' => 'Schedule a consultation with our expert',
+    'btn_link' => '#'
+)); ?>
 
 <?php get_footer(); ?>

@@ -9,14 +9,30 @@
 
 <?php
 get_template_part('template-parts/content/call-to-action', null, array(
-    'content' => 'Empower your infrastructure with agility, scalability, security, and efficiency—boosting productivity while reducing overhead.',
-    'image_url' => get_assets_from_path('images/cta_bg_2.png'),
+    'content' => 'Leverage the power of technology to streamline operations, enhance customer experiences, and unlock new growth opportunities',
+    'image_url' => get_assets_from_path('images/solution-digital.png'),
     'cta_text' => 'Schedule a consultation with our expert',
     'cta_link' => '#'
 ));
 ?>
 
-<?php get_template_part('template-parts/content/slide-building'); ?>
+<?php get_template_part('template-parts/content/slide-building', null, array(
+    'title' => 'Building from the ground up',
+    'data' => array(
+        array(
+            'title' => 'Modernizing legacy systems for seamless integration',
+            'image_url' => get_assets_from_path('images/slide-digital1.jpg')
+        ),
+        array(
+            'title' => 'Enhancing business agility with digital innovation',
+            'image_url' => get_assets_from_path('images/slide-image-2.jpeg')
+        ),
+        array(
+            'title' => 'Driving operational efficiency and customer engagement ',
+            'image_url' => get_assets_from_path('images/slide-digital3.jpg')
+        )
+    )
+)); ?>
 
 <?php
 get_template_part('template-parts/content/info-section-list', null, array(
@@ -65,7 +81,7 @@ get_template_part('template-parts/content/info-section-list', null, array(
 <?php
 get_template_part('template-parts/content/info-section-with-image', null, array(
     'title' => 'Why Datum',
-    'image_url' => get_assets_from_path('images/WhyDatum-Solution.png'),
+    'image_url' => get_assets_from_path('images/digital-whydatum.png'),
     'items' => array(
         array(
             'title' => ' Top-level experts',
@@ -108,14 +124,6 @@ get_template_part('template-parts/content/info-section-with-image', null, array(
             'title' => 'How can automation optimize digital transformation efforts?',
             'content' => 'Automation reduces manual tasks, accelerates workflows, and minimizes human error. From robotic process automation (RPA) to AI-driven analytics, automation enhances scalability, speeds up digital adoption, and improves customer interactions.',
         ),
-        array(
-            'title' => 'What is digital transformation?',
-            'content' => 'Digital transformation is the integration of digital technologies into all areas of a business, improving processes, customer experiences, and operational efficiency. It enables organizations to stay competitive, agile, and data-driven in an evolving digital landscape.',
-        ),
-        array(
-            'title' => 'How can digital transformation improve business efficiency?',
-            'content' => 'By automating workflows, enhancing data accessibility, and enabling real-time insights, digital transformation helps businesses reduce costs, improve productivity, and streamline operations. It also fosters innovation and enhances decision-making through AI and analytics.',
-        )
     )
 )); ?>
 <?php get_template_part('template-parts/content/Expert-insight'); ?>

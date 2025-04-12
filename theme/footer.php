@@ -1,7 +1,7 @@
-    <div class="py-[60px] lg:py-[122px] border-t border-primary lg:mt-[60px]">
-        <div class="container mx-auto px-4 lg:px-0">
-            <div class="flex flex-col lg:flex-row mb-[100px] space-y-9 lg:space-y-0">
-                <div class="w-1/5">
+    <div class="py-[60px] lg:py-[122px] border-t border-primary w-full lg:mt-[150px]">
+        <div class="container mx-auto lg:px-4 lg:px-0">
+            <div class="flex flex-col lg:flex-row lg:mb-[100px] space-y-9 lg:space-y-0">
+                <div class="lg:container lg:w-1/5 ">
                     <img class="w-[142px]" alt="" src="<?php echo get_stylesheet_directory_uri().'/assets/images/logo.png' ?>" />
                 </div>
                 <div class="w-full lg:w-2/5 space-y-6">
@@ -10,9 +10,9 @@
                         <div class="font-[700] text-[16px]">Successful stories</div>
                         <div class="font-[700] text-[16px]">Our solutions</div>
                         <div class="font-[700] text-[16px]">About us</div>
-                        <div class="font-[700] text-[16px]">Industry</div>
+                        <!-- <div class="font-[700] text-[16px]">Industry</div>
                         <div class="font-[700] text-[16px]">Career</div>
-                        <div class="font-[700] text-[16px]">Insights</div>
+                        <div class="font-[700] text-[16px]">Insights</div> -->
                     </div>
 
                 </div>
@@ -26,7 +26,7 @@
                     </div>
                 </div>
                 <div class="w-1/5">
-                    <div class="flex space-x-4">
+                    <!-- <div class="flex space-x-4">
                         <a class="shrink-0" href="#">
                             <img class="w-9 h-9" src="<?php echo get_assets_from_path('icons/linkedin.png');?>" alt="" />
                         </a>
@@ -36,18 +36,23 @@
                         <a class="shrink-0" href="#">
                             <img class="w-9 h-9" src="<?php echo get_assets_from_path('icons/x.png');?>" alt="" />
                         </a>
+                    </div> -->
+                </div>
+            </div>
+
+            <div class="flex flex-col lg:flex-row mb-[100px] space-y-9 lg:space-y-0">
+                <div class="w-1/5"> </div>
+                <div class="flex flex-row lg:justify-start  py-0  box-border max-w-full">
+                    <div class="lg:space-x-[50px] text-[16px] lg:flex">
+                        <div class="space-x-[50px] mb-9 lg:mb-0">
+                            <a href="/term-of-use/">Term of use</a>
+                            <a href="/privacy/">Privacy statement</a>
+                        </div>
+                        <a href="#">Copyright © 2025 by Datum</a>
                     </div>
                 </div>
             </div>
-            <div class="flex flex-row lg:justify-center py-0 px-5 box-border max-w-full">
-                <div class="lg:space-x-[50px] text-[16px] lg:flex">
-                    <div class="space-x-[50px] mb-9 lg:mb-0">
-                        <a href="#">Term of use</a>
-                        <a href="#">Privacy statement</a>
-                    </div>
-                    <a href="#">Copyright © 2025 by Datum</a>
-                </div>
-            </div>
+            
         </div>
     </div>
 </div>
