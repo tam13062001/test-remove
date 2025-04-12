@@ -5,9 +5,9 @@ $cta_link  = $args['cta_link'] ?? '#';
 $cta_text = $args['cta_text'] ?? '';
 $image_url = $args['image_url'] ?? '';
 ?>
-<div class=" relative pt-[60px] lg:pt-[100px]">
+<div class="container relative pt-[60px] lg:pt-[100px]">
     <div class="lg:absolute w-full lg:top-[100px] relative z-10">
-        <div class="lg:ml-[100px] ">
+        <div class=" ">
             <div class="w-full lg:w-[55%]">
                 <div class="mb-12 lg:text-[36px] text-[24px] text-Regular ">
                     <?php echo $content ?>

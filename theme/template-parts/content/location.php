@@ -4,7 +4,7 @@ $content = $args['content'] ?? 'Default Content';
 $image_url = $args['image_url'] ?? '';
 $bg_image_url = $args['bg_image_url'] ?? '';
 ?>
-<div class=" container lg:ml-9">    
+<div class=" container ">    
     <h1 class=" text-2xl md:text-3xl pt-[50px] lg:py-[100px] lg:text-[40px] font-bold mb-6 lg:mb-0 px-4 lg:px-0">
         Locations
     </h1>
@@ -23,7 +23,7 @@ $bg_image_url = $args['bg_image_url'] ?? '';
         </div>
 
         <!-- Content Container -->
-        <div class="container relative lg:pt-[50px] lg:py-[100px] -mt-[20px] lg:ml-0 -ml-[20px] lg:ml-[100px] px-4 lg:px-0 mb-6 lg:pr-10">
+        <div class="container relative lg:pt-[50px] lg:py-[100px] -mt-[20px]  -ml-[20px] lg:ml-[160px] px-4 lg:px-0 mb-6 lg:pr-10">
             
             <div class="lg:w-3/5 w-full lg:h-[588px] h-auto">
                 <!-- Nhúng Alpine.js nếu chưa có -->
