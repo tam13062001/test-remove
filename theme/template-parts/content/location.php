@@ -16,7 +16,7 @@ $bg_image_url = $args['bg_image_url'] ?? '';
         </div>
 
         <!-- Desktop Image (Right Side) -->
-        <div class="hidden lg:block lg:w-3/5 lg:absolute right-0 top-0 h-[710px] w-[700px] overflow-hidden">
+        <div class="hidden lg:block lg:w-3/5 lg:absolute right-0 top-0 h-[710px] lg:w-[700px] overflow-hidden">
             <div class="flex lg:items-end h-full">
                 <img class="object-cover h-auto w-full" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/img_8.png' ?>" alt="" />
             </div>
@@ -44,18 +44,13 @@ $bg_image_url = $args['bg_image_url'] ?? '';
                         <div class="pt-3" x-show="showNZ" x-transition>
                             <div class="space-y-4 lg:space-y-6">
                                 <div>
-                                    <h3 class="text-lg md:text-xl lg:text-[24px] font-semibold ml-4 lg:ml-12 mt-2 lg:mt-4">Hamilton</h3>
+                                    <h3 class="text-lg md:text-xl lg:text-[24px] font-semibold ml-4 lg:ml-12 mt-2 lg:mt-4">Datum Limited</h3>
                                     <p class="text-gray-800 text-base md:text-lg lg:text-[20px] font-mixed ml-4 lg:ml-12">
-                                        The Meteor Theatre, 1 Victoria Street, Hamilton 3204
+                                    70 Symonds Street, 1010 Auckland, New Zealand
                                     </p>
                                 </div>
 
-                                <div>
-                                    <h3 class="text-lg md:text-xl lg:text-[24px] font-semibold ml-4 lg:ml-12">Auckland</h3>
-                                    <p class="text-gray-800 text-base md:text-lg lg:text-[20px] font-mixed ml-4 lg:ml-12">
-                                        70 Symonds Str, Auckland CBD, 1010
-                                    </p>
-                                </div>
+
                             </div>
 
 
@@ -69,14 +64,14 @@ $bg_image_url = $args['bg_image_url'] ?? '';
                             <h2 class="text-lg md:text-xl lg:text-[24px] font-bold text-primary  ml-4 lg:ml-12">
                                 Australia
                             </h2>
-                            <i :class="showA ? 'fa-solid fa-minus' : 'fa-regular fa-plus'" class="mt-4 lg:mt-2 text-[#3DA7F2] mr-4 lg:mr-12"></i>
+                            <i :class="showA ? 'fa-solid fa-minus' : 'fa-regular fa-plus'" class="mt-4 lg:mt-0 text-[#3DA7F2] mr-4 lg:mr-12"></i>
                         </div>
 
                         <div class="space-y-4 lg:space-y-6" x-show="showA" x-transition>
                             <div>
-
+                            <h3 class="text-lg md:text-xl lg:text-[24px] font-semibold ml-4 lg:ml-12 mt-2 lg:mt-4">Datum Consulting AU PTY LTD</h3>
                                 <p class="text-gray-800 text-base md:text-lg lg:text-[20px] font-mixed ml-4 lg:ml-12 ">
-                                    Turrbal Country Suite 5A, Level 5 232 Adelaide StreetBrisbane, QLD 4000
+                                Level 1, 8 Beulah Road, Norwood SA 5067 Adelaide, Australia
                                 </p>
                             </div>
                         </div>
@@ -87,14 +82,14 @@ $bg_image_url = $args['bg_image_url'] ?? '';
                                 <h2 class="text-lg md:text-xl lg:text-[24px] font-bold text-primary  ml-4 lg:ml-12">
                                     VietNam
                                 </h2>
-                                <i :class="showVN ? 'fa-solid fa-minus' : 'fa-regular fa-plus'" class="mt-4 lg:mt-2 text-[#3DA7F2] mr-4 lg:mr-12"></i>
+                                <i :class="showVN ? 'fa-solid fa-minus' : 'fa-regular fa-plus'" class="mt-4 lg:mt-0 text-[#3DA7F2] mr-4 lg:mr-12"></i>
                             </div>
 
                             <div class="space-y-4 lg:space-y-6" x-show="showVN" x-transition>
                                 <div>
-
+                                <h3 class="text-lg md:text-xl lg:text-[24px] font-semibold ml-4 lg:ml-12 mt-2 lg:mt-4">Datum Consulting VN Company LTD</h3>
                                     <p class="text-gray-800 text-base md:text-lg lg:text-[20px] font-mixed ml-4 lg:ml-12 ">
-                                        64, 12 Street Sala, District 2, Thu Duc City
+                                    52-54-56 E. B2, Sala Residential Area, District 2 (now Thu Duc), Ho Chi Minh City 700000, Vietnam
                                     </p>
                                 </div>
                             </div>
@@ -104,14 +99,15 @@ $bg_image_url = $args['bg_image_url'] ?? '';
                                     <h2 class="text-lg md:text-xl lg:text-[24px] font-bold text-primary  ml-4 lg:ml-12">
                                         Philippines
                                     </h2>
-                                    <i :class="showP ? 'fa-solid fa-minus' : 'fa-regular fa-plus'" class="mt-4 lg:mt-2 text-[#3DA7F2] mr-4 lg:mr-12"></i>
+                                    <i :class="showP ? 'fa-solid fa-minus' : 'fa-regular fa-plus'" class="mt-4 lg:mt-0 text-[#3DA7F2] mr-4 lg:mr-12"></i>
                                 </div>
 
                                 <div class="space-y-4 lg:space-y-6" x-show="showP" x-transition>
                                     <div>
-
+                                    <h3 class="text-lg md:text-xl lg:text-[24px] font-semibold ml-4 lg:ml-12 mt-2 lg:mt-4">Datum Consulting Philippines, Inc.
+                                    </h3>
                                         <p class="text-gray-800 text-base md:text-lg lg:text-[20px] font-mixed ml-4 lg:ml-12 ">
-                                            Upcoming
+                                        7th Floor, Unit B, Center, 8 Rockwell Dr, Makati, 1209 Metro Manila, Philippines
                                         </p>
                                     </div>
                                 </div>

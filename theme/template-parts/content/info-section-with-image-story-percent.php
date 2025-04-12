@@ -11,12 +11,12 @@ $image_url = $args['image_url'] ?? '';
         <h2 class="font-[700] text-[32px] lg:text-[40px] ">
             <?php echo $title ?>
         </h2>
-        <div class="lg:w-1/2 bg-white pt-6 lg:py-5 lg:pr-[100px]">
+        <div class="lg:w-3/5 bg-white pt-6 lg:py-5 lg:pr-[100px]">
             <div class="text-[16px] lg:text-xl font-normal leading-[170%]">
                 <?php echo $content; ?>
             </div>
 
-            <div class="container [&>:not(:last-child)]:border-b pt-6 lg:py-8 lg:pt-[20px] lg:pb-[80px]">
+            <div class=" [&>:not(:last-child)]:border-b pt-6 lg:py-8 lg:pt-[20px] lg:pb-[80px]">
 
                 <div class="border-primary lg:py-5 flex flex-col lg:flex-row lg:space-x-5"></div>
                 <div class="grid grid-cols-1 lg:grid-cols-2 lg:gap-6 border-y-1 border-primary">

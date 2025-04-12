@@ -3,7 +3,7 @@
 
 <?php get_template_part('template-parts/content/banner', null, array(
     'title' => 'Digital Transformation for a Premier Banking Client',
-    'background_image' => get_assets_from_path('images/success_story_bank.jpg'),
+    'background_image' => get_assets_from_path('images/success_story_bank.png'),
     'breadcrumbs' => array('Successful stories', 'Premier Banking'),
 )); ?>
 
