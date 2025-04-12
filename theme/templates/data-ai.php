@@ -46,24 +46,21 @@ get_template_part('template-parts/content/info-section-with-image-cloud', null, 
 )); ?>
 
 <?php
-get_template_part('template-parts/content/info-section-with-image-why-datum-test', null, array(
+get_template_part('template-parts/content/info-section-with-image', null, array(
     'title' => 'Why Datum',
     'image_url' => get_assets_from_path('images/sv-ai-whydatum.png'),
     'items' => array(
         array(
-            'title' => 'Strategic Alignment',
-            'content' => 'AI solutions built around your business needs, not just technical feasibility.
-Leverage data science and machine learning to drive tangible outcomes.',
+            'title' => 'Outcome-Driven Innovation ',
+            'content' => 'We start with your goals and craft tailored solutions that solve real business challenges. ',
         ),
         array(
-            'title' => 'End-to-End Expertise',
-            'content' => 'From data engineering to AI model deployment and ongoing optimization. <br />
-Industry-compliant solutions (GDPR, HIPAA, PCI DSS) tailored for your sector.',
+            'title' => 'Seamless Collaboration',
+            'content' => 'Open, honest, and frequent communication ensures transparency and alignment at every step. ',
         ),
         array(
-            'title' => 'ROI You Can Measure',
-            'content' => 'Optimize operations and reduce costs by up to 40% with AI-driven efficiencies. <br />
-Unlock new revenue streams with predictive analytics and intelligent automation.',
+            'title' => 'Trusted Expertise',
+            'content' => 'We deliver IT solutions right the first time, acting as a reliable partner invested in your success.',
         )
     ),
 ));

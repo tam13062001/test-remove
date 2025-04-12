@@ -1,21 +1,7 @@
 <?php /* Template Name: Homepage Template */ ?>
 <?php get_header(); ?>
 
-    <!-- Hero Section -->
-    <div class="h-[670px] w-full lg:h-[824px] relative">
-        <!-- Mobile: Fixed 390x670, Desktop: Cover full container -->
-        <img class="w-full h-full object-cover sm:object-cover"
-             src="<?php echo get_stylesheet_directory_uri() . '/assets/images/BG 1.jpg' ?>" alt="Hero Background" />
-        <div class="absolute inset-0 flex items-end lg:items-center z-10 pb-8 lg:pb-0">
-            <div class="container mx-auto">
-                <h1 class="font-bold text-white text-[32px] lg:text-[72px] lg:leading-[120%]">
-                    <div class="ml-0 sm:ml-0 md:ml-0 lg:ml-0">Pioneering</div>
-                    <div class="ml-8 sm:ml-12 md:ml-24 lg:ml-36">the Future of</div>
-                    <div class="ml-4 sm:ml-6 md:ml-8 lg:ml-12">Digital Innovation</div>
-                </h1>
-            </div>
-        </div>
-    </div>
+<?php get_template_part('template-parts/content/bannerHomePage') ?>
 
     <!-- About Section -->
 <?php
@@ -45,8 +31,8 @@ get_template_part('template-parts/content/call-to-action', null, array(
                 array(
                     'title' => 'Cloud Solutions',
                     'content' => 'Create a robust cloud ecosystem designed for your needs, optimizing security and efficiency.',
-                    'media_url' => get_assets_from_path('images/img_3.png'),
-                    'media_type' => 'image',
+                    'media_url' => get_assets_from_path('videos/cloud_banner_video.mp4'),
+                    'media_type' => 'video',
                 ),
                 array(
                     'title' => 'Software Engineering',
@@ -107,33 +93,7 @@ get_template_part('template-parts/content/info-section-with-image', null, array(
     <!-- Our Partners -->
 <?php get_template_part('template-parts/content/partners'); ?>
 
-    <!-- Join the Digital Revolution -->
-    <div class="relative">
-        <div class="absolute top-1/2 left-0 max-h-[450px] -translate-y-1/2">
-            <img class="h-[200px] lg:h-[450px]" src="<?php echo get_assets_from_path('images/why_datum_bg.png') ?>"
-                 alt="{$title}">
-        </div>
-        <div class="absolute top-1/2 right-0 max-h-[450px] -translate-y-1/2 rotate-180">
-            <img class="h-[200px] lg:h-[450px]" src="<?php echo get_assets_from_path('images/why_datum_bg.png') ?>"
-                 alt="{$title}">
-        </div>
-        <div class="container py-[100px] lg:py-[100px] mx-auto px-4 xl:px-0">
-            <div class="text-center">
-                <h1 class="sm:text-[32px] text-4xl font-bold text-primary mb-8 ">
-                    Join the Digital Revolution
-                </h1>
-
-                <p class="text-[20px] sm:text-[16px] font-Regular mb-12 leading-normal lg:max-w-3xl mx-auto text-center">
-                    Future-proof your business with Datum. Let's build smarter, faster, and more powerful digital solutions
-                    together.
-                </p>
-
-                <button class="btn hover:bg-[#0DC0E2] lg:text-[16px] text-[14px] font-bold transition-colors">
-                    Schedule a consultation with our expert
-                </button>
-            </div>
-        </div>
-    </div>
+<?php get_template_part('template-parts/content/Join-the-Digital-Revolution'); ?>
 
     <!-- Location -->
 <?php get_template_part('template-parts/content/location'); ?>

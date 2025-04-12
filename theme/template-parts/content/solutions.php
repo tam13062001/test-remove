@@ -2,7 +2,7 @@
     <!-- Background Image -->
     <div class="w-full absolute top-1/2 -translate-y-1/2">
         <img
-            class="w-full object-contain scale-110 sm:scale-150 lg:scale-90 lg:mt-[140px]"
+            class="w-full object-contain scale-110 sm:scale-150 lg:scale-90 lg:mt-[140px] "
             src="<?php echo get_assets_from_path('images/img_5.png') ?>"
         />
     </div>

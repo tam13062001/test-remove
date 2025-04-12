@@ -1,4 +1,4 @@
-<div class="container py-[60px] lg:py-[100px] mx-auto px-4 xl:px-0">
+<div class="container  py-[60px] lg:py-[100px] mx-auto ">
   <h2 class="text-2xl lg:text-4xl font-bold mb-8 lg:mb-12">
     Expert insights
   </h2>

@@ -20,8 +20,8 @@ get_template_part('template-parts/content/form', null, array(
 ?>
 
 
-
-<!-- Location -->
 <?php get_template_part('template-parts/content/location'); ?>
+
+
 
 <?php get_footer(); ?>

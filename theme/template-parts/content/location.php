@@ -4,11 +4,11 @@ $content = $args['content'] ?? 'Default Content';
 $image_url = $args['image_url'] ?? '';
 $bg_image_url = $args['bg_image_url'] ?? '';
 ?>
-<div>
-    <h1 class="lg:ml-[100px] text-2xl md:text-3xl pt-[50px] lg:py-[100px] lg:text-[40px] font-bold mb-6 lg:mb-0 px-4 lg:px-0">
+<div class=" container lg:ml-9">    
+    <h1 class=" text-2xl md:text-3xl pt-[50px] lg:py-[100px] lg:text-[40px] font-bold mb-6 lg:mb-0 px-4 lg:px-0">
         Locations
     </h1>
-
+</div>
     <div class="relative lg:min-h-[880px] mb-10 lg:mb-20">
         <!-- Mobile Image (Top) -->
         <div class="block lg:hidden lg:w-[370px]  ml-5  h-[280px] w-[370px] overflow-hidden">
@@ -16,15 +16,16 @@ $bg_image_url = $args['bg_image_url'] ?? '';
         </div>
 
         <!-- Desktop Image (Right Side) -->
-        <div class="hidden lg:block lg:w-[700px] lg:absolute right-0 top-0 h-[710px] w-[700px] overflow-hidden">
+        <div class="hidden lg:block lg:w-3/5 lg:absolute right-0 top-0 h-[710px] w-[700px] overflow-hidden">
             <div class="flex lg:items-end h-full">
                 <img class="object-cover h-auto w-full" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/img_8.png' ?>" alt="" />
             </div>
         </div>
 
         <!-- Content Container -->
-        <div class="container lg:pt-[50px] lg:py-[100px] -mt-[20px] -ml-[20px] z-10 relative px-4 lg:px-0 mb-6">
-            <div class="lg:w-[800px] w-full lg:h-[588px] h-auto">
+        <div class="container relative lg:pt-[50px] lg:py-[100px] -mt-[20px] lg:ml-0 -ml-[20px] lg:ml-[100px] px-4 lg:px-0 mb-6 lg:pr-10">
+            
+            <div class="lg:w-3/5 w-full lg:h-[588px] h-auto">
                 <!-- Nhúng Alpine.js nếu chưa có -->
                 <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
 
@@ -68,7 +69,7 @@ $bg_image_url = $args['bg_image_url'] ?? '';
                             <h2 class="text-lg md:text-xl lg:text-[24px] font-bold text-primary  ml-4 lg:ml-12">
                                 Australia
                             </h2>
-                            <i :class="showA ? 'fa-solid fa-minus' : 'fa-regular fa-plus'" class="mt-4 lg:mt-7 text-[#3DA7F2] mr-4 lg:mr-12"></i>
+                            <i :class="showA ? 'fa-solid fa-minus' : 'fa-regular fa-plus'" class="mt-4 lg:mt-2 text-[#3DA7F2] mr-4 lg:mr-12"></i>
                         </div>
 
                         <div class="space-y-4 lg:space-y-6" x-show="showA" x-transition>
@@ -86,7 +87,7 @@ $bg_image_url = $args['bg_image_url'] ?? '';
                                 <h2 class="text-lg md:text-xl lg:text-[24px] font-bold text-primary  ml-4 lg:ml-12">
                                     VietNam
                                 </h2>
-                                <i :class="showVN ? 'fa-solid fa-minus' : 'fa-regular fa-plus'" class="mt-4 lg:mt-7 text-[#3DA7F2] mr-4 lg:mr-12"></i>
+                                <i :class="showVN ? 'fa-solid fa-minus' : 'fa-regular fa-plus'" class="mt-4 lg:mt-2 text-[#3DA7F2] mr-4 lg:mr-12"></i>
                             </div>
 
                             <div class="space-y-4 lg:space-y-6" x-show="showVN" x-transition>
@@ -103,7 +104,7 @@ $bg_image_url = $args['bg_image_url'] ?? '';
                                     <h2 class="text-lg md:text-xl lg:text-[24px] font-bold text-primary  ml-4 lg:ml-12">
                                         Philippines
                                     </h2>
-                                    <i :class="showP ? 'fa-solid fa-minus' : 'fa-regular fa-plus'" class="mt-4 lg:mt-7 text-[#3DA7F2] mr-4 lg:mr-12"></i>
+                                    <i :class="showP ? 'fa-solid fa-minus' : 'fa-regular fa-plus'" class="mt-4 lg:mt-2 text-[#3DA7F2] mr-4 lg:mr-12"></i>
                                 </div>
 
                                 <div class="space-y-4 lg:space-y-6" x-show="showP" x-transition>
