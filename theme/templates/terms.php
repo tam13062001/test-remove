@@ -2,15 +2,15 @@
 <?php get_header(); ?>
 
 <?php get_template_part('template-parts/content/banner', null, array(
-    'title' => '',
+    'title' => 'Terms of Use',
     'background_image' => get_assets_from_path('images/contact_datum.jpg')
 )); ?>
 
-<div class="container lg:pt-[200px] leading-[170%]">
-    <h3 class="lg:text-[40px] font-bold">Terms of Use</h3>
+<div class="container lg:py-[100px] leading-[190%] pt-[40px] ">
+    
     <p class="lg:mt-[4px] font-regular lg:text-[16px] lg:mb-[50px]">Effective Date: 15-Apr-2025</p>
 
-    <a href="#" class="text-[#3DA7F2] font-bold text-[14px] lg:text-[16px] mt-[40px]">
+    <a href="/" class="text-[#3DA7F2] font-bold text-[14px] lg:text-[16px] mt-[40px]">
                     Back to Homepage
                     <span class="ml-1">
                             <i class="fas fa-chevron-right"></i>

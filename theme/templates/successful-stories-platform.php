@@ -22,9 +22,9 @@ get_template_part('template-parts/content/call-to-action-story', null, array(
 <?php
 get_template_part('template-parts/content/info-section-with-image-reverse', null, array(
     'title' => 'The Challenge',
-    'heading' => 'Modernizing banking infrastructure to enable secure, scalable, and efficient delivery of digital services',   
+    'heading' => 'Modernizing banking infrastructure to enable secure, scalable, and efficient delivery of digital services.',
     'image_url' => get_assets_from_path('images/man-prevents-servers-overload 1.jpg'),
-    'content_list' => array(
+    'items' => array(
         array(
             'content' => 'Full platform overhaul to power BBX with modern frontend, backend, and integrations.',
         ),
@@ -39,28 +39,28 @@ get_template_part('template-parts/content/info-section-with-image-reverse', null
 ?>
 
 <?php
-get_template_part('template-parts/content/info-section-with-image-story-percent', null, array(
+get_template_part('template-parts/content/info-section-with-image-reverse-lesson-r', null, array(
     'title' => 'The Solution: Datum’s EKS-Powered Platform',
     'heading' => 'Datum delivered a resilient, secure, and automated EKS platform tailored for enterprise microservices.',   
-    'content' => 'We used Istio for enhanced security, Terraform for automating infrastructure, and ArgoCD for smooth updates. The setup across multiple zones ensured high availability, while security tools helped maintain compliance. By using different node groups, they optimized costs and kept workloads separate for different teams. They also built in disaster recovery to boost resilience.',   
     'image_url' => get_assets_from_path('images/image 20.jpg'),
+    'content' => 'We used Istio for enhanced security, Terraform for automating infrastructure, and ArgoCD for smooth updates. The setup across multiple zones ensured high availability, while security tools helped maintain compliance. By using different node groups, they optimized costs and kept workloads separate for different teams. They also built in disaster recovery to boost resilience.'
 )) ;
 ?>
 
 
 <?php
-get_template_part('template-parts/content/info-section-with-image-reverse', null, array(
+get_template_part('template-parts/content/info-section-with-image-story-percent-l', null, array(
     'title' => 'A Meaningful Impact',
-    'heading' => 'A high-performing, secure platform that set the stage for ongoing innovation.',   
-    'content' => 'The new EKS platform helped the bank reach 99.9% uptime with automated CI/CD pipelines and smooth zero-downtime deployments. It supported the BBX initiative, enabling new microservices, frontend updates, and third-party integrations. Datum’s skills in design and implementation made it a key partner for ongoing modernization projects. This change boosted efficiency, improved security, and created a scalable base for future digital growth.',
+    'heading' => 'Datum delivered a resilient, secure, and automated EKS platform tailored for enterprise microservices.',   
+    'content' => 'The new EKS platform helped the bank reach 99.9% uptime with automated CI/CD pipelines and smooth zero-downtime deployments. It supported the BBX initiative, enabling new microservices, frontend updates, and third-party integrations. Datum’s skills in design and implementation made it a key partner for ongoing modernization projects. This change boosted efficiency, improved security, and created a scalable base for future digital growth.',   
     'image_url' => get_assets_from_path('images/man-prevents-servers-overload-2.jpg'),
     'percent' => '99.9%',
-    'percent_content' => 'Platform performance uptime '   
+    'percent_content' => 'Platform performance uptime '            
 )) ;
 ?>
 
 <?php get_template_part('template-parts/content/team', null, array(
-    'title' => 'Lay you foundation now',
+    'title' => 'Get consulted by our expert',
     'content' => 'Talk with our expert to start building your platform',
     'btn_text' => 'Schedule a consultation with our expert',
     'btn_link' => '#'

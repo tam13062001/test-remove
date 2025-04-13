@@ -10,7 +10,7 @@
     }
 
     button, .btn {
-        @apply px-5 py-2 lg:px-10 lg:py-[10px] text-white bg-gradient-to-r from-secondary to-primary text-[16px]
+        @apply text-center lg:px-5 py-2 lg:px-10 lg:py-[10px] text-white bg-gradient-to-r from-secondary to-primary text-[14px] lg:text-[16px]
         inline-block hover:brightness-110
     }
 }

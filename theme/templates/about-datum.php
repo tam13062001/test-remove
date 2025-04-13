@@ -8,7 +8,7 @@
 )); ?>
 
 <!-- second section -->
-<div class=" pb-[146px]">
+<div class=" ">
     <div class="container">
         <div class="flex pt-[60px] lg:pt-[93px] lg:w-[723px]">
             <div class="text-[24px] lg:text-[36px] font-normal lg:leading-[170%] text-black">
@@ -37,22 +37,13 @@
         </div>
 
     </div>
-    
-
-    
+     
 </div>
 
-    <div class="container flex pt-[60px] lg:pt-[126px] w-full">
-        <div class="text-[32px] lg:text-[40px] font-[700] text-black tracking-[-0.4px]">
-            <div>
-                We help businesses unlock the full<br>potential of their technology<br>investments through:
-            </div>
-        </div>
-    </div>
 
     <?php
     get_template_part('template-parts/content/info-section-list-about', null, array(
-        'title' => '',
+        'title' => 'We help businesses unlock the full<br>potential of their technology<br>investments through',
         'items' => array(
             array(
                 'title' => 'Data &amp; AI',

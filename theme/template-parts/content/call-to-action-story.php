@@ -17,7 +17,7 @@ $image_url = $args['image_url'] ?? '';
         <div class="text-[16px] lg:text-xl leading-[170%]">
             <?php echo $content ?>
         </div>
-        <a href="<?php echo $cta_link; ?>" class="btn font-bold text-[14px] mt-[40px] lg:mt-[88px]">
+        <a href="/contact/" class="btn font-bold text-[14px] mt-[40px] lg:mt-[88px]">
             <?php echo $cta_text; ?>
         </a>
     </div>

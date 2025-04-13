@@ -20,7 +20,7 @@
                     together.
                 </p>
 
-                <button class="btn hover:bg-[#0DC0E2] lg:text-[16px] text-[14px] font-bold transition-colors">
+                <button class=" hover:bg-[#0DC0E2] lg:px-6 px-4 font-bold transition-colors">
                     Schedule a consultation with our expert
                 </button>
             </div>

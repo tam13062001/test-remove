@@ -12,7 +12,7 @@ $items = $args['items'] ?? array();
 
             <?php foreach($items as $item): ?>
             <div class="py-6 lg:py-[50px] flex flex-col lg:flex-row lg:space-x-5">
-                <div class="text-primary lg:w-2/5 text-[20px] lg:text-[36px] flex justify-between items-center">
+                <div class="text-primary lg:w-2/5 text-[20px] lg:text-[36px] flex justify-between ">
                     
                     <div>
                         <?php echo $item['title']; ?>
