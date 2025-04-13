@@ -12,7 +12,7 @@ $image_url = $args['image_url'] ?? '';
                 <div class="mb-12 lg:text-[36px] text-[24px] text-Regular ">
                     <?php echo $content ?>
                 </div>
-                <a href="<?php echo $cta_link; ?>" class="text-[#3DA7F2] font-bold text-[14px] lg:text-[16px]">
+                <a href="/" class="text-[#3DA7F2] font-bold text-[14px] lg:text-[16px]">
                     <?php echo $cta_text; ?>
                     <span class="ml-1">
                             <i class="fas fa-chevron-right"></i>

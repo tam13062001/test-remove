@@ -27,7 +27,7 @@ $image_url = $args['image_url'] ?? '';
         </div>
     </div>
     
-    <div class="lg:w-3/5 lg:absolute right-0 top-[150px] lg:h-[550px] w-full  ml-5">
+    <div class="lg:w-1/2 lg:absolute right-0 top-[150px] lg:h-[550px] w-full  ml-5">
 
         <div class="flex items-end h-full relative">
         

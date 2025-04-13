@@ -2,21 +2,13 @@
 
 <?php get_header(); ?>
 
-<!-- <div class="h-[603px] relative">
-    <img class="object-cover h-full w-full"
-        src="<?php echo get_stylesheet_directory_uri() . '/assets/images/datum-about-slide.jpg'  ?>" />
-    <div class="absolute top-1/2 -translate-y-1/2 z-10 font-[700] text-white text-[40px] leading-[120%]">
-        <div>About Datum</div>
-    </div>
-</div> -->
-
 <?php get_template_part('template-parts/content/banner', null, array(
     'title' => 'About Datum',
     'background_image' => get_assets_from_path('images/datum-about-slide.jpg')
 )); ?>
 
 <!-- second section -->
-<div class=" pb-[146px]">
+<div class=" ">
     <div class="container">
         <div class="flex pt-[60px] lg:pt-[93px] lg:w-[723px]">
             <div class="text-[24px] lg:text-[36px] font-normal lg:leading-[170%] text-black">
@@ -45,22 +37,13 @@
         </div>
 
     </div>
-    
-
-    
+     
 </div>
 
-    <div class="container flex pt-[60px] lg:pt-[126px] w-full">
-        <div class="text-[32px] lg:text-[40px] font-[700] text-black tracking-[-0.4px]">
-            <div>
-                We help businesses unlock the full<br>potential of their technology<br>investments through:
-            </div>
-        </div>
-    </div>
 
     <?php
     get_template_part('template-parts/content/info-section-list-about', null, array(
-        'title' => '',
+        'title' => 'We help businesses unlock the full<br>potential of their technology<br>investments through',
         'items' => array(
             array(
                 'title' => 'Data &amp; AI',
@@ -167,7 +150,7 @@ get_template_part('template-parts/content/our-teams', null, array(
         ),
         array(
             'number' => '120+',
-            'description' => 'Cloud, AI, DevOps, and Software Engineering Specialists',
+            'description' => 'Cloud, AI, DevOps, and Software<br />Engineering Specialists',
         )
     )
 )) ;

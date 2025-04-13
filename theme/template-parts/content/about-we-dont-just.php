@@ -4,8 +4,10 @@ $items = $args['items'] ?? array();
 $image_url = $args['image_url'] ?? '';
 ?>
 
-<div class="relative w-screen text-white bg-gradient-to-r from-[#3DA7F2] to-[#315CD4]">
-    <img class="absolute top-0 object-cover h-full w-full overflow-hidden" src=" <?php echo $image_url  ?>" />
+<div class="relative text-white ">
+    <div class="absolute top-0 left-0 right-0 h-full w-full bg-app-gradient">
+        <img class="object-cover h-full w-full" src=" <?php echo $image_url  ?>" />
+    </div>
     <div class="container relative py-[60px] lg:pt-[142px] lg:pb-[215px]">
         <div class="text-[32px] lg:text-[40px] font-bold lg:w-[785px]">
             <?php echo $title; ?>

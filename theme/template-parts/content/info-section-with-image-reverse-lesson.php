@@ -8,9 +8,9 @@ $image_url = $args['image_url'] ?? '';
 <div class="relative lg:min-h-[880px] lg:mb-[88px]">
 
     <!-- Ảnh bên trái -->
-    <div class="lg:w-3/5 pt-[40px] lg:py-0 lg:absolute left-0 top-0 h-full overflow-hidden container">
+    <div class="lg:w-3/5 pt-[40px] lg:py-0 lg:absolute left-0 top-0 h-full overflow-hidden ">
         <div class="flex items-end h-full">
-            <img class="object-cover h-auto lg:h-[636px] w-full" src="<?php echo $image_url?>" alt="" />
+            <img class="object-cover h-auto lg:h-[636px] w-[825px]" src="<?php echo $image_url?>" alt="" />
         </div>
     </div>
 

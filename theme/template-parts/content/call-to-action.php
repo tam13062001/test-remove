@@ -12,13 +12,13 @@ $image_url = $args['image_url'] ?? '';
                 <div class="mb-12 lg:text-[36px] text-[24px] text-Regular ">
                     <?php echo $content ?>
                 </div>
-                <a href="<?php echo $cta_link; ?>" class="btn font-bold text-[14px] lg:text-[16px]">
+                <a href="/contact/" class="btn font-bold lg:w-fit w-full">
                     <?php echo $cta_text; ?>
                 </a>
             </div>
         </div>
     </div>
-    <div class="flex justify-end container -mt-[20px] ">
+    <div class="flex justify-end container lg:-mt-[20px] mt-[10px]">
         <div class="lg:max-w-[60%] lg:py-2">
             <img class="lg:object-contain" src="<?php echo $image_url;  ?>" />
         </div>

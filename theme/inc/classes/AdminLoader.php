@@ -56,6 +56,12 @@ class AdminLoader extends BaseLoader
         register_nav_menus(array(
             'primary-menu' => __('Primary Menu')
         ));
+        register_nav_menus(array(
+            'footer-menu' => __('Footer Menu')
+        ));
+        register_nav_menus(array(
+            'privacy-menu' => __('Privacy Menu')
+        ));
     }
     function add_sidebar() {
         // https://developer.wordpress.org/reference/functions/add_menu_page/
