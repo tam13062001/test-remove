@@ -132,7 +132,7 @@ export default function ContactFormBlock() {
           </Checkbox>
         </Form.Item>
         <div className={'mt-[50px]'}>
-          <button type={'submit'}>Submit</button>
+          <button className={'px-10'} type={'submit'}>Submit</button>
         </div>
       </Form>
     )
