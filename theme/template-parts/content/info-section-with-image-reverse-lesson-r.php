@@ -20,7 +20,7 @@ $image_url = $args['image_url'] ?? '';
                     <?php echo $heading ?>
                 </div>
             </div>
-            <div class="lg:w-[80%] pt-6 lg:pt-5 text-[16px] lg:text-[20px] font-normal leading-[170%] lg:mb-[30px]">
+            <div class="lg:w-[80%] pt-6 lg:pt-5 text-[16px] lg:text-[20px] font-normal leading-[170%] lg:mb-[20px]">
                 <?php echo $content; ?>
             </div>
         </div>

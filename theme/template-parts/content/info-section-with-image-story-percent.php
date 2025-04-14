@@ -31,7 +31,7 @@ $image_url = $args['image_url'] ?? '';
                         </div>
                     </div>
                 </div>
-                <div class="border-primary border-t-1 lg:py-5 flex flex-col lg:flex-row lg:space-x-5"></div>
+                <div class="border-primary border-t-1  flex flex-col lg:flex-row lg:space-x-5"></div>
             </div>
         </div>
     </div>
