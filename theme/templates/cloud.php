@@ -154,7 +154,8 @@ get_template_part('template-parts/content/info-section-list', null, array(
     array(
         'title' => 'What are the basic characteristics of cloud computing?',
         'content' => 'Key characteristics include on-demand self-service, scalability, resource pooling, rapid elasticity, pay-per-use pricing, and broad network access.'),
-)
+    ),
+    'text_title'=>'Cloud'
 )); ?>
 <?php get_template_part('template-parts/content/team', null, array(
     'title' => 'Ready to Cloud ?',

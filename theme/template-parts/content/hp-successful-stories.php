@@ -5,14 +5,14 @@ $slides = $args['slides'] ?? [
         'image_url' => get_stylesheet_directory_uri() . '/assets/images/hp-successful-stories.png',
         'title' => 'Digital Transformation for a Premier Banking Client',
         'description' => 'Datum Consulting helped the bank create a secure and efficient cloud system for easier digital banking.',
-        'link' => '/successful-stories/',
+        'link' => '/successful-stories/premier-banking/',
         'link_text' => 'Read more'
     ],
     [
         'image_url' => get_stylesheet_directory_uri() . '/assets/images/slide-ss.jpg',
         'title' => 'EKS Workload Platform for Better Banking Experience',
         'description' => 'Datum delivered a resilient, secure, and automated EKS platform tailored for enterprise microservices.',
-        'link' => '/successful-stories-2/',
+        'link' => '/successful-stories/platform-customization/',
         'link_text' => 'Read more'
     ]
 ];

@@ -145,7 +145,8 @@ Our experts help design robust, scalable data architectures to support AI and an
         array(
             'title' => 'What is Big Data?',
             'content' => 'Big Data refers to vast volumes of structured and unstructured data generated at high speed. It enables businesses to analyze patterns, predict trends, and make data-driven decisions using advanced analytics, AI, and machine learning.',
-        )
+        ),
+        'text_title'=>'Data-AI'
     ));
 ?>
 <?php get_template_part('template-parts/content/team', null, array(

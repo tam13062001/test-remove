@@ -140,7 +140,8 @@ get_template_part('template-parts/content/info-section-list', null, array(
         array(
             'title' => 'What are the benefits of custom software development?',
             'content' => 'Custom software is tailored to your business needs, improving efficiency, scalability, and security. It offers greater flexibility than off-the-shelf solutions and enhances integration with existing systems, ensuring long-term growth and competitive advantage.'),
-    )
+        ),
+    'text_title'=>'Software'
 )); ?>
 <?php get_template_part('template-parts/content/team', null, array(
     'title' => 'Ready to Software?',

@@ -17,7 +17,7 @@
                     deliver high-quality software and drive digital transformation.
                 </div>
 
-                <a href="#" class="text-primary text-[16px]">
+                <a href="/about-datum" class="text-primary text-[16px]">
                     About Datum
                     <span class="ml-1"><i class="fas fa-chevron-right"></i></span>
                 </a>
