@@ -24,7 +24,7 @@ export default function StorySliderBlock(props: BaseProps<CardSliderProps>) {
 
   return (
     <div className={'relative'}>
-      <div className={'lg:w-[11%] absolute top-[410px] lg:top-[500px] -mt-[10px] z-10 shadow-md left-1/2 lg:left-1/3 -translate-x-1/2'}>
+      <div className={'lg:w-[11%] absolute top-[190px] lg:top-[420px] -mt-[10px] z-10 shadow-md left-1/2 lg:left-1/3 -translate-x-1/2'}>
         <div
           className="flex items-center justify-center gap-2 lg:gap-4 bg-white px-2 lg:px-6 py-2 lg:py-4 rounded-full">
           <div className="story-prev cursor-pointer">
@@ -59,19 +59,19 @@ export default function StorySliderBlock(props: BaseProps<CardSliderProps>) {
           slides.map((item, index: number) => (
             <SwiperSlide key={index} className={'lg:w-[785px] w-full relative overflow-hidden'}>
               <div>
-                <div className={'lg:shrink-0 lg:w-2/3 h-[500px] lg:h-[678px]'}>
+                <div className={'lg:shrink-0 lg:w-2/3 h-[230px] lg:h-[554px]'}>
                   <img
                     className="object-cover w-full h-full"
                     src={item.image_url}
                   />
                 </div>
                 <div
-                  className={'px-5 lg:px-0 lg:absolute w-full lg:w-1/2 bg-white lg:right-14  lg:top-1/2 lg:-translate-y-1/2'}>
-                  <div className={'px-5 lg:px-[116px] shadow-xl py-5 lg:py-[70px]'}>
+                  className={'px-5 lg:px-0 lg:absolute w-full lg:w-1/2 bg-white lg:right-14  lg:top-1/2 lg:-translate-y-1/2 pb-4 lg:pb-0'}>
+                  <div className={'px-5 lg:px-[116px] shadow-md py-5 lg:py-[70px]'}>
                     <h2 className="lg:text-[36px] text-[20px] text-primary mb-[10px] lg:mb-8">
                       {item.title}
                     </h2>
-                    <p className="lg:text-[20px] text-[16px] mb-[10px] lg:mb-8 font-regular">
+                    <p className="lg:text-[20px] text-[16px] mb-[10px] lg:mb-8">
                       {item.description}
                     </p>
                     <a
@@ -89,39 +89,6 @@ export default function StorySliderBlock(props: BaseProps<CardSliderProps>) {
           ))
         }
       </Swiper>
-
     </div>
-
   );
 }
-
-// const mobileSlider = new Swiper('.swiper-mobile', {
-//   loop: true,
-//   navigation: {
-//     nextEl: '.swiper-button-next-mobile',
-//     prevEl: '.swiper-button-prev-mobile',
-//   },
-//   pagination: {
-//     el: '.swiper-pagination-mobile',
-//     clickable: true,
-//     renderBullet: function (index, className) {
-//       const isActive = index === this.realIndex;
-//       return `<span class="${className} w-3 h-3 rounded-full ${isActive ? 'bg-blue-600' : 'bg-gray-300'}"></span>`;
-//     },
-//   },
-// });
-//
-// // Desktop Slider
-// const desktopSlider = new Swiper('.swiper-desktop', {
-//   loop: true,
-//   navigation: {
-//     nextEl: '.swiper-button-next-desktop',
-//     prevEl: '.swiper-button-prev-desktop',
-//   },
-//   pagination: {
-//     el: '.swiper-pagination-desktop',
-//     clickable: true,
-//     bulletClass: 'swiper-pagination-bullet',
-//     bulletActiveClass: 'swiper-pagination-bullet-active',
-//   },
-// });

@@ -13,7 +13,7 @@ $bg_image_url = $args['bg_image_url'] ?? '';
                 <h2 class="font-[700] text-[32px] lg:text-[40px] mb-6 lg:mb-12 lg:ml-12 lg:mt-6">
                     Our Partners
                 </h2>
-                <div class=" text-[20px] lg:ml-12 lg:text-[20px] font-Regular leading-[170%] mb-6 lg:mb-12">
+                <div class="text-[16px] lg:ml-12 lg:text-[20px] font-Regular leading-[170%] mb-6 lg:mb-12">
                     At Datum, we foresee potential challenges and proactively address them. By partnering with AWS, we
                     ensure that our technology solutions are seamlessly integrated with your business strategy, creating a comprehensive roadmap that paves the way for sustainable growth and success.
                 </div>

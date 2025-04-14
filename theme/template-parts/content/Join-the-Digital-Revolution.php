@@ -11,15 +11,15 @@
 
         <div class=" relative pt-[60px] lg:pt-[100px]">
             <div class="text-center">
-                <h1 class="sm:text-[32px] lg:text-[48px] font-bold text-primary mb-8 ">
+                <h1 class="text-[32px] lg:text-[40px] font-bold text-primary mb-8 ">
                     Join the Digital Revolution
                 </h1>
 
-                <p class="lg:w-[550px] w-[290px] lg:text-[20px] sm:text-[16px] font-Regular mb-12 leading-normal lg:max-w-3xl mx-auto text-center">
+                <p class="lg:w-[550px] w-[290px] lg:text-[20px] text-[16px] mb-12 lg:max-w-3xl mx-auto text-center">
                     Future-proof your business with Datum. Let's build smarter, faster, and more powerful digital solutions
                     together.
                 </p>
-                <a class="btn hover:bg-[#0DC0E2] lg:px-6 px-4 font-bold transition-colors" href="/contact/">
+                <a class="btn hover:bg-secondary lg:px-6 px-4 font-bold transition-colors" href="/contact/">
                     Schedule a consultation with our expert
                 </a>
                 
