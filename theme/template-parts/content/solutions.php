@@ -23,7 +23,7 @@
                         Build a strong digital foundation with scalable and <br />
                         agile infrastructure solutions.
                     </p>
-                    <a href="/solution-platform-engineering/" class="text-primary inline-flex items-center text-[14px] sm:text-[16px] lg:text-[20px] mt-6 sm:mt-10 lg:mt-20 ml-0 sm:ml-6 lg:ml-20">
+                    <a href="/our-solutions/platform-engineering/" class="text-primary inline-flex items-center text-[14px] sm:text-[16px] lg:text-[20px] mt-6 sm:mt-10 lg:mt-20 ml-0 sm:ml-6 lg:ml-20">
                         Learn more
                         <span class="ml-1">
                             <i class="fas fa-chevron-right"></i>
@@ -41,7 +41,7 @@
                     <p class="text-[14px] sm:text-[16px] lg:text-[24px] mb-3 lg:mb-6 leading-[170%] ml-0 sm:ml-6 lg:ml-20">
                         Harness the latest technologies to streamline operations, enhance customer experiences, and drive business innovation.
                     </p>
-                    <a href="/solution-digital-transformation/" class="text-primary inline-flex items-center text-[14px] sm:text-[16px] lg:text-[20px] mt-6 sm:mt-10 lg:mt-20 ml-0 sm:ml-6 lg:ml-20">
+                    <a href="/our-solutions/digital-transformation/" class="text-primary inline-flex items-center text-[14px] sm:text-[16px] lg:text-[20px] mt-6 sm:mt-10 lg:mt-20 ml-0 sm:ml-6 lg:ml-20">
                         Learn more
                         <span class="ml-1">
                             <i class="fas fa-chevron-right"></i>
@@ -59,7 +59,7 @@
                     <p class="text-[14px] sm:text-[16px] lg:text-[24px] mb-3 lg:mb-6 leading-[170%] ml-0 sm:ml-6 lg:ml-20">
                         Connect and unify your business systems seamlessly for optimized performance and enhanced security.
                     </p>
-                    <a href="/solution-integration/ " class="text-primary inline-flex items-center text-[14px] sm:text-[16px] lg:text-[20px] mt-6 sm:mt-10 lg:mt-20 ml-0 sm:ml-6 lg:ml-20">
+                    <a href="//our-solutions/integration/" class="text-primary inline-flex items-center text-[14px] sm:text-[16px] lg:text-[20px] mt-6 sm:mt-10 lg:mt-20 ml-0 sm:ml-6 lg:ml-20">
                         Learn more
                         <span class="ml-1">
                             <i class="fas fa-chevron-right"></i>

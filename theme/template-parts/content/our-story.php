@@ -1,4 +1,4 @@
-<div class="relative pt-[50px] lg:py-[100px] w-full min-h-[400px] lg:min-h-[680px] bg-cover bg-center mb-12 lg:mb-80">
+<div class="relative pt-[50px] lg:py-[100px] w-full min-h-[400px] lg:min-h-[680px] bg-cover bg-center mb-12 lg:mb-[150px]">
     <img class="object-cover h-full w-full" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/img_6.png' ?>" alt="Success Stories" />
 
     <div class="px-4 sm:px-6 xl:px-0 lg:absolute top-1/2 lg:left-44 lg:top-1/2 ">
@@ -16,7 +16,7 @@
             </p>
 
             
-            <a href="#" class="text-primary text-base sm:text-lg lg:text-[20px] inline-flex items-center mt-8 sm:mt-12 lg:mt-8 ml-0 sm:ml-8 lg:ml-20">
+            <a href="/about-datum" class="text-primary text-base sm:text-lg lg:text-[20px] inline-flex items-center mt-8 sm:mt-12 lg:mt-8 ml-0 sm:ml-8 lg:ml-20">
                 About Datum
                 <span class="ml-1">
                             <i class="fas fa-chevron-right"></i>

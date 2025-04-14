@@ -13,7 +13,7 @@ $image_url = $args['image_url'] ?? '';
             <img class="object-cover h-auto lg:h-[636px] w-full lg:w-[96%]" src="<?php echo $image_url?>" alt="" />
         </div>
     </div>
-    <div class="relative lg:absolute top-0 right-0 container lg:w-3/5 bg-white px-24 lg:px-0 pt-6 lg:pt-5 lg:pl-[60px]">
+    <div class="relative lg:absolute top-0 right-0 container  lg:w-3/5 bg-white px-24 lg:px-0 pt-6 lg:pt-5 lg:pl-[60px]">
         <div class="lg:w-[70%] font-bold text-[32px] lg:text-[40px] lg:mb-[10px] mb-6">
             <h2>
                 <?php echo $title ?>
