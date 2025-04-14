@@ -9,7 +9,8 @@ const config: ThemeConfig = {
     borderRadius: 0,
     fontFamily: 'inherit',
     controlHeight: 60,
-    // fontSize: 20
+    // @ts-ignore
+    fontSize: 'inherit'
   }
 }
 
