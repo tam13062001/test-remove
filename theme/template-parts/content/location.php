@@ -11,20 +11,15 @@ $bg_image_url = $args['bg_image_url'] ?? '';
         </h2>
     </div>
     <div class="relative">
-        <!-- Mobile Image (Top) -->
-        <div class="block lg:hidden lg:w-[370px]  pl-10  h-[280px] w-full overflow-hidden">
-            <img class="object-cover w-full h-full mt-5" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/img_8.png' ?>" alt="Locations map" />
-        </div>
-
         <!-- Desktop Image (Right Side) -->
-        <div class="hidden lg:block lg:w-1/2 lg:absolute right-0 top-0 lg:h-[710px] overflow-hidden">
+        <div class="lg:block lg:w-1/2 lg:absolute right-0 top-0 lg:h-[710px] overflow-hidden">
             <div class="flex lg:items-end h-full">
                 <img class="object-cover h-auto w-full" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/img_8.png' ?>" alt="" />
             </div>
         </div>
 
         <!-- Content Container -->
-        <div class="container relative lg:pt-[50px] lg:py-[100px]">
+        <div class="container relative lg:pt-[50px] lg:py-[100px] -mt-10">
             <?php
             $data = array(
                 array(
