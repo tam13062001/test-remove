@@ -13,7 +13,7 @@ $image_url = $args['image_url'] ?? '';
         
     <div class="container z-10 relative ">
         
-        <div class="w-full lg:w-3/5 lg:h-[300px] bg-white lg:py-9 lg:pr-[20px] leading-[170%] ">
+        <div class="w-full lg:w-3/5 lg:h-[350px] bg-white lg:py-9 lg:pr-[20px] leading-[170%] ">
             <?php foreach($items as $item): ?>
             <div class="mb-10">
                 <?php if(!empty($item['title'])) {?>
@@ -27,7 +27,7 @@ $image_url = $args['image_url'] ?? '';
         </div>
     </div>
     
-    <div class="lg:w-1/2 lg:absolute right-0 top-[150px] lg:h-[550px] w-full  ml-5">
+    <div class="lg:w-1/2 lg:absolute right-0 top-[150px] lg:h-[550px] w-full  lg:ml-5">
 
         <div class="flex items-end h-full relative">
         
