@@ -10,7 +10,7 @@ $image_url = $args['image_url'] ?? '';
     <div class="container pt-[40px] lg:pt-0 z-10 relative">
             
         <div class="relative lg:absolute top-0 left-0  lg:w-3/5 bg-white pt-6 lg:pt-[70px] lg:pl-[60px]  ">
-            <div class="lg:w-[70%] font-bold text-[32px] lg:text-[40px] lg:mb-[10px] lg:mt-[90px]">
+            <div class="lg:w-[70%] font-bold text-[32px] lg:text-[40px] mb-6 lg:mb-[10px] lg:mt-[90px]">
                 <h2>
                     <?php echo $title ?>
                 </h2>

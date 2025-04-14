@@ -6,14 +6,9 @@ $image_url = $args['image_url'] ?? '';
 ?>
 
 <div class="relative lg:min-h-[880px] lg:mb-[88px]">
-    <!-- <div class="absolute top-1/2 left-0 hidden lg:block max-h-[450px] -translate-y-1/2">
-        <img class="h-[450px]" src="<?php echo get_assets_from_path('images/why_datum_bg.png') ?>" alt="{$title}">
-    </div> -->
     <div class="container pt-[40px] lg:pt-0 z-10 relative">
-        
-
-    <div class="relative lg:absolute top-0 right-0   lg:w-3/5 bg-white pt-6 lg:pt-5 lg:pl-[100px]">
-            <div class="lg:w-[70%] font-bold text-[32px] lg:text-[40px] lg:mb-[10px] lg:mt-[100px]">
+        <div class="relative lg:absolute top-0 right-0   lg:w-3/5 bg-white lg:pt-5 lg:pl-[100px]">
+            <div class="lg:w-[70%] font-bold text-[32px] lg:text-[40px] mb-6 lg:mb-[10px] lg:mt-[100px]">
                 <h2>
                     <?php echo $title ?>
                 </h2>
