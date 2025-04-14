@@ -5,7 +5,7 @@ $btn_url = $args['btn_url'] ?? '#';
 $content = $args['content'] ?? '';
 $user_name = $args['user_name'] ?? 'Nick Do';
 $user_title = $args['user_title'] ?? 'Co-founder';
-$user_avatar_url = $args['user_avatar_url'] ?? get_assets_from_path('images/user-1.png')
+$user_avatar_url = $args['user_avatar_url'] ?? get_assets_from_path('images/our_team_2.jpg')
 ?>
 
 <div class="container py-8 lg:py-[50px]">

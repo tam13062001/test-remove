@@ -18,9 +18,9 @@ $image_url = $args['image_url'] ?? '';
             <div class="text-[16px] lg:text-[20px] leading-[170%] lg:pb-[100px]">
                 <?php echo $content ?>
             </div>
-            <a href="/contact/" class="btn font-bold lg:w-fit w-full">
+            <!-- <a href="/contact/" class="btn font-bold lg:w-fit w-full">
                 <?php echo $cta_text; ?>
-            </a>
+            </a> -->
         </div>
     </div>
     <div class="absolute lg:h-full bottom-0 lg:top-[0px] right-0   overflow-hidden lg:block hidden">

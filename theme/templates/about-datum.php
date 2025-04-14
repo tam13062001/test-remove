@@ -145,7 +145,7 @@ get_template_part('template-parts/content/our-teams', null, array(
     ),
     'summembers' => array(
         array(
-            'number' => '30+',
+            'number' => '20+',
             'description' => 'Solution Architects & Technical Leads',
         ),
         array(

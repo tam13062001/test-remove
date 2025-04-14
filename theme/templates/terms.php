@@ -27,21 +27,21 @@
     By accessing this Website, you acknowledge that you have read, understood, and agree to these Terms of Use. These terms may be updated periodically, and continued use of the Website constitutes accept
     </p>
 
-    <h1 class="lg:mt-[4px] font-bold lg:text-[20px]">
+    <h1 class="mt-6 font-bold lg:text-[20px]">
     2. Purpose of the Website
     </h1>
     <p class="lg:mt-[4px] lg:mb-[4px] font-regular lg:text-[20px] ">
     This Website is intended to provide information about Datum Consulting Group, including our company profile, case studies, industry insights, and consultation services. The content is for informational purposes only and does not constitute professional advice or a binding offer.
     </p>
 
-    <h1 class="lg:mt-[4px] font-bold lg:text-[20px]">
+    <h1 class="mt-6 font-bold lg:text-[20px]">
     3. Intellectual Property
     </h1>
     <p class="lg:mt-[4px] lg:mb-[4px] font-regular lg:text-[20px] ">
     All content on this Website, including text, images, graphics, logos, and other materials, is the property of Datum Consulting Group or its licensors and is protected by intellectual property laws. Unauthorized use, reproduction, or distribution of any content is prohibited.
     </p>
 
-    <h1 class="lg:mt-[4px] font-bold lg:text-[20px]">
+    <h1 class="mt-6 font-bold lg:text-[20px]">
     4. User Conduct
     </h1>
     <p class="lg:mt-[4px] lg:mb-[4px] font-regular lg:text-[20px] ">
@@ -57,7 +57,7 @@
     
     
 
-    <h1 class="lg:mt-[4px] font-bold lg:text-[20px]">
+    <h1 class="mt-6 font-bold lg:text-[20px]">
     5. Prohibited Uses:
     </h1>
     <p class="lg:mt-[4px] lg:mb-[4px] font-regular lg:text-[20px] ">
@@ -78,14 +78,14 @@
     We may terminate or restrict access to our website if we detect illegal activities, including but not limited to sniffing, DDoS attacks, SQL injection attempts, or unauthorized crawling. Such actions are taken to protect the integrity and security of our website and its users. Datum Consulting Group reserves the right to pursue legal remedies against individuals or entities engaging in such activities.
     </p>
 
-    <h1 class="lg:mt-[4px] font-bold lg:text-[20px]">
+    <h1 class="mt-6 font-bold lg:text-[20px]">
     6. Third-Party Links
     </h1>
     <p class="lg:mt-[4px] lg:mb-[4px] font-regular lg:text-[20px] ">
     This Website may contain links to third-party websites for your convenience. Datum Consulting Group does not endorse or assume responsibility for the content, privacy policies, or practices of these external sites.
     </p>
 
-    <h1 class="lg:mt-[4px] font-bold lg:text-[20px]">
+    <h1 class="mt-6 font-bold lg:text-[20px]">
     7. Disclaimer of Warranties
     </h1>
     <p class="lg:mt-[4px] lg:mb-[4px] font-regular lg:text-[20px] ">
@@ -93,42 +93,42 @@
 Datum Consulting Group reserves the right to modify, update, or remove any content on this website at any time without prior notice. This includes case studies, insights, and other materials. Such modifications are intended to ensure the accuracy and relevance of the information provided.
     </p>
 
-    <h1 class="lg:mt-[4px] font-bold lg:text-[20px]">
+    <h1 class="mt-6 font-bold lg:text-[20px]">
     8. Privacy Commitment
     </h1>
     <p class="lg:mt-[4px] lg:mb-[4px] font-regular lg:text-[20px] ">
-    Your privacy is important to us. For details on how we collect, use, and protect your personal data, please refer to our <a href="#" class="text-[#3DA7F2]"> Privacy Statement</a>. By using our website, you acknowledge and agree to the practices outlined in our Privacy Statement.
+    Your privacy is important to us. For details on how we collect, use, and protect your personal data, please refer to our <a href="/privacy-statement/" class="text-[#3DA7F2]"> Privacy Statement</a>. By using our website, you acknowledge and agree to the practices outlined in our Privacy Statement.
     </p>
 
-    <h1 class="lg:mt-[4px] font-bold lg:text-[20px]">
+    <h1 class="mt-6 font-bold lg:text-[20px]">
     9. Limitation of Liability
     </h1>
     <p class="lg:mt-[4px] lg:mb-[4px] font-regular lg:text-[20px] ">
     To the fullest extent permitted by law, Datum Consulting Group shall not be liable for any direct, indirect, incidental, or consequential damage arising from your use of the Website or reliance on its content.
     </p>
 
-    <h1 class="lg:mt-[4px] font-bold lg:text-[20px]">
+    <h1 class="mt-6 font-bold lg:text-[20px]">
     10. Indemnification
     </h1>
     <p class="lg:mt-[4px] lg:mb-[4px] font-regular lg:text-[20px] ">
     You agree to indemnify and hold Datum Consulting Group harmless from any claims, damages, or expenses arising from your use of the Website or violation of these Terms of Use.
     </p>
 
-    <h1 class="lg:mt-[4px] font-bold lg:text-[20px]">
+    <h1 class="mt-6 font-bold lg:text-[20px]">
     11. Governing Lawy
     </h1>
     <p class="lg:mt-[4px] lg:mb-[4px] font-regular lg:text-[20px] ">
     These Terms of Use are governed by the laws of New Zealand. Any disputes arising from these terms shall be resolved in the courts of New Zealand. For users accessing the website from other jurisdictions, local laws may apply to the extent required by those jurisdictions. Datum Consulting Group ensures compliance with applicable international and local regulations.
     </p>
 
-    <h1 class="lg:mt-[4px] font-bold lg:text-[20px]">
+    <h1 class="mt-6 font-bold lg:text-[20px]">
     12. Changes to Terms
     </h1>
     <p class="lg:mt-[4px] lg:mb-[4px] font-regular lg:text-[20px] ">
     Datum Consulting Group reserves the right to modify these Terms of Use at any time. Updates will be posted on this page, and it is your responsibility to review them periodically.
     </p>
 
-    <h1 class="lg:mt-[4px] font-bold lg:text-[20px]">
+    <h1 class="mt-6 font-bold lg:text-[20px]">
     13. Contact Information
     </h1>
     <p class="lg:mt-[4px] lg:mb-[4px] font-regular lg:text-[20px] ">
