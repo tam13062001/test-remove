@@ -51,8 +51,6 @@ export default function MobileMenu(props: BaseProps<MobileMenuProps>) {
     })
   }, [data])
 
-  console.log('sss', menuData)
-
   const onItemSelect = (info: any) => {
     const item = dataRef.current.get(info.key.toString())
     if (item) {

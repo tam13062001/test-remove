@@ -44,7 +44,7 @@ get_template_part('template-parts/content/call-to-action', null, array(
             <?php foreach ($items as $item): ?>
             <div class="bg-white rounded-lg relative h-[346px] lg:h-[520px]">
                 <?php if ($item['media_type'] === 'video'): ?>
-                    <video class="w-full h-full object-cover absolute top-0 left-0" autoplay muted loop>
+                    <video class="w-full h-full object-cover absolute top-0 left-0" autoplay muted loop playsinline>
                         <source src="<?php echo $item['media_url'] ?>" type="video/mp4">
                     </video>
                 <?php else: ?>
