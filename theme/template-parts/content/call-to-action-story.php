@@ -17,9 +17,9 @@ $image_url = $args['image_url'] ?? '';
         <div class="text-[16px] lg:text-xl leading-[170%]">
             <?php echo $content ?>
         </div>
-        <a href="/contact/" class="btn font-bold text-[14px] mt-[40px] lg:mt-[88px]">
-            <?php echo $cta_text; ?>
-        </a>
+        <a href="/contact/" class="btn font-bold lg:w-fit w-full">
+                    <?php echo $cta_text; ?>
+                </a>
     </div>
     <div class="absolute lg:h-full bottom-0 lg:top-[0px] right-0  lg:mr-[-488px] overflow-hidden lg:block hidden">
         <img class="h-full py-16 scale-150 lg:scale-100" src="<?php echo $image_url;  ?>" />
