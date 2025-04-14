@@ -9,13 +9,9 @@ $image_url = $args['image_url'] ?? '';
 
 <div class="relative lg:min-h-[880px] lg:my-[88px] lg:mt-[100px] lg:mb-[150px]">
 
-<div class="lg:w-3/5 pt-[40px] lg:py-0 lg:absolute left-0 top-0 h-full overflow-hidden ">
-        <div class="flex items-end h-full">
-            <img class="object-cover h-auto lg:h-[636px] w-full lg:w-[96%]" src="<?php echo $image_url?>" alt="" />
-        </div>
-    </div>
 
-    <div class="relative lg:absolute top-0 right-0 lg:w-3/5 bg-white px-24 lg:px-0 pt-6 lg:pt-5 lg:pl-[60px]">
+
+    <div class="relative lg:absolute top-0 right-0 lg:w-3/5 bg-white px-12 lg:px-0 pt-6 lg:pt-5 lg:pl-[60px]">
             <div class="lg:w-[70%] font-bold text-[32px] lg:text-[40px] lg:mb-[10px] ">
                 <h2>
                     <?php echo $title ?>
@@ -53,5 +49,9 @@ $image_url = $args['image_url'] ?? '';
         </div>
     </div>
 
-    
+    <div class="lg:w-3/5 pt-[40px] lg:py-0 lg:absolute left-0 top-0 h-full overflow-hidden ">
+        <div class="flex items-end h-full">
+            <img class="object-cover h-auto lg:h-[636px] w-full lg:w-[96%]" src="<?php echo $image_url?>" alt="" />
+        </div>
+    </div>
 </div>

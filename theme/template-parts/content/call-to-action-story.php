@@ -6,7 +6,7 @@ $cta_link  = $args['cta_link'] ?? '#';
 $cta_text = $args['cta_text'] ?? '';
 $image_url = $args['image_url'] ?? '';
 ?>
-<div class=" py-[40px] px-24 lg:px-0 lg:py-[100px] relative">
+<div class=" py-[40px] px-12 lg:px-0 lg:py-[100px] relative">
 
     <div class=" lg:pl-[150px] text-[36px] w-full lg:w-1/2 lg:mb-0">
         <div class="mb-6 lg:mb-5 text-[32px] lg:text-[40px] font-bold">

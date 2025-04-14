@@ -8,11 +8,7 @@ $image_url = $args['image_url'] ?? '';
 <div class="relative lg:min-h-[880px] lg:mb-[88px]">
 
     <!-- Ảnh bên trái -->
-    <div class="lg:w-3/5 pt-[40px] lg:py-0 lg:absolute left-0 top-0 h-full overflow-hidden ">
-        <div class="flex items-end h-full">
-            <img class="object-cover h-auto lg:h-[636px] w-full lg:w-[96%]" src="<?php echo $image_url?>" alt="" />
-        </div>
-    </div>
+    
 
     <div class="container pt-[40px] lg:pt-0 z-10 relative">
             
@@ -33,4 +29,9 @@ $image_url = $args['image_url'] ?? '';
         </div>
     </div>
     
+    <div class="lg:w-3/5 pt-[40px] lg:py-0 lg:absolute left-0 top-0 h-full overflow-hidden ">
+        <div class="flex items-end h-full">
+            <img class="object-cover h-auto lg:h-[636px] w-full lg:w-[96%]" src="<?php echo $image_url?>" alt="" />
+        </div>
+    </div>
 </div>
