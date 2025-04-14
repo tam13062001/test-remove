@@ -44,7 +44,7 @@ get_template_part('template-parts/content/info-section-with-image-story-percent'
     'content' => 'The transformation enhanced security and compliance, ensuring no breaches and adherence to banking standards. Operational efficiency improved with quicker provisioning and reduced manual tasks. Platform performance reached 99.9% uptime, allowing for seamless scalability. The migration of legacy systems and integration of new services bolstered the bank’s innovation strategy, with Datum Consulting as a key partner in its digital journey.',   
     'image_url' => get_assets_from_path('images/success_story_meaningfull.jpg'),
     'percent' => '99.9%',
-    'percent_content' => 'Platform performance uptime '            
+    'percent_content' => 'Platform <br class="hidden lg:block" />performance uptime '
 )) ;
 ?>
 

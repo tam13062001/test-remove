@@ -12,7 +12,6 @@ $current_id = get_queried_object_id();
         <?php 
     $menu_post_id = url_to_postid($menu['url']);
     $is_active = false;
-    
     if ($menu_post_id) {
         // Nếu chính nó là trang hiện tại
         if ($current_id === $menu_post_id) {

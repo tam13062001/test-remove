@@ -7,28 +7,25 @@ $image_url = $args['image_url'] ?? '';
 
 <div class="relative lg:min-h-[880px] lg:mb-[88px]">
     <div class="container pt-[40px] lg:pt-0 z-10 relative">
-        <div class="relative lg:absolute top-0 right-0   lg:w-3/5 bg-white lg:pt-5 lg:pl-[100px]">
-            <div class="lg:w-[70%] font-bold text-[32px] lg:text-[40px] mb-6 lg:mb-[10px] lg:mt-[100px]">
+        <div class="relative lg:absolute top-0 right-0 lg:w-3/5 bg-white lg:py-[80px] lg:px-[100px]">
+            <div class="lg:w-[70%] font-bold text-[32px] lg:text-[40px] mb-6 lg:mb-[10px]">
                 <h2>
                     <?php echo $title ?>
                 </h2>
             </div>
-
             <div>
                 <div class=" text-primary text-[20px] lg:text-[32px] font-normal leading-[170%]">
                     <?php echo $heading ?>
                 </div>
             </div>
-            <div class="[&>:not(:last-child)]:border-b leading-[170%]">
+            <div class="leading-[170%]">
                 <?php foreach($items as $item): ?>
-                <div class="border-primary lg:py-5 flex flex-col lg:flex-row lg:space-x-5">
+                <div class="border-primary lg:py-5 flex flex-col lg:flex-row lg:space-x-5 border-b">
                     <div class="lg:w-full mt-3 mb-3 lg:mt-0 text-[16px] lg:text-[20px]">
                         <?php echo $item['content']; ?>
                     </div>
                 </div>
                 <?php endforeach; ?>
-                <div class="border-primary lg:py-5 flex flex-col lg:flex-row lg:space-x-5">
-                </div>
             </div>
         </div>
     </div>
