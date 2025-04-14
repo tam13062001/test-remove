@@ -12,7 +12,7 @@ get_template_part('template-parts/content/call-to-action-story', null, array(
     'title' => 'Call for Change',
     'heading' => 'Transforming Retail Banking Infrastructure for a Seamless Digital Experience',
     'content' => 'A Prestigious Banking Partner embarked on the Better Banking Experience (BBX) initiative to modernize digital channels, integrate value-added products, and enhance microservices. Datum customized the EKS workload platform to align with stringent security and regulatory standards, enabling a scalable, resilient foundation. The implementation supported critical banking microservices and successfully went live in mid-2024.',
-    'image_url' => get_assets_from_path('images/Frame 236.png'),
+    'image_url' => get_assets_from_path('images/Group 62.png'),
     'cta_text' => 'Download detail case study',
     'cta_link' => '#'
 ));
@@ -35,7 +35,7 @@ get_template_part('template-parts/content/info-section-with-image-reverse', null
             'content' => 'A shift to a multi-tenancy hosting model was critical to improve resource allocation, departmental isolation, and cost transparency.',
         )
     ),
-)) ;
+)) ;    
 ?>
 
 <?php

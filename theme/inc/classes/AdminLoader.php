@@ -12,6 +12,11 @@ class AdminLoader extends BaseLoader
             $this->content_version,
             true
         );
+
+        wp_enqueue_script('your-script', 'path/to/script.js', array('wp-api'), null, true);
+        wp_localize_script('your-script', 'wpApiSettings', array(
+            'nonce' => wp_create_nonce('wp_rest')
+        ));
     }
 
     function enqueue_styles()

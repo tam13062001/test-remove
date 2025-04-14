@@ -32,7 +32,7 @@ class RocketTheme
                 'manage_options',
                 $options['slug'],
                 function () {
-                    echo '<div class="root"></div>';
+                    echo '<div id="datum-root"></div>';
                 },
                 $options['icon_url'],
                 2
@@ -86,5 +86,11 @@ class RocketTheme
     {
         $this->load_dependencies();
         $this->loader->run();
+    }
+
+    public function register_rest_api(string $path, array $options = []): void {
+        add_action('rest_api_init', function () use ($path, $options) {
+            register_rest_route('datum/v1', $path, $options);
+        });
     }
 }

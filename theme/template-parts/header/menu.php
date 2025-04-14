@@ -27,14 +27,14 @@ $current_id = get_queried_object_id();
         }
             ?>
     <div class="group relative">
-        <a class="mx-4 <?php echo $is_active ? 'border-b-2 border-white' : ''; ?>" href="<?php echo $menu['url']; ?>">
+        <a class="mx-4 border-transparent border-b-2 hover:border-white <?php echo $is_active ? 'border-b-2 border-white' : ''; ?>" href="<?php echo $menu['url']; ?>">
             <?php echo $menu['title']; ?>
         </a>
         <?php if (!empty($menu['children'])) { ?>
             <ul class="absolute bottom-0 list-none z-20 w-max m-0 top-[25px] hidden group-hover:block">
                 <?php foreach ($menu['children'] as $submenu) : ?>
                     <li class="relative group bg-secondary/10 hover:bg-secondary/20 border-b border-primary">
-                        <a href="<?php echo $submenu['url'] ?>" class="block px-4 py-2 font-bold text-white">
+                        <a href="<?php echo $submenu['url'] ?>" class="block px-4 py-2 font-bold ">
                             <?php echo $submenu['title'] ?>
                         </a>
                     </li>

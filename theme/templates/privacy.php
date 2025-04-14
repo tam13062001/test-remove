@@ -6,7 +6,7 @@
     'background_image' => get_assets_from_path('images/contact_datum.jpg')
 )); ?>
 
-<div class="container lg:py-[100px] leading-[190%] pt-[40px]">
+<div class="container py-[40px]  lg:py-[100px] leading-[190%] pt-[40px] ">
    
    
 

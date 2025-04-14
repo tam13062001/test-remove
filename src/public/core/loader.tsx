@@ -6,7 +6,9 @@ import {ConfigProvider, ThemeConfig} from "antd";
 
 const config: ThemeConfig = {
   token: {
+    borderRadius: 0,
     fontFamily: 'inherit',
+    controlHeight: 60,
     // @ts-ignore
     fontSize: 'inherit'
   }
