@@ -1,6 +1,6 @@
 {
   "name": "example",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "scripts": {
     "build": "npm run css:build && wp-scripts build",
     "check-engines": "wp-scripts check-engines",
