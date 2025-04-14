@@ -27,7 +27,7 @@ export default function ContactFormBlock() {
 
   const renderContent = () => {
     if (showSuccess) return (
-      <div className={'lg:pt-[300px]'}>
+      <div className={'lg:mt-[320px]'}>
         <div className={'mb-4'}>Thank you! Your information has been saved</div>
         <div className={'text-[16px] text-primary'} onClick={onResubmitBtnClick}>Submit another information</div>
       </div>

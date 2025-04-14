@@ -9,25 +9,38 @@ $current_id = get_queried_object_id();
 <div class="hidden lg:flex font-bold">
     <?php foreach ($primary_menu_items as $menu) : ?>
 
-    <?php 
-        $menu_post_id = url_to_postid($menu['url']);
-        $is_active = false;
-        
-        if ($menu_post_id) {
-            // Nếu chính nó là trang hiện tại
-            if ($current_id === $menu_post_id) {
-                $is_active = true;
-            }
-        
-            // Nếu menu là cha của trang hiện tại
-            $ancestors = get_post_ancestors($current_id);
-            if (in_array($menu_post_id, $ancestors)) {
-                $is_active = true;
+        <?php 
+    $menu_post_id = url_to_postid($menu['url']);
+    $is_active = false;
+    
+    if ($menu_post_id) {
+        // Nếu chính nó là trang hiện tại
+        if ($current_id === $menu_post_id) {
+            $is_active = true;
+        }
+
+        // Nếu menu là cha của trang hiện tại
+        $ancestors = get_post_ancestors($current_id);
+        if (in_array($menu_post_id, $ancestors)) {
+            $is_active = true;
+        }
+
+        // Nếu trang hiện tại là con của menu này
+        if (!empty($menu['children'])) {
+            foreach ($menu['children'] as $submenu) {
+                $submenu_post_id = url_to_postid($submenu['url']);
+                if ($current_id === $submenu_post_id) {
+                    $is_active = true;
+                    break;
+                }
             }
         }
-            ?>
+    }
+?>
+
+    
     <div class="group relative">
-        <a class="mx-4 border-transparent border-b-2 hover:border-white <?php echo $is_active ? 'border-b-2 border-white' : ''; ?>" href="<?php echo $menu['url']; ?>">
+    <a class="mx-4 hover:border-b-2 border-white <?php echo $is_active ? 'border-b-2 border-white' : ''; ?>" href="<?php echo $menu['url']; ?>">
             <?php echo $menu['title']; ?>
         </a>
         <?php if (!empty($menu['children'])) { ?>

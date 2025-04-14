@@ -137,7 +137,7 @@ Our experts help design robust, scalable data architectures to support AI and an
             'content' => 'Industries such as healthcare, finance, retail, manufacturing, and logistics benefit from AI analytics. AI helps detect fraud, optimize supply chains, personalize marketing, and enhance diagnostics, driving efficiency and innovation.'),
         array(
             'title' => 'Why is real-time data processing important?',
-            'Real-time data processing allows businesses to react instantly to market changes, detect anomalies, and improve decision-making. It\'s crucial for financial transactions, cybersecurity, IoT applications, and customer service automation. '),
+            'content' =>'Real-time data processing allows businesses to react instantly to market changes, detect anomalies, and improve decision-making. It\'s crucial for financial transactions, cybersecurity, IoT applications, and customer service automation. '),
         array(
             'title' => 'How to ensure data security and compliance?',
             'content' => 'Ensure data security with encryption, access controls, and compliance with regulations like GDPR and HIPAA. Regular audits, AI-powered threat detection, and secure cloud storage help protect sensitive data from breaches.'),

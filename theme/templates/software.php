@@ -136,7 +136,7 @@ get_template_part('template-parts/content/info-section-list', null, array(
             'content' => 'Cloud solutions integrate via APIs, middleware, or hybrid cloud architectures. They enable seamless data exchange, scalability, and security, allowing businesses to modernize operations while maintaining compatibility with legacy systems.'),
         array(
             'title' => 'How to ensure data security in software development?',
-            'Implement strong encryption, secure coding practices, and access controls. Regular security testing, compliance with industry standards (e.g., GDPR, ISO 27001), and cloud security measures help protect sensitive business data from cyber threats.'),
+            'content' =>'Implement strong encryption, secure coding practices, and access controls. Regular security testing, compliance with industry standards (e.g., GDPR, ISO 27001), and cloud security measures help protect sensitive business data from cyber threats.'),
         array(
             'title' => 'What are the benefits of custom software development?',
             'content' => 'Custom software is tailored to your business needs, improving efficiency, scalability, and security. It offers greater flexibility than off-the-shelf solutions and enhances integration with existing systems, ensuring long-term growth and competitive advantage.'),

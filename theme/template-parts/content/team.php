@@ -20,7 +20,7 @@ $user_avatar_url = $args['user_avatar_url'] ?? get_assets_from_path('images/user
             <div class="text-primary font-[700] text-[20px] lg:text-[24px] mb-11">
                 <?php echo $content ?>
             </div>
-            <a class="btn font-bold lg:w-fit w-full" href="<?php echo $btn_url ?>">
+            <a class="btn font-bold lg:w-fit w-full" href="/contact/">
                 <?php echo $btn_text ?>
             </a>
             <div class="mt-11">

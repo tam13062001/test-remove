@@ -19,11 +19,11 @@
                     Future-proof your business with Datum. Let's build smarter, faster, and more powerful digital solutions
                     together.
                 </p>
-
-                <button class=" hover:bg-[#0DC0E2] lg:px-6 px-4 font-bold transition-colors">
+                <a class="btn hover:bg-[#0DC0E2] lg:px-6 px-4 font-bold transition-colors" href="/contact/">
                     Schedule a consultation with our expert
-                </button>
+                </a>
+                
             </div>
         </div>
-    </div>
-</div    
+</div>
+  

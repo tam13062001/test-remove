@@ -24,7 +24,7 @@ export default function StorySliderBlock(props: BaseProps<CardSliderProps>) {
 
   return (
     <div className={'relative'}>
-      <div className={'lg:w-[11%] absolute top-[180px] lg:top-[500px] -mt-[10px] z-10 shadow-md left-1/2 lg:left-1/3 -translate-x-1/2'}>
+      <div className={'lg:w-[11%] absolute top-[410px] lg:top-[500px] -mt-[10px] z-10 shadow-md left-1/2 lg:left-1/3 -translate-x-1/2'}>
         <div
           className="flex items-center justify-center gap-2 lg:gap-4 bg-white px-2 lg:px-6 py-2 lg:py-4 rounded-full">
           <div className="story-prev cursor-pointer">
@@ -59,7 +59,7 @@ export default function StorySliderBlock(props: BaseProps<CardSliderProps>) {
           slides.map((item, index: number) => (
             <SwiperSlide key={index} className={'lg:w-[785px] w-full relative overflow-hidden'}>
               <div>
-                <div className={'lg:shrink-0 lg:w-2/3 h-[230px] lg:h-[678px]'}>
+                <div className={'lg:shrink-0 lg:w-2/3 h-[500px] lg:h-[678px]'}>
                   <img
                     className="object-cover w-full h-full"
                     src={item.image_url}

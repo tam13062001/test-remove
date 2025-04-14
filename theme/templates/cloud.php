@@ -150,7 +150,7 @@ get_template_part('template-parts/content/info-section-list', null, array(
         'content' => 'Virtualization enables efficient resource allocation, scalability, and flexibility, making it easier to deploy and manage cloud-based applications.'),
     array(
         'title' => 'What workloads can I move to the cloud?',
-        'Common workloads include web applications, databases, analytics, DevOps environments, and enterprise software like CRM and ERP systems'),
+        'content' =>'Common workloads include web applications, databases, analytics, DevOps environments, and enterprise software like CRM and ERP systems'),
     array(
         'title' => 'What are the basic characteristics of cloud computing?',
         'content' => 'Key characteristics include on-demand self-service, scalability, resource pooling, rapid elasticity, pay-per-use pricing, and broad network access.'),

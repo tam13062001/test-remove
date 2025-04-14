@@ -1,9 +1,12 @@
     <div class="py-[60px] lg:py-[122px] border-t border-primary w-full">
         <div class="container">
             <div class="flex flex-col lg:flex-row lg:mb-[100px] space-y-9 lg:space-y-0">
-                <div class="lg:container lg:w-1/5 ">
+            <div class="lg:container lg:w-1/5 ">
+                <a href="/">
                     <img class="w-[142px]" alt="" src="<?php echo get_stylesheet_directory_uri().'/assets/images/logo.png' ?>" />
-                </div>
+                </a>
+            </div>
+
                 <div class="w-full lg:w-2/5 space-y-6">
                     <?php get_template_part('template-parts/footer/menu'); ?>
                 </div>

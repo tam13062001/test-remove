@@ -15,7 +15,7 @@
         <div class="space-y-8 lg:space-y-20">
             <!-- Platform Engineering -->
             <div class="w-full flex flex-col lg:flex-row h-auto lg:h-[453px]">
-                <div class="w-full lg:w-[782px] bg-white ml-0 sm:ml-4 lg:ml-1 p-4 sm:p-6 lg:p-10 shadow-[0_0_10px_rgba(0,0,0,0.1)]">
+                <div class="w-full lg:w-[782px] bg-white ml-0  lg:ml-1 p-4 sm:p-6 lg:p-10 shadow-[0_0_10px_rgba(0,0,0,0.1)]">
                     <h3 class="font-[300] text-[20px] sm:text-[24px] lg:text-[36px] text-primary mb-4 lg:mb-5 ml-0 sm:ml-6 lg:ml-20 mt-4">
                         Platform Engineering
                     </h3>
@@ -34,7 +34,7 @@
 
             <!-- Digital Transformation -->
             <div class="w-full flex flex-col lg:flex-row justify-end h-auto lg:h-[453px]">
-                <div class="w-full lg:w-[782px] bg-white mr-0 sm:mr-4 lg:mr-1 p-4 sm:p-6 lg:p-10 shadow-[0_0_10px_rgba(0,0,0,0.1)]">
+                <div class="w-full lg:w-[782px] bg-white  lg:mr-1 p-4 sm:p-6 lg:p-10 shadow-[0_0_10px_rgba(0,0,0,0.1)]">
                     <h3 class="font-[300] text-[20px] sm:text-[24px] lg:text-[36px] text-primary mb-4 lg:mb-5 ml-0 sm:ml-6 lg:ml-20 mt-4">
                         Digital Transformation
                     </h3>
@@ -52,8 +52,8 @@
 
             <!-- Integration Solutions -->
             <div class="w-full flex flex-col lg:flex-row h-auto lg:h-[453px]">
-                <div class="w-full lg:w-[782px] bg-white ml-0 sm:ml-4 lg:ml-1 p-4 sm:p-6 lg:p-10 shadow-[0_0_10px_rgba(0,0,0,0.1)]">
-                    <h3 class="font-[300] text-[20px] sm:text-[24px] lg:text-[36px] text-primary mb-4 lg:mb-5 ml-0 sm:ml-6 lg:ml-20 mt-4">
+                <div class="w-full lg:w-[782px] bg-white ml-0 lg:ml-1 p-4 sm:p-6 lg:p-10 shadow-[0_0_10px_rgba(0,0,0,0.1)]">
+                    <h3 class="font-[300] text-[20px] text-[24px] lg:text-[36px] text-primary mb-4 lg:mb-5 ml-0 sm:ml-6 lg:ml-20 mt-4">
                         Integration Solutions
                     </h3>
                     <p class="text-[14px] sm:text-[16px] lg:text-[24px] mb-3 lg:mb-6 leading-[170%] ml-0 sm:ml-6 lg:ml-20">

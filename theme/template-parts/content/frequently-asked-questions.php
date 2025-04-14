@@ -14,12 +14,12 @@ $items = $args['items'] ?? array();
         <?php endforeach; ?>
     </div>
     <div class="font-bold lg:text-[16px] flex flex-col lg:flex-row lg:space-x-4 space-y-4 lg:space-y-0 lg:items-center">
-        <a class="btn">
+        <a class="btn" href='/contact/'>
             More FAQs on our Cloud Services
         </a>
-        <span class="text-[16px] text-secondary">
+        <a href='/contact/' class="text-[16px] text-secondary ">
             or Schedule a consultation with our expert <i class="fa fa-chevron-right"></i>
-        </span>
+        </a>
     </div>
 
 </div>
