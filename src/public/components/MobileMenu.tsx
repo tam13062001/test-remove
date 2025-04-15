@@ -24,7 +24,7 @@ export default function MobileMenu(props: BaseProps<MobileMenuProps>) {
     const getItems = (item: any) => {
       const data: any = {
         key: item.ID,
-        label: item.title.replace('&amp;', '&')
+        label: item.title.replace('&amp;', '&').replace('&#038;', '&')
       }
 
       dataRef.current.set(item.ID.toString(), item)
@@ -39,7 +39,9 @@ export default function MobileMenu(props: BaseProps<MobileMenuProps>) {
     return data.map(item => {
       const data: any = {
         key: item.ID,
-        label: item.title.replace('&amp;', '&')
+        label: item.title
+          .replace('&amp;', '&')
+          .replace('&#038;', '&')
       }
 
       dataRef.current.set(item.ID.toString(), item)
