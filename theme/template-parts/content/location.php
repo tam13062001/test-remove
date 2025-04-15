@@ -44,7 +44,7 @@ $bg_image_url = $args['bg_image_url'] ?? '';
 
                 ),
                 array(
-                    'country' => 'VietNam',
+                    'country' => 'Vietnam',
                     'locations' => array(
                         array(
                             'title' => 'Datum Consulting VN Company LTD',

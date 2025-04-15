@@ -18,9 +18,9 @@ $text_title = $args['text_title'] ?? '';
         <a class="btn" href='/contact/'>
             More FAQs on our <?php echo $text_title ?> Services
         </a>
-        <a href='/contact/' class="text-[16px] text-secondary ">
+        <!-- <a href='/contact/' class="text-[16px] text-secondary ">
             or Schedule a consultation with our expert <i class="fa fa-chevron-right"></i>
-        </a>
+        </a> -->
     </div>
 
 </div>
