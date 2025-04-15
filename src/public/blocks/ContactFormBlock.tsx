@@ -121,7 +121,7 @@ export default function ContactFormBlock() {
           name={'agree_term_of_use'}
           valuePropName={'checked'}
           rules={[
-            { required: true, message: 'You have not agree with term of use' }
+            { required: true, message: 'You have not agreed with terms of use' }
           ]}
         >
           <Checkbox>
