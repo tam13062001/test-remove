@@ -27,114 +27,118 @@ export default function ContactFormBlock() {
 
   const renderContent = () => {
     if (showSuccess) return (
+      
       <div className={'lg:mt-[320px]'}>
-        <div className={'mb-4'}>Thank you! Your information has been saved</div>
-        <div className={'text-[16px] text-primary'} onClick={onResubmitBtnClick}>Submit another information</div>
+          <div className={'mb-4'}>Thank you! Your information has been saved</div>
+          <div className={'text-[16px] text-primary'} onClick={onResubmitBtnClick}>Submit another information</div>
       </div>
     )
 
     return (
+      <>
+        <h1 className="w-[120%] text-[20px] lg:text-[36px] mb-[50px] lg:mb-[80px] ">
+          Please complete this form and a member of our team will be in touch.
+        </h1>
+      
       <Form onFinish={onSubmit}>
-        { error && (
-          <Typography.Paragraph type={'danger'}>
-            { error }
-          </Typography.Paragraph>
-        ) }
+          {error && (
+            <Typography.Paragraph type={'danger'}>
+              {error}
+            </Typography.Paragraph>
+          )}
 
-        <Form.Item
-          name={'first_name'}
-          rules={[
-            {required: true, message: 'Firstname is required'}
-          ]}
-        >
-          <Input placeholder={'First Name*'}/>
-        </Form.Item>
-        <Form.Item
-          name={'last_name'}
-          rules={[
-            {required: true, message: 'Lastname is required'}
-          ]}
-        >
-          <Input placeholder={'Last Name*'}/>
-        </Form.Item>
-        <Form.Item
-          name={'email'}
-          rules={[
-            {required: true, message: 'Email is required'},
-            {type: 'email', message: 'Email is not valid'},
-          ]}
-        >
-          <Input placeholder={'Email*'}/>
-        </Form.Item>
-        <Form.Item
-          name={'job'}
-          rules={[
-            {required: true, message: 'Job is required'}
-          ]}
-        >
-          <Input placeholder={'Job Title*'}/>
-        </Form.Item>
-        <Form.Item
-          name={'phone'}
-          rules={[
-            {required: true, message: 'Phone number is required'}
-          ]}
-        >
-          <Input placeholder={'Phone Number*'}/>
-        </Form.Item>
-        <Form.Item
-          name={'company'}
-          rules={[
-            {required: true, message: 'Company/Organization is required'}
-          ]}
-        >
-          <Input placeholder={'Company/Organization*'}/>
-        </Form.Item>
-        <Form.Item
-          name={'country'}
-          rules={[
-            { required: true, message: 'Country is required' }
-          ]}
-        >
-          <CountrySelector
-            placeholder={'Country*'}
-            style={{ fontSize: 'inherit' }}
-            allowClear
-            showSearch
-          />
-        </Form.Item>
-        <Form.Item
-          name={'message'}
-          rules={[
-            { required: true, message: 'Please type your message' }
-          ]}
-        >
-          <Input.TextArea
-            placeholder={'Your Message*'}
-            autoSize={{
-              minRows: 3,
-              maxRows: 4
-            }}
-          />
-        </Form.Item>
-        <Form.Item
-          name={'agree_term_of_use'}
-          valuePropName={'checked'}
-          rules={[
-            { required: true, message: 'You have not agree with term of use' }
-          ]}
-        >
-          <Checkbox>
-            <div className={'ml-2 text-[16px]'}>
-              I agree to Datum collecting and processing my personal data to allow me to receive information on Datum
-              services.
-            </div>
-          </Checkbox>
-        </Form.Item>
-        <div className={'mt-[50px]'}>
-          <button className={'px-10'} type={'submit'}>Submit</button>
-        </div>
-      </Form>
+          <Form.Item
+            name={'first_name'}
+            rules={[
+              { required: true, message: 'Firstname is required' }
+            ]}
+          >
+            <Input placeholder={'First Name*'} />
+          </Form.Item>
+          <Form.Item
+            name={'last_name'}
+            rules={[
+              { required: true, message: 'Lastname is required' }
+            ]}
+          >
+            <Input placeholder={'Last Name*'} />
+          </Form.Item>
+          <Form.Item
+            name={'email'}
+            rules={[
+              { required: true, message: 'Email is required' },
+              { type: 'email', message: 'Email is not valid' },
+            ]}
+          >
+            <Input placeholder={'Email*'} />
+          </Form.Item>
+          <Form.Item
+            name={'job'}
+            rules={[
+              { required: true, message: 'Job is required' }
+            ]}
+          >
+            <Input placeholder={'Job Title*'} />
+          </Form.Item>
+          <Form.Item
+            name={'phone'}
+            rules={[
+              { required: true, message: 'Phone number is required' }
+            ]}
+          >
+            <Input placeholder={'Phone Number*'} />
+          </Form.Item>
+          <Form.Item
+            name={'company'}
+            rules={[
+              { required: true, message: 'Company/Organization is required' }
+            ]}
+          >
+            <Input placeholder={'Company/Organization*'} />
+          </Form.Item>
+          <Form.Item
+            name={'country'}
+            rules={[
+              { required: true, message: 'Country is required' }
+            ]}
+          >
+            <CountrySelector
+              placeholder={'Country*'}
+              style={{ fontSize: 'inherit' }}
+              allowClear
+              showSearch />
+          </Form.Item>
+          <Form.Item
+            name={'message'}
+            rules={[
+              { required: true, message: 'Please type your message' }
+            ]}
+          >
+            <Input.TextArea
+              placeholder={'Your Message*'}
+              autoSize={{
+                minRows: 3,
+                maxRows: 4
+              }} />
+          </Form.Item>
+          <Form.Item
+            name={'agree_term_of_use'}
+            valuePropName={'checked'}
+            rules={[
+              { required: true, message: 'You have not agree with term of use' }
+            ]}
+          >
+            <Checkbox>
+              <div className={'ml-2 text-[16px]'}>
+                I agree to Datum collecting and processing my personal data to allow me to receive information on Datum
+                services.
+              </div>
+            </Checkbox>
+          </Form.Item>
+          <div className={'mt-[50px]'}>
+            <button className={'px-10'} type={'submit'}>Submit</button>
+          </div>
+        </Form></>
     )
   }
 
