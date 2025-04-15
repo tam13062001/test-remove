@@ -36,7 +36,7 @@ export default function ContactFormBlock() {
 
     return (
       <>
-        <h1 className="w-[120%] text-[20px] lg:text-[36px] mb-[50px] lg:mb-[80px] ">
+        <h1 className="lg:w-[120%] w-full text-[20px] lg:text-[36px] mb-[50px] lg:mb-[80px] ">
           Please complete this form and a member of our team will be in touch.
         </h1>
       
