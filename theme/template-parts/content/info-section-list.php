@@ -15,7 +15,7 @@ $items = $args['items'] ?? array();
                     <div>
                         <?php echo $item['title']; ?>
                     </div>
-                    <div class="block lg:hidden">
+                    <div class="flex lg:hidden items-center">
                         <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M5.44 11.14V7.2H1.5V5.94H5.44V2H6.7V5.94H10.63V7.2H6.7V11.14H5.44Z"
                                 fill="#315CD4" />
