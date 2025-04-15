@@ -20,7 +20,7 @@
     <p class=" font-regular lg:text-[20px] lg:mt-[50px]">
     Welcome to the Datum Consulting Group website (the "Website"). By accessing or using this Website, you agree to comply with and be bound by these Terms of Use. If you do not agree with these terms, please refrain from using the Website.
     </p>
-    <h1 class="lg:mt-[4px] font-bold lg:text-[20px]">
+    <h1 class="mt-6 font-bold lg:text-[20px]">
     1. Acceptance of Terms
     </h1>
     <p class="lg:mt-[4px] lg:mb-[4px] font-regular lg:text-[20px] ">
@@ -132,7 +132,7 @@ Datum Consulting Group reserves the right to modify, update, or remove any conte
     13. Contact Information
     </h1>
     <p class="lg:mt-[4px] lg:mb-[4px] font-regular lg:text-[20px] ">
-    For questions or concerns regarding these Terms of Use, please contact us at: <a href="#" class="text-[#3DA7F2]">contacts@datumhq.com</a>
+    For questions or concerns regarding these Terms of Use, please contact us at: <a href="mailto:contacts@datumhq.com" class="text-[#3DA7F2]">contacts@datumhq.com</a>
     </p>
 </div>
 

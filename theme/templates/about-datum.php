@@ -149,7 +149,7 @@ get_template_part('template-parts/content/our-teams', null, array(
             'description' => 'Solution Architects & Technical Leads',
         ),
         array(
-            'number' => '120+',
+            'number' => '100+',
             'description' => 'Cloud, AI, DevOps, and Software<br />Engineering Specialists',
         )
     )
