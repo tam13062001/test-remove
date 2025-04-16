@@ -5,7 +5,7 @@ $background_image = $args['background_image'] ?? '';
 $type = $args['type'] ?? 'image';
 ?>
 
-<div class="h-[500px] relative">
+<div class="h-[500px] lg:h-[603px] relative">
     <?php if($type === 'image'): ?>
     <img class="absolute top-0 object-cover h-full w-full" src="<?php echo $background_image;  ?>" />
     <?php elseif ($type === 'video'): ?>
