@@ -5,7 +5,7 @@ $image_url = $args['image_url'] ?? '';
 ?>
 
 <div class="relative lg:min-h-[880px] lg:mb-20 overflow-hidden">
-    <h2 class="text-[40px] font-bold mb-6 lg:mb-10">
+    <h2 class="text-[32px] lg:text-[40px] font-bold mb-6 lg:mb-10">
         <?php echo $title ?>
     </h2>
     <div class="z-10 relative flex flex-col md:flex-row">

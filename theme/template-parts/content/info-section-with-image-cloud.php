@@ -3,7 +3,7 @@ $title = $args['title'] ?? '';
 $items = $args['items'] ?? array();
 $image_url = $args['image_url'] ?? '';
 ?>
-    <h2 class="container text-[40px] lg:py-[50px] font-bold mb-6 lg:mb-10">
+    <h2 class="container text-[32px] lg:text-[40px] lg:py-[50px] font-bold mb-6 lg:mb-10">
             <?php echo $title ?>
         </h2>
 <div class="relative lg:h-[625px] lg:mb-[150px] mb-[100px] overflow-hidden">

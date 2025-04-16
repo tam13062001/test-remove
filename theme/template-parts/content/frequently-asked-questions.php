@@ -4,7 +4,7 @@ $text_title = $args['text_title'] ?? '';
 ?>
 
 <div class="container lg:py-[50px]">
-    <h2 class="font-[700] text-[40px] mb-10 lg:mb-[50px]">
+    <h2 class="font-[700] text-[32px] lg:text-[40px] mb-10 lg:mb-[50px]">
         Frequently Asked Questions
     </h2>
     <div class="mb-10 lg:mb-[60px]">
