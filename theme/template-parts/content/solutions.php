@@ -20,8 +20,7 @@
                         Platform Engineering
                     </h3>
                     <p class="text-[14px] sm:text-[16px] lg:text-[24px] mb-3 lg:mb-6 leading-[170%] ml-0 sm:ml-6 lg:ml-20">
-                        Build a strong digital foundation with scalable and <br />
-                        agile infrastructure solutions.
+                        Build a strong digital foundation with scalable and agile infrastructure solutions.
                     </p>
                     <a href="/our-solutions/platform-engineering/" class="text-primary inline-flex items-center text-[14px] sm:text-[16px] lg:text-[20px] mt-6 sm:mt-10 lg:mt-20 ml-0 sm:ml-6 lg:ml-20">
                         Learn more
