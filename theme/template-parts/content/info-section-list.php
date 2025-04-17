@@ -22,7 +22,7 @@ $items = $args['items'] ?? array();
                         </svg>
                     </div>
                 </div>
-                <div class="lg:w-3/5 mt-3 ">
+                <div class="lg:w-3/5 mt-3 text-[16px] lg:text-[20px]">
                     <?php echo $item['content']; ?>
                 </div>
             </div>
