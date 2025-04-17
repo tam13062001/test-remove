@@ -8,7 +8,7 @@
     </div>
 
     <div class="relative container">
-        <h2 class="text-[24px] sm:text-[32px] lg:text-[40px] font-bold mb-8 sm:mb-12">
+        <h2 class="text-[32px] lg:text-[40px] font-bold mb-8 lg:mb-[60px]">
             Game-Changing Solutions
         </h2>
 

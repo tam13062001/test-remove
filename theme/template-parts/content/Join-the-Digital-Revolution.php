@@ -11,7 +11,7 @@
 
         <div class=" relative pt-[60px] lg:pt-[100px]">
             <div class="text-center">
-                <h1 class="text-[32px] lg:text-[40px] font-bold text-primary mb-8 ">
+                <h1 class="text-[32px] lg:text-[40px] font-bold text-primary mb-8 px-[20px] lg:px-0">
                     Join the Digital Revolution
                 </h1>
 
