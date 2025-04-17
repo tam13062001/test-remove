@@ -1,4 +1,4 @@
-<div class="relative py-[60px] lg:py-[100px] overflow-hidden">
+<div class="relative py-[60px] lg:py-[70px] overflow-hidden">
     <!-- Background Image -->
     <div class="w-full absolute top-1/2 -translate-y-1/2">
         <img

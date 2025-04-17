@@ -4,7 +4,7 @@ $content = $args['content'] ?? 'Default Content';
 $image_url = $args['image_url'] ?? '';
 $bg_image_url = $args['bg_image_url'] ?? '';
 ?>
-<div class="py-[60px] lg:py-[100px]">
+<div class="py-[60px] lg:py-[80px]">
     <div class="container mb-[50px] lg:mb-[100px]">
         <h2 class="text-[32px] lg:text-[40px] font-bold">
             Locations
