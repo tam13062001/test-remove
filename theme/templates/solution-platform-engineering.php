@@ -142,10 +142,10 @@ get_template_part('template-parts/content/frequently-asked-questions', null, arr
             'title' => 'What are the benefits of implementing an internal developer platform (IDP)?',
             'content' => 'An IDP centralizes development tools, automates workflows, and enforces best practices, reducing complexity and improving deployment speed. It enables developers to focus on coding rather than infrastructure, leading to faster innovation and reduced operational costs.',
         ),
-        array(
-            'title' => 'What is platform engineering?',
-            'content' => 'Platform engineering is the discipline of designing and building self-service internal platforms to streamline software development and operations. It enables teams to deliver applications efficiently by providing standardized tools, automation, and infrastructure management.',
-        ),
+        // array(
+        //     'title' => 'What is platform engineering?',
+        //     'content' => 'Platform engineering is the discipline of designing and building self-service internal platforms to streamline software development and operations. It enables teams to deliver applications efficiently by providing standardized tools, automation, and infrastructure management.',
+        // ),
     )
 
 ));

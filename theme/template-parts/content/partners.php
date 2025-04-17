@@ -7,7 +7,7 @@ $bg_image_url = $args['bg_image_url'] ?? '';
 
 <div class="relative bg-gradient-to-r from-secondary to-primary">
     <img class="absolute top-0 h-full right-0" src="<?php echo get_assets_from_path('images/partners_bg.png') ?>" alt="" />
-    <div class="container py-10 lg:py-[250px] z-10 relative">
+    <div class="container py-10 lg:py-[120px] z-10 relative">
         <div class="flex flex-col-reverse lg:flex-row lg:gap-20 ">
             <div class="lg:w-1/2 text-white">
                 <h2 class="font-[700] text-[32px] lg:text-[40px] mb-6 lg:mb-12 lg:ml-12 lg:mt-6">

@@ -1,4 +1,4 @@
-<div class="relative py-[60px] lg:py-[100px] overflow-hidden">
+<div class="relative py-[60px] lg:py-[70px] overflow-hidden">
     <!-- Background Image -->
     <div class="w-full absolute top-1/2 -translate-y-1/2">
         <img
@@ -8,7 +8,7 @@
     </div>
 
     <div class="relative container">
-        <h2 class="text-[24px] sm:text-[32px] lg:text-[40px] font-bold mb-8 sm:mb-12">
+        <h2 class="text-[32px] lg:text-[40px] font-bold mb-8 lg:mb-[60px]">
             Game-Changing Solutions
         </h2>
 

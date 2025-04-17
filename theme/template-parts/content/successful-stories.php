@@ -1,5 +1,5 @@
 <div class="container py-[60px] lg:py-[120px]">
-    <h2 class="font-[700] text-[32px] lg:text-[40px] mb-10 lg:mb-[110px]">
+    <h2 class="font-[700] text-[32px] lg:text-[40px] mb-10 lg:mb-[80px]">
         Successful stories
     </h2>
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
