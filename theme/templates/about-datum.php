@@ -19,7 +19,7 @@
             </div>
         </div>
 
-        <div class="flex pt-6 lg:pt-[93px] lg:w-[785px]">
+        <div class="flex pt-6 lg:pt-[70px] lg:w-[785px]">
             <div class="text-[16px] lg:text-[20px] font-normal leading-[170%] text-black tracking-[-0.2px]">
                 <div>
                     <p class="mb-8">
