@@ -22,7 +22,7 @@
                     <p class="text-[14px] sm:text-[16px] lg:text-[24px] mb-3 lg:mb-6 leading-[170%] ml-0 sm:ml-6 lg:ml-20">
                         Build a strong digital foundation with scalable and agile infrastructure solutions.
                     </p>
-                    <a href="/our-solutions/platform-engineering/" class="text-primary inline-flex items-center text-[14px] sm:text-[16px] lg:text-[20px] mt-6 sm:mt-10 lg:mt-20 ml-0 sm:ml-6 lg:ml-20">
+                    <a href="/our-solutions/platform-engineering/" class="text-primary inline-flex items-center text-[16px] sm:text-[16px] lg:text-[20px] mt-6 sm:mt-10 lg:mt-20 ml-0 sm:ml-6 lg:ml-20">
                         Learn more
                         <span class="ml-1">
                             <i class="fas fa-chevron-right"></i>
@@ -40,7 +40,7 @@
                     <p class="text-[14px] sm:text-[16px] lg:text-[24px] mb-3 lg:mb-6 leading-[170%] ml-0 sm:ml-6 lg:ml-20">
                         Harness the latest technologies to streamline operations, enhance customer experiences, and drive business innovation.
                     </p>
-                    <a href="/our-solutions/digital-transformation/" class="text-primary inline-flex items-center text-[14px] sm:text-[16px] lg:text-[20px] mt-6 sm:mt-10 lg:mt-20 ml-0 sm:ml-6 lg:ml-20">
+                    <a href="/our-solutions/digital-transformation/" class="text-primary inline-flex items-center text-[16px] sm:text-[16px] lg:text-[20px] mt-6 sm:mt-10 lg:mt-20 ml-0 sm:ml-6 lg:ml-20">
                         Learn more
                         <span class="ml-1">
                             <i class="fas fa-chevron-right"></i>
@@ -52,13 +52,13 @@
             <!-- Integration Solutions -->
             <div class="w-full flex flex-col lg:flex-row h-auto lg:h-[453px]">
                 <div class="w-full lg:w-[782px] bg-white ml-0 lg:ml-1 p-4 sm:p-6 lg:p-10 shadow-[0_0_10px_rgba(0,0,0,0.1)]">
-                    <h3 class="font-[300] text-[20px] text-[24px] lg:text-[36px] text-primary mb-4 lg:mb-5 ml-0 sm:ml-6 lg:ml-20 mt-4">
+                    <h3 class="font-[300] text-[20px] sm:text-[24px] lg:text-[36px] text-primary mb-4 lg:mb-5 ml-0 sm:ml-6 lg:ml-20 mt-4">
                         Integration Solutions
                     </h3>
                     <p class="text-[14px] sm:text-[16px] lg:text-[24px] mb-3 lg:mb-6 leading-[170%] ml-0 sm:ml-6 lg:ml-20">
                         Connect and unify your business systems seamlessly for optimized performance and enhanced security.
                     </p>
-                    <a href="/our-solutions/integration/" class="text-primary inline-flex items-center text-[14px] sm:text-[16px] lg:text-[20px] mt-6 sm:mt-10 lg:mt-20 ml-0 sm:ml-6 lg:ml-20">
+                    <a href="/our-solutions/integration/" class="text-primary inline-flex items-center text-[16px] sm:text-[16px] lg:text-[20px] mt-6 sm:mt-10 lg:mt-20 ml-0 sm:ml-6 lg:ml-20">
                         Learn more
                         <span class="ml-1">
                             <i class="fas fa-chevron-right"></i>
