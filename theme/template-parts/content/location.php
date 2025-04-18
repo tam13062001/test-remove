@@ -13,7 +13,7 @@ $bg_image_url = $args['bg_image_url'] ?? '';
     <div class="relative">
         <!-- Desktop Image (Right Side) -->
         <div class="lg:block lg:w-1/2 lg:absolute right-0 top-0 lg:h-[710px] overflow-hidden">
-            <div class="fixed top-0 left-0 w-full z-10">
+            <div class="top-0 left-0 w-full z-10">
                 <img class="object-cover h-auto w-full" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/img_8.png' ?>" alt="" />
             </div>
         </div>
