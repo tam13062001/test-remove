@@ -17,48 +17,35 @@ type MobileMenuProps = {
 }
 
 export default function MobileMenu(props: BaseProps<MobileMenuProps>) {
-  const { data, logo_url } = props.data
-  const [open, setOpen] = useState(false)
-  const dataRef = useRef<Map<string, any>>(new Map())
+  const { data, logo_url } = props.data;
+  const [open, setOpen] = useState(false);
+  const dataRef = useRef<Map<string, any>>(new Map());
+
   const menuData = useMemo(() => {
-    const getItems = (item: any) => {
-      const data: any = {
+    const getItems = (item: MenuItem) => {
+      const menuItem: any = {
         key: item.ID,
-        label: item.title.replace('&amp;', '&').replace('&#038;', '&')
-      }
+        label: item.title.replace(/&amp;/g, '&') // Sửa regex để replace tất cả &amp;
+      };
 
-      dataRef.current.set(item.ID.toString(), item)
+      dataRef.current.set(item.ID.toString(), item);
 
       if (Array.isArray(item.children) && item.children.length > 0) {
-        data.children = data.children.map(getItems)
+        menuItem.children = item.children.map(getItems); // Sửa thành item.children
       }
-      return data
-    }
-    if (!Array.isArray(data)) return []
+      return menuItem;
+    };
 
-    return data.map(item => {
-      const data: any = {
-        key: item.ID,
-        label: item.title
-          .replace('&amp;', '&')
-          .replace('&#038;', '&')
-      }
-
-      dataRef.current.set(item.ID.toString(), item)
-
-      if (Array.isArray(item.children) && item.children.length > 0) {
-        data.children = item.children.map(getItems)
-      }
-      return data
-    })
-  }, [data])
+    if (!Array.isArray(data)) return [];
+    return data.map(getItems); // Sử dụng hàm getItems đã định nghĩa
+  }, [data]);
 
   const onItemSelect = (info: any) => {
-    const item = dataRef.current.get(info.key.toString())
+    const item = dataRef.current.get(info.key.toString());
     if (item) {
-      window.location.href = item.url
+      window.location.href = item.url;
     }
-  }
+  };
 
   return (
     <div>
@@ -73,33 +60,52 @@ export default function MobileMenu(props: BaseProps<MobileMenuProps>) {
         onClose={() => setOpen(false)}
         styles={{
           wrapper: { width: '100%' },
-          content: { padding: 0, height: '100vh', zIndex: 100000000 },
-          body: { padding: 0 },
+          content: { 
+            padding: 0, 
+            height: '100vh', 
+            zIndex: 100000000,
+            overflow: 'hidden'
+          },
+          body: { 
+            padding: 0,
+            height: '100%',
+            display: 'flex',
+            flexDirection: 'column' 
+          },
           header: { display: "none" }
         }}
       >
-        <div className={'bg-gradient-to-br from-secondary to-primary h-full text-white px-5'}>
+        <div className={'bg-gradient-to-br from-secondary to-primary h-full text-white px-5 flex flex-col'}>
           <div className={'flex justify-between p-5'}>
-            <img className={'h-7'} src={logo_url} />
+            <img className={'h-7'} src={logo_url} alt="Logo" />
             <Button className={'text-white'} type={'text'} icon={<CloseOutlined />} onClick={() => setOpen(false)} />
           </div>
-          <ConfigProvider
-          theme={{
-            components: {
-              Menu: {
-                colorBgBase: 'transparent',
-                popupBg: 'transparent',
-                itemBg: 'transparent',
-                itemColor: '#ffffff',
-                activeBarBorderWidth: 0
-              }
-            }
-          }}
-          >
-            <Menu mode={'inline'} items={menuData} onSelect={onItemSelect} />
-          </ConfigProvider>
+          <div className="flex-1 overflow-y-auto">
+            <ConfigProvider
+              theme={{
+                components: {
+                  Menu: {
+                    colorBgBase: 'transparent',
+                    popupBg: 'transparent',
+                    itemBg: 'transparent',
+                    itemColor: '#ffffff',
+                    activeBarBorderWidth: 0,
+                    itemPaddingInline: 16,
+                    itemHeight: 48
+                  }
+                }
+              }}
+            >
+              <Menu 
+                mode={'inline'} 
+                items={menuData} 
+                onSelect={onItemSelect}
+                style={{ height: '100%', borderRight: 0 }}
+              />
+            </ConfigProvider>
+          </div>
         </div>
       </Drawer>
     </div>
-  )
+  );
 }
