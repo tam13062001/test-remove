@@ -134,10 +134,6 @@ get_template_part('template-parts/content/info-section-with-image', null, array(
             'title' => 'What is real-time data streaming, and how does it work?',
             'content' => 'Real-time data streaming enables continuous data transmission between systems as events occur. It works by processing data instantly through event-driven architecture, ensuring businesses can react to insights, monitor operations, and enhance customer experiences in real time.',
         ),
-        array(
-            'title' => 'What is system integration and why is it important?',
-            'content' => 'System integration connects different IT systems, applications, and data sources to work seamlessly as a unified system. It improves efficiency, reduces data silos, and enhances decision-making by ensuring smooth data flow across departments.',
-        ),
     ),
 )); ?>
 <?php get_template_part('template-parts/content/Expert-insight'); ?>

@@ -15,11 +15,13 @@ export default function ContactFormBlock() {
     axios.post('/index.php?rest_route=/datum/v1/save-contact', values)
       .then(e => {
         setShowSuccess(true)
+        window.scrollTo({ top: 0, behavior: 'smooth' }) 
       })
       .catch(e => {
         setError(e.message)
       })
   }
+
 
   const onResubmitBtnClick = () => {
     setShowSuccess(false)
