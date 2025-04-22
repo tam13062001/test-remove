@@ -11,25 +11,24 @@ $items = $args['items'] ?? array();
         <div class="[&>*]:border-b [&>*]:border-primary">
 
             <?php foreach($items as $item): ?>
-            <div class="py-6 lg:py-[50px] flex flex-col lg:flex-row lg:space-x-5">
-                <div class="text-primary lg:w-2/5 text-[20px] lg:text-[36px] flex justify-between ">
-                    
-                    <div>
-                        <?php echo $item['title']; ?>
+                <div class="border-primary py-6 lg:py-[50px] flex flex-col lg:flex-row lg:space-x-5">
+                    <div class="text-primary lg:w-2/5 text-[20px] lg:text-[36px] flex justify-between items-start cursor-pointer lg:cursor-auto" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('svg').classList.toggle('rotate-45')">
+                        <div>
+                            <?php echo $item['title']; ?>
+                        </div>
+                        <div class="flex lg:hidden items-center mt-2">
+                            <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg" class="transition-transform duration-200">
+                                <path d="M5.44 11.14V7.2H1.5V5.94H5.44V2H6.7V5.94H10.63V7.2H6.7V11.14H5.44Z"
+                                    fill="#315CD4" />
+                            </svg>
+                        </div>
                     </div>
-
-                    <div class="flex lg:hidden items-start justify-center">
-                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M5.44 11.14V7.2H1.5V5.94H5.44V2H6.7V5.94H10.63V7.2H6.7V11.14H5.44Z"
-                                fill="#315CD4" />
-                        </svg>
+                    <div class="lg:w-3/5 mt-3 text-[16px] lg:text-[20px] hidden lg:block">
+                        <?php echo $item['content']; ?>
                     </div>
                 </div>
-                <div class="lg:w-3/5 mt-3 lg:mt-0 text-[16px] lg:text-[20px] font-regular leading-[170%]">
-                    <?php echo $item['content']; ?>
-                </div>
-            </div>
             <?php endforeach; ?>
+        </div>
         </div>
     </div>
 </div>
