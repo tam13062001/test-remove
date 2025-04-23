@@ -10,7 +10,7 @@
                 integration
             </div>
             <div class="h-[333px] flex items-center justify-center">
-                <img class="h-FULL w-[80%] lg:w-[324px] lg:h-[114px]" src="<?php echo get_assets_from_path('images/tyme-global.png') ?>" />
+                <img class="h-FULL lg:h-[93px] w-[80%] lg:w-[324px] " src="<?php echo get_assets_from_path('images/tyme-global.png') ?>" />
             </div>
         </div>
         <div class="border-b border-secondary">
