@@ -5,6 +5,8 @@ if ( ! defined( 'WP_DEVELOPMENT_MODE' ) ) {
 }
 require_once get_template_directory() . '/inc/autoload.php';
 
+load_envfile();
+
 global $rocket;
 
 $wp_theme = wp_get_theme();
@@ -35,50 +37,49 @@ function datum_save_contact(WP_REST_Request $request) {
         'post_type'    => 'datum_contact',
     ));
 
-    // Gửi mail bằng SMTP
-    require_once ABSPATH . WPINC . '/PHPMailer/PHPMailer.php';
-    require_once ABSPATH . WPINC . '/PHPMailer/SMTP.php';
-    require_once ABSPATH . WPINC . '/PHPMailer/Exception.php';
+    $host = 'smtp.office365.com';
+    $port = 587;
+    $username = 'wgb.cf@datumhq.com';
+    $password = getenv('SMTP_PASSWORD');
+    $secure = 'tls';
+    $receiver = 'contacts@datumhq.com';
 
-    $mail = new PHPMailer\PHPMailer\PHPMailer(true);
+    $mailer = new SMTP_Mailer();
+    $mailer->load(array(
+        'host' => $host,
+        'port' => $port,
+        'username' => $username,
+        'password' => $password,
+        'secure' => $secure
+    ));
+    $subject = 'New Contact Form Submission';
+    $body = "You have a new message:\n\n"
+        . "First Name: " . sanitize_text_field($body['first_name']) . "\n"
+        . "Last Name: " . sanitize_text_field($body['last_name']) . "\n"
+        . "Email: " . sanitize_email($body['email']) . "\n"
+        . "Phone: " . sanitize_text_field($body['phone']) . "\n"
+        . "Company: " . sanitize_text_field($body['company']) . "\n"
+        . "Country: " . sanitize_text_field($body['country']) . "\n"
+        . "Job: " . sanitize_text_field($body['job']) . "\n"
+        . "Message: " . sanitize_textarea_field($body['message']);
 
+    $sent = false;
+    $debug = '';
     try {
-        // Cấu hình SMTP
-        $mail->isSMTP();
-        $mail->Host       = 'smtp.gmail.com'; // Thay bằng SMTP của bạn
-        $mail->SMTPAuth   = true;
-        $mail->Username   = 'dtam768@gmail.com'; // Thay bằng email gửi
-        $mail->Password   = 'euqo mhqa varz hdin';    // Thay bằng app password
-        $mail->SMTPSecure = 'tls';                  // Hoặc 'ssl'
-        $mail->Port       = 587;                    // 587 cho TLS, 465 cho SSL
-
-        // Thông tin gửi - nhận
-        $mail->setFrom('dtam768@gmail.com', 'Contact Form');
-        $mail->addAddress('dtam768@gmail.com', 'Your Name');
-
-        // Nội dung email
-        $mail->isHTML(false);
-        $mail->Subject = 'New Contact Form Submission';
-        $mail->Body    = "You have a new message:\n\n"
-            . "First Name: " . sanitize_text_field($body['first_name']) . "\n"
-            . "Last Name: " . sanitize_text_field($body['last_name']) . "\n"
-            . "Email: " . sanitize_email($body['email']) . "\n"
-            . "Phone: " . sanitize_text_field($body['phone']) . "\n"
-            . "Company: " . sanitize_text_field($body['company']) . "\n"
-            . "Country: " . sanitize_text_field($body['country']) . "\n"
-            . "Job: " . sanitize_text_field($body['job']) . "\n"
-            . "Message: " . sanitize_textarea_field($body['message']);
-
-        // Gửi email
-        $mail->send();
-
-        return new WP_REST_Response([
-            'message' => 'Contact has been saved and email sent. Thank you!'
-        ]);
-
-    } catch (Exception $e) {
-        return new WP_Error('send_fail', 'Mailer Error: ' . $mail->ErrorInfo, array('status' => 500));
+        $sent = $mailer->send(array(
+            'subject' => $subject,
+            'body' => $body,
+            'receiver' => $receiver,
+        ));
+    } catch (\Exception $e) {
+        $debug = $e->getMessage();
     }
+
+    return new WP_REST_Response([
+        'message' => 'Contact has been saved and email sent. Thank you!',
+        'sent' => $sent,
+        'debug' => $debug
+    ]);
 }
 
 $rocket->register_rest_api('save-contact', [
@@ -92,6 +93,34 @@ $rocket->register_rest_api('contacts', [
     'callback' => 'datum_list_contact',
     'permission_callback' => function () {
         return is_user_logged_in();
+    }
+]);
+
+$rocket->register_rest_api('test', [
+    'methods' => 'GET',
+    'callback' => function () {
+        $mailer = new SMTP_Mailer();
+        $mailer->load(array(
+            'host' => 'smtp.freesmtpservers.com',
+            'port' => 25,
+            'username' => 'abc@site.com',
+            'password' => getenv('SMTP_PASSWORD'),
+            'secure' => 'none',
+            'auth' => false
+        ));
+//        $sent = $mailer->send(array(
+//           'title' => 'Test',
+//           'body' => 'Test',
+//           'receiver' => 'abc@site.com',
+//        ));
+        return new WP_REST_Response([
+            'path' => ABSPATH,
+            'env_password' => getenv('SMTP_PASSWORD'),
+//            'sent' => $sent
+        ]);
+    },
+    'permission_callback' => function () {
+        return false;
     }
 ]);
 
