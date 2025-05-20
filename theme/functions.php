@@ -96,34 +96,6 @@ $rocket->register_rest_api('contacts', [
     }
 ]);
 
-$rocket->register_rest_api('test', [
-    'methods' => 'GET',
-    'callback' => function () {
-        $mailer = new SMTP_Mailer();
-        $mailer->load(array(
-            'host' => 'smtp.freesmtpservers.com',
-            'port' => 25,
-            'username' => 'abc@site.com',
-            'password' => getenv('SMTP_PASSWORD'),
-            'secure' => 'none',
-            'auth' => false
-        ));
-//        $sent = $mailer->send(array(
-//           'title' => 'Test',
-//           'body' => 'Test',
-//           'receiver' => 'abc@site.com',
-//        ));
-        return new WP_REST_Response([
-            'path' => ABSPATH,
-            'env_password' => getenv('SMTP_PASSWORD'),
-//            'sent' => $sent
-        ]);
-    },
-    'permission_callback' => function () {
-        return false;
-    }
-]);
-
 function datum_list_contact() {
     $query = new WP_Query(array(
         'post_type' => 'datum_contact',
