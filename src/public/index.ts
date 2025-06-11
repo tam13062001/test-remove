@@ -9,6 +9,7 @@ import OurValueItemBlock from "./blocks/OurValueItemBlock";
 import LocationItemBlock from "./blocks/LocationItemBlock";
 import ContactFormBlock from "./blocks/ContactFormBlock";
 import BackToTop from './blocks/BackTotop';
+import Member from './blocks/member';
 
 registerComponent('rocket-example', ExampleBlock)
 registerComponent('collapse-block', CollapseBlock)
@@ -19,6 +20,7 @@ registerComponent('our-value-item', OurValueItemBlock)
 registerComponent('location-item', LocationItemBlock)
 registerComponent('contact-form', ContactFormBlock)
 registerComponent('back-to-top', BackToTop)
+registerComponent('member', Member)
 
 document.addEventListener('DOMContentLoaded', function () {
   const containers = document.querySelectorAll("[class^='wp-block-rocket']")
