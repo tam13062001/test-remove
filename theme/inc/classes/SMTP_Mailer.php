@@ -3,7 +3,7 @@ require_once ABSPATH . WPINC . '/PHPMailer/PHPMailer.php';
 require_once ABSPATH . WPINC . '/PHPMailer/SMTP.php';
 require_once ABSPATH . WPINC . '/PHPMailer/Exception.php';
 class SMTP_Mailer {
-    private PHPMailer\PHPMailer\PHPMailer $mail;
+    public PHPMailer\PHPMailer\PHPMailer $mail;
 
     function __construct() {
         $mail = new PHPMailer\PHPMailer\PHPMailer(true);

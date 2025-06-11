@@ -42,7 +42,7 @@ function datum_save_contact(WP_REST_Request $request) {
     $username = 'wgb.cf@datumhq.com';
     $password = getenv('SMTP_PASSWORD');
     $secure = 'tls';
-    $receiver = 'contacts@datumhq.com';
+    $receiver = $body['email'];
 
     $mailer = new SMTP_Mailer();
     $mailer->load(array(
@@ -93,6 +93,56 @@ $rocket->register_rest_api('contacts', [
     'callback' => 'datum_list_contact',
     'permission_callback' => function () {
         return is_user_logged_in();
+    }
+]);
+
+$rocket->register_rest_api('test', [
+    'methods' => 'GET',
+    'callback' => function (WP_REST_Request $request) {
+        $host = 'smtp.office365.com';
+        $port = 587;
+        $username = 'wgb.cf@datumhq.com';
+        $password = getenv('SMTP_PASSWORD');
+        $secure = 'tls';
+        $receiver = $request->get_param('r');
+
+        var_dump('env', strlen($password));
+
+        if (empty($receiver)) return new WP_REST_Request([
+            'message' => 'Receiver not found'
+        ]);
+
+        $mailer = new SMTP_Mailer();
+        $mailer->mail->SMTPDebug = 2;
+        $mailer->load(array(
+            'host' => $host,
+            'port' => $port,
+            'username' => $username,
+            'password' => $password,
+            'secure' => $secure
+        ));
+
+        $debug = '';
+        $sent = false;
+        try {
+            $sent = $mailer->send(array(
+                'subject' => 'Test',
+                'body' => 'Test',
+                'receiver' => $receiver,
+            ));
+        } catch (Exception $e) {
+            $debug = $e->getMessage();
+        }
+
+        return new WP_REST_Response([
+            'path' => ABSPATH,
+            'sent' => $sent,
+            'debug' => $debug,
+            'env' => strlen($password)
+        ]);
+    },
+    'permission_callback' => function () {
+        return true;
     }
 ]);
 
