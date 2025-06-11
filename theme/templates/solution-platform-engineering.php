@@ -157,5 +157,5 @@ get_template_part('template-parts/content/frequently-asked-questions', null, arr
     'btn_text' => 'Schedule a consultation with our expert',
     'btn_link' => '#'
 )); ?>
-
+<?php get_template_part('template-parts/content/back-to-top'); ?>
 <?php get_footer(); ?>

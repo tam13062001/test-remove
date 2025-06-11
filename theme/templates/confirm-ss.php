@@ -19,5 +19,5 @@ get_template_part('template-parts/content/thanks', null, array(
 
 <!-- Location -->
 <?php get_template_part('template-parts/content/location'); ?>
-
+<?php get_template_part('template-parts/content/back-to-top'); ?>
 <?php get_footer(); ?>

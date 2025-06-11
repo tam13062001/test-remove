@@ -155,5 +155,5 @@ Our experts help design robust, scalable data architectures to support AI and an
     'btn_text' => 'Schedule a Free Strategy Session',
     'btn_link' => '#'
 )); ?>
-
+<?php get_template_part('template-parts/content/back-to-top'); ?>
 <?php get_footer(); ?>

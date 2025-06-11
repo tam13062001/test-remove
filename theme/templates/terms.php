@@ -138,5 +138,5 @@ Datum Consulting Group reserves the right to modify, update, or remove any conte
 
 
 
-
+<?php get_template_part('template-parts/content/back-to-top'); ?>
 <?php get_footer(); ?>

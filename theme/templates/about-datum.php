@@ -90,9 +90,6 @@ get_template_part('template-parts/content/about-we-dont-just', null, array(
 ?>
 
 
-<!-- Our Values -->
-<!-- <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.10.2/dist/cdn.min.js" defer></script> -->
-
 <?php
 get_template_part('template-parts/content/our-values', null, array(
     'title' => 'Our Values',
@@ -159,10 +156,11 @@ get_template_part('template-parts/content/our-teams', null, array(
 
 
 <!-- Our Partners -->
-<?php get_template_part('template-parts/content/partners'); ?>
+<?php get_template_part('template-parts/content/partners-about-datum'); ?>
 
 <!-- Location -->
 <?php get_template_part('template-parts/content/location'); ?>
 
+<?php get_template_part('template-parts/content/back-to-top'); ?>
 
 <?php get_footer(); ?>

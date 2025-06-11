@@ -66,5 +66,5 @@ get_template_part('template-parts/content/info-section-with-image-story-percent-
     'btn_link' => '#'
 )); ?>
 
-
+<?php get_template_part('template-parts/content/back-to-top'); ?>
 <?php get_footer(); ?>
