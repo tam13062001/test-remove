@@ -1,70 +1,114 @@
-import { useState, useEffect } from "@wordpress/element";
-import { Tabs, message } from 'antd';
+import { useMemo } from "@wordpress/element";
+import { Tabs } from 'antd';
+import { BaseProps } from "../core/get-props";
 
 const { TabPane } = Tabs;
 
-const teamData = {
-  Founders: [
-    {
-      name: 'Nghia Nguyen',
-      role: 'Co-founder',
-      image: '/images/nghia.png',
-    },
-    {
-      name: 'Nick Do',
-      role: 'Co-founder',
-      image: '/images/nick.png',
-    },
-    {
-      name: 'Thang Nguyen',
-      role: 'CIO - Chief of Information Officer',
-      image: '/images/thang.png',
-    },
-  ],
-  'Software Engineers': [],
-  'Platform Engineers': [],
-  'Data Engineers': [],
-  'Software Quality': [],
-  'Governance': [],
+export type TeamMember = {
+  name: string;
+  role: string;
+  image_url: string;
 };
 
-const MemberCard = ({ name, role, image }) => (
-  <div className="flex flex-col items-center text-center p-4">
+export type TeamGroup = {
+  groupName: string;
+  members: TeamMember[];
+};
+
+export type MemberProps = {
+  teams?: TeamGroup[];
+  defaultActiveKey?: string;
+  tabBarGutter?: number;
+  emptyMessage?: string;
+};
+
+const MemberCard = ({ name, role, image_url, groupName }: TeamMember & { groupName?: string }) => (
+  <div className="w-full flex flex-col items-center">
     <img
-      src={image}
+      src={image_url}
       alt={name}
-      className="w-36 h-36 object-cover rounded-lg shadow-md"
+      className="w-full object-cover lg:mb-4"
     />
-    <div className="mt-3 text-blue-700 font-semibold">{name}</div>
-    <div className="text-sm text-gray-500">{role}</div>
+    <div className="pl-[35px] mt-4 flex flex-col items-start w-full">
+      <div className="flex items-center gap-5">
+        {groupName === "Founders" && (
+          <div className="">
+            <div className="w-[60px] h-1 bg-blue-600"></div>
+            <p>&nbsp;</p>
+          </div>
+        )}
+        <div className="">
+          <h3 className="text-xl lg:text-2xl font-bold text-primary">
+            {name}
+          </h3>
+          <p className="text-[16px] lg:text-xl text-black">
+            {role}
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
 );
 
-const Member = () => {
+export default function Member(props: BaseProps<MemberProps>) {
+  const { 
+    teams = [],
+    defaultActiveKey = teams[0]?.groupName || '',
+    tabBarGutter = 32,
+    emptyMessage = 'Chưa có thành viên trong nhóm này.'
+  } = props.data;
+
+  const tabPanes = useMemo(() => (
+    teams.map((group) => (
+      <TabPane tab={group.groupName} key={group.groupName}>
+        <div className={`grid grid-cols-1 ${group.groupName === "Founders" ? "md:grid-cols-3" : "md:grid-cols-4"} gap-6 lg:gap-8`}>
+          {group.members.length > 0 ? (
+            group.members.map((member, index) => (
+              <MemberCard
+                key={`${group.groupName}-${index}`}
+                {...member}
+                groupName={group.groupName}
+              />
+            ))
+          ) : (
+            <p className="text-gray-500">{emptyMessage}</p>
+          )}
+        </div>
+      </TabPane>
+    ))
+  ), [teams, emptyMessage]);
+
   return (
-    <div className="container mx-auto px-4 py-6">
-      <Tabs defaultActiveKey="Founders" tabBarGutter={32}>
-        {Object.entries(teamData).map(([group, members]) => (
-          <TabPane tab={group} key={group}>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-              {members.length > 0 ? (
-                members.map((member, index) => (
-                  <MemberCard
-                    key={index}
-                    name={member.name}
-                    role={member.role}
-                    image={member.image}
-                  />
-                ))
-              ) : (
-                <p className="text-gray-500">Chưa có thành viên trong nhóm này.</p>
-              )}
-            </div>
-          </TabPane>
-        ))}
-      </Tabs>
+    <div className=" mx-auto px-4 py-6">
+      {teams.length > 0 ? (
+        <div className="">
+          <Tabs
+            defaultActiveKey={defaultActiveKey}
+            tabBarGutter={tabBarGutter}
+            
+            tabBarStyle={{ marginBottom: '2rem' }}
+            className="
+              [&_.ant-tabs-nav]:container
+              [&_.ant-tabs-nav]:center
+              [&_.ant-tabs-nav]:px-[64px]
+              [&_.ant-tabs-nav]:border-none
+              [&_.ant-tabs-nav]:border-b-0
+              [&_.ant-tabs-nav::before]:border-b-0
+              [&_.ant-tabs-tab]:border-none
+              [&_.ant-tabs-tab]:text-[20px]
+              [&_.ant-tabs-tab]:font-normal
+              [&_.ant-tabs-tab]:transition-all
+              [&_.ant-tabs-tab]:duration-200
+              [&_.ant-tabs-ink-bar]:hidden
+              [&_.ant-tabs-content]:border-none
+            "
+          >
+            {tabPanes}
+          </Tabs>
+        </div>
+      ) : (
+        <p className="text-gray-500">No teams available</p>
+      )}
     </div>
   );
-};
-
-export default Member;
+}

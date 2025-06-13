@@ -26,41 +26,6 @@
 
 <?php get_template_part('template-parts/content/member-table'); ?>
 
-<!-- Our Teams -->
-<?php
-get_template_part('template-parts/content/our-teams', null, array(
-    'title' => 'Our Team',
-    'members' => array(
-        array(
-            'name' => 'Nghia Nguyen',
-            'title' => 'Co-founder',
-            'image_url' => get_assets_from_path('images/our_team_1.jpg'),
-        ),
-        array(
-            'name' => 'Nick Do',
-            'title' => 'Co-founder',
-            'image_url' => get_assets_from_path('images/our_team_2.jpg'),
-        ),
-        array(
-            'name' => 'Thang Nguyen',
-            'title' => 'CIO – Chief of Information Officer',
-            'image_url' => get_assets_from_path('images/our_team_3.jpg'),
-        )
-    ),
-    'summembers' => array(
-        array(
-            'number' => '20+',
-            'description' => 'Solution Architects & Technical Leads',
-        ),
-        array(
-            'number' => '100+',
-            'description' => 'Cloud, AI, DevOps, and Software<br />Engineering Specialists',
-        )
-    )
-)) ;
-?>
-
-
 
 <!-- Location -->
 <?php get_template_part('template-parts/content/location'); ?>
