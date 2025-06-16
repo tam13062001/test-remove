@@ -25,7 +25,6 @@ $title = $args['title'] ?? 'Locations';
                 'image_url' => get_stylesheet_directory_uri() . '/assets/images/Location-2.jpg',
                 'phone' => '61-3-1234 5678',
                 'email' => 'aus@datumhq.com',
-                'map_url' => 'https://www.google.com/maps'
             ],
             [
                 'country' => 'New Zealand',
@@ -39,7 +38,6 @@ $title = $args['title'] ?? 'Locations';
                 'image_url' => get_stylesheet_directory_uri() . '/assets/images/Location-2.jpg',
                 'phone' => '61-3-1234 5678',
                 'email' => 'aus@datumhq.com',
-                'map_url' => 'https://www.google.com/maps'
             ],
             [
                 'country' => 'Philippines',
@@ -53,7 +51,6 @@ $title = $args['title'] ?? 'Locations';
                 'image_url' => get_stylesheet_directory_uri() . '/assets/images/Location-2.jpg',
                 'phone' => '61-3-1234 5678',
                 'email' => 'aus@datumhq.com',
-                'map_url' => 'https://www.google.com/maps'
             ],
             [
                 'country' => 'Vietnam',
@@ -67,21 +64,16 @@ $title = $args['title'] ?? 'Locations';
                 'image_url' => get_stylesheet_directory_uri() . '/assets/images/Location-2.jpg',
                 'phone' => '61-3-1234 5678',
                 'email' => 'aus@datumhq.com',
-                'map_url' => 'https://www.google.com/maps'
             ],
             [
                 'country' => 'Thailand',
                 'locations' => [
                     [
-                        'title' => 'Datum Consulting VN Company LTD',
-                        'address' => '52-54-56 E. B2, Sala Residential Area, District 2 (now Thu Duc), Ho Chi Minh City 700000, Vietnam'
+                        'title' => 'Coming Soon',
                     ]
                 ],
                 'open' => false,
                 'image_url' => get_stylesheet_directory_uri() . '/assets/images/Location-2.jpg',
-                'phone' => '61-3-1234 5678',
-                'email' => 'aus@datumhq.com',
-                'map_url' => 'https://www.google.com/maps'
             ],
         ];
 

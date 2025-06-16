@@ -33,18 +33,18 @@ export default function LocationItemBlock(props: BaseProps<OurValueCollapseProps
         <div className="flex flex-col lg:flex-row justify-between">
     {/* Left column */}
     <div className="flex flex-col justify-center lg:w-2/5">
-      <div className="font-bold text-[20px] mb-2">{location.title}</div>
-      <div className="mb-4 text-[20px]" dangerouslySetInnerHTML={{ __html: location.address }} />
+      <div className="font-bold text-[20px] text-[16px] mb-2">{location.title}</div>
+      <div className="mb-4 text-[20px] text-[16px]" dangerouslySetInnerHTML={{ __html: location.address }} />
       {phone && (
         <div className="mb-2">
           <span className="font-regular">Phone</span>{'  '}
-          <a className="text-blue-500 lg:text-[20px]" href={`tel:${phone}`}>{phone}</a>
+          <a className="text-blue-500 lg:text-[20px] text-[16px]" href={`tel:${phone}`}>{phone}</a>
         </div>
       )}
       {email && (
         <div className="mb-4">
           <span className="font-regular">Email</span>{'  '}
-          <a className="text-blue-500 ml-[12px] lg:text-[20px]" href={`mailto:${email}`}>{email}</a>
+          <a className="text-blue-500 ml-[12px] lg:text-[20px] text-[16px]" href={`mailto:${email}`}>{email}</a>
         </div>
       )}
     </div>

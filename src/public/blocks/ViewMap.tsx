@@ -8,7 +8,7 @@ const ViewMapModal = () => {
     <>
       <button 
         id="viewAllMapBtn"
-        className="px-10 py-2 text-white lg:text-[16px] font-bold px-12 py-2 bg-gradient-to-r from-secondary to-primary hover:opacity-90 transition-opacity"
+        className="lg:px-10 lg:py-2 px-2 py-0 text-white lg:text-[16px] text-[12px] font-bold px-12 py-2 bg-gradient-to-r from-secondary to-primary hover:opacity-90 transition-opacity"
         onClick={() => setIsOpen(true)}
       >
         View On Map
