@@ -23,12 +23,12 @@ $bg_image_url = $args['bg_image_url'] ?? '';
                 <div class="flex justify-center gap-4">
                     <img class="w-[140px] h-[140px] md:w-[220px] md:h-[220px] lg:w-[260px] lg:h-[260px] xl:w-[391px] xl:h-[391px] -mt-[30px] lg:-mt-[60px]" 
                         src="<?php echo get_assets_from_path('images/aws-partner-1.png') ?>" alt="Partner 1" />
-                    <img class="w-[100px] h-[100px] md:w-[180px] md:h-[180px] lg:w-[200px] lg:h-[200px] xl:w-[277px] xl:h-[277px] lg:-ml-[50px] lg:mt-[25px] -ml-[30px]" 
+                    <img class="w-[100px] h-[100px] md:w-[180px] md:h-[180px] lg:w-[200px] lg:h-[200px] xl:w-[277px] xl:h-[277px] lg:-ml-[50px] lg:mt-[25px] -mt-[2px] -ml-[30px]" 
                         src="<?php echo get_assets_from_path('images/aws-partner-2.png') ?>" alt="Partner 2" />
                 </div>
                 
-                <div class="mt-[-50px] md:mt-[-70px] lg:mt-[-90px] mt-[-35px] ml-[40px] md:ml-[70px] lg:ml-[110px]">
-                    <img class="w-[120px] h-[120px] md:w-[180px] md:h-[180px] lg:w-[220px] lg:h-[220px] xl:w-[290px] xl:h-[290px]" 
+                <div class="mt-[-33px] md:mt-[-70px] lg:mt-[-90px] mt-[-35px] ml-[37px] md:ml-[70px] lg:ml-[110px]">
+                    <img class="w-[100px] h-[100px] md:w-[180px] md:h-[180px] lg:w-[277px] lg:h-[277px] xl:w-[290px] xl:h-[290px]" 
                         src="<?php echo get_assets_from_path('images/aws-partner-3.png') ?>" alt="Partner 3" />
                 </div>
             </div>
