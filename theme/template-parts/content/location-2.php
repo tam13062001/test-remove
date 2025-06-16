@@ -2,11 +2,13 @@
 $title = $args['title'] ?? 'Locations';
 ?>
 <div class="py-[60px] lg:py-[80px]">
-    <div class="container mb-[50px] lg:mb-[100px]">
+    <div class="container mb-[50px] lg:mb-[100px] flex justify-between items-center">
         <h2 class="text-[32px] lg:text-[40px] font-bold">
             <?php echo esc_html($title); ?>
         </h2>
+        <div><?php render_rocket_block('view-map'); ?></div>
     </div>
+
 
     <div class="container">
         <?php

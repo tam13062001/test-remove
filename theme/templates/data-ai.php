@@ -116,7 +116,7 @@ Our experts help design robust, scalable data architectures to support AI and an
 ));
 ?>
 
-<?php get_template_part('template-parts/content/partners'); ?>
+<?php get_template_part('template-parts/content/partners-about-datum'); ?>
 <?php get_template_part('template-parts/content/successful-stories'); ?>
 <?php get_template_part('template-parts/content/frequently-asked-questions', null, array(
     'items' => array(
