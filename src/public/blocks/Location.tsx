@@ -1,143 +1,92 @@
-import React, { useState } from 'react';
-import { Card, Table, Modal, Button } from 'antd';
-import { 
-  UpOutlined, 
-  DownOutlined, 
-  CloseOutlined,
-  EnvironmentOutlined 
-} from '@ant-design/icons';
+import { BaseProps } from "../core/get-props";
+import { Collapse, ConfigProvider } from "antd";
+import { MinusOutlined, PlusOutlined } from "@ant-design/icons";
+import { useCallback } from "@wordpress/element";
+import {ArrowRightOutlined} from "@ant-design/icons";
 
-const Locations = ({ locationsData }) => {
-  const [expandedLocation, setExpandedLocation] = useState(null);
-  const [isMapModalVisible, setIsMapModalVisible] = useState(false);
-  const [selectedLocation, setSelectedLocation] = useState(null);
-
-  const toggleLocation = (id) => {
-    if (expandedLocation === id) {
-      setExpandedLocation(null);
-    } else {
-      setExpandedLocation(id);
-    }
-  };
-
-  const handleViewMap = (location) => {
-    setSelectedLocation(location);
-    setIsMapModalVisible(true);
-  };
-
-  const handleMapModalClose = () => {
-    setIsMapModalVisible(false);
-  };
-
-  const checklistColumns = [
-    {
-      title: 'Country',
-      dataIndex: 'country',
-      key: 'country',
-    },
-    {
-      title: 'Status',
-      dataIndex: 'available',
-      key: 'available',
-      render: (available) => (
-        <span className={available ? 'text-green-500' : 'text-red-500'}>
-          {available ? '✅' : '❌'}
-        </span>
-      ),
-    },
-  ];
-
-  return (
-    <div className="bg-lightblue px-8 lg:px-[115px] py-4 lg:py-20">
-      {locationsData.map((country) => (
-        <div key={country.id} className="mb-8 last:mb-0">
-          {country.checklist ? (
-            <div className="mt-6">
-              <h2 className="text-2xl font-semibold text-gray-800 mb-4">{country.name}</h2>
-              <Table
-                columns={checklistColumns}
-                dataSource={country.checklist.map((item, index) => ({
-                  key: index,
-                  country: item.country,
-                  available: item.available
-                }))}
-                pagination={false}
-                bordered={false}
-                className="bg-transparent"
-              />
-            </div>
-          ) : (
-            <>
-              <h2 className="text-2xl font-semibold text-gray-800 mb-4">{country.name}</h2>
-              {country.offices.map((office) => (
-                <Card 
-                  key={office.id} 
-                  className="mb-4 bg-transparent border-none shadow-none"
-                >
-                  <div className="flex justify-between items-center bg-white p-6 rounded-lg">
-                    <h3 className="text-lg font-medium text-gray-800">{office.name}</h3>
-                    <div className="flex space-x-2">
-                      <Button
-                        type="primary"
-                        icon={<EnvironmentOutlined />}
-                        onClick={() => handleViewMap(office)}
-                        className="flex items-center bg-blue-600 hover:bg-blue-700"
-                      >
-                        View Map
-                      </Button>
-                      <Button
-                        type="text"
-                        icon={expandedLocation === office.id ? <UpOutlined /> : <DownOutlined />}
-                        onClick={() => toggleLocation(office.id)}
-                        className="text-gray-600 hover:text-gray-800"
-                      />
-                    </div>
-                  </div>
-                  
-                  {expandedLocation === office.id && (
-                    <div className="mt-2 pl-2 pt-4 bg-white p-6 rounded-b-lg">
-                      <p className="text-gray-600">{office.address}</p>
-                      {office.city && <p className="text-gray-600">{office.city}</p>}
-                      {office.phone && <p className="text-gray-600">Phone: {office.phone}</p>}
-                      {office.email && <p className="text-gray-600">Email: {office.email}</p>}
-                    </div>
-                  )}
-                </Card>
-              ))}
-            </>
-          )}
-        </div>
-      ))}
-      
-      <Modal
-        title={selectedLocation?.name}
-        open={isMapModalVisible}
-        onCancel={handleMapModalClose}
-        footer={null}
-        width={800}
-        closeIcon={<CloseOutlined className="text-gray-500" />}
-        className="location-map-modal"
-      >
-        <div className="h-96 w-full">
-          <iframe
-            title="Office Location"
-            width="100%"
-            height="100%"
-            frameBorder="0"
-            scrolling="no"
-            marginHeight={0}
-            marginWidth={0}
-            src={`https://maps.google.com/maps?q=${encodeURIComponent(selectedLocation?.address || '')}&output=embed`}
-            className="border-0"
-          ></iframe>
-        </div>
-        <div className="mt-4">
-          <p className="text-gray-700">{selectedLocation?.address}</p>
-          {selectedLocation?.city && <p className="text-gray-700">{selectedLocation?.city}</p>}
-        </div>
-      </Modal>
-    </div>
-  );
+type OurValueCollapseProps = {
+  country: string;
+  locations: { title: string; address: string }[];
+  open: boolean;
+  image_url?: string;
+  phone?: string;
+  email?: string;
+  map_url?: string;
 };
 
-export default Locations;
+export default function LocationItemBlock(props: BaseProps<OurValueCollapseProps>) {
+  const { country, locations, open, image_url, phone, email, map_url } = props.data;
+
+  const renderIcon = useCallback((isActive: boolean) => {
+    return (
+      <div className="pt-2">
+        {isActive ? <MinusOutlined className="text-secondary" /> : <PlusOutlined className="text-secondary" />}
+      </div>
+    );
+  }, []);
+
+  const renderContent = useCallback(() => {
+    const location = locations?.[0];
+    if (!location) return null;
+
+    return (
+        <div className="flex flex-col lg:flex-row justify-between">
+    {/* Left column */}
+    <div className="flex flex-col justify-center lg:w-2/5">
+      <div className="font-bold text-[20px] mb-2">{location.title}</div>
+      <div className="mb-4 text-[20px]" dangerouslySetInnerHTML={{ __html: location.address }} />
+      {phone && (
+        <div className="mb-2">
+          <span className="font-regular">Phone</span>{'  '}
+          <a className="text-blue-500 lg:text-[20px]" href={`tel:${phone}`}>{phone}</a>
+        </div>
+      )}
+      {email && (
+        <div className="mb-4">
+          <span className="font-regular">Email</span>{'  '}
+          <a className="text-blue-500 ml-[12px] lg:text-[20px]" href={`mailto:${email}`}>{email}</a>
+        </div>
+      )}
+    </div>
+
+    {/* Right column - image */}
+    {image_url && (
+      <div className="lg:w-3/5 w-full flex justify-end">
+        <img
+          src={image_url}
+          alt={country}
+          className="w-auto h-auto"
+        />
+      </div>
+    )}
+  </div>
+    );
+  }, [locations, phone, email, map_url, image_url]);
+
+  return (
+    <ConfigProvider
+      theme={{
+        components: {
+          Collapse: {
+            headerPadding: '20px 0',
+            contentPadding: '24px 0',
+          },
+        },
+      }}
+    >
+      <Collapse
+        defaultActiveKey={open ? '1' : undefined}
+        expandIconPosition="end"
+        ghost
+        expandIcon={({ isActive }) => <div className={'!text-primary'}><ArrowRightOutlined className="mt-2" color={'#315cd4'} rotate={isActive ? 90 : 0} /></div>}
+      >
+        <Collapse.Panel
+          key="1"
+          header={<div className="font-[700] text-primary text-[24px]">{country}</div>}
+        >
+          {renderContent()}
+        </Collapse.Panel>
+      </Collapse>
+    </ConfigProvider>
+  );
+}
