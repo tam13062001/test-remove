@@ -99,7 +99,6 @@ export default function Member(props: BaseProps<MemberProps>) {
               [&_.ant-tabs-tab]:font-normal
               [&_.ant-tabs-tab]:transition-all
               [&_.ant-tabs-tab]:duration-200
-              [&_.ant-tabs-ink-bar]:hidden
               [&_.ant-tabs-content]:border-none
             "
           >

@@ -1,12 +1,21 @@
 <?php
 $title = $args['title'] ?? 'Locations';
+$image_url = $args['image_url'] ?? get_stylesheet_directory_uri() . '/assets/images/map.png';
 ?>
 <div class="py-[60px] lg:py-[80px]">
     <div class="container mb-[50px] lg:mb-[100px] flex justify-between items-center">
         <h2 class="text-[32px] lg:text-[40px] font-bold">
             <?php echo esc_html($title); ?>
         </h2>
-        <div><?php render_rocket_block('view-map'); ?></div>
+        <div>
+            <?php
+            render_rocket_block('view-map', [
+                'attributes' => [
+                    'image_url' => $image_url
+                ]
+            ]);
+            ?>
+        </div>
     </div>
 
 

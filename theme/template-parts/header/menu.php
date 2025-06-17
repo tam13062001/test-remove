@@ -39,7 +39,7 @@ $current_id = get_queried_object_id();
 
     
     <div class="group relative">
-    <a class="mx-4 hover:border-b-2 border-white <?php echo $is_active ? 'border-b-2 border-white' : ''; ?>" href="<?php echo $menu['url']; ?>">
+    <a class="mx-4 hover:border-b-2 border-[#3DA7F2] <?php echo $is_active ? 'border-b-2 border-white' : ''; ?>" href="<?php echo $menu['url']; ?>">
             <?php echo $menu['title']; ?>
         </a>
         <?php if (!empty($menu['children'])) { ?>

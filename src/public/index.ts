@@ -11,7 +11,8 @@ import ContactFormBlock from "./blocks/ContactFormBlock";
 import BackToTop from './blocks/BackTotop';
 import Member from './blocks/Member';
 import Locations from './blocks/Location';
-import ViewMapModal from './blocks/ViewMap';
+import ViewMapModal from './blocks/ViewMapModal';
+import CreatePostForm from './blocks/CreatePostFormBlock';
 
 registerComponent('rocket-example', ExampleBlock)
 registerComponent('collapse-block', CollapseBlock)
@@ -25,6 +26,7 @@ registerComponent('back-to-top', BackToTop)
 registerComponent('member', Member)
 registerComponent('locations', Locations)
 registerComponent('view-map', ViewMapModal)
+registerComponent('create-post-form', CreatePostForm)
 
 document.addEventListener('DOMContentLoaded', function () {
   const containers = document.querySelectorAll("[class^='wp-block-rocket']")

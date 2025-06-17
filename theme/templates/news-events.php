@@ -7,7 +7,7 @@
     'background_image' => get_assets_from_path('images/News-Events.jpg')
 )); ?>
 
-<div class="container font-regular text-[32px] lg:text-[36px] lg:mt-[90px]">
+<div class="container font-regular text-[32px] lg:text-[36px] lg:mt-[90px] pb-[100px]">
     <h2>
         Upcoming Events
     </h2>
@@ -16,7 +16,7 @@
 get_template_part('template-parts/content/Upcoming') ;
 ?>
 
-<div class="container font-regular text-[32px] lg:text-[36px]">
+<div class="container font-regular text-[32px] lg:text-[36px] pt-[100px]">
     <h2>
         Latest News & Events
     </h2>
