@@ -3,12 +3,15 @@
   class="sticky top-0 z-[100] w-full lg:-mt-[110px] transition-all duration-300 bg-transparent"
 >
   <div class="container ">
-    <div class="flex py-[32px] items-center justify-between text-[16px]">
-      <a href="/">
+    <div class="flex pt-[32px] pb-[20px] items-center justify-between text-[16px]">
+      <a class="mt-[10px]" href="/">
         <?php get_template_part('template-parts/content/logo'); ?>
       </a>
-      <?php get_template_part('template-parts/header/menu'); ?>
+      <div class="mt-[18px]">
+        <?php get_template_part('template-parts/header/menu'); ?>
       <?php get_template_part('template-parts/content/language-switcher'); ?>
+      </div>
+      
     </div>
   </div>
 </header>
