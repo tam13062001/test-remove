@@ -30,7 +30,7 @@ class SMTP_Mailer {
 
         $this->mail->setFrom($this->mail->Username);
         $this->mail->addAddress($receiver);
-        $this->mail->isHTML(true);
+        $this->mail->isHTML(false);
         $this->mail->Subject = $subject;
         $this->mail->Body = $body;
         $this->mail->send();

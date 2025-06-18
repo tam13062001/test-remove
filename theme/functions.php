@@ -37,12 +37,87 @@ function datum_save_contact(WP_REST_Request $request) {
         'post_type'    => 'datum_contact',
     ));
 
+    $response = new WP_REST_Response([
+        'message' => 'Contact has been saved and email sent. Thank you!',
+    ]);
+
+    ignore_user_abort(true);
+    header("Connection: close");
+    header("Content-Encoding: none");
+
+    // Important: Convert WP_REST_Response to plain JSON output
+    $output = wp_json_encode($response->get_data());
+    echo $output;
+    header("Content-Type: application/json");
+    header("Content-Length: " . strlen($output));
+
+    ob_end_flush();
+    flush();
+
+
     $host = 'smtp.office365.com';
     $port = 587;
     $username = 'wgb.cf@datumhq.com';
     $password = getenv('SMTP_PASSWORD');
     $secure = 'tls';
     $receiver = 'contacts@datumhq.com';
+
+
+    $template1 = "
+Dear {{first_name}} {{last_name}},
+
+Thank you for reaching out to Datum Consulting. We have received your message and our team will review your request shortly. One of our representatives will get back to you soon.
+Here's a summary of the information you provided:
+
+Name: {{first_name}} {{last_name}}
+Email: {{email}}
+Job Title: {{job_title}}
+Phone Number: {{phone_number}}
+Company: {{company}}
+Country: {{country}}
+Your Message:
+{{your_message}}
+
+We appreciate your interest in Datum Consulting and look forward to assisting you.
+
+Best regards,
+Datum Consulting Team
+datumhq.com
+";
+
+    $template2 = "
+Hello team,
+
+A new contact form has been submitted. Please see the details below:
+
+First Name: {{first_name}}
+Last Name: {{last_name}}
+Email: {{email}}
+Job Title: {{job_title}}
+Phone Number: {{phone_number}}
+Company: {{company}}
+Country: {{country}}
+Message:
+{{your_message}}
+
+Please follow up accordingly.
+
+Best,
+Datum Consulting
+";
+
+    $data = array(
+        array(
+            'subject' => 'Thank You for Contacting Datum Consulting',
+            'template' => $template1,
+            'receiver' => $body['email']
+        ),
+        array(
+            'subject' => "New Contact Form Submission",
+            'template' => $template2,
+            'receiver' => $receiver
+        )
+    );
 
     $mailer = new SMTP_Mailer();
     $mailer->load(array(
@@ -52,34 +127,31 @@ function datum_save_contact(WP_REST_Request $request) {
         'password' => $password,
         'secure' => $secure
     ));
-    $subject = 'New Contact Form Submission';
-    $body = "You have a new message:\n\n"
-        . "First Name: " . sanitize_text_field($body['first_name']) . "\n"
-        . "Last Name: " . sanitize_text_field($body['last_name']) . "\n"
-        . "Email: " . sanitize_email($body['email']) . "\n"
-        . "Phone: " . sanitize_text_field($body['phone']) . "\n"
-        . "Company: " . sanitize_text_field($body['company']) . "\n"
-        . "Country: " . sanitize_text_field($body['country']) . "\n"
-        . "Job: " . sanitize_text_field($body['job']) . "\n"
-        . "Message: " . sanitize_textarea_field($body['message']);
 
-    $sent = false;
-    $debug = '';
-    try {
-        $sent = $mailer->send(array(
-            'subject' => $subject,
-            'body' => $body,
-            'receiver' => $receiver,
+    foreach ($data as $item) {
+        $content = strtr($item['template'], array(
+            '{{first_name}}' => $body['first_name'],
+            '{{last_name}}' => $body['last_name'],
+            '{{email}}' => $body['email'],
+            '{{job_title}}' => $body['job'],
+            '{{phone_number}}' => $body['phone'],
+            '{{company}}' => $body['company'],
+            '{{country}}' => $body['country'],
+            '{{your_message}}' => $body['message']
         ));
-    } catch (\Exception $e) {
-        $debug = $e->getMessage();
+        try {
+            $mailer->send([
+                'subject' => $item['subject'],
+                'body' => $content,
+                'receiver' => $item['receiver'],
+            ]);
+        } catch (\Exception $e) {
+            $debug = $e->getMessage();
+        }
+
     }
 
-    return new WP_REST_Response([
-        'message' => 'Contact has been saved and email sent. Thank you!',
-        'sent' => $sent,
-        'debug' => $debug
-    ]);
+    return null;
 }
 
 $rocket->register_rest_api('save-contact', [
@@ -95,58 +167,6 @@ $rocket->register_rest_api('contacts', [
         return is_user_logged_in();
     }
 ]);
-
-function test_send_mail(WP_REST_Request $request) {
-    $host = 'smtp.office365.com';
-    $port = 587;
-    $username = 'wgb.cf@datumhq.com';
-    $password = getenv('SMTP_PASSWORD');
-    $secure = 'tls';
-    $receiver = $request->get_param('r');
-
-    var_dump('env', strlen($password));
-
-    if (empty($receiver)) return new WP_REST_Request([
-        'message' => 'Receiver not found'
-    ]);
-
-    $mailer = new SMTP_Mailer();
-    $mailer->mail->SMTPDebug = 2;
-    $mailer->load(array(
-        'host' => $host,
-        'port' => $port,
-        'username' => $username,
-        'password' => $password,
-        'secure' => $secure
-    ));
-
-    $debug = '';
-    $sent = false;
-    try {
-        $sent = $mailer->send(array(
-            'subject' => 'Test',
-            'body' => 'Test',
-            'receiver' => $receiver,
-        ));
-    } catch (Exception $e) {
-        $debug = $e->getMessage();
-    }
-
-    return new WP_REST_Response([
-        'path' => ABSPATH,
-        'sent' => $sent,
-        'debug' => $debug,
-        'env' => strlen($password)
-    ]);
-}
-
-/*$rocket->register_rest_api('test', [
-    'methods' => 'GET',
-    'callback' => 'test_send_mail',
-    'permission_callback' => function () {
-        return true;
-    }
-]);*/
 
 function datum_list_contact() {
     $query = new WP_Query(array(
