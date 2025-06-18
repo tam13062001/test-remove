@@ -13,6 +13,7 @@ import Member from './blocks/Member';
 import Locations from './blocks/Location';
 import ViewMapModal from './blocks/ViewMapModal';
 import CreatePostForm from './blocks/CreatePostFormBlock';
+import ListPost from './blocks/ListPost';
 
 registerComponent('rocket-example', ExampleBlock)
 registerComponent('collapse-block', CollapseBlock)
@@ -27,6 +28,7 @@ registerComponent('member', Member)
 registerComponent('locations', Locations)
 registerComponent('view-map', ViewMapModal)
 registerComponent('create-post-form', CreatePostForm)
+registerComponent('list-post', ListPost)
 
 document.addEventListener('DOMContentLoaded', function () {
   const containers = document.querySelectorAll("[class^='wp-block-rocket']")

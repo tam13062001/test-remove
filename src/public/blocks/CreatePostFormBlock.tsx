@@ -17,7 +17,7 @@ export default function CreatePostForm() {
         {
           title,
           content,
-          category: parseInt(category),
+          category,
           tags,
           image_url: imageUrl,
         },
@@ -26,7 +26,7 @@ export default function CreatePostForm() {
           headers: { 'Content-Type': 'application/json' }
         }
       );
-      setResult(`Bài viết đã tạo: ${res.data.link}`);
+      setResult(`Bài viết đã tạo`);
     } catch (error) {
       console.error(error);
       setResult('Lỗi khi tạo bài viết');
@@ -52,7 +52,7 @@ export default function CreatePostForm() {
       />
       <input
         type="text"
-        placeholder="ID chuyên mục (category ID)"
+        placeholder="category"
         value={category}
         onChange={e => setCategory(e.target.value)}
         className="border p-2 w-full"

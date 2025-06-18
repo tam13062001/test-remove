@@ -140,18 +140,27 @@ function datum_create_post(WP_REST_Request $request) {
         return new WP_Error('missing_fields', 'Title and content are required.', ['status' => 400]);
     }
 
+    // Kiểm tra category có tồn tại không
+    if ($category && !term_exists($category, 'category')) {
+        return new WP_Error('invalid_category', 'Danh mục không tồn tại.', ['status' => 400]);
+    }
+
     $post_id = wp_insert_post(array(
         'post_title'    => $title,
         'post_content'  => $content,
         'post_status'   => 'publish',
         'post_type'     => 'post',
         'post_author'   => get_current_user_id(),
-        'post_category' => $category ? [$category] : [],
         'tags_input'    => is_array($tags) ? $tags : explode(',', $tags),
     ));
 
     if (is_wp_error($post_id)) {
         return new WP_Error('create_failed', 'Không thể tạo bài viết.', ['status' => 500]);
+    }
+
+    // Gán category nếu có
+    if ($category) {
+        wp_set_post_categories($post_id, [$category]);
     }
 
     // Gán ảnh đại diện nếu có
@@ -182,23 +191,40 @@ $rocket->register_rest_api('create-post', [
 $rocket->register_rest_api('get-posts', [
     'methods' => 'GET',
     'callback' => function (WP_REST_Request $request) {
+        $category = $request->get_param('category') ?: '';
         $args = array(
             'post_type' => 'post',
-            'posts_per_page' => 10,
-            'paged' => $request->get_param('page') ?: 1,
+            'posts_per_page' => -1,
+            'orderby' => 'date',
+            'order' => 'DESC',
         );
+
+        if (!empty($category)) {
+            $args['category_name'] = $category;
+        }
 
         $query = new WP_Query($args);
         $posts = array();
 
         foreach ($query->posts as $post) {
+            $thumbnail_url = get_the_post_thumbnail_url($post, 'full') ?: '';
+            
+            // Nếu không có ảnh đại diện, lấy ảnh đầu tiên từ các attachment
+            if (empty($thumbnail_url)) {
+                $attachments = get_attached_media('image', $post->ID);
+                if (!empty($attachments)) {
+                    $first_attachment = reset($attachments);
+                    $thumbnail_url = wp_get_attachment_image_url($first_attachment->ID, 'full');
+                }
+            }
+
             $posts[] = array(
                 'id' => $post->ID,
                 'title' => get_the_title($post),
                 'link' => get_permalink($post),
+                'date' => get_the_date('d/m/Y', $post),
+                'thumbnail' => $thumbnail_url,
                 'excerpt' => get_the_excerpt($post),
-                'date' => get_the_date('', $post),
-                'thumbnail' => get_the_post_thumbnail_url($post, 'medium') ?: '',
             );
         }
 
