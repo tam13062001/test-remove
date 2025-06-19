@@ -119,27 +119,28 @@ Datum Consulting
         )
     );
 
-    $mailer = new SMTP_Mailer();
-    $mailer->load(array(
-        'host' => $host,
-        'port' => $port,
-        'username' => $username,
-        'password' => $password,
-        'secure' => $secure
-    ));
+
 
     foreach ($data as $item) {
-        $content = strtr($item['template'], array(
-            '{{first_name}}' => $body['first_name'],
-            '{{last_name}}' => $body['last_name'],
-            '{{email}}' => $body['email'],
-            '{{job_title}}' => $body['job'],
-            '{{phone_number}}' => $body['phone'],
-            '{{company}}' => $body['company'],
-            '{{country}}' => $body['country'],
-            '{{your_message}}' => $body['message']
-        ));
         try {
+            $mailer = new SMTP_Mailer();
+            $mailer->load(array(
+                'host' => $host,
+                'port' => $port,
+                'username' => $username,
+                'password' => $password,
+                'secure' => $secure
+            ));
+            $content = strtr($item['template'], array(
+                '{{first_name}}' => $body['first_name'],
+                '{{last_name}}' => $body['last_name'],
+                '{{email}}' => $body['email'],
+                '{{job_title}}' => $body['job'],
+                '{{phone_number}}' => $body['phone'],
+                '{{company}}' => $body['company'],
+                '{{country}}' => $body['country'],
+                '{{your_message}}' => $body['message']
+            ));
             $mailer->send([
                 'subject' => $item['subject'],
                 'body' => $content,
