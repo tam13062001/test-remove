@@ -14,6 +14,7 @@ const ListPost = ({ category }) => {
                 const url = `/index.php?rest_route=/datum/v1/get-posts` + (category ? `&category=${category}` : '');
                 const response = await fetch(url);
                 const data = await response.json();
+                console.log('data:', data);
                 setPosts(data);
             } catch (error) {
                 console.error('Error fetching posts:', error);

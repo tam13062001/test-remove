@@ -2,7 +2,7 @@
 <?php get_header(); ?>
 
 <?php get_template_part('template-parts/content/banner', null, array(
-    'title' => 'Digital Transformation for a Premier Banking Client',
+    'title' => 'Redefining Banking Excellence: A Secure Landing Zone Transformation',
     'background_image' => get_assets_from_path('images/success_story_bank.png'),
     'breadcrumbs' => array('Successful stories', 'Premier Banking'),
 )); ?>
@@ -10,8 +10,8 @@
 <?php
 get_template_part('template-parts/content/call-to-action-story', null, array(
     'title' => 'Call for Change',
-    'heading' => 'As part of its Better Banking Experience (BBX) initiative, a leading financial institution sought to modernize its digital banking services.',
-    'content' => 'They aim to do this by refreshing channels, integrating third-party banking processors, and enhancing operational efficiency. However, security vulnerabilities, governance challenges, rising infrastructure costs, and manual inefficiencies posed significant obstacles to transformation, making it clear that a new approach was necessary.',
+    'heading' => 'Facing security vulnerabilities, governance challenges, and the need for a digital refresh, a leading bank embarked on a Landing Zone transformation with Datum Consulting.',
+    'content' => 'By implementing an AWS Landing Zone and EKS Workload Platform, the bank achieved seamless cloud migration, cost optimization, and regulatory compliance. This modernized infrastructure enabled secure multi-tenancy hosting, automated pipelines, and efficient deployment of banking microservices, powering the Better Banking Experience (BBX) initiative.',
     'image_url' => get_assets_from_path('images/Group 62.png'),
     'cta_text' => 'Download detail case study',
     'cta_link' => '#'
@@ -22,26 +22,23 @@ get_template_part('template-parts/content/call-to-action-story', null, array(
 <?php
 get_template_part('template-parts/content/info-section-with-image-reverse', null, array(
     'title' => 'When Tech Meets Banking Excellence',
-    'heading' => 'Datum Consulting helped the bank create a secure and efficient cloud system for easier digital banking.',   
+    'heading' => 'The bank faces critical challenges in security, resource management, and compliance, hindering its digital transformation.',   
     'image_url' => get_assets_from_path('images/story_tech_meet_banking.png'),
     'items' => array(
         array(
-            'content' => 'Utilize AWS Landing Zone and an EKS-based workload platform',
+            'content' => 'AWS Landing Zone provides a scalable, secure foundation to streamline governance, automate infrastructure deployment, and enforce best practices',
         ),
         array(
-            'content' => 'Establish a secure, scalable, and automated environment while ensuring compliance',
+            'content' => 'By integrating structured controls, centralized auditing, and optimized resource allocation, the bank can modernize digital channels, accelerate innovation, and ensure seamless adoption of next-generation banking solutions.',
         ),
-        array(
-            'content' => 'Create a redefined API management strategy, robust networking framework, and automated deployment pipelines to improve operations and security',
-        )
     ),
 )) ;
 ?>
 
 <?php
 get_template_part('template-parts/content/info-section-with-image-story-percent', null, array(
-    'title' => 'A Meaningful Impact',
-    'content' => 'The transformation enhanced security and compliance, ensuring no breaches and adherence to banking standards. Operational efficiency improved with quicker provisioning and reduced manual tasks. Platform performance reached 99.9% uptime, allowing for seamless scalability. The migration of legacy systems and integration of new services bolstered the bank’s innovation strategy, with Datum Consulting as a key partner in its digital journey.',   
+    'title' => 'A Valuable Difference',
+    'content' => 'The project successfully eliminated security vulnerabilities, enforced role-based access and least privilege policies, and ensured full alignment with Philippine banking regulations. Automated CI/CD pipelines and zero-downtime deployments accelerated innovation, while provisioning 30+ environments streamlined workload management. Large on-prem applications were seamlessly migrated, supporting BBX initiatives such as frontend modernization and backend-for-frontend integration. With 99.9% platform uptime, optimized resource utilization, and significantly reduced manual efforts, the bank is now equipped for sustained growth. Datum Consulting has become a strategic, long-term partner, continuously supporting new migrations and future banking advancements.',   
     'image_url' => get_assets_from_path('images/success_story_meaningfull.jpg'),
     'percent' => '99.9%',
     'percent_content' => 'Platform <br class="hidden lg:block" />performance uptime '
@@ -52,7 +49,7 @@ get_template_part('template-parts/content/info-section-with-image-story-percent'
 <?php
 get_template_part('template-parts/content/info-section-with-image-reverse-lesson', null, array(
     'title' => 'Lessons Learned',
-    'heading' => 'The importance of strong collaboration between the bank and its third-party technology providers to prevent misalignment and delays.',   
+    'heading' => 'A key takeaway from this initiative was the importance of strong collaboration between the bank and its third-party technology providers to prevent misalignment and delays.',   
     'image_url' => get_assets_from_path('images/success_story_lesson.png'),
     'content' => 'The integration of off-the-shelf banking products proved more complex than anticipated, requiring additional customization and effort to meet the bank’s operational needs. Through this experience, the bank has strengthened its approach to vendor engagement and technology adoption, ensuring greater agility and efficiency in future transformation initiatives.'
 )) ;

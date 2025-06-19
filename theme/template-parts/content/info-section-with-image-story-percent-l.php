@@ -5,6 +5,7 @@ $content = $args['content'] ?? '';
 $percent = $args['percent'] ?? '';
 $percent_content = $args['percent_content'] ?? '';
 $image_url = $args['image_url'] ?? '';
+$items = $args['items'] ?? array();
 ?>
 
 <div class="relative lg:min-h-[880px] lg:my-[88px] lg:mt-[100px] lg:mb-[150px] flex flex-col-reverse lg:flex-row">
@@ -13,7 +14,7 @@ $image_url = $args['image_url'] ?? '';
             <img class="object-cover h-auto lg:h-[636px] w-full lg:w-[96%]" src="<?php echo $image_url?>" alt="" />
         </div>
     </div>
-    <div class="relative lg:absolute top-0 right-0 container  lg:w-3/5 bg-white px-24 lg:px-0 pt-6 lg:pt-5 lg:pl-[60px]">
+    <div class="relative lg:absolute top-0 right-0 container lg:w-[58%] bg-white px-24 lg:px-0 pt-6 lg:pt-5 lg:pl-[50px] ">
         <div class="lg:w-[70%] font-bold text-[32px] lg:text-[40px] lg:mb-[10px] mb-6">
             <h2>
                 <?php echo $title ?>
@@ -26,9 +27,13 @@ $image_url = $args['image_url'] ?? '';
         </div>
 
         <div class=" bg-white pt-6 lg:py-5 lg:pr-[100px]">
-            <div class="text-[16px] lg:text-[20px] font-normal leading-[170%] mb-4 lg:mb-0">
-                <?php echo $content; ?>
-            </div>
+                <?php foreach($items as $item): ?>
+                    <div class="lg:py-5 flex flex-col lg:flex-row lg:space-x-5 ">
+                        <div class="lg:w-full mt-3 lg:mt-0 text-[16px] lg:text-[20px]">
+                            <?php echo $item['content']; ?>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
 
             <div class=" [&>:not(:last-child)]:border-b ">
 

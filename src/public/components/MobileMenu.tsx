@@ -50,7 +50,7 @@ export default function MobileMenu(props: BaseProps<MobileMenuProps>) {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsSticky(window.scrollY > 50); // 50px là ví dụ, chỉnh theo header của bạn
+      setIsSticky(window.scrollY > 50);
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -88,8 +88,8 @@ export default function MobileMenu(props: BaseProps<MobileMenuProps>) {
         }}
       >
         <div className={'bg-white h-full text-black flex flex-col'}>
-          <div className={'flex justify-between p-5 border-b-2 border-gray-500'}>
-            <img className={'h-7'} src={logo_url} alt="Logo" />
+          <div className={'flex justify-between py-1 px-3 border-b border-gray-500'}>
+            <img className={'h-7 mt-4 ml-4'} src={logo_url} alt="Logo" />
             <Button className={'text-black'} type={'text'} icon={<CloseOutlined />} onClick={() => setOpen(false)} />
           </div>
           <div className="flex-1 overflow-y-auto">
@@ -109,7 +109,7 @@ export default function MobileMenu(props: BaseProps<MobileMenuProps>) {
               }}
             >
               <Menu
-                className="font-bold text-[16px] bg-white"
+                className="font-bold text-[16px] bg-white pl-5 pt-4 [&_.ant-menu-sub]:font-normal"
                 mode="inline"
                 items={menuData}
                 onSelect={onItemSelect}
@@ -128,8 +128,8 @@ export default function MobileMenu(props: BaseProps<MobileMenuProps>) {
                       transform: isOpen ? 'rotate(90deg)' : 'rotate(0deg)'
                     }}
                   >
-                    <svg width="18" height="18" viewBox="0 0 20 20" fill="none">
-                      <path d="M7 5L13 10L7 15" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    <svg width="22" height="22" viewBox="0 0 20 20" fill="none">
+                      <path d="M7 5L13 10L7 15" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                   </span>
                 )}
