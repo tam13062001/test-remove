@@ -23,3 +23,43 @@ body {
 .container {
     @apply px-10 lg:px-16
 }
+
+/* CSS For custom header */
+#header {
+    @apply text-white;
+}
+
+#header.has-background .main-logo {
+    @apply hidden;
+}
+
+#header.has-background .alternative-logo {
+    @apply block;
+}
+
+#header.has-background {
+    @apply bg-white text-black shadow-lg;
+}
+
+#header.has-background .menu li {
+    @apply bg-white;
+}
+#header.has-background .menu li:hover {
+    @apply bg-secondary/90;
+}
+
+#header .menu > a:hover {
+    @apply border-white border-b-2;
+}
+
+#header.has-background .menu > a:hover {
+    @apply border-primary border-b-2;
+}
+
+#header .menu > a.active {
+    @apply border-white border-b-2;
+}
+
+#header.has-background .menu > a.active {
+    @apply border-primary border-b-2;
+}

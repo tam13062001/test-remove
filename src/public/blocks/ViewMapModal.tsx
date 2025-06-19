@@ -1,62 +1,64 @@
 import React from 'react';
+import {BaseProps} from "../core/get-props";
+import {Button, Modal} from "antd";
+import {CloseOutlined} from "@ant-design/icons";
 
-type Props = {
+type ViewMapModalProps = {
   attributes?: {
     image_url?: string;
   };
 };
 
-const ViewMapModal: React.FC<Props> = ({ attributes }) => {
+const ViewMapModal: React.FC<BaseProps<ViewMapModalProps>> = (props) => {
+  const { attributes } = props.data
   const [isOpen, setIsOpen] = React.useState(false);
   const image_url = attributes?.image_url;
-  
-  console.log("All props:", { attributes });
-  console.log("image_url in modal:", image_url);
+
+  const onCloseModalBtnClick = () => {
+    setIsOpen(false)
+  }
+
+  const onOpenModalBtnClick = () => {
+    setIsOpen(true)
+  }
+
+  // todo embed a map, it is not only an image
 
   return (
     <>
-      <button 
-        id="viewAllMapBtn"
-        className="lg:px-10 lg:py-2 px-2 py-0 text-white lg:text-[16px] text-[12px] font-bold px-12 py-2 bg-gradient-to-r from-secondary to-primary hover:opacity-90 transition-opacity"
-        onClick={() => setIsOpen(true)}
+      <button
+        className="btn"
+        onClick={onOpenModalBtnClick}
       >
         View On Map
       </button>
 
-      {/* Modal */}
-      {isOpen && (
-        <div 
-          id="mapModal" 
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50"
-          onClick={() => setIsOpen(false)}
-        >
-          <div 
-            className="bg-white rounded-lg w-full max-w-6xl h-[80vh] mx-4"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <div className="flex justify-between items-center p-4 border-b">
-              <h3 className="text-xl font-bold">All Locations Map</h3>
-              <button 
-                className="text-2xl text-gray-500 hover:text-gray-700 transition-colors cursor-pointer"
-                onClick={() => setIsOpen(false)}
-              >
-                &times;
-              </button>
-            </div>
-            <div className="h-[calc(80vh-60px)] p-4 flex items-center justify-center">
-              {image_url ? (
-                <img 
-                  src={image_url} 
-                  alt="Map" 
-                  className="w-full h-full object-contain"
-                />
-              ) : (
-                <p>No image provided</p>
-              )}
-            </div>
+      <Modal
+        footer={null}
+        width={'80%'}
+        open={isOpen}
+        onCancel={onCloseModalBtnClick}
+        styles={{
+          content: { padding: 0 },
+          body: { padding: 0 }
+        }}
+        closeIcon={null}
+      >
+        <div className={'relative'}>
+          <div className={'absolute right-0 top-0 translate-x-1/2 -translate-y-1/2'}>
+            <Button size={'small'} shape={'circle'} icon={<CloseOutlined />} onClick={onCloseModalBtnClick} />
           </div>
+          {image_url ? (
+            <img
+              src={image_url}
+              alt="Map"
+              className="w-full h-full object-contain"
+            />
+          ) : (
+            <p>No image provided</p>
+          )}
         </div>
-      )}
+      </Modal>
     </>
   );
 };
