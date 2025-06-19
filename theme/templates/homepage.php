@@ -91,11 +91,13 @@ get_template_part('template-parts/content/info-section-with-image', null, array(
 <?php get_template_part('template-parts/content/our-story'); ?>
 
     <!-- Our Partners -->
-<?php get_template_part('template-parts/content/partners'); ?>
+<?php get_template_part('template-parts/content/partners-about-datum'); ?>
 
 <?php get_template_part('template-parts/content/Join-the-Digital-Revolution'); ?>
 
     <!-- Location -->
-<?php get_template_part('template-parts/content/location'); ?>
+<?php get_template_part('template-parts/content/location-2'); ?>
+
+<?php get_template_part('template-parts/content/back-to-top'); ?>
 
 <?php get_footer(); ?>

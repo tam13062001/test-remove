@@ -39,13 +39,13 @@ $current_id = get_queried_object_id();
 
     
     <div class="group relative">
-    <a class="mx-4 hover:border-b-2 border-white <?php echo $is_active ? 'border-b-2 border-white' : ''; ?>" href="<?php echo $menu['url']; ?>">
+    <a class="mx-4 hover:border-b-2 border-[#3DA7F2] <?php echo $is_active ? 'border-b-2 border-white' : ''; ?>" href="<?php echo $menu['url']; ?>">
             <?php echo $menu['title']; ?>
         </a>
         <?php if (!empty($menu['children'])) { ?>
-            <ul class="absolute bottom-0 list-none z-20 w-max m-0 top-[25px] hidden group-hover:block">
+            <ul class="absolute bottom-0 list-none z-20 w-max m-0 top-[25px] hidden group-hover:block pt-5 ">
                 <?php foreach ($menu['children'] as $submenu) : ?>
-                    <li class="relative group bg-secondary/10 hover:bg-secondary/20 border-b border-primary">
+                    <li class="relative group bg-white border-b border-primary text-black ">
                         <a href="<?php echo $submenu['url'] ?>" class="block px-4 py-2 font-bold ">
                             <?php echo $submenu['title'] ?>
                         </a>
@@ -63,7 +63,7 @@ $current_id = get_queried_object_id();
     $logo_url = $rocket->helper->get_custom_logo_url();
     render_rocket_block('mobile-menu', array(
         'data' => array_values($primary_menu_items),
-        'logo_url' => $logo_url
+        'logo_url' => get_stylesheet_directory_uri().'/assets/images/logo.png'
     ));
 
     ?>

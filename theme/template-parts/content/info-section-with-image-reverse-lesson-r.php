@@ -3,25 +3,32 @@ $title = $args['title'] ?? '';
 $heading = $args['heading'] ?? '';
 $content = $args['content'] ??  '';
 $image_url = $args['image_url'] ?? '';
+$items = $args['items'] ?? array();
 ?>
 
-<div class="relative lg:min-h-[880px] lg:mb-[88px]">
+<div class="relative lg:min-h-[880px] mt-[200px] lg:mb-[88px]">
 
     <div class="container pt-[40px] lg:pt-0 z-10 relative">
             
-        <div class="relative lg:absolute top-0 left-0  lg:w-3/5 bg-white pt-6 lg:pt-[70px] lg:pl-[60px]  ">
-            <div class="lg:w-[70%] font-bold text-[32px] lg:text-[40px] mb-6 lg:mb-[10px] lg:mt-[90px]">
+        <div class="relative lg:absolute top-0 left-0  lg:w-[60%] bg-white lg:pl-[60px] lg:px-[20px] ">
+            <div class="lg:w-[70%] font-bold text-[32px] lg:text-[40px] mb-6 lg:mb-[10px] ">
                 <h2>
                     <?php echo $title ?>
                 </h2>
             </div>  
             <div>
-                <div class="lg:w-[80%] text-primary text-[16px] lg:text-[32px] font-normal leading-[170%]">
+                <div class="text-primary text-[16px] lg:text-[32px] font-normal leading-[170%]">
                     <?php echo $heading ?>
                 </div>
             </div>
-            <div class="lg:w-[80%] pt-6 lg:pt-5 text-[16px] lg:text-[20px] font-normal leading-[170%] lg:mb-[20px]">
-                <?php echo $content; ?>
+            <div class="leading-[170%]">
+                <?php foreach($items as $item): ?>
+                <div class=" lg:py-5 flex flex-col lg:flex-row lg:space-x-5 ">
+                    <div class="lg:w-full mt-3lg:mt-0 text-[16px] lg:text-[20px]">
+                        <?php echo $item['content']; ?>
+                    </div>
+                </div>
+                <?php endforeach; ?>
             </div>
         </div>
     </div>

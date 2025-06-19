@@ -6,8 +6,8 @@ $image_url = $args['image_url'] ?? '';
 ?>
 
 <div class="relative lg:min-h-[880px] lg:mb-[88px]">
-    <div class="container pt-[40px] lg:pt-0 z-10 relative">
-        <div class="relative lg:absolute top-0 right-0 lg:w-3/5 bg-white lg:py-[80px] lg:px-[100px]">
+    <div class=" pt-[40px] lg:pt-0 z-10 relative">
+        <div class="relative lg:absolute top-0 right-0 lg:w-[57.5%] bg-white lg:pt-[80px] lg:pb-[40px] lg:px-[50px]">
             <div class="lg:w-[70%] font-bold text-[32px] lg:text-[40px] mb-6 lg:mb-[10px]">
                 <h2>
                     <?php echo $title ?>

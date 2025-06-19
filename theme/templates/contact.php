@@ -20,8 +20,8 @@ get_template_part('template-parts/content/form', null, array(
 ?>
 
 
-<?php get_template_part('template-parts/content/location'); ?>
+<?php get_template_part('template-parts/content/location-2'); ?>
 
 
-
+<?php get_template_part('template-parts/content/back-to-top'); ?>
 <?php get_footer(); ?>

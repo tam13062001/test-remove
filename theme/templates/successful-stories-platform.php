@@ -2,16 +2,16 @@
 <?php get_header(); ?>
 
 <?php get_template_part('template-parts/content/banner', null, array(
-    'title' => 'EKS Workload Platform Customization and Retail Channel Microservices for BBX',
+    'title' => 'Customizing a secure Amazon EKS workload platform for a Prestigious Banking Partner',
     'background_image' => get_assets_from_path('images/success_story_platform.jpg'),
     'breadcrumbs' => array('Successful stories', 'Platform Customization'),
 )); ?>
 
 <?php
 get_template_part('template-parts/content/call-to-action-story', null, array(
-    'title' => 'Call for Change',
+    'title' => 'Improving Banking Experience: Refreshing Channels and Enhancing Microservices',
     'heading' => 'Transforming Retail Banking Infrastructure for a Seamless Digital Experience',
-    'content' => 'A Prestigious Banking Partner embarked on the Better Banking Experience (BBX) initiative to modernize digital channels, integrate value-added products, and enhance microservices. Datum customized the EKS workload platform to align with stringent security and regulatory standards, enabling a scalable, resilient foundation. The implementation supported critical banking microservices and successfully went live in mid-2024.',
+    'content' => 'The client sought to modernize their services, facing challenges in customizing a secure Amazon EKS workload platform to support diverse workloads, ensure compliance with strict regulatory standards, and enhance their microservices architecture.',
     'image_url' => get_assets_from_path('images/Group 62.png'),
     'cta_text' => 'Download detail case study',
     'cta_link' => '#'
@@ -22,37 +22,65 @@ get_template_part('template-parts/content/call-to-action-story', null, array(
 <?php
 get_template_part('template-parts/content/info-section-with-image-reverse', null, array(
     'title' => 'The Challenge',
-    'heading' => 'Modernizing banking infrastructure to enable secure, scalable, and efficient delivery of digital services.',
-    'image_url' => get_assets_from_path('images/man-prevents-servers-overload 1.jpg'),
-    'items' => array(
-        array(
-            'content' => 'Full platform overhaul to power BBX with modern frontend, backend, and integrations.',
+    'heading' => ' 
+ 	
+    Our client required a scalable and secure containerized infrastructure to support various workloads running on Amazon Elastic Kubernetes Service (EKS).',
+        'image_url' => get_assets_from_path('images/man-prevents-servers-overload 1.jpg'),
+        'items' => array(
+            array(
+                'content' => 'The environment needed to accommodate microservices deployed as individual containers, allowing each service to scale independently.',
+            ),
+            array(
+                'content' => 'Additionally, frontend web applications had to seamlessly interact with backend services, while AWS Batch Jobs handled periodic and on-demand data processing tasks.',
+            ),
+            array(
+                'content' => 'Continuous integration and deployment (CI/CD) pipelines leveraged GitLab CI Runner to ensure efficient and automated development workflows.',
+            )
         ),
-        array(
-            'content' => 'Transform legacy systems which  hindered scale with inefficiencies, risks, and poor governance.',
-        ),
-        array(
-            'content' => 'A shift to a multi-tenancy hosting model was critical to improve resource allocation, departmental isolation, and cost transparency.',
-        )
-    ),
-)) ;    
+    )) ;    
 ?>
 
 <?php
 get_template_part('template-parts/content/info-section-with-image-reverse-lesson-r', null, array(
-    'title' => 'The Solution: Datum’s EKS-Powered Platform',
-    'heading' => 'Datum delivered a resilient, secure, and automated EKS platform tailored for enterprise microservices.',   
+    'title' => 'When Technical Solutions Drive Compliance',
+    'heading' => 'Streamlining Operations: Implemented a scalable platform to handle diverse workloads (microservices, applications, data processing, and deployments) while maintaining strong departmental isolation for
+cost and accountability.',   
     'image_url' => get_assets_from_path('images/image 20.jpg'),
-    'content' => 'We used Istio for enhanced security, Terraform for automating infrastructure, and ArgoCD for smooth updates. The setup across multiple zones ensured high availability, while security tools helped maintain compliance. By using different node groups, they optimized costs and kept workloads separate for different teams. They also built in disaster recovery to boost resilience.'
+    'items' => array(
+        array(
+           'content' => 'Streamlining Operations: Implemented a scalable platform to handle diverse workloads (microservices, applications, data processing, and deployments) while maintaining strong departmental isolation for cost and accountability.',
+        ),
+        array(
+           'content' => 'Strengthening Security: Established robust inter-service communications with advanced encryption and integrated tools for monitoring, performance, and security compliance.',
+        ),
+        array(
+           'content' => 'Ensuring Reliability: Delivered high availability and consistent infrastructure management without incurring excessive costs, supporting seamless growth and regulatory standards.'
+        ),
+    ),
+    
+
 )) ;
 ?>
 
 
 <?php
 get_template_part('template-parts/content/info-section-with-image-story-percent-l', null, array(
-    'title' => 'A Meaningful Impact',
+    'title' => 'Impactfull Outcome',
     'heading' => 'Datum delivered a resilient, secure, and automated EKS platform tailored for enterprise microservices.',   
-    'content' => 'The new EKS platform helped the bank reach 99.9% uptime with automated CI/CD pipelines and smooth zero-downtime deployments. It supported the BBX initiative, enabling new microservices, frontend updates, and third-party integrations. Datum’s skills in design and implementation made it a key partner for ongoing modernization projects. This change boosted efficiency, improved security, and created a scalable base for future digital growth.',   
+    'items' => array(
+        array(
+           'content' => 'Platform Uptime: Achieved 99.9% uptime for the platform and key services.',
+        ),
+        array(
+           'content' => 'Deployment Efficiency: Fully automated CI/CD pipeline enabled zero downtime deployments.'
+        ),
+        array(
+           'content' => 'Compliance and Security: Customized EKS to meet strict regulatory and security standards.'
+        ),
+        array(
+           'content' => 'Scalability: Supported full front-end refreshes, new backend-for-frontend developments, and integrations for new banking products.'
+        ),
+    ),
     'image_url' => get_assets_from_path('images/man-prevents-servers-overload-2.jpg'),
     'percent' => '99.9%',
     'percent_content' => 'Platform performance uptime '            
@@ -66,5 +94,5 @@ get_template_part('template-parts/content/info-section-with-image-story-percent-
     'btn_link' => '#'
 )); ?>
 
-
+<?php get_template_part('template-parts/content/back-to-top'); ?>
 <?php get_footer(); ?>
