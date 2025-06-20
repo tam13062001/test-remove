@@ -43,8 +43,7 @@ get_template_part('template-parts/content/info-section-with-image-reverse', null
 <?php
 get_template_part('template-parts/content/info-section-with-image-reverse-lesson-r', null, array(
     'title' => 'When Technical Solutions Drive Compliance',
-    'heading' => 'Streamlining Operations: Implemented a scalable platform to handle diverse workloads (microservices, applications, data processing, and deployments) while maintaining strong departmental isolation for
-cost and accountability.',   
+    'heading' => 'Datum delivered a resilient, secure, and automated EKS platform tailored for enterprise microservices.',   
     'image_url' => get_assets_from_path('images/image 20.jpg'),
     'items' => array(
         array(

@@ -6,7 +6,7 @@ $current_id = get_queried_object_id();
 
 ?>
 
-<div class="hidden lg:flex font-bold">
+<div class="hidden lg:flex font-bold mt-2">
     <?php foreach ($primary_menu_items as $menu) : ?>
 
         <?php

@@ -200,67 +200,83 @@ function add_custom_post_types() {
 
 add_action('init', 'add_custom_post_types');
 
-// API: Tạo bài viết mới
+// API: Tạo bài viết mới và lưu ảnh đại diện
 function datum_create_post(WP_REST_Request $request) {
     $params = $request->get_json_params();
 
-    $title = sanitize_text_field($params['title'] ?? '');
-    $content = wp_kses_post($params['content'] ?? '');
-    $category = intval($params['category'] ?? 0);
-    $tags = $params['tags'] ?? '';
+    $title     = sanitize_text_field($params['title'] ?? '');
+    $content   = wp_kses_post($params['content'] ?? '');
+    $category  = intval($params['category'] ?? 0);
+    $tags      = $params['tags'] ?? '';
     $image_url = esc_url_raw($params['image_url'] ?? '');
 
     if (empty($title) || empty($content)) {
         return new WP_Error('missing_fields', 'Title and content are required.', ['status' => 400]);
     }
 
-    // Kiểm tra category có tồn tại không
     if ($category && !term_exists($category, 'category')) {
         return new WP_Error('invalid_category', 'Danh mục không tồn tại.', ['status' => 400]);
     }
 
-    $post_id = wp_insert_post(array(
-        'post_title'    => $title,
-        'post_content'  => $content,
-        'post_status'   => 'publish',
-        'post_type'     => 'post',
-        'post_author'   => get_current_user_id(),
-        'tags_input'    => is_array($tags) ? $tags : explode(',', $tags),
-    ));
+    // Tạo bài viết mới
+    $post_id = wp_insert_post([
+        'post_title'   => $title,
+        'post_content' => $content,
+        'post_status'  => 'publish',
+        'post_type'    => 'post',
+        'post_author'  => get_current_user_id(),
+        'tags_input'   => is_array($tags) ? $tags : explode(',', $tags),
+    ]);
 
     if (is_wp_error($post_id)) {
         return new WP_Error('create_failed', 'Không thể tạo bài viết.', ['status' => 500]);
     }
 
-    // Gán category nếu có
     if ($category) {
         wp_set_post_categories($post_id, [$category]);
     }
 
-    // Gán ảnh đại diện nếu có
+    // Nếu có ảnh đại diện từ URL, lưu vào Media
     if ($image_url) {
         require_once ABSPATH . 'wp-admin/includes/image.php';
         require_once ABSPATH . 'wp-admin/includes/file.php';
         require_once ABSPATH . 'wp-admin/includes/media.php';
 
-        $image_id = media_sideload_image($image_url, $post_id, null, 'id');
-        if (!is_wp_error($image_id)) {
-            set_post_thumbnail($post_id, $image_id);
+        // Tải ảnh về server & đính kèm vào post
+        $tmp = download_url($image_url);
+        if (is_wp_error($tmp)) {
+            error_log('[create-post] Tải ảnh thất bại: ' . $tmp->get_error_message());
+        } else {
+            $file_array = [
+                'name'     => basename($image_url),
+                'tmp_name' => $tmp,
+            ];
+
+            $image_id = media_handle_sideload($file_array, $post_id);
+
+            if (is_wp_error($image_id)) {
+                error_log('[create-post] Đính kèm ảnh thất bại: ' . $image_id->get_error_message());
+                @unlink($tmp); // Xóa file tạm nếu lỗi
+            } else {
+                set_post_thumbnail($post_id, $image_id);
+            }
         }
     }
 
     return new WP_REST_Response([
         'success' => true,
         'post_id' => $post_id,
-        'link' => get_permalink($post_id),
+        'link'    => get_permalink($post_id),
     ], 200);
 }
 
+// Đăng ký route
 $rocket->register_rest_api('create-post', [
-    'methods' => 'POST',
-    'callback' => 'datum_create_post',
+    'methods'             => 'POST',
+    'callback'            => 'datum_create_post',
     'permission_callback' => '__return_true',
 ]);
+
 
 $rocket->register_rest_api('get-posts', [
     'methods' => 'GET',

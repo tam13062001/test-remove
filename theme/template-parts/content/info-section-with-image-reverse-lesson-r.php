@@ -8,10 +8,10 @@ $items = $args['items'] ?? array();
 
 <div class="relative lg:min-h-[880px] mt-[200px] lg:mb-[88px]">
 
-    <div class="container pt-[40px] lg:pt-0 z-10 relative">
+    <div class="container pt-[40px]  lg:pt-0 z-10 relative">
             
-        <div class="relative lg:absolute top-0 left-0  lg:w-[60%] bg-white lg:pl-[60px] lg:px-[20px] ">
-            <div class="lg:w-[70%] font-bold text-[32px] lg:text-[40px] mb-6 lg:mb-[10px] ">
+        <div class="relative lg:absolute top-0 left-0  lg:w-[60%] bg-white lg:pl-[60px] lg:pr-[100px] ">
+            <div class="lg:w-full font-bold text-[32px] lg:text-[40px] mb-6 lg:mb-[10px] ">
                 <h2>
                     <?php echo $title ?>
                 </h2>
@@ -21,10 +21,10 @@ $items = $args['items'] ?? array();
                     <?php echo $heading ?>
                 </div>
             </div>
-            <div class="leading-[170%]">
+            <div class="leading-[170%] lg:pb-[20px]">
                 <?php foreach($items as $item): ?>
-                <div class=" lg:py-5 flex flex-col lg:flex-row lg:space-x-5 ">
-                    <div class="lg:w-full mt-3lg:mt-0 text-[16px] lg:text-[20px]">
+                <div class=" lg:py-3 flex flex-col lg:flex-row lg:space-x-5 ">
+                    <div class="lg:w-full text-[16px] lg:text-[20px]">
                         <?php echo $item['content']; ?>
                     </div>
                 </div>

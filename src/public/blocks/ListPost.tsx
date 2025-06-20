@@ -42,30 +42,50 @@ const ListPost: React.FC<ListPostProps> = (props) => {
     const totalPages = Math.ceil(posts.length / POSTS_PER_PAGE);
     const startIdx = (currentPage - 1) * POSTS_PER_PAGE;
     const currentPosts = posts.slice(startIdx, startIdx + POSTS_PER_PAGE);
+    
+
+    // Hàm chuyển title thành slug
+    function slugify(str: string) {
+      return str
+        .toLowerCase()
+        .normalize('NFD') // loại bỏ dấu tiếng Việt
+        .replace(/[\u0300-\u036f]/g, '')
+        .replace(/[^a-z0-9\s-]/g, '') // loại bỏ ký tự đặc biệt
+        .trim()
+        .replace(/\s+/g, '-') // thay khoảng trắng bằng -
+        .replace(/-+/g, '-'); // loại bỏ gạch ngang thừa
+    }
 
     return (
         <div className="container pt-[60px] lg:pt-[80px]">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
                 {currentPosts.map((post) => (
-                    <div key={post.id} className="border-b border-secondary">
-                        <div className="flex flex-col lg:justify-between lg:py-12 justify-center lg:px-8 px-5 lg:text-[24px] text-[16px] font-[700] text-primary bg-gradient-to-r from-secondary/20 to-primary/20 h-[140px] lg:h-[220px]">
-                            <div className='text-[14px] lg:text-[16px] font-bold text-blue-600 mb-4 lg:mb-0'>{post.title}</div>
-                            <div className="flex justify-start">
-                                <p className="text-black text-[14px] lg:text-[16px] font-bold">{post.date}</p>
-                            </div>
-                        </div>
-                        <div className="lg:h-[333px] flex items-center justify-center">
-                            {post.thumbnail ? (
-                                <img
-                                    className="h-full lg:h-[333px] w-full object-cover"
-                                    src={post.thumbnail}
-                                    alt={post.title}
-                                />
-                            ) : (
-                                <div className="h-full w-full bg-gray-200 flex items-center justify-center">No Image</div>
-                            )}
-                        </div>
+                  <a
+                    key={post.id}
+                    href={`/${slugify(post.title)}/`}
+                    className="block border-b border-secondary hover:bg-gray-50 transition"
+                  >
+                    <div className="flex flex-col lg:justify-between lg:py-12 justify-center lg:px-8 px-5 lg:text-[24px] text-[16px] font-[700] text-primary bg-gradient-to-r from-secondary/20 to-primary/20 h-[140px] lg:h-[220px]">
+                      <div className='text-[14px] lg:text-[16px] font-bold text-blue-600 mb-4 lg:mb-0'>{post.title}</div>
+                      <div className="flex justify-start items-center space-x-2">
+                        {category && (
+                          <span className="text-black text-[14px] lg:text-[16px] font-bold">{category}</span>
+                        )}
+                        <p className="text-black text-[14px] lg:text-[16px] font-bold">{post.date}</p>
+                      </div>
                     </div>
+                    <div className="lg:h-[333px] flex items-center justify-center">
+                      {post.thumbnail ? (
+                        <img
+                          className="h-full lg:h-[333px] w-full object-cover"
+                          src={post.thumbnail}
+                          alt={post.title}
+                        />
+                      ) : (
+                        <div className="h-full w-full bg-gray-200 flex items-center justify-center">No Image</div>
+                      )}
+                    </div>
+                  </a>
                 ))}
             </div>
 

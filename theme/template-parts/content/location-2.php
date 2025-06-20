@@ -1,6 +1,6 @@
 <?php
 $title = $args['title'] ?? 'Locations';
-$image_url = $args['image_url'] ?? get_stylesheet_directory_uri() . '/assets/images/map.png';
+$image_url = $args['image_url'] ?? get_stylesheet_directory_uri() . '/assets/images/icon-removebg-preview.png';
 ?>
 <div class="py-[60px] lg:py-[80px]">
     <div class="container mb-[50px] lg:mb-[100px] flex justify-between items-center">
@@ -11,6 +11,7 @@ $image_url = $args['image_url'] ?? get_stylesheet_directory_uri() . '/assets/ima
             <?php
             render_rocket_block('view-map', [
                 'attributes' => [
+                    'apiKey'=>'AIzaSyCEwPmqmSUiGv5_2fggY6Puo322J9_09mw',
                     'image_url' => $image_url
                 ]
             ]);

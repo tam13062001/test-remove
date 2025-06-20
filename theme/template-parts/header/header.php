@@ -1,6 +1,6 @@
 <header id="header" class="fixed w-full z-[100] top-0">
     <div class="container">
-        <div class="flex lg:pt-[32px] lg:pb-[18px] pb-[8px] items-center justify-between text-[16px] ">
+        <div class="flex md:pt-2 lg:mt-[37px] mt-[40px] lg:pb-[15px] pb-[8px] items-center justify-between text-[16px] md:mt-[45px]">
             <a class="main-logo" href="/">
                 <?php get_template_part('template-parts/content/logo'); ?>
             </a>
