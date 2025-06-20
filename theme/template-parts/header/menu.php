@@ -43,7 +43,7 @@ $current_id = get_queried_object_id();
                 <?php echo $menu['title']; ?>
             </a>
             <?php if (!empty($menu['children'])) { ?>
-                <ul class="absolute h-fit shadow-md bottom-0 list-none z-20 w-max m-0 top-[25px] hidden group-hover:block pt-2">
+                <ul class="absolute h-fit  bottom-0 list-none z-20 w-max m-0 top-[25px] hidden group-hover:block pt-2">
                     <?php foreach ($menu['children'] as $submenu) : ?>
                         <li class="relative group bg-secondary/10 hover:bg-secondary/20 border-b border-primary">
                             <a href="<?php echo $submenu['url'] ?>" class="block px-4 py-2 font-bold ">
@@ -63,7 +63,7 @@ $current_id = get_queried_object_id();
     $logo_url = $rocket->helper->get_custom_logo_url();
     render_rocket_block('mobile-menu', array(
         'data' => array_values($primary_menu_items),
-        'logo_url' => $logo_url
+        'logo_url_2' => get_stylesheet_directory_uri().'/assets/images/logo.png',
     ));
 
     ?>

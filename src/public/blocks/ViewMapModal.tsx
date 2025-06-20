@@ -52,7 +52,7 @@ const ViewMapModal: React.FC<BaseProps<ViewMapModalProps>> = (props) => {
             <img
               src={image_url}
               alt="Map"
-              className="w-full h-full object-contain"
+              className="lg:h-[721px]  w-full h-full object-cover"
             />
           ) : (
             <p>No image provided</p>
