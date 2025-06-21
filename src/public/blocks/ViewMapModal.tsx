@@ -1,8 +1,8 @@
- 
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useCallback, useRef, useState } from 'react';
 import { BaseProps } from "../core/get-props";
 import { Button, Modal } from "antd";
 import { CloseOutlined } from "@ant-design/icons";
+import {GoogleMap, InfoWindow, Marker, useJsApiLoader} from '@react-google-maps/api'
 
 type StoreLocation = {
   id: number;
@@ -25,16 +25,11 @@ type ViewMapModalProps = {
 const ViewMapModal: React.FC<BaseProps<ViewMapModalProps>> = (props) => {
   const { attributes } = props.data;
   const [isOpen, setIsOpen] = useState(false);
-  const [mapLoaded, setMapLoaded] = useState(false);
-  const [selectedStore, setSelectedStore] = useState<StoreLocation | null>(null);
-  const mapRef = useRef<HTMLDivElement>(null);
-  const mapInstance = useRef<google.maps.Map | null>(null);
-  const markersRef = useRef<google.maps.Marker[]>([]);
-  const infoWindowRef = useRef<google.maps.InfoWindow | null>(null);
+  const [selectedMarker, setSelectedMarker] = useState(null)
 
   const image_url = attributes?.image_url || '/default-marker.png';
 
-  const defaultStores: StoreLocation[] = [
+  const [dataCenters] = useState(attributes?.storeLocations || [
     {
       id: 1,
       name: 'Datum Consulting Philippines, Inc.',
@@ -59,119 +54,53 @@ const ViewMapModal: React.FC<BaseProps<ViewMapModalProps>> = (props) => {
       phone: '848 1234 5678',
       email: 'vn@datumhq.com'
     }
-  ];
+  ])
 
-  const storeLocations = attributes?.storeLocations || defaultStores;
-  const apiKey = attributes?.apiKey || 'AIzaSyCEwPmqmSUiGv5_2fggY6Puo322J9_09mw';
+  const apiKey = attributes?.apiKey;
   const defaultZoom = attributes?.defaultZoom || 5;
 
-  const loadGoogleMaps = () => {
-    if (window.google && window.google.maps) {
-      setMapLoaded(true);
-      return;
-    }
-
-    const script = document.createElement('script');
-    script.src = `https://maps.googleapis.com/maps/api/js?key=${apiKey}&libraries=places`;
-    script.async = true;
-    script.defer = true;
-    script.onload = () => setMapLoaded(true);
-    document.head.appendChild(script);
-  };
-
-  const initMap = () => {
-    if (!mapRef.current || !window.google || !window.google.maps) return;
-
-    const bounds = new google.maps.LatLngBounds();
-    storeLocations.forEach(store => {
-      bounds.extend(new google.maps.LatLng(store.position.lat, store.position.lng));
-    });
-
-    mapInstance.current = new google.maps.Map(mapRef.current, {
-      zoom: defaultZoom,
-      center: bounds.getCenter(),
-      mapTypeId: 'roadmap',
-      styles: [
-        {
-          featureType: "all",
-          elementType: "labels",
-          stylers: [{ visibility: "off" }]
-        },
-        {
-          featureType: "poi",
-          elementType: "labels.icon",
-          stylers: [{ visibility: "off" }]
-        }
-      ]
-    });
-
-    mapInstance.current.fitBounds(bounds);
-
-    // Tạo InfoWindow không có header
-    infoWindowRef.current = new google.maps.InfoWindow({
-      pixelOffset: new google.maps.Size(0, -30),
-      disableAutoPan: false, // Tùy chọn này giúp tự động điều chỉnh vị trí cửa sổ
-    });
-
-    markersRef.current = storeLocations.map(store => {
-      const marker = new google.maps.Marker({
-        position: store.position,
-        map: mapInstance.current,
-        title: store.name,
-        icon: {
-          url: image_url,
-          scaledSize: new google.maps.Size(32, 32)
-        }
-      });
-
-      marker.addListener('click', () => {
-        setSelectedStore(store);
-        if (infoWindowRef.current) {
-          infoWindowRef.current.setContent(`
-            <div class="p-2 max-w-xs">
-              <h3 class="font-bold text-lg mb-1">${store.name}</h3>
-              <p class="lg:text-[16px] mb-1">${store.address}</p>
-              <p class="lg:text-[16px] text-[#2569ED]">Phone: ${store.phone}</p>
-              <p class="lg:text-[16px] text-[#2569ED]">Email: ${store.email}</p>
-            </div>
-          `);
-          infoWindowRef.current.open({
-            anchor: marker,
-            map: mapInstance.current
-          });
-        }
-      });
-
-      return marker;
-    });
-  };
+  const { isLoaded } = useJsApiLoader({
+    id: 'google-map-script',
+    googleMapsApiKey: apiKey
+  })
 
   const onCloseModalBtnClick = () => {
     setIsOpen(false);
-    setSelectedStore(null);
-    if (infoWindowRef.current) {
-      infoWindowRef.current.close();
-    }
   };
 
   const onOpenModalBtnClick = () => {
-    setIsOpen(true);
-    loadGoogleMaps();
+    setIsOpen(true)
   };
 
-  useEffect(() => {
-    if (isOpen && mapLoaded) {
-      initMap();
-    }
+  const renderDataCenters = useCallback(() => {
+    if (!Array.isArray(dataCenters) || !isLoaded) return null
 
-    return () => {
-      // Dọn dẹp khi component unmount
-      markersRef.current.forEach(marker => marker.setMap(null));
-      if (infoWindowRef.current) {
-        infoWindowRef.current.close();
-      }
-    };
-  }, [isOpen, mapLoaded]);
+
+    return dataCenters.map(dataCenter => (
+      <Marker
+        position={dataCenter.position}
+        icon={image_url}
+        onClick={() => setSelectedMarker(dataCenter.id)}
+      >
+        { selectedMarker === dataCenter.id && (
+          <InfoWindow
+            options={{
+              headerDisabled: true
+            }}
+          >
+            <div className="p-2 max-w-xs">
+              <h3 className="font-bold text-lg mb-1">{dataCenter.name}</h3>
+              <p className="lg:text-[16px] mb-1">{dataCenter.address}</p>
+              <p className="lg:text-[16px] text-[#2569ED]">Phone: {dataCenter.phone}</p>
+              <p className="lg:text-[16px] text-[#2569ED]">Email: {dataCenter.email}</p>
+            </div>
+          </InfoWindow>
+        )}
+
+      </Marker>
+    ))
+
+  }, [dataCenters, selectedMarker, isLoaded])
 
   return (
     <>
@@ -202,9 +131,28 @@ const ViewMapModal: React.FC<BaseProps<ViewMapModalProps>> = (props) => {
               onClick={onCloseModalBtnClick} 
             />
           </div>
-          
-          <div ref={mapRef} className="w-full h-full" />
-          
+
+          <GoogleMap
+            mapContainerStyle={{ height: '100%' }}
+            center={{lat: 10.762622, lng: 106.660172}}
+            zoom={defaultZoom}
+            options={{
+              styles: [
+                {
+                  featureType: "all",
+                  elementType: "labels",
+                  stylers: [{ visibility: "off" }]
+                },
+                {
+                  featureType: "poi",
+                  elementType: "labels.icon",
+                  stylers: [{ visibility: "off" }]
+                }
+              ]
+            }}
+          >
+            { renderDataCenters() }
+          </GoogleMap>
         </div>
       </Modal>
     </>
