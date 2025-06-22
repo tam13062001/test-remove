@@ -1,4 +1,4 @@
-<header id="header" class="fixed w-full z-[100] top-0">
+<header id="header" class="fixed w-full z-[100] <?php echo is_user_logged_in() ? 'top-8' : 'top-0' ?>">
     <div class="container">
         <div class="flex md:pt-2 lg:pb-[15px] pb-[8px] items-center justify-between text-[16px] ">
             <a class="main-logo" href="/">

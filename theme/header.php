@@ -13,14 +13,6 @@
 </head>
 <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <?php
-    $template_path = get_page_template();
-    $loaded_from_valid_template = preg_match('/templates\/.*.php$/', $template_path);
-    if ($loaded_from_valid_template === 1) {
-        get_template_part('template-parts/header/header');
-    } else {
-        get_template_part('template-parts/header/header-sticky');
-    }
-    ?>
+    <?php get_template_part('template-parts/header/header'); ?>
 
 
