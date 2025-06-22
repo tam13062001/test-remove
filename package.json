@@ -25,6 +25,7 @@
   "dependencies": {
     "@ant-design/icons": "^5.6.1",
     "@react-google-maps/api": "^2.20.7",
+    "@tailwindcss/typography": "^0.5.16",
     "@types/wordpress__block-editor": "^11.5.15",
     "@wordpress/block-editor": "^13.2.0",
     "@wordpress/blocks": "^14.9.0",

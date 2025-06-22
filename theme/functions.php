@@ -322,3 +322,31 @@ $rocket->register_rest_api('get-posts', [
     },
     'permission_callback' => '__return_true',
 ]);
+
+
+// Add the field to the user profile page
+function add_user_title_field($user) {
+    ?>
+    <h3><?php _e("Additional Information", "blank"); ?></h3>
+
+    <table class="form-table">
+        <tr>
+            <th><label for="user_title"><?php _e("Title"); ?></label></th>
+            <td>
+                <input type="text" name="user_title" id="user_title" value="<?php echo esc_attr(get_the_author_meta('user_title', $user->ID)); ?>" class="regular-text" /><br />
+                <span class="description"><?php _e("Please enter the user's title (e.g., Co Founder, ...)."); ?></span>
+            </td>
+        </tr>
+    </table>
+    <?php
+}
+add_action('show_user_profile', 'add_user_title_field');
+add_action('edit_user_profile', 'add_user_title_field');
+
+// Save the custom user field
+function save_user_title_field($user_id) {
+    if (!current_user_can('edit_user', $user_id)) return false;
+    update_user_meta($user_id, 'user_title', sanitize_text_field($_POST['user_title']));
+}
+add_action('personal_options_update', 'save_user_title_field');
+add_action('edit_user_profile_update', 'save_user_title_field');

@@ -63,3 +63,21 @@ body {
 #header.has-background .menu > a.active {
     @apply border-primary border-b-2;
 }
+
+/* custom css for pagination */
+
+.pagination > .current {
+    @apply border-b-2 border-primary text-primary justify-center
+}
+.pagination > a, .pagination > span {
+    flex-shrink: 0;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 30px;
+}
+.pagination .next, .pagination .prev {
+    @apply text-primary
+}

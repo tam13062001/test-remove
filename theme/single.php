@@ -1,47 +1,68 @@
 <?php get_header() ?>
 
-<div class="w-full relative hidden">
-    <img class="absolute top-0 object-cover h-full w-full" src="<?php echo get_stylesheet_directory_uri().'/assets/images/img.png' ?>" />
-    <div class="container mx-auto h-[542px] relative">
-        <div class="relative h-full">
-            <div class="h-full flex justify-center items-center">
-                <div class="banner-title text-white mb-[20px] lg:mb-[44px] text-center">
-                    News
+<?php
+$categories = get_the_category();
+$category_name = null;
+$breadcrumbs = array('Insights');
+if (!empty($categories)) {
+    $breadcrumbs[] = $categories[0]->name;
+}
+get_template_part('template-parts/content/banner', null, array(
+    'title' => get_the_title(),
+    'background_image' => get_assets_from_path('images/Datum-Knowledge-1.jpg'),
+    'breadcrumbs' => $breadcrumbs,
+));
+?>
+
+<div class="bg-white py-[50px] relative min-h-[600px] overflow-hidden">
+    <div class="hidden lg:block lg:absolute top-20 right-0 w-[500px] h-[500px] translate-x-1/3">
+        <img class="absolute top-0" src="<?php echo get_stylesheet_directory_uri().'/assets/images/img.png' ?>" />
+    </div>
+    <div class="container mx-auto">
+        <div class="font-bold mb-4">
+            <?php echo get_the_date('d.m.Y') ?>
+        </div>
+        <div class="prose !max-w-none mb-10 lg:mb-[120px]">
+            <?php the_content(); ?>
+        </div>
+        <div class="mb-4">
+            <div class="font-bold mb-4">About the Author</div>
+            <?php
+            $post_id = get_the_ID();
+            $author_id = get_post_field('post_author', $post_id);
+            $display_name = get_the_author_meta('nickname', $author_id);
+            $bio = get_the_author_meta('user_description', $author_id);
+            $user_title = get_the_author_meta('user_title', $author_id);
+            ?>
+            <div>
+                <div class="mb-10">
+                    <div class="text-primary">
+                        <?php echo $display_name ?>
+                    </div>
+                    <div>
+                        <?php echo $user_title ?>
+                    </div>
+                </div>
+
+                <div class="text-primary">
+                    <?php echo $bio ?>
                 </div>
             </div>
         </div>
     </div>
-</div>
-
-<div class="bg-white py-[50px]">
-    <div class="container mx-auto lg:flex lg:space-x-5">
-        <div class="lg:w-3/4 lg:pr-[144px]">
-            <div class="flex flex-col lg:flex-row font-exo lg:space-x-5 justify-between mb-[40px]">
-                <div class="flex flex-wrap flex-1 lg:flex-row">
-                    <div class="font-light mr-4">
-                        <a href="/">Home</a>
-                    </div>
-                    <div class="mr-4">/</div>
-                    <div class="underline font-semibold uppercase truncate overflow-hidden max-w-[400px]">
-                        <?php the_title() ?>
-                    </div>
-                </div>
-                <div class="font-exo shrink-0 mt-4 lg:mt-0">Date <?php echo get_the_date('d.m.Y') ?></div>
-            </div>
-            <div class="mb-[50px] lg:mb-[75px]">
-                <?php if (has_post_thumbnail()) { ?>
-                    <div class="mb-[48px] lg:mb-[54px] max-h-[500px] hidden">
-                        <img class="rounded-[10px]" src="<?php echo get_the_post_thumbnail_url() ?>" alt="Cover" />
-                    </div>
-                <?php } ?>
-
-                <div class="text-title text-primary mb-4">
-                    <?php the_title() ?>
-                </div>
-                <?php the_content(); ?>
-            </div>
-        </div>
-    </div>
+    <?php
+    $recommended_posts = get_posts(array(
+        'numberposts' => 2,
+        'post_status' => 'publish',
+        'post_type' => 'post',
+        'orderby' => 'rand',
+        'post__not_in' => array($post->ID)
+    ));
+    get_template_part('template-parts/content/late-new-event', null, array(
+        'title' => 'You might want to read',
+        'news_items' => $recommended_posts
+    ));
+    ?>
 </div>
 
 <?php get_footer() ?>
