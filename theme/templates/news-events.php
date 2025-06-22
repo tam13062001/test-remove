@@ -21,7 +21,7 @@
     $paged = get_query_var('paged') ? get_query_var('paged') : 1;
     $query_params = array(
         'post_type' => 'post',
-        'posts_per_page' => 2,
+        'posts_per_page' => 6,
         'orderby' => 'date',
         'order' => 'ASC',
         'category_name' => 'news,events',
@@ -41,7 +41,15 @@
                             </a>
                         </div>
                         <div class="flex justify-start">
+                            <?php
+                                $categories = get_the_category();
+                                $category_name = '';
+                                if (!empty($categories)) {
+                                    $category_name = $categories[0]->name;
+                                }
+                            ?>
                             <p class="text-black text-[14px] lg:text-[16px] font-bold">
+                                <?php echo $category_name; ?>
                                 <?php echo get_the_date() ?>
                             </p>
                         </div>
@@ -59,7 +67,7 @@
             <?php endwhile; ?>
         </div>
     </div>
-    <div class="pagination flex justify-center space-x-4">
+    <div class="pagination">
         <?php
         echo paginate_links([
             'total'   => $query->max_num_pages,

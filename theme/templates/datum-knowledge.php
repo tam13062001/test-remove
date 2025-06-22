@@ -24,13 +24,11 @@ $query = new WP_Query($query_params);
 if ($query->have_posts()) : ?>
 <div class="container mx-auto pt-8 lg:pt-[190px]">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 mb-10">
-        <?php while ($query->have_posts()) :
-            $query->the_post();
-        ?>
+        <?php while ($query->have_posts()) : $query->the_post(); ?>
         <div class="border-b border-secondary">
             <div class="flex flex-col lg:justify-between lg:py-12 py-4 lg:px-8 px-5 lg:text-[24px] text-[16px] font-[700] text-primary  bg-gradient-to-r from-secondary/20 to-primary/20 h-[140px] lg:h-[220px]">
                 <div class="text-[14px] lg:text-[24px] font-bold text-primary mb-4 lg:mb-0">
-                    <a href="<?php echo $post->post_permalink; ?>">
+                    <a href="<?php the_permalink(); ?>">
                         <?php echo get_the_title() ?>
                     </a>
                 </div>
@@ -53,7 +51,7 @@ if ($query->have_posts()) : ?>
         <?php endwhile; ?>
     </div>
 </div>
-<div class="pagination text-center">
+<div class="pagination">
     <?php
         echo paginate_links([
             'total'   => $query->max_num_pages,

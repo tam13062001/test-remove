@@ -66,6 +66,9 @@ body {
 
 /* custom css for pagination */
 
+.pagination {
+    @apply flex justify-center space-x-4
+}
 .pagination > .current {
     @apply border-b-2 border-primary text-primary justify-center
 }
