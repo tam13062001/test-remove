@@ -6,7 +6,7 @@ $image_url = $args['image_url'] ?? '';
 $items = $args['items'] ?? array();
 ?>
 
-<div class="relative lg:min-h-[880px] mt-[200px] lg:mb-[88px]">
+<div class="relative lg:min-h-[880px] lg:mt-[200px] lg:mb-[88px]">
 
     <div class="container pt-[40px]  lg:pt-0 z-10 relative">
             
