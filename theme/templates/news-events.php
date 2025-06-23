@@ -49,8 +49,8 @@
                                 }
                             ?>
                             <p class="text-black text-[14px] lg:text-[16px] font-bold">
-                                <?php echo $category_name; ?>
-                                <?php echo get_the_date() ?>
+                                
+                                <?php echo get_the_date('j, F, Y'); ?>
                             </p>
                         </div>
                     </div>

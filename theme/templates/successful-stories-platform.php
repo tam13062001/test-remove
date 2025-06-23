@@ -10,10 +10,10 @@
 <?php
 get_template_part('template-parts/content/call-to-action-story', null, array(
     'title' => 'Improving Banking Experience: Refreshing Channels and Enhancing Microservices',
-    'heading' => 'Transforming Retail Banking Infrastructure for a Seamless Digital Experience',
+    'heading' => '',
     'content' => 'The client sought to modernize their services, facing challenges in customizing a secure Amazon EKS workload platform to support diverse workloads, ensure compliance with strict regulatory standards, and enhance their microservices architecture.',
     'image_url' => get_assets_from_path('images/Group 62.png'),
-    'cta_text' => 'Download detail case study',
+    'cta_text' => 'Download the full case study',
     'cta_link' => '#'
 ));
 ?>
@@ -21,12 +21,13 @@ get_template_part('template-parts/content/call-to-action-story', null, array(
 
 <?php
 get_template_part('template-parts/content/info-section-with-image-reverse', null, array(
-    'title' => 'The Challenge',
-    'heading' => ' 
- 	
-    Our client required a scalable and secure containerized infrastructure to support various workloads running on Amazon Elastic Kubernetes Service (EKS).',
+    'title' => 'Challenge',
+    'heading' => '',
         'image_url' => get_assets_from_path('images/man-prevents-servers-overload 1.jpg'),
         'items' => array(
+            array(
+                'content' => 'Our client required a scalable and secure containerized infrastructure to support various workloads running on Amazon Elastic Kubernetes Service (EKS). ',
+            ),
             array(
                 'content' => 'The environment needed to accommodate microservices deployed as individual containers, allowing each service to scale independently.',
             ),
@@ -43,7 +44,7 @@ get_template_part('template-parts/content/info-section-with-image-reverse', null
 <?php
 get_template_part('template-parts/content/info-section-with-image-reverse-lesson-r', null, array(
     'title' => 'When Technical Solutions Drive Compliance',
-    'heading' => 'Datum delivered a resilient, secure, and automated EKS platform tailored for enterprise microservices.',   
+    'heading' => '',   
     'image_url' => get_assets_from_path('images/image 20.jpg'),
     'items' => array(
         array(
@@ -64,8 +65,8 @@ get_template_part('template-parts/content/info-section-with-image-reverse-lesson
 
 <?php
 get_template_part('template-parts/content/info-section-with-image-story-percent-l', null, array(
-    'title' => 'Impactfull Outcome',
-    'heading' => 'Datum delivered a resilient, secure, and automated EKS platform tailored for enterprise microservices.',   
+    'title' => 'Impactful Outcome',
+    'heading' => '',   
     'items' => array(
         array(
            'content' => 'Platform Uptime: Achieved 99.9% uptime for the platform and key services.',
@@ -80,9 +81,9 @@ get_template_part('template-parts/content/info-section-with-image-story-percent-
            'content' => 'Scalability: Supported full front-end refreshes, new backend-for-frontend developments, and integrations for new banking products.'
         ),
     ),
-    'image_url' => get_assets_from_path('images/man-prevents-servers-overload-2.jpg'),
+    'image_url' => get_assets_from_path('images/man-prevents-servers-overload-2.jpg'),    
     'percent' => '99.9%',
-    'percent_content' => 'Platform performance uptime '            
+    'percent_content' => 'Platform <br class="hidden lg:block" />performance uptime '       
 )) ;
 ?>
 

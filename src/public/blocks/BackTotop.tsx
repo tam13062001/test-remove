@@ -3,9 +3,8 @@ import { useState, useEffect } from "@wordpress/element";
 const BackToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
 
-  // Hiển thị nút khi scroll xuống 300px
   const toggleVisibility = () => {
-    if (window.pageYOffset > 300) {
+    if (window.pageYOffset > 800) {
       setIsVisible(true);
     } else {
       setIsVisible(false);

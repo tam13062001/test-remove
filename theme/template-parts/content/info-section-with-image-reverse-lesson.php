@@ -5,33 +5,31 @@ $content = $args['content'] ??  '';
 $image_url = $args['image_url'] ?? '';
 ?>
 
-<div class="relative lg:min-h-[880px] lg:mb-[88px]">
-
-    <!-- Ảnh bên trái -->
-    
-
-    <div class="container lg:pt-[40px] z-10 relative">
-            
-    <div class="relative lg:absolute top-0 right-0 lg:pt-[100px] lg:w-[60%] bg-white pt-6 lg:px-[100px] pb-[30px] lg:pb-[80px]">
-            <div class="lg:w-[70%] font-bold text-[32px] lg:text-[40px] mb-6 lg:mb-[10px] ">
+<div class=" my-[44px] lg:my-[88px]">
+    <div class="flex flex-col lg:flex-row items-stretch">
+        <!-- Ảnh bên trái -->
+        <div class="w-full lg:w-1/2 flex items-end justify-center pt-[40px] lg:pt-0 min-h-[220px] lg:min-h-[636px] hidden lg:block">
+            <img class="object-cover w-full h-[220px] lg:h-full " src="<?php echo $image_url?>" alt="" />
+        </div>
+        <!-- Content bên phải -->
+        <div class="container w-full lg:w-1/2 flex flex-col justify-center bg-white pt-6 lg:pt-[60px] lg:pl-[100px] min-h-[220px] lg:min-h-[636px]">
+            <div class="font-bold text-[32px] lg:text-[40px] mb-6 lg:mb-[10px]">
                 <h2>
                     <?php echo $title ?>
                 </h2>
-            </div> 
+            </div>
             <div>
-                <div class=" text-primary text-[16px] lg:text-[32px] font-normal leading-[170%]">
+                <div class="text-primary text-[16px] lg:text-[32px] font-normal leading-[170%]">
                     <?php echo $heading ?>
                 </div>
             </div>
-            <div class=" pt-6 lg:pt-5 text-[16px] lg:text-[20px] font-normal leading-[170%] ">
+            <div class="pt-6 lg:pt-5 text-[16px] lg:text-[20px] font-normal leading-[170%]">
                 <?php echo $content; ?>
             </div>
         </div>
-    </div>
-    
-    <div class="lg:w-3/5 pt-[40px] lg:py-0 lg:absolute left-0 top-0 h-full overflow-hidden ">
-        <div class="flex items-end h-full">
-            <img class="object-cover h-auto lg:h-[636px] w-full lg:w-[96%]" src="<?php echo $image_url?>" alt="" />
+
+        <div class="w-full lg:w-1/2 flex items-end justify-center pt-[40px] lg:pt-0 min-h-[220px] lg:min-h-[636px] block lg:hidden">
+            <img class="object-cover w-full h-[220px] lg:h-full " src="<?php echo $image_url?>" alt="" />
         </div>
     </div>
 </div>

@@ -45,7 +45,7 @@ body {
     @apply bg-white;
 }
 #header.has-background .menu li:hover {
-    @apply bg-secondary/90;
+    @apply bg-[#C4E1F5];
 }
 
 #header .menu > a:hover {

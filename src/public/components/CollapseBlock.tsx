@@ -15,12 +15,17 @@ export default function CollapseBlock(props: BaseProps<CollapseBlockProps>) {
       expandIconPosition={'end'}
       ghost
       expandIcon={({ isActive }) => <div className={'!text-primary'}><ArrowRightOutlined className="mt-2" color={'#315cd4'} rotate={isActive ? 90 : 0} /></div>}
+      className="!px-0 [&_.ant-collapse-content-box]:!px-0"
     >
-      <Collapse.Panel key={'1'} header={(
-        <div className={'font-[700] text-primary -ml-4'}>
-          {title}
-        </div>
-      )} >
+      <Collapse.Panel
+        key={'1'}
+        header={(
+          <div className={'font-[700] text-primary -ml-4'}>
+            {title}
+          </div>
+        )}
+        className="!px-0 [&_.ant-collapse-content-box]:!px-0"
+      >
         { content }
       </Collapse.Panel>
     </Collapse>

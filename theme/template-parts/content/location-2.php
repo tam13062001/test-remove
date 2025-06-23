@@ -33,8 +33,8 @@ $image_url = $args['image_url'] ?? get_stylesheet_directory_uri() . '/assets/ima
                 ],
                 'open' => true,
                 'image_url' => get_stylesheet_directory_uri() . '/assets/images/Location-2.jpg',
-                'phone' => '61-3-1234 5678',
-                'email' => 'aus@datumhq.com',
+                'phone' => '',
+                'email' => '',
             ],
             [
                 'country' => 'New Zealand',
@@ -46,8 +46,8 @@ $image_url = $args['image_url'] ?? get_stylesheet_directory_uri() . '/assets/ima
                 ],
                 'open' => false,
                 'image_url' => get_stylesheet_directory_uri() . '/assets/images/Location-2.jpg',
-                'phone' => '61-3-1234 5678',
-                'email' => 'aus@datumhq.com',
+                'phone' => '',
+                'email' => '',
             ],
             [
                 'country' => 'Philippines',
@@ -59,8 +59,8 @@ $image_url = $args['image_url'] ?? get_stylesheet_directory_uri() . '/assets/ima
                 ],
                 'open' => false,
                 'image_url' => get_stylesheet_directory_uri() . '/assets/images/Location-2.jpg',
-                'phone' => '61-3-1234 5678',
-                'email' => 'aus@datumhq.com',
+                'phone' => '',
+                'email' => '',
             ],
             [
                 'country' => 'Vietnam',
@@ -72,8 +72,8 @@ $image_url = $args['image_url'] ?? get_stylesheet_directory_uri() . '/assets/ima
                 ],
                 'open' => false,
                 'image_url' => get_stylesheet_directory_uri() . '/assets/images/Location-2.jpg',
-                'phone' => '61-3-1234 5678',
-                'email' => 'aus@datumhq.com',
+                'phone' => ' 02822150050',
+                'email' => 'contacts@datumhq.com',
             ],
             [
                 'country' => 'Thailand',

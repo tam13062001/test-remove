@@ -350,3 +350,34 @@ function save_user_title_field($user_id) {
 }
 add_action('personal_options_update', 'save_user_title_field');
 add_action('edit_user_profile_update', 'save_user_title_field');
+
+function get_menu_columns($location) {
+    $columns = [];
+
+    if (($locations = get_nav_menu_locations()) && isset($locations[$location])) {
+        $menu_items = wp_get_nav_menu_items($locations[$location]);
+
+        usort($menu_items, function($a, $b) {
+            return $a->menu_order - $b->menu_order;
+        });
+
+        foreach ($menu_items as $item) {
+            if ($item->menu_item_parent == 0) {
+                $columns[$item->ID] = [
+                    'title' => $item->title,
+                    'children' => []
+                ];
+            } else {
+                if (isset($columns[$item->menu_item_parent])) {
+                    $columns[$item->menu_item_parent]['children'][] = [
+                        'title' => $item->title,
+                        'url' => $item->url
+                    ];
+                }
+            }
+        }
+    }
+
+    return array_values($columns); // reset key để dễ foreach
+}
+

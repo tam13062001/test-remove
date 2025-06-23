@@ -5,23 +5,29 @@ $items = $args['items'] ?? array();
 $image_url = $args['image_url'] ?? '';
 ?>
 
-<div class="relative lg:min-h-[880px] lg:mb-[88px]">
-    <div class=" pt-[40px] lg:pt-0 z-10 relative">
-        <div class="container relative lg:absolute top-0 right-0 lg:w-[57.5%] bg-white lg:pt-[80px] lg:pb-[80px] lg:px-[100px]">
-            <div class="lg:w-[70%] font-bold text-[32px] lg:text-[40px] mb-6 lg:mb-[10px]">
+<div class="flex flex-col lg:flex-row justify-between lg:min-h-[600px] lg:mb-[88px]">
+    <!-- Hình ảnh bên trái -->
+    <div class="w-full lg:w-1/2 flex items-end justify-center mt-8 lg:mt-0 min-h-[220px] lg:min-h-[636px] hidden lg:block">
+        <img class="object-cover w-full h-[220px] lg:h-full" src="<?php echo $image_url?>" alt="" />
+    </div>
+
+    <!-- Content bên phải -->
+    <div class="container w-full lg:w-1/2 pt-[40px] lg:pt-0 z-10 flex items-center">
+        <div class="w-full bg-white">
+            <div class="font-bold text-[32px] lg:text-[40px] mb-6">
                 <h2>
                     <?php echo $title ?>
                 </h2>
             </div>
             <div>
-                <div class=" text-primary text-[20px] lg:text-[32px] font-normal leading-[170%]">
+                <div class="text-primary text-[20px] lg:text-[32px] font-normal leading-[170%] mb-4">
                     <?php echo $heading ?>
                 </div>
             </div>
             <div class="leading-[170%]">
                 <?php foreach($items as $item): ?>
-                <div class="border-primary lg:py-5 flex flex-col lg:flex-row lg:space-x-5 border-b">
-                    <div class="lg:w-full mt-3 mb-3 lg:mt-0 text-[16px] lg:text-[20px]">
+                <div class="border-primary py-3 lg:py-5 flex flex-col lg:flex-row lg:space-x-5 border-b">
+                    <div class="w-full text-[16px] lg:text-[20px]">
                         <?php echo $item['content']; ?>
                     </div>
                 </div>
@@ -29,10 +35,8 @@ $image_url = $args['image_url'] ?? '';
             </div>
         </div>
     </div>
-    
-    <div class="lg:w-3/5 pt-[40px] lg:py-0 lg:absolute left-0 top-0 h-full overflow-hidden ">
-        <div class="flex items-end h-full">
-            <img class="object-cover h-auto lg:h-[636px] w-full lg:w-[96%]" src="<?php echo $image_url?>" alt="" />
-        </div>
+
+    <div class="w-full lg:w-1/2 flex items-end justify-center mt-8 lg:mt-0 min-h-[220px] lg:min-h-[636px] block lg:hidden">
+        <img class="object-cover w-full h-[220px] lg:h-full" src="<?php echo $image_url?>" alt="" />
     </div>
 </div>

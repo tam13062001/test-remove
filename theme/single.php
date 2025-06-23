@@ -20,8 +20,12 @@ get_template_part('template-parts/content/banner', null, array(
     </div>
     <div class="container mx-auto relative z-10">
         <div class="font-bold mb-4">
-            <?php echo get_the_date('d.m.Y') ?>
-        </div>
+    <?php
+    $date = new DateTime(get_the_date('Y-m-d'));
+    echo $date->format('j, F, Y');
+    ?>
+</div>
+
         <div class="prose !max-w-none mb-10 lg:mb-[120px]">
             <?php the_content(); ?>
         </div>
@@ -64,5 +68,5 @@ get_template_part('template-parts/content/banner', null, array(
     ));
     ?>
 </div>
-
+<?php get_template_part('template-parts/content/back-to-top'); ?>
 <?php get_footer() ?>

@@ -1,6 +1,6 @@
 <?php
 $title = $args['title'] ?? 'Default Title';
-$heading = $args['heading'] ?? 'Default Heading';
+$heading = $args['heading'] ?? '';
 $content = $args['content'] ?? 'Default Content';
 $cta_link  = $args['cta_link'] ?? '#';
 $cta_text = $args['cta_text'] ?? '';

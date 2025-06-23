@@ -34,7 +34,7 @@ if ($query->have_posts()) : ?>
                 </div>
                 <div class="flex justify-start">
                     <p class="text-black text-[14px] lg:text-[16px] font-bold">
-                        <?php echo get_the_date() ?>
+                        <?php echo get_the_date('j, F, Y'); ?>
                     </p>
                 </div>
             </div>

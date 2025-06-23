@@ -19,7 +19,11 @@ $news_items = $args['news_items'] ?? array();
                     </div>
                     <div class="flex justify-start">
                         <p class="text-black text-[14px] lg:text-[16px] font-bold">
-                            <?php echo $item->post_date; ?>
+                            <?php
+                            // Format date: day, Month, Year (e.g. 23 June, 2025)
+                            $date = date_create($item->post_date);
+                            echo date_format($date, 'j, F, Y');
+                            ?>
                         </p>
                     </div>
                 </div>
