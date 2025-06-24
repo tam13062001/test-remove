@@ -27,7 +27,7 @@ $image_url = $args['image_url'] ?? get_stylesheet_directory_uri() . '/assets/ima
                 'locations' => [
                     [
                         'title' => 'Datum Consulting AU PTY',
-                        'address' => '8 Beulah Road, Norwood, Adelaide'
+                        'address' => 'Level 1, 8 Beulah Road, Norwood SA 5067<br>Adelaide, Australia'
                     ]
                 ],
                 'open' => true,
@@ -40,7 +40,7 @@ $image_url = $args['image_url'] ?? get_stylesheet_directory_uri() . '/assets/ima
                 'locations' => [
                     [
                         'title' => 'Datum Limited',
-                        'address' => '70 Symonds Street Auckland'
+                        'address' => '70 Symonds Street, 1010 Auckland, New Zealand'
                     ]
                 ],
                 'open' => false,
@@ -53,7 +53,7 @@ $image_url = $args['image_url'] ?? get_stylesheet_directory_uri() . '/assets/ima
                 'locations' => [
                     [
                         'title' => 'Datum Consulting Philippines, Inc.',
-                        'address' => '8 Rockwell Dr, Makati, Metro Manila'
+                        'address' => '7th Floor, Unit B, Center, 8 Rockwell Dr, Makati, 1209 Metro Manila, Philippines'
                     ]
                 ],
                 'open' => false,
@@ -66,7 +66,7 @@ $image_url = $args['image_url'] ?? get_stylesheet_directory_uri() . '/assets/ima
                 'locations' => [
                     [
                         'title' => 'Datum Consulting VN Company LTD',
-                        'address' => '52B2, Sala Residential Area, District 2. HCMC'
+                        'address' => '52-54-56 E. B2, Sala Residential Area, District 2 (now Thu Duc), Ho Chi Minh City 700000, Vietnam'
                     ]
                 ],
                 'open' => false,
@@ -79,7 +79,7 @@ $image_url = $args['image_url'] ?? get_stylesheet_directory_uri() . '/assets/ima
                 'locations' => [
                     [
                         'title' => 'Coming Soon',
-                        'address' => ''
+                        'address' => 'Bangkok, Thailand'
                     ]
                 ],
                 'open' => false,
