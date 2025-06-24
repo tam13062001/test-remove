@@ -27,7 +27,7 @@ $image_url = $args['image_url'] ?? get_stylesheet_directory_uri() . '/assets/ima
                 'locations' => [
                     [
                         'title' => 'Datum Consulting AU PTY',
-                        'address' => 'Level 1, 8 Beulah Road, Norwood SA 5067<br>Adelaide, Australia'
+                        'address' => 'Level 1, 8 Beulah Road, Norwood SA 5067 Adelaide, Australia'
                     ]
                 ],
                 'open' => true,

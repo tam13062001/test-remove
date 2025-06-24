@@ -23,46 +23,41 @@
                     <div class="border-t border-[#000000] w-full flex-grow"></div>
                 </div>
 
-                <!-- Phần Our Offices -->
-                <div class="mb-[100px]">
-                    <div class="lg:text-[16px] font-bold font-[700] mb-4 uppercase">Our Offices</div>
-                    <div class="grid grid-cols-2 gap-4 mt-4">
-                        <div class="flex flex-col justify-between lg:gap-12 gap-4 w-full">
-                            <div class=" lg:text-[16px] text-[11px] lg:space-y-2">
-                                <h1 class=" font-bold text-[#2569ED] py-4 ">New Zealand</h1>
-                                <h1 class=" font-bold text-[#000000] lg:text-[16px] text-[10px]">Datum Limited</h1>
-                                <p class="">70 Symonds Street Auckland</p>
-                                <!-- <p class="">Phone: <span class="text-[#2569ED] lg:ml-3 "> 61-3-1234 5678 </span> </p>
-                                <p class="">Email: <span class="text-[#2569ED] lg:ml-5 "> nz@datumhq.com </span> </p> -->
-                            </div>
-                            <div class="lg:text-[16px] text-[11px] lg:space-y-2">
-                                <h1 class=" font-bold text-[#2569ED] py-4 ">VietNam</h1>
-                                <h1 class=" font-bold text-[#000000] lg:text-[16px] text-[10px]">Datum Consulting VN Company LTD</h1>
-                                <p class="">52B2, Sala Residential Area, District 2. HCMC</p>
-                                <p class="">Phone:<span class="text-[#2569ED] lg:ml-3 lg:text-[16px] text-[10px]">02822150050 </span> </p>
-                                <p class="">Email:<span class="text-[#2569ED] lg:ml-5 lg:text-[16px] text-[10px]">contacts@datumhq.com </span> </p>
-                            </div>
-                        </div>
-                        <div class="flex flex-col  lg:gap-12 gap-4 w-full">
-                            <div class="lg:text-[16px] text-[11px] lg:space-y-2">
-                                <h1 class=" font-bold text-[#2569ED] py-4 ">Australia</h1>
-                                <h1 class=" font-bold text-[#000000] lg:text-[16px] text-[10px]">Datum Consulting AU PTY </h1>
-                                <p class="">8 Beulah Road, Norwood, Adelaide</p>
-                                <!-- <p class="">Phone: <span class="text-[#2569ED] lg:ml-3"> 61-3-1234 5678 </span> </p>
-                                <p class="">Email: <span class="text-[#2569ED] lg:ml-5"> aus@datumhq.com </span> </p> -->
-                            </div>
-                            <div class="lg:text-[16px] text-[11px] lg:space-y-2">
-                                <h1 class=" font-bold text-[#2569ED] py-4 ">Philippines</h1>
-                                <h1 class=" font-bold text-[#000000] lg:text-[16px] text-[10px]">Datum Consulting Philippines, Inc.</h1>
-                                <p class="">8 Rockwell Dr, Makati, Metro Manila</p>
-                                <p class=""><span class="text-[#2569ED] lg:ml-3 lg:text-[16px] text-[10px]"> </span> </p>
-                                <p class=""><span class="text-[#2569ED] lg:ml-5 lg:text-[16px] text-[10px]"> </span> </p>
-                                <!-- <p class="">Phone: <span class="text-[#2569ED] lg:ml-3 lg:text-[16px] text-[10px]"> 848 1234 5678 </span> </p>
-                                <p class="">Email: <span class="text-[#2569ED] lg:ml-5 lg:text-[16px] text-[10px]"> ph@datumhq.com </span> </p> -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                
+<!-- Phần Our Offices -->
+<div class="mb-[100px]">
+    <div class="lg:text-[16px] font-bold font-[700] mb-4 uppercase">Our Offices</div>
+    <div class="flex flex-col gap-8 mt-4">
+        <!-- Hàng 1: New Zealand & Australia -->
+        <div class="flex flex-row gap-4 lg:gap-8 w-full">
+            <div class="flex-1 lg:text-[16px] text-[11px] lg:space-y-2">
+                <h1 class="font-bold text-[#2569ED] py-4">New Zealand</h1>
+                <h1 class="font-bold text-[#000000] lg:text-[16px] text-[10px]">Datum Limited</h1>
+                <p>70 Symonds Street, 1010 Auckland, New Zealand</p>
+            </div>
+            <div class="flex-1 lg:text-[16px] text-[11px] lg:space-y-2">
+                <h1 class="font-bold text-[#2569ED] py-4">Australia</h1>
+                <h1 class="font-bold text-[#000000] lg:text-[16px] text-[10px]">Datum Consulting AU PTY</h1>
+                <p>Level 1, 8 Beulah Road, Norwood SA 5067 Adelaide, Australia</p>
+            </div>
+        </div>
+        <!-- Hàng 2: VietNam & Philippines -->
+        <div class="flex flex-row gap-4 lg:gap-8 w-full">
+            <div class="flex-1 lg:text-[16px] text-[11px] lg:space-y-2">
+                <h1 class="font-bold text-[#2569ED] py-4">VietNam</h1>
+                <h1 class="font-bold text-[#000000] lg:text-[16px] text-[10px]">Datum Consulting VN Company LTD</h1>
+                <p>52-54-56 E. B2, Sala Residential Area, District 2 (now Thu Duc) Ho Chi Minh City 700000, Vietnam</p>
+                <p>Phone:<span class="text-[#2569ED] lg:ml-3 lg:text-[16px] text-[10px]">02822150050 </span></p>
+                <p>Email:<span class="text-[#2569ED] lg:ml-5 lg:text-[16px] text-[10px]">contacts@datumhq.com </span></p>
+            </div>
+            <div class="flex-1 lg:text-[16px] text-[11px] lg:space-y-2">
+                <h1 class="font-bold text-[#2569ED] py-4">Philippines</h1>
+                <h1 class="font-bold text-[#000000] lg:text-[16px] text-[10px]">Datum Consulting Philippines, Inc.</h1>
+                <p>7th Floor, Unit B, Center, 8 Rockwell Dr, Makati, 1209 Metro Manila Philippines</p>
+            </div>
+        </div>
+    </div>
+</div>
 
                 <!-- Phần privacy menu -->
                 <div class="flex lg py-0 box-border max-w-full mt-10">
