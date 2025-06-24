@@ -14,6 +14,7 @@ import Locations from './blocks/Location';
 import ViewMapModal from './blocks/ViewMapModal';
 import CreatePostForm from './blocks/CreatePostFormBlock';
 import ListPost from './blocks/ListPost';
+import CardSwiperBlock from './blocks/CardSwiper';
 
 registerComponent('rocket-example', ExampleBlock)
 registerComponent('collapse-block', CollapseBlock)
@@ -29,6 +30,7 @@ registerComponent('locations', Locations)
 registerComponent('view-map', ViewMapModal)
 registerComponent('create-post-form', CreatePostForm)
 registerComponent('list-post', ListPost)
+registerComponent('card-swiper', CardSwiperBlock)
 
 document.addEventListener('DOMContentLoaded', function () {
   const containers = document.querySelectorAll("[class^='wp-block-rocket']")

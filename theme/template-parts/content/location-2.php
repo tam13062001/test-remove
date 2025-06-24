@@ -4,7 +4,7 @@ $image_url = $args['image_url'] ?? get_stylesheet_directory_uri() . '/assets/ima
 ?>
 <div class="py-[60px] lg:py-[80px]">
     <div class="container mb-[50px] lg:mb-[100px] flex justify-between items-center">
-        <h2 class="text-[32px] lg:text-[40px] font-bold">
+        <h2 class="text-[28px] lg:text-[40px] font-bold">
             <?php echo esc_html($title); ?>
         </h2>
         <div>
@@ -19,7 +19,6 @@ $image_url = $args['image_url'] ?? get_stylesheet_directory_uri() . '/assets/ima
         </div>
     </div>
 
-
     <div class="container">
         <?php
         $data = [
@@ -28,7 +27,7 @@ $image_url = $args['image_url'] ?? get_stylesheet_directory_uri() . '/assets/ima
                 'locations' => [
                     [
                         'title' => 'Datum Consulting AU PTY',
-                        'address' => 'Level 1, 8 Beulah Road, Norwood SA 5067<br>Adelaide, Australia'
+                        'address' => '8 Beulah Road, Norwood, Adelaide'
                     ]
                 ],
                 'open' => true,
@@ -41,7 +40,7 @@ $image_url = $args['image_url'] ?? get_stylesheet_directory_uri() . '/assets/ima
                 'locations' => [
                     [
                         'title' => 'Datum Limited',
-                        'address' => '70 Symonds Street, 1010 Auckland, New Zealand'
+                        'address' => '70 Symonds Street Auckland'
                     ]
                 ],
                 'open' => false,
@@ -54,7 +53,7 @@ $image_url = $args['image_url'] ?? get_stylesheet_directory_uri() . '/assets/ima
                 'locations' => [
                     [
                         'title' => 'Datum Consulting Philippines, Inc.',
-                        'address' => '7th Floor, Unit B, Center, 8 Rockwell Dr, Makati, 1209 Metro Manila, Philippines'
+                        'address' => '8 Rockwell Dr, Makati, Metro Manila'
                     ]
                 ],
                 'open' => false,
@@ -67,12 +66,12 @@ $image_url = $args['image_url'] ?? get_stylesheet_directory_uri() . '/assets/ima
                 'locations' => [
                     [
                         'title' => 'Datum Consulting VN Company LTD',
-                        'address' => '52-54-56 E. B2, Sala Residential Area, District 2 (now Thu Duc), Ho Chi Minh City 700000, Vietnam'
+                        'address' => '52B2, Sala Residential Area, District 2. HCMC'
                     ]
                 ],
                 'open' => false,
                 'image_url' => get_stylesheet_directory_uri() . '/assets/images/Location-2.jpg',
-                'phone' => ' 02822150050',
+                'phone' => '02822150050',
                 'email' => 'contacts@datumhq.com',
             ],
             [
@@ -80,6 +79,7 @@ $image_url = $args['image_url'] ?? get_stylesheet_directory_uri() . '/assets/ima
                 'locations' => [
                     [
                         'title' => 'Coming Soon',
+                        'address' => ''
                     ]
                 ],
                 'open' => false,

@@ -3,7 +3,7 @@
 
 <?php get_template_part('template-parts/content/banner', null, array(
     'title' => 'Pioneering software engineering for Future-Ready Enterprises',
-    'breadcrumbs' => array('Our Services', 'Platform engineering'),
+    'breadcrumbs' => array('Our Services', 'Platform Engineering'),
     'background_image' => get_assets_from_path('images/spe_banne.png'),
     'type' => 'image'
 )); ?>

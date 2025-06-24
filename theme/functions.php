@@ -48,7 +48,7 @@ function datum_save_contact(WP_REST_Request $request) {
     // Important: Convert WP_REST_Response to plain JSON output
     $output = wp_json_encode($response->get_data());
     echo $output;
-    header("Content-Type: application/json");
+    header("Content-Type: application/json; charset=UTF-8");
     header("Content-Length: " . strlen($output));
 
     ob_end_flush();

@@ -32,19 +32,19 @@ export default function LocationItemBlock(props: BaseProps<OurValueCollapseProps
     return (
         <div className="flex flex-col lg:flex-row justify-between">
     {/* Left column */}
-    <div className="flex flex-col justify-center lg:w-2/5">
-      <div className="font-bold text-[20px] text-[16px] mb-2">{location.title}</div>
-      <div className="mb-4 text-[20px] text-[16px]" dangerouslySetInnerHTML={{ __html: location.address }} />
+    <div className="flex flex-col justify-center lg:w-2/5 lg:mr-2">
+      <div className="font-bold lg:text-[20px] text-[13px] mb-2">{location.title}</div>
+      <div className="mb-4 lg:text-[20px] text-[13px]" dangerouslySetInnerHTML={{ __html: location.address }} />
       {phone && (
         <div className="mb-2">
-          <span className="font-regular">Phone</span>{'  '}
-          <a className="text-blue-500 lg:text-[20px] text-[16px]" href={`tel:${phone}`}>{phone}</a>
+          <span className="font-regular lg:lg:text-[20px] text-[13px]">Phone</span>{'  '}
+          <a className="text-blue-500 lg:lg:text-[20px] text-[13px]" href={`tel:${phone}`}>{phone}</a>
         </div>
       )}
       {email && (
         <div className="mb-4">
-          <span className="font-regular">Email</span>{'  '}
-          <a className="text-blue-500 ml-[12px] lg:text-[20px] text-[16px]" href={`mailto:${email}`}>{email}</a>
+          <span className="font-regular lg:lg:text-[20px] text-[13px]">Email</span>{'  '}
+          <a className="text-blue-500 ml-[12px] lg:lg:text-[20px] text-[13px]" href={`mailto:${email}`}>{email}</a>
         </div>
       )}
     </div>
@@ -82,7 +82,7 @@ export default function LocationItemBlock(props: BaseProps<OurValueCollapseProps
       >
         <Collapse.Panel
           key="1"
-          header={<div className="font-[700] text-primary text-[24px]">{country}</div>}
+          header={<div className="font-[700] text-primary lg:text-[24px] text-[20px]">{country}</div>}
         >
           {renderContent()}
         </Collapse.Panel>
