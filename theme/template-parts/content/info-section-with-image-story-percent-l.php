@@ -27,14 +27,25 @@ $items = $args['items'] ?? array();
                 </div>
             </div>
             <div class="mb-6">
-                <?php foreach($items as $item): ?>
-                    <div class="py-3 lg:py-5 flex flex-col lg:flex-row lg:space-x-5 border-b last:border-b-0">
-                        <div class="w-full text-[16px] lg:text-[20px]">
-                            <?php echo $item['content']; ?>
-                        </div>
-                    </div>
-                <?php endforeach; ?>
+    <?php foreach($items as $item): ?>
+        <?php
+            // Tách phần trước và sau dấu ":"
+            $parts = explode(':', $item['content'], 2);
+            $before_colon = trim($parts[0] ?? '');
+            $after_colon = trim($parts[1] ?? '');
+        ?>
+        <div class="py-3 lg:py-5 flex flex-col lg:flex-row lg:space-x-5 border-b last:border-b-0">
+            <div class="w-full text-[16px] lg:text-[20px]">
+                <?php if ($after_colon): ?>
+                    <span class="font-bold"><?php echo $before_colon; ?>:</span> <?php echo $after_colon; ?>
+                <?php else: ?>
+                    <?php echo $before_colon; ?>
+                <?php endif; ?>
             </div>
+        </div>
+    <?php endforeach; ?>
+</div>
+
             <div class="grid grid-cols-1 lg:grid-cols-2 lg:gap-6
                 <?php if (empty($percent) && empty($percent_content)) echo ''; else echo 'border-y border-primary py-6'; ?>">
                 <div class="flex flex-col lg:flex-row items-center relative w-full">
