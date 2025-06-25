@@ -6,8 +6,8 @@ class SMTP_Mailer {
     public PHPMailer\PHPMailer\PHPMailer $mail;
 
     function __construct() {
-        $mail = new PHPMailer\PHPMailer\PHPMailer(true);
-        $this->mail = $mail;
+        $this->mail = new PHPMailer\PHPMailer\PHPMailer(true);;
+        $this->mail->CharSet = 'UTF-8';
     }
 
     public function load(array $config) {
