@@ -1,8 +1,7 @@
 import { BaseProps } from "../core/get-props";
-import { Collapse, ConfigProvider } from "antd";
+import {Modal, Collapse, ConfigProvider } from "antd";
 import { useCallback, useState } from "react";
 import { ArrowRightOutlined } from "@ant-design/icons";
-import ViewMapModal from "./ViewMapModal";
 
 type OurValueCollapseProps = {
   country: string;
@@ -14,13 +13,32 @@ type OurValueCollapseProps = {
   map_url?: string;
 };
 
+
 export default function LocationItemBlock(props: BaseProps<OurValueCollapseProps>) {
   const { country, locations, open, image_url, phone, email } = props.data;
   const [selectedAddress, setSelectedAddress] = useState<string | null>(null);
+  const [isMapOpen, setIsMapOpen] = useState(false);
 
   const handleAddressClick = (address: string) => {
-    setSelectedAddress(address);
-  };
+  let parsedAddress = address;
+  if (
+    address.trim() ===
+    '52-54-56 E. B2, Sala Residential Area, District 2 (now Thu Duc), Ho Chi Minh City 700000, Vietnam'
+  ) {
+    parsedAddress =
+      '10.773558098980695, 106.72757300974644';
+  }
+
+  else if (
+    address.trim() ===
+    '7th Floor, Unit B, Center, 8 Rockwell Dr, Makati, 1209 Metro Manila, Philippines'
+  ) {
+    parsedAddress =
+      '14.5595917233759, 121.01949054519686';
+  }
+  setSelectedAddress(parsedAddress);
+  setIsMapOpen(true);
+};
 
   const renderContent = useCallback(() => {
     const location = locations?.[0];
@@ -28,7 +46,7 @@ export default function LocationItemBlock(props: BaseProps<OurValueCollapseProps
 
     return (
       <div className="flex flex-col lg:flex-row justify-between">
-        <div className="flex flex-col justify-center lg:w-2/5">
+        <div className="flex flex-col justify-center lg:w-2/5 lg:mr-[50px]">
           <div className="font-bold lg:text-[20px] text-[13px] mb-2">{location.title}</div>
           <div 
             className="mb-4 lg:text-[20px] text-[13px] cursor-pointer hover:underline"
@@ -65,6 +83,11 @@ export default function LocationItemBlock(props: BaseProps<OurValueCollapseProps
       </div>
     );
   }, [locations, phone, email, image_url]);
+
+  // Tạo url nhúng Google Map từ địa chỉ
+  const mapEmbedUrl = selectedAddress
+    ? `https://www.google.com/maps?q=${encodeURIComponent(selectedAddress)}&output=embed`
+    : "";
 
   return (
     <>
@@ -105,15 +128,27 @@ export default function LocationItemBlock(props: BaseProps<OurValueCollapseProps
         </Collapse>
       </ConfigProvider>
 
-      <ViewMapModal 
-        data={{
-          attributes: {
-            apiKey: 'AIzaSyCEwPmqmSUiGv5_2fggY6Puo322J9_09mw',
-            image_url: '/default-marker.png'
-          },
-          selectedAddress: selectedAddress
-        }} 
-      />
+      <Modal
+        open={isMapOpen}
+        onCancel={() => setIsMapOpen(false)}
+        footer={null}
+        width="80vw"
+        bodyStyle={{ padding: 0, minHeight: 400 }}
+        destroyOnClose
+      >
+        {selectedAddress && (
+          <iframe
+            src={mapEmbedUrl}
+            width="100%"
+            height="600"
+            style={{ border: 0 }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            title="Google Map"
+          />
+        )}
+      </Modal>
     </>
   );
 }

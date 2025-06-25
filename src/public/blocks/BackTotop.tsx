@@ -32,17 +32,17 @@ const BackToTop = () => {
       }`}
       aria-label="Back to top"
     >
-      <div className="text-[14px] font-bold text-black">BACK TO TOP</div>
+      <div className="hidden lg:block text-[14px] font-bold text-black">BACK TO TOP</div>
       
       {/* Hexagon background chỉ cho mũi tên */}
-      <div className="relative w-8 h-8  flex items-center justify-center">
+      <div className="relative w-8 h-8  flex items-center justify-center -mr-[16px] lg:-mr-0">
         <div 
           className="hexagon-rounded absolute inset-0 bg-blue-600 hover:bg-blue-700 transition-all duration-300"
           style={{
             clipPath: 'polygon(50% 0%, 90% 25%, 90% 75%, 50% 100%, 10% 75%, 10% 25%)'
           }}
         ></div>
-        <span className="text-white text-[14px] font-bold relative">↑</span>
+        <span className="text-white text-[14px] font-bold relative ">↑</span>
       </div>
     </a>
   );

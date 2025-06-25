@@ -11,7 +11,7 @@ $news_items = $args['news_items'] ?? array();
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
         <?php foreach($news_items as $item): ?>
             <div class="border-b border-secondary">
-                <div class="flex flex-col lg:justify-between lg:py-12 py-4 lg:px-8 px-5 lg:text-[24px] text-[16px] font-[700] text-primary  bg-gradient-to-r from-secondary/20 to-primary/20 h-[140px] lg:h-[220px]">
+                <div class="flex flex-col lg:justify-between lg:py-12 py-4 lg:px-8 px-5 lg:text-[24px] text-[16px] font-[700] text-primary  bg-gradient-to-r from-[#D2ECFB] to-[#D9DCF7] h-[140px] lg:h-[220px]">
                     <div class="text-[14px] lg:text-[24px] font-bold text-primary mb-4 lg:mb-0">
                         <a href="<?php echo $post->post_permalink; ?>">
                             <?php echo $item->post_title; ?>

@@ -17,18 +17,18 @@ get_template_part('template-parts/content/banner', null, array(
     <div class="hidden lg:block lg:absolute top-20 right-0 w-[500px] h-[350px] translate-x-1/3 z-[-1]">
         <img class="" src="<?php echo get_stylesheet_directory_uri().'/assets/images/Group 62.png' ?>" />
     </div>
-    <div class="container mx-auto relative z-10">
-        <div class="font-bold mb-4">
-    <?php
-    $date = new DateTime(get_the_date('Y-m-d'));
-    echo $date->format('j, F, Y');
-    ?>
-</div>
+    <div class=" mx-auto relative z-10">
+        <div class="container font-bold mb-4">
+            <?php
+            $date = new DateTime(get_the_date('Y-m-d'));
+            echo $date->format('j, F, Y');
+            ?>
+        </div>
 
-        <div class="prose !max-w-none mb-10 lg:mb-[120px]">
+        <div class="container prose !max-w-none mb-10 lg:mb-[120px]">
             <?php the_content(); ?>
         </div>
-        <div class="mb-4">
+        <div class="container mb-4">
             <div class="font-bold mb-4">About the Author</div>
             <?php
             $post_id = get_the_ID();
@@ -52,8 +52,8 @@ get_template_part('template-parts/content/banner', null, array(
                 </div>
             </div>
         </div>
-    </div>
-    <?php
+
+        <?php
     $recommended_posts = get_posts(array(
         'numberposts' => 2,
         'post_status' => 'publish',
@@ -66,6 +66,8 @@ get_template_part('template-parts/content/banner', null, array(
         'news_items' => $recommended_posts
     ));
     ?>
+    </div>
+    
 </div>
 <?php get_template_part('template-parts/content/back-to-top'); ?>
 <?php get_footer() ?>

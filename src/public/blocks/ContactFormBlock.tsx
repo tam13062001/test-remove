@@ -1,6 +1,6 @@
 import {Button, Checkbox, ConfigProvider, Form, Input, message, Select, Typography} from "antd";
 import axios from "axios";
-import {useState} from "@wordpress/element";
+import {useState,useRef } from "@wordpress/element";
 import CountrySelector from "../components/CountrySelector/CountrySelector";
 import useBreakpoint from "../hooks/useBreakpoint";
 
@@ -8,19 +8,23 @@ export default function ContactFormBlock() {
   const [error, setError] = useState<string>()
   const [showSuccess, setShowSuccess] = useState(false)
   const isMobile = useBreakpoint()
+  const [loading, setLoading] = useState(false);
 
   const onSubmit = (values: Record<string, any>) => {
-    setError(undefined)
-    // if enabled permalink, change path to /wp-json/datum/v1/save-contact
+    setError(undefined);
+    setLoading(true);
+    setShowSuccess(true);
     axios.post('/index.php?rest_route=/datum/v1/save-contact', values)
       .then(e => {
-        setShowSuccess(true)
-        window.scrollTo({ top: 0, behavior: 'smooth' }) 
+        setShowSuccess(true);
+        setLoading(false);
       })
       .catch(e => {
-        setError(e.message)
-      })
-  }
+        setError(e.message);
+        setLoading(false);
+        setShowSuccess(false);
+      });
+  };
 
 
   const onResubmitBtnClick = () => {
@@ -32,7 +36,12 @@ export default function ContactFormBlock() {
 
       <div className={'lg:mt-[320px]'}>
           <div className={'mb-4'}>Thank you! Your information has been saved</div>
-          <div className={'text-[16px] text-primary'} onClick={onResubmitBtnClick}>Submit another information</div>
+         <div
+            className="text-[16px] text-white w-[50%] cursor-pointer text-center px-6 py-2 bg-gradient-to-r from-secondary to-primary hover:opacity-90 transition-opacity"
+            onClick={onResubmitBtnClick}
+          >
+            Submit a new message
+          </div>
       </div>
     )
 
@@ -138,7 +147,14 @@ export default function ContactFormBlock() {
             </Checkbox>
           </Form.Item>
           <div className={'mt-[50px]'}>
-            <button className={'px-10'} type={'submit'}>Submit</button>
+            <button
+              className={'px-10'}
+              type="submit"
+              disabled={loading}
+              style={loading ? { opacity: 0.6, pointerEvents: 'none' } : {}}
+            >
+              {loading ? 'Submitting...' : 'Submit'}
+            </button>
           </div>
         </Form></>
     )
