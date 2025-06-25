@@ -4,7 +4,7 @@ $image_url = $args['image_url'] ?? get_stylesheet_directory_uri() . '/assets/ima
 ?>
 <div class="py-[60px] lg:py-[80px]">
     <div class="container mb-[50px] lg:mb-[100px] flex justify-between items-center">
-        <h2 class="text-[32px] lg:text-[40px] font-bold">
+        <h2 class="text-[28px] lg:text-[40px] font-bold">
             <?php echo esc_html($title); ?>
         </h2>
         <div>
@@ -19,7 +19,6 @@ $image_url = $args['image_url'] ?? get_stylesheet_directory_uri() . '/assets/ima
         </div>
     </div>
 
-
     <div class="container">
         <?php
         $data = [
@@ -28,7 +27,7 @@ $image_url = $args['image_url'] ?? get_stylesheet_directory_uri() . '/assets/ima
                 'locations' => [
                     [
                         'title' => 'Datum Consulting AU PTY',
-                        'address' => 'Level 1, 8 Beulah Road, Norwood SA 5067<br>Adelaide, Australia'
+                        'address' => 'Level 1, 8 Beulah Road, Norwood SA 5067 Adelaide, Australia'
                     ]
                 ],
                 'open' => true,
@@ -72,7 +71,7 @@ $image_url = $args['image_url'] ?? get_stylesheet_directory_uri() . '/assets/ima
                 ],
                 'open' => false,
                 'image_url' => get_stylesheet_directory_uri() . '/assets/images/Location-2.jpg',
-                'phone' => ' 02822150050',
+                'phone' => '02822150050',
                 'email' => 'contacts@datumhq.com',
             ],
             [
@@ -80,6 +79,7 @@ $image_url = $args['image_url'] ?? get_stylesheet_directory_uri() . '/assets/ima
                 'locations' => [
                     [
                         'title' => 'Coming Soon',
+                        'address' => 'Bangkok, Thailand'
                     ]
                 ],
                 'open' => false,

@@ -13,10 +13,9 @@ get_template_part('template-parts/content/banner', null, array(
     'breadcrumbs' => $breadcrumbs,
 ));
 ?>
-
-<div class="bg-white py-[50px] relative min-h-[600px] overflow-hidden">
-    <div class="hidden lg:block lg:absolute top-20 right-0 w-[500px] h-[500px] translate-x-1/3 z-[-1]">
-        <img class="absolute top-0" src="<?php echo get_stylesheet_directory_uri().'/assets/images/img.png' ?>" />
+<div class=" py-[50px] relative min-h-[600px] overflow-hidden">
+    <div class="hidden lg:block lg:absolute top-20 right-0 w-[500px] h-[350px] translate-x-1/3 z-[-1]">
+        <img class="" src="<?php echo get_stylesheet_directory_uri().'/assets/images/Group 62.png' ?>" />
     </div>
     <div class="container mx-auto relative z-10">
         <div class="font-bold mb-4">

@@ -1,6 +1,7 @@
-import { useMemo } from "@wordpress/element";
+import { useMemo, useState, useEffect } from "@wordpress/element";
 import { Tabs } from 'antd';
 import { BaseProps } from "../core/get-props";
+
 
 const { TabPane } = Tabs;
 
@@ -51,7 +52,16 @@ const MemberCard = ({ name, role, image_url, groupName }: TeamMember & { groupNa
 );
 
 export default function Member(props: BaseProps<MemberProps>) {
-  const { 
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const check = () => setIsMobile(window.innerWidth <= 768);
+    check();
+    window.addEventListener("resize", check);
+    return () => window.removeEventListener("resize", check);
+  }, []);
+
+  const {
     teams = [],
     defaultActiveKey = teams[0]?.groupName || '',
     tabBarGutter = 32,
@@ -79,32 +89,61 @@ export default function Member(props: BaseProps<MemberProps>) {
   ), [teams, emptyMessage]);
 
   return (
-    <div className=" mx-auto px-4 py-6">
+    <div className="mx-auto px-4 py-6">
       {teams.length > 0 ? (
-        <div className="">
-          <Tabs
-            defaultActiveKey={defaultActiveKey}
-            tabBarGutter={tabBarGutter}
-            
-            tabBarStyle={{ marginBottom: '2rem' }}
-            className="
-              [&_.ant-tabs-nav]:container
-              [&_.ant-tabs-nav]:center
-              [&_.ant-tabs-nav]:px-[64px]
-              [&_.ant-tabs-nav]:border-none
-              [&_.ant-tabs-nav]:border-b-0
-              [&_.ant-tabs-nav::before]:border-b-0
-              [&_.ant-tabs-tab]:border-none
-              [&_.ant-tabs-tab]:text-[20px]
-              [&_.ant-tabs-tab]:font-normal
-              [&_.ant-tabs-tab]:transition-all
-              [&_.ant-tabs-tab]:duration-200
-              [&_.ant-tabs-content]:border-none
-            "
-          >
-            {tabPanes}
-          </Tabs>
-        </div>
+        <Tabs
+  defaultActiveKey={defaultActiveKey}
+  tabBarGutter={tabBarGutter}
+  tabBarStyle={{ marginBottom: '2rem' }}
+  renderTabBar={
+    isMobile
+      ? (props, DefaultTabBar) => {
+          const { activeKey, panes, onTabClick } = props;
+          return (
+            <div className="flex gap-2 overflow-x-auto max-lg:pb-2">
+              {Array.isArray(panes) ? panes.map((pane) => {
+                const isActive = pane.key === activeKey;
+                return (
+                  <a
+                    key={pane.key}
+                    onClick={() => onTabClick?.(pane.key, {} as any)}
+                    className={`
+                      px-4 py-2 rounded-full whitespace-nowrap break-words text-sm font-medium transition-all duration-200
+                      ${isActive
+                        ? ' text-primary border border-secondary'
+                        : 'bg-primary text-white border border-primary'}
+                    `}
+                  >
+                    {pane.props.tab}
+                  </a>
+                );
+              }) : null}
+            </div>
+          );
+        }
+      : undefined // desktop: dùng mặc định
+  }
+  className="
+    lg:[&_.ant-tabs-nav]:container
+    lg:[&_.ant-tabs-nav]:center
+    lg:[&_.ant-tabs-nav]:px-[64px]
+    lg:[&_.ant-tabs-nav]:border-none
+    lg:[&_.ant-tabs-nav]:border-b-0
+    lg:[&_.ant-tabs-nav::before]:border-b-0
+    lg:[&_.ant-tabs-tab]:border-none
+    lg:[&_.ant-tabs-tab]:text-[20px]
+    lg:[&_.ant-tabs-tab]:font-normal
+    lg:[&_.ant-tabs-tab]:transition-all
+    lg:[&_.ant-tabs-tab]:duration-200
+    lg:[&_.ant-tabs-content]:border-none
+    [&_.ant-tabs-tab]:whitespace-normal
+    [&_.ant-tabs-tab]:break-words
+
+  "
+>
+  {tabPanes}
+</Tabs>
+
       ) : (
         <p className="text-gray-500">No teams available</p>
       )}

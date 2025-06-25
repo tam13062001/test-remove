@@ -4,7 +4,7 @@
 <?php get_template_part('template-parts/content/banner', null, array(
     'title' => 'Redefining Banking Excellence: A Secure Landing Zone Transformation',
     'background_image' => get_assets_from_path('images/success_story_bank.png'),
-    'breadcrumbs' => array('Successful stories', 'Premier Banking'),
+    'breadcrumbs' => array('Successful Stories', 'Premier Banking'),
 )); ?>
 
 <?php

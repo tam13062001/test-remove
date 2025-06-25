@@ -4,7 +4,7 @@
 <?php get_template_part('template-parts/content/banner', null, array(
     'title' => 'Customizing a secure Amazon EKS workload platform for a Prestigious Banking Partner',
     'background_image' => get_assets_from_path('images/success_story_platform.jpg'),
-    'breadcrumbs' => array('Successful stories', 'Platform Customization'),
+    'breadcrumbs' => array('Successful Stories', 'Platform Customization'),
 )); ?>
 
 <?php
