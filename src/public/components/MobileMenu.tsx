@@ -23,10 +23,17 @@ export default function MobileMenu(props: BaseProps<MobileMenuProps>) {
   const dataRef = useRef<Map<string, any>>(new Map());
 
   const menuData = useMemo(() => {
+    const decodeHTMLEntities = (text: string) => {
+  const textarea = document.createElement("textarea");
+  textarea.innerHTML = text;
+  return textarea.value;
+};
+
     const getItems = (item: MenuItem) => {
       const menuItem: any = {
         key: item.ID,
-        label: item.title.replace(/&amp;/g, '&') // Sửa regex để replace tất cả &amp;
+        label: decodeHTMLEntities(item.title)
+ // Sửa regex để replace tất cả &amp;
       };
 
       dataRef.current.set(item.ID.toString(), item);

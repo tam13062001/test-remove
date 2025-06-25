@@ -79,7 +79,7 @@ $image_url = $args['image_url'] ?? get_stylesheet_directory_uri() . '/assets/ima
                 'locations' => [
                     [
                         'title' => 'Coming Soon',
-                        'address' => 'Bangkok, Thailand'
+                        'address' => ''
                     ]
                 ],
                 'open' => false,
