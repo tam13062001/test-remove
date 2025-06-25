@@ -54,14 +54,12 @@ function datum_save_contact(WP_REST_Request $request) {
     ob_end_flush();
     flush();
 
-
     $host = 'smtp.office365.com';
     $port = 587;
     $username = 'wgb.cf@datumhq.com';
     $password = getenv('SMTP_PASSWORD');
     $secure = 'tls';
     $receiver = 'contacts@datumhq.com';
-
 
     $template1 = "
 Dear {{first_name}} {{last_name}},
@@ -118,8 +116,6 @@ Datum Consulting
             'receiver' => $receiver
         )
     );
-
-
 
     foreach ($data as $item) {
         try {

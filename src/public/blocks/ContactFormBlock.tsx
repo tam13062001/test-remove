@@ -1,6 +1,6 @@
 import {Button, Checkbox, ConfigProvider, Form, Input, message, Select, Typography} from "antd";
 import axios from "axios";
-import {useState,useRef } from "@wordpress/element";
+import {useState, useRef, useEffect} from "@wordpress/element";
 import CountrySelector from "../components/CountrySelector/CountrySelector";
 import useBreakpoint from "../hooks/useBreakpoint";
 
@@ -9,49 +9,50 @@ export default function ContactFormBlock() {
   const [showSuccess, setShowSuccess] = useState(false)
   const isMobile = useBreakpoint()
   const [loading, setLoading] = useState(false);
+  const containerRef = useRef<HTMLDivElement>(null)
 
   const onSubmit = (values: Record<string, any>) => {
     setError(undefined);
     setLoading(true);
-    setShowSuccess(true);
     axios.post('/index.php?rest_route=/datum/v1/save-contact', values)
       .then(e => {
-        setShowSuccess(true);
-        setLoading(false);
+        setTimeout(() => {
+          setShowSuccess(true);
+          setLoading(false)
+        }, 1000)
       })
       .catch(e => {
-        setError(e.message);
-        setLoading(false);
-        setShowSuccess(false);
-      });
+        setError(e.message)
+        setLoading(false)
+      })
   };
-
 
   const onResubmitBtnClick = () => {
     setShowSuccess(false)
   }
 
   const renderContent = () => {
-    if (showSuccess) return (
-
-      <div className={'lg:mt-[320px]'}>
+    if (showSuccess) {
+      return (
+        <div className={'lg:mt-[320px]'}>
           <div className={'mb-4'}>Thank you! Your information has been saved</div>
-         <div
+          <div
             className="text-[16px] text-white w-[50%] cursor-pointer text-center px-6 py-2 bg-gradient-to-r from-secondary to-primary hover:opacity-90 transition-opacity"
             onClick={onResubmitBtnClick}
           >
             Submit a new message
           </div>
-      </div>
-    )
+        </div>
+      )
+    }
 
     return (
-      <>
+      <div>
         <h1 className="lg:w-[120%] w-full text-[20px] lg:text-[36px] mb-[50px] lg:mb-[80px] ">
           Please complete this form and a member of our team will be in touch.
         </h1>
 
-      <Form onFinish={onSubmit}>
+        <Form onFinish={onSubmit}>
           {error && (
             <Typography.Paragraph type={'danger'}>
               {error}
@@ -148,7 +149,7 @@ export default function ContactFormBlock() {
           </Form.Item>
           <div className={'mt-[50px]'}>
             <button
-              className={'px-10'}
+              className={'px-10 btn'}
               type="submit"
               disabled={loading}
               style={loading ? { opacity: 0.6, pointerEvents: 'none' } : {}}
@@ -156,9 +157,18 @@ export default function ContactFormBlock() {
               {loading ? 'Submitting...' : 'Submit'}
             </button>
           </div>
-        </Form></>
+        </Form></div>
     )
   }
+
+  useEffect(() => {
+    if (showSuccess) {
+      const contactFormContainer = document.querySelector('#contact-form-container')
+      if (contactFormContainer) {
+        contactFormContainer.scrollIntoView({ behavior: 'smooth' })
+      }
+    }
+  }, [showSuccess]);
 
   return (
     <ConfigProvider
@@ -179,7 +189,9 @@ export default function ContactFormBlock() {
         }
       }}
     >
-      { renderContent() }
+      <div ref={containerRef}>
+        { renderContent() }
+      </div>
     </ConfigProvider>
   )
 }
