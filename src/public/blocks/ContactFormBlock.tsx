@@ -9,31 +9,22 @@ export default function ContactFormBlock() {
   const [showSuccess, setShowSuccess] = useState(false)
   const isMobile = useBreakpoint()
   const [loading, setLoading] = useState(false);
-  const formRef = useRef<HTMLDivElement>(null);
 
-const onSubmit = (values: Record<string, any>) => {
-  setError(undefined);
-  setLoading(true);
-  
-  axios.post('/index.php?rest_route=/datum/v1/save-contact', values)
-    .then(e => {
-      setShowSuccess(true);
-      setLoading(false);
-      console.log('Form ref:', formRef.current);
-      // Đợi React cập nhật DOM trước khi scroll
-      setTimeout(() => {
-        formRef.current?.scrollIntoView({
-          behavior: 'smooth',
-          block: 'start'
-        });
-      }, 50); // Thời gian ngắn đủ để DOM cập nhật
-    })
-    .catch(e => {
-      setError(e.message);
-      setLoading(false);
-      setShowSuccess(false);
-    });
-};
+  const onSubmit = (values: Record<string, any>) => {
+    setError(undefined);
+    setLoading(true);
+    setShowSuccess(true);
+    axios.post('/index.php?rest_route=/datum/v1/save-contact', values)
+      .then(e => {
+        setShowSuccess(true);
+        setLoading(false);
+      })
+      .catch(e => {
+        setError(e.message);
+        setLoading(false);
+        setShowSuccess(false);
+      });
+  };
 
 
   const onResubmitBtnClick = () => {
@@ -43,8 +34,8 @@ const onSubmit = (values: Record<string, any>) => {
   const renderContent = () => {
     if (showSuccess) return (
 
-      <div ref={formRef} className={'lg:mt-[320px]'}>
-          <div  className={'mb-4'}>Thank you! Your information has been saved</div>
+      <div className={'lg:mt-[320px]'}>
+          <div className={'mb-4'}>Thank you! Your information has been saved</div>
          <div
             className="text-[16px] text-white w-[50%] cursor-pointer text-center px-6 py-2 bg-gradient-to-r from-secondary to-primary hover:opacity-90 transition-opacity"
             onClick={onResubmitBtnClick}
@@ -56,7 +47,6 @@ const onSubmit = (values: Record<string, any>) => {
 
     return (
       <>
-      <div ref={formRef}> 
         <h1 className="lg:w-[120%] w-full text-[20px] lg:text-[36px] mb-[50px] lg:mb-[80px] ">
           Please complete this form and a member of our team will be in touch.
         </h1>
@@ -166,9 +156,7 @@ const onSubmit = (values: Record<string, any>) => {
               {loading ? 'Submitting...' : 'Submit'}
             </button>
           </div>
-        </Form>
-      </div>
-</>
+        </Form></>
     )
   }
 
