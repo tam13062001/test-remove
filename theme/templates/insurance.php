@@ -71,7 +71,7 @@ get_template_part('template-parts/content/leader-ship', null, array(
     'title' => 'Thought Leadership',
     'heading' => 'Navigating the Era of Generative AI in Banking',
     'image_url' => get_assets_from_path('images/leader.png'),
-    'content' => 'Generative AI is revolutionizing banking, unlocking new potential in service, efficiency, fraud detection, and personalization. Datum Consulting is leading this shift, investing in expert teams with deep knowledge in AI, data security, and platform engineering. We go beyond technology, staying attuned to evolving business and regulatory landscapes—to deliver AI solutions that are not only cutting-edge, but secure, responsible, and strategically aligned with the future of banking.',
+    'content' => "Generative AI is revolutionizing insurance with personalized policies, automated claims, fraud detection, and intelligent support. Datum Consulting leads this shift using ethical AI practices informed by MITRE ATLAS, prioritizing innovation, compliance with regulations like AI TRISM and the EU AI Act, and secure, scalable solutions tailored to the industry's unique challenges.",
 )) ;
 ?>
 
@@ -106,7 +106,7 @@ get_template_part('template-parts/content/driving-tangible-impact', null, array(
     </h2>
     <p class="lg:py-[100px] lg:text-[20px] lg:w-[785px]"> Our expertise is best demonstrated through our proven track record. We've successfully guided leading insurance companies through complex data and AI transformations:</p>
     <div class="flex flex-col lg:flex-row  justify-between">
-        <div class="w-full  flex flex-col justify-center bg-white pt-6 lg:pt-0  lg:pr-[60px] ">
+        <div class="w-full  flex flex-col justify-center bg-white pt-6 lg:pt-0  lg:pr-[120px] ">
             <div class="font-bold text-[20px] lg:text-[24px] mb-6 lg:mb-[10px] text-[#315CD4]">
                 <h2>
                     GenAI Sales Dashboard POC for a Leading Insurance Company in Vietnam

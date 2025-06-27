@@ -39,14 +39,17 @@ export default function CardSwiperBlock(props: BaseProps<CardSwiperProps>) {
     >
       {
         data.map((item: any, index: number) => (
-          <SwiperSlide key={index} className="w-[85%] lg:w-[400px]">
+          <SwiperSlide key={index} className="w-[30%] h-auto">
             <div
               className={`
                 h-full w-full flex flex-col 
                 p-6 lg:p-10]}
               `}
             >
-              <img src={item.image_url} alt="" className="lg:h-[300px] lg:w-[300px] mb-6" />
+              <div className='container'>
+ <img src={item.image_url} alt="" className="lg:h-[300px] lg:w-[300px] mb-6" />
+              </div>
+             
               <div className="items-center text-start">
                  <h3 className="font-bold text-lg lg:text-xl mb-3">{item.title}</h3>
                  <p className="text-sm lg:text-base leading-relaxed">{item.description}</p>

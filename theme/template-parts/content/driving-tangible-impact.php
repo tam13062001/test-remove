@@ -16,8 +16,8 @@ $image_url = $args['image_url'] ?? '';
         <div class="text-[18px] lg:text-[20px] font-bold lg:py-[40px] lg:w-[785px]">
             <?php echo $heading; ?>
         </div>
-        <div class="max-w-[855px]">
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-y-6 lg:gap-y-[80px] gap-x-[165px] ">
+        <div class="w-[70%]">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-y-6 lg:gap-y-[60px] lg:gap-x-[65px] ">
 
                 <?php foreach($items as $item): ?>
                     <?php

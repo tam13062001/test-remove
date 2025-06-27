@@ -15,7 +15,7 @@
   ],
   [
     'image' => get_assets_from_path('images/why-join-2.jpg'),
-    'title' => 'Flexibility to work your way',
+    'title' => 'Flexibility to work <br> your way',
     'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   ],
   [
