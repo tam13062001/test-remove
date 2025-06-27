@@ -93,7 +93,7 @@ get_template_part('template-parts/content/driving-tangible-impact', null, array(
 ?>
 
 <div class="container lg:py-[100px]">
-    <img src="<?php echo  get_assets_from_path('images/Banking-image.png'); ?>" />
+    <img class="w-full" src="<?php echo  get_assets_from_path('images/Banking-image.png'); ?>" />
     
     <div> 
         <h2 class="lg:py-[100px] lg:text-[24px] font-bold"> Strategic Coverage and Local Expertise</h2>

@@ -63,7 +63,7 @@ get_template_part('template-parts/content/info-section-list-industry', null, arr
 ?>
 
 <div class="container lg:py-[100px]">
-    <img src="<?php echo  get_assets_from_path('images/Solar Energy-img.png'); ?>" />
+    <img class="w-ful" src="<?php echo  get_assets_from_path('images/Solar Energy-img.png'); ?>" />
 </div>
 
 <?php

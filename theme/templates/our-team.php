@@ -28,7 +28,7 @@
 
 
 <!-- Location -->
-<?php get_template_part('template-parts/content/locations'); ?>
+<?php get_template_part('template-parts/content/locations-2'); ?>
 
 <!-- <?php get_template_part('template-parts/content/create-post'); ?>  -->
 
