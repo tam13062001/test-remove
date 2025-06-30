@@ -32,6 +32,9 @@
 
 )); ?>
 
+<?php get_template_part('template-parts/content/jobs-table'); ?>
+
+
 <?php get_template_part('template-parts/content/career-swiper', null, array(
     'title' => 'Our members represent core values',
     'data' => array(

@@ -2,8 +2,8 @@
 $title = $args['title'] ?? '';
 $data = $args['data'] ?? array();
 ?>
-<div class="container lg:py-[100px] py-[60px]">
-	<h1 class="font-[700] text-[32px] lg:text-[40px] mb-5 lg:mb-[50px]">
+<div class="container lg:py-[100px] py-[40px]">
+	<h1 class="font-[700] text-[24px] lg:text-[40px] mb-2 lg:mb-[50px]">
 		<?php echo $title; ?>
 	</h1>		
 </div>

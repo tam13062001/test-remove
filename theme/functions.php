@@ -381,3 +381,72 @@ function get_menu_columns($location) {
     return array_values($columns); // reset key để dễ foreach
 }
 
+function datum_get_grouped_jobs(WP_REST_Request $request) {
+    // Lấy tất cả các bài viết thuộc category "job"
+    $query = new WP_Query([
+        'post_type' => 'post',
+        'posts_per_page' => -1,
+        'category_name' => 'job',
+        'orderby' => 'date',
+        'order' => 'DESC',
+    ]);
+
+    $grouped = [];
+
+    foreach ($query->posts as $post) {
+        $categories = get_the_category($post);
+        $group_name = '';
+        $location = '';
+        $type = '';
+        $job_category = '';
+
+        foreach ($categories as $cat) {
+            $root_cat = $cat;
+            while ($root_cat->parent != 0) {
+                $root_cat = get_category($root_cat->parent);
+            }
+
+            if ($root_cat->slug === 'country') {
+                $group_name = $cat->name;
+                $location = $cat->name;
+            }
+
+            if ($root_cat->slug === 'job-type') {
+                $type = $cat->name;
+            }
+
+            if ($root_cat->slug === 'position') {
+                $job_category = $cat->name;
+            }
+        }
+
+        if (!isset($grouped[$group_name])) {
+            $grouped[$group_name] = [];
+        }
+
+        $grouped[$group_name][] = [
+            'title' => get_the_title($post),
+            'category' => $job_category,
+            'location' => $location,
+            'type' => $type,
+        ];
+    }
+
+    // Convert thành mảng nhóm để React xử lý
+    $result = [];
+    foreach ($grouped as $group_name => $jobs) {
+        $result[] = [
+            'groupName' => $group_name,
+            'jobs' => $jobs,
+        ];
+    }
+
+    return new WP_REST_Response($result, 200);
+}
+
+// Đăng ký API endpoint
+$rocket->register_rest_api('grouped-jobs', [
+    'methods' => 'GET',
+    'callback' => 'datum_get_grouped_jobs',
+    'permission_callback' => '__return_true',
+]);

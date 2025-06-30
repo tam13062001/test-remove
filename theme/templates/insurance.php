@@ -75,6 +75,7 @@ get_template_part('template-parts/content/leader-ship', null, array(
 )) ;
 ?>
 
+<div class="px-10 lg:px-0">
 <?php
 get_template_part('template-parts/content/driving-tangible-impact', null, array(
     'title' => 'Driving Tangible Impact',
@@ -82,29 +83,34 @@ get_template_part('template-parts/content/driving-tangible-impact', null, array(
     'image_url' => get_assets_from_path('images/Group 35.jpg'),
     'items' => array(
         array(
-           'content' => 'Enhanced Data Accessibility: Enabling leadership and management to rapidly access and analyze critical business data through intuitive, conversational interfaces.',
+           'content' => 'Driving Tangible Impact: Our partnerships with insurance clients have consistently yielded significant outcomes, demonstrating our commitment to impactful solutions',
+        ),
+        array(
+           'content' => 'Enhanced Data Accessibility: Enabling leadership and management to rapidly access and analyze critical business data through intuitive, conversational interfaces.'
         ),
         array(
            'content' => 'Accelerated Decision-Making: Providing quick, accurate insights and automated reports, reducing response times for complex queries.'
         ),
         array(
            'content' => 'Improved Operational Efficiency: Automating data retrieval and report generation, freeing up resources for more strategic tasks.'
-        ),
-        array(
-           'content' => 'Strengthened Compliance & Security: Implementing robust security measures and RBAC to protect sensitive financial data and ensure adherence to industry regulations.'
         ),  
         array(
+           'content' => 'Strengthened Compliance & Security: Implementing robust security measures and RBAC to protect sensitive financial data and ensure adherence to industry regulations.'
+        ),
+        array(
            'content' => 'Scalability for Future Growth: Designing solutions that can scale to accommodate growing data volumes and evolving business needs.'
-        ),       
+        ),          
     )
 )) ;
 ?>
+</div>
+
 
 <div class="container my-[44px] lg:my-[100px]">
-    <h2 class="font-bold lg:text-[40px] ">
+    <h2 class="font-bold lg:text-[40px] text-[20px]">
         Successful Stories in Insurance
     </h2>
-    <p class="lg:py-[100px] lg:text-[20px] lg:w-[785px]"> Our expertise is best demonstrated through our proven track record. We've successfully guided leading insurance companies through complex data and AI transformations:</p>
+    <p class="lg:py-[100px] lg:text-[20px] text-[16px] lg:w-[785px] w-full"> Our expertise is best demonstrated through our proven track record. We've successfully guided leading insurance companies through complex data and AI transformations:</p>
     <div class="flex flex-col lg:flex-row  justify-between">
         <div class="w-full  flex flex-col justify-center bg-white pt-6 lg:pt-0  lg:pr-[120px] ">
             <div class="font-bold text-[20px] lg:text-[24px] mb-6 lg:mb-[10px] text-[#315CD4]">
