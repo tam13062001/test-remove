@@ -4,22 +4,33 @@ import type { BaseProps } from "../core/get-props";
 
 const { TabPane } = Tabs;
 
-export type JobPosting = {
+export type JobPost = {
+  id: number;
   title: string;
-  category: string;
-  location: string;
-  type: string;
+  permalink: string;
+  categories: string;
+  country?: string;
 };
 
-export type JobGroup = {
-  groupName: string;
-  jobs: JobPosting[];
+export type Country = {
+  name: string;
+};
+
+export type JobsResponse = {
+  posts: JobPost[];
+  countries: Country[];
+  pagination: {
+    total_pages: number;
+    current_page: number;
+  };
+  message?: string;
 };
 
 export default function Jobs() {
-  const [data, setData] = useState<{ job: JobGroup[]; defaultActiveKey: string; emptyMessage: string } | null>(null);
+  const [data, setData] = useState<JobsResponse | null>(null);
   const [loading, setLoading] = useState(true);
   const [isMobile, setIsMobile] = useState(false);
+  const [activeTab, setActiveTab] = useState<string>('all');
 
   useEffect(() => {
     fetch("/index.php?rest_route=/datum/v1/grouped-jobs")
@@ -40,21 +51,44 @@ export default function Jobs() {
 
   if (loading) return <Spin className="block mx-auto my-10" />;
 
- if (!data || !Array.isArray(data.job) || data.job.length === 0)
-  return <p className="text-gray-500 text-center my-10">No jobs available.</p>;
+  if (!data || !Array.isArray(data.posts) || data.posts.length === 0) {
+    return <p className="text-gray-500 text-center my-10">{data?.message || 'No jobs available.'}</p>;
+  }
 
+  // Lấy danh sách country từ API (data.countries)
+  const countryList = data.countries || [];
+
+  // Group posts theo country name
+  const groupedPosts: Record<string, JobPost[]> = {};
+  countryList.forEach(country => {
+    groupedPosts[country.name] = [];
+  });
+  data.posts.forEach(post => {
+    const country = post.country || 'Other';
+    if (!groupedPosts[country]) {
+      groupedPosts[country] = [];
+    }
+    groupedPosts[country].push(post);
+  });
+
+  // Convert to array cho render tab
+  const groups = Object.entries(groupedPosts).map(([groupName, posts]) => ({
+    groupName,
+    posts
+  }));
 
   return (
     <div className="container lg:pt-[100px]">
       <Tabs
-        defaultActiveKey={data.defaultActiveKey}
+        activeKey={activeTab}
+        onChange={setActiveTab}
         tabBarGutter={32}
         renderTabBar={
           isMobile
             ? (props, DefaultTabBar) => {
                 const { activeKey, panes, onTabClick } = props;
                 return (
-                  <div className="flex gap-2 overflow-x-auto max-lg:pb-2">
+                  <div className="flex gap-2 overflow-x-auto max-lg:pb-2">                   
                     {Array.isArray(panes) &&
                       panes.map((pane) => {
                         const isActive = pane.key === activeKey;
@@ -79,29 +113,49 @@ export default function Jobs() {
         }
         className="lg:[&_.ant-tabs-nav]:border-none lg:[&_.ant-tabs-tab]:text-[20px]"
       >
-        {data.job.map((group) => (
+        <TabPane tab="All" key="all">
+          <div className="grid lg:grid-cols-2 grid-cols-1 gap-6 lg:gap-8">
+            {data.posts.map((post, index) => (
+              <a 
+                key={index} 
+                href={post.permalink}
+                className="flex justify-between items-start border-b py-4 cursor-pointer"
+              >
+                <div>
+                  <h3 className="font-bold text-[20px] lg:text-[24px] text-black">{post.title}</h3>
+                  <p className="text-[16px] lg:text-[20px] text-black mt-1">
+                    {post.categories}
+                  </p>
+                </div>
+                <span className="text-[20px] text-gray-400">{">"}</span>
+              </a>
+            ))}
+          </div>
+        </TabPane>
+        
+        {groups.map((group) => (
           <TabPane tab={group.groupName} key={group.groupName}>
-            <div className="grid lg:grid-cols-2 grid-cols-1 gap-6 lg:gap-8">
-              {group.jobs.length > 0 ? (
-                group.jobs.map((job, index) => (
-                  <div key={index} className="flex justify-between items-start border-b py-4 hover:bg-gray-50 transition">
+            {group.posts.length === 0 ? (
+              <div className="text-gray-500 text-center my-10">No jobs in this country</div>
+            ) : (
+              <div className="grid lg:grid-cols-2 grid-cols-1 gap-6 lg:gap-8">
+                {group.posts.map((post, index) => (
+                  <a
+                    key={index}
+                    href={post.permalink}
+                    className="flex justify-between items-start border-b py-4 cursor-pointer"
+                  >
                     <div>
-                      <h3 className="font-bold text-[20px] lg:text-[24px] text-black">{job.title}</h3>
+                      <h3 className="font-bold text-[20px] lg:text-[24px] text-black">{post.title}</h3>
                       <p className="text-[16px] lg:text-[20px] text-black mt-1">
-                        {job.category}
-                        <span className="px-3">·</span>
-                        {job.location}
-                        <span className="px-3">·</span>
-                        {job.type}
+                        {post.categories}
                       </p>
                     </div>
                     <span className="text-[20px] text-gray-400">{">"}</span>
-                  </div>
-                ))
-              ) : (
-                <p className="text-gray-500">{data.emptyMessage}</p>
-              )}
-            </div>
+                  </a>
+                ))}
+              </div>
+            )}
           </TabPane>
         ))}
       </Tabs>

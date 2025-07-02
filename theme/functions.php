@@ -382,66 +382,205 @@ function get_menu_columns($location) {
 }
 
 function datum_get_grouped_jobs(WP_REST_Request $request) {
-    // Lấy tất cả các bài viết thuộc category "job"
-    $query = new WP_Query([
+    $paged = $request->get_param('paged') ? intval($request->get_param('paged')) : 1;
+    $selected_categories = $request->get_param('category') ? array_map('intval', explode(',', $request->get_param('category'))) : [];
+
+    $query_params = array(
         'post_type' => 'post',
-        'posts_per_page' => -1,
-        'category_name' => 'job',
+        'posts_per_page' => 6,
         'orderby' => 'date',
         'order' => 'DESC',
-    ]);
+        'category_name' => 'job',
+        'paged' => $paged,
+    );
 
-    $grouped = [];
-
-    foreach ($query->posts as $post) {
-        $categories = get_the_category($post);
-        $group_name = '';
-        $location = '';
-        $type = '';
-        $job_category = '';
-
-        foreach ($categories as $cat) {
-            $root_cat = $cat;
-            while ($root_cat->parent != 0) {
-                $root_cat = get_category($root_cat->parent);
-            }
-
-            if ($root_cat->slug === 'country') {
-                $group_name = $cat->name;
-                $location = $cat->name;
-            }
-
-            if ($root_cat->slug === 'job-type') {
-                $type = $cat->name;
-            }
-
-            if ($root_cat->slug === 'position') {
-                $job_category = $cat->name;
-            }
-        }
-
-        if (!isset($grouped[$group_name])) {
-            $grouped[$group_name] = [];
-        }
-
-        $grouped[$group_name][] = [
-            'title' => get_the_title($post),
-            'category' => $job_category,
-            'location' => $location,
-            'type' => $type,
-        ];
+    if (!empty($selected_categories)) {
+        $query_params['category__in'] = $selected_categories;
     }
 
-    // Convert thành mảng nhóm để React xử lý
-    $result = [];
-    foreach ($grouped as $group_name => $jobs) {
-        $result[] = [
-            'groupName' => $group_name,
-            'jobs' => $jobs,
-        ];
-    }
+    $query = new WP_Query($query_params);
+    $posts = array();
 
-    return new WP_REST_Response($result, 200);
+    if ($query->have_posts()) {
+        while ($query->have_posts()) {
+            $query->the_post();
+            $post_id = get_the_ID();
+            $categories = get_the_category();
+
+            $category_info = '';
+            $country = '';
+            $position = '';
+            $type = '';
+
+            if (!empty($categories)) {
+                $filtered = array_filter($categories, function($cat) use ($selected_categories) {
+                    return empty($selected_categories) || in_array($cat->term_id, $selected_categories);
+                });
+
+                // Loại bỏ các category cha nếu có category con
+                $parent_ids = array_map(function($cat) {
+                    return $cat->parent;
+                }, $filtered);
+
+                $filtered_no_parents = array_filter($filtered, function($cat) use ($parent_ids) {
+                    return !in_array($cat->term_id, $parent_ids);
+                });
+
+                // Sắp xếp theo thứ tự ưu tiên: position -> country -> job-type
+
+                $order = ['position', 'country', 'job-type'];
+
+                // Tạo mảng để phân loại categories theo nhóm
+                $categorized = ['position' => [], 'country' => [], 'job-type' => [], 'other' => []];
+
+                foreach ($filtered_no_parents as $cat) {
+                    $found_group = false;
+                    
+                    // Kiểm tra parent categories
+                    $parents = get_ancestors($cat->term_id, 'category');
+                    foreach ($parents as $parent_id) {
+                        $parent = get_category($parent_id);
+                        if (in_array($parent->slug, $order)) {
+                            $categorized[$parent->slug][] = $cat;
+                            $found_group = true;
+                            break;
+                        }
+                    }
+                    
+                    // Nếu chính nó là root category
+                    if (!$found_group && in_array($cat->slug, $order)) {
+                        $categorized[$cat->slug][] = $cat;
+                        $found_group = true;
+                    }
+                    
+                    // Nếu không thuộc nhóm nào
+                    if (!$found_group) {
+                        $categorized['other'][] = $cat;
+                    }
+                }
+
+                // Sắp xếp lại theo thứ tự: position -> country -> job-type
+                $filtered_no_parents = [];
+                foreach ($order as $group) {
+                    if (!empty($categorized[$group])) {
+                        // Sắp xếp theo tên trong cùng nhóm
+                        usort($categorized[$group], function($a, $b) {
+                            return strcmp($a->name, $b->name);
+                        });
+                        $filtered_no_parents = array_merge($filtered_no_parents, $categorized[$group]);
+                    }
+                }
+
+                // Thêm các categories khác vào cuối
+                if (!empty($categorized['other'])) {
+                    usort($categorized['other'], function($a, $b) {
+                        return strcmp($a->name, $b->name);
+                    });
+                    $filtered_no_parents = array_merge($filtered_no_parents, $categorized['other']);
+                }
+
+                
+                if (!empty($filtered_no_parents)) {
+                    $cat_names = array_map(function($cat) {
+                        return $cat->name;
+                    }, $filtered_no_parents);
+                    $category_info = implode(' · ', $cat_names);
+
+                    // Tách từng loại theo slug cha
+                    // Thay thế phần switch case bằng:
+            foreach ($filtered_no_parents as $cat) {
+                // Lấy tất cả parent
+                $parents = get_ancestors($cat->term_id, 'category');
+                
+                // Kiểm tra từng parent
+                foreach ($parents as $parent_id) {
+                    $parent = get_category($parent_id);
+                    switch ($parent->slug) {
+                        case 'country':
+                            $country = $cat->name;
+                            break;
+                        case 'position':
+                            $position = $cat->name;
+                            break;
+                        case 'job-type':
+                            $type = $cat->name;
+                            break;
+                    }
+                }
+                
+                // Nếu chính nó là root category
+                switch ($cat->slug) {
+                    case 'country':
+                        $country = $cat->name;
+                        break;
+                    case 'position':
+                        $position = $cat->name;
+                        break;
+                    case 'job-type':
+                        $type = $cat->name;
+                        break;
+                }
+            }
+                } else {
+                    // Nếu không có category nào phù hợp, sử dụng category mặc định
+                    $category_info = 'Other';
+
+                }
+            }
+
+            $posts[] = array(
+                'id' => $post_id,
+                'title' => get_the_title(),
+                'permalink' => get_permalink(),
+                'categories' => $category_info,
+                'country' => $country,
+                'position' => $position,
+                'type' => $type,
+            );
+        }
+
+        // Lấy tất cả category con của 'country'
+        $country_parent = get_category_by_slug('country');
+        $country_terms = [];
+        if ($country_parent) {
+            $country_terms = get_categories([
+                'taxonomy' => 'category',
+                'parent' => $country_parent->term_id,
+                'hide_empty' => false // lấy cả category chưa có bài post
+            ]);
+        }
+
+        // Chuẩn bị mảng country trả về
+        $countries = array_map(function($cat) {
+            return [
+                'id' => $cat->term_id,
+                'name' => $cat->name,
+                'slug' => $cat->slug,
+            ];
+        }, $country_terms);
+
+        // Thêm vào response
+        $response = array(
+            'posts' => $posts,
+            'countries' => $countries, // <-- thêm dòng này
+            'pagination' => array(
+                'total_pages' => $query->max_num_pages,
+                'current_page' => $paged,
+            )
+        );
+
+        wp_reset_postdata();
+        return new WP_REST_Response($response, 200);
+    } else {
+        return new WP_REST_Response(array(
+            'message' => 'No Posts Found',
+            'posts' => array(),
+            'pagination' => array(
+                'total_pages' => 0,
+                'current_page' => $paged,
+            )
+        ), 200);
+    }
 }
 
 // Đăng ký API endpoint
