@@ -28,5 +28,5 @@
         </div>
     </div>
 </div>
-
+<?php get_template_part('template-parts/content/back-to-top'); ?>
 <?php get_footer(); ?>
