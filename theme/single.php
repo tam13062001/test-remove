@@ -2,10 +2,24 @@
 
 <?php
 $categories = get_the_category();
-$category_name = null;
-$breadcrumbs = array('Insights');
+$job_cat = get_category_by_slug('job');
+$job_cat_id = $job_cat ? $job_cat->term_id : 0;
+$is_job = false;
 if (!empty($categories)) {
-    $breadcrumbs[] = $categories[0]->name;
+    foreach ($categories as $cat) {
+        if ($cat->term_id == $job_cat_id || in_array($job_cat_id, get_ancestors($cat->term_id, 'category'))) {
+            $is_job = true;
+            break;
+        }
+    }
+}
+if ($is_job) {
+    $breadcrumbs = array('Job', get_the_title());
+} else {
+    $breadcrumbs = array('Insights');
+    if (!empty($categories)) {
+        $breadcrumbs[] = $categories[0]->name;
+    }
 }
 get_template_part('template-parts/content/banner', null, array(
     'title' => get_the_title(),
@@ -54,20 +68,44 @@ get_template_part('template-parts/content/banner', null, array(
         </div>
 
         <?php
-    $recommended_posts = get_posts(array(
-        'numberposts' => 2,
-        'post_status' => 'publish',
-        'post_type' => 'post',
-        'orderby' => 'rand',
-        'post__not_in' => array($post->ID)
-    ));
-    get_template_part('template-parts/content/late-new-event', null, array(
-        'title' => 'You might want to read',
-        'news_items' => $recommended_posts
-    ));
-    ?>
+        $job_cat = get_category_by_slug('job');
+$job_cat_id = $job_cat ? $job_cat->term_id : 0;
+$is_job = false;
+foreach ($categories as $cat) {
+    // Nếu là category "job" hoặc là con của "job"
+    if ($cat->term_id == $job_cat_id || in_array($job_cat_id, get_ancestors($cat->term_id, 'category'))) {
+        $is_job = true;
+        break;
+    }
+}
+        $recommended_posts = get_posts(array(
+            'numberposts' => 2,
+            'post_status' => 'publish',
+            'post_type' => 'post',
+            'orderby' => 'rand',
+            'post__not_in' => array($post->ID)
+        ));
+        if (!$is_job) {
+            get_template_part('template-parts/content/late-new-event', null, array(
+                'title' => 'You might want to read',
+                'news_items' => $recommended_posts
+            ));
+        }
+        ?>
+        <?php if ($is_job): ?>
+            <div class="jobs-table">
+                <?php get_template_part('template-parts/content/jobs-table'); ?>
+            </div>
+            
+        <?php endif; ?>
     </div>
     
 </div>
 <?php get_template_part('template-parts/content/back-to-top'); ?>
 <?php get_footer() ?>
+
+<style>
+.jobs-table img {
+  display: none !important;
+}
+</style>

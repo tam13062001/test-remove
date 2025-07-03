@@ -52,7 +52,7 @@ get_template_part('template-parts/content/call-to-action-industry', null, array(
   ],
   [
     'title' => 'Financial Technology Integration',
-    'description' => 'Our AWS-certified experts integrate seamlessly with banking experience platforms like Backbase and core banking systems such as ThoughtMachine and Fineract, ensuring smooth interoperability across your tech ecosystem..',
+    'description' => 'Our AWS-certified experts integrate seamlessly with banking experience platforms like Backbase and core banking systems such as ThoughtMachine and Fineract, ensuring smooth interoperability across your tech ecosystem.',
   ]
 ]
 
@@ -67,6 +67,7 @@ get_template_part('template-parts/content/leader-ship', null, array(
 )) ;
 ?>
 
+<div class="lg:px-0 px-10 pb-[40px] lg:pb-0">
 <?php
 get_template_part('template-parts/content/driving-tangible-impact', null, array(
     'title' => 'Driving Tangible Impact',
@@ -91,13 +92,15 @@ get_template_part('template-parts/content/driving-tangible-impact', null, array(
     )
 )) ;
 ?>
+</div>
+
 
 <div class="container lg:py-[100px]">
-    <img src="<?php echo  get_assets_from_path('images/Banking-image.png'); ?>" />
+    <img class="w-full" src="<?php echo  get_assets_from_path('images/Banking-image.png'); ?>" />
     
     <div> 
-        <h2 class="lg:py-[100px] lg:text-[24px] font-bold"> Strategic Coverage and Local Expertise</h2>
-        <p class="lg:text-[20px] leading-[170%] lg:w-[785px] font-regular">With strategic APAC coverage, Datum Consulting merges global expertise and local insight to craft cutting-edge, compliant solutions. Our diverse teams understand regional nuances, ensuring every banking initiative aligns with local regulations and cultural context—delivering truly relevant, high-impact results for our clients across the Asia-Pacific landscape. </p>
+        <h2 class="lg:py-[100px] py-[40px] text-[24px] font-bold"> Strategic Coverage and Local Expertise</h2>
+        <p class="lg:text-[20px] leading-[170%] lg:w-[785px] text-[16px] font-regular">With strategic APAC coverage, Datum Consulting merges global expertise and local insight to craft cutting-edge, compliant solutions. Our diverse teams understand regional nuances, ensuring every banking initiative aligns with local regulations and cultural context—delivering truly relevant, high-impact results for our clients across the Asia-Pacific landscape. </p>
     </div>
 </div>
 
@@ -106,7 +109,7 @@ get_template_part('template-parts/content/driving-tangible-impact', null, array(
 
 <div class="container lg:py-[100px]">  
     <div> 
-        <p class="lg:text-[20px] leading-[170%] lg:w-[785px] font-bold">At Datum Consulting, we are dedicated to helping banking institutions not just adapt, but lead, in an ever-evolving digital world. Partner with us to build a future-proof, secure, and customer-centric financial ecosystem. </p>
+        <p class="lg:text-[20px] text-[16px] leading-[170%] lg:w-[785px] font-bold">At Datum Consulting, we are dedicated to helping banking institutions not just adapt, but lead, in an ever-evolving digital world. Partner with us to build a future-proof, secure, and customer-centric financial ecosystem. </p>
     </div>
 </div>
 

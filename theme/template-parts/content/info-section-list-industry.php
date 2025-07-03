@@ -8,10 +8,10 @@ $items = $args['items'] ?? array();
         <h2 class="font-[700] text-[20px]  mb-5 lg:mb-[50px] text-primary">
             <?php echo $title ?>
         </h2>
-        <div class="[&>:not(:last-child)]:border-b">
+        <div class="[&>*]:border-b">
             <?php foreach($items as $item): ?>
             <div class="border-primary py-6 lg:py-[50px] flex flex-col lg:flex-row lg:space-x-5">
-                <div class="text-primary lg:w-2/5 text-[20px]  flex justify-between items-start cursor-pointer lg:cursor-auto" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('svg').classList.toggle('rotate-45')">
+                <div class="text-primary lg:w-2/5 text-[20px] font-bold mt-3 flex justify-between items-start cursor-pointer lg:cursor-auto" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('svg').classList.toggle('rotate-45')">
                     <div>
                         <?php echo $item['title']; ?>
                     </div>

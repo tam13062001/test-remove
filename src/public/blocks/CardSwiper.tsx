@@ -16,7 +16,6 @@ type CardSwiperProps = {
 
 export default function CardSwiperBlock(props: BaseProps<CardSwiperProps>) {
   const { data = [], freeMode, spaceBetween = 24 } = props.data;
-
   const mobile = useBreakpoint();
 
   const slidesPerView = useMemo(() => {
@@ -30,6 +29,26 @@ export default function CardSwiperBlock(props: BaseProps<CardSwiperProps>) {
     return data;
   }, [freeMode]);
 
+  if (mobile) {
+    // Hiển thị dọc, không dùng Swiper trên mobile
+    return (
+      <div className="flex flex-col gap-6">
+        {data.map((item: any, index: number) => (
+          <div key={index} className="w-full h-full flex flex-col p-6">
+            <div className='container'>
+              <img src={item.image_url} alt="" className="h-full w-full object-cover mb-6" />
+            </div>
+            <div className="items-center text-start">
+              <h3 className="font-bold text-lg mb-3">{item.title}</h3>
+              <p className="text-sm leading-relaxed">{item.description}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    );
+  }
+
+  // Desktop: dùng Swiper như cũ
   return (
     <Swiper
       spaceBetween={spaceBetween}
@@ -37,25 +56,19 @@ export default function CardSwiperBlock(props: BaseProps<CardSwiperProps>) {
       freeMode
       modules={modules}
     >
-      {
-        data.map((item: any, index: number) => (
-          <SwiperSlide key={index} className="w-[85%] lg:w-[400px]">
-            <div
-              className={`
-                h-full w-full flex flex-col 
-                p-6 lg:p-10]}
-              `}
-            >
+      {data.map((item: any, index: number) => (
+        <SwiperSlide key={index} className="lg:w-[30%] h-auto flex flex-col">
+          <div className="h-full w-full flex flex-col p-6 lg:p-10">
+            <div className=''>
               <img src={item.image_url} alt="" className="lg:h-[300px] lg:w-[300px] mb-6" />
-              <div className="items-center text-start">
-                 <h3 className="font-bold text-lg lg:text-xl mb-3">{item.title}</h3>
-                 <p className="text-sm lg:text-base leading-relaxed">{item.description}</p>
-              </div>
-             
             </div>
-          </SwiperSlide>
-        ))
-      }
+            <div className="items-center text-start">
+              <h3 className="font-bold text-lg lg:text-xl mb-3">{item.title}</h3>
+              <p className="text-sm lg:text-base leading-relaxed">{item.description}</p>
+            </div>
+          </div>
+        </SwiperSlide>
+      ))}
     </Swiper>
   );
 }
