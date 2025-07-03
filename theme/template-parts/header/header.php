@@ -1,4 +1,5 @@
-<header id="header" class="fixed w-full z-[100] <?php echo is_user_logged_in() ? 'top-8' : 'top-0' ?>">
+<?php $is_404 = is_404(); ?>
+<header id="header" class="fixed w-full z-[100] <?php echo is_user_logged_in() ? 'top-8' : 'top-0'; ?><?php if ($is_404) echo ' has-background'; ?>">
     <div class="container">
         <div class="flex md:pt-2 lg:pb-[15px] pb-[8px] items-center justify-between text-[16px] ">
             <a class="main-logo" href="/">
@@ -12,12 +13,15 @@
         </div>
     </div>
 </header>
-
 <script>
     document.addEventListener('DOMContentLoaded', function () {
         function setupHeader() {
             const header = document.getElementById('header')
             if (!header) return
+            <?php if ($is_404): ?>
+                header.classList.add('has-background');
+                return;
+            <?php endif; ?>
             if (window.scrollY > 10) {
                 header.classList.add('has-background')
             } else {

@@ -18,12 +18,12 @@ get_template_part('template-parts/content/call-to-action-industry', null, array(
             'title' => 'Navigating the Dynamic Solar Energy Market',
             'content' => '
                 <p>The traditional energy market was not built for the variability of renewables or the flexibility offered by battery storage. Solar farms and battery manufacturers face a critical need for sophisticated tools to:</p>
-                <ul class="lg:pl-4 space-y-2">
-                    <li class="relative lg:pl-4 before:absolut"><span class="w-[18px] ">•</span> Accurately forecast solar generation and demand.</li>
-                    <li class="relative lg:pl-4 before:absolut"><span class="w-[18px] ">•</span> Intelligently manage battery charging and discharging cycles.</li>
-                    <li class="relative lg:pl-4 before:absolut"><span class="w-[18px] ">•</span> Optimize energy sales to the grid based on real-time and predicted market prices.</li>
-                    <li class="relative lg:pl-4 before:absolut"><span class="w-[18px] ">•</span> Simulate various operational and commercial scenarios to de-risk investments.</li>
-                    <li class="relative lg:pl-4 before:absolut"><span class="w-[18px] ">•</span> Harness immense volumes of operational and market data for strategic insights.</li>
+                <ul class="lg:p-4 space-y-2">
+                    <li class="relative lg:pl-4 lg:text-[19px] before:absolut"><span class="w-[18px] ">•</span> Accurately forecast solar generation and demand.</li>
+                    <li class="relative lg:pl-4 lg:text-[19px] before:absolut"><span class="w-[18px] ">•</span> Intelligently manage battery charging and discharging cycles.</li>
+                    <li class="relative lg:pl-4 lg:text-[19px] before:absolut"><span class="w-[18px] ">•</span> Optimize energy sales to the grid based on real-time and predicted market prices.</li>
+                    <li class="relative lg:pl-4 lg:text-[19px] before:absolut"><span class="w-[18px] ">•</span> Simulate various operational and commercial scenarios to de-risk investments.</li>
+                    <li class="relative lg:pl-4 lg:text-[19px] before:absolut"><span class="w-[18px] ">•</span> Harness immense volumes of operational and market data for strategic insights.</li>
                 </ul>
                 <p>Balancing battery storage, grid energy sales, and battery health optimization requires Machine Learning to handle diverse data like weather, peak usage, and seasonal variations for efficient solar energy trading.</p>
             ',
@@ -43,7 +43,7 @@ get_template_part('template-parts/content/call-to-action-industry', null, array(
   
     <div>
       <h2 class="text-[20px] font-bold text-[#315CD4] pb-[50px]">
-       Our solution consists of
+       Our Intergration approach
       </h2>
     </div>
 
@@ -96,19 +96,7 @@ get_template_part('template-parts/content/call-to-action-industry', null, array(
                 </div>
             </div>
 
-            <div class="h-full w-full overflow-hidden group flex flex-col h-auto lg:min-h-[320px] min-h-[280px]">
-                <div class="inset-0 bg-[#315CD4] lg:py-14 py-8 lg:px-0 px-6 flex flex-col text-white h-full">
-                    <h3 class="lg:px-16 px-0 text-[16px] lg:text-[20px] font-semibold leading-[170%]">
-                        Modern Workload Platforms
-                    </h3>
-                    
-                    <p class="lg:px-16 px-0 text-[13px] lg:text-[20px] mt-2 leading-[170%]">
-                        Deploying and customizing robust platforms like Amazon EKS to support diverse workloads, from core banking microservices to front-end applications, ensuring high availability and performance.
-                    </p>
-                
-                </div>
-            
-            </div>
+
         </div>
 
         
@@ -122,11 +110,11 @@ get_template_part('template-parts/content/call-to-action-industry', null, array(
     <img class="w-full" src="<?php echo  get_assets_from_path('images/Solar Energy-img.png'); ?>" />
 </div>
 
-<div class="px-10 lg:px-0 lg:pt-0 pt-[40px]">
+
 <?php
 get_template_part('template-parts/content/driving-tangible-impact', null, array(
     'title' => 'Driving Tangible Impact',
-    'heading' => 'Our partnerships in the solar energy sector have demonstrated our ability to deliver significant value:',
+    'heading' => 'Our partnerships with banking clients have consistently yielded significant outcomes, demonstrating our commitment to impactful solutions:',
     'image_url' => get_assets_from_path('images/Group 35.jpg'),
     'items' => array(
         array(
@@ -144,7 +132,7 @@ get_template_part('template-parts/content/driving-tangible-impact', null, array(
     )
 )) ;
 ?>
-</div>
+
 
 
 

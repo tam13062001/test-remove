@@ -67,7 +67,7 @@ get_template_part('template-parts/content/leader-ship', null, array(
 )) ;
 ?>
 
-<div class="lg:px-0 px-10 pb-[40px] lg:pb-0">
+<div class="pb-[40px] lg:pb-0">
 <?php
 get_template_part('template-parts/content/driving-tangible-impact', null, array(
     'title' => 'Driving Tangible Impact',
@@ -104,7 +104,11 @@ get_template_part('template-parts/content/driving-tangible-impact', null, array(
     </div>
 </div>
 
-<?php get_template_part('template-parts/content/successful-stories'); ?>
+<?php get_template_part('template-parts/content/successful-stories-banking',null,array(
+    'title' => 'Success Stories in Banking',
+    'title_1' => 'Customizing a secure Amazon EKS workload platform for a Prestigious Banking Partner',
+    'title_2' => 'Redefining Banking Excellence: A Secure Landing Zone Transformation',
+)); ?>
 
 
 <div class="container lg:py-[100px]">  

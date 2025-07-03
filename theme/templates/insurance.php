@@ -141,22 +141,19 @@ get_template_part('template-parts/content/call-to-action-industry', null, array(
 <?php
 get_template_part('template-parts/content/leader-ship', null, array(
     'title' => 'Thought Leadership',
-    'heading' => 'Navigating the Era of Generative AI in Banking',
+    'heading' => 'The Transformative Potential of Generative AI',
     'image_url' => get_assets_from_path('images/leader.png'),
     'content' => "Generative AI is revolutionizing insurance with personalized policies, automated claims, fraud detection, and intelligent support. Datum Consulting leads this shift using ethical AI practices informed by MITRE ATLAS, prioritizing innovation, compliance with regulations like AI TRISM and the EU AI Act, and secure, scalable solutions tailored to the industry's unique challenges.",
 )) ;
 ?>
 
-<div class="px-10 lg:px-0">
+
 <?php
 get_template_part('template-parts/content/driving-tangible-impact', null, array(
     'title' => 'Driving Tangible Impact',
     'heading' => 'Our partnerships with banking clients have consistently yielded significant outcomes, demonstrating our commitment to impactful solutions:',
     'image_url' => get_assets_from_path('images/Group 35.jpg'),
     'items' => array(
-        array(
-           'content' => 'Driving Tangible Impact: Our partnerships with insurance clients have consistently yielded significant outcomes, demonstrating our commitment to impactful solutions',
-        ),
         array(
            'content' => 'Enhanced Data Accessibility: Enabling leadership and management to rapidly access and analyze critical business data through intuitive, conversational interfaces.'
         ),
@@ -175,14 +172,14 @@ get_template_part('template-parts/content/driving-tangible-impact', null, array(
     )
 )) ;
 ?>
-</div>
+
 
 
 <div class="container my-[44px] lg:my-[100px]">
-    <h2 class="font-bold lg:text-[40px] text-[20px]">
+    <h2 class="font-bold lg:text-[40px] text-[20px] mb-6">
         Successful Stories in Insurance
     </h2>
-    <p class="lg:py-[100px] lg:text-[20px] text-[16px] lg:w-[785px] w-full"> Our expertise is best demonstrated through our proven track record. We've successfully guided leading insurance companies through complex data and AI transformations:</p>
+    <p class="lg:py-[100px] lg:text-[20px] text-[16px] lg:w-[785px]  w-full"> Our expertise is best demonstrated through our proven track record. We've successfully guided leading insurance companies through complex data and AI transformations:</p>   
     <div class="flex flex-col lg:flex-row  justify-between">
         <div class="w-full  flex flex-col justify-center bg-white pt-6 lg:pt-0  lg:pr-[120px] ">
             <div class="font-bold text-[20px] lg:text-[24px] mb-6 lg:mb-[10px] text-[#315CD4]">
@@ -204,7 +201,6 @@ get_template_part('template-parts/content/driving-tangible-impact', null, array(
         </div>
     </div>
 </div>
-
 
 
 <?php get_template_part('template-parts/content/back-to-top'); ?>

@@ -42,30 +42,31 @@ get_template_part('template-parts/content/banner', null, array(
         <div class="container prose !max-w-none mb-10 lg:mb-[120px]">
             <?php the_content(); ?>
         </div>
-        <div class="container mb-4">
-            <div class="font-bold mb-4">About the Author</div>
-            <?php
-            $post_id = get_the_ID();
-            $author_id = get_post_field('post_author', $post_id);
-            $display_name = get_the_author_meta('nickname', $author_id);
-            $bio = get_the_author_meta('user_description', $author_id);
-            $user_title = get_the_author_meta('user_title', $author_id);
-            ?>
+        <?php if (!$is_job): ?>
+<div class="container mb-4">
+    <div class="font-bold mb-4">About the Author</div>
+    <?php
+    $post_id = get_the_ID();
+    $author_id = get_post_field('post_author', $post_id);
+    $display_name = get_the_author_meta('nickname', $author_id);
+    $bio = get_the_author_meta('user_description', $author_id);
+    $user_title = get_the_author_meta('user_title', $author_id);
+    ?>
+    <div>
+        <div class="mb-10">
+            <div class="text-primary">
+                <?php echo esc_html($display_name); ?>
+            </div>
             <div>
-                <div class="mb-10">
-                    <div class="text-primary">
-                        Nick Do
-                    </div>
-                    <div>
-                        Co-founder
-                    </div>
-                </div>
-
-                <div class="text-primary">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
-                </div>
+                <?php echo esc_html($user_title); ?>
             </div>
         </div>
+        <div class="text-primary">
+            <?php echo esc_html($bio); ?>
+        </div>
+    </div>
+</div>
+<?php endif; ?>
 
         <?php
         $job_cat = get_category_by_slug('job');

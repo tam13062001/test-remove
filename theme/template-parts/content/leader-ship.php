@@ -17,12 +17,12 @@ $image_url = $args['image_url'] ?? '';
         <div class="text-[24px] lg:text-[40px] font-bold text-[#315CD4] lg:pb-0 pb-[40px]">
             <?php echo $heading; ?>
         </div>
-        <div class="text-[18px] lg:text-[24px] font-bold lg:py-[40px] lg:w-[627px]  text-[#000000]">
+        <div class="text-[18px] lg:text-[24px] font-bold lg:py-[40px] lg:w-[627px] leading-[170%] text-[#000000]">
             <?php echo $content; ?>
         </div>
     </div>
 
     <div class="container lg:hidden h-full w-full pb-[50px]">
-        <img class="object-cover h-full w-full" src=" <?php echo $image_url  ?>" />
+        <img class="h-full w-full" src=" <?php echo get_assets_from_path('images/leader-mb.png')  ?>" />
     </div>
 </div>
