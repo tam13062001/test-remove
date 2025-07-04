@@ -3,7 +3,7 @@
 ?>
 
 <div class=" py-[50px] relative min-h-[600px] overflow-hidden">
-    <div class="container lg:pt-[50px]">
+    <div class="container lg:pt-[50px] lg:pb-0 pb-[50px]">
         <div class="text-[32px] lg:text-[36px]">
             Open Positions
         </div>

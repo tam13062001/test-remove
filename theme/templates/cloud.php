@@ -128,7 +128,11 @@ get_template_part('template-parts/content/info-section-list', null, array(
 ?>
 
 <?php get_template_part('template-parts/content/partners-about-datum'); ?>
-<?php get_template_part('template-parts/content/successful-stories'); ?>
+<?php get_template_part('template-parts/content/successful-stories-banking',null,array(
+    'title' => 'Success Stories in Banking',
+    'title_1' => 'Customizing a secure Amazon EKS workload platform for a Prestigious Banking Partner',
+    'title_2' => 'Redefining Banking Excellence: A Secure Landing Zone Transformation',
+)); ?>
 <?php get_template_part('template-parts/content/frequently-asked-questions', null, array(
     'items' => array(
     array(
