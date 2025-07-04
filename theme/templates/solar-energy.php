@@ -43,7 +43,7 @@ get_template_part('template-parts/content/call-to-action-industry', null, array(
   
     <div>
       <h2 class="text-[20px] font-bold text-[#315CD4] pb-[50px]">
-       Our Intergration approach
+      Our solution consists of:
       </h2>
     </div>
 
@@ -114,7 +114,7 @@ get_template_part('template-parts/content/call-to-action-industry', null, array(
 <?php
 get_template_part('template-parts/content/driving-tangible-impact', null, array(
     'title' => 'Driving Tangible Impact',
-    'heading' => 'Our partnerships with banking clients have consistently yielded significant outcomes, demonstrating our commitment to impactful solutions:',
+    'heading' => 'Our partnerships in the solar energy sector have demonstrated our ability to deliver significant value:',
     'image_url' => get_assets_from_path('images/Group 35.jpg'),
     'items' => array(
         array(
