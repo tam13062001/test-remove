@@ -194,11 +194,5 @@ get_template_part('template-parts/content/driving-tangible-impact', null, array(
 </div>
 
 
-<div class="container lg:py-[100px]">  
-    <div> 
-        <p class="lg:text-[20px] text-[16px] leading-[170%] lg:w-[785px] font-bold">At Datum Consulting, we are dedicated to helping solar energy enterprises not just adapt, but lead, in the transition to a sustainable and optimized energy future. Partner with us to build a future-proof, secure, and revenue-maximizing solar energy ecosystem. </p>
-    </div>
-</div>
-
 <?php get_template_part('template-parts/content/back-to-top'); ?>
 <?php get_footer(); ?>
