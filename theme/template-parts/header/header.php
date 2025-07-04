@@ -30,5 +30,6 @@
         }
         setupHeader()
         window.addEventListener('scroll', setupHeader);
+        window.IS_404 = <?php echo $is_404 ? 'true' : 'false'; ?>;
     })
 </script>
