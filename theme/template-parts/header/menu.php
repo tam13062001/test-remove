@@ -39,8 +39,8 @@ $current_id = get_queried_object_id();
 
 
         <div class="menu group relative">
-            <a class="mx-4 hover:border-b-2 <?php echo $is_active ? 'active' : ''; ?>" href="<?php echo $menu['url']; ?>">
-                <?php echo html_entity_decode($menu['title']); ?>
+            <a class="2xl:mx-4 lg:mx-3 hover:border-b-2 <?php echo $is_active ? 'active' : ''; ?>" href="<?php echo $menu['url']; ?>">
+               <?php echo datum_get_translation($menu['title']); ?>
 
             </a>
             <?php if (!empty($menu['children'])) { ?>
@@ -48,8 +48,7 @@ $current_id = get_queried_object_id();
                     <?php foreach ($menu['children'] as $submenu) : ?>
                         <li class="relative group bg-secondary/10 hover:bg-secondary/20 border-b border-primary">
                             <a href="<?php echo $submenu['url'] ?>" class="block px-4 py-2 font-bold ">
-                                <?php echo html_entity_decode($submenu['title']); ?>
-
+                                <?php echo datum_get_translation($submenu['title']); ?>
                             </a>
                         </li>
                     <?php endforeach; ?>

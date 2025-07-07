@@ -39,9 +39,27 @@ get_template_part('template-parts/content/banner', null, array(
             ?>
         </div>
 
-        <div class="container prose !max-w-none mb-10 lg:mb-[120px]">
+        <!-- <div class="container prose !max-w-none mb-10 lg:mb-[120px]">
             <?php the_content(); ?>
+        </div> -->
+
+        <div class="container prose !max-w-none mb-10 lg:mb-[120px]">
+            <?php
+            $current_lang = datum_get_current_language(); // Tự viết hàm lấy ngôn ngữ (vd: 'en' hoặc 'vi')
+            $content_en = get_post_meta(get_the_ID(), 'content_en', true);
+            $content_vi = get_post_meta(get_the_ID(), 'content_vi', true);
+
+            if ($current_lang === 'vi' && !empty($content_vi)) {
+                echo wp_kses_post(wpautop($content_vi));
+            } elseif (!empty($content_en)) {
+                echo wp_kses_post(wpautop($content_en));
+            } else {
+                the_content(); // fallback nếu chưa có content
+            }
+            ?>
         </div>
+
+
         <?php if (!$is_job): ?>
 <div class="container mb-4">
     <div class="font-bold mb-4">About the Author</div>

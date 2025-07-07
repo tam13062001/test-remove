@@ -585,3 +585,48 @@ $rocket->register_rest_api('grouped-jobs', [
     'callback' => 'datum_get_grouped_jobs',
     'permission_callback' => '__return_true',
 ]);
+
+
+function datum_get_translation($key) {
+    $lang = $_COOKIE['datum_lang'] ?? 'en';
+    $file = get_template_directory() . "/languages/{$lang}.json";
+
+    static $translations = [];
+
+    if (!isset($translations[$lang])) {
+        $translations[$lang] = file_exists($file) ? json_decode(file_get_contents($file), true) : [];
+    }
+
+    return $translations[$lang][$key] ?? $key;
+}
+
+function datum_translate($key) {
+    $lang = isset($_GET['lang']) ? $_GET['lang'] : 'en'; // hoặc lấy từ cookie, WPML, Polylang, v.v.
+
+    static $translations = [];
+
+    if (empty($translations)) {
+        $path = get_stylesheet_directory() . "/languages/{$lang}.json";
+        if (file_exists($path)) {
+            $content = file_get_contents($path);
+            $translations = json_decode($content, true);
+        }
+    }
+
+    return $translations[$key] ?? $key;
+}
+
+function datum_get_current_language() {
+    return isset($_GET['lang']) && in_array($_GET['lang'], ['vi', 'en']) ? $_GET['lang'] : 'en';
+}
+
+
+add_action('init', function () {
+    if (isset($_GET['lang'])) {
+        $lang = $_GET['lang'];
+        if (in_array($lang, ['en', 'vi'])) {
+            setcookie('datum_lang', $lang, time() + (3600 * 24 * 30), '/'); // lưu 30 ngày
+            $_COOKIE['datum_lang'] = $lang; // để dùng ngay
+        }
+    }
+});
