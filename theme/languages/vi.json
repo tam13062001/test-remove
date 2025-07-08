@@ -23,5 +23,235 @@
   "successful_stories": "Câu chuyện thành công",
   "platform_customization": "Tùy biến nền tảng",
   "premier_banking": "Ngân hàng ưu tiên",
-  "digital_partner": "Đối tác chiến lược của bạn trong chuyển đổi số"
+  "digital_partner": "Đối tác chiến lược của bạn trong chuyển đổi số",
+  "pioneering_text": {
+    "line1": "Tiên phong",
+    "line2": "tương lai của",
+    "line3": "đổi mới số"
+  },
+  "hero": {
+    "homepage": "Datum là đối tác đáng tin cậy của bạn trong hành trình chuyển đổi số, tích hợp liền mạch các giải pháp Đám mây, Kỹ thuật phần mềm và Dữ liệu & AI để giúp doanh nghiệp mở rộng quy mô, đổi mới và dẫn đầu.",
+    "cloud" :"Biến hạ tầng đám mây của bạn từ một nhu cầu kỹ thuật thành một nền tảng chiến lược – được thiết kế để phát triển, thích ứng và thúc đẩy doanh nghiệp tiến về phía trước.",
+    "data" :"Chuyển đổi dữ liệu thô thành những hiểu biết có thể hành động và tự động hóa thông minh – thúc đẩy quyết định thông minh, vận hành liền mạch và tăng trưởng bền vững.",
+    "software": "Nâng cao phần mềm của bạn từ một công cụ chức năng thành động lực chiến lược cho hiệu quả, đổi mới và tăng trưởng."
+  },
+  "cta.schedule": "Đặt lịch tư vấn với chuyên gia của chúng tôi",
+  "section.what_sets_us_apart": "Điều gì làm chúng tôi khác biệt",
+  "homepage.data-ai.content": "Tận dụng sức mạnh của AI để chuyển đổi dữ liệu thô thành chiến lược thông minh, nâng cao hiệu quả ra quyết định.",
+  "homepage.cloud.content":"Xây dựng hệ sinh thái đám mây vững chắc được thiết kế riêng cho nhu cầu của bạn, tối ưu hóa bảo mật và hiệu suất.",
+  "homepage.software.content": "Nâng cao doanh nghiệp của bạn với các giải pháp phần mềm tùy chỉnh thúc đẩy tăng trưởng.",
+  "section.game_changing_solutions": "Giải pháp thay đổi cuộc chơi",
+  "solution": {
+    "platform": {
+      "title": "Kỹ thuật nền tảng",
+      "desc": "Xây dựng nền tảng số vững chắc với các giải pháp hạ tầng linh hoạt và có thể mở rộng."
+    },
+    "digital": {
+      "title": "Chuyển đổi số",
+      "desc": "Khai thác công nghệ mới để tinh gọn quy trình, nâng cao trải nghiệm khách hàng và thúc đẩy đổi mới doanh nghiệp."
+    },
+    "integration": {
+      "title": "Giải pháp tích hợp",
+      "desc": "Kết nối và hợp nhất các hệ thống kinh doanh một cách liền mạch nhằm tối ưu hiệu suất và tăng cường bảo mật."
+    }
+  },
+  "common": {
+    "learn_more": "Tìm hiểu thêm"
+  },
+  "why_datum_home": {
+    "title": "Vì sao chọn Datum",
+    "items": [
+      {
+        "title": "Đổi mới hướng đến kết quả",
+        "content": "Chúng tôi bắt đầu từ mục tiêu của bạn và xây dựng giải pháp phù hợp để giải quyết những thách thức thực tế trong kinh doanh."
+      },
+      {
+        "title": "Hợp tác liền mạch",
+        "content": "Giao tiếp cởi mở, trung thực và thường xuyên đảm bảo tính minh bạch và sự đồng bộ trong từng bước."
+      },
+      {
+        "title": "Chuyên môn đáng tin cậy",
+        "content": "Chúng tôi cung cấp giải pháp CNTT chuẩn ngay từ đầu, trở thành đối tác đáng tin cậy trong thành công của bạn."
+      }
+    ]
+  },
+  "successful_stories_slide": {
+    "items": [
+      {
+        "title": "Chuyển đổi số cho khách hàng ngân hàng ưu tiên",
+        "description": "Datum Consulting đã hỗ trợ ngân hàng xây dựng hệ thống đám mây an toàn, hiệu quả để đơn giản hóa ngân hàng số."
+      },
+      {
+        "title": "Nền tảng EKS tối ưu cho trải nghiệm ngân hàng",
+        "description": "Datum đã cung cấp nền tảng EKS linh hoạt, bảo mật và tự động hoá dành riêng cho hệ vi dịch vụ doanh nghiệp."
+      }
+    ]
+  },
+  "common_slide": {
+    "read_more": "Xem thêm"
+  },
+  "our_story": {
+    "title": "Câu chuyện của chúng tôi",
+    "content": "Được thành lập vào năm 2017, Datum Consulting là công ty tư vấn kỹ thuật và chuyển đổi số có trụ sở tại Auckland, New Zealand. Chúng tôi đã hợp tác với các doanh nghiệp từ startup đầy tham vọng đến một trong bốn ngân hàng lớn nhất tại Úc để cung cấp phần mềm chất lượng cao và thúc đẩy chuyển đổi số.",
+    "cta": "Về Datum"
+  },
+  "our_partners": {
+    "title": "Đối tác của chúng tôi",
+    "content": "Tại Datum, chúng tôi dự đoán những thách thức tiềm ẩn và chủ động giải quyết. Việc hợp tác với AWS giúp đảm bảo rằng các giải pháp công nghệ của chúng tôi được tích hợp liền mạch với chiến lược kinh doanh của bạn, tạo ra một lộ trình toàn diện cho tăng trưởng và thành công bền vững."
+  },
+  "join_revolution": {
+    "title": "Tham gia cuộc cách mạng số",
+    "description": "Bảo vệ tương lai doanh nghiệp bạn cùng Datum. Hãy cùng xây dựng các giải pháp số thông minh, nhanh chóng và mạnh mẽ hơn."
+  },
+  "locations": {
+    "title": "Văn phòng của chúng tôi",
+    "description": "Chúng tôi đang mở rộng khắp khu vực Châu Á – Thái Bình Dương với chiến lược rõ ràng, sự tận tâm với từng khách hàng và mục tiêu cụ thể. Các giải pháp của chúng tôi được phát triển từ sự thấu hiểu địa phương và hướng đến tạo ra những giá trị thiết thực cho toàn khu vực."
+  },
+
+  "banner": {
+    "cloud": {
+      "title": "Thiết kế hệ sinh thái đám mây phù hợp với tham vọng của bạn"
+    },
+    "data_ai": {
+      "title": "Thúc đẩy đổi mới sáng tạo dựa trên dữ liệu với trí tuệ nhân tạo"
+    },
+    "software": {
+      "title": "Kỹ thuật phần mềm tiên phong cho doanh nghiệp sẵn sàng tương lai"
+    }
+  },
+  "breadcrumbs": {
+    "services": "Dịch vụ",
+    "cloud": "Đám mây",
+    "data_ai": "Dữ liệu & AI",
+    "software": "Phát triển phần mềm"
+  },
+  "cloud_now": {
+    "title": "Thực trạng đám mây hiện nay",
+    "items": [
+      {
+        "content": "giảm 30% chi phí vận hành khi chuyển hệ thống ngân hàng cốt lõi lên đám mây"
+      },
+      {
+        "content": "cắt giảm 20% chi phí tồn kho khi triển khai dự báo nhu cầu dựa trên AI"
+      }
+    ]
+  },
+
+  "cloud_intro": {
+    "title": "Đám mây của bạn, được tái định hình",
+    "items": [
+      {
+        "content": "Tại Datum, chúng tôi không chỉ chuyển hệ thống lên đám mây—<b>chúng tôi kiến trúc các hệ sinh thái phù hợp với tầm nhìn, nhu cầu ngành và mục tiêu tương lai của bạn.</b> Dù bạn đang tối ưu hóa vận hành, triển khai đổi mới đột phá hay mở rộng toàn cầu, giải pháp đám mây của chúng tôi đều được thiết kế để phát triển cùng tham vọng của bạn."
+      }
+    ]
+  },
+
+  "cloud_why": {
+    "title": "Vì sao chọn Datum",
+    "items": [
+      {
+        "title": "Chiến lược phù hợp",
+        "content": "Chiến lược đám mây được xây dựng xoay quanh mục tiêu kinh doanh của bạn, không chỉ là thông số kỹ thuật.\nCân bằng giữa khả năng mở rộng, bảo mật và chi phí để thúc đẩy tăng trưởng."
+      },
+      {
+        "title": "Chuyên môn toàn diện",
+        "content": "Từ di chuyển hệ thống đến tối ưu hóa, điều phối đa đám mây và tự động hóa bằng AI.\nGiải pháp sẵn sàng tuân thủ (GDPR, HIPAA, PCI DSS) được cá nhân hóa theo ngành của bạn."
+      },
+      {
+        "title": "Lợi nhuận đo lường được",
+        "content": "Giảm chi phí hạ tầng từ 30–50% đồng thời nâng cao hiệu suất.\nBiến hệ thống đám mây thành trung tâm lợi nhuận nhờ dữ liệu và đổi mới sáng tạo."
+      }
+    ]
+  },
+
+  "banking_stories": {
+    "title": "Câu chuyện thành công trong lĩnh vực ngân hàng",
+    "story_1": "Tùy chỉnh nền tảng Amazon EKS an toàn cho một đối tác ngân hàng danh tiếng",
+    "story_2": "Tái định nghĩa sự xuất sắc trong ngân hàng: Chuyển đổi vùng hạ cánh an toàn"
+  },
+
+  "team_section": {
+    "title_cloud": "Sẵn sàng chuyển lên đám mây?",
+    "title_data_ai": "Sẵn sàng đổi mới với AI?",
+    "title_software": "Sẵn sàng phát triển phần mềm?",
+    "content": "Trao đổi với chuyên gia của chúng tôi để bắt đầu hành trình chuyển đổi số"
+  },
+
+  "data_ai_percentage": {
+    "title": "Đổi mới với Dữ liệu & AI",
+    "items": [
+      {
+        "content": "tăng 30% hiệu quả vận hành nhờ tự động hóa bằng AI."
+      },
+      {
+        "content": "tăng 20% tỷ lệ giữ chân khách hàng với chiến lược cá nhân hóa dựa trên AI."
+      }
+    ]
+  },
+
+  "data_ai_section": {
+    "title": "Dữ liệu của bạn, tái định hình",
+    "items": [
+      {
+        "content": "Tại Datum, chúng tôi không chỉ phân tích dữ liệu — chúng tôi khai phá toàn bộ tiềm năng của nó. Các giải pháp dựa trên AI của chúng tôi tích hợp liền mạch vào doanh nghiệp bạn, hỗ trợ phân tích dự đoán, tự động hóa quy trình và hiểu biết sâu sắc về khách hàng. Dù bạn đang tối ưu hóa quy trình, nâng cao trải nghiệm khách hàng hay xây dựng ứng dụng AI thế hệ tiếp theo, chúng tôi đều thiết kế chiến lược dữ liệu phù hợp với tầm nhìn của bạn."
+      }
+    ]
+  },
+
+  "why_datum_ai": {
+    "title": "Tại sao chọn Datum",
+    "items": [
+      {
+        "title": "Đổi mới dựa trên kết quả",
+        "content": "Chúng tôi bắt đầu từ mục tiêu của bạn và xây dựng các giải pháp phù hợp để giải quyết các thách thức thực tế."
+      },
+      {
+        "title": "Hợp tác liền mạch",
+        "content": "Giao tiếp cởi mở, trung thực và thường xuyên đảm bảo minh bạch và thống nhất ở mọi bước."
+      },
+      {
+        "title": "Chuyên môn đáng tin cậy",
+        "content": "Chúng tôi cung cấp giải pháp CNTT đúng ngay từ đầu và là đối tác đáng tin cậy đầu tư vào thành công của bạn."
+      }
+    ]
+  },
+
+  "software_percentage": {
+    "title": "Đổi mới với phần mềm",
+    "items": [
+      {
+        "content": "tăng hiệu suất vận hành bằng cách tự động hóa các quy trình kinh doanh quan trọng với giải pháp phần mềm tùy chỉnh."
+      },
+      {
+        "content": "rút ngắn thời gian ra mắt sản phẩm nhờ mô hình phát triển linh hoạt và kiến trúc mở rộng."
+      }
+    ]
+  },
+
+  "software_section": {
+    "title": "Phần mềm của bạn, được tái định hình",
+    "items": [
+      {
+        "content": "Tại Datum, chúng tôi tích hợp các nền tảng cũ với công nghệ hiện đại để nâng cao tính linh hoạt và khả năng mở rộng. Giải pháp của chúng tôi — từ quản lý API, tự động hóa quy trình đến kiến trúc chống lỗi — cho phép đổi mới liền mạch mà không làm gián đoạn hoạt động."
+      }
+    ]
+  },
+
+  "why_datum_software": {
+    "title": "Tại sao chọn Datum",
+    "items": [
+      {
+        "title": "Tiếp cận dựa trên mục tiêu kinh doanh",
+        "content": "Giải pháp phần mềm được thiết kế để đáp ứng mục tiêu kinh doanh, không chỉ yêu cầu kỹ thuật.\nCân bằng giữa khả năng mở rộng, bảo mật và hiệu quả chi phí để tối ưu hóa hiệu suất."
+      },
+      {
+        "title": "Phát triển toàn chu trình",
+        "content": "Từ ý tưởng đến triển khai, chúng tôi đảm nhận toàn bộ: thiết kế UI/UX, tích hợp API, tự động hóa và kiến trúc dựa trên đám mây.\nGiải pháp tuân thủ tiêu chuẩn ngành về bảo mật và quy định (GDPR, HIPAA, PCI DSS)."
+      },
+      {
+        "title": "ROI có thể đo lường",
+        "content": "Giảm chi phí bảo trì phần mềm từ 30–50% trong khi cải thiện hiệu suất.\nTận dụng dữ liệu để đẩy nhanh ra quyết định và đổi mới."
+      }
+    ]
+  }
 }

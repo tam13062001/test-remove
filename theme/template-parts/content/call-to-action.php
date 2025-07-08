@@ -10,10 +10,10 @@ $image_url = $args['image_url'] ?? '';
         <div class="container ">
             <div class="w-full lg:w-[55%]">
                 <div class="mb-12 lg:text-[36px] text-[24px] text-Regular ">
-                    <?php echo $content ?>
+                    <?php echo datum_translate($content); ?>
                 </div>
                 <a href="/contact/" class="btn font-bold lg:w-fit w-full">
-                    <?php echo $cta_text; ?>
+                    <?php echo datum_get_translation($cta_text); ?>
                 </a>
             </div>
         </div>

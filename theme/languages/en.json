@@ -22,5 +22,236 @@
   "successful_stories": "Successful Stories",
   "platform_customization": "Platform Customization",
   "premier_banking": "Premier Banking",
-  "digital_partner": "Your strategic partner in digital transformation"
+  "digital_partner": "Your strategic partner in digital transformation",
+  "pioneering_text": {
+      "line1": "Pioneering",
+      "line2": "the Future of",
+      "line3": "Digital Transformation"
+    },
+  "hero": {
+    "homepage": "Datum is your trusted partner in digital transformation, seamlessly integrating Cloud Solutions, Software Engineering, and Data & AI to help businesses scale, innovate, and stay ahead.",
+    "cloud":"Transform your cloud infrastructure from a technical necessity to a strategic powerhouse – engineered to grow, adapt, and drive your business forward.",
+    "data" :"Transform raw data into actionable insights and intelligent automation—fueling smarter decisions, seamless operations, and sustainable growth.",
+    "software": "Elevate your software from a functional tool to a strategic driver of efficiency, innovation, and growth."
+  },
+  "cta.schedule": "Schedule a consultation with our expert",
+  "section.what_sets_us_apart": "What Sets Us Apart",
+  "homepage.data-ai.content": "Harness AI insights to turn raw data into smart strategies for better decision-making.",
+  "homepage.cloud.content": "Create a robust cloud ecosystem designed for your needs, optimizing security and efficiency.",
+  "homepage.software.content": "Boost your business with tailored software solutions that drive growth.",
+  "section.game_changing_solutions": "Game-Changing Solutions",
+  "solution": {
+    "platform": {
+      "title": "Platform Engineering",
+      "desc": "Build a strong digital foundation with scalable and agile infrastructure solutions."
+    },
+    "digital": {
+      "title": "Digital Transformation",
+      "desc": "Harness the latest technologies to streamline operations, enhance customer experiences, and drive business innovation."
+    },
+    "integration": {
+      "title": "Integration Solutions",
+      "desc": "Connect and unify your business systems seamlessly for optimized performance and enhanced security."
+    }
+  },
+  "common": {
+    "learn_more": "Learn more"
+  },
+  
+  "why_datum_home": {
+    "title": "Why Datum",
+    "items": [
+      {
+        "title": "Outcome-Driven Innovation",
+        "content": "We start with your goals and craft tailored solutions that solve real business challenges."
+      },
+      {
+        "title": "Seamless Collaboration",
+        "content": "Open, honest, and frequent communication ensures transparency and alignment at every step."
+      },
+      {
+        "title": "Trusted Expertise",
+        "content": "We deliver IT solutions right the first time, acting as a reliable partner invested in your success."
+      }
+    ]
+  },
+  "successful_stories_slide": {
+    "items": [
+      {
+        "title": "Digital Transformation for a Premier Banking Client",
+        "description": "Datum Consulting helped the bank create a secure and efficient cloud system for easier digital banking."
+      },
+      {
+        "title": "EKS Workload Platform for Better Banking Experience",
+        "description": "Datum delivered a resilient, secure, and automated EKS platform tailored for enterprise microservices."
+      }
+    ]
+  },
+  "common_slide": {
+    "read_more": "Read more"
+  },
+  "our_story": {
+    "title": "Our Story",
+    "content": "Founded in 2017, Datum Consulting is an engineering and digital transformation consultancy based in Auckland, New Zealand. We've partnered with businesses of all sizes—from ambitious startups to one of Australia's Big Four banks—to deliver high-quality software and drive digital transformation.",
+    "cta": "About Datum"
+  },
+    "our_partners": {
+    "title": "Our Partners",
+    "content": "At Datum, we foresee potential challenges and proactively address them. By partnering with AWS, we ensure that our technology solutions are seamlessly integrated with your business strategy, creating a comprehensive roadmap that paves the way for sustainable growth and success."
+  },
+    "join_revolution": {
+    "title": "Join the Digital Revolution",
+    "description": "Future-proof your business with Datum. Let's build smarter, faster, and more powerful digital solutions together."
+  },
+  "locations": {
+    "title": "Locations",
+    "description": "We're growing across APAC guided by clarity in strategy, care for every client, and a clear sense of purpose. Our solutions are rooted in local understanding and built to drive meaningful impact across the region."
+  },
+
+  "banner": {
+    "cloud": {
+      "title": "Designing cloud ecosystems that scale with your ambition"
+    },
+    "data_ai": {
+      "title": "Empowering data-driven innovation with AI-powered intelligence"
+    },
+    "software": {
+      "title": "Pioneering software engineering for Future-Ready Enterprises"
+    }
+  },
+  "breadcrumbs": {
+    "services": "Our Services",
+    "cloud": "Cloud",
+    "data_ai": "Data & AI",
+    "software": "Software"
+  },
+  "cloud_now": {
+    "title": "Cloud now",
+    "items": [
+      {
+        "content": "reducing operational costs when migrating core banking systems to the cloud"
+      },
+      {
+        "content": "cutting inventory cost when implementing AI-powered demand forecasting"
+      }
+    ]
+  },
+
+  "cloud_intro": {
+    "title": "Your Cloud, Reimagined",
+    "items": [
+      {
+        "content": "At Datum, we don’t just migrate systems to the cloud—<b>we architect tailored ecosystems that align with your vision, industry demands, and future goals.</b> Whether you’re streamlining operations, launching disruptive innovations, or expanding globally, our cloud solutions are designed to evolve with your ambition."
+      }
+    ]
+  },
+
+  "cloud_why": {
+    "title": "Why Datum",
+    "items": [
+      {
+        "title": "Strategic Alignment",
+        "content": "Cloud strategies built around your business objectives, not just technical specs.\nBalance scalability, security, and cost-efficiency to fuel growth."
+      },
+      {
+        "title": "End-to-End Expertise",
+        "content": "From migration to optimization, multi-cloud orchestration, and AI-driven automation.\nCompliance-ready solutions (GDPR, HIPAA, PCI DSS) tailored to your industry."
+      },
+      {
+        "title": "ROI You Can Measure",
+        "content": "Reduce infrastructure costs by 30–50% while boosting performance.\nTurn your cloud into a profit center with data-driven insights and innovation accelerators."
+      }
+    ]
+  },
+
+  "banking_stories": {
+    "title": "Success Stories in Banking",
+    "story_1": "Customizing a secure Amazon EKS workload platform for a Prestigious Banking Partner",
+    "story_2": "Redefining Banking Excellence: A Secure Landing Zone Transformation"
+  },
+
+  "team_section": {
+    "title_cloud": "Ready to Cloud?",
+    "title_data_ai": "Ready to Innovate with AI?",
+    "title_software": "Ready to Software?",
+    "content": "Talk with our expert to start your cloud journey today"
+  },
+
+  "data_ai_percentage": {
+    "title": "Innovate with Data & AI",
+    "items": [
+      {
+        "content": "increase in operational efficiency through AI-powered automation."
+      },
+      {
+        "content": "higher customer retention with personalized AI-driven engagement strategies."
+      }
+    ]
+  },
+
+  "data_ai_section": {
+    "title": "Your Data, Reimagined",
+    "items": [
+      {
+        "content": "At Datum, we do more than analyze data—we unlock its full potential. Our AI-driven solutions integrate seamlessly into your business, enabling predictive analytics, process automation, and deep customer insights. Whether you’re optimizing workflows, enhancing customer experiences, or building next-gen AI applications, we tailor data strategies that align with your vision."
+      }
+    ]
+  },
+
+  "why_datum_ai": {
+    "title": "Why Datum",
+    "items": [
+      {
+        "title": "Outcome-Driven Innovation",
+        "content": "We start with your goals and craft tailored solutions that solve real business challenges."
+      },
+      {
+        "title": "Seamless Collaboration",
+        "content": "Open, honest, and frequent communication ensures transparency and alignment at every step."
+      },
+      {
+        "title": "Trusted Expertise",
+        "content": "We deliver IT solutions right the first time, acting as a reliable partner invested in your success."
+      }
+    ]
+  },
+
+  "software_percentage": {
+    "title": "Innovate with Software",
+    "items": [
+      {
+        "content": "increase in operational efficiency by automating key business processes with custom software solutions."
+      },
+      {
+        "content": "faster time-to-market with agile development frameworks and scalable architectures."
+      }
+    ]
+  },
+
+  "software_section": {
+    "title": "Your Software, Reinvented",
+    "items": [
+      {
+        "content": "At Datum, we integrate legacy platforms with modern technologies to enhance agility and scalability. Our solutions—spanning API management, process automation, and fault-tolerant architectures—enable seamless innovation without disrupting operations."
+      }
+    ]
+  },
+
+  "why_datum_software": {
+    "title": "Why Datum",
+    "items": [
+      {
+        "title": "Business-Centric Approach",
+        "content": "Software solutions designed to meet your business goals, not just technical requirements. Balance scalability, security, and cost-effectiveness to maximize efficiency."
+      },
+      {
+        "title": "Full-Cycle Development",
+        "content": "From ideation to deployment, we handle everything: UI/UX design, API integration, automation, and cloud-based architecture. Industry-compliant solutions tailored for security and regulatory standards (GDPR, HIPAA, PCI DSS)."
+      },
+      {
+        "title": "ROI You Can Measure",
+        "content": "Reduce software maintenance costs by 30-50% while improving performance.Leverage data-driven insights to accelerate decision."
+      }
+    ]
+  }
 }

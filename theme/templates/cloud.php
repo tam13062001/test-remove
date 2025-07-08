@@ -1,72 +1,71 @@
 <?php /* Template Name: Service: Cloud Template */ ?>
 <?php get_header(); ?>
 
-<?php get_template_part('template-parts/content/banner', null, array(
-    'title' => 'Designing cloud ecosystems that scale with your ambition',
-    'breadcrumbs' => array('Our Services', 'Cloud'),
+<?php
+get_template_part('template-parts/content/banner', null, array(
+    'title' => 'banner.cloud.title',
+    'breadcrumbs' => array('breadcrumbs.services', 'breadcrumbs.cloud'),
     'background_image' => get_assets_from_path('videos/cloud_banner_video.mp4'),
     'type' => 'video'
-)); ?>
+));
+?>
 
 <?php
 get_template_part('template-parts/content/call-to-action', null, array(
-    'content' => 'Transform your cloud infrastructure from a technical necessity to a strategic powerhouse – engineered to grow, adapt, and drive your business forward.',
+    'content' => 'hero.cloud',
     'image_url' => get_assets_from_path('images/cta_bg_1.png'),
-    'cta_text' => 'Schedule a consultation with our expert',
+    'cta_text' => 'cta.schedule',
     'cta_link' => '#'
 ));
 ?>
 
 <?php
 get_template_part('template-parts/content/percentage-column-info', null, array(
-    'title' => 'Cloud now',
+    'title' => 'cloud_now.title',
     'items' => array(
         array(
             'percent' => '30%',
-            'content' => 'reducing operational costs when migrating core banking systems to the cloud'
+            'content' => 'cloud_now.items.0.content'
         ),
         array(
             'percent' => '20%',
-            'content' => 'cutting inventory cost when Implementing AI-powered demand forecasting, '
+            'content' => 'cloud_now.items.1.content'
         ),
     )
 ));
 ?>
 
+
 <?php
 get_template_part('template-parts/content/info-section-with-image-cloud', null, array(
-    'title' => 'Your Cloud, Reimagined',
+    'title' => 'cloud_intro.title',
     'image_url' => get_assets_from_path('images/mainframe.png'),
     'items' => array(
         array(
             'title' => '',
-            'content' => 'At Datum, we don’t just migrate systems to the cloud—<b>we architect tailored ecosystems
- that align with your vision, industry demands, and future goals.</b> Whether you’re streamlining operations,
- launching disruptive innovations, or expanding globally, our cloud solutions are designed to evolve with 
- your ambition.',
+            'content' => 'cloud_intro.items.0.content',
         )
     ),
-)) ; ?>
+));
+?>
+
 
 <?php
 get_template_part('template-parts/content/info-section-with-image', null, array(
-    'title' => 'Why Datum',
+    'title' => datum_translate('cloud_why.title'),
     'image_url' => get_assets_from_path('images/green-rack.png'),
     'items' => array(
         array(
-            'title' => 'Strategic Alignment',
-            'content' => 'Cloud strategies built around your business objectives, not just technical specs.
-Balance scalability, security, and cost-efficiency to fuel growth.',
+            'title' => datum_translate('cloud_why.items.0.title'),
+            'content' => datum_translate('cloud_why.items.0.content'),
         ),
         array(
-            'title' => 'End-to-End Expertise',
-            'content' => 'From migration to optimization, multi-cloud orchestration, and AI-driven automation.
-Compliance-ready solutions (GDPR, HIPAA, PCI DSS) tailored to your industry.',
+            'title' => datum_translate('cloud_why.items.1.title'),
+            'content' => datum_translate('cloud_why.items.1.content'),
         ),
         array(
-            'title' => 'ROI You Can Measure',
-            'content' => 'Reduce infrastructure costs by 30–50% while boosting performance.
-Turn your cloud into a profit center with data-driven insights and innovation accelerators.',
+            'title' => datum_translate('cloud_why.items.2.title'),
+            'content' => datum_translate('cloud_why.items.2.content'),
         )
     ),
 )) ;
@@ -128,11 +127,13 @@ get_template_part('template-parts/content/info-section-list', null, array(
 ?>
 
 <?php get_template_part('template-parts/content/partners-about-datum'); ?>
-<?php get_template_part('template-parts/content/successful-stories-banking',null,array(
-    'title' => 'Success Stories in Banking',
-    'title_1' => 'Customizing a secure Amazon EKS workload platform for a Prestigious Banking Partner',
-    'title_2' => 'Redefining Banking Excellence: A Secure Landing Zone Transformation',
+
+<?php get_template_part('template-parts/content/successful-stories-banking', null, array(
+    'title' => 'banking_stories.title',
+    'title_1' => 'banking_stories.story_1',
+    'title_2' => 'banking_stories.story_2',
 )); ?>
+
 <?php get_template_part('template-parts/content/frequently-asked-questions', null, array(
     'items' => array(
     array(
@@ -161,10 +162,11 @@ get_template_part('template-parts/content/info-section-list', null, array(
     ),
     'text_title'=>'Cloud'
 )); ?>
+
 <?php get_template_part('template-parts/content/team', null, array(
-    'title' => 'Ready to Cloud ?',
-    'content' => 'Talk with our expert to start your cloud journey today',
-    'btn_text' => 'Schedule a consultation with our expert',
+    'title' => 'team_section.title_cloud',
+    'content' => 'team_section.content',
+    'btn_text' => 'cta.schedule',
     'btn_link' => '#'
 )); ?>
 

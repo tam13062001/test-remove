@@ -104,10 +104,10 @@ get_template_part('template-parts/content/driving-tangible-impact', null, array(
     </div>
 </div>
 
-<?php get_template_part('template-parts/content/successful-stories-banking',null,array(
-    'title' => 'Success Stories in Banking',
-    'title_1' => 'Customizing a secure Amazon EKS workload platform for a Prestigious Banking Partner',
-    'title_2' => 'Redefining Banking Excellence: A Secure Landing Zone Transformation',
+<?php get_template_part('template-parts/content/successful-stories-banking', null, array(
+    'title' => 'banking_stories.title',
+    'title_1' => 'banking_stories.story_1',
+    'title_2' => 'banking_stories.story_2',
 )); ?>
 
 

@@ -12,7 +12,7 @@
             <!-- Cột 2 - 4/5 width chứa toàn bộ nội dung còn lại -->
             <div class="lg:w-4/5">
                 <div class="mb-8">
-                    <h3 class="font-Medium lg:text-[24px]"> <?php echo datum_translate('digital_partner'); ?></h3>
+                    <h3 class="font-Medium lg:text-[24px]"> <?php echo datum_get_translation('digital_partner'); ?></h3>
                 </div>
                 <!-- Phần menu 4 cột -->
                 <?php get_template_part('template-parts/footer/menu'); ?>

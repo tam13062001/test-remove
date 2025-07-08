@@ -10,7 +10,7 @@ $user_avatar_url = $args['user_avatar_url'] ?? get_assets_from_path('images/our_
 
 <div class="container py-8 lg:py-[80px]">
     <h2 class="font-[700] text-[32px] lg:text-[40px] mb-10 lg:mb-[50px]">
-        <?php echo $title ?>
+        <?php echo datum_translate($title) ?>
     </h2>
     <div class="flex flex-col lg:flex-row">
         <div class="lg:w-1/4">
@@ -18,10 +18,10 @@ $user_avatar_url = $args['user_avatar_url'] ?? get_assets_from_path('images/our_
         </div>
         <div class="lg:w-3/4 py-5 lg:py-[75px] lg:px-[135px]">
             <div class="text-primary font-[700] text-[20px] lg:text-[24px] mb-11">
-                <?php echo $content ?>
+                <?php echo datum_translate($content) ?>
             </div>
             <a class="btn font-bold lg:w-fit w-full" href="/contact/">
-                <?php echo $btn_text ?>
+                <?php echo datum_get_translation($btn_text) ?>
             </a>
             <div class="mt-11">
                 <div class="text-primary font-[700] text-[20px] lg:text-[24px]">

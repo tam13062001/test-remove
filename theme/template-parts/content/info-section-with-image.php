@@ -8,17 +8,17 @@ $image_url = $args['image_url'] ?? '';
     <div class="container relative z-10">
         <div class="w-full lg:w-3/5">
             <h2 class="text-[32px] lg:text-[40px] font-bold mb-6 lg:mb-10">
-                <?php echo $title ?>
+                <?php echo datum_translate($title) ?>
             </h2>
             <div class="lg:h-[630px] bg-white lg:py-10 leading-[170%] lg:pr-[20%]">
                 <?php foreach($items as $item): ?>
                     <div class="mb-8">
                         <?php if(!empty($item['title'])) {?>
                             <div class="text-primary lg:text-[24px] text-[20px] font-[700] mb-5 mt-4">
-                                <?php echo $item['title'] ?>
+                                <?php echo datum_translate($item['title']) ?>
                             </div>
                         <?php } ?>
-                        <div class="lg:text-[20px] text-[16px]"><?php echo $item['content']; ?></div>
+                        <div class="lg:text-[20px] text-[16px]"><?php echo datum_translate($item['content']); ?></div>
                     </div>
                 <?php endforeach; ?>
             </div>

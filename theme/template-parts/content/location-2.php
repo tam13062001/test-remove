@@ -1,4 +1,7 @@
 <?php
+$title = 'locations.title';
+$description = 'locations.description';
+
 $markers = [
     ['name' => 'Manila, Philipines', 'x' => '45.8%', 'y' => '22%'],
     ['name' => 'Ho Chi Minh City, VietNam', 'x' => '36.5%', 'y' => '26.5%'],
@@ -54,9 +57,9 @@ $markers_ipad = [
     </div>
 
     <div class="container mx-auto relative z-10 text-align-center pt-[60px] lg:pt-[500px] pb-[60px] lg:pb-[100px] lg:pl-[80px]  2xl:pl-0">
-        <h2 class="lg:text-[40px] font-bold">Locations</h2>
+        <h2 class="lg:text-[40px] font-bold"><?php echo datum_translate($title); ?></h2>
         <div class="lg:text-[20px] font-regular mt-4 mb-8 w-[405px]">
-            <p>We’re growing across APAC guided by clarity in strategy, care for every client, and a clear sense of purpose. Our solutions are rooted in local understanding and built to drive meaningful impact across the region.</p>
+            <p><?php echo datum_translate($description)?></p>
         </div>
     </div>
 </div>
@@ -106,9 +109,9 @@ $markers_ipad = [
         }
     </script>
     <div class="px-10 ">
-        <h2 class="text-[32px] font-bold">Locations</h2>
+        <h2 class="text-[32px] font-bold"><?php echo datum_translate($title); ?></h2>
         <div class="text-[16px] font-regular mt-4 mb-8">
-            <p>We're growing across APAC guided by clarity in strategy, care for every client, and a clear sense of purpose. Our solutions are rooted in local understanding and built to drive meaningful impact across the region.</p>
+            <p><?php echo datum_translate($description); ?></p>
         </div>
     </div>
 </div>
@@ -157,11 +160,13 @@ $markers_ipad = [
             if (label) label.style.display = 'block';
         }
     </script>
-    <div class="px-10 ">
-        <h2 class="text-[32px] font-bold">Locations</h2>
-        <div class="text-[16px] font-regular mt-4 mb-8">
-            <p>We're growing across APAC guided by clarity in strategy, care for every client, and a clear sense of purpose. Our solutions are rooted in local understanding and built to drive meaningful impact across the region.</p>
-        </div>
+<div class="px-10">
+    <h2 class="text-[32px] font-bold">
+        <?php echo datum_translate($title); ?>
+    </h2>
+    <div class="text-[16px] font-regular mt-4 mb-8">
+        <p><?php echo datum_translate($description); ?></p>
     </div>
+</div>
 </div>
 

@@ -20,7 +20,7 @@ $type = $args['type'] ?? 'image';
                 <div class="flex text-[14px] items-center space-x-2 mb-5">
                     <?php foreach ($breadcrumbs as $index => $item): ?>
                         <div>
-                            <?php echo $item ?>
+                            <?php echo datum_translate($item); ?>
                         </div>
                         <?php if ($index < sizeof($breadcrumbs) - 1): ?>
                             <div>
@@ -32,8 +32,8 @@ $type = $args['type'] ?? 'image';
                     <?php endforeach; ?>
                 </div>
             <?php endif; ?>
-            <div class="text-[32px] lg:text-[40px]">
-                <?php echo $title; ?>
+            <div class="text-[32px] lg:text-[38px] 2xl:text-[40px]">
+                <?php echo datum_translate($title); ?>
             </div>
         </div>
     </div>

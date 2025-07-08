@@ -1,93 +1,105 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import {BaseProps} from "../core/get-props";
-import {useMemo} from "@wordpress/element";
+import { BaseProps } from "../core/get-props";
+import { useMemo } from "@wordpress/element";
 import useBreakpoint from "../hooks/useBreakpoint";
-import {FreeMode, Pagination, Navigation} from "swiper/modules";
+import { FreeMode, Pagination, Navigation } from "swiper/modules";
 
+// Kiểu dữ liệu slide
 type CardSliderProps = {
-  slides: { image_url: string; title: string; description: string; link: string; link_text: string }[]
-  slidesPerView: number
-  slidesPerViewMobile?: number
-  spaceBetween: number
+  slides: {
+    image_url: string;
+    title: string;
+    description: string;
+    link: string;
+    link_text: string;
+  }[];
+  slidesPerView: number;
+  slidesPerViewMobile?: number;
+  spaceBetween: number;
+};
+
+// Hàm dịch từ key → chuỗi (lấy từ window.translations)
+function datumTranslate(key: string): string {
+  try {
+    const keys = key.split(".");
+    let value = (window as any).translations;
+    for (const k of keys) {
+      value = value?.[k];
+      if (typeof value === "undefined") return key;
+    }
+    return typeof value === "string" ? value : key;
+  } catch (e) {
+    return key;
+  }
 }
 
-
 export default function StorySliderBlock(props: BaseProps<CardSliderProps>) {
-  const { slides = [], spaceBetween = 24 } = props.data
-
-  const mobile = useBreakpoint()
+  const { slides = [], spaceBetween = 24 } = props.data;
+  const mobile = useBreakpoint();
 
   const slidesPerView = useMemo(() => {
-    if (mobile) return props.data?.slidesPerViewMobile || props.data?.slidesPerView || 1
-    return props.data?.slidesPerView || 1
-  }, [props.data])
+    if (mobile) return props.data?.slidesPerViewMobile || props.data?.slidesPerView || 1;
+    return props.data?.slidesPerView || 1;
+  }, [props.data, mobile]);
 
   return (
     <div className={'relative'}>
+      {/* Nút điều hướng & phân trang */}
       <div className={'lg:w-[11%] absolute top-[190px] lg:top-[420px] -mt-[10px] z-10 shadow-md left-1/2 lg:left-1/3 -translate-x-1/2'}>
-        <div
-          className="flex items-center justify-center gap-2 lg:gap-4 bg-white px-2 lg:px-6 py-2 lg:py-4 rounded-full">
+        <div className="flex items-center justify-center gap-2 lg:gap-4 bg-white px-2 lg:px-6 py-2 lg:py-4 rounded-full">
           <div className="story-prev cursor-pointer">
-            <svg className="w-5 h-5 text-blue-600 hover:text-blue-800" fill="none" stroke="currentColor" stroke-width="2"
+            <svg className="w-5 h-5 text-blue-600 hover:text-blue-800" fill="none" stroke="currentColor" strokeWidth="2"
                  viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
             </svg>
           </div>
           <div className="story-pagination flex items-center justify-center gap-1 lg:gap-2"></div>
           <div className="story-next cursor-pointer">
-            <svg className="w-5 h-5 text-blue-600 hover:text-blue-800" fill="none" stroke="currentColor" stroke-width="2"
+            <svg className="w-5 h-5 text-blue-600 hover:text-blue-800" fill="none" stroke="currentColor" strokeWidth="2"
                  viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
             </svg>
           </div>
         </div>
       </div>
+
+      {/* Swiper Slider */}
       <Swiper
         spaceBetween={spaceBetween}
         slidesPerView={slidesPerView}
-        modules={[ Navigation, FreeMode, Pagination ]}
-        pagination={{
-          clickable: true,
-          el: '.story-pagination'
-        }}
-        navigation={{
-          nextEl: '.story-next',
-          prevEl: '.story-prev'
-        }}
+        modules={[Navigation, FreeMode, Pagination]}
+        pagination={{ clickable: true, el: '.story-pagination' }}
+        navigation={{ nextEl: '.story-next', prevEl: '.story-prev' }}
       >
-        {
-          slides.map((item, index: number) => (
-            <SwiperSlide key={index} className={'lg:w-[785px] w-full relative overflow-hidden'}>
-              <div>
-                <div className={'lg:shrink-0 lg:w-2/3 h-[230px] lg:h-[554px]'}>
-                  <img
-                    className="object-cover w-full h-full"
-                    src={item.image_url}
-                  />
-                </div>
-                <div
-                  className={'px-5 lg:px-0 lg:absolute w-full lg:w-1/2 bg-white lg:right-14  lg:top-1/2 lg:-translate-y-1/2 pb-4 lg:pb-0'}>
-                  <div className={'px-5 lg:px-[116px] shadow-md py-5 lg:py-[70px]'}>
-                    <h2 className="lg:text-[36px] text-[20px] text-primary mb-[10px] lg:mb-8">
-                      {item.title}
-                    </h2>
-                    <p className="lg:text-[20px] text-[16px] mb-[10px] lg:mb-8">
-                      {item.description}
-                    </p>
-                    <a
-                      href={item.link ? item.link : '#'}
-                      className="text-primary text-[16px] lg:text-[20px] inline-flex items-center font-mixed md:text-lg"
-                    >
-                      {item.link_text}
-                      &nbsp;
-                      <i className="fa fa-chevron-right"></i>
-                    </a>
-                  </div>
+        {slides.map((item, index: number) => (
+          <SwiperSlide key={index} className={'lg:w-[785px] w-full relative overflow-hidden'}>
+            <div>
+              {/* Hình ảnh */}
+              <div className={'lg:shrink-0 lg:w-2/3 h-[230px] lg:h-[554px]'}>
+                <img className="object-cover w-full h-full" src={item.image_url} />
+              </div>
+
+              {/* Nội dung slide */}
+              <div className={'px-5 lg:px-0 lg:absolute w-full lg:w-1/2 bg-white lg:right-14 lg:top-1/2 lg:-translate-y-1/2 pb-4 lg:pb-0'}>
+                <div className={'px-5 lg:px-[116px] shadow-md py-5 lg:py-[70px]'}>
+                  <h2 className="lg:text-[36px] text-[20px] text-primary mb-[10px] lg:mb-8">
+                    {datumTranslate(item.title)}
+                  </h2>
+                  <p className="lg:text-[20px] text-[16px] mb-[10px] lg:mb-8">
+                    {datumTranslate(item.description)}
+                  </p>
+                  <a
+                    href={item.link || '#'}
+                    className="text-primary text-[16px] lg:text-[20px] inline-flex items-center font-mixed md:text-lg"
+                  >
+                    {datumTranslate(item.link_text)}&nbsp;
+                    <i className="fa fa-chevron-right" />
+                  </a>
                 </div>
               </div>
-            </SwiperSlide>
-          ))
-        }
+            </div>
+          </SwiperSlide>
+        ))}
       </Swiper>
     </div>
   );

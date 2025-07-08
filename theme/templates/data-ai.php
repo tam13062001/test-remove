@@ -1,70 +1,76 @@
 <?php /* Template Name: Service: Data & AI Template */ ?>
 <?php get_header(); ?>
 
-<?php get_template_part('template-parts/content/banner', null, array(
-    'title' => 'Empowering data-driven innovation with AI-powered intelligence',
+<?php
+get_template_part('template-parts/content/banner', null, array(
+    'title' => 'banner.data_ai.title',
+    'breadcrumbs' => array('breadcrumbs.services', 'breadcrumbs.data_ai'),
     'background_image' => get_assets_from_path('videos/homepage_data_ai.mp4'),
-    'breadcrumbs' => array('Our Services', 'Data & AI'),
     'type' => 'video'
-)); ?>
+));
+?>
 
 <?php
 get_template_part('template-parts/content/call-to-action', null, array(
-    'content' => 'Transform raw data into actionable insights and intelligent automation—fueling smarter decisions, seamless operations, and sustainable growth ',
+    'content' => 'hero.data',
     'image_url' => get_assets_from_path('images/Layer_1.png'),
-    'cta_text' => 'Schedule a consultation with our expert',
+    'cta_text' => 'cta.schedule',
     'cta_link' => '#'
 ));
 ?>
 
 <?php
 get_template_part('template-parts/content/percentage-column-info', null, array(
-    'title' => 'Innovate with Data & AI',
+    'title' => 'data_ai_percentage.title',
     'items' => array(
         array(
             'percent' => '30%',
-            'content' => 'increase in operational efficiency through AI-powered automation.'
+            'content' => 'data_ai_percentage.items.0.content',
         ),
         array(
             'percent' => '20%',
-            'content' => 'higher customer retention with personalized AI-driven engagement strategies.'
+            'content' => 'data_ai_percentage.items.1.content',
         ),
     )
 ));
 ?>
 
+
 <?php
-get_template_part('template-parts/content/info-section-with-image-cloud', null, array(
-    'title' => 'Your Data, Reimagined ',
+get_template_part('template-parts/content/info-section-with-image-data_ai', null, array(
+    'title' => 'data_ai_section.title',
     'image_url' => get_assets_from_path('images/mainframe2.png'),
     'items' => array(
         array(
             'title' => '',
-            'content' => 'At Datum, we do more than analyze data—we unlock its full potential. Our AI-driven solutions integrate seamlessly into your business, enabling predictive analytics, process automation, and deep customer insights. Whether you’re optimizing workflows, enhancing customer experiences, or building next-gen AI applications, we tailor data strategies that align with your vision.',
-        )
-    ),
-)); ?>
-
-<?php
-get_template_part('template-parts/content/info-section-with-image', null, array(
-    'title' => 'Why Datum',
-    'image_url' => get_assets_from_path('images/sv-ai-whydatum.png'),
-    'items' => array(
-        array(
-            'title' => 'Outcome-Driven Innovation ',
-            'content' => 'We start with your goals and craft tailored solutions that solve real business challenges. ',
-        ),
-        array(
-            'title' => 'Seamless Collaboration',
-            'content' => 'Open, honest, and frequent communication ensures transparency and alignment at every step. ',
-        ),
-        array(
-            'title' => 'Trusted Expertise',
-            'content' => 'We deliver IT solutions right the first time, acting as a reliable partner invested in your success.',
+            'content' => 'data_ai_section.items.0.content',
         )
     ),
 ));
 ?>
+
+
+<?php
+get_template_part('template-parts/content/info-section-with-image', null, array(
+    'title' => 'why_datum_ai.title',
+    'image_url' => get_assets_from_path('images/sv-ai-whydatum.png'),
+    'items' => array(
+        array(
+            'title' => 'why_datum_ai.items.0.title',
+            'content' => 'why_datum_ai.items.0.content',
+        ),
+        array(
+            'title' => 'why_datum_ai.items.1.title',
+            'content' => 'why_datum_ai.items.1.content',
+        ),
+        array(
+            'title' => 'why_datum_ai.items.2.title',
+            'content' => 'why_datum_ai.items.2.content',
+        )
+    ),
+));
+?>
+
 
 
 <?php
@@ -117,10 +123,10 @@ Our experts help design robust, scalable data architectures to support AI and an
 ?>
 
 <?php get_template_part('template-parts/content/partners-about-datum'); ?>
-<?php get_template_part('template-parts/content/successful-stories-banking',null,array(
-    'title' => 'Success Stories in Banking',
-    'title_1' => 'Customizing a secure Amazon EKS workload platform for a Prestigious Banking Partner',
-    'title_2' => 'Redefining Banking Excellence: A Secure Landing Zone Transformation',
+<?php get_template_part('template-parts/content/successful-stories-banking', null, array(
+    'title' => 'banking_stories.title',
+    'title_1' => 'banking_stories.story_1',
+    'title_2' => 'banking_stories.story_2',
 )); ?>
 <?php get_template_part('template-parts/content/frequently-asked-questions', null, array(
     'items' => array(
@@ -144,7 +150,7 @@ Our experts help design robust, scalable data architectures to support AI and an
             'content' =>'Real-time data processing allows businesses to react instantly to market changes, detect anomalies, and improve decision-making. It\'s crucial for financial transactions, cybersecurity, IoT applications, and customer service automation. '),
         array(
             'title' => 'How to ensure data security and compliance?',
-            'content' => 'Ensure data security with encryption, access controls, and compliance with regulations like GDPR and HIPAA. Regular audits, AI-powered threat detection, and secure cloud storage help protect sensitive data from breaches.'),
+            'content' => 'Ensure data security with encryption, access controls, and compliance with regulations like GDPR and HIPAA. Regular audits, AI-powered threat detection, and secure data_ai storage help protect sensitive data from breaches.'),
         ),
         array(
             'title' => 'What is Big Data?',
@@ -154,9 +160,9 @@ Our experts help design robust, scalable data architectures to support AI and an
     ));
 ?>
 <?php get_template_part('template-parts/content/team', null, array(
-    'title' => 'Ready to Innovate with AI?',
-    'content' => 'Talk with our expert to start your data journey today',
-    'btn_text' => 'Schedule a Free Strategy Session',
+    'title' => 'team_section.title_data_ai',
+    'content' => 'team_section.content',
+    'btn_text' => 'cta.schedule',
     'btn_link' => '#'
 )); ?>
 <?php get_template_part('template-parts/content/back-to-top'); ?>

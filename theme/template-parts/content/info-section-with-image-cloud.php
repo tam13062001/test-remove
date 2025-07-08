@@ -4,7 +4,7 @@ $items = $args['items'] ?? array();
 $image_url = $args['image_url'] ?? '';
 ?>
     <h2 class="container text-[32px] lg:text-[40px] lg:py-[50px] font-bold mb-6 lg:mb-10">
-            <?php echo $title ?>
+            <?php echo datum_translate($title); ?>
         </h2>
 <div class="relative lg:h-[625px] lg:mb-[150px] mb-[100px] overflow-hidden">
     <!-- <div class="absolute top-1/2 left-0 hidden lg:block max-h-[450px] -translate-y-1/2">
@@ -18,10 +18,10 @@ $image_url = $args['image_url'] ?? '';
             <div class="mb-10">
                 <?php if(!empty($item['title'])) {?>
                     <div class="text-primary lg:text-[24px] text-[20px] font-bold mb-5 mt-4">
-                        <?php echo $item['title'] ?>
+                        <?php echo datum_translate($item['title']); ?>
                     </div>
                 <?php } ?>
-                <div class="lg:w-[90%] lg:text-[20px] text-[16px] font-Regular mb-3"><?php echo $item['content']; ?></div>
+                <div class="lg:w-[90%] lg:text-[20px] text-[16px] font-Regular mb-3"><?php echo datum_translate($item['content']); ?></div>
             </div>
             <?php endforeach; ?>
         </div>

@@ -1,4 +1,9 @@
-<?php $is_404 = is_404(); ?>
+<?php 
+$is_404 = is_404(); 
+$lang = $_GET['lang'] ?? 'en';
+$path = get_stylesheet_directory() . "/languages/{$lang}.json";
+$json = file_exists($path) ? file_get_contents($path) : '{}';
+?>
 <header id="header" class="fixed w-full z-[100] <?php echo is_user_logged_in() ? 'top-8' : 'top-0'; ?><?php if ($is_404) echo ' has-background'; ?>">
     <div class="container">
         <div class="flex md:pt-2 lg:pb-[15px] pb-[8px] items-center justify-between text-[16px] ">
@@ -14,6 +19,7 @@
     </div>
 </header>
 <script>
+    window.translations = <?php echo $json; ?>;
     document.addEventListener('DOMContentLoaded', function () {
         function setupHeader() {
             const header = document.getElementById('header')

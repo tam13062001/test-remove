@@ -6,9 +6,9 @@
     <!-- About Section -->
 <?php
 get_template_part('template-parts/content/call-to-action', null, array(
-    'content' => 'Datum is your trusted partner in digital transformation, seamlessly integrating Cloud Solutions, Software Engineering, and Data & AI to help businesses scale, innovate, and stay ahead.',
+    'content' => 'hero.homepage',
     'image_url' => get_assets_from_path('images/img_1.png'),
-    'cta_text' => 'Schedule a consultation with our expert',
+    'cta_text' => 'cta.schedule',
     'cta_link' => '#'
 ));
 ?>
@@ -16,27 +16,27 @@ get_template_part('template-parts/content/call-to-action', null, array(
     <!-- What Sets Us Apart -->
     <div class="container py-[60px] lg:py-70px]">
         <h1 class="text-[32px] lg:text-[40px] font-bold mb-8 lg:mb-[60px]">
-            What Sets Us Apart
+            <?php echo datum_get_translation('section.what_sets_us_apart') ?>
         </h1>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 xl:gap-12">
             <!-- Data & AI Card -->
             <?php $items = array(
                 array(
-                    'title' => 'Data & AI',
-                    'content' => 'Harness AI insights to turn raw data into smart strategies for better decision-making.',
+                    'title' => 'menu.services.data-ai',
+                    'content' => 'homepage.data-ai.content',
                     'media_url' => get_assets_from_path('videos/homepage_data_ai.mp4'),
                     'media_type' => 'video',
                 ),
                 array(
-                    'title' => 'Cloud Solutions',
-                    'content' => 'Create a robust cloud ecosystem designed for your needs, optimizing security and efficiency.',
+                    'title' => 'menu.services.cloud',
+                    'content' => 'homepage.cloud.content',
                     'media_url' => get_assets_from_path('videos/cloud_banner_video.mp4'),
                     'media_type' => 'video',
                 ),
                 array(
-                    'title' => 'Software Engineering',
-                    'content' => 'Boost your business with tailored software solutions that drive growth.',
+                    'title' => 'menu.services.software',
+                    'content' => 'homepage.software.content',
                     'media_url' => get_assets_from_path('videos/software_banner_video.mp4'),
                     'media_type' => 'video',
                 )
@@ -51,9 +51,9 @@ get_template_part('template-parts/content/call-to-action', null, array(
                     <img class="w-full h-full object-cover absolute top-0 left-0 brightness-50" src="<?php echo $item['media_url'] ?>" />
                 <?php endif; ?>
                 <div class="text-white relative p-10 flex flex-col justify-between h-full">
-                    <h2 class="text-2xl font-[500] mb-4 mt-4"><?php echo $item['title'] ?></h2>
+                    <h2 class="text-2xl font-[500] mb-4 mt-4"><?php echo datum_get_translation($item['title']);  ?></h2>
                     <p class="font-[200] min-h-[160px]">
-                        <?php echo $item['content'] ?>
+                        <?php echo datum_get_translation($item['content']); ?>
                     </p>
                 </div>
             </div>
@@ -67,23 +67,23 @@ get_template_part('template-parts/content/call-to-action', null, array(
     <!-- Why Datum -->
 <?php
 get_template_part('template-parts/content/info-section-with-image', null, array(
-    'title' => 'Why Datum',
+    'title' => datum_translate('why_datum_home.title'),
     'image_url' => get_assets_from_path('images/image_5.png'),
     'items' => array(
         array(
-            'title' => 'Outcome-Driven Innovation ',
-            'content' => 'We start with your goals and craft tailored solutions that solve real business challenges. ',
+            'title' => datum_translate('why_datum_home.items.0.title'),
+            'content' => datum_translate('why_datum_home.items.0.content'),
         ),
         array(
-            'title' => 'Seamless Collaboration',
-            'content' => 'Open, honest, and frequent communication ensures transparency and alignment at every step. ',
+            'title' => datum_translate('why_datum_home.items.1.title'),
+            'content' => datum_translate('why_datum_home.items.1.content'),
         ),
         array(
-            'title' => 'Trusted Expertise',
-            'content' => 'We deliver IT solutions right the first time, acting as a reliable partner invested in your success.',
+            'title' => datum_translate('why_datum_home.items.2.title'),
+            'content' => datum_translate('why_datum_home.items.2.content'),
         )
     ),
-)) ;
+));
 ?>
     <!-- successful-stories -->
 <?php get_template_part('template-parts/content/hp-successful-stories'); ?>

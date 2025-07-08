@@ -2,32 +2,32 @@
 <?php get_header(); ?>
 
 <?php get_template_part('template-parts/content/banner', null, array(
-    'title' => 'Pioneering software engineering for Future-Ready Enterprises',
-    'breadcrumbs' => array('Our Services', 'Software'),
+    'title' => 'banner.software.title',
+    'breadcrumbs' => array('breadcrumbs.services', 'breadcrumbs.software'),
     'background_image' => get_assets_from_path('videos/software_banner_video.mp4'),
     'type' => 'video'
 )); ?>
 
 <?php
 get_template_part('template-parts/content/call-to-action', null, array(
-    'content' => 'Elevate your software from a functional tool to a strategic driver of efficiency, innovation, and growth.',
+    'content' => 'hero.software',
     'image_url' => get_assets_from_path('images/sv-s-bg.png'),
-    'cta_text' => 'Schedule a consultation with our expert',
+    'cta_text' => 'cta.schedule',
     'cta_link' => '#'
 ));
 ?>
 
 <?php
 get_template_part('template-parts/content/percentage-column-info', null, array(
-    'title' => 'Innovate with Software',
+    'title' => 'software_percentage.title',
     'items' => array(
         array(
             'percent' => '40%',
-            'content' => 'increase in operational efficiency by automating key business processes with custom software solutions.'
+            'content' => 'software_percentage.items.0.content'
         ),
         array(
             'percent' => '25%',
-            'content' => 'faster time-to-market with agile development frameworks and scalable architectures.'
+            'content' => 'software_percentage.items.1.content'
         ),
     )
 ));
@@ -35,38 +35,35 @@ get_template_part('template-parts/content/percentage-column-info', null, array(
 
 <?php
 get_template_part('template-parts/content/info-section-with-image-cloud', null, array(
-    'title' => 'Your Software, Reinvented',
+    'title' => 'software_section.title',
     'image_url' => get_assets_from_path('images/img_7.png'),
     'items' => array(
         array(
             'title' => '',
-            'content' => 'At Datum, we integrate legacy platforms with modern technologies to enhance agility and scalability. Our solutions—spanning API management, process automation, and fault-tolerant architectures—enable seamless innovation without disrupting operations. ',
+            'content' => 'software_section.items.0.content',
         )
     ),
 )) ; ?>
 
 <?php
 get_template_part('template-parts/content/info-section-with-image', null, array(
-    'title' => 'Why Datum',
-    'image_url' => get_assets_from_path('images/img_9.png'),
+    'title' => 'why_datum_software.title',
+    'image_url' => get_assets_from_path('images/sv-ai-whydatum.png'),
     'items' => array(
         array(
-            'title' => 'Business-Centric Approach',
-            'content' => 'Software solutions designed to meet your business goals, not just technical requirements.
-Balance scalability, security, and cost-effectiveness to maximize efficiency.',
+            'title' => 'why_datum_software.items.0.title',
+            'content' => 'why_datum_software.items.0.content',
         ),
         array(
-            'title' => 'Full-Cycle Development',
-            'content' => 'From ideation to deployment, we handle everything: UI/UX design, API integration, automation, and cloud-based architecture.
-Industry-compliant solutions tailored for security and regulatory standards (GDPR, HIPAA, PCI DSS).',
+            'title' => 'why_datum_software.items.1.title',
+            'content' => 'why_datum_software.items.1.content',
         ),
         array(
-            'title' => 'ROI You Can Measure',
-            'content' => 'Reduce software maintenance costs by 30-50% while improving performance. <br />
-Leverage data-driven insights to accelerate decision-making and innovation.',
+            'title' => 'why_datum_software.items.2.title',
+            'content' => 'why_datum_software.items.2.content',
         )
     ),
-)) ;
+));
 ?>
 
 
@@ -114,10 +111,10 @@ get_template_part('template-parts/content/info-section-list', null, array(
 ?>
 
 <?php get_template_part('template-parts/content/partners-about-datum'); ?>
-<?php get_template_part('template-parts/content/successful-stories-banking',null,array(
-    'title' => 'Success Stories in Banking',
-    'title_1' => 'Customizing a secure Amazon EKS workload platform for a Prestigious Banking Partner',
-    'title_2' => 'Redefining Banking Excellence: A Secure Landing Zone Transformation',
+<?php get_template_part('template-parts/content/successful-stories-banking', null, array(
+    'title' => 'banking_stories.title',
+    'title_1' => 'banking_stories.story_1',
+    'title_2' => 'banking_stories.story_2',
 )); ?>
 <?php get_template_part('template-parts/content/frequently-asked-questions', null, array(
     'items' => array(
@@ -148,9 +145,9 @@ get_template_part('template-parts/content/info-section-list', null, array(
     'text_title'=>'Software'
 )); ?>
 <?php get_template_part('template-parts/content/team', null, array(
-    'title' => 'Ready to Software?',
-    'content' => 'Talk with our expert to start your software journey today',
-    'btn_text' => 'Schedule a Free Strategy Session',
+    'title' => 'team_section.title_software',
+    'content' => 'team_section.content',
+    'btn_text' => 'cta.schedule',
     'btn_link' => '#'
 )); ?>
 <?php get_template_part('template-parts/content/back-to-top'); ?>

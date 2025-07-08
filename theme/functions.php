@@ -601,20 +601,41 @@ function datum_get_translation($key) {
 }
 
 function datum_translate($key) {
-    $lang = isset($_GET['lang']) ? $_GET['lang'] : 'en'; // hoặc lấy từ cookie, WPML, Polylang, v.v.
+    // Ưu tiên cookie, sau đó đến GET, cuối cùng là 'en'
+    if (isset($_COOKIE['datum_lang']) && in_array($_COOKIE['datum_lang'], ['en', 'vi'])) {
+        $lang = $_COOKIE['datum_lang'];
+    } elseif (isset($_GET['lang']) && in_array($_GET['lang'], ['en', 'vi'])) {
+        $lang = $_GET['lang'];
+    } else {
+        $lang = 'en';
+    }
 
+    // Static để cache bản dịch theo request
     static $translations = [];
-
-    if (empty($translations)) {
+    if (empty($translations[$lang])) {
         $path = get_stylesheet_directory() . "/languages/{$lang}.json";
         if (file_exists($path)) {
             $content = file_get_contents($path);
-            $translations = json_decode($content, true);
+            $translations[$lang] = json_decode($content, true);
+        } else {
+            $translations[$lang] = [];
         }
     }
 
-    return $translations[$key] ?? $key;
+    $keys = explode('.', $key);
+    $value = $translations[$lang];
+
+    foreach ($keys as $k) {
+        if (is_array($value) && isset($value[$k])) {
+            $value = $value[$k];
+        } else {
+            return $key; // Trả về chính key nếu không tìm thấy
+        }
+    }
+
+    return $value;
 }
+
 
 function datum_get_current_language() {
     return isset($_GET['lang']) && in_array($_GET['lang'], ['vi', 'en']) ? $_GET['lang'] : 'en';
