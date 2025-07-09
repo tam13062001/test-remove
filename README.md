@@ -177,3 +177,40 @@ Các thông tin về class:
 - Màu chủ đạo có giá trị là `primary`. Ví dụ: `text-primary`, `bg-primary`
 - Màu chứ cấu có giá trị là `secondary`. Ví dụ: `text-secondary`, `bg-secondary`
 - Bổ sung hình ảnh, video vào thư mục assets. Lưu ý: giảm kích thước xuống HD (720p)
+
+## Block
+
+Nội dung các trang sẽ có nội dung bao gồm các block. Block là khối nội dung giống 
+nhau về logic, có thể khác về nội dung text, hoặc phân bổ layout.
+
+Cấu trúc của một block như sau:
+
+```text
+.
+├── block.json
+├── edit.tsx
+├── editor.css
+├── index.tsx
+├── render.php
+└── style.css
+```
+Trong đó:
+- block.json: Mô tả block (metadata), chứa name, title, category, icon, attributes, editorScript, style, render, v.v. Đây là trung tâm kết nối các phần còn lại.
+- index.tsx: Entry point chính. Dùng để registerBlockType() với dữ liệu trong block.json và liên kết các component edit và save (hoặc chỉ edit nếu dynamic).
+- edit.tsx: Component React dùng để hiển thị và chỉnh sửa block trong trình soạn thảo Gutenberg. Không liên quan đến render phía front-end nếu dùng render.php.
+- editor.css: CSS dùng riêng cho block trong editor – giúp hiển thị giống ngoài front-end khi chỉnh sửa trong admin. Được liên kết qua editorStyle trong block.json.
+- style.css: CSS dùng chung cho cả front-end và editor. Được khai báo trong style trong block.json.
+- render.php: Nếu block là dynamic block, file này chứa hàm PHP để hiển thị block phía front-end. Nó được tham chiếu qua render trong block.json.
+
+Sau khi load block, cần chọn lại template cho trang sang Default Template:
+![alt text](docs/images/block.png "Title")
+
+## Đa ngôn ngữ:
+
+- Tạo taxonomy ngôn ngữ mới
+- Thêm trang cho từng ngôn ngữ
+- Xử lý rewrite url / permalink
+- Xử lý menu theo ngôn ngữ
+- Giao diện tìm kiếm theo ngôn ngữ (nếu có)
+- Giao diện đổi ngôn ngữ
+
