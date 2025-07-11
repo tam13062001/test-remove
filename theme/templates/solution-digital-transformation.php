@@ -3,15 +3,15 @@
 
 <?php get_template_part('template-parts/content/banner', null, array(
     'background_image' => get_assets_from_path('images/banner_solution_2.jpg'),
-    'title' => 'Empower your business with <br />cutting-edge technology to stay ahead in the digital era.',
-    'breadcrumbs' => array('Our Solution', 'Digital Transformation'),
+    'title' => 'banner.Digital.title',
+    'breadcrumbs' => array('breadcrumbs.solution', 'breadcrumbs.digital'),
 )); ?>
 
 <?php
 get_template_part('template-parts/content/call-to-action', null, array(
-    'content' => 'Leverage the power of technology to streamline operations, enhance customer experiences, and unlock new growth opportunities',
+    'content' =>  'hero.digital',
     'image_url' => get_assets_from_path('images/solution-digital.png'),
-    'cta_text' => 'Schedule a consultation with our expert',
+    'cta_text' => 'cta.schedule',
     'cta_link' => '#'
 ));
 ?>
@@ -80,24 +80,25 @@ get_template_part('template-parts/content/info-section-list', null, array(
 
 <?php
 get_template_part('template-parts/content/info-section-with-image', null, array(
-    'title' => 'Why Datum',
+    'title' => datum_get_translation('digital_whydatum.title'),
     'image_url' => get_assets_from_path('images/digital-whydatum.png'),
     'items' => array(
         array(
-            'title' => ' Top-level experts',
-            'content' => 'Our team consists of top-level professionals with specialized expertise, solution architects, designers, content strategists, software architects, and developers.',
+            'title' => datum_get_translation('digital_whydatum.items.0.title'),
+            'content' => datum_get_translation('digital_whydatum.items.0.content'),
         ),
         array(
-            'title' => 'Industry specialized expertise',
-            'content' => 'Ensure security and compliance standards in highly demanding industries such as digital banking while maintaining the platform’s scalability and agility.',
+            'title' => datum_get_translation('digital_whydatum.items.1.title'),
+            'content' => datum_get_translation('digital_whydatum.items.1.content'),
         ),
         array(
-            'title' => 'Your partner in growth',
-            'content' => 'Work closely with your team and other developers even after the platform completion to guarantee implementation and scale up according to your specific needs. ',
+            'title' => datum_get_translation('digital_whydatum.items.2.title'),
+            'content' => datum_get_translation('digital_whydatum.items.2.content'),
         )
     ),
-)) ;
+));
 ?>
+
 
 <?php get_template_part('template-parts/content/successful-stories-banking', null, array(
     'title' => 'banking_stories.title',
@@ -132,9 +133,9 @@ get_template_part('template-parts/content/info-section-with-image', null, array(
 )); ?>
 <?php get_template_part('template-parts/content/Expert-insight'); ?>
 <?php get_template_part('template-parts/content/team', null, array(
-    'title' => 'Get consulted by our expert',
-    'content' => 'Talk with our expert to start building your platform',
-    'btn_text' => 'Schedule a consultation with our expert',
+    'title' => 'team_section.get_consulted',
+    'content' => 'team_section.content_1',
+    'btn_text' => 'cta.schedule',
     'btn_link' => '#'
 )); ?>
 <?php get_template_part('template-parts/content/back-to-top'); ?>

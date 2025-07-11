@@ -3,7 +3,7 @@
 <?php get_header(); ?>
 
 <?php get_template_part('template-parts/content/banner', null, array(
-    'title' => 'Datum News & Events',
+    'title' => 'banner.NewsEvents.title',
     'background_image' => get_assets_from_path('images/News-Events.jpg')
 )); ?>
 

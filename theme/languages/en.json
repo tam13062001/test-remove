@@ -32,7 +32,10 @@
     "homepage": "Datum is your trusted partner in digital transformation, seamlessly integrating Cloud Solutions, Software Engineering, and Data & AI to help businesses scale, innovate, and stay ahead.",
     "cloud":"Transform your cloud infrastructure from a technical necessity to a strategic powerhouse – engineered to grow, adapt, and drive your business forward.",
     "data" :"Transform raw data into actionable insights and intelligent automation—fueling smarter decisions, seamless operations, and sustainable growth.",
-    "software": "Elevate your software from a functional tool to a strategic driver of efficiency, innovation, and growth."
+    "software": "Elevate your software from a functional tool to a strategic driver of efficiency, innovation, and growth.",
+    "integration": "Unify your business systems, streamline operations, and enhance data flow with seamless integration solutions that drive efficiency and innovation.",
+    "digital": "Leverage the power of technology to streamline operations, enhance customer experiences, and unlock new growth opportunities",
+    "platform": "Empower your infrastructure with agility, scalability, security, and efficiency—boosting productivity while reducing overhead."
   },
   "cta.schedule": "Schedule a consultation with our expert",
   "section.what_sets_us_apart": "What Sets Us Apart",
@@ -117,13 +120,54 @@
     },
     "software": {
       "title": "Pioneering software engineering for Future-Ready Enterprises"
+    },
+    "Digital": {
+      "title": "Empower your business with cutting-edge technology to stay ahead in the digital era."
+    },
+    "Integration": {
+      "title": "Seamless Integration for Scalable & Secure Digital Transformation"
+    },
+    "Platform": {
+      "title": "Pioneering software engineering for Future-Ready Enterprises"
+    },
+    "Insurance": {
+      "title": "Insurance"
+    },
+    "SolarEnergy": {
+      "title": "Solar Energy"
+    },
+    "Banking": {
+      "title": "Banking"
+    },
+    "PremierBanking": {
+      "title": "Redefining Banking Excellence: A Secure Landing Zone Transformation"
+    },
+    "PlatformCustomization": {
+      "title": "Customizing a secure Amazon EKS workload platform for a Prestigious Banking Partner"
+    },
+    "NewsEvents": {
+      "title": "News & Events"
     }
   },
   "breadcrumbs": {
     "services": "Our Services",
     "cloud": "Cloud",
     "data_ai": "Data & AI",
-    "software": "Software"
+    "software": "Software",
+
+    "solution": "Our Solution",
+    "digital": "Digital Transformation",
+    "integration": "Integration",
+    "platform": "Platform Engineering",
+
+    "industry": "Industry",
+    "banking": "Banking",
+    "insurance": "Insurance",
+    "solar_energy": "Solar Energy",
+
+    "successful_stories": "Successful Stories",
+    "premier_banking": "Premier Banking",
+    "platform_customization": "Platform Customization"
   },
   "cloud_now": {
     "title": "Cloud now",
@@ -174,7 +218,9 @@
     "title_cloud": "Ready to Cloud?",
     "title_data_ai": "Ready to Innovate with AI?",
     "title_software": "Ready to Software?",
-    "content": "Talk with our expert to start your cloud journey today"
+    "get_consulted": "Get consulted by our expert",
+    "content": "Talk with our expert to start your cloud journey today",
+    "content_1": "Talk with our expert to start building your platform"
   },
 
   "data_ai_percentage": {
@@ -253,5 +299,272 @@
         "content": "Reduce software maintenance costs by 30-50% while improving performance.Leverage data-driven insights to accelerate decision."
       }
     ]
+  },
+
+  "integration_whydatum": {
+    "title": "Why Datum",
+    "items": [
+      {
+        "title": "Top-level experts",
+        "content": "Our team consists of top-level professionals with specialized expertise, solution architects, designers, content strategists, software architects, and developers."
+      },
+      {
+        "title": "Industry specialized expertise",
+        "content": "Ensure security and compliance standards in highly demanding industries such as digital banking while maintaining the platform’s scalability and agility."
+      },
+      {
+        "title": "Your partner in growth",
+        "content": "Work closely with your team and other developers even after the platform completion to guarantee implementation and scale up according to your specific needs."
+      }
+    ]
+  },
+
+  "why_datum_solution": {
+    "title": "Why Datum",
+    "items": [
+      {
+        "title": "Top-level experts",
+        "content": "Our team consists of top-level professionals with specialized expertise, solution architects, designers, content strategists, software architects, and developers."
+      },
+      {
+        "title": "Industry specialized expertise",
+        "content": "Ensure security and compliance standards in highly demanding industries such as digital banking while maintaining the platform’s scalability and agility."
+      },
+      {
+        "title": "Your partner in growth",
+        "content": "Work closely with your team and other developers even after the platform completion to guarantee implementation and scale up according to your specific needs."
+      }
+    ]
+  },
+
+  "digital_whydatum": {
+    "title": "Why Datum",
+    "items": [
+      {
+        "title": "Top-level experts",
+        "content": "Our team consists of top-level professionals with specialized expertise, solution architects, designers, content strategists, software architects, and developers."
+      },
+      {
+        "title": "Industry specialized expertise",
+        "content": "Ensure security and compliance standards in highly demanding industries such as digital banking while maintaining the platform’s scalability and agility."
+      },
+      {
+        "title": "Your partner in growth",
+        "content": "Work closely with your team and other developers even after the platform completion to guarantee implementation and scale up according to your specific needs."
+      }
+    ]
+  },
+
+  "industry_insurance": {
+    "title": "Driving Innovation and Insight with AI",
+    "heading": "Datum Consulting enables insurers to leverage Generative AI for operational excellence, optimizing risk assessment, claims processing, customer engagement, and compliance while driving growth through transformative technology solutions.",
+    "items": [
+      {
+        "title": "Navigating the Modern Insurance Landscape",
+        "content": "Traditional insurance operations, often reliant on manual processes and disparate data systems, can lead to inefficiencies, delayed insights, and a reactive approach to customer needs. The demand for a \"Modern Insurance Experience\" necessitates agile, data-driven solutions that can provide rapid insights, automate complex tasks, and deliver superior customer interactions."
+      },
+      {
+        "title": "Our Approach: AI-Powered Solutions for Insurance",
+        "content": "Datum Consulting transforms insurance operations and customer experiences using advanced, secure, and scalable technology platforms."
+      }
+    ],
+    "cta_text": "Download the full case study"
+  },
+
+  "industry_banking": {
+    "title": "Powering the Future of Finance",
+    "heading": "Banks today face mounting challenges—from regulations and security threats to digital and operational demands. At Datum Consulting, we use our tech expertise to help them innovate, stay secure, and grow.",
+    "items": [
+      {
+        "title": "Navigating the Modern Banking Environment",
+        "content": "Outdated banking infrastructure brings security risks, governance issues, and sluggish digital growth. To deliver a modern banking experience, institutions need scalable, compliant tech that enables microservices, faster rollouts, and better customer satisfaction."
+      },
+      {
+        "title": "Our Approach: Secure, Scalable, and Agile Banking Solutions",
+        "content": "Datum Consulting helps top financial institutions modernize their IT infrastructure with secure, automated platforms built for banking’s unique needs."
+      }
+    ],
+    "cta_text": "Download the full case study",
+    "cta_link": "#"
+  },
+
+  "industry_solar": {
+    "title": "Optimizing Renewable Assets and <br> Market Strategies",
+    "heading": "The solar energy industry is growing rapidly, driven by environmental goals, technology, and decarbonization efforts. Datum Consulting helps solar enterprises optimize their investments through advanced technologies and data-driven strategies that address challenges in energy dispatch, market pricing, and scalable platforms.",
+    "items": [
+      {
+        "title": "Navigating the Dynamic Solar Energy Market",
+        "content": "<p>The traditional energy market was not built for the variability of renewables or the flexibility offered by battery storage. Solar farms and battery manufacturers face a critical need for sophisticated tools to:</p><ul class='lg:p-4 space-y-2'><li>• Accurately forecast solar generation and demand.</li><li>• Intelligently manage battery charging and discharging cycles.</li><li>• Optimize energy sales to the grid based on real-time and predicted market prices.</li><li>• Simulate various operational and commercial scenarios to de-risk investments.</li><li>• Harness immense volumes of operational and market data for strategic insights.</li></ul><p>Balancing battery storage, grid energy sales, and battery health optimization requires Machine Learning to handle diverse data like weather, peak usage, and seasonal variations for efficient solar energy trading.</p>"
+      },
+      {
+        "title": "Our Approach: Advanced Analytics and Cloud-Based Platforms for <br> Solar Optimization",
+        "content": "Datum Consulting collaborates with solar innovators, merging expertise in cloud engineering, machine learning, and big data to create technologies optimizing renewable energy management and next-generation solutions."
+      }
+    ],
+    "cta_text": "Download the full case study"
+  },
+
+  "leadership_section": {
+    "title": "Thought Leadership",
+    "heading": "The Transformative Potential of Generative AI",
+    "heading_banking": "Navigating the Era of Generative AI in Banking",
+    "content": "Generative AI is revolutionizing insurance with personalized policies, automated claims, fraud detection, and intelligent support. Datum Consulting leads this shift using ethical AI practices informed by MITRE ATLAS, prioritizing innovation, compliance with regulations like AI TRISM and the EU AI Act, and secure, scalable solutions tailored to the industry's unique challenges.",
+    "content_bank":"Generative AI is revolutionizing banking, unlocking new potential in service, efficiency, fraud detection, and personalization. Datum Consulting is leading this shift, investing in expert teams with deep knowledge in AI, data security, and platform engineering. We go beyond technology, staying attuned to evolving business and regulatory landscapes—to deliver AI solutions that are not only cutting-edge, but secure, responsible, and strategically aligned with the future of banking.",
+    "content_energy": ""
+  },
+
+  "impact_section": {
+    "title": "Driving Tangible Impact",
+    "heading": "Our partnerships with insurance clients have consistently yielded significant outcomes, demonstrating our commitment to impactful solutions:",
+    "items": [
+      {
+        "title": "Enhanced Data Accessibility",
+        "content": "Enabling leadership and management to rapidly access and analyze critical business data through intuitive, conversational interfaces."
+      },
+      {
+        "title": "Accelerated Decision-Making",
+        "content": "Providing quick, accurate insights and automated reports, reducing response times for complex queries."
+      },
+      {
+        "title": "Improved Operational Efficiency",
+        "content": "Automating data retrieval and report generation, freeing up resources for more strategic tasks."
+      },
+      {
+        "title": "Strengthened Compliance & Security",
+        "content": "Implementing robust security measures and RBAC to protect sensitive financial data and ensure adherence to industry regulations."
+      },
+      {
+        "title": "Scalability for Future Growth",
+        "content": "Designing solutions that can scale to accommodate growing data volumes and evolving business needs."
+      }
+    ]
+  },
+
+  "insurance_success": {
+    "title": "Successful Stories in Insurance",
+    "description": "Our expertise is best demonstrated through our proven track record. We've successfully guided leading insurance companies through complex data and AI transformations:",
+    "case_study": {
+      "title": "GenAI Sales Dashboard POC for a Leading Insurance Company in Vietnam",
+      "content": "The solution enabled executives and managers to access real-time sales data through a user-friendly conversational interface, automatically generating summaries and charts for improved decision-making. It achieved a high accuracy rate, resolving 95% of queries within 30 seconds, with a target of 15 seconds for most queries while allowing longer resolution times for complex ones."
+    }
+  },
+
+  "impact_section_banking": {
+    "title": "Driving Tangible Impact",
+    "heading": "Our partnerships with banking clients have consistently yielded significant outcomes, demonstrating our commitment to impactful solutions:",
+    "items": [
+      {
+        "title": "Strengthened Security & Compliance",
+        "content": "Elimination of vulnerabilities and full alignment with banking regulations, reinforcing trust and operational integrity."
+      },
+      {
+        "title": "Accelerated Innovation",
+        "content": "Faster feature rollouts and enhanced agility through automated pipelines."
+      },
+      {
+        "title": "Optimized Infrastructure",
+        "content": "Streamlined workload management and efficient migration of on-premise applications, supporting initiatives like front-end modernization."
+      },
+      {
+        "title": "Sustained Growth",
+        "content": "Achieving remarkable platform uptime (e.g., 99.9%) and optimizing resource utilization to position banks for continuous success."
+      },
+      {
+        "title": "Scalability for New Products",
+        "content": "Enabling the seamless integration and support for new banking products and services."
+      }
+    ]
+  },
+
+  "impact_section_energy": {
+    "title": "Driving Tangible Impact",
+    "heading": "Our partnerships with banking clients have consistently yielded significant outcomes, demonstrating our commitment to impactful solutions:",
+    "items": [
+      {
+        "title": "Enhanced Revenue Streams",
+        "content": "Maximizing profitability by intelligently timing energy sales and optimizing battery utilization."
+      },
+      {
+        "title": "Improved Operational Efficiency",
+        "content": "Streamlining energy management processes through automation and data-driven insights."
+      },
+      {
+        "title": "Strategic Decision Support",
+        "content": "Providing robust analytical tools for simulating market scenarios and de-risking investment and operational strategies."
+      },
+      {
+        "title": "Scalability for Growth",
+        "content": "Building platforms designed to grow with the expanding scale of solar farms and battery deployments."
+      }
+    ]
+  },
+  "strategic_coverage": {
+    "title": "Strategic Coverage and Local Expertise",
+    "content": "With strategic APAC coverage, Datum Consulting merges global expertise and local insight to craft cutting-edge, compliant solutions. Our diverse teams understand regional nuances, ensuring every banking initiative aligns with local regulations and cultural context—delivering truly relevant, high-impact results for our clients across the Asia-Pacific landscape."
+  },
+
+  "solar_commitment": {
+    "title": "Our Commitment to a Greener Planet",
+    "content": "Datum Consulting fosters long-term solar partnerships, offering intellectual and human capital to support innovative green projects, helping enterprises lead the global transition to sustainable energy and maximize future possibilities."
+  },
+
+  "solar_success": {
+    "title": "Successful Stories in Solar Energy",
+    "intro": "Our expertise is highlighted through our work with pioneering clients in the solar sector:",
+    "case_study": {
+      "title": "A Solar Energy Startup in Australia",
+      "content": "We developed a cloud-based machine learning platform for an Australian solar innovator to optimize battery usage and energy sales. The system simulated market scenarios, maximized revenue through efficient storage and grid provision, and accounted for weather, demand, and grid stability in a regulated market."
+    }
+  },
+
+  "solar_footer": {
+    "content": "At Datum Consulting, we are dedicated to helping solar energy enterprises not just adapt, but lead, in the transition to a sustainable and optimized energy future. Partner with us to build a future-proof, secure, and revenue-maximizing solar energy ecosystem."
+  },
+
+  "events": {
+    "title": "Upcoming Events",
+    "tag": "Upcoming",
+    "headline": "Headline sample for the upcoming Datum event.",
+    "day": "20",
+    "month": "MAY",
+    "year": "2025"
+  },
+
+  "call_to_action_story": {
+    "PremierBanking":{
+      "title": "Call for Change",
+      "content": "Facing security vulnerabilities, governance challenges, and the need for a digital refresh, a leading bank embarked on a Landing Zone transformation with Datum Consulting. By implementing an AWS Landing Zone and EKS Workload Platform, the bank achieved seamless cloud migration, cost optimization, and regulatory compliance. This modernized infrastructure enabled secure multi-tenancy hosting, automated pipelines, and efficient deployment of banking microservices, powering the Better Banking Experience (BBX) initiative.",
+      "cta_text": "Download the full case study"
+    },
+    "PlatformCustomization": {
+      "title": "Call for Change",
+      "content": "A prestigious banking partner needed a secure, scalable platform for their enterprise microservices. Datum Consulting delivered a customized Amazon EKS workload platform, ensuring high availability, security, and compliance with industry standards. This platform supports the bank's digital transformation, enabling rapid deployment of new services and enhancing customer experiences.",
+      "cta_text": "Download the full case study"
+    }
+  },
+
+  "story": {
+    "PremierBanking": {
+      "tech_meets_banking": {
+        "title": "When Tech Meets Banking Excellence",
+        "heading": "",
+        "items": [
+          "The bank faces critical challenges in security, resource management, and compliance, hindering its digital transformation.",
+          "AWS Landing Zone provides a scalable, secure foundation to streamline governance, automate infrastructure deployment, and enforce best practices",
+          "By integrating structured controls, centralized auditing, and optimized resource allocation, the bank can modernize digital channels, accelerate innovation, and ensure seamless adoption of next-generation banking solutions."
+        ]
+      },
+      "valuable_difference": {
+        "title": "A Valuable Difference",
+        "content": "The project successfully eliminated security vulnerabilities, enforced role-based access and least privilege policies, and ensured full alignment with Philippine banking regulations. Automated CI/CD pipelines and zero-downtime deployments accelerated innovation, while provisioning 30+ environments streamlined workload management. Large on-prem applications were seamlessly migrated, supporting BBX initiatives such as frontend modernization and backend-for-frontend integration. With 99.9% platform uptime, optimized resource utilization, and significantly reduced manual efforts, the bank is now equipped for sustained growth. Datum Consulting has become a strategic, long-term partner, continuously supporting new migrations and future banking advancements.",
+        "percent": "99.9%",
+        "percent_content": "Platform <br class=\"hidden lg:block\" />performance uptime "
+      },
+      "lessons_learned": {
+        "title": "Lessons Learned",
+        "heading": "",
+        "content": "A key takeaway from this initiative was the importance of strong collaboration between the bank and its third-party technology providers to prevent misalignment and delays. The integration of off-the-shelf banking products proved more complex than anticipated, requiring additional customization and effort to meet the bank’s operational needs. Through this experience, the bank has strengthened its approach to vendor engagement and technology adoption, ensuring greater agility and efficiency in future transformation initiatives."
+      }
+    }
   }
 }

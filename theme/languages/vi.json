@@ -14,6 +14,7 @@
   "menu.industry.banking": "Ngân hàng",
   "menu.insights": "Chuyên môn",
   "menu.industry-insights": "Thông tin ngành",
+  "menu.insights.industry-insights": "Góc nhìn ngành",
   "menu.insights.news-events": "Tin tức & Sự kiện",
   "menu.insights.knowledge": "Tri thức Datum",
   "menu.about": "Về chúng tôi",
@@ -33,7 +34,10 @@
     "homepage": "Datum là đối tác đáng tin cậy của bạn trong hành trình chuyển đổi số, tích hợp liền mạch các giải pháp Đám mây, Kỹ thuật phần mềm và Dữ liệu & AI để giúp doanh nghiệp mở rộng quy mô, đổi mới và dẫn đầu.",
     "cloud" :"Biến hạ tầng đám mây của bạn từ một nhu cầu kỹ thuật thành một nền tảng chiến lược – được thiết kế để phát triển, thích ứng và thúc đẩy doanh nghiệp tiến về phía trước.",
     "data" :"Chuyển đổi dữ liệu thô thành những hiểu biết có thể hành động và tự động hóa thông minh – thúc đẩy quyết định thông minh, vận hành liền mạch và tăng trưởng bền vững.",
-    "software": "Nâng cao phần mềm của bạn từ một công cụ chức năng thành động lực chiến lược cho hiệu quả, đổi mới và tăng trưởng."
+    "software": "Nâng cao phần mềm của bạn từ một công cụ chức năng thành động lực chiến lược cho hiệu quả, đổi mới và tăng trưởng.",
+    "integration": "Hợp nhất các hệ thống doanh nghiệp, tinh giản quy trình vận hành và nâng cao luồng dữ liệu với các giải pháp tích hợp liền mạch thúc đẩy hiệu quả và đổi mới.",
+    "platform": "Tăng cường hạ tầng của bạn với sự linh hoạt, khả năng mở rộng, bảo mật và hiệu quả — nâng cao năng suất trong khi giảm chi phí vận hành.",
+    "digital": "Tận dụng sức mạnh của công nghệ để tối ưu hóa vận hành, nâng cao trải nghiệm khách hàng và mở ra những cơ hội tăng trưởng mới."
   },
   "cta.schedule": "Đặt lịch tư vấn với chuyên gia của chúng tôi",
   "section.what_sets_us_apart": "Điều gì làm chúng tôi khác biệt",
@@ -108,22 +112,63 @@
     "description": "Chúng tôi đang mở rộng khắp khu vực Châu Á – Thái Bình Dương với chiến lược rõ ràng, sự tận tâm với từng khách hàng và mục tiêu cụ thể. Các giải pháp của chúng tôi được phát triển từ sự thấu hiểu địa phương và hướng đến tạo ra những giá trị thiết thực cho toàn khu vực."
   },
 
-  "banner": {
+"banner": {
     "cloud": {
-      "title": "Thiết kế hệ sinh thái đám mây phù hợp với tham vọng của bạn"
+      "title": "Thiết kế hệ sinh thái đám mây mở rộng theo tham vọng của bạn"
     },
     "data_ai": {
-      "title": "Thúc đẩy đổi mới sáng tạo dựa trên dữ liệu với trí tuệ nhân tạo"
+      "title": "Thúc đẩy đổi mới dựa trên dữ liệu với trí tuệ nhân tạo"
     },
     "software": {
-      "title": "Kỹ thuật phần mềm tiên phong cho doanh nghiệp sẵn sàng tương lai"
+      "title": "Tiên phong kỹ thuật phần mềm cho doanh nghiệp sẵn sàng tương lai"
+    },
+    "Digital": {
+      "title": "Tăng cường doanh nghiệp bằng công nghệ tiên tiến để dẫn đầu trong kỷ nguyên số"
+    },
+    "Integration": {
+      "title": "Tích hợp liền mạch cho chuyển đổi số mở rộng và bảo mật"
+    },
+    "Platform": {
+      "title": "Tiên phong kỹ thuật phần mềm cho doanh nghiệp sẵn sàng tương lai"
+    },
+    "Insurance": {
+      "title": "Bảo hiểm"
+    },
+    "SolarEnergy": {
+      "title": "Năng lượng mặt trời"
+    },
+    "Banking": {
+      "title": "Ngân hàng"
+    },
+    "PremierBanking": {
+      "title": "Tái Định Nghĩa Sự Xuất Sắc Trong Ngân Hàng: Chuyển Đổi Khu Vực An Toàn"
+    },
+    "PlatformCustomization": {
+      "title": "Tùy chỉnh nền tảng Amazon EKS an toàn cho một đối tác ngân hàng uy tín"
+    },
+    "NewsEvents": {
+      "title": "Tin tức & Sự kiện"
     }
   },
   "breadcrumbs": {
-    "services": "Dịch vụ",
+    "services": "Dịch vụ của chúng tôi",
     "cloud": "Đám mây",
-    "data_ai": "Dữ liệu & AI",
-    "software": "Phát triển phần mềm"
+    "data_ai": "Dữ liệu & Trí tuệ nhân tạo",
+    "software": "Phần mềm",
+
+    "solution": "Giải pháp của chúng tôi",
+    "digital": "Chuyển đổi số",
+    "integration": "Tích hợp",
+    "platform": "Nền tảng kỹ thuật",
+
+    "industry": "Ngành",
+    "banking": "Ngân hàng",
+    "insurance": "Bảo hiểm",
+    "solar_energy": "Năng lượng mặt trời",
+
+    "successful_stories": "Câu Chuyện Thành Công",
+    "premier_banking": "Ngân Hàng Hàng Đầu",
+    "platform_customization": "Tùy chỉnh nền tảng"
   },
   "cloud_now": {
     "title": "Thực trạng đám mây hiện nay",
@@ -174,7 +219,9 @@
     "title_cloud": "Sẵn sàng chuyển lên đám mây?",
     "title_data_ai": "Sẵn sàng đổi mới với AI?",
     "title_software": "Sẵn sàng phát triển phần mềm?",
-    "content": "Trao đổi với chuyên gia của chúng tôi để bắt đầu hành trình chuyển đổi số"
+    "get_consulted": "Nhận tư vấn từ chuyên gia của chúng tôi",
+    "content": "Trao đổi với chuyên gia của chúng tôi để bắt đầu hành trình chuyển đổi số",
+    "content_1": "Trao đổi với chuyên gia của chúng tôi để bắt đầu xây dựng nền tảng của bạn"
   },
 
   "data_ai_percentage": {
@@ -253,5 +300,273 @@
         "content": "Giảm chi phí bảo trì phần mềm từ 30–50% trong khi cải thiện hiệu suất.\nTận dụng dữ liệu để đẩy nhanh ra quyết định và đổi mới."
       }
     ]
+  },
+
+  "integration_whydatum": {
+    "title": "Tại sao chọn Datum",
+    "items": [
+      {
+        "title": "Chuyên gia hàng đầu",
+        "content": "Đội ngũ của chúng tôi gồm những chuyên gia hàng đầu với chuyên môn sâu: kiến trúc sư giải pháp, thiết kế, chiến lược nội dung, kiến trúc phần mềm và lập trình viên."
+      },
+      {
+        "title": "Chuyên môn theo ngành",
+        "content": "Đảm bảo các tiêu chuẩn bảo mật và tuân thủ trong các ngành yêu cầu cao như ngân hàng số, đồng thời duy trì khả năng mở rộng và linh hoạt của nền tảng."
+      },
+      {
+        "title": "Đối tác phát triển của bạn",
+        "content": "Làm việc chặt chẽ với đội ngũ của bạn và các nhà phát triển khác ngay cả sau khi hoàn thành để đảm bảo triển khai thành công và mở rộng phù hợp với nhu cầu cụ thể."
+      }
+    ]
+  },
+
+  "why_datum_solution": {
+    "title": "Tại sao chọn Datum",
+    "items": [
+      {
+        "title": "Chuyên gia hàng đầu",
+        "content": "Đội ngũ của chúng tôi gồm các chuyên gia hàng đầu với kiến thức chuyên sâu: kiến trúc sư giải pháp, nhà thiết kế, chiến lược nội dung, kiến trúc sư phần mềm và lập trình viên."
+      },
+      {
+        "title": "Hiểu biết chuyên sâu theo ngành",
+        "content": "Đảm bảo tiêu chuẩn bảo mật và tuân thủ trong các ngành yêu cầu cao như ngân hàng số, đồng thời duy trì khả năng mở rộng và linh hoạt."
+      },
+      {
+        "title": "Đối tác phát triển cùng bạn",
+        "content": "Hợp tác chặt chẽ với đội ngũ của bạn và các lập trình viên khác ngay cả sau khi triển khai nền tảng, nhằm đảm bảo khả năng vận hành và mở rộng theo nhu cầu cụ thể."
+      }
+    ]
+  },
+
+  "digital_whydatum": {
+    "title": "Tại sao chọn Datum",
+    "items": [
+      {
+        "title": "Chuyên gia hàng đầu",
+        "content": "Đội ngũ của chúng tôi gồm các chuyên gia giàu kinh nghiệm, kiến trúc sư giải pháp, nhà thiết kế, chuyên gia nội dung và lập trình viên."
+      },
+      {
+        "title": "Hiểu rõ ngành nghề",
+        "content": "Đảm bảo tiêu chuẩn bảo mật và tuân thủ trong các ngành yêu cầu cao như ngân hàng số, đồng thời duy trì khả năng mở rộng linh hoạt."
+      },
+      {
+        "title": "Đối tác phát triển bền vững",
+        "content": "Luôn đồng hành cùng đội ngũ của bạn kể cả sau khi triển khai, để đảm bảo áp dụng hiệu quả và mở rộng theo nhu cầu thực tế."
+      }
+    ]
+  },
+
+  "industry_insurance": {
+    "title": "Thúc đẩy đổi mới và hiểu biết với AI",
+    "heading": "Datum Consulting giúp các công ty bảo hiểm tận dụng AI tạo sinh để nâng cao hiệu quả hoạt động, tối ưu hóa đánh giá rủi ro, xử lý yêu cầu bồi thường, tương tác khách hàng và tuân thủ, đồng thời thúc đẩy tăng trưởng thông qua các giải pháp công nghệ chuyển đổi.",
+    "items": [
+      {
+        "title": "Định hướng trong bối cảnh bảo hiểm hiện đại",
+        "content": "Hoạt động bảo hiểm truyền thống, thường dựa vào quy trình thủ công và hệ thống dữ liệu rời rạc, có thể gây ra sự kém hiệu quả, chậm trễ trong phân tích và cách tiếp cận bị động với nhu cầu khách hàng. Nhu cầu về “Trải nghiệm bảo hiểm hiện đại” đòi hỏi các giải pháp linh hoạt, dựa trên dữ liệu có khả năng cung cấp phân tích nhanh chóng, tự động hóa tác vụ phức tạp và mang lại tương tác khách hàng vượt trội."
+      },
+      {
+        "title": "Phương pháp của chúng tôi: Giải pháp AI cho ngành bảo hiểm",
+        "content": "Datum Consulting chuyển đổi hoạt động và trải nghiệm khách hàng trong ngành bảo hiểm thông qua các nền tảng công nghệ tiên tiến, bảo mật và mở rộng linh hoạt."
+      }
+    ],
+    "cta_text": "Tải xuống toàn bộ case study"
+  },
+
+  "industry_banking": {
+    "title": "Thúc đẩy tương lai của tài chính",
+    "heading": "Các ngân hàng hiện nay đang đối mặt với nhiều thách thức—từ quy định, mối đe dọa an ninh đến yêu cầu chuyển đổi số và vận hành. Tại Datum Consulting, chúng tôi sử dụng chuyên môn công nghệ để giúp họ đổi mới, an toàn và phát triển.",
+    "items": [
+      {
+        "title": "Vượt qua thách thức trong ngành ngân hàng hiện đại",
+        "content": "Hạ tầng ngân hàng lỗi thời kéo theo các rủi ro về bảo mật, vấn đề quản trị và tốc độ phát triển số chậm chạp. Để mang đến trải nghiệm ngân hàng hiện đại, các tổ chức cần công nghệ có khả năng mở rộng, tuân thủ quy định và hỗ trợ triển khai nhanh, hiệu quả và nâng cao sự hài lòng của khách hàng."
+      },
+      {
+        "title": "Phương pháp của chúng tôi: Giải pháp ngân hàng an toàn, linh hoạt và dễ mở rộng",
+        "content": "Datum Consulting giúp các tổ chức tài chính hàng đầu hiện đại hóa hạ tầng CNTT với các nền tảng tự động hóa, an toàn và được thiết kế phù hợp với đặc thù ngành ngân hàng."
+      }
+    ],
+    "cta_text": "Tải toàn bộ case study",
+    "cta_link": "#"
+  },
+
+  "industry_solar": {
+    "title": "Tối ưu hóa tài sản năng lượng tái tạo <br> và  chiến lược thị trường",
+    "heading": "Ngành năng lượng mặt trời đang phát triển mạnh mẽ, được thúc đẩy bởi các mục tiêu môi trường, công nghệ và nỗ lực khử cacbon. Datum Consulting hỗ trợ các doanh nghiệp năng lượng mặt trời tối ưu hóa khoản đầu tư của họ thông qua công nghệ tiên tiến và chiến lược dựa trên dữ liệu nhằm giải quyết các thách thức trong phân phối năng lượng, định giá thị trường và nền tảng có khả năng mở rộng.",
+    "items": [
+      {
+        "title": "Điều hướng thị trường năng lượng mặt trời đầy biến động",
+        "content": "<p>Thị trường năng lượng truyền thống không được thiết kế để xử lý sự biến động của năng lượng tái tạo hay tính linh hoạt của pin lưu trữ. Các trang trại năng lượng mặt trời và nhà sản xuất pin đang đối mặt với nhu cầu cấp thiết về các công cụ tiên tiến để:</p><ul class='lg:p-4 space-y-2'><li>• Dự báo chính xác sản lượng điện mặt trời và nhu cầu.</li><li>• Quản lý thông minh chu kỳ sạc và xả pin.</li><li>• Tối ưu hóa việc bán điện lên lưới dựa trên giá thị trường thực tế và dự đoán.</li><li>• Mô phỏng các kịch bản hoạt động và thương mại để giảm rủi ro đầu tư.</li><li>• Khai thác khối lượng lớn dữ liệu vận hành và thị trường để đưa ra chiến lược hiệu quả.</li></ul><p>Việc cân bằng giữa lưu trữ pin, bán điện lên lưới và tối ưu hóa tuổi thọ pin đòi hỏi Machine Learning xử lý dữ liệu đa dạng như thời tiết, giờ cao điểm, và biến động theo mùa nhằm giao dịch năng lượng mặt trời hiệu quả.</p>"
+      },
+      {
+        "title": "Cách tiếp cận của chúng tôi: Phân tích nâng cao và nền tảng đám mây cho tối ưu hóa năng lượng mặt trời",
+        "content": "Datum Consulting hợp tác với các đơn vị đổi mới trong lĩnh vực năng lượng mặt trời, kết hợp chuyên môn về kỹ thuật đám mây, machine learning và dữ liệu lớn để tạo ra các công nghệ tối ưu hóa quản lý năng lượng tái tạo và giải pháp thế hệ tiếp theo."
+      }
+    ],
+    "cta_text": "Tải xuống case study đầy đủ"
+  },
+
+  "leadership_section": {
+    "title": "Lãnh đạo tư duy",
+    "heading": "Tiềm năng chuyển đổi của Generative AI",
+    "heading_banking": "Dẫn lối trong kỷ nguyên AI tạo sinh của ngành ngân hàng",
+    "content": "Generative AI đang cách mạng hóa ngành bảo hiểm với các chính sách cá nhân hóa, xử lý yêu cầu tự động, phát hiện gian lận và hỗ trợ thông minh. Datum Consulting dẫn đầu xu hướng này bằng cách sử dụng các phương pháp AI đạo đức được thông tin bởi MITRE ATLAS, ưu tiên đổi mới, tuân thủ các quy định như AI TRISM và Đạo luật AI của EU, và cung cấp các giải pháp an toàn, có khả năng mở rộng phù hợp với những thách thức riêng của ngành.",
+    "content_banking": "Generative AI đang cách mạng hóa ngành ngân hàng, mở ra tiềm năng mới trong dịch vụ, hiệu quả vận hành, phát hiện gian lận và cá nhân hóa. Datum Consulting đang dẫn đầu làn sóng này, đầu tư vào đội ngũ chuyên gia giàu kinh nghiệm trong lĩnh vực AI, bảo mật dữ liệu và kỹ thuật nền tảng. Chúng tôi không chỉ mang đến công nghệ tiên tiến, mà còn thấu hiểu bối cảnh kinh doanh và quy định đang thay đổi—để cung cấp các giải pháp AI không chỉ hiện đại, mà còn an toàn, có trách nhiệm và phù hợp chiến lược với tương lai ngành ngân hàng.",
+    "content_energy": ""
+  },
+  
+  "impact_section": {
+    "title": "Tạo ra Tác động Thực tế",
+    "heading": "Quan hệ hợp tác của chúng tôi với các khách hàng trong ngành bảo hiểm đã liên tục mang lại những kết quả đáng kể, thể hiện cam kết của chúng tôi đối với các giải pháp tạo ra giá trị thực tiễn:",
+    "items": [
+      {
+        "title": "Tăng khả năng truy cập dữ liệu",
+        "content": "Giúp lãnh đạo và quản lý truy cập và phân tích nhanh chóng dữ liệu kinh doanh quan trọng thông qua giao diện đối thoại trực quan."
+      },
+      {
+        "title": "Tăng tốc quá trình ra quyết định",
+        "content": "Cung cấp thông tin chi tiết nhanh chóng, chính xác và báo cáo tự động, rút ngắn thời gian phản hồi cho các truy vấn phức tạp."
+      },
+      {
+        "title": "Nâng cao hiệu quả vận hành",
+        "content": "Tự động hóa việc truy xuất dữ liệu và tạo báo cáo, giải phóng nguồn lực cho các nhiệm vụ chiến lược hơn."
+      },
+      {
+        "title": "Tăng cường tuân thủ & bảo mật",
+        "content": "Triển khai các biện pháp bảo mật mạnh mẽ và RBAC để bảo vệ dữ liệu tài chính nhạy cảm và đảm bảo tuân thủ các quy định trong ngành."
+      },
+      {
+        "title": "Khả năng mở rộng cho tăng trưởng trong tương lai",
+        "content": "Thiết kế các giải pháp có thể mở rộng để đáp ứng khối lượng dữ liệu ngày càng tăng và nhu cầu kinh doanh đang phát triển."
+      }
+    ]
+  },
+
+  "insurance_success": {
+    "title": "Các câu chuyện thành công trong ngành bảo hiểm",
+    "description": "Chuyên môn của chúng tôi được thể hiện rõ nhất qua thành tích đã được chứng minh. Chúng tôi đã hỗ trợ thành công các công ty bảo hiểm hàng đầu chuyển đổi dữ liệu và AI phức tạp.",
+    "case_study": {
+      "title": "POC bảng điều khiển bán hàng GenAI cho một công ty bảo hiểm hàng đầu tại Việt Nam",
+      "content": "Giải pháp này cho phép các lãnh đạo và quản lý truy cập dữ liệu bán hàng theo thời gian thực qua giao diện đối thoại thân thiện, tự động tạo báo cáo và biểu đồ nhằm hỗ trợ ra quyết định. Hệ thống đạt độ chính xác cao, giải quyết 95% truy vấn trong vòng 30 giây, với mục tiêu là 15 giây cho phần lớn truy vấn, cho phép thời gian dài hơn với truy vấn phức tạp."
+    }
+  },
+
+  "impact_section_banking": {
+    "title": "Tác Động Thực Tế",
+    "heading": "Sự hợp tác của chúng tôi với các khách hàng trong ngành ngân hàng đã mang lại nhiều kết quả nổi bật, thể hiện cam kết của chúng tôi đối với những giải pháp mang lại hiệu quả thực tiễn:",
+    "items": [
+      {
+        "title": "Tăng cường bảo mật và tuân thủ",
+        "content": "Loại bỏ các lỗ hổng và đảm bảo tuân thủ đầy đủ các quy định ngân hàng, củng cố niềm tin và sự minh bạch trong vận hành."
+      },
+      {
+        "title": "Đẩy nhanh đổi mới",
+        "content": "Triển khai tính năng nhanh hơn và nâng cao tính linh hoạt thông qua quy trình tự động hóa."
+      },
+      {
+        "title": "Tối ưu hạ tầng",
+        "content": "Quản lý khối lượng công việc hiệu quả và di chuyển các ứng dụng tại chỗ một cách tối ưu, hỗ trợ các sáng kiến như hiện đại hóa giao diện người dùng."
+      },
+      {
+        "title": "Tăng trưởng bền vững",
+        "content": "Đảm bảo thời gian hoạt động ổn định (ví dụ: 99,9%) và tối ưu hóa việc sử dụng tài nguyên để ngân hàng phát triển liên tục."
+      },
+      {
+        "title": "Khả năng mở rộng cho sản phẩm mới",
+        "content": "Cho phép tích hợp và hỗ trợ liền mạch cho các sản phẩm và dịch vụ ngân hàng mới."
+      }
+    ]
+  },
+
+  "impact_section_energy": {
+    "title": "Tác Động Thực Tế",
+    "heading": "Sự hợp tác của chúng tôi với các khách hàng ngành năng lượng đã mang lại nhiều kết quả nổi bật, thể hiện cam kết đối với các giải pháp mang lại giá trị thực tiễn:",
+    "items": [
+      {
+        "title": "Tăng doanh thu",
+        "content": "Tối đa hóa lợi nhuận bằng cách xác định thời điểm bán năng lượng một cách thông minh và tối ưu hóa việc sử dụng pin."
+      },
+      {
+        "title": "Cải thiện hiệu suất vận hành",
+        "content": "Tự động hóa các quy trình quản lý năng lượng và đưa ra các quyết định dựa trên dữ liệu thực tế."
+      },
+      {
+        "title": "Hỗ trợ ra quyết định chiến lược",
+        "content": "Cung cấp các công cụ phân tích mạnh mẽ để mô phỏng các kịch bản thị trường, giảm thiểu rủi ro trong đầu tư và vận hành."
+      },
+      {
+        "title": "Khả năng mở rộng để phát triển",
+        "content": "Xây dựng nền tảng có khả năng mở rộng cùng quy mô trang trại năng lượng mặt trời và hệ thống pin lưu trữ."
+      }
+    ]
+  },
+
+  "strategic_coverage": {
+    "title": "Phủ sóng chiến lược và hiểu biết địa phương",
+    "content": "Với phạm vi hoạt động chiến lược tại khu vực Châu Á – Thái Bình Dương, Datum Consulting kết hợp chuyên môn toàn cầu và hiểu biết bản địa để xây dựng các giải pháp tiên tiến và tuân thủ quy định. Các đội ngũ đa dạng của chúng tôi thấu hiểu những khác biệt vùng miền, đảm bảo mọi sáng kiến ngân hàng đều phù hợp với quy định địa phương và bối cảnh văn hóa—mang lại kết quả thiết thực và có tác động cao cho khách hàng trên toàn khu vực."
+  },
+
+  "solar_commitment": {
+    "title": "Cam Kết Của Chúng Tôi Vì Một Hành Tinh Xanh Hơn",
+    "content": "Datum Consulting thúc đẩy các mối quan hệ hợp tác lâu dài trong lĩnh vực năng lượng mặt trời, cung cấp nguồn lực trí tuệ và nhân lực để hỗ trợ các dự án xanh sáng tạo, giúp doanh nghiệp dẫn đầu quá trình chuyển đổi toàn cầu sang năng lượng bền vững và tối đa hóa tiềm năng trong tương lai."
+  },
+
+  "solar_success": {
+    "title": "Câu Chuyện Thành Công Trong Ngành Năng Lượng Mặt Trời",
+    "intro": "Chuyên môn của chúng tôi được thể hiện rõ nét qua các dự án hợp tác với những khách hàng tiên phong trong lĩnh vực năng lượng mặt trời:",
+    "case_study": {
+      "title": "Một Startup Năng Lượng Mặt Trời Tại Úc",
+      "content": "Chúng tôi đã phát triển một nền tảng học máy dựa trên nền tảng đám mây cho một công ty đổi mới trong lĩnh vực năng lượng mặt trời tại Úc nhằm tối ưu hóa việc sử dụng pin và bán năng lượng. Hệ thống mô phỏng các kịch bản thị trường, tối đa hóa doanh thu thông qua lưu trữ hiệu quả và cung cấp điện cho lưới, đồng thời tính đến các yếu tố như thời tiết, nhu cầu và độ ổn định của lưới điện trong một thị trường có quy định nghiêm ngặt."
+    }
+  },
+
+  "solar_footer": {
+    "content": "Tại Datum Consulting, chúng tôi cam kết giúp các doanh nghiệp năng lượng mặt trời không chỉ thích ứng, mà còn dẫn đầu trong quá trình chuyển đổi sang một tương lai năng lượng bền vững và tối ưu. Hãy đồng hành cùng chúng tôi để xây dựng một hệ sinh thái năng lượng mặt trời an toàn, tối ưu doanh thu và sẵn sàng cho tương lai."
+  },
+
+  "events": {
+    "title": "Sự Kiện Sắp Diễn Ra",
+    "tag": "Sắp Diễn Ra",
+    "headline": "Tiêu đề mẫu cho sự kiện Datum sắp tới.",
+    "day": "20",
+    "month": "THÁNG 5",
+    "year": "2025"
+  },
+
+  "call_to_action_story": {
+    "PremierBanking":{
+        "title": "Lời kêu gọi thay đổi",
+        "content": "Đối mặt với các lỗ hổng bảo mật, thách thức trong quản trị và nhu cầu đổi mới số, một ngân hàng hàng đầu đã bắt tay vào hành trình chuyển đổi Landing Zone cùng Datum Consulting. Thông qua việc triển khai AWS Landing Zone và nền tảng EKS Workload, ngân hàng đã thực hiện chuyển đổi lên đám mây một cách liền mạch, tối ưu chi phí và tuân thủ quy định. Hạ tầng hiện đại này cho phép triển khai dịch vụ ngân hàng vi mô hiệu quả với tính năng tự động hóa, đa người dùng bảo mật, góp phần thúc đẩy sáng kiến Trải nghiệm Ngân hàng Tốt hơn (BBX).",
+        "cta_text": "Tải xuống toàn bộ case study"
+    },
+    "PlatformCustomization": {
+        "title": "Tùy chỉnh nền tảng Amazon EKS an toàn cho một đối tác ngân hàng danh tiếng",
+        "content": "Datum Consulting đã cung cấp một nền tảng Amazon EKS tùy chỉnh, an toàn và có thể mở rộng cho một ngân hàng hàng đầu tại New Zealand. Nền tảng này hỗ trợ các ứng dụng vi dịch vụ, đảm bảo tính bảo mật và hiệu suất cao trong khi vẫn linh hoạt để đáp ứng nhu cầu kinh doanh đang phát triển.",
+        "cta_text": "Tải xuống toàn bộ case study"
+    }
+  },
+
+  "story": {
+    "PremierBanking": {
+      "tech_meets_banking": {
+        "title": "Khi Công nghệ Gặp Gỡ Sự Xuất Sắc Trong Ngân Hàng",
+        "heading": "",
+        "items": [
+          "Ngân hàng đang đối mặt với những thách thức nghiêm trọng về bảo mật, quản lý tài nguyên và tuân thủ, cản trở quá trình chuyển đổi số.",
+          "AWS Landing Zone cung cấp một nền tảng an toàn và có thể mở rộng để hợp lý hóa quản trị, tự động triển khai hạ tầng và áp dụng các chuẩn tốt nhất.",
+          "Thông qua việc tích hợp kiểm soát có cấu trúc, kiểm toán tập trung và phân bổ tài nguyên tối ưu, ngân hàng có thể hiện đại hóa các kênh số, tăng tốc đổi mới và đảm bảo triển khai mượt mà các giải pháp ngân hàng thế hệ tiếp theo."
+        ]
+      },
+      "valuable_difference": {
+        "title": "Giá Trị Khác Biệt",
+        "content": "Dự án đã loại bỏ thành công các lỗ hổng bảo mật, thực thi quyền truy cập dựa trên vai trò và chính sách tối thiểu quyền hạn, đồng thời đảm bảo tuân thủ đầy đủ quy định ngân hàng tại Philippines. Các pipeline CI/CD tự động cùng triển khai không downtime đã đẩy nhanh đổi mới, trong khi hơn 30 môi trường triển khai giúp tối ưu quản lý khối lượng công việc. Các ứng dụng on-prem quy mô lớn được di chuyển liền mạch, hỗ trợ các sáng kiến BBX như hiện đại hóa frontend và tích hợp backend-for-frontend. Với 99.9% uptime, tối ưu tài nguyên và giảm thiểu đáng kể công việc thủ công, ngân hàng đã sẵn sàng cho tăng trưởng bền vững. Datum Consulting trở thành đối tác chiến lược lâu dài, tiếp tục hỗ trợ các đợt di chuyển mới và phát triển ngân hàng trong tương lai.",
+        "percent": "99.9%",
+        "percent_content": "Thời gian <br class=\"hidden lg:block\" />hoạt động của nền tảng"
+      },
+      "lessons_learned": {
+        "title": "Bài học kinh nghiệm",
+        "heading": "",
+        "content": "Một bài học quan trọng từ sáng kiến này là tầm quan trọng của sự hợp tác chặt chẽ giữa ngân hàng và các nhà cung cấp công nghệ bên thứ ba nhằm tránh sai lệch và chậm trễ. Việc tích hợp các sản phẩm ngân hàng đóng gói sẵn phức tạp hơn dự kiến, đòi hỏi nhiều tùy chỉnh và nỗ lực để phù hợp với nhu cầu vận hành thực tế. Thông qua trải nghiệm này, ngân hàng đã củng cố cách tiếp cận với đối tác công nghệ và việc áp dụng công nghệ, đảm bảo sự linh hoạt và hiệu quả cao hơn trong các sáng kiến chuyển đổi tương lai."
+      }
+    }
   }
 }

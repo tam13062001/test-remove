@@ -2,26 +2,25 @@
 <?php get_header(); ?>
 
 <?php get_template_part('template-parts/content/banner', null, array(
-    'title' => 'Insurance',
-    'breadcrumbs' => array('Industry', 'Insurance'),
+    'title' => 'banner.Insurance.title',
+    'breadcrumbs' => array('breadcrumbs.industry', 'breadcrumbs.insurance'),
     'background_image' => get_assets_from_path('images/Insurance.jpg'),
     'type' => 'image'
 )); ?>
 
 <?php
 get_template_part('template-parts/content/call-to-action-industry', null, array(
-    'title' => 'Driving Innovation and Insight with AI',
-    'heading' => 'Datum Consulting enables insurers to leverage Generative AI for operational excellence, optimizing risk assessment, claims processing, customer engagement, and compliance while driving growth through transformative technology solutions.',
+    'title' => 'industry_insurance.title',
+    'heading' => 'industry_insurance.heading',
     'image_url' => get_assets_from_path('images/Group 62.png'),
     'items' => array(
         array(
-            'title' => 'Navigating the Modern Insurance Landscape',
-            'content' => 'Traditional insurance operations, often reliant on manual processes and disparate data systems, can lead to inefficiencies, delayed insights, and a reactive approach to customer needs. The demand for a "Modern Insurance Experience" necessitates agile, data-driven solutions that can provide rapid insights, automate complex tasks, and deliver superior customer interactions.
-            ',
+            'title' => 'industry_insurance.items.0.title',
+            'content' => 'industry_insurance.items.0.content',
         ),
         array(
-            'title' => 'Our Approach: AI-Powered Solutions for Insurance',
-            'content' => 'Datum Consulting transforms insurance operations and customer experiences using advanced, secure, and scalable technology platforms.',
+            'title' => 'industry_insurance.items.1.title',
+            'content' => 'industry_insurance.items.1.content',
         ),
     ),
     'cta_text' => 'Download the full case study',
@@ -140,35 +139,40 @@ get_template_part('template-parts/content/call-to-action-industry', null, array(
 
 <?php
 get_template_part('template-parts/content/leader-ship', null, array(
-    'title' => 'Thought Leadership',
-    'heading' => 'The Transformative Potential of Generative AI',
+    'title' => 'leadership_section.title',
+    'heading' => 'leadership_section.heading',
     'image_url' => get_assets_from_path('images/leader.png'),
-    'content' => "Generative AI is revolutionizing insurance with personalized policies, automated claims, fraud detection, and intelligent support. Datum Consulting leads this shift using ethical AI practices informed by MITRE ATLAS, prioritizing innovation, compliance with regulations like AI TRISM and the EU AI Act, and secure, scalable solutions tailored to the industry's unique challenges.",
+    'content' => "leadership_section.content",
 )) ;
 ?>
 
 
 <?php
 get_template_part('template-parts/content/driving-tangible-impact', null, array(
-    'title' => 'Driving Tangible Impact',
-    'heading' => 'Our partnerships with insurance clients have consistently yielded significant outcomes, demonstrating our commitment to impactful solutions:',
+    'title' => 'impact_section.title',
+    'heading' => 'impact_section.heading',
     'image_url' => get_assets_from_path('images/Group 35.jpg'),
     'items' => array(
         array(
-           'content' => 'Enhanced Data Accessibility: Enabling leadership and management to rapidly access and analyze critical business data through intuitive, conversational interfaces.'
-        ),
+           'title' => 'impact_section.items.0.title',
+           'content' => 'impact_section.items.0.content',
+        ), 
         array(
-           'content' => 'Accelerated Decision-Making: Providing quick, accurate insights and automated reports, reducing response times for complex queries.'
-        ),
+           'title' => 'impact_section.items.1.title',
+           'content' => 'impact_section.items.1.content',
+        ),   
         array(
-           'content' => 'Improved Operational Efficiency: Automating data retrieval and report generation, freeing up resources for more strategic tasks.'
-        ),  
+           'title' => 'impact_section.items.2.title',
+           'content' => 'impact_section.items.2.content',
+        ),   
         array(
-           'content' => 'Strengthened Compliance & Security: Implementing robust security measures and RBAC to protect sensitive financial data and ensure adherence to industry regulations.'
-        ),
+           'title' => 'impact_section.items.3.title',
+           'content' => 'impact_section.items.3.content',
+        ),   
         array(
-           'content' => 'Scalability for Future Growth: Designing solutions that can scale to accommodate growing data volumes and evolving business needs.'
-        ),          
+           'title' => 'impact_section.items.4.title',
+           'content' => 'impact_section.items.4.content',
+        ),           
     )
 )) ;
 ?>
@@ -177,20 +181,20 @@ get_template_part('template-parts/content/driving-tangible-impact', null, array(
 
 <div class="container my-[44px] lg:my-[100px]">
     <h2 class="font-bold lg:text-[40px] text-[20px] mb-6">
-        Successful Stories in Insurance
+        <?php echo datum_translate("insurance_success.title"); ?>
     </h2>
-    <p class="lg:py-[100px] lg:text-[20px] text-[16px] lg:w-[785px]  w-full"> Our expertise is best demonstrated through our proven track record. We've successfully guided leading insurance companies through complex data and AI transformations:</p>   
+    <p class="lg:py-[100px] lg:text-[20px] text-[16px] lg:w-[785px]  w-full"> <?php echo datum_translate("insurance_success.description"); ?></p>   
     <div class="flex flex-col lg:flex-row  justify-between">
         <div class="w-full  flex flex-col justify-center bg-white pt-6 lg:pt-0  lg:pr-[120px] ">
             <div class="font-bold text-[20px] lg:text-[24px] mb-6 lg:mb-[10px] text-[#315CD4]">
                 <h2>
-                    GenAI Sales Dashboard POC for a Leading Insurance Company in Vietnam
+                    <?php echo datum_translate("insurance_success.case_study.title"); ?>
                 </h2>
             </div>
             <div class="leading-[170%] lg:pb-[20px]">
                 <div class="py-3 flex flex-col lg:flex-row lg:space-x-5">
                     <div class="w-full text-[16px] lg:text-[20px]">
-                        The solution enabled executives and managers to access real-time sales data through a user-friendly conversational interface, automatically generating summaries and charts for improved decision-making. It achieved a high accuracy rate,<span class="font-bold"> resolving 95% of queries within 30 seconds, with a target of 15 seconds for most queries while allowing longer resolution times for complex ones.<span>
+                        <?php echo datum_translate("insurance_success.case_study.content"); ?><span>
                     </div>
                 </div>
             </div>

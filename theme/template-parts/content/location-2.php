@@ -160,13 +160,12 @@ $markers_ipad = [
             if (label) label.style.display = 'block';
         }
     </script>
-<div class="px-10">
-    <h2 class="text-[32px] font-bold">
-        <?php echo datum_translate($title); ?>
-    </h2>
-    <div class="text-[16px] font-regular mt-4 mb-8">
-        <p><?php echo datum_translate($description); ?></p>
+    <div class="px-10">
+        <h2 class="text-[32px] font-bold">
+            <?php echo datum_translate($title); ?>
+        </h2>
+        <div class="text-[16px] font-regular mt-4 mb-8">
+            <p><?php echo datum_translate($description); ?></p>
+        </div>
     </div>
 </div>
-</div>
-

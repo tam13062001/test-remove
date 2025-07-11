@@ -2,17 +2,17 @@
 <?php get_header(); ?>
 
 <?php get_template_part('template-parts/content/banner', null, array(
-    'title' => 'Pioneering software engineering for Future-Ready Enterprises',
-    'breadcrumbs' => array('Our Services', 'Platform Engineering'),
+    'title' => 'banner.Platform.title',
+    'breadcrumbs' => array('breadcrumbs.solution', 'breadcrumbs.platform'),
     'background_image' => get_assets_from_path('images/spe_banne.png'),
     'type' => 'image'
 )); ?>
 
 <?php
 get_template_part('template-parts/content/call-to-action', null, array(
-    'content' => 'Empower your infrastructure with agility, scalability, security, and efficiency—boosting productivity while reducing overhead.',
+    'content' => 'hero.platform',
     'image_url' => get_assets_from_path('images/cta_bg_4.png'),
-    'cta_text' => 'Schedule a consultation with our expert',
+    'cta_text' => 'cta.schedule',
     'cta_link' => '#'
 ));
 ?>
@@ -94,20 +94,20 @@ get_template_part('template-parts/content/info-section-list', null, array(
 
 <?php
 get_template_part('template-parts/content/info-section-with-image', null, array(
-    'title' => 'Why Datum',
+    'title' => 'why_datum_solution.title',
     'image_url' => get_assets_from_path('images/WhyDatum-Solution.png'),
     'items' => array(
         array(
-            'title' => ' Top-level experts',
-            'content' => 'Our team consists of top-level professionals with specialized expertise, solution architects, designers, content strategists, software architects, and developers.',
+            'title' => 'why_datum_solution.items.0.title',
+            'content' => 'why_datum_solution.items.0.content',
         ),
         array(
-            'title' => 'Industry specialized expertise',
-            'content' => 'Ensure security and compliance standards in highly demanding industries such as digital banking while maintaining the platform’s scalability and agility.',
+            'title' => 'why_datum_solution.items.1.title',
+            'content' => 'why_datum_solution.items.1.content',
         ),
         array(
-            'title' => 'Your partner in growth',
-            'content' => 'Work closely with your team and other developers even after the platform completion to guarantee implementation and scale up according to your specific needs. ',
+            'title' => 'why_datum_solution.items.2.title',
+            'content' => 'why_datum_solution.items.2.content',
         )
     ),
 ));
@@ -156,9 +156,9 @@ get_template_part('template-parts/content/frequently-asked-questions', null, arr
 ?>
 <?php get_template_part('template-parts/content/Expert-insight'); ?>
 <?php get_template_part('template-parts/content/team', null, array(
-    'title' => 'Get consulted by our expert',
-    'content' => 'Talk with our expert to start building your platform',
-    'btn_text' => 'Schedule a consultation with our expert',
+    'title' => 'team_section.get_consulted',
+    'content' => 'team_section.content_1',
+    'btn_text' => 'cta.schedule',
     'btn_link' => '#'
 )); ?>
 <?php get_template_part('template-parts/content/back-to-top'); ?>

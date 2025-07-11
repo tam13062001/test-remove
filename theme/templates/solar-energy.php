@@ -2,35 +2,25 @@
 <?php get_header(); ?>
 
 <?php get_template_part('template-parts/content/banner', null, array(
-    'title' => 'Solar Energy',
-    'breadcrumbs' => array('Industry', 'Solar Energy'),
+    'title' => 'banner.SolarEnergy.title',
+    'breadcrumbs' => array('breadcrumbs.industry', 'breadcrumbs.solar_energy'),
     'background_image' => get_assets_from_path('images/Solar Energy.jpg'),
     'type' => 'image'
 )); ?>
 
 <?php
 get_template_part('template-parts/content/call-to-action-industry', null, array(
-    'title' => 'Optimizing Renewable Assets and <br> Market Strategies',
-    'heading' => 'The solar energy industry is growing rapidly, driven by environmental goals, technology, and decarbonization efforts. Datum Consulting helps solar enterprises optimize their investments through advanced technologies and data-driven strategies that address challenges in energy dispatch, market pricing, and scalable platforms.',
+    'title' => 'industry_solar.title',
+    'heading' => 'industry_solar.heading',
     'image_url' => get_assets_from_path('images/Group 62.png'),
     'items' => array(
         array(
-            'title' => 'Navigating the Dynamic Solar Energy Market',
-            'content' => '
-                <p>The traditional energy market was not built for the variability of renewables or the flexibility offered by battery storage. Solar farms and battery manufacturers face a critical need for sophisticated tools to:</p>
-                <ul class="lg:p-4 space-y-2">
-                    <li class="relative lg:pl-4 lg:text-[19px] before:absolut"><span class="w-[18px] ">•</span> Accurately forecast solar generation and demand.</li>
-                    <li class="relative lg:pl-4 lg:text-[19px] before:absolut"><span class="w-[18px] ">•</span> Intelligently manage battery charging and discharging cycles.</li>
-                    <li class="relative lg:pl-4 lg:text-[19px] before:absolut"><span class="w-[18px] ">•</span> Optimize energy sales to the grid based on real-time and predicted market prices.</li>
-                    <li class="relative lg:pl-4 lg:text-[19px] before:absolut"><span class="w-[18px] ">•</span> Simulate various operational and commercial scenarios to de-risk investments.</li>
-                    <li class="relative lg:pl-4 lg:text-[19px] before:absolut"><span class="w-[18px] ">•</span> Harness immense volumes of operational and market data for strategic insights.</li>
-                </ul>
-                <p>Balancing battery storage, grid energy sales, and battery health optimization requires Machine Learning to handle diverse data like weather, peak usage, and seasonal variations for efficient solar energy trading.</p>
-            ',
+            'title' => 'industry_solar.items.0.title',
+            'content' => 'industry_solar.items.0.content',
         ),
         array(
-            'title' => 'Our Approach: Advanced Analytics and Cloud-Based Platforms for <br> Solar Optimization',
-            'content' => 'Datum Consulting collaborates with solar innovators, merging expertise in cloud engineering, machine learning, and big data to create technologies optimizing renewable energy management and next-generation solutions.',
+            'title' => 'industry_solar.items.1.title',
+            'content' => 'industry_solar.items.1.content',
         ),
     ),
     'cta_text' => 'Download the full case study',
@@ -113,22 +103,26 @@ get_template_part('template-parts/content/call-to-action-industry', null, array(
 
 <?php
 get_template_part('template-parts/content/driving-tangible-impact', null, array(
-    'title' => 'Driving Tangible Impact',
-    'heading' => 'Our partnerships with banking clients have consistently yielded significant outcomes, demonstrating our commitment to impactful solutions:',
+    'title' => 'impact_section_energy.title',
+    'heading' => 'impact_section_energy.heading',
     'image_url' => get_assets_from_path('images/Group 35.jpg'),
     'items' => array(
         array(
-           'content' => 'Enhanced Revenue Streams: Maximizing profitability by intelligently timing energy sales and optimizing battery utilization.',
-        ),
+           'title' => 'impact_section_energy.items.0.title',
+           'content' => 'impact_section_energy.items.0.content',
+        ), 
         array(
-           'content' => 'Improved Operational Efficiency: Streamlining energy management processes through automation and data-driven insights.'
-        ),
+           'title' => 'impact_section_energy.items.1.title',
+           'content' => 'impact_section_energy.items.1.content',
+        ),   
         array(
-           'content' => 'Strategic Decision Support: Providing robust analytical tools for simulating market scenarios and de-risking investment and operational strategies.'
-        ),
+           'title' => 'impact_section_energy.items.2.title',
+           'content' => 'impact_section_energy.items.2.content',
+        ),   
         array(
-           'content' => 'Scalability for Growth: Building platforms designed to grow with the expanding scale of solar farms and battery deployments.'
-        ),        
+           'title' => 'impact_section_energy.items.3.title',
+           'content' => 'impact_section_energy.items.3.content',
+        ),         
     )
 )) ;
 ?>
@@ -147,13 +141,13 @@ get_template_part('template-parts/content/driving-tangible-impact', null, array(
         <div class="w-full  flex flex-col justify-center bg-white lg:gap-y-[30px] pt-6 lg:pt-0  lg:pl-[160px] ">
             <div class="font-bold text-[20px] lg:text-[24px] mb-6 lg:mb-[10px] text-[#000000]">
                 <h2>
-                    Our Commitment to a Greener Planet
+                    <?php echo datum_translate('solar_commitment.title'); ?>
                 </h2>
             </div>
             <div class="leading-[170%] lg:pb-[20px]">
                 <div class="py-3 flex flex-col lg:flex-row lg:space-x-5">
                     <div class="lg:w-[82%] w-full text-[16px] lg:text-[20px]">
-                        Datum Consulting fosters long-term solar partnerships, offering intellectual and human capital to support innovative green projects, helping enterprises lead the global transition to sustainable energy and maximize future possibilities.
+                        <?php echo datum_translate('solar_commitment.content'); ?>
                     </div>
                 </div>
             </div>
@@ -165,23 +159,23 @@ get_template_part('template-parts/content/driving-tangible-impact', null, array(
 
 <div class="container my-[44px] lg:my-[160px]">
     <h2 class="font-bold lg:text-[40px] text-[24px] ">
-        Successful Stories in Solar Energy
+        <?php echo datum_translate('solar_success.title'); ?>
     </h2>
     <div class="py-[24px] lg:py-0">
-<p class="lg:py-[80px] lg:text-[20px] text-[16px] py-[18px] lg:py-0"> Our expertise is highlighted through our work with pioneering clients in the solar sector:</p>
+<p class="lg:py-[80px] lg:text-[20px] text-[16px] py-[18px] lg:py-0"> <?php echo datum_translate('solar_success.intro'); ?></p>
     </div>
     
     <div class="flex flex-col lg:flex-row  justify-between">
         <div class="w-full  flex flex-col justify-center bg-white pt-6 lg:pt-0  lg:pr-[60px] ">
             <div class="font-bold text-[20px] lg:text-[24px] mb-6 lg:mb-[10px] text-[#315CD4]">
                 <h2>
-                    A Solar Energy Startup in Australia
+                    <?php echo datum_translate('solar_success.case_study.title'); ?>
                 </h2>
             </div>
             <div class="leading-[170%] lg:pb-[20px]">
                 <div class="py-3 flex flex-col lg:flex-row lg:space-x-5">
                     <div class="lg:w-[82%] w-full text-[16px] lg:text-[20px]">
-                        We developed a cloud-based machine learning platform for an Australian solar innovator to optimize battery usage and energy sales. The system simulated market scenarios, maximized revenue through efficient storage and grid provision, and accounted for weather, demand, and grid stability in a regulated market.
+                        <?php echo datum_translate('solar_success.case_study.content'); ?>
                     </div>
                 </div>
             </div>
@@ -194,9 +188,11 @@ get_template_part('template-parts/content/driving-tangible-impact', null, array(
 </div>
 
 
-<div class="container lg:py-[100px]">  
+<div class="container lg:pb-[50px] lg:pt-[24px]">  
     <div> 
-        <p class="lg:text-[20px] text-[16px] leading-[170%] lg:w-[785px] font-bold">At Datum Consulting, we are dedicated to helping solar energy enterprises not just adapt, but lead, in the transition to a sustainable and optimized energy future. Partner with us to build a future-proof, secure, and revenue-maximizing solar energy ecosystem. </p>
+        <p class="lg:text-[20px] text-[16px] leading-[170%] lg:w-[785px] font-bold">
+            <?php echo datum_translate('solar_footer.content'); ?>
+        </p>
     </div>
 </div>
 

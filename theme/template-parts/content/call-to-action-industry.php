@@ -11,21 +11,21 @@ $image_url = $args['image_url'] ?? '';
     <div class="container">
         <div class="text-[36px]  lg:mb-0">
             <div class="w-full mb-6 lg:mb-5 text-[24px] lg:text-[40px] font-bold">
-                <?php echo $title ?>
+                <?php echo datum_translate($title); ?>
             </div>
             <div class="w-full lg:w-3/5  mb-6 lg:mb-5 text-[20px] lg:text-[32px] text-primary">
-                <?php echo $heading ?>
+                <?php echo datum_translate($heading); ?>
             </div>
             <div class="w-full lg:w-4/5 text-[20px] leading-[170%] ">
                 <?php foreach($items as $item): ?>
                 <div class="flex flex-col  ">
 
                     <div class="py-4  w-full text-[20px] lg:text-[24px] font-bold">
-                        <?php echo $item['title']; ?>
+                        <?php echo datum_translate($item['title']); ?>
                     </div>
 
                     <div class="py-4  lg:w-[785px] text-[16px] lg:text-[20px] font-regular">
-                        <?php echo $item['content']; ?>
+                        <?php echo datum_translate($item['content']); ?>
                     </div>
                 </div>
                 <?php endforeach; ?>
