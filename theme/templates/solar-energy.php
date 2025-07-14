@@ -33,7 +33,7 @@ get_template_part('template-parts/content/call-to-action-industry', null, array(
   
     <div>
       <h2 class="text-[20px] font-bold text-[#315CD4] pb-[50px]">
-       Our Intergration approach
+      Our solution consists of:
       </h2>
     </div>
 

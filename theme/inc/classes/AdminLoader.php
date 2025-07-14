@@ -41,8 +41,8 @@ class AdminLoader extends BaseLoader
 
     function add_block_category($categories) {
         array_unshift($categories, array(
-            'slug' => 'rocket',
-            'title' => 'Rocket'
+            'slug' => 'datum',
+            'title' => 'Datum'
         ));
         return $categories;
     }
@@ -51,6 +51,10 @@ class AdminLoader extends BaseLoader
         $block_dir = get_stylesheet_directory().'/build/blocks/*';
         $dirs = glob($block_dir, GLOB_ONLYDIR);
         foreach ($dirs as $dir_path) {
+            // do not load example block
+            if (str_ends_with($dir_path, '/example')) {
+                continue;
+            }
             $result = register_block_type($dir_path);
             if (!$result) {
                 echo sprintf("Could not load %s \n", $dir_path);

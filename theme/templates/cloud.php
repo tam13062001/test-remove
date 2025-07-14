@@ -79,17 +79,17 @@ get_template_part('template-parts/content/info-section-list', null, array(
         array(
             'title' => 'Cloud <br />Transformation',
             'content' => 'Through partnerships with leading cloud vendors, Datum Consulting can take you from the very beginning of your cloud journey, be it public, private or hybrid cloud. Our services include:
-<ul class="list-disc list-inside">
-<li>Cloud readiness assessment</li>
-<li>Cloud strategy and road mapping</li>
-</ul>',
+                        <ul class="list-disc list-inside">
+                        <li>Cloud readiness assessment</li>
+                        <li>Cloud strategy and road mapping</li>
+                        </ul>',
         ),
         array(
             'title' => 'Architecture <br class="hidden lg:block" /> and Design',
            'content' => 'We will team up with your business and technology stakeholders to help define the objectives
- which align with people, business, and technology. Our certified Architects then analyze the requirements 
- as they stands for today and into the future, and present you with secure, resilient, cost effective, and 
- Compliance-ready solutions.',
+                        which align with people, business, and technology. Our certified Architects then analyze the requirements 
+                        as they stands for today and into the future, and present you with secure, resilient, cost effective, and 
+                        Compliance-ready solutions.',
         ),
         array(
             'title' => 'API and <br class="hidden lg:block"/> Integration',
@@ -106,21 +106,21 @@ get_template_part('template-parts/content/info-section-list', null, array(
         array(
             'title' => 'Compliance Audit',
             'content' => 'We work together to ensure your infrastructure and applications meet specific compliance requirements:
-<ul class="list-disc list-inside">
-    <li>General Data Projection (GPDR)</li>
-    <li>Healthcare (HIPAA)</li>
-    <li>Payments (PCI-DSS)</li>
-    <li>Insurance (SOC) and Finance (SOX)</li>
-<ul>',
+                        <ul class="list-disc list-inside">
+                            <li>General Data Projection (GPDR)</li>
+                            <li>Healthcare (HIPAA)</li>
+                            <li>Payments (PCI-DSS)</li>
+                            <li>Insurance (SOC) and Finance (SOX)</li>
+                        <ul>',
         ),
         array(
             'title' => 'Cost optimization',
             'content' => 'We work together to ensure your infrastructure and applications meet specific compliance requirements:
-<ul class="list-disc list-inside">
-    <li>Right sizing and TCO analysis</li>
-    <li>Reservation and commitment plan</li>
-    <li>Tuning architecture for cost reduction</li>
-<ul />',
+                        <ul class="list-disc list-inside">
+                            <li>Right sizing and TCO analysis</li>
+                            <li>Reservation and commitment plan</li>
+                            <li>Tuning architecture for cost reduction</li>
+                        <ul />',
         ),
     ),
 )) ;

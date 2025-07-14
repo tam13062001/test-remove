@@ -1,0 +1,36 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "datum/banner",
+  "title": "Banner",
+  "category": "datum",
+  "version": "1.0.0",
+  "description": "",
+  "textdomain": "datum",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "viewStyle": "file:./style-index.css",
+  "supports": {
+    "html": false
+  },
+  "render": "file:./render.php",
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "Your Page Title"
+    },
+    "breadcrumbs": {
+      "type": "array",
+      "items": { "type": "string" },
+      "default": ["Home", "Page"]
+    },
+    "background_image": {
+      "type": "string",
+      "default": ""
+    },
+    "type": {
+      "type": "string",
+      "default": "image"
+    }
+  }
+}

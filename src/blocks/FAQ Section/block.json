@@ -1,0 +1,26 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "datum/faq-section",
+  "title": "FAQ Section",
+  "category": "datum",
+  "description": "Danh sách các câu hỏi thường gặp và CTA button",
+  "textdomain": "datum",
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "items": {
+      "type": "array",
+      "default": []
+    },
+    "text_title": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "editorScript": "file:./index.tsx",
+  "editorStyle": "file:./editor.css",
+  "style": "file:./style.css",
+  "render": "file:./render.php"
+}

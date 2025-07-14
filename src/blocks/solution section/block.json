@@ -1,0 +1,28 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "datum/solution-section",
+  "title": "Solution Section",
+  "category": "datum",
+  "description": "Section trình bày các giải pháp công nghệ hoặc dịch vụ.",
+  "textdomain": "datum",
+  "attributes": {
+    "title": { "type": "string", "default": "Our solution consists of:" },
+    "items": {
+      "type": "array",
+      "default": [],
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": { "type": "string" },
+          "description": { "type": "string" },
+          "isList": { "type": "boolean", "default": false }
+        }
+      }
+    }
+  },
+  "editorScript": "file:./index.tsx",
+  "editorStyle": "file:./editor.css",
+  "style": "file:./style.css",
+  "render": "file:./render.php"
+}

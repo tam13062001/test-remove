@@ -1,0 +1,31 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "datum/home-banner",
+  "title": "Banner Homepage",
+  "category": "datum",
+  "description": "Block hero với 3 dòng chữ và hình nền",
+  "textdomain": "datum",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "viewStyle": "file:./style-index.css",
+  "render": "file:./render.php",
+  "attributes": {
+    "line1": {
+      "type": "string",
+      "default": "pioneering_text.line1"
+    },
+    "line2": {
+      "type": "string",
+      "default": "pioneering_text.line2"
+    },
+    "line3": {
+      "type": "string",
+      "default": "pioneering_text.line3"
+    },
+    "backgroundImage": {
+      "type": "string",
+      "default": "assets/images/BG 1.jpg"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "datum/game-changing-solutions",
+  "title": "Game-Changing Solutions",
+  "category": "datum",
+  "version": "1.0.0",
+  "description": "Hiển thị các phần giải pháp: Platform, Digital, Integration với key dịch.",
+  "textdomain": "datum",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "viewStyle": "file:./style-index.css",
+  "render": "file:./render.php",
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "title": { "type": "string", "default": "section.game_changing_solutions" },
+    "items": {
+      "type": "array",
+      "default": [
+        {
+          "title": "solution.platform.title",
+          "desc": "solution.platform.desc",
+          "link": "/our-solutions/platform-engineering/"
+        },
+        {
+          "title": "solution.digital.title",
+          "desc": "solution.digital.desc",
+          "link": "/our-solutions/digital-transformation/"
+        },
+        {
+          "title": "solution.integration.title",
+          "desc": "solution.integration.desc",
+          "link": "/our-solutions/integration/"
+        }
+      ]
+    }
+  }
+}

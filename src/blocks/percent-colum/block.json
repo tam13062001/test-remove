@@ -1,0 +1,24 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "datum/percent-column",
+  "title": "percent Column",
+  "version": "1.0.0",
+  "category": "datum",
+  "description": "Block hiển thị danh sách phần trăm và mô tả.",
+  "textdomain": "datum",
+  "editorScript": "file:./index.tsx",
+  "style": "file:./style.css",
+  "editorStyle": "file:./editor.css",
+  "render": "file:./render.php",
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "Your Title"
+    },
+    "items": {
+      "type": "array",
+      "default": "[]"
+    }
+  }
+}

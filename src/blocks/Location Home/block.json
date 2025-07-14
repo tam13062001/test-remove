@@ -1,0 +1,40 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "custom/map-with-markers",
+  "title": "Map with Markers",
+  "category": "widgets",
+  "icon": "location",
+  "description": "Bản đồ có thể tùy chỉnh các điểm marker cho từng thiết bị.",
+  "textdomain": "datum",
+  "version": "1.0.0",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "viewStyle": "file:./style-index.css",
+  "render": "file:./render.php",
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "locations.title"
+    },
+    "description": {
+      "type": "string",
+      "default": "locations.description"
+    },
+    "markersDesktop": {
+      "type": "array",
+      "default": []
+    },
+    "markersTablet": {
+      "type": "array",
+      "default": []
+    },
+    "markersMobile": {
+      "type": "array",
+      "default": []
+    }
+  }
+}

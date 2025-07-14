@@ -1,0 +1,25 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "datum/founder-quote",
+  "title": "Founder Quote",
+  "category": "datum",
+  "description": "Quote từ người sáng lập với CTA và avatar",
+  "textdomain": "datum",
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "title": { "type": "string", "default": "" },
+    "content": { "type": "string", "default": "" },
+    "btn_text": { "type": "string", "default": "" },
+    "btn_url": { "type": "string", "default": "#" },
+    "user_name": { "type": "string", "default": "Nick Do" },
+    "user_title": { "type": "string", "default": "Co-founder" },
+    "user_avatar_url": { "type": "string", "default": "" }
+  },
+  "editorScript": "file:./index.tsx",
+  "editorStyle": "file:./editor.css",
+  "style": "file:./style.css",
+  "render": "file:./render.php"
+}

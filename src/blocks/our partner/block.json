@@ -1,0 +1,43 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "datum/our-partners",
+  "title": "Our Partners",
+  "category": "datum",
+  "version": "1.0.0",
+  "description": "Hiển thị khối Our Partners với 3 logo và nội dung được dịch.",
+  "textdomain": "datum",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "viewStyle": "file:./style-index.css",
+  "render": "file:./render.php",
+ "supports": {
+  "html": false,
+  "reusable": true,
+  "inserter": true,
+  "anchor": true
+},
+
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "our_partners.title"
+    },
+    "content": {
+      "type": "string",
+      "default": "our_partners.content"
+    },
+    "image1": {
+      "type": "string",
+      "default": "images/aws-partner-1.png"
+    },
+    "image2": {
+      "type": "string",
+      "default": "images/aws-partner-2.png"
+    },
+    "image3": {
+      "type": "string",
+      "default": "images/aws-partner-3.png"
+    }
+  }
+}

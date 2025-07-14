@@ -1,0 +1,39 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "datum/our-story",
+  "title": "Our Story",
+  "category": "datum",
+  "version": "1.0.0",
+  "description": "Hiển thị phần giới thiệu 'Our Story' với ảnh, nội dung, nút CTA",
+  "textdomain": "datum",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "viewStyle": "file:./style-index.css",
+  "render": "file:./render.php",
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "our_story.title"
+    },
+    "content": {
+      "type": "string",
+      "default": "our_story.content"
+    },
+    "cta_text": {
+      "type": "string",
+      "default": "our_story.cta"
+    },
+    "image_url": {
+      "type": "string",
+      "default": "assets/images/img_6.png"
+    },
+    "cta_link": {
+      "type": "string",
+      "default": "/about-datum"
+    }
+  }
+}

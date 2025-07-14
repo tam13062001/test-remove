@@ -1,0 +1,32 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "datum/info-section-right-image",
+  "title": "Info Section (Right Image)",
+  "category": "datum",
+  "description": "Hiển thị tiêu đề, mô tả, danh sách nội dung và hình ảnh bên phải.",
+  "textdomain": "datum",
+  "attributes": {
+    "title": { "type": "string", "default": "" },
+    "heading": { "type": "string", "default": "" },
+    "cta_text": { "type": "string", "default": "" },
+    "cta_link": { "type": "string", "default": "#" },
+    "image_url": { "type": "string", "default": "" },
+    "items": {
+      "type": "array",
+      "default": [],
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": { "type": "string" },
+          "content": { "type": "string" },
+          "isList": { "type": "boolean", "default": false }
+        }
+      }
+    }
+  },
+  "editorScript": "file:./index.tsx",
+  "editorStyle": "file:./editor.css",
+  "style": "file:./style.css",
+  "render": "file:./render.php"
+}

@@ -1,0 +1,39 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "datum/cta-banner",
+  "title": "CTA Banner",
+  "category": "datum",
+  "version": "1.0.0",
+  "textdomain": "datum",
+  "description": "Hiển thị banner CTA với nội dung dịch, nút và ảnh.",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "viewStyle": "file:./style-index.css",
+  "render": "file:./render.php",
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": ""
+    },
+    "content": {
+      "type": "string",
+      "default": ""
+    },
+    "cta_text": {
+      "type": "string",
+      "default": ""
+    },
+    "cta_link": {
+      "type": "string",
+      "default": ""
+    },
+    "image_url": {
+      "type": "string",
+      "default": ""
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "datum/toggle-list",
+  "title": "Toggle List (FAQ)",
+  "category": "datum",
+  "description": "Hiển thị danh sách mục có tiêu đề và nội dung dạng HTML, hỗ trợ toggle mở rộng.",
+  "textdomain": "datum",
+  "editorScript": "file:./index.tsx",
+  "editorStyle": "file:./editor.css",
+  "style": "file:./style.css",
+  "render": "file:./render.php",
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "Reinvent with cloud"
+    },
+    "items": {
+      "type": "array",
+      "default": [
+        {
+          "title": "Cloud <br />Transformation",
+          "content": "Through partnerships with leading cloud vendors...<ul><li>Cloud readiness assessment</li><li>Cloud strategy and road mapping</li></ul>"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "datum/what-sets-us-apart",
+  "title": "What Sets Us Apart",
+  "category": "datum",
+  "version": "1.0.0",
+  "description": "Hiển thị các card video/hình ảnh với nội dung được dịch từ key.",
+  "textdomain": "datum",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "viewStyle": "file:./style-index.css",
+  "render": "file:./render.php",
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "background_image": {
+      "type": "string"
+    },
+    "items": {
+      "type": "array",
+      "default": []
+    }
+  },
+  "example": {
+    "attributes": {
+      "title": "What Sets Us Apart",
+      "items": [
+        {
+          "title": "menu.services.data-ai",
+          "content": "homepage.data-ai.content",
+          "media_url": "https://example.com/video.mp4",
+          "media_type": "video"
+        }
+      ]
+    }
+  }
+}

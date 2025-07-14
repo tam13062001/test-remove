@@ -1,0 +1,30 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "datum/success-stories-banking",
+  "title": "Success Stories(Banking)",
+  "category": "datum",
+  "description": "Block hiển thị các success stories với hình ảnh và link",
+  "textdomain": "datum",
+  "editorScript": "file:./index.tsx",
+  "editorStyle": "file:./editor.css",
+  "style": "file:./style.css",
+  "render": "file:./render.php",
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "Success Stories in Banking"
+    },
+    "title_1": {
+      "type": "string",
+      "default": ""
+    },
+    "title_2": {
+      "type": "string",
+      "default": ""
+    }
+  }
+}

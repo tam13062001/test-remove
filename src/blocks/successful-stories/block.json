@@ -1,0 +1,27 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "datum/successful-stories",
+  "title": "Successful Stories",
+  "category": "datum",
+  "description": "Hiển thị slider các câu chuyện thành công",
+  "textdomain": "datum",
+  "version": "1.0.0",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "viewStyle": "file:./style-index.css",
+  "render": "file:./render.php",
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "successful_stories"
+    },
+    "slides": {
+      "type": "array",
+      "default": []
+    }
+  }
+}

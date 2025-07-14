@@ -1,0 +1,31 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "datum/card-slider-section",
+  "title": "Card Slider Section",
+  "category": "datum",
+  "description": "Hiển thị slider gồm nhiều card với tiêu đề tuỳ chọn",
+  "textdomain": "datum",
+  "supports": {
+    "html": false
+  },
+"attributes": {
+  "title": { "type": "string", "default": "" },
+  "data": {
+    "type": "array",
+    "default": [],
+    "items": {
+      "type": "object",
+      "properties": {
+        "title": { "type": "string" },
+        "description": { "type": "string" },
+        "image_url": { "type": "string" }
+      }
+    }
+  }
+},
+  "editorScript": "file:./index.tsx",
+  "editorStyle": "file:./editor.css",
+  "style": "file:./style.css",
+  "render": "file:./render.php"
+}
