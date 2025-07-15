@@ -9,7 +9,7 @@ $image_url = $args['image_url'] ?? '';
     <div class="lg:absolute w-full lg:top-[100px] relative z-10">
         <div class="container ">
             <div class="w-full lg:w-[55%]">
-                <div class="mb-12 lg:text-[36px] text-[24px] text-Regular ">
+                <div class="mb-12 lg:text-[32px] text-[24px] text-Regular ">
                     <?php echo datum_translate($content); ?>
                 </div>
                 <a href="/contact/" class="btn font-bold lg:w-fit w-full">
