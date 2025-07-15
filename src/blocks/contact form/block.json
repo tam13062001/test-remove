@@ -1,0 +1,34 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "datum/contact-form",
+  "title": "Contact Form Block",
+  "category": "datum",
+  "description": "A two-column contact form section with image and form",
+  "textdomain": "datum",
+  "editorScript": "file:./index.tsx",
+  "editorStyle": "file:./editor.css",
+  "style": "file:./style.css",
+  "render": "file:./render.php",
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "Default Title"
+    },
+    "cta_link": {
+      "type": "string",
+      "default": "#"
+    },
+    "cta_text": {
+      "type": "string",
+      "default": "Submit"
+    },
+    "image_url": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "supports": {
+    "html": false
+  }
+}

@@ -20,7 +20,7 @@ $cta_text = $attributes['cta_text'] ?? 'cta.schedule';
     <!-- Content -->
     <div class="relative pt-[60px] lg:pt-[100px]">
         <div class="text-center">
-            <h1 class="lg:w-[570px] w-[290px] text-[32px] lg:text-[40px] font-bold text-primary mb-8 px-[20px] lg:px-0 mx-auto text-center">
+            <h1 class="lg:w-[570px] w-[290px] text-[32px] lg:text-[36px] font-bold text-primary mb-8 px-[20px] lg:px-0 mx-auto text-center">
                 <?php echo datum_translate($title); ?>
             </h1>
 

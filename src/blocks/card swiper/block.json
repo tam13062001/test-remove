@@ -1,0 +1,31 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "datum/card-swiper",
+  "title": "Card Swiper",
+  "category": "datum",
+  "description": "Block hiển thị danh sách thẻ dạng swiper (có ảnh, tiêu đề, mô tả)",
+  "textdomain": "datum",
+  "editorScript": "file:./index.tsx",
+  "editorStyle": "file:./editor.css",
+  "style": "file:./style.css",
+  "render": "file:./render.php",
+  "attributes": {
+    "title": { "type": "string", "default": "Our Stories" },
+    "data": {
+      "type": "array",
+      "default": [],
+      "items": {
+        "type": "object",
+        "properties": {
+          "image_url": { "type": "string" },
+          "title": { "type": "string" },
+          "description": { "type": "string" }
+        }
+      }
+    }
+  },
+  "supports": {
+    "html": false
+  }
+}

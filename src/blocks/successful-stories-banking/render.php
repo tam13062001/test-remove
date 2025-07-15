@@ -4,7 +4,7 @@
     $title_2 = $attributes['title_2'] ?? '';
     ?>
     <div class="container py-[60px] lg:py-[120px]">
-        <h2 class="font-[700] text-[32px] lg:text-[40px] mb-10 lg:mb-[80px]">
+        <h2 class="font-[700] text-[32px] lg:text-[36px] mb-10 lg:mb-[80px]">
             <?php echo datum_translate($title); ?>
         </h2>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">

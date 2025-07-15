@@ -11,7 +11,7 @@
     <div class="py-[40px] lg:py-0 lg:pt-[100px] relative">
         <div class="container">
             <div class="text-[36px] lg:mb-0">
-                <div class="w-full mb-6 lg:mb-5 text-[24px] lg:text-[40px] font-bold">
+                <div class="w-full mb-6 lg:mb-5 text-[24px] lg:text-[36px] font-bold">
                     <?php echo esc_html(datum_translate($title)); ?>
                 </div>
                 <div class="w-full lg:w-3/5 mb-6 lg:mb-5 text-[20px] lg:text-[32px] text-primary">

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "datum/why-join-datum",
+  "title": "why join datum",
+  "category": "datum",
+  "description": "Block thể hiện lý do tham gia (Why Join Datum)",
+  "textdomain": "datum",
+  "editorScript": "file:./index.tsx",
+  "editorStyle": "file:./editor.css",
+  "style": "file:./style.css",
+  "render": "file:./render.php",
+  "attributes": {
+    "title": { "type": "string", "default": "Why Join Datum" },
+    "heading": { "type": "string", "default": "" },
+    "content": { "type": "string", "default": "" },
+    "items": {
+      "type": "array",
+      "default": []
+    }
+  },
+  "supports": {
+    "align": ["full", "wide"]
+  }
+}

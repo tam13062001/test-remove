@@ -8,7 +8,7 @@
     $user_avatar_url = $attributes['user_avatar_url'] ?? get_assets_from_path('images/our_team_2.jpg');
 ?>
     <div class="container py-8 lg:py-[80px]">
-        <h2 class="font-[700] text-[32px] lg:text-[40px] mb-10 lg:mb-[50px]">
+        <h2 class="font-[700] text-[32px] lg:text-[36px] mb-10 lg:mb-[50px]">
             <?php echo datum_translate($title); ?>
         </h2>
         <div class="flex flex-col lg:flex-row">

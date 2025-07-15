@@ -6,11 +6,12 @@ import {useCallback} from "@wordpress/element";
 type OurValueCollapseProps = {
   country: string
   locations: { title: string; address: string }[]
-  open: boolean
+  open?: boolean
 }
 
 export default function LocationItemBlock(props: BaseProps<OurValueCollapseProps>) {
-  const { country, locations, open } = props.data
+  // Đảm bảo có giá trị mặc định cho tất cả props
+  const { country = '', locations = [], open = false } = props.data || {};
 
   const renderIcon = useCallback((isActive: boolean) => {
     if (isActive) return (
@@ -26,15 +27,18 @@ export default function LocationItemBlock(props: BaseProps<OurValueCollapseProps
   }, [])
 
   const renderContent = useCallback(() => {
-    if (!Array.isArray(locations)) return null
+    if (!Array.isArray(locations)) return null;
 
     return locations.map((location, index) => (
-      <div className={'mb-2'}>
-        <div className={'font-bold mb-2'}>{location.title}</div>
-        <div>{location.address}</div>
+      <div key={index} className={'mb-2'}>
+        <div className={'font-bold mb-2'}>{location?.title || ''}</div>
+        <div>{location?.address || ''}</div>
       </div>
     ))
-  }, [])
+  }, [locations])
+
+  // Chỉ render nếu có country
+  if (!country) return null;
 
   return (
     <ConfigProvider
@@ -48,7 +52,7 @@ export default function LocationItemBlock(props: BaseProps<OurValueCollapseProps
       }}
     >
       <Collapse
-        defaultActiveKey={open ? '1' : null}
+        defaultActiveKey={open ? '1' : undefined}
         expandIconPosition={'end'}
         ghost
         expandIcon={({ isActive }) => renderIcon(isActive)}

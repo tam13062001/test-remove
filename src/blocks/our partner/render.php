@@ -11,7 +11,7 @@ $image3 = $attributes['image3'] ?? get_assets_from_path('images/aws-partner-3.pn
     <div class="container py-10 lg:py-[120px] z-10 relative">
         <div class="flex flex-col-reverse lg:flex-row lg:gap-20 ">
             <div class="lg:w-1/2 text-white">
-                <h2 class="font-[700] text-[32px] lg:text-[40px] mb-6 lg:mb-12 lg:mt-6">
+                <h2 class="font-[700] text-[32px] lg:text-[36px] mb-6 lg:mb-12 lg:mt-6">
                     <?php echo datum_translate($title); ?>
                 </h2>
                 <div class="text-[16px] lg:text-[20px] font-Regular leading-[170%] mb-6 lg:mb-12">

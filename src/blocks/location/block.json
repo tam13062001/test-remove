@@ -1,0 +1,50 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "datum/locations-section",
+  "title": "Locations Section",
+  "category": "datum",
+  "icon": "location",
+  "description": "Section hiển thị các địa điểm của công ty",
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "Locations"
+    },
+    "imageUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "locations": {
+      "type": "array",
+      "default": [
+        {
+          "country": "New Zealand",
+          "open": true,
+          "locations": [
+            {
+              "title": "Datum Limited",
+              "address": "70 Symonds Street, 1010 Auckland, New Zealand"
+            }
+          ]
+        },
+        {
+          "country": "Australia",
+          "locations": [
+            {
+              "title": "Datum Consulting AU PTY LTD",
+              "address": "Level 1, 8 Beulah Road, Norwood SA 5067 Adelaide, Australia"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "editorScript": "file:./index.js",
+  "style": "file:./style.css",
+  "editorStyle": "file:./editor.css",
+  "render": "file:./render.php"
+}

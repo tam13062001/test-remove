@@ -1,0 +1,29 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "datum/percent-section",
+  "title": "Section with Percent and List",
+  "category": "datum",
+  "description": "Section có ảnh, tiêu đề, danh sách, và phần trăm",
+  "attributes": {
+    "title": { "type": "string", "default": "" },
+    "heading": { "type": "string", "default": "" },
+    "percent": { "type": "string", "default": "" },
+    "percent_content": { "type": "string", "default": "" },
+    "image_url": { "type": "string", "default": "" },
+    "items": {
+      "type": "array",
+      "default": [],
+      "items": {
+        "type": "object",
+        "properties": {
+          "content": { "type": "string" }
+        }
+      }
+    }
+  },
+  "editorScript": "file:./index.tsx",
+  "editorStyle": "file:./editor.css",
+  "style": "file:./style.css",
+  "render": "file:./render.php"
+}

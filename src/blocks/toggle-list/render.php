@@ -13,7 +13,7 @@ if (empty($items)) return;
 <div class="relative py-[40px] lg:py-[100px] datum-toggle-list">
   <div class="container">
     <?php if (!empty($title)) : ?>
-      <h2 class="font-[700] text-[32px] lg:text-[40px] mb-5 lg:mb-[50px]">
+      <h2 class="font-[700] text-[32px] lg:text-[36px] mb-5 lg:mb-[50px]">
         <?php echo esc_html($title); ?>
       </h2>
     <?php endif; ?>

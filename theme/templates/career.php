@@ -60,7 +60,7 @@
         ),
     )
 )); ?>
-
+<div class="container">
 <?php 
     $recommended_posts = get_posts(array(
         'numberposts' => 2,
@@ -74,6 +74,8 @@
         'news_items' => $recommended_posts
     ));
 ?>
+</div>
+
 
 <?php get_template_part('template-parts/content/back-to-top'); ?>
 

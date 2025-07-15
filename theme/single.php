@@ -31,72 +31,55 @@ get_template_part('template-parts/content/banner', null, array(
     <div class="hidden lg:block lg:absolute top-20 right-0 w-[500px] h-[350px] translate-x-1/3 z-[-1]">
         <img class="" src="<?php echo get_stylesheet_directory_uri().'/assets/images/Group 62.png' ?>" />
     </div>
-    <div class=" mx-auto relative z-10">
-        <div class="container font-bold mb-4">
+    <div class="container relative z-10">
+        <div class=" font-bold mb-4">
             <?php
             $date = new DateTime(get_the_date('Y-m-d'));
             echo $date->format('j, F, Y');
             ?>
         </div>
 
-        <!-- <div class="container prose !max-w-none mb-10 lg:mb-[120px]">
+        <div class=" prose !max-w-none mb-10 lg:mb-[120px]">
             <?php the_content(); ?>
-        </div> -->
-
-        <div class="container prose !max-w-none mb-10 lg:mb-[120px]">
-            <?php
-            $current_lang = datum_get_current_language(); // Tự viết hàm lấy ngôn ngữ (vd: 'en' hoặc 'vi')
-            $content_en = get_post_meta(get_the_ID(), 'content_en', true);
-            $content_vi = get_post_meta(get_the_ID(), 'content_vi', true);
-
-            if ($current_lang === 'vi' && !empty($content_vi)) {
-                echo wp_kses_post(wpautop($content_vi));
-            } elseif (!empty($content_en)) {
-                echo wp_kses_post(wpautop($content_en));
-            } else {
-                the_content(); // fallback nếu chưa có content
-            }
-            ?>
         </div>
-
-
         <?php if (!$is_job): ?>
-<div class="container mb-4">
-    <div class="font-bold mb-4">About the Author</div>
-    <?php
-    $post_id = get_the_ID();
-    $author_id = get_post_field('post_author', $post_id);
-    $display_name = get_the_author_meta('nickname', $author_id);
-    $bio = get_the_author_meta('user_description', $author_id);
-    $user_title = get_the_author_meta('user_title', $author_id);
-    ?>
-    <div>
-        <div class="mb-10">
-            <div class="text-primary">
-                <?php echo esc_html($display_name); ?>
-            </div>
+
+        <div class=" mb-4">
+            <div class="font-bold mb-4">About the Author</div>
+            <?php
+            $post_id = get_the_ID();
+            $author_id = get_post_field('post_author', $post_id);
+            $display_name = get_the_author_meta('nickname', $author_id);
+            $bio = get_the_author_meta('user_description', $author_id);
+            $user_title = get_the_author_meta('user_title', $author_id);
+            ?>
             <div>
-                <?php echo esc_html($user_title); ?>
+                <div class="mb-10">
+                    <div class="text-primary">
+                        <?php echo esc_html($display_name); ?>
+                    </div>
+                    <div>
+                        <?php echo esc_html($user_title); ?>
+                    </div>
+                </div>
+                <div class="text-primary">
+                    <?php echo esc_html($bio); ?>
+                </div>
             </div>
         </div>
-        <div class="text-primary">
-            <?php echo esc_html($bio); ?>
-        </div>
-    </div>
-</div>
-<?php endif; ?>
+        <?php endif; ?>
 
         <?php
         $job_cat = get_category_by_slug('job');
-$job_cat_id = $job_cat ? $job_cat->term_id : 0;
-$is_job = false;
-foreach ($categories as $cat) {
-    // Nếu là category "job" hoặc là con của "job"
-    if ($cat->term_id == $job_cat_id || in_array($job_cat_id, get_ancestors($cat->term_id, 'category'))) {
-        $is_job = true;
-        break;
-    }
-}
+        $job_cat_id = $job_cat ? $job_cat->term_id : 0;
+        $is_job = false;
+        foreach ($categories as $cat) {
+            // Nếu là category "job" hoặc là con của "job"
+            if ($cat->term_id == $job_cat_id || in_array($job_cat_id, get_ancestors($cat->term_id, 'category'))) {
+                $is_job = true;
+                break;
+            }
+        }
         $recommended_posts = get_posts(array(
             'numberposts' => 2,
             'post_status' => 'publish',

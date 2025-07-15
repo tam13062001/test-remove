@@ -1,0 +1,42 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "datum/call-to-action-image",
+  "title": "Call to Action with Image",
+  "category": "datum",
+  "description": "Block kêu gọi hành động với hình ảnh bên phải",
+  "textdomain": "datum",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php",
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": ""
+    },
+    "heading": {
+      "type": "string",
+      "default": ""
+    },
+    "content": {
+      "type": "string",
+      "default": ""
+    },
+    "cta_text": {
+      "type": "string",
+      "default": ""
+    },
+    "cta_link": {
+      "type": "string",
+      "default": "/contact/"
+    },
+    "image_url": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "supports": {
+    "html": false
+  }
+}

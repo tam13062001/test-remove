@@ -7,7 +7,7 @@ $image_url = $attributes['image_url'] ?? '';
 <div class="relative overflow-hidden lg:mt-[50px]">
     <div class="container relative z-10">
         <div class="w-full lg:w-3/5">
-            <h2 class="text-[32px] lg:text-[40px] font-bold mb-6 lg:mb-10">
+            <h2 class="text-[32px] lg:text-[36px] font-bold mb-6 lg:mb-10">
                 <?php echo datum_translate($title); ?>
             </h2>
             <div class="lg:h-[630px] bg-white lg:py-10 leading-[170%] lg:pr-[20%]">

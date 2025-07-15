@@ -1,0 +1,27 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "datum/solar-success",
+  "title": "Solar Success Section (Editable)",
+  "category": "datum",
+  "description": "Section cam kết & case study năng lượng mặt trời với nội dung có thể chỉnh sửa trực tiếp",
+  "textdomain": "datum",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./editor.css",
+  "style": "file:./style.css",
+  "render": "file:./render.php",
+  "attributes": {
+    "commitmentTitle": { "type": "string", "default": "" },
+    "commitmentContent": { "type": "string", "default": "" },
+    "commitmentImage": { "type": "string", "default": "" },
+    "successTitle": { "type": "string", "default": "" },
+    "successIntro": { "type": "string", "default": "" },
+    "caseTitle": { "type": "string", "default": "" },
+    "caseContent": { "type": "string", "default": "" },
+    "caseImage": { "type": "string", "default": "" },
+    "footerContent": { "type": "string", "default": "" }
+  },
+  "supports": {
+    "html": false
+  }
+}

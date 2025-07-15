@@ -14,7 +14,7 @@ $items = $attributes['items'] ?? [];
         <div class="text-[20px] lg:text-[24px] font-bold lg:w-[785px] text-[#000000]">
             <?php echo esc_html($title); ?>
         </div>
-        <div class="text-[24px] lg:text-[40px] font-bold text-[#315CD4] lg:pb-0 pb-[40px]">
+        <div class="text-[24px] lg:text-[36px] font-bold text-[#315CD4] lg:pb-0 pb-[40px]">
             <?php echo esc_html($heading); ?>
         </div>
         <div class="text-[18px] lg:text-[24px] font-bold lg:py-[40px] lg:w-[627px] leading-[170%] text-[#000000]">

@@ -3,7 +3,7 @@ $title = $args['title'] ?? '';
 $news_items = $args['news_items'] ?? array();
 ?>
 
-<div class="container py-[40px] lg:py-[120px]">
+<div class=" py-[40px] lg:py-[120px]">
     <?php if ($title): ?>
         <h2 class="lg:text-[40px] text-[26px] font-bold mb-[53px]"><?php echo $title; ?></h2>
     <?php endif; ?>

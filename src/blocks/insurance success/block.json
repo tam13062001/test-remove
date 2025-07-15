@@ -1,0 +1,38 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "datum/insurance-success",
+  "title": "Insurance Success",
+  "category": "datum",
+  "description": "Block giới thiệu case study thành công trong bảo hiểm",
+  "textdomain": "datum",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./editor.css",
+  "style": "file:./style.css",
+  "render": "file:./render.php",
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "Success in Insurance"
+    },
+    "description": {
+      "type": "string",
+      "default": ""
+    },
+    "case_study_title": {
+      "type": "string",
+      "default": ""
+    },
+    "case_study_content": {
+      "type": "string",
+      "default": ""
+    },
+    "image_url": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "supports": {
+    "html": false
+  }
+}

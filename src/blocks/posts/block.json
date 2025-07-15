@@ -1,0 +1,23 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "datum/category-posts",
+  "title": "Danh sách bài viết theo category",
+  "category": "datum",
+  "description": "Hiển thị bài viết theo category được chọn.",
+  "textdomain": "datum",
+  "version": "1.0.0",
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "Latest Posts"
+    },
+    "categories": {
+      "type": "array",
+      "default": []
+    }
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "render": "file:./render.php"
+}

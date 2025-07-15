@@ -14,7 +14,7 @@ $cta_link = $attributes['cta_link'] ?? '/about-datum';
     <div class="lg:absolute w-full mx-auto bottom-0">
         <div class="container py-[60px] lg:py-0">
             <div class="bg-white lg:w-[787px] lg:px-[123px] lg:py-[70px] lg:shadow-lg">
-                <h2 class="text-[32px] lg:text-[40px] font-bold mb-8">
+                <h2 class="text-[32px] lg:text-[36px] font-bold mb-8">
                     <?php echo datum_translate($title); ?>
                 </h2>
                 <div class="lg:leading-10 text-Regular text-base sm:text-lg lg:text-[20px] mb-8">

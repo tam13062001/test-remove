@@ -1,0 +1,30 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "datum/info-section",
+  "title": "Info Section With Image and List",
+  "category": "datum",
+  "description": "Hiển thị section gồm tiêu đề, nội dung, danh sách và ảnh.",
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "title": { "type": "string", "default": "" },
+    "heading": { "type": "string", "default": "" },
+    "image_url": { "type": "string", "default": "" },
+    "items": {
+      "type": "array",
+      "default": [],
+      "items": {
+        "type": "object",
+        "properties": {
+          "content": { "type": "string" }
+        }
+      }
+    }
+  },
+  "editorScript": "file:./index.tsx",
+  "editorStyle": "file:./editor.css",
+  "style": "file:./style.css",
+  "render": "file:./render.php"
+}

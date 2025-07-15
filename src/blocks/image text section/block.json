@@ -1,0 +1,23 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "datum/image-text-section",
+  "title": "Image & Text Section",
+  "category": "datum",
+  "description": "Block hiển thị ảnh và nội dung bên cạnh, có thể chỉnh sửa.",
+  "textdomain": "datum",
+  "version": "1.0.0",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php",
+  "attributes": {
+    "title": { "type": "string", "default": "" },
+    "heading": { "type": "string", "default": "" },
+    "content": { "type": "string", "default": "" },
+    "image_url": { "type": "string", "default": "" }
+  },
+  "supports": {
+    "html": false
+  }
+}

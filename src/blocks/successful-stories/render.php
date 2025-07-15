@@ -6,7 +6,7 @@ $slides = $attributes['slides'] ?? [];
 
 <div class="py-[50px] lg:py-[100px]">
     <div class="container">
-        <h2 class="text-[32px] lg:text-[40px] font-bold mb-8 lg:mb-[60px]">
+        <h2 class="text-[32px] lg:text-[36px] font-bold mb-8 lg:mb-[60px]">
             <?php echo datum_translate($title); ?>
         </h2>
     </div>

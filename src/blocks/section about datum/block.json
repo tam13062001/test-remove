@@ -1,0 +1,19 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "datum/section-about-datum",
+  "title": "section about datum",
+  "category": "datum",
+  "description": "Block giới thiệu về công ty với phần mô tả chính và mô tả phụ",
+  "editorScript": "file:./index.tsx",
+  "editorStyle": "file:./editor.css",
+  "style": "file:./style.css",
+  "render": "file:./render.php",
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "intro": { "type": "string", "default": "" },
+    "description": { "type": "string", "default": "" }
+  }
+}

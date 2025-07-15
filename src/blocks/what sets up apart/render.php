@@ -4,7 +4,7 @@ $items = $attributes['items'] ?? [];
 if (empty($items)) return;
 
 echo '<div class="container py-[60px] lg:py-70px]">';
-echo '<h1 class="text-[32px] lg:text-[40px] font-bold mb-8 lg:mb-[60px]">' . datum_get_translation('section.what_sets_us_apart') . '</h1>';
+echo '<h1 class="text-[32px] lg:text-[36px] font-bold mb-8 lg:mb-[60px]">' . datum_get_translation('section.what_sets_us_apart') . '</h1>';
 echo '<div class="grid grid-cols-1 md:grid-cols-3 gap-8 xl:gap-12">';
 
 foreach ($items as $item) {

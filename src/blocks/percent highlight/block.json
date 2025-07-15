@@ -1,0 +1,24 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "datum/percent-highlight",
+  "title": "Section with Percent Highlight",
+  "category": "datum",
+  "description": "Block có nội dung, hình ảnh và phần trăm nổi bật.",
+  "textdomain": "datum",
+  "version": "1.0.0",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "viewStyle": "file:./style-index.css",
+  "render": "file:./render.php",
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "title": { "type": "string", "default": "" },
+    "content": { "type": "string", "default": "" },
+    "percent": { "type": "string", "default": "" },
+    "percent_content": { "type": "string", "default": "" },
+    "image_url": { "type": "string", "default": "" }
+  }
+}

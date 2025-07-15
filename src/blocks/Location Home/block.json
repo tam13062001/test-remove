@@ -1,17 +1,12 @@
 {
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "apiVersion": 3,
-  "name": "custom/map-with-markers",
-  "title": "Map with Markers",
-  "category": "widgets",
-  "icon": "location",
-  "description": "Bản đồ có thể tùy chỉnh các điểm marker cho từng thiết bị.",
+  "name": "datum/map-marker-section",
+  "title": "Map Marker Section",
+  "category": "datum",
+  "description": "Hiển thị bản đồ với các marker theo thiết bị",
   "textdomain": "datum",
-  "version": "1.0.0",
-  "editorScript": "file:./index.js",
-  "editorStyle": "file:./index.css",
-  "viewStyle": "file:./style-index.css",
-  "render": "file:./render.php",
+  "version": "0.1.0",
   "supports": {
     "html": false
   },
@@ -24,17 +19,30 @@
       "type": "string",
       "default": "locations.description"
     },
-    "markersDesktop": {
+    "markers": {
       "type": "array",
-      "default": []
+      "default": [],
+      "items": {
+        "type": "object"
+      }
     },
-    "markersTablet": {
+    "markers_ipad": {
       "type": "array",
-      "default": []
+      "default": [],
+      "items": {
+        "type": "object"
+      }
     },
-    "markersMobile": {
+    "markers_mobile": {
       "type": "array",
-      "default": []
+      "default": [],
+      "items": {
+        "type": "object"
+      }
     }
-  }
+  },
+  "editorScript": "file:./index.tsx",
+  "style": "file:./style.css",
+  "editorStyle": "file:./editor.css",
+  "render": "file:./render.php"
 }

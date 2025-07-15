@@ -15,7 +15,7 @@ get_template_part('template-parts/content/call-to-action', null, array(
 
     <!-- What Sets Us Apart -->
     <div class="container py-[60px] lg:py-70px]">
-        <h1 class="text-[32px] lg:text-[40px] font-bold mb-8 lg:mb-[60px]">
+        <h1 class="text-[32px] lg:text-[36px] font-bold mb-8 lg:mb-[60px]">
             <?php echo datum_get_translation('section.what_sets_us_apart') ?>
         </h1>
 
