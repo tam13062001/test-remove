@@ -23,19 +23,19 @@ get_template_part('template-parts/content/call-to-action', null, array(
             <!-- Data & AI Card -->
             <?php $items = array(
                 array(
-                    'title' => 'menu.services.data-ai',
+                    'title' => 'homepage.data-ai.titles',
                     'content' => 'homepage.data-ai.content',
                     'media_url' => get_assets_from_path('videos/homepage_data_ai.mp4'),
                     'media_type' => 'video',
                 ),
                 array(
-                    'title' => 'menu.services.cloud',
+                    'title' => 'homepage.cloud.title',
                     'content' => 'homepage.cloud.content',
                     'media_url' => get_assets_from_path('videos/cloud_banner_video.mp4'),
                     'media_type' => 'video',
                 ),
                 array(
-                    'title' => 'menu.services.software',
+                    'title' => 'homepage.software.title',
                     'content' => 'homepage.software.content',
                     'media_url' => get_assets_from_path('videos/software_banner_video.mp4'),
                     'media_type' => 'video',

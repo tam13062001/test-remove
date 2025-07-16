@@ -18,18 +18,18 @@ get_template_part('template-parts/content/call-to-action', null, array(
 ?>
 
 <?php get_template_part('template-parts/content/slide-building', null, array(
-    'title' => 'Building from the ground up',
+    'title' => datum_translate('building.platform.title'),
     'data' => array(
         array(
-            'title' => 'Improves security and compliance',
+            'title' => datum_translate('building.platform.items.0.title'),
             'image_url' => get_assets_from_path('images/slide-digital3.jpg')
         ),
         array(
-            'title' => 'Increased development velocity',
+            'title' => datum_translate('building.platform.items.1.title'),
             'image_url' => get_assets_from_path('images/slide-image-4.jpeg')
         ),
         array(
-            'title' => 'Enhanced operational efficiency',
+            'title' => datum_translate('building.platform.items.2.title'),
             'image_url' => get_assets_from_path('images/slide-image-5.jpeg')
         )
     )
@@ -37,56 +37,55 @@ get_template_part('template-parts/content/call-to-action', null, array(
 
 <?php
 get_template_part('template-parts/content/info-section-list', null, array(
-    'title' => 'Our platform engineer approach',
+    'title' => 'platform.title',
     'items' => array(
         array(
-            'title' => 'CI/CD Pipelines',
-            'content' => 'Automating the software delivery process to enable frequent and reliable code changes and releases.',
+            'title' => 'platform.items.0.title',
+            'content' => 'platform.items.0.content',
         ),
         array(
-            'title' => 'Containerization and  <br class="hidden lg:block" /> Orchestration',
-            'content' => 'Using technologies like Docker and Kubernetes to manage containers that encapsulate application components',
+            'title' => 'platform.items.1.title',
+            'content' => 'platform.items.1.content',
         ),
         array(
-            'title' => 'API Management',
-            'content' => 'Providing tools and services to create, manage, and secure APIs.',
+            'title' => 'platform.items.2.title',
+            'content' => 'platform.items.2.content',
         ),
         array(
-            'title' => 'Infrastructure as Code  <br class="hidden lg:block" /> (IaC)',
-            'content' => 'Managing and provisioning infrastructure through code instead of through manual processes.',
+            'title' => 'platform.items.3.title',
+            'content' => 'platform.items.3.content',
         ),
         array(
-            'title' => 'Cloud-Native <br class="hidden lg:block" /> Development',
-            'content' => 'Building and deploying applications that are designed to run in the cloud, taking full advantage of cloud computing benefits',
+            'title' => 'platform.items.4.title',
+            'content' => 'platform.items.4.content',
         ),
         array(
-            'title' => 'DevSecOps',
-            'content' => 'Integrating security practices within the DevOps process to ensure secure code development and deployment.',
+            'title' => 'platform.items.5.title',
+            'content' => 'platform.items.5.content',
         ),
         array(
-            'title' => 'Monitoring and Logging
-',
-            'content' => 'Implementing systems that track application performance and user activities, providing insights into system health.',
+            'title' => 'platform.items.6.title',
+            'content' => 'platform.items.6.content',
         ),
         array(
-            'title' => 'Security and Compliance',
-            'content' => 'Ensuring that the platform adheres to security best practices and meets regulatory compliance requirements',
+            'title' => 'platform.items.7.title',
+            'content' => 'platform.items.7.content',
         ),
         array(
-            'title' => 'Resilience',
-            'content' => 'Designed to handle failure gracefully such as circuit breaking, graceful degradation, HA, DR ...',
+            'title' => 'platform.items.8.title',
+            'content' => 'platform.items.8.content',
         ),
         array(
-            'title' => 'Microservices <br class="hidden lg:block" /> Architecture',
-            'content' => 'Designing and implementing a microservices architecture to make applications more scalable and easier to develop.',
+            'title' => 'platform.items.9.title',
+            'content' => 'platform.items.9.content',
         ),
         array(
-            'title' => 'Developer Portals and  <br class="hidden lg:block" /> Documentation',
-            'content' => 'Creating comprehensive documentation and developer portals to improve the developer experience',
+            'title' => 'platform.items.10.title',
+            'content' => 'platform.items.10.content',
         ),
         array(
-            'title' => 'Scalability',
-            'content' => 'Designed to be easily scalable, allowing for quick and efficient horizontal scaling as demand increases',
+            'title' => 'platform.items.11.title',
+            'content' => 'platform.items.11.content',
         ),
     ),
 ));
@@ -123,35 +122,31 @@ get_template_part('template-parts/content/frequently-asked-questions', null, arr
 
     'items' => array(
         array(
-            'title' => 'What is platform engineering?',
-            'content' => 'Platform engineering is the discipline of designing and building self-service internal platforms to streamline software development and operations. It enables teams to deliver applications efficiently by providing standardized tools, automation, and infrastructure management.',
+        'title' => datum_translate('faq.platform.items.0.title'),
+        'content' => datum_translate('faq.platform.items.0.content'),
         ),
         array(
-            'title' => 'How does platform engineering differ from DevOps and SRE?',
-            'content' => 'While DevOps focuses on collaboration and automation across development and operations, and Site Reliability Engineering (SRE) emphasizes system reliability, platform engineering builds internal developer platforms (IDPs) to provide self-service capabilities, reducing cognitive load and improving developer productivity.',
+        'title' => datum_translate('faq.platform.items.1.title'),
+        'content' => datum_translate('faq.platform.items.1.content'),
         ),
         array(
-            'title' => 'Why is platform engineering important for modern enterprises?',
-            'content' => 'Platform engineering enhances developer efficiency, reduces operational overhead, and improves system reliability. It allows enterprises to scale software delivery by automating workflows, standardizing infrastructure, and enabling self-service access to development environments.',
+        'title' => datum_translate('faq.platform.items.2.title'),
+        'content' => datum_translate('faq.platform.items.2.content'),
         ),
         array(
-            'title' => 'What are the key components of a platform engineering strategy?',
-            'content' => 'A strong platform engineering strategy includes automation, self-service developer platforms, security policies, observability tools, and integration with CI/CD pipelines. It should align with business objectives to enhance software delivery speed and reliability.',
+        'title' => datum_translate('faq.platform.items.3.title'),
+        'content' => datum_translate('faq.platform.items.3.content'),
         ),
         array(
-            'title' => 'How does platform engineering improve developer experience (DevEx)?',
-            'content' => 'Platform engineering simplifies infrastructure management, automates repetitive tasks, and provides intuitive self-service tools, reducing friction in the development process. This improves developer productivity, job satisfaction, and overall software quality.',
+        'title' => datum_translate('faq.platform.items.4.title'),
+        'content' => datum_translate('faq.platform.items.4.content'),
         ),
         array(
-            'title' => 'What are the benefits of implementing an internal developer platform (IDP)?',
-            'content' => 'An IDP centralizes development tools, automates workflows, and enforces best practices, reducing complexity and improving deployment speed. It enables developers to focus on coding rather than infrastructure, leading to faster innovation and reduced operational costs.',
+        'title' => datum_translate('faq.platform.items.5.title'),
+        'content' => datum_translate('faq.platform.items.5.content'),
         ),
-        // array(
-        //     'title' => 'What is platform engineering?',
-        //     'content' => 'Platform engineering is the discipline of designing and building self-service internal platforms to streamline software development and operations. It enables teams to deliver applications efficiently by providing standardized tools, automation, and infrastructure management.',
-        // ),
-    )
-
+    ),
+    'text_title'=>datum_translate('faq.platform.btn_text'),
 ));
 ?>
 <?php get_template_part('template-parts/content/Expert-insight'); ?>

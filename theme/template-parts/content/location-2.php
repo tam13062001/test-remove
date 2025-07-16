@@ -9,6 +9,14 @@ $markers = [
     ['name' => 'Sydney, Australia', 'x' => '67.5%', 'y' => '75%'],
     ['name' => 'Aukland, NZ', 'x' => '84%', 'y' => '83.8%'],
 ];
+
+$markers_4k = [
+    ['name' => 'Manila, Philipines', 'x' => '52.7%', 'y' => '15%'],
+    ['name' => 'Ho Chi Minh City, VietNam', 'x' => '45%', 'y' => '19.5%'],
+    ['name' => 'Bangkok, Thailand', 'x' => '40.15%', 'y' => '18.8%'],
+    ['name' => 'Sydney, Australia', 'x' => '70.5%', 'y' => '73%'],
+    ['name' => 'Aukland, NZ', 'x' => '84.5%', 'y' => '83.6%'],
+];
 ?>
 
 <?php
@@ -32,9 +40,9 @@ $markers_ipad = [
 ?>
 
 
-<div class=" hidden  lg:block pb-[100px] 2xl:pb-[400px]  relative overflow-cover">
-    <div class="mx-auto lg:absolute top-0 w-full h-[957px]">
-        <img class="relative h-full w-full" style="position: relative; height: 100%; width: 100%;"  alt="" src="<?php echo get_stylesheet_directory_uri().'/assets/images/image 27.png' ?>" />
+<div class=" hidden 4xl:hidden lg:block pb-[100px] 2xl:pb-[400px] relative overflow-cover">
+    <div class="mx-auto lg:absolute top-0 w-full lg:h-[957px] 2xl:h-auto 3xl:h-auto">
+        <img class="relative h-auto w-full" style="position: relative; height: 100%; width: 100%;"  alt="" src="<?php echo get_stylesheet_directory_uri().'/assets/images/image 27.png' ?>" />
         <?php foreach ($markers as $marker): ?>
             <div
                 class="absolute"
@@ -56,7 +64,40 @@ $markers_ipad = [
         <?php endforeach; ?>
     </div>
 
-    <div class="container mx-auto relative z-10 text-align-center pt-[60px] lg:pt-[500px] pb-[60px] lg:pb-[100px] lg:pl-[80px]  2xl:pl-0">
+    <div class="container mx-auto relative z-10 text-align-center pt-[60px] lg:pt-[500px] pb-[60px] lg:pb-[100px] lg:pl-[80px]  ">
+        <h2 class="lg:text-[40px] font-bold"><?php echo datum_translate($title); ?></h2>
+        <div class="lg:text-[20px] font-regular mt-4 mb-8 w-[405px]">
+            <p><?php echo datum_translate($description)?></p>
+        </div>
+    </div>
+</div>
+
+
+<div class=" hidden lg:hidden 4xl:block 4xl:pb-[300px] 6xl:pb-[800px] relative overflow-cover">
+    <div class="mx-auto lg:absolute top-0 w-full lg:h-[957px] 2xl:h-auto">
+        <img class="relative h-auto w-full" style="position: relative; height: 100%; width: 100%;"  alt="" src="<?php echo get_stylesheet_directory_uri().'/assets/images/Map BG.png' ?>" />
+        <?php foreach ($markers_4k as $marker): ?>
+            <div
+                class="absolute"
+                style="left:<?php echo $marker['x']; ?>; top:<?php echo $marker['y']; ?>;"
+            >
+                <img src="<?php echo get_stylesheet_directory_uri().'/assets/images/marker.png' ?>" alt="<?php echo $marker['name']; ?>" class="w-6 h-6" />
+                <?php if ($marker['name'] === 'Bangkok, Thailand'): ?>
+                    <span class="text-xs text-[#315CD4] font-bold bg-gray-50 rounded px-2 py-1 mt-1 whitespace-nowrap"
+                          style="position:absolute; right:110%; top:50%; transform:translateY(-50%);">
+                        <?php echo $marker['name']; ?>
+                    </span>
+                <?php else: ?>
+                    <span class="text-xs text-[#315CD4] font-bold bg-gray-50 rounded px-2 py-1 mt-1 whitespace-nowrap"
+                          style="position:absolute; left:110%; top:50%; transform:translateY(-50%);">
+                        <?php echo $marker['name']; ?>
+                    </span>
+                <?php endif; ?>
+            </div>
+        <?php endforeach; ?>
+    </div>
+
+    <div class=" mx-auto relative z-10 text-align-center pt-[700px] pb-[100px] pl-[600px] ">
         <h2 class="lg:text-[40px] font-bold"><?php echo datum_translate($title); ?></h2>
         <div class="lg:text-[20px] font-regular mt-4 mb-8 w-[405px]">
             <p><?php echo datum_translate($description)?></p>

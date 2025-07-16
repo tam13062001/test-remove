@@ -25,9 +25,9 @@ $user_avatar_url = $args['user_avatar_url'] ?? get_assets_from_path('images/our_
             </a>
             <div class="mt-11">
                 <div class="text-primary font-[700] text-[20px] lg:text-[24px]">
-                    <?php echo $user_name ?>
+                    <?php echo datum_translate('team_section.name') ?>
                 </div>
-                <div class="text-[14px] lg:text-[20px]"><?php echo $user_title ?></div>
+                <div class="text-[14px] lg:text-[20px]"><?php echo datum_translate('team_section.position') ?></div>
             </div>
         </div>
     </div>

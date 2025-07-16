@@ -69,42 +69,27 @@ get_template_part('template-parts/content/info-section-with-image', null, array(
 
 <?php
 get_template_part('template-parts/content/info-section-list', null, array(
-    'title' => 'Innovate Beyond Limits with Software',
+    'title' => 'software.title',
     'items' => array(
         array(
-            'title' => 'Platform & System Development',
-            'content' => 'We build scalable, secure, and high-performance platforms tailored to your business needs, from enterprise systems to SaaS solutions. Our services include:
-<ul class="list-disc list-inside">
-<li>SaaS platform development</li>
-<li>Enterprise systems (ERP, CRM)</li>
-<li>API & legacy system integration</li>
-<li>Microservices architecture</li>
-</ul>',
+            'title' => 'software.items.0.title',
+            'content' => 'software.items.0.content',
         ),
         array(
-            'title' => 'Architecture <br class="hidden lg:block" /> and Design',
-            'content' => 'We will team up with your business and technology stakeholders to help define the objectives
- which align with people, business, and technology. Our certified Architects then analyze the requirements 
- as they stands for today and into the future, and present you with secure, resilient, cost effective, and 
- Compliance-ready solutions.',
+            'title' => 'software.items.1.title',
+            'content' => 'software.items.1.content',
         ),
         array(
-            'title' => 'Web Application',
-            'content' => 'We build high-performance web applications with responsive design, secure authentication, and seamless API integrations. Our web solutions enhance user experience while optimizing speed, scalability, and accessibility.',
+            'title' => 'software.items.2.title',
+            'content' => 'software.items.2.content',
         ),
         array(
-            'title' => 'Mobile Application',
-            'content' => 'From native to cross-platform development, we create intuitive mobile applications for iOS and Android. Our apps offer seamless user interaction, secure transactions, and real-time data synchronization..',
+            'title' => 'software.items.3.title',
+            'content' => 'software.items.3.content',
         ),
         array(
-            'title' => 'Data-Driven Application',
-            'content' => 'Harness the power of big data and AI with intelligent applications. We develop predictive analytics tools, machine learning-powered platforms, and automated decision-making systems to unlock actionable insights.
-<ul class="list-disc list-inside">
-    <li>Business Intelligence & analytics</li>
-    <li>Machine learning & deep learning applications</li>
-    <li>Data warehouses & data lakes</li>
-    <li>Real-time data processing</li>
-<ul>',
+            'title' => 'software.items.4.title',
+            'content' => 'software.items.4.content',
         ),
     ),
 )) ;
@@ -119,34 +104,39 @@ get_template_part('template-parts/content/info-section-list', null, array(
 <?php get_template_part('template-parts/content/frequently-asked-questions', null, array(
     'items' => array(
         array(
-            'title' => 'What are the benefits of custom software development?',
-            'content' => 'Custom software is tailored to your business needs, improving efficiency, scalability, and security. It offers greater flexibility than off-the-shelf solutions and enhances integration with existing systems, ensuring long-term growth and competitive advantage.'
+        'title' => datum_translate('faq.software.items.0.title'),
+        'content' => datum_translate('faq.software.items.0.content'),
         ),
         array(
-            'title' => 'How do I determine the right software solution for my business?',
-            'content' => 'Start by assessing your business goals, workflows, and challenges. Consult with a software development expert to identify whether a custom-built, off-the-shelf, or hybrid solution best fits your needs in terms of functionality, budget, and scalability.'
+        'title' => datum_translate('faq.software.items.1.title'),
+        'content' => datum_translate('faq.software.items.1.content'),
         ),
         array(
-            'title' => 'What makes enterprise software scalable?',
-            'content' => 'Scalable enterprise software is designed with modular architecture, cloud-based infrastructure, and microservices to handle growing data, users, and workloads efficiently. It ensures seamless performance, flexibility, and cost-effectiveness as your business expands'),
-        array(
-            'title' => 'How can AI improve software applications?',
-            'content' => 'AI enhances software by automating tasks, improving decision-making, and personalizing user experiences. Features like predictive analytics, natural language processing (NLP), and machine learning (ML) help businesses optimize operations and drive innovation.'),
-        array(
-            'title' => 'How do cloud-based solutions integrate with existing software?',
-            'content' => 'Cloud solutions integrate via APIs, middleware, or hybrid cloud architectures. They enable seamless data exchange, scalability, and security, allowing businesses to modernize operations while maintaining compatibility with legacy systems.'),
-        array(
-            'title' => 'How to ensure data security in software development?',
-            'content' =>'Implement strong encryption, secure coding practices, and access controls. Regular security testing, compliance with industry standards (e.g., GDPR, ISO 27001), and cloud security measures help protect sensitive business data from cyber threats.'),
-        array(
-            'title' => 'What are the benefits of custom software development?',
-            'content' => 'Custom software is tailored to your business needs, improving efficiency, scalability, and security. It offers greater flexibility than off-the-shelf solutions and enhances integration with existing systems, ensuring long-term growth and competitive advantage.'),
+        'title' => datum_translate('faq.software.items.2.title'),
+        'content' => datum_translate('faq.software.items.2.content'),
         ),
-    'text_title'=>'Software'
+        array(
+        'title' => datum_translate('faq.software.items.3.title'),
+        'content' => datum_translate('faq.software.items.3.content'),
+        ),
+        array(
+        'title' => datum_translate('faq.software.items.4.title'),
+        'content' => datum_translate('faq.software.items.4.content'),
+        ),
+        array(
+        'title' => datum_translate('faq.software.items.5.title'),
+        'content' => datum_translate('faq.software.items.5.content'),
+        ),
+        array(
+        'title' => datum_translate('faq.software.items.6.title'),
+        'content' => datum_translate('faq.software.items.6.content'),
+        ),
+    ),
+    'text_title'=>datum_translate('faq.software.btn_text')
 )); ?>
 <?php get_template_part('template-parts/content/team', null, array(
     'title' => 'team_section.title_software',
-    'content' => 'team_section.content',
+    'content' => 'team_section.content_software',
     'btn_text' => 'cta.schedule',
     'btn_link' => '#'
 )); ?>

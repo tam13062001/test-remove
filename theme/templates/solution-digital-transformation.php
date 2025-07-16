@@ -17,18 +17,18 @@ get_template_part('template-parts/content/call-to-action', null, array(
 ?>
 
 <?php get_template_part('template-parts/content/slide-building', null, array(
-    'title' => 'Building from the ground up',
+    'title' => datum_translate('building.digital.title'),
     'data' => array(
         array(
-            'title' => 'Modernizing legacy systems for seamless integration',
+            'title' => datum_translate('building.digital.items.0.title'),
             'image_url' => get_assets_from_path('images/slide-digital1.jpg')
         ),
         array(
-            'title' => 'Enhancing business agility with digital innovation',
+            'title' => datum_translate('building.digital.items.1.title'),
             'image_url' => get_assets_from_path('images/slide-image-2.jpeg')
         ),
         array(
-            'title' => 'Driving operational efficiency and customer engagement ',
+            'title' => datum_translate('building.digital.items.2.title'),
             'image_url' => get_assets_from_path('images/slide-digital3.jpg')
         )
     )
@@ -36,43 +36,43 @@ get_template_part('template-parts/content/call-to-action', null, array(
 
 <?php
 get_template_part('template-parts/content/info-section-list', null, array(
-    'title' => 'Our digital transformation approach',
+    'title' => 'digital.title',
     'items' => array(
         array(
-            'title' => 'Data Lakehouse',
-            'content' => 'Build a scalable data infrastructure to store, process, and manage vast amounts of business data efficiently.',
+            'title' => 'digital.items.0.title',
+            'content' => 'digital.items.0.content',
         ),
         array(
-            'title' => 'BI Dashboards & Reporting ',
-            'content' => 'Develop interactive dashboards for real-time business insights, helping you make data-driven decisions.',
+            'title' => 'digital.items.1.title',
+            'content' => 'digital.items.1.content',
         ),
         array(
-            'title' => 'Custom Machine Learning',
-            'content' => 'Implement AI-driven models to enhance predictive analytics, risk assessment, and automation.',
+            'title' => 'digital.items.2.title',
+            'content' => 'digital.items.2.content',
         ),
         array(
-            'title' => 'MLOps',
-            'content' => 'Deploy and monitor machine learning models to ensure continuous optimization and performance.',
+            'title' => 'digital.items.3.title',
+            'content' => 'digital.items.3.content',
         ),
         array(
-            'title' => 'Load Balancing & Scaling',
-            'content' => 'Enable your digital ecosystem to handle high-volume transactions seamlessly without sacrificing speed or performance.',
+            'title' => 'digital.items.4.title',
+            'content' => 'digital.items.4.content',
         ),
         array(
-            'title' => 'Real-Time Data Streaming',
-            'content' => 'Implement AI-driven models to enhance predictive analytics, risk assessment, and automation.',
+            'title' => 'digital.items.5.title',
+            'content' => 'digital.items.5.content',
         ),
         array(
-            'title' => 'Generative AI Model Training',
-            'content' => 'Train AI models to automate content creation, generate reports, and improve business intelligence.',
+            'title' => 'digital.items.6.title',
+            'content' => 'digital.items.6.content',
         ),
         array(
-            'title' => 'NLP Model Development',
-            'content' => 'Utilize natural language processing to improve customer interactions and sentiment analysis.',
+            'title' => 'digital.items.7.title',
+            'content' => 'digital.items.7.content',
         ),
         array(
-            'title' => 'Chatbot Implementation',
-            'content' => 'Deploy AI-powered chatbots for 24/7 customer engagement, streamlining communication and support.',
+            'title' => 'digital.items.8.title',
+            'content' => 'digital.items.8.content',
         ),
     ),
 )) ;
@@ -105,32 +105,38 @@ get_template_part('template-parts/content/info-section-with-image', null, array(
     'title_1' => 'banking_stories.story_1',
     'title_2' => 'banking_stories.story_2',
 )); ?>
-<?php get_template_part('template-parts/content/frequently-asked-questions', null, array(
+<?php
+get_template_part('template-parts/content/frequently-asked-questions', null, array(
+
     'items' => array(
         array(
-            'title' => 'What is digital transformation?',
-            'content' => 'Digital transformation is the integration of digital technologies into all areas of a business, improving processes, customer experiences, and operational efficiency. It enables organizations to stay competitive, agile, and data-driven in an evolving digital landscape.',
+        'title' => datum_translate('faq.digital.items.0.title'),
+        'content' => datum_translate('faq.digital.items.0.content'),
         ),
         array(
-            'title' => 'How can digital transformation improve business efficiency?',
-            'content' => 'By automating workflows, enhancing data accessibility, and enabling real-time insights, digital transformation helps businesses reduce costs, improve productivity, and streamline operations. It also fosters innovation and enhances decision-making through AI and analytics.',
+        'title' => datum_translate('faq.digital.items.1.title'),
+        'content' => datum_translate('faq.digital.items.1.content'),
         ),
         array(
-            'title' => 'What are the key technologies driving digital transformation?',
-            'content' => 'Core technologies include cloud computing, AI and machine learning, big data analytics, IoT (Internet of Things), automation, and blockchain. These innovations enable businesses to optimize operations, enhance security, and deliver personalized experiences.',
-        ),
-
-
-        array(
-            'title' => 'How do I start my digital transformation journey?',
-            'content' => 'Begin by assessing your current technology, identifying key business challenges, and setting clear transformation goals. Adopt cloud-based solutions, implement data-driven strategies, and invest in automation tools to enhance efficiency and scalability.',
+        'title' => datum_translate('faq.digital.items.2.title'),
+        'content' => datum_translate('faq.digital.items.2.content'),
         ),
         array(
-            'title' => 'How can automation optimize digital transformation efforts?',
-            'content' => 'Automation reduces manual tasks, accelerates workflows, and minimizes human error. From robotic process automation (RPA) to AI-driven analytics, automation enhances scalability, speeds up digital adoption, and improves customer interactions.',
+        'title' => datum_translate('faq.digital.items.3.title'),
+        'content' => datum_translate('faq.digital.items.3.content'),
         ),
-    )
-)); ?>
+        array(
+        'title' => datum_translate('faq.digital.items.4.title'),
+        'content' => datum_translate('faq.digital.items.4.content'),
+        ),
+        array(
+        'title' => datum_translate('faq.digital.items.5.title'),
+        'content' => datum_translate('faq.digital.items.5.content'),
+        ),
+    ),
+    'text_title'=>datum_translate('faq.digital.btn_text'),
+));
+?>
 <?php get_template_part('template-parts/content/Expert-insight'); ?>
 <?php get_template_part('template-parts/content/team', null, array(
     'title' => 'team_section.get_consulted',

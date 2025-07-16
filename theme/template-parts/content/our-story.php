@@ -16,7 +16,7 @@ $cta_text = 'our_story.cta';
                 <h2 class="text-[32px] lg:text-[40px] font-bold mb-8">
                     <?php echo datum_translate($title); ?>
                 </h2>
-                <div class="lg:leading-10 text-Regular text-base sm:text-lg lg:text-[20px] mb-8">
+                <div class="lg:leading-10 text-Regular text-base sm:text-lg lg:text-[19px] mb-8">
                     <?php echo datum_translate($content); ?>
                 </div>
 

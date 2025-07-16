@@ -31,51 +31,58 @@
     "line3": "đổi mới số"
   },
   "hero": {
-    "homepage": "Datum là đối tác đáng tin cậy của bạn trong hành trình chuyển đổi số, tích hợp liền mạch các giải pháp Đám mây, Kỹ thuật phần mềm và Dữ liệu & AI để giúp doanh nghiệp mở rộng quy mô, đổi mới và dẫn đầu.",
-    "cloud" :"Biến hạ tầng đám mây của bạn từ một nhu cầu kỹ thuật thành một nền tảng chiến lược – được thiết kế để phát triển, thích ứng và thúc đẩy doanh nghiệp tiến về phía trước.",
-    "data" :"Chuyển đổi dữ liệu thô thành những hiểu biết có thể hành động và tự động hóa thông minh – thúc đẩy quyết định thông minh, vận hành liền mạch và tăng trưởng bền vững.",
-    "software": "Nâng cao phần mềm của bạn từ một công cụ chức năng thành động lực chiến lược cho hiệu quả, đổi mới và tăng trưởng.",
+    "homepage": "Datum là đối tác đáng tin cậy của doanh nghiệp trong chuyển đổi số, tích hợp liền mạch các giải pháp Điện Toán Đám Mây, Kỹ thuật phần mềm, và Dữ liệu & AI để giúp doanh nghiệp mở rộng quy mô, đổi mới và luôn dẫn đầu.",
+    "cloud" :"Chúng tôi biến hạ tầng đám mây từ một nhu cầu kỹ thuật thành lợi thế chiến lược được thiết kế để phát triển, thích ứng và thúc đẩy doanh nghiệp đối tác tiến xa.",
+    "data" :"Quá trình tự động hoá chuyển đổi và phân tích dữ liệu thành thông tin hữu ích giúp doanh nghiệp ra quyết định chính xác hơn - vận hành hiệu quả hơn - đón đầu xu hướng tăng trưởng.",
+    "software": "Nâng cấp phần mềm bứt phá tăng trưởng trở thành đòn bẩy chiến lược thúc đẩy hiệu suất",
     "integration": "Hợp nhất các hệ thống doanh nghiệp, tinh giản quy trình vận hành và nâng cao luồng dữ liệu với các giải pháp tích hợp liền mạch thúc đẩy hiệu quả và đổi mới.",
-    "platform": "Tăng cường hạ tầng của bạn với sự linh hoạt, khả năng mở rộng, bảo mật và hiệu quả — nâng cao năng suất trong khi giảm chi phí vận hành.",
-    "digital": "Tận dụng sức mạnh của công nghệ để tối ưu hóa vận hành, nâng cao trải nghiệm khách hàng và mở ra những cơ hội tăng trưởng mới."
+    "platform": "Nâng tầm hạ tầng công nghệ cho doanh nghiệp với khả năng mở rộng linh hoạt, tăng tốc độ xử lý, bảo mật, giúp doanh nghiệp của đối tác nâng cao năng suất và giảm chi phí vận hành.",
+    "digital": "Ứng dụng sức mạnh công nghệ để tinh gọn quy trình, nâng cao trải nghiệm khách hàng và mở ra cơ hội tăng trưởng đột phá."
   },
-  "cta.schedule": "Đặt lịch tư vấn với chuyên gia của chúng tôi",
-  "section.what_sets_us_apart": "Điều gì làm chúng tôi khác biệt",
-  "homepage.data-ai.content": "Tận dụng sức mạnh của AI để chuyển đổi dữ liệu thô thành chiến lược thông minh, nâng cao hiệu quả ra quyết định.",
-  "homepage.cloud.content":"Xây dựng hệ sinh thái đám mây vững chắc được thiết kế riêng cho nhu cầu của bạn, tối ưu hóa bảo mật và hiệu suất.",
-  "homepage.software.content": "Nâng cao doanh nghiệp của bạn với các giải pháp phần mềm tùy chỉnh thúc đẩy tăng trưởng.",
-  "section.game_changing_solutions": "Giải pháp thay đổi cuộc chơi",
+  "cta.schedule": "Đặt lịch tư vấn cùng Chuyên gia Datum",
+  "section.what_sets_us_apart": "Điều Gì Làm Chúng Tôi Trở Nên Khác Biệt",
+
+  "homepage.data-ai.title": "Dịch Vụ về Dữ Liệu & Trí Tuệ Nhân Tạo (AI)",
+  "homepage.data-ai.content": "Khai thác toàn bộ tiềm năng từ data của doanh nghiệp với những hiểu biết từ AI. Chúng tôi biến dữ liệu thô thành các chiến lược thông minh, hỗ trợ ra quyết định sáng suốt hơn và tạo nên lợi thế cạnh tranh.",
+
+  "homepage.cloud.title": "Dịch Vụ về Điện Toán Đám Mây (Cloud)",
+  "homepage.cloud.content":"Chúng tôi xây dựng cloud ecosystem có khả năng mở rộng và bền bỉ, tùy biến riêng theo nhu cầu của doanh nghiệp. Chúng tôi hỗ trợ các doanh nghiệp tối ưu cloud infrastructure, enhance security, và vận hành một cách hiệu quả nhất.",
+
+  "homepage.software.title": "Dịch Vụ về Phần Mềm",
+  "homepage.software.content": "Nâng tầm doanh nghiệp sẵn sàng cho tương lai với các giải pháp phần mềm. Từ thiết kế ứng dụng đến hệ thống doanh nghiệp, chúng tôi tạo ra phần mềm trực quan và mạnh mẽ, tạo cơ hội phát triển cho doanh nghiệp trong môi trường cạnh tranh.",
+
+  "section.game_changing_solutions": "Những Giải Pháp Làm Thay Đổi Cuộc Chơi",
   "solution": {
     "platform": {
-      "title": "Kỹ thuật nền tảng",
-      "desc": "Xây dựng nền tảng số vững chắc với các giải pháp hạ tầng linh hoạt và có thể mở rộng."
+      "title": "Kỹ Thuật Nền Tảng Số",
+      "desc": "Xây dựng một nền tảng số mạnh mẽ với các giải pháp hạ tầng có khả năng mở rộng và linh hoạt."
     },
     "digital": {
       "title": "Chuyển đổi số",
-      "desc": "Khai thác công nghệ mới để tinh gọn quy trình, nâng cao trải nghiệm khách hàng và thúc đẩy đổi mới doanh nghiệp."
+      "desc": "Ứng dụng các công nghệ mới nhất để tối ưu hóa vận hành, nâng cao trải nghiệm khách hàng và thúc đẩy đổi mới kinh doanh."
     },
     "integration": {
-      "title": "Giải pháp tích hợp",
-      "desc": "Kết nối và hợp nhất các hệ thống kinh doanh một cách liền mạch nhằm tối ưu hiệu suất và tăng cường bảo mật."
+      "title": "Tích Hợp Toàn Diện",
+      "desc": "Kết nối và hợp nhất các hệ thống kinh doanh của doanh nghiệp một cách mượt mà để tối ưu hiệu suất và tăng cường bảo mật."
     }
   },
   "common": {
-    "learn_more": "Tìm hiểu thêm"
+    "learn_more": "Xem thêm"
   },
   "why_datum_home": {
-    "title": "Vì sao chọn Datum",
+    "title": "Tại sao doanh nghiệp nên chọn Datum",
     "items": [
       {
-        "title": "Đổi mới hướng đến kết quả",
-        "content": "Chúng tôi bắt đầu từ mục tiêu của bạn và xây dựng giải pháp phù hợp để giải quyết những thách thức thực tế trong kinh doanh."
+        "title": "Đổi mới hướng tới kết quả",
+        "content": "Chúng tôi bắt đầu từ mục tiêu của doanh nghiệp và tạo ra các giải pháp phù hợp để giải quyết những thách thức kinh doanh thực tế."
       },
       {
-        "title": "Hợp tác liền mạch",
-        "content": "Giao tiếp cởi mở, trung thực và thường xuyên đảm bảo tính minh bạch và sự đồng bộ trong từng bước."
+        "title": "Hợp tác dựa trên sự tôn trọng",
+        "content": "Giao tiếp cởi mở, trung thực, luôn đảm bảo sự minh bạch và đồng bộ ở mọi bước."
       },
       {
         "title": "Chuyên môn đáng tin cậy",
-        "content": "Chúng tôi cung cấp giải pháp CNTT chuẩn ngay từ đầu, trở thành đối tác đáng tin cậy trong thành công của bạn."
+        "content": "Chúng tôi cung cấp các giải pháp IT đúng đắn ngay từ lần đầu, đóng vai trò là đối tác đáng tin cậy, gắn bó với thành công của đối tác."
       }
     ]
   },
@@ -95,41 +102,41 @@
     "read_more": "Xem thêm"
   },
   "our_story": {
-    "title": "Câu chuyện của chúng tôi",
-    "content": "Được thành lập vào năm 2017, Datum Consulting là công ty tư vấn kỹ thuật và chuyển đổi số có trụ sở tại Auckland, New Zealand. Chúng tôi đã hợp tác với các doanh nghiệp từ startup đầy tham vọng đến một trong bốn ngân hàng lớn nhất tại Úc để cung cấp phần mềm chất lượng cao và thúc đẩy chuyển đổi số.",
-    "cta": "Về Datum"
+    "title": "Về Datum",
+    "content": "Được thành lập vào năm 2017, Datum Consulting là một công ty tư vấn về kỹ thuật và chuyển đổi số có trụ sở tại Auckland, New Zealand. Chúng tôi đã hợp tác với các doanh nghiệp ở mọi quy mô từ các startup đầy tham vọng đến một trong bốn ngân hàng lớn nhất của Úc để cung cấp phần mềm chất lượng cao và thúc đẩy quá trình chuyển đổi số.",
+    "cta": "Xem thêm"
   },
   "our_partners": {
-    "title": "Đối tác của chúng tôi",
-    "content": "Tại Datum, chúng tôi dự đoán những thách thức tiềm ẩn và chủ động giải quyết. Việc hợp tác với AWS giúp đảm bảo rằng các giải pháp công nghệ của chúng tôi được tích hợp liền mạch với chiến lược kinh doanh của bạn, tạo ra một lộ trình toàn diện cho tăng trưởng và thành công bền vững."
+    "title": "Đối Tác Chiến Lược",
+    "content": "Tại Datum, chúng tôi chủ động tìm kiếm và giải quyết nhanh chóng các thách thức tiềm ẩn. Bằng cách hợp tác với AWS, chúng tôi đảm bảo rằng các giải pháp công nghệ tương thích cao với chiến lược kinh doanh của đối tác, tạo ra một lộ trình toàn diện mở đường cho sự tăng trưởng và thành công bền vững."
   },
   "join_revolution": {
-    "title": "Tham gia cuộc cách mạng số",
-    "description": "Bảo vệ tương lai doanh nghiệp bạn cùng Datum. Hãy cùng xây dựng các giải pháp số thông minh, nhanh chóng và mạnh mẽ hơn."
+    "title": "Tham gia chuyển đổi số",
+    "description": "Cùng Datum tham gia vào chuyển đổi số, chuẩn bị tương lai phát triển hơn cho doanh nghiệp. Hãy cùng nhau xây dựng các giải pháp số thông minh hơn, nhanh hơn và mạnh mẽ hơn."
   },
   "locations": {
-    "title": "Văn phòng của chúng tôi",
+    "title": "Văn Phòng của Datum",
     "description": "Chúng tôi đang mở rộng khắp khu vực Châu Á – Thái Bình Dương với chiến lược rõ ràng, sự tận tâm với từng khách hàng và mục tiêu cụ thể. Các giải pháp của chúng tôi được phát triển từ sự thấu hiểu địa phương và hướng đến tạo ra những giá trị thiết thực cho toàn khu vực."
   },
 
 "banner": {
     "cloud": {
-      "title": "Thiết kế hệ sinh thái đám mây mở rộng theo tham vọng của bạn"
+      "title": "Thiết kế hệ sinh thái đám mây linh hoạt mở rộng theo quy mô phát triển doanh nghiệp của đối tác"
     },
     "data_ai": {
-      "title": "Thúc đẩy đổi mới dựa trên dữ liệu với trí tuệ nhân tạo"
+      "title": "Kỷ nguyên đổi mới dữ liệu bằng trí tuệ nhân tạo (AI)"
     },
     "software": {
-      "title": "Tiên phong kỹ thuật phần mềm cho doanh nghiệp sẵn sàng tương lai"
+      "title": "Tiên phong kỹ thuật phần mềm xây dựng doanh nghiệp đón đầu tương lai"
     },
     "Digital": {
       "title": "Tăng cường doanh nghiệp bằng công nghệ tiên tiến để dẫn đầu trong kỷ nguyên số"
     },
     "Integration": {
-      "title": "Tích hợp liền mạch cho chuyển đổi số mở rộng và bảo mật"
+      "title": "Tận hưởng hệ thống kinh doanh đồng nhất, tối ưu hoá hoạt động và cải thiện data flow bằng giải pháp tích hợp liền mạch mang lại hiệu quả và đổi mới tiến trình."
     },
     "Platform": {
-      "title": "Tiên phong kỹ thuật phần mềm cho doanh nghiệp sẵn sàng tương lai"
+      "title": "Platform engineering là bước đệm cho quá trình chuyển đổi số của doanh nghiệp"
     },
     "Insurance": {
       "title": "Bảo hiểm"
@@ -151,15 +158,15 @@
     }
   },
   "breadcrumbs": {
-    "services": "Dịch vụ của chúng tôi",
-    "cloud": "Đám mây",
-    "data_ai": "Dữ liệu & Trí tuệ nhân tạo",
+    "services": "Dịch vụ",
+    "cloud": "Điện Toán Đám Mây (Cloud)",
+    "data_ai": "Dữ Liệu và Trí tuệ nhân tạo",
     "software": "Phần mềm",
 
-    "solution": "Giải pháp của chúng tôi",
+    "solution": "GIẢI PHÁP",
     "digital": "Chuyển đổi số",
-    "integration": "Tích hợp",
-    "platform": "Nền tảng kỹ thuật",
+    "integration": "Tích Hợp Toàn Diện",
+    "platform": "Kỹ Thuật Nền Tảng",
 
     "industry": "Ngành",
     "banking": "Ngân hàng",
@@ -171,151 +178,518 @@
     "platform_customization": "Tùy chỉnh nền tảng"
   },
   "cloud_now": {
-    "title": "Thực trạng đám mây hiện nay",
+    "title": "Chuyển đổi đám mây ngay hôm nay",
     "items": [
       {
-        "content": "giảm 30% chi phí vận hành khi chuyển hệ thống ngân hàng cốt lõi lên đám mây"
+        "content": "Giảm 30% chi phí vận hành khi chuyển đổi hệ thống ngân hàng lõi (core banking systems) lên cloud."
       },
       {
-        "content": "cắt giảm 20% chi phí tồn kho khi triển khai dự báo nhu cầu dựa trên AI"
+        "content": "Giảm 20% chi phí cơ sở hạ tầng khi sử dụng hỗ trợ dự báo nhu cầu từ AI."
       }
     ]
   },
 
   "cloud_intro": {
-    "title": "Đám mây của bạn, được tái định hình",
+    "title": "Tái Tạo Đám Mây (Cloud) Của Doanh Nghiệp",
     "items": [
       {
-        "content": "Tại Datum, chúng tôi không chỉ chuyển hệ thống lên đám mây—<b>chúng tôi kiến trúc các hệ sinh thái phù hợp với tầm nhìn, nhu cầu ngành và mục tiêu tương lai của bạn.</b> Dù bạn đang tối ưu hóa vận hành, triển khai đổi mới đột phá hay mở rộng toàn cầu, giải pháp đám mây của chúng tôi đều được thiết kế để phát triển cùng tham vọng của bạn."
+        "content": "Tại Datum, chúng tôi không chỉ di chuyển hệ thống lên cloud mà còn xây dựng các hệ sinh thái được điều chỉnh phù hợp với tầm nhìn, yêu cầu của ngành và mục tiêu tương lai của khách hàng. Dù là đang đồng hộ hóa các hoạt động, tung ra các đổi mới đột phá hay mở rộng trên toàn cầu, cloud solutions của chúng tôi được thiết kế để phát triển cùng với tầm nhìn của doanh nghiệp đối tác."
+      }
+    ]
+  },
+
+  "clound_section":{
+    "title": "Tái định nghĩa với đám mây",
+    "items": [
+      {
+        "title": "Chuyển Đổi Đám Mây",
+        "content": "Thông qua hợp tác với các nhà cung cấp đám mây (cloud) hàng đầu, Datum Consulting đồng hành cùng doanh nghiệp từ những bước đầu tiên – dù là công khai, riêng tư hay máy ảo dùng riêng. Dịch vụ của chúng tôi bao gồm:<ul class=\"list-disc list-inside\"><li>Đánh giá mức độ sẵn sàng cho đám mây</li><li>Xây dựng chiến lược và lộ trình chuyển đổi</li></ul>"
+      },
+      {
+        "title": "Kiến trúc & Thiết kế",
+        "content": "Chúng tôi hợp tác với các bên liên quan về kinh doanh và công nghệ của anh chị để giúp xác định các mục tiêu phù hợp với con người, doanh nghiệp và công nghệ. Sau đó, các Kiến trúc sư được chứng nhận của chúng tôi sẽ phân tích các yêu cầu như hiện tại và trong tương lai, đồng thời trình bày các giải pháp an toàn, linh hoạt, hiệu quả về chi phí và tuân thủ quy định pháp lý cho đối tác."
+      },
+      {
+        "title": "Tích Hợp API",
+        "content": "Chúng tôi hiểu rằng công nghệ và kinh doanh phải được tích hợp để tạo ra những cơ hội mới cho doanh nghiệp trong kỷ nguyên số. Chúng tôi có kinh nghiệm trong việc phát triển các chiến lược API, kết nối các hệ thống hỗ trợ dữ liệu và điều hướng các nền tảng lai phức tạp với hệ thống cũ và cloud system có thể giúp doanh nghiệp tận dụng các tài sản hiện có để đổi mới."
+      },
+      {
+        "title": "Tự Động Hóa Hạ Tầng Đám Mây",
+        "content": "Hạ tầng triển khai hiệu quả, có thể truy vết giúp tối ưu chi phí, đảm bảo tính sẵn sàng và khả năng phục hồi. Datum Consulting cung cấp kiến thức triển khai tự động hóa hạ tầng hiện đại, container, và công cụ quản lý cấu hình, giúp giảm thiểu độ phức tạp trong vận hành đám mây."
+      },
+      {
+        "title": "Kiểm Tra An Ninh và Kiểm Soát Mối Đe Dọa",
+        "content": "Kiểm toán bảo mật và giám sát nguy cơ là những hoạt động cần được thực hiện liên tục. Dịch vụ tư vấn của chúng tôi sẽ giúp xác định và khắc phục những điểm yếu trong hạ tầng đám mây và dịch vụ thông tin của doanh nghiệp."
+      },
+      {
+        "title": "Kiểm Tra Tuân Thủ",
+        "content": "Chúng tôi hỗ trợ đảm bảo hạ tầng và ứng dụng đáp ứng các tiêu chuẩn tuân thủ cụ thể:<ul class=\"list-disc list-inside\"><li>Bảo vệ dữ liệu chung (GPDR)</li><li>Chăm sóc sức khoẻ (HIPAA)</li><li>Thanh toán (PCI-DSS)</li><li>Bảo hiểm (SOC) và Tài chính (SOX)</li></ul>"
+      },
+      {
+        "title": "Tối Ưu Chi Phí",
+        "content": "Chúng tôi hợp tác chặt chẽ để đảm bảo hạ tầng và ứng dụng của hệ thống đáp ứng các yêu cầu tuân thủ cụ thể, đồng thời tối ưu hóa chi phí thông qua:<ul class=\"list-disc list-inside\"><li>Điều chỉnh quy mô phù hợp và phân tích TCO</li><li>Lập kế hoạch đặt trước và cam kết</li><li>Điều chỉnh kiến trúc để giảm chi phí</li></ul>"
       }
     ]
   },
 
   "cloud_why": {
-    "title": "Vì sao chọn Datum",
+    "title": "Tại sao nên chọn Datum",
     "items": [
       {
-        "title": "Chiến lược phù hợp",
-        "content": "Chiến lược đám mây được xây dựng xoay quanh mục tiêu kinh doanh của bạn, không chỉ là thông số kỹ thuật.\nCân bằng giữa khả năng mở rộng, bảo mật và chi phí để thúc đẩy tăng trưởng."
+        "title": "Định Hướng Chiến Lược",
+        "content": "Chiến lược đám mây được thiết kế xoay quanh mục tiêu kinh doanh – không chỉ thông số kỹ thuật.\nTối ưu khả năng mở rộng, bảo mật và chi phí để thúc đẩy tăng trưởng."
       },
       {
-        "title": "Chuyên môn toàn diện",
-        "content": "Từ di chuyển hệ thống đến tối ưu hóa, điều phối đa đám mây và tự động hóa bằng AI.\nGiải pháp sẵn sàng tuân thủ (GDPR, HIPAA, PCI DSS) được cá nhân hóa theo ngành của bạn."
+        "title": "Chuyên Môn Toàn Diện",
+        "content": "Từ di chuyển, tối ưu hóa đến quản lý đa đám mây và tự động hóa bằng AI.\nGiải pháp tuân thủ tiêu chuẩn (GDPR, HIPAA, PCI DSS), phù hợp với từng ngành."
       },
       {
-        "title": "Lợi nhuận đo lường được",
-        "content": "Giảm chi phí hạ tầng từ 30–50% đồng thời nâng cao hiệu suất.\nBiến hệ thống đám mây thành trung tâm lợi nhuận nhờ dữ liệu và đổi mới sáng tạo."
+        "title": "Hiệu Quả Đầu Tư (ROI) được Kiểm Chứng",
+        "content": "Giảm 30–50% chi phí hạ tầng, đồng thời nâng cao hiệu suất.\nBiến đám mây thành trung tâm lợi nhuận nhờ dữ liệu và đổi mới sáng tạo.  "
       }
     ]
   },
 
+  "faq": {
+    "title": "Câu hỏi thường gặp",
+    "cloud":{
+      "items": 
+        [
+          {
+            "title": "Điện toán đám mây (Cloud Computing) là gì?",
+            "content": "Điện toán đám mây (Cloud) là dịch vụ cung cấp tài nguyên công nghệ như lưu trữ, máy chủ, cơ sở dữ liệu, mạng và phần mềm qua internet. Đây là giải pháp linh hoạt và dễ mở rộng giúp doanh nghiệp vận hành hệ thống CNTT hiệu quả hơn."
+          },
+          {
+            "title": "Những lợi ích của điện toán đám mây (Cloud) là gì?",
+            "content": "Cloud giúp doanh nghiệp tiết kiệm chi phí, dễ dàng mở rộng quy mô, tăng cường bảo mật, truy cập từ xa mọi lúc và được cập nhật tự động – từ đó nâng cao hiệu suất và khả năng thích ứng."
+          },
+          {
+            "title": "Việc di chuyển lên đám mây (Cloud Migration) có phù hợp với doanh nghiệp/ứng dụng doanh nghiệp của tôi không?",
+            "content": "Việc chuyển đổi lên Cloud sẽ phù hợp với doanh nghiệp cần mở rộng nhanh, tối ưu chi phí và cải thiện hiệu năng hệ thống. Việc đánh giá mức độ sẵn sàng chuyển đổi lên Cloud sẽ giúp xác định lộ trình chuyển đổi phù hợp nhất cho doanh nghiệp của đối tác."
+          },
+          {
+            "title": "Chi phí liên quan đến việc áp dụng điện toán đám mây (Cloud) là bao nhiêu?",
+            "content": "Chi phí sử dụng Cloud phụ thuộc vào hạ tầng, dung lượng lưu trữ, lưu lượng dữ liệu và các yêu cầu bảo mật. Mô hình trả theo mức sử dụng (pay-as-you-go) giúp doanh nghiệp tối ưu ngân sách hiệu quả."
+          },
+          {
+            "title": "Nền tảng ảo hóa giúp ích như thế nào trong việc triển khai các giải pháp đám mây (Cloud)?",
+            "content": "Nền tảng ảo hóa (Virtualization) giúp phân bổ tài nguyên linh hoạt, dễ mở rộng và đơn giản hóa việc triển khai, quản lý ứng dụng trên Cloud – tăng tốc độ và hiệu quả vận hành."
+          },
+          {
+            "title": "Tôi có thể di chuyển những khối lượng công việc nào lên cloud?",
+            "content": "Các công việc phổ biến bao gồm: ứng dụng web, cơ sở dữ liệu, phân tích dữ liệu, môi trường DevOps và các phần mềm doanh nghiệp như CRM, ERP."
+          },
+          {
+            "title": "Những đặc điểm cơ bản của điện toán đám mây (Cloud) là gì?",
+            "content": "Cloud có các tính năng nổi bật như: tự phục vụ theo nhu cầu, khả năng mở rộng nhanh chóng, chia sẻ tài nguyên linh hoạt, thanh toán theo mức sử dụng và truy cập mọi nơi qua internet."
+          }
+        ],
+        "btn_text": "Đặt câu hỏi về Dịch vụ Điện Toán Đám Mây"
+      },
+        "data_ai":{
+      "items":[
+        {
+          "title": "Big Data là gì?",
+          "content": "Big Data là khối lượng dữ liệu khổng lồ, bao gồm cả dữ liệu có cấu trúc và phi cấu trúc, được tạo ra với tốc độ rất nhanh. Doanh nghiệp có thể sử dụng Big Data kết hợp với phân tích nâng cao, AI và machine learning để nhận diện xu hướng, dự đoán hành vi và đưa ra quyết định chính xác dựa trên dữ liệu."
+        },
+        {
+          "title": "Làm thế nào để sử dụng AI để nâng cao trải nghiệm khách hàng?",
+          "content": "AI giúp tối ưu trải nghiệm khách hàng thông qua chatbot tự động, gợi ý sản phẩm cá nhân hóa, phân tích cảm xúc và dự đoán nhu cầu. Hệ thống AI hiểu hành vi người dùng, phản hồi tức thì và mang lại thông tin chi tiết theo thời gian thực – từ đó tăng mức độ hài lòng và giữ chân khách hàng hiệu quả hơn."
+        },
+        {
+          "title": "AI cải thiện quyết định kinh doanh như thế nào?",
+          "content": "Phân tích dữ liệu bằng AI xử lý các tập dữ liệu lớn để phát hiện các quy luật, dự đoán kết quả và đưa ra insight có thể ra quyết định ngay. Doanh nghiệp ứng dụng AI để dự báo nhu cầu, quản lý rủi ro và xây dựng chiến lược thông minh — giúp ra quyết định nhanh hơn và chính xác hơn."
+        },
+        {
+          "title": "Những ngành nào hưởng lợi nhiều nhất từ phân tích dữ liệu AI?",
+          "content": "Các lĩnh vực như y tế, tài chính, bán lẻ, sản xuất và logistics đều đang ứng dụng phân tích dữ liệu AI để phát hiện gian lận, tối ưu chuỗi cung ứng, cá nhân hóa maketing, nâng cao hiêu quả chuẩn đoán và AI thúc đẩy hiệu suất, tiết kiệm chi phí và tạo đột phá trong đổi mới."
+        },
+        {
+          "title": "Tại sao xử lý dữ liệu thời gian thực lại quan trọng?",
+          "content": "Xử lý dữ liệu thời gian thực giúp doanh nghiệp phản ứng ngay lập tức trước các thay đổi thị trường, phát hiện bất thường và ra quyết định nhanh chóng. Đây là yếu tố then chốt cho các lĩnh vực như giao dịch tài chính, bảo mật mạng, ứng dụng IoT và dịch vụ khách hàng tự động."
+        },
+        {
+          "title": "Làm thế nào để đảm bảo bảo mật và tuân thủ dữ liệu?",
+          "content": "Đảm bảo an toàn dữ liệu bằng cách như: Mã hóa thông tin, áp dụng kiểm soát truy cập, tuân thủ các quy định như GDPR, HIPAA. Bên cạnh đó, doanh nghiệp nên thực hiện kiểm tra bảo mật định kỳ, ứng dụng AI để phát hiện mối đe dọa sớm và lưu trữ dữ liệu trên đám mây (Cloud) một cách an toàn."
+        }
+      ],
+      "btn_text": "Đặt câu hỏi về Dịch Vụ Dữ Liệu & Trí tuệ nhân tạo"
+    },
+    "software": {
+      "items": [
+        {
+          "title": "Các lợi ích của việc phát triển phần mềm tùy chỉnh theo yêu cầu là gì?",
+          "content": "Phần mềm tùy chỉnh được thiết kế riêng theo nhu cầu cụ thể của doanh nghiệp, giúp tăng hiệu suất, mở rộng linh hoạt và bảo mật cao hơn. So với phần mềm đóng gói sẵn, giải pháp này cho phép tích hợp tốt hơn với hệ thống hiện có, tạo nền tảng vững chắc cho tăng trưởng dài hạn và lợi thế cạnh tranh."
+        },
+        {
+          "title": "Làm thế nào để xác định giải pháp phần mềm nào phù hợp cho doanh nghiệp của tôi?",
+          "content": "Bắt đầu bằng việc đánh giá mục tiêu kinh doanh, quy trình vận hành và các thách thức hiện tại. Làm việc cùng chuyên gia phát triển phần mềm sẽ giúp doanh nghiệp xác định nên chọn giải pháp tùy chỉnh, phần mềm có sẵn hay kết hợp cả hai — dựa trên nhu cầu tính năng, ngân sách và khả năng mở rộng."
+        },
+        {
+          "title": "Những yếu tố nào quyết định khả năng mở rộng của phần mềm doanh nghiệp?",
+          "content": "Phần mềm doanh nghiệp linh hoạt thường được xây dựng theo kiến trúc mô-đun, hạ tầng Cloud và microservices – giúp xử lý hiệu quả dữ liệu lớn, lượng người dùng tăng và khối lượng công việc cao. Đây là lựa chọn lý tưởng cho các doanh nghiệp đang tăng trưởng, cần đảm bảo hiệu suất ổn định và tiết kiệm chi phí."
+        },
+        {
+          "title": "AI giúp cải tiến ứng dụng phần mềm bằng cách nào?",
+          "content": "Tích hợp AI giúp phần mềm tự động hóa công việc, hỗ trợ ra quyết định chính xác và cá nhân hóa trải nghiệm người dùng. Các tính năng như phân tích dự đoán, xử lý ngôn ngữ tự nhiên (NLP) và học máy (ML) giúp tối ưu vận hành và thúc đẩy đổi mới."
+        },
+        {
+          "title": "Làm sao để tích hợp các giải pháp đám mây với phần mềm đang sử dụng?",
+          "content": "Cloud có thể tích hợp dễ dàng thông qua API, middleware hoặc kiến trúc hybrid cloud. Điều này cho phép trao đổi dữ liệu mượt mà, mở rộng linh hoạt và đảm bảo bảo mật – trong khi vẫn duy trì khả năng tương thích với hệ thống cũ của doanh nghiệp."
+        },
+        {
+          "title": "Làm thế nào để đảm bảo an toàn dữ liệu trong phát triển phần mềm?",
+          "content": "Đảm bảo an toàn bằng cách sử dụng mã hóa mạnh, tuân thủ nguyên tắc lập trình an toàn và kiểm soát truy cập chặt chẽ. Doanh nghiệp nên kiểm thử bảo mật định kỳ, tuân thủ các tiêu chuẩn quốc tế (như GDPR, ISO 27001) và áp dụng các biện pháp bảo mật trên nền tảng Cloud để bảo vệ dữ liệu nhạy cảm trước các mối đe dọa mạng."
+        },
+        {
+          "title": "Làm thế nào để đảm bảo phần mềm được phát triển đáp ứng các tiêu chuẩn bảo mật và tuân thủ?",
+          "content": "Chúng tôi tuân thủ các tiêu chuẩn bảo mật và quy định như GDPR, HIPAA, PCI DSS trong quá trình phát triển phần mềm. Điều này bao gồm mã hóa dữ liệu, xác thực người dùng, kiểm tra bảo mật định kỳ và đảm bảo tuân thủ quy định ngành."
+        }
+      ],
+      "btn_text": "Đặt câu hỏi về Dịch vụ Phát triển Phần mềm"
+    },
+    "platform":{
+      "items":[
+        {
+          "title": "Kỹ thuật nền tảng số (platform engineering) là gì?",
+          "content": "Kỹ thuật nền tảng số (platform engineering) là quá trình thiết kế và xây dựng các nền tảng nội bộ tự phục vụ (self-service) nhằm tối ưu phát triển phần mềm và vận hành hệ thống. Nó cung cấp công cụ tiêu chuẩn hóa, tự động hóa và quản lý hạ tầng – giúp đội ngũ phát triển triển khai ứng dụng hiệu quả hơn."
+        },
+        {
+          "title": "Kỹ thuật nền tảng số (platform engineering) khác gì so với DevOps và SRE?",
+          "content": "Trong khi DevOps tập trung vào sự phối hợp và tự động hóa giữa đội ngũ phát triển và vận hành, và Site Reliability Engineering (SRE) chú trọng vào độ ổn định của hệ thống, thì Platform Engineering tạo ra các nền tảng nội bộ cho lập trình viên (IDP) – giúp họ tự phục vụ, giảm tải tinh thần và tăng hiệu suất làm việc."
+        },
+        {
+          "title": "Tại sao kỹ thuật nền tảng số lại quan trọng đối với các doanh nghiệp hiện đại?",
+          "content": "Kỹ thuật nền tảng số (platform engineering) nâng cao hiệu suất làm việc của lập trình viên, giảm chi phí vận hành và cải thiện độ ổn định hệ thống. Giải pháp này cho phép doanh nghiệp mở rộng quy mô phát triển phần mềm bằng cách tự động hóa quy trình, chuẩn hóa hạ tầng và cung cấp quyền truy cập tự phục vụ vào môi trường phát triển."
+        },
+        {
+          "title": "Những thành phần cốt lõi trong chiến lược kỹ thuật nền tảng số là gì?",
+          "content": "Một chiến lược kỹ thuật nền tảng số (platform engineering) hiệu quả bao gồm tự động hóa, nền tảng phát triển nội bộ (IDP), chính sách bảo mật, công cụ giám sát hệ thống và tích hợp với các pipeline CI/CD. Chiến lược này cần gắn liền với mục tiêu kinh doanh để tối ưu tốc độ và độ tin cậy trong triển khai phần mềm."
+        },
+        {
+          "title": "Kỹ thuật nền tảng số giúp cải thiện trải nghiệm lập trình viên (DevEx) như thế nào?",
+          "content": "Kỹ thuật nền tảng số (platform engineering) đơn giản hóa việc quản lý hạ tầng, tự động hóa các tác vụ lặp lại và cung cấp công cụ tự phục vụ trực quan, từ đó giảm bớt rào cản trong quá trình phát triển phần mềm. Điều này giúp nâng cao năng suất của lập trình viên, tăng sự hài lòng trong công việc và cải thiện chất lượng phần mềm tổng thể."
+        },
+        {
+          "title": "Lợi ích của việc triển khai nền tảng phát triển nội bộ (Internal Developer Platform - IDP) là gì?",
+          "content": "Nền tảng phát triển nội bộ (IDP) tập trung các công cụ phát triển, tự động hóa quy trình làm việc và đảm bảo tuân thủ các chuẩn mực tốt nhất. IDP giúp giảm độ phức tạp và tăng tốc độ triển khai, cho phép lập trình viên tập trung vào viết mã thay vì xử lý hạ tầng, từ đó thúc đẩy đổi mới nhanh hơn và giảm chi phí vận hành."
+        }
+      ],
+          "btn_text": "Đặt câu hỏi về các giải pháp mà anh/chị muốn tìm hiểu"
+    },
+    "digital":{
+      "items":[
+        {
+          "title": "Chuyển đổi số (Digital Transformation) là gì?",
+          "content": "Chuyển đổi số (Digital Transformation) là quá trình tích hợp công nghệ số vào mọi lĩnh vực trong doanh nghiệp, nhằm cải thiện quy trình vận hành, trải nghiệm khách hàng và hiệu quả hoạt động. Quá trình này giúp tổ chức duy trì tính cạnh tranh, linh hoạt và ra quyết định dựa trên dữ liệu trong một môi trường số không ngừng thay đổi."
+        },
+        {
+          "title": "Digital Transformation có thể cải thiện hiệu quả kinh doanh như thế nào?",
+          "content": "Bằng cách tự động hóa quy trình làm việc, nâng cao khả năng truy cập dữ liệu và cung cấp thông tin theo thời gian thực, chuyển đổi số giúp doanh nghiệp giảm chi phí, tăng năng suất và tối ưu vận hành. Đồng thời, công nghệ như AI và phân tích dữ liệu cũng thúc đẩy đổi mới và cải thiện chất lượng ra quyết định."
+        },
+        {
+          "title": "Những công nghệ chủ chốt nào đang thúc đẩy Digital Transformation?",
+          "content": "Các công nghệ cốt lõi của chuyển đổi số bao gồm điện toán đám mây, trí tuệ nhân tạo (AI) và máy học (ML), phân tích dữ liệu lớn (big data), Internet vạn vật (IoT), tự động hóa và blockchain. Những đổi mới này cho phép doanh nghiệp tối ưu hóa hoạt động, nâng cao bảo mật và mang đến trải nghiệm cá nhân hóa cho khách hàng."
+        },
+        {
+          "title": "Làm thế nào để tôi bắt đầu hành trình Digital Transformation của mình?",
+          "content": "Để bắt đầu, doanh nghiệp cần đánh giá hạ tầng công nghệ hiện tại, xác định các thách thức kinh doanh trọng yếu và thiết lập mục tiêu chuyển đổi rõ ràng. Việc áp dụng giải pháp dựa trên đám mây, triển khai chiến lược dựa trên dữ liệu và đầu tư vào công cụ tự động hóa sẽ giúp nâng cao hiệu quả và khả năng mở rộng."
+        },
+        {
+          "title": "Tự động hóa có thể tối ưu hóa nỗ lực Digital Transformation như thế nào?",
+          "content": "Tự động hóa giúp giảm công việc thủ công, đẩy nhanh quy trình và hạn chế sai sót do con người. Từ robot tự động hóa quy trình (RPA) đến phân tích dữ liệu điều khiển bởi AI, tự động hóa giúp doanh nghiệp mở rộng quy mô linh hoạt, tăng tốc độ ứng dụng số và nâng cao trải nghiệm khách hàng."
+        }
+      ],
+          "btn_text": "Đặt câu hỏi về các giải pháp mà anh/chị muốn tìm hiểu"
+    },
+    "integration":{
+      "items":[
+        {
+          "title": "Hệ thống Integration là gì, tại sao nó lại quan trọng? ",
+          "content": "Tích hợp hệ thống (Integration) là quá trình kết nối các hệ thống CNTT, ứng dụng và nguồn dữ liệu khác nhau để hoạt động liền mạch như một hệ thống thống nhất. Việc tích hợp giúp tăng hiệu quả vận hành, giảm tình trạng dữ liệu bị phân tán (data silos) và cải thiện khả năng ra quyết định nhờ luồng dữ liệu xuyên suốt giữa các phòng ban."
+        },
+        {
+          "title": "Tích hợp API cải thiện hiệu quả kinh doanh như thế nào?",
+          "content": "Tích hợp API cho phép các ứng dụng giao tiếp và chia sẻ dữ liệu theo thời gian thực, tự động hóa quy trình làm việc, giảm tác vụ thủ công và nâng cao trải nghiệm khách hàng. Nhờ đó, doanh nghiệp có thể mở rộng quy mô nhanh chóng và dễ dàng tích hợp các dịch vụ mới."
+        },
+        {
+          "title": "Tích hợp cloud mang lại lợi ích gì cho doanh nghiệp của tôi?",
+          "content": "Tích hợp điện toán đám mây (Cloud integration) kết nối hệ thống tại chỗ (on-premise) với các nền tảng đám mây, giúp đồng bộ dữ liệu theo thời gian thực, tăng khả năng cộng tác và mở rộng linh hoạt. Đồng thời, giải pháp này còn tăng cường bảo mật, giảm chi phí hạ tầng IT và hỗ trợ làm việc từ xa hiệu quả."
+        },
+        {
+          "title": "Giải pháp tích hợp gồm những biện pháp bảo mật nào?",
+          "content": "Các giải pháp bảo mật trong tích hợp hệ thống bao gồm mã hóa dữ liệu, xác thực API, kiểm soát truy cập theo vai trò (RBAC), tường lửa và giám sát mối đe dọa. Tất cả nhằm bảo vệ tính toàn vẹn của dữ liệu và ngăn chặn rủi ro an ninh mạng trong quá trình trao đổi thông tin."
+        },
+        {
+          "title": "Real-time data streaming là gì và nó hoạt động như thế nào?",
+          "content": "Truyền dữ liệu thời gian thực (real-time data streaming) cho phép luồng dữ liệu liên tục giữa các hệ thống ngay khi sự kiện xảy ra. Với kiến trúc hướng sự kiện, dữ liệu được xử lý ngay lập tức, giúp doanh nghiệp phản ứng nhanh với thông tin, giám sát hoạt động và nâng cao trải nghiệm khách hàng theo thời gian thực."
+        }
+      ],
+          "btn_text": "Đặt câu hỏi về các giải pháp mà anh/chị muốn tìm hiểu"
+    }
+  },
+
   "banking_stories": {
-    "title": "Câu chuyện thành công trong lĩnh vực ngân hàng",
-    "story_1": "Tùy chỉnh nền tảng Amazon EKS an toàn cho một đối tác ngân hàng danh tiếng",
-    "story_2": "Tái định nghĩa sự xuất sắc trong ngân hàng: Chuyển đổi vùng hạ cánh an toàn"
+    "title": "Câu chuyện thành công",
+    "story_1": "Thúc đẩy chuyển đổi kỹ thuật số thông qua áp dụng đám mây và tích hợp dữ liệu",
+    "story_2": "Cải thiện trải nghiệm khách hàng và quy trình vận hành thông qua AI và machine learning."
   },
 
   "team_section": {
-    "title_cloud": "Sẵn sàng chuyển lên đám mây?",
-    "title_data_ai": "Sẵn sàng đổi mới với AI?",
-    "title_software": "Sẵn sàng phát triển phần mềm?",
-    "get_consulted": "Nhận tư vấn từ chuyên gia của chúng tôi",
-    "content": "Trao đổi với chuyên gia của chúng tôi để bắt đầu hành trình chuyển đổi số",
-    "content_1": "Trao đổi với chuyên gia của chúng tôi để bắt đầu xây dựng nền tảng của bạn"
+    "title_cloud": "Doanh nghiệp đã sẵn sàng sử dụng dịch vụ điện toán đám mây?",
+    "title_data_ai": "Anh/chị đã sẵn sàng xây dựng phần mềm cho doanh nghiệp?",
+    "title_software": "Anh/chị đã sẵn sàng xây dựng phần mềm cho doanh nghiệp?",
+    "get_consulted": "Đặt lịch tư vấn cùng chuyên gia Datum",
+    "content": "Trò chuyện cùng chuyên gia về Điện Toán Đám Mây của chúng tôi để bắt đầu hành trình chuyển đổi ngay hôm nay!",
+    "content_software": "Trò chuyện cùng chuyên gia về Phần mềm của chúng tôi để bắt đầu hành trình chuyển đổi số ngay hôm nay!",
+    "content_1": "Trao đổi với chuyên gia của chúng tôi để bắt đầu xây dựng nền tảng của bạn",
+    "name":"Đỗ Ngọc Linh",
+    "position":"Đồng sáng lập"
   },
 
   "data_ai_percentage": {
-    "title": "Đổi mới với Dữ liệu & AI",
+    "title": "Đổi mới với trí tuệ nhân tạo",
     "items": [
       {
-        "content": "tăng 30% hiệu quả vận hành nhờ tự động hóa bằng AI."
+        "content": "Nâng cao 30% hiệu suất vận hành nhờ tự động hóa thông minh từ AI."
       },
       {
-        "content": "tăng 20% tỷ lệ giữ chân khách hàng với chiến lược cá nhân hóa dựa trên AI."
+        "content": "Giữ chân khách hàng tốt hơn 20% nhờ chiến lược tương tác được cá nhân hóa do AI hỗ trợ."
       }
     ]
   },
 
   "data_ai_section": {
-    "title": "Dữ liệu của bạn, tái định hình",
+    "title": "Tái tạo dữ liệu của đối tác",
     "items": [
       {
-        "content": "Tại Datum, chúng tôi không chỉ phân tích dữ liệu — chúng tôi khai phá toàn bộ tiềm năng của nó. Các giải pháp dựa trên AI của chúng tôi tích hợp liền mạch vào doanh nghiệp bạn, hỗ trợ phân tích dự đoán, tự động hóa quy trình và hiểu biết sâu sắc về khách hàng. Dù bạn đang tối ưu hóa quy trình, nâng cao trải nghiệm khách hàng hay xây dựng ứng dụng AI thế hệ tiếp theo, chúng tôi đều thiết kế chiến lược dữ liệu phù hợp với tầm nhìn của bạn."
+        "content": "Tại Datum, chúng tôi không chỉ phân tích dữ liệu – mà khai phá toàn bộ tiềm năng của nó. Các giải pháp tích hợp AI giúp doanh nghiệp dự đoán xu hướng, tự động hóa quy trình và thấu hiểu khách hàng sâu sắc hơn. Dù đối tác mong muốn một hệ thống tối ưu vận hành, nâng cao trải nghiệm khách hàng hay phát triển ứng dụng AI thế hệ mới, chúng tôi sẽ xây dựng chiến lược dữ liệu phù hợp với tầm nhìn của doanh nghiệp."
       }
     ]
   },
 
   "why_datum_ai": {
-    "title": "Tại sao chọn Datum",
+    "title": "Tại sao doanh nghiệp nên chọn Datum",
     "items": [
       {
-        "title": "Đổi mới dựa trên kết quả",
-        "content": "Chúng tôi bắt đầu từ mục tiêu của bạn và xây dựng các giải pháp phù hợp để giải quyết các thách thức thực tế."
+        "title": "Định Hướng Chiến Lược",
+        "content": "Giải pháp AI được xây dựng xoay quanh nhu cầu kinh doanh – không chỉ dựa trên khả năng kỹ thuật.Ứng dụng khoa học dữ liệu và machine learning để tạo ra giá trị thực tiễn."
       },
       {
-        "title": "Hợp tác liền mạch",
-        "content": "Giao tiếp cởi mở, trung thực và thường xuyên đảm bảo minh bạch và thống nhất ở mọi bước."
+        "title": "Chuyên Môn Toàn Diện",
+        "content": "Từ xử lý dữ liệu đến triển khai mô hình AI và tối ưu liên tục. Giải pháp tuân thủ tiêu chuẩn ngành (GDPR, HIPAA, PCI DSS), phù hợp với lĩnh vực của đối tác."
       },
       {
-        "title": "Chuyên môn đáng tin cậy",
-        "content": "Chúng tôi cung cấp giải pháp CNTT đúng ngay từ đầu và là đối tác đáng tin cậy đầu tư vào thành công của bạn."
+        "title": "Hiệu Quả Đầu Tư (ROI) được Kiểm Chứng",
+        "content": "Tối ưu vận hành và giảm chi phí tới 40% nhờ AI. Mở ra nguồn doanh thu mới với phân tích dự đoán và tự động hóa thông minh."
+      }
+    ]
+  },
+
+  "data_ai":{
+    "title": "Tái tạo với Dữ liệu và AI",
+    "items": [
+      {
+        "title": "Chiến lược & Kiến trúc Dữ liệu",
+        "content": "Chúng tôi khai thác data có cấu trúc và phi cấu trúc với chiến lược tuỳ chỉnh phù hợp. <br />Đội ngũ chuyên gia của chúng tôi thiết kế kiến trúc dữ liệu mạnh mẽ, linh hoạt, hỗ trợ AI và phân tích để đưa ra quyết định chính xác, hiệu quả."
+      },
+      {
+        "title": "Nền tảng Big Data & Phân tích",
+        "content": "Biến raw data thành tinsights theo thời gian thực với data platforms được mở rộng.<ul class=\"list-disc list-inside\"><li>Data Lakehouse & Warehousing: Lưu trữ và xử lý các tập data khổng lồ một cách hiệu quả.</li><li>BI Dashboards & Reporting: Nhìn rõ xu hướng từ phân tích tương tác.</li><li>Real-Time Data Streaming: Hỗ trợ ra quyết định tức thì với data cập nhật liên tục.</li></ul>"
+      },
+      {
+        "title": "Máy học & Phân tích nâng cao",
+        "content": "Tối ưu hóa hoạt động và tự động hóa việc ra quyết định với các mô hình AI-driven.<ul class=\"list-disc list-inside\"><li>Tùy Chỉnh Máy Học: mô hình AI được thiết kế riêng để đáp ứng đa dạng ngành.</li><li>MLOps & Mở Rộng Mô Hình: triển khai, giám sát và tối ưu hóa AI để đạt hiệu suất tối đa.</li><li>Cân Bằng & Tối Ưu Hóa: Đảm bảo độ tin cậy và ổn định khi xử lý lượng data lớn.</li></ul>"
+      },
+      {
+        "title": "Trí tuệ nhân tạo (Generative AI) & NLP",
+        "content": "Tự động hoá việc tương tác với khách hàng bằng AI.<ul class=\"list-disc list-inside\"><li>AI Tạo Sinh: Nội dung được tạo tự động cá nhân hoá trải nghiệm người dùng.</li><li>NLP & Chatbots: Xử lý ngôn ngữ một cách tự nhiên với trợ lý ảo AI."
+      },
+      {
+        "title": "Chia sẻ dữ liệu an toàn",
+        "content": "Chúng tôi luôn đề cao tính bảo mật và toàn vẹn dữ liệu với đối tác.<ul class=\"list-disc list-inside\"><li>Quản Trị & Tuân Thủ: Đảm bảo tuân thủ các quy định và bảo vệ dữ liệu.</li><li>Mã Hóa & Kiểm Soát Truy Cập: Bảo mật dữ liệu nhạy cảm bằng các lớp bảo mật tiên tiến.</li><li>Chia Sẻ Dữ Liệu Liền Mạch: Cho phép kiểm soát truy cập giữa các nhóm và đối tác.</li></ul>"
       }
     ]
   },
 
   "software_percentage": {
-    "title": "Đổi mới với phần mềm",
+    "title": "Phần mềm được nâng cấp và đổi mới",
     "items": [
       {
-        "content": "tăng hiệu suất vận hành bằng cách tự động hóa các quy trình kinh doanh quan trọng với giải pháp phần mềm tùy chỉnh."
+        "content": "Tăng 40% hiệu suất vận hành nhờ tự động hóa các quy trình kinh doanh chủ chốt với giải pháp phần mềm tùy chỉnh."
       },
       {
-        "content": "rút ngắn thời gian ra mắt sản phẩm nhờ mô hình phát triển linh hoạt và kiến trúc mở rộng."
+        "content": "Rút ngắn 25% thời gian đưa sản phẩm ra thị trường nhờ áp dụng các mô hình phát triển linh hoạt và kiến trúc phần mềm có khả năng mở rộng."
       }
     ]
   },
 
   "software_section": {
-    "title": "Phần mềm của bạn, được tái định hình",
+    "title": "Tái tạo phần mềm của doanh nghiệp",
     "items": [
       {
-        "content": "Tại Datum, chúng tôi tích hợp các nền tảng cũ với công nghệ hiện đại để nâng cao tính linh hoạt và khả năng mở rộng. Giải pháp của chúng tôi — từ quản lý API, tự động hóa quy trình đến kiến trúc chống lỗi — cho phép đổi mới liền mạch mà không làm gián đoạn hoạt động."
+        "content": "Tại Datum, chúng tôi tích hợp các nền tảng kế thừa với công nghệ hiện đại nhằm nâng cao tính linh hoạt và khả năng mở rộng.  Giải pháp của chúng tôi – từ quản lý API, tự động hóa quy trình đến kiến trúc chống lỗi – giúp doanh nghiệp đổi mới liền mạch mà không gián đoạn vận hành."
       }
     ]
   },
 
   "why_datum_software": {
-    "title": "Tại sao chọn Datum",
+    "title": "Tại sao doanh nghiệp đối tác nên chọn Datum",
     "items": [
       {
-        "title": "Tiếp cận dựa trên mục tiêu kinh doanh",
-        "content": "Giải pháp phần mềm được thiết kế để đáp ứng mục tiêu kinh doanh, không chỉ yêu cầu kỹ thuật.\nCân bằng giữa khả năng mở rộng, bảo mật và hiệu quả chi phí để tối ưu hóa hiệu suất."
+        "title": "Lấy lợi ích doanh nghiệp là trọng tâm",
+        "content": "Giải pháp phần mềm được thiết kế xoay quanh mục tiêu kinh doanh – không chỉ yêu cầu kỹ thuật. Cân bằng giữa khả năng mở rộng, bảo mật và hiệu quả chi phí để tối đa hóa hiệu suất."
       },
       {
-        "title": "Phát triển toàn chu trình",
-        "content": "Từ ý tưởng đến triển khai, chúng tôi đảm nhận toàn bộ: thiết kế UI/UX, tích hợp API, tự động hóa và kiến trúc dựa trên đám mây.\nGiải pháp tuân thủ tiêu chuẩn ngành về bảo mật và quy định (GDPR, HIPAA, PCI DSS)."
+        "title": "Phát Triển Phần Mềm Trọn Gói",
+        "content": "Từ ý tưởng đến triển khai, chúng tôi đảm nhận toàn bộ quy trình: thiết kế UI/UX, tích hợp API, tự động hóa và kiến trúc đám mây.\n Giải pháp tuân thủ tiêu chuẩn ngành, đảm bảo an toàn và phù hợp quy định (GDPR, HIPAA, PCI DSS)."
       },
       {
-        "title": "ROI có thể đo lường",
-        "content": "Giảm chi phí bảo trì phần mềm từ 30–50% trong khi cải thiện hiệu suất.\nTận dụng dữ liệu để đẩy nhanh ra quyết định và đổi mới."
+        "title": "Hiệu Quả Đầu Tư (ROI) được Kiểm Chứng",
+        "content": "Giảm 30–50% chi phí bảo trì phần mềm trong khi vẫn nâng cao hiệu suất.\nTận dụng phân tích dữ liệu để thúc đẩy ra quyết định nhanh và đổi mới liên tục."
+      }
+    ]
+  },
+
+  "software":{
+    "title": "Tối Ưu Hóa với Dịch Vụ Phần Mềm",
+    "items": [
+      {
+        "title": "Phát Triển Nền Tảng & Hệ Thống",
+        "content": "Chúng tôi xây dựng các nền tảng có khả năng mở rộng, bảo mật và hiệu suất cao, phù hợp với nhu cầu riêng của doanh nghiệp – từ hệ thống doanh nghiệp đến giải pháp SaaS. Dịch vụ của chúng tôi bao gồm:<ul class=\"list-disc list-inside\"><li>Phát triển nền tảng SaaS</li><li> Hệ thống doanh nghiệp (ERP, CRM)</li><li>Tích hợp API & hệ thống cũ</li><li>Kiến trúc Microservices</li></ul>"
+      },
+      {
+        "title": "Architecture <br class=\"hidden lg:block\" /> and Design",
+        "content": "We will team up with your business and technology stakeholders to help define the objectives which align with people, business, and technology. Our certified Architects then analyze the requirements as they stands for today and into the future, and present you with secure, resilient, cost effective, and Compliance-ready solutions."
+      },
+      {
+        "title": "Ứng Dụng Web",
+        "content": "Chúng tôi phát triển ứng dụng web hiệu suất cao với thiết kế đáp ứng, xác thực bảo mật và tích hợp API mượt mà. Các giải pháp giúp nâng cao trải nghiệm người dùng, đồng thời tối ưu tốc độ, khả năng mở rộng và khả năng truy cập."
+      },
+      {
+        "title": "Ứng Dụng Di Động",
+        "content": "Từ ứng dụng gốc (native) đến đa nền tảng (cross-platform), chúng tôi phát triển ứng dụng di động thông minh cho iOS & Android, giúp doanh nghiệp kết nối khách hàng mọi lúc, mọi nơi."
+      },
+      {
+        "title": "Ứng Dụng Dữ Liệu Thông Minh",
+        "content": "Tận dụng Big Data & AI để biến dữ liệu thành lợi thế cạnh tranh! Chúng tôi phát triển các công cụ phân tích dự đoán, nền tảng machine learning và hệ thống ra quyết định tự động, giúp doanh nghiệp đưa ra quyết định chiến lược dựa trên dữ liệu chính xác.<ul class=\"list-disc list-inside\"><li>Phân tích & Trí tuệ Doanh nghiệp (BI)</li><li>Ứng dụng Machine Learning & Deep Learning</li><li>Kho dữ liệu & hồ dữ liệu (Data Warehouse & Data Lake)</li><li>Xử lý dữ liệu theo thời gian thực</li></ul>"
+      }
+    ]
+  },
+  
+  "building":{
+    "platform": {
+          "title": "Nền móng cho sự phát triển",
+          "items": [
+            {
+              "title": "Cải thiện bảo mật và tuân thủ quy định"
+            },
+            {
+              "title": "Tăng tốc độ phát triển phần mềm"
+            },
+            {
+              "title": "Nâng cao hiệu quả vận hành"
+            }
+          ]
+    },
+    "integration":{
+      "title":"Nền móng cho sự phát triển",
+      "items": [
+            {
+              "title": "Kết nối các hệ thống rời rạc để tạo ra một cơ sở hạ tầng gắn kết."
+            },
+            {
+              "title": "Tự động hóa quy trình làm việc để giảm thiểu các thao tác thủ công."
+            },
+            {
+              "title": "Dữ liệu được tổng hợp dưới góc nhìn tổng quan giúp doanh nghiệp nắm bắt hiệu quả hoạt động."
+            }
+          ]
+    },
+    "digital":{
+      "title":"Nền móng cho sự phát triển",
+      "items": [
+            {
+              "title": "Hiện đại hóa hệ thống cũ để tích hợp mượt mà"
+            },
+            {
+              "title": "Nâng cao khả năng thích ứng doanh nghiệp với đổi mới số"
+            },
+            {
+              "title": "Tối ưu vận hành và tăng cường kết nối với khách hàng"
+            }
+          ]
+    }
+  },
+
+  "platform":{
+    "title": "Phương pháp tiếp cận kỹ thuật nền tảng tại Datum",
+    "items": [
+      {
+        "title": "CI/CD Pipelines",
+        "content": "Tự động hóa quy trình phát triển và triển khai phần mềm, giúp thay đổi và phát hành mã nguồn nhanh chóng, ổn định."
+      },
+      {
+        "title": "Container Hóa và Điều phối",
+        "content": "Sử dụng các công nghệ như Docker và Kubernetes để quản lý các container chứa các thành phần ứng dụng."
+      },
+      {
+        "title": "Quản Lý API",
+        "content": "Cung cấp các công cụ và dịch vụ để tạo, quản lý và bảo mật API."
+      },
+      {
+        "title": "Hạ Tầng Dưới Dạng Mã (laC)",
+        "content": "Tự động hóa quản lý hạ tầng với laC, giúp triển khai nhanh chóng, chính xác và linh hoạt hơn."
+      },
+      {
+        "title": "Phát triển Ứng dụng Cloud-Native",
+        "content": "Giải pháp phát triển Cloud-Native giúp xây dựng và triển khai ứng dụng linh hoạt, tận dụng tối đa sức mạnh của đám mây."
+      },
+      {
+        "title": "Phát Triển, Bảo Mật và Vận Hành ",
+        "content": "Bảo mật tích hợp ngay từ đầu trong quy trình phát triển phần mềm, giúp bảo vệ ứng dụng hiệu quả hơn."
+      },
+      {
+        "title": "Giám Sát & Ghi Log",
+        "content": "Giúp theo dõi hiệu suất ứng dụng, phân tích hoạt động hệ thống để phát hiện và xử lý sự cố kịp thời."
+      },
+      {
+        "title": "Bảo Mật và Tuân Thủ",
+        "content": "Đảm bảo platform phù hợp với các tiêu chuẩn bảo mật tốt nhất và đáp ứng yêu cầu tuân thủ theo quy định."
+      },
+      {
+        "title": "Khả Năng Phục Hồi",
+        "content": "Thiết kế linh hoạt để xử lý sự cố một cách hiệu quả, bao gồm: ngắt mạch (circuit breaking), giảm tải có kiểm soát (graceful degradation), khả năng sẵn sàng cao (HA), và khôi phục sau thảm họa (DR)."
+      },
+      {
+        "title": "Kiến Trúc Microservices",
+        "content": "Thiết kế và triển khai kiến trúc microservices để giúp ứng dụng mở rộng linh hoạt, dễ phát triển và bảo trì."
+      },
+      {
+        "title": "Cổng Thông Tin và Tài Liệu Lập Trình Viên",
+        "content": "Xây dựng tài liệu toàn diện và cổng thông tin dành cho nhà phát triển, giúp nâng cao trải nghiệm lập trình viên."
+      },
+      {
+        "title": "Khả Năng Mở Rộng",
+        "content": "Hệ thống linh hoạt, dễ mở rộng theo nhu cầu, đảm bảo hiệu suất tối ưu ngay cả khi nhu cầu tăng cao."
       }
     ]
   },
 
   "integration_whydatum": {
-    "title": "Tại sao chọn Datum",
+    "title": "Tại sao doanh nghiệp <br /> nên chọn Datum",
     "items": [
       {
         "title": "Chuyên gia hàng đầu",
-        "content": "Đội ngũ của chúng tôi gồm những chuyên gia hàng đầu với chuyên môn sâu: kiến trúc sư giải pháp, thiết kế, chiến lược nội dung, kiến trúc phần mềm và lập trình viên."
+        "content": "Đội ngũ của chúng tôi bao gồm các chuyên gia hàng đầu với chuyên môn sâu, chuyên gia chịu trách nhiệm thiết kế và triển khai, kiến trúc sư software và developers."
       },
       {
-        "title": "Chuyên môn theo ngành",
-        "content": "Đảm bảo các tiêu chuẩn bảo mật và tuân thủ trong các ngành yêu cầu cao như ngân hàng số, đồng thời duy trì khả năng mở rộng và linh hoạt của nền tảng."
+        "title": "Giải pháp vượt trội đáp ứng ngành có yêu cầu bảo mật cao",
+        "content": "Đảm bảo bảo mật và tuân thủ tiêu chuẩn trong các ngành có yêu cầu khắt khe như digital banking, đồng thời platform luôn duy trì tính linh hoạt và khả năng mở rộng."
       },
       {
-        "title": "Đối tác phát triển của bạn",
-        "content": "Làm việc chặt chẽ với đội ngũ của bạn và các nhà phát triển khác ngay cả sau khi hoàn thành để đảm bảo triển khai thành công và mở rộng phù hợp với nhu cầu cụ thể."
+        "title": "Đối tác đồng hành cùng phát triển",
+        "content": "Chúng tôi không chỉ tạo ra platform mà còn cam kết gắn bó lâu dài cùng doanh nghiệp đối tác. Kể cả khi dự án đã hoàn tất, chúng tôi vẫn sát cánh cùng bộ phận phụ trách và các nhà phát triển khác, đảm bảo việc triển khai và mở rộng diễn ra mượt mà, đáp ứng đầy đủ mọi yêu cầu riêng biệt của đối tác."
       }
     ]
   },
@@ -338,35 +712,131 @@
     ]
   },
 
+    "digital":{
+    "title": "Phương Pháp Tiếp Cận Chuyển Đổi Số tại Datum",
+    "items": [
+      {
+        "title": "Hồ Dữ Liệu Tích Hợp (Data Lakehouse)",
+        "content": "Xây dựng hạ tầng dữ liệu linh hoạt, lưu trữ, xử lý và quản lý lượng lớn dữ liệu kinh doanh hiệu quả."
+      },
+      {
+        "title": "Bảng Điều Khiển & Báo Cáo BI",
+        "content": "Phát triển bảng điều khiển trực quan, lấy data theo thời gian thực, hỗ trợ ra quyết định dựa trên dữ liệu."
+      },
+      {
+        "title": "Mô Hình Máy Học Tùy Biến",
+        "content": "Ứng dụng AI, phân tích dữ liệu dự đoán xu hướng, đánh giá rủi ro và tự động hóa quy trình"
+      },
+      {
+        "title": "MLOps",
+        "content": "Triển khai và giám sát mô hình machine learning, đảm bảo liên tục tối ưu và hiệu suất"
+      },
+      {
+        "title": "Cân Bằng Tải & Mở Rộng Quy Mô",
+        "content": "Cho phép hệ thống xử lý lượng giao dịch lớn mượt mà, không ảnh hưởng đến tốc độ và hiệu suất."
+      },
+      {
+        "title": "Xử Lý Dữ Liệu Theo Thời Gian Thực",
+        "content": "Tăng hiệu quả vận hành, tích hợp dữ liệu an toàn theo thời gian thực, đưa ra kết quả nhanh chóng."
+      },
+      {
+        "title": "Huấn Luyện Mô Hình Generative AI",
+        "content": "Huấn luyện mô hình AI tự động tạo nội dung, báo cáo, cải thiện kinh doanh."
+      },
+      {
+        "title": "Phát Triển Mô Hình NLP",
+        "content": "Sử dụng NLP xử lý ngôn ngữ, nắm bắt cảm xúc nhằm tương tác với khách hàng một cách tự nhiên hơn."
+      },
+      {
+        "title": "Triển Khai Chatbot",
+        "content": "Triển khai chatbot AI, tương tác khách hàng 24/7, tối ưu giao tiếp và hỗ trợ."
+      }
+    ]
+  },
+
   "digital_whydatum": {
-    "title": "Tại sao chọn Datum",
+    "title": "Tại sao doanh nghiệp <br /> nên chọn Datum",
     "items": [
       {
         "title": "Chuyên gia hàng đầu",
-        "content": "Đội ngũ của chúng tôi gồm các chuyên gia giàu kinh nghiệm, kiến trúc sư giải pháp, nhà thiết kế, chuyên gia nội dung và lập trình viên."
+        "content": "Đội ngũ của chúng tôi bao gồm các chuyên gia hàng đầu với chuyên môn sâu, chuyên gia chịu trách nhiệm thiết kế và triển khai, kiến trúc sư software và developers."
       },
       {
-        "title": "Hiểu rõ ngành nghề",
-        "content": "Đảm bảo tiêu chuẩn bảo mật và tuân thủ trong các ngành yêu cầu cao như ngân hàng số, đồng thời duy trì khả năng mở rộng linh hoạt."
+        "title": "Giải pháp vượt trội đáp ứng ngành có yêu cầu bảo mật cao",
+        "content": "Đảm bảo bảo mật và tuân thủ tiêu chuẩn trong các ngành có yêu cầu khắt khe như digital banking, đồng thời platform luôn duy trì tính linh hoạt và khả năng mở rộng."
       },
       {
-        "title": "Đối tác phát triển bền vững",
-        "content": "Luôn đồng hành cùng đội ngũ của bạn kể cả sau khi triển khai, để đảm bảo áp dụng hiệu quả và mở rộng theo nhu cầu thực tế."
+        "title": "Đối tác đồng hành cùng phát triển",
+        "content": "Chúng tôi không chỉ tạo ra platform mà còn cam kết gắn bó lâu dài cùng doanh nghiệp đối tác. Kể cả khi dự án đã hoàn tất, chúng tôi vẫn sát cánh cùng chúng tôi vẫn sát cánh cùng bộ phận phụ trách và các nhà phát triển khác, đảm bảo việc triển khai và mở rộng diễn ra mượt mà, đáp ứng đầy đủ mọi yêu cầu riêng biệt của đối tác."
+      }
+    ]
+  },
+
+    "integration":{
+    "title": "Phương Pháp Tích Hợp Toàn Diện tại Datum",
+    "items": [
+      {
+        "title": "Tích Hợp Hệ Thống Cũ",
+        "content": "Nâng cấp hệ thống cũ và tích hợp các nền tảng hiện đại để tiếp cận điểm hoà vốn đồng thời nâng cao hiệu suất hoạt động."
+      },
+      {
+        "title": "Chuyển Đổi Lên Đám Mây",
+        "content": "Chuyển đổi lên đám mây dễ dàng, kết hợp với các dịch vụ cloud-native, cho phép doanh nghiệp linh hoạt mở rộng quy mô."
+      },
+      {
+        "title": "Cấu Trúc Microservices",
+        "content": "Chuyển đổi từ ứng dụng nguyên khối sang cấu trúc microservices-based, giúp dễ dàng bảo trì kiểm soát hệ thống modul."
+      },
+      {
+        "title": "Tích Hợp Chia Sẻ Dữ Liệu",
+        "content": "Đảm bảo cơ chế chia sẻ dữ liệu bảo mật giữa nội bộ và đối tác, xây dựng sự tin tưởng thúc đẩy sự cộng tác hiệu quả mở ra các cơ hội kinh doanh mới."
+      },
+      {
+        "title": "Danh Mục Dữ Liệu & Quản Trị",
+        "content": "Xây dựng hệ thống quản trị, đảm bảo chất lượng dữ liệu, khả năng tìm kiếm dễ dàng và tuân thủ các quy định pháp lý trên toàn tổ chức."
+      },
+      {
+        "title": "Di Chuyển & Đồng Bộ Hóa Dữ Liệu",
+        "content": "Di chuyển dữ liệu không gián đoạn giữa các hệ thống, duy trì tính nhất quán đồng bộ hóa theo thời gian thực hoặc theo lịch trình."
+      },
+      {
+        "title": "Cân Bằng Tải và Mở Rộng",
+        "content": "Phân luồng lưu lượng, một cách hiệu quả trên các tài nguyên để tối ưu hóa hiệu suất và khả năng mở rộng, giúp hệ thống hoạt động ổn định ngay cả khi lưu lượng truy cập đột biến."
+      },
+      {
+        "title": "Tối Ưu Hiệu Năng",
+        "content": "Cải thiện tốc độ xử lý nhờ tích hợp thông minh, đồng thời phát hiện và giảm các điểm nghẽn giúp trải nghiệp thực tế mượt mà."
+      },
+      {
+        "title": "Kiến Trúc Chịu Lỗi",
+        "content": "Chúng tôi giúp đối tác của mình thiết kế và triển khai hệ thống bền bỉ, đảm bảo tính khả dụng cao, giảm thiểu gián đoạn hoạt động kinh doanh"
+      },
+      {
+        "title": "Triển Khai Data Lakehouse",
+        "content": "Xây dựng hệ thống lưu trữ dữ liệu mở rộng linh hoạt, tập trung, sắp xếp và phân tích hiệu quả data có cấu trúc và phi cấu trúc."
+      },
+      {
+        "title": "Tích Hợp Dữ Liệu Pipelines",
+        "content": "Phát triển và vận hành ETL/ELT pipelines một cách hiệu quả để trích xuất, chuyển đổi và tải data một cách liền mạch."
+      },
+      {
+        "title": "Xử Lý Dữ Liệu Theo Thời Gian Thực",
+        "content": "Triển khai các nền tảng truyền dữ liệu theo thời gian thực để xử lý và phân tích dữ liệu tốc độ cao, giúp đưa ra quyết định tức thời."
       }
     ]
   },
 
   "industry_insurance": {
-    "title": "Thúc đẩy đổi mới và hiểu biết với AI",
-    "heading": "Datum Consulting giúp các công ty bảo hiểm tận dụng AI tạo sinh để nâng cao hiệu quả hoạt động, tối ưu hóa đánh giá rủi ro, xử lý yêu cầu bồi thường, tương tác khách hàng và tuân thủ, đồng thời thúc đẩy tăng trưởng thông qua các giải pháp công nghệ chuyển đổi.",
+    "title": "Ứng Dụng AI - Dẫn Đầu Đổi Mới Sáng Tạo và Phân Tích Chuyên Sâu",
+    "heading": "Datum Consulting giúp các công ty bảo hiểm tận dụng Generative AI để đạt được hiệu quả vận hành, tối ưu quy trình đánh giá rủi ro, chi trả quyền lợi bảo hiểm, tăng tương tác với khách hàng và tuân thủ quy định nghành, đồng thời thúc đẩy tăng trưởng thông qua các giải pháp công nghệ đột phá.",
     "items": [
       {
-        "title": "Định hướng trong bối cảnh bảo hiểm hiện đại",
-        "content": "Hoạt động bảo hiểm truyền thống, thường dựa vào quy trình thủ công và hệ thống dữ liệu rời rạc, có thể gây ra sự kém hiệu quả, chậm trễ trong phân tích và cách tiếp cận bị động với nhu cầu khách hàng. Nhu cầu về “Trải nghiệm bảo hiểm hiện đại” đòi hỏi các giải pháp linh hoạt, dựa trên dữ liệu có khả năng cung cấp phân tích nhanh chóng, tự động hóa tác vụ phức tạp và mang lại tương tác khách hàng vượt trội."
+        "title": "Dẫn Đầu Ngành Bảo Hiểm trong Kỷ Nguyên Số",
+        "content": "Các hoạt động bảo hiểm truyền thống, thường phụ thuộc vào quy trình xử lý thông tin thủ công và các hệ thống dữ liệu rời rạc, có thể dẫn đến kém hiệu quả, trì trệ thông tin và phản hồi thụ động với yêu cầu khách hàng. Nhu cầu về một Modern Insurance Experience đòi hỏi các giải pháp linh hoạt, dựa trên dữ liệu, có thể cung cấp thông tin nhanh chóng, tự động hóa các nhiệm vụ phức tạp và mang lại trải nghiệm tương tác khách hàng vượt trội."
       },
       {
-        "title": "Phương pháp của chúng tôi: Giải pháp AI cho ngành bảo hiểm",
-        "content": "Datum Consulting chuyển đổi hoạt động và trải nghiệm khách hàng trong ngành bảo hiểm thông qua các nền tảng công nghệ tiên tiến, bảo mật và mở rộng linh hoạt."
+        "title": "Cách Tiếp Cận của Chúng Tôi: Giải Pháp AI cho Ngành Bảo Hiểm",
+        "content": "Datum Consulting hiện đại hóa hệ thống vận hành và nâng cấp trải nghiệm khách hàng trong lĩnh vực bảo hiểm thông qua các nền tảng công nghệ tiên tiến, bảo mật và dễ dàng mở rộng."
       }
     ],
     "cta_text": "Tải xuống toàn bộ case study"

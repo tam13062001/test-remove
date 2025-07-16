@@ -17,7 +17,12 @@ module.exports = {
       },
       container: {
         center: true
-      }
+      },
+      screens: {
+        '4xl': '2560px', // cho màn hình 4K trở lên
+        '6xl': '3840px', 
+        '8xl': '5120px',
+      },
     }
   },
   corePlugins: {
