@@ -9,11 +9,11 @@
 
 <?php
 get_template_part('template-parts/content/call-to-action-story', null, array(
-    'title' => 'Improving Banking Experience: Refreshing Channels and Enhancing Microservices',
+    'title' => datum_translate('call_to_action_story.PlatformCustomization.title'),
     'heading' => '',
-    'content' => 'The client sought to modernize their services, facing challenges in customizing a secure Amazon EKS workload platform to support diverse workloads, ensure compliance with strict regulatory standards, and enhance their microservices architecture.',
+    'content' => datum_translate('call_to_action_story.PlatformCustomization.content'),
     'image_url' => get_assets_from_path('images/Group 62.png'),
-    'cta_text' => 'Download the full case study',
+    'cta_text' => datum_translate('call_to_action_story.PlatformCustomization.cta_text'),
     'cta_link' => '#'
 ));
 ?>
@@ -21,21 +21,21 @@ get_template_part('template-parts/content/call-to-action-story', null, array(
 
 <?php
 get_template_part('template-parts/content/info-section-with-image-reverse', null, array(
-    'title' => 'Challenge',
+    'title' => datum_translate('story.Platform_Customization.challenge.title'),
     'heading' => '',
         'image_url' => get_assets_from_path('images/man-prevents-servers-overload 1.jpg'),
         'items' => array(
             array(
-                'content' => 'Our client required a scalable and secure containerized infrastructure to support various workloads running on Amazon Elastic Kubernetes Service (EKS). ',
+                'content' => datum_translate('story.Platform_Customization.technical_solutions.items.0'),
             ),
             array(
-                'content' => 'The environment needed to accommodate microservices deployed as individual containers, allowing each service to scale independently.',
+                'content' => datum_translate('story.Platform_Customization.technical_solutions.items.1'),
             ),
             array(
-                'content' => 'Additionally, frontend web applications had to seamlessly interact with backend services, while AWS Batch Jobs handled periodic and on-demand data processing tasks.',
+                'content' => datum_translate('story.Platform_Customization.technical_solutions.items.2'),
             ),
             array(
-                'content' => 'Continuous integration and deployment (CI/CD) pipelines leveraged GitLab CI Runner to ensure efficient and automated development workflows.',
+                'content' => datum_translate('story.Platform_Customization.technical_solutions.items.3'),
             )
         ),
     )) ;    
@@ -43,47 +43,46 @@ get_template_part('template-parts/content/info-section-with-image-reverse', null
 
 <?php
 get_template_part('template-parts/content/info-section-with-image-reverse-lesson-r', null, array(
-    'title' => 'When Technical Solutions Drive Compliance',
+    'title' => datum_translate('story.Platform_Customization.technical_solutions.title'),
     'heading' => '',   
     'image_url' => get_assets_from_path('images/image 20.jpg'),
     'items' => array(
         array(
-           'content' => 'Streamlining Operations: Implemented a scalable platform to handle diverse workloads (microservices, applications, data processing, and deployments) while maintaining strong departmental isolation for cost and accountability.',
+           'content' => datum_translate('story.Platform_Customization.technical_solutions.items.0'),
         ),
         array(
-           'content' => 'Strengthening Security: Established robust inter-service communications with advanced encryption and integrated tools for monitoring, performance, and security compliance.',
+           'content' => datum_translate('story.Platform_Customization.technical_solutions.items.1'),
         ),
         array(
-           'content' => 'Ensuring Reliability: Delivered high availability and consistent infrastructure management without incurring excessive costs, supporting seamless growth and regulatory standards.'
+           'content' => datum_translate('story.Platform_Customization.technical_solutions.items.2'),
         ),
     ),
     
-
 )) ;
 ?>
 
 
 <?php
 get_template_part('template-parts/content/info-section-with-image-story-percent-l', null, array(
-    'title' => 'Impactful Outcome',
+    'title' => datum_translate('story.Platform_Customization.impactful_outcome.title'),
     'heading' => '',   
     'items' => array(
         array(
-           'content' => 'Platform Uptime: Achieved 99.9% uptime for the platform and key services.',
+           'content' => datum_translate('story.Platform_Customization.impactful_outcome.items.0'),
         ),
         array(
-           'content' => 'Deployment Efficiency: Fully automated CI/CD pipeline enabled zero downtime deployments.'
+           'content' => datum_translate('story.Platform_Customization.impactful_outcome.items.1'),
         ),
         array(
-           'content' => 'Compliance and Security: Customized EKS to meet strict regulatory and security standards.'
+           'content' => datum_translate('story.Platform_Customization.impactful_outcome.items.2'),
         ),
         array(
-           'content' => 'Scalability: Supported full front-end refreshes, new backend-for-frontend developments, and integrations for new banking products.'
+           'content' => datum_translate('story.Platform_Customization.impactful_outcome.items.3'),
         ),
     ),
     'image_url' => get_assets_from_path('images/man-prevents-servers-overload-2.jpg'),    
-    'percent' => '99.9%',
-    'percent_content' => 'Platform <br class="hidden lg:block" />performance uptime '       
+    'percent' => datum_translate('story.Platform_Customization.impactful_outcome.percent'),
+    'percent_content' => datum_translate('story.Platform_Customization.impactful_outcome.percent_content'),      
 )) ;
 ?>
 

@@ -833,39 +833,96 @@
     "cta_text": "Download the full case study"
   },
 
-  "insurance_solution":{
-      "title": "Our solution consists of",
-      "items": [
-        {
-          "title": "Robust Data Platform Engineering",
-          "content": "Datum Consulting designs secure, scalable data platforms, integrating data warehousing and vector databases to efficiently process, analyze, and protect vast insurance datasets for evolving business needs."
-        },
-        {
-          "title": "Advanced Analytics & Prediction",
-          "content": "Implementing AI models capable of predictive analysis (e.g., revenue growth, claims risk) and anomaly detection to identify unusual trends in claims or revenue."
-        },
-        {
-          "title": "Secure Cloud Infrastructure",
-          "content": "Leveraging AWS Bedrock and AWS OpenSearch to create highly secure, compliant, and scalable cloud environments for AI and data operations, ensuring data privacy and integrity."
-        },
-        {
-          "title": "Role-Based Access Control (RBAC)",
-          "content": "Designing and implementing granular access controls to ensure that sensitive insurance data and specific features are only accessible to authorized personnel based on their roles."
-        },
-        {
-          "title": "Generative AI for Business Intelligence",
-          "content": "Developing AI-powered dashboards and conversational interfaces that enable natural language querying of complex insurance data",
-          "list": [
-            "Natural Language Processing (NLP): Allowing users (e.g., leadership, strategy, finance teams) to ask questions in natural language (e.g., Vietnamese or bilingual) to retrieve specific data, generate reports, and visualize trends.",
-            "Contextual Understanding: Maintaining conversation context to provide seamless and relevant follow-up responses.",
-            "Automated Report Summarization & Charting: Automatically generating concise summaries and visual charts (bar, pie, line) from large datasets, aiding in quick and accurate decision-making."
-          ]
-        },
-        {
-          "title": "Seamless Integration",
-          "content": "Expertise in integrating new AI and data solutions with existing insurance systems, ensuring continuity and enhancing overall technological capabilities."
-        }
-      ]
+  "insurance":{
+      "solution":{
+        "title": "Our solution consists of",
+        "items": [
+          {
+            "title": "Robust Data Platform Engineering",
+            "content": "Datum Consulting designs secure, scalable data platforms, integrating data warehousing and vector databases to efficiently process, analyze, and protect vast insurance datasets for evolving business needs."
+          },
+          {
+            "title": "Advanced Analytics & Prediction",
+            "content": "Implementing AI models capable of predictive analysis (e.g., revenue growth, claims risk) and anomaly detection to identify unusual trends in claims or revenue."
+          },
+          {
+            "title": "Secure Cloud Infrastructure",
+            "content": "Leveraging AWS Bedrock and AWS OpenSearch to create highly secure, compliant, and scalable cloud environments for AI and data operations, ensuring data privacy and integrity."
+          },
+          {
+            "title": "Role-Based Access Control (RBAC)",
+            "content": "Designing and implementing granular access controls to ensure that sensitive insurance data and specific features are only accessible to authorized personnel based on their roles."
+          },
+          {
+            "title": "Generative AI for Business Intelligence",
+            "content": "Developing AI-powered dashboards and conversational interfaces that enable natural language querying of complex insurance data",
+            "list": [
+              "Natural Language Processing (NLP): Allowing users (e.g., leadership, strategy, finance teams) to ask questions in natural language (e.g., Vietnamese or bilingual) to retrieve specific data, generate reports, and visualize trends.",
+              "Contextual Understanding: Maintaining conversation context to provide seamless and relevant follow-up responses.",
+              "Automated Report Summarization & Charting: Automatically generating concise summaries and visual charts (bar, pie, line) from large datasets, aiding in quick and accurate decision-making."
+            ]
+          },
+          {
+            "title": "Seamless Integration",
+            "content": "Expertise in integrating new AI and data solutions with existing insurance systems, ensuring continuity and enhancing overall technological capabilities."
+          }
+        ]
+      },
+      "Banking":{
+        "title": "We specialize in",
+        "items": [
+          {
+            "title": "Secure Cloud Adoption",
+            "content": "Implementing advanced cloud environments like AWS Landing Zones to establish secure, compliant, and well-governed foundations for your digital assets."
+          },
+          {
+            "title": "Automated Operations",
+            "content": "Developing automated CI/CD pipelines for zero-downtime deployments, dramatically accelerating innovation and minimizing disruptions."
+          },
+          {
+            "title": "Modern Workload Platforms",
+            "content": "Deploying and customizing robust platforms like Amazon EKS to support diverse workloads, from core banking microservices to front-end applications, ensuring high availability and performance."
+          },
+          {
+            "title": "API Management & Integration",
+            "content": "Redefining API strategies and facilitating seamless integration of legacy systems with modern technologies, ensuring continuity and adaptability."
+          },
+          {
+            "title": "Enhanced Security & Compliance",
+            "content": "Implementing stringent security measures, including role-based access, least privilege policies, advanced encryption, and integrated monitoring tools to meet strict regulatory standards."
+          },
+          {
+            "title": "Financial Technology Integration",
+            "content": "Our AWS-certified experts integrate seamlessly with banking experience platforms like Backbase and core banking systems such as Thought Machine and Fineract, ensuring smooth interoperability across your tech ecosystem."
+          }
+        ]
+      },
+      "solar_energy":{
+        "title": "Our solution consists of",
+        "items": [
+          {
+            "title": "Cloud-Based Machine Learning Platforms",
+            "content": "Design robust machine-learning platforms using AWS for scalable analytics and real-time decision-making in solar energy."
+          },
+          {
+            "title": "Scenario Simulation and Market Intelligence",
+            "content": "Developing intuitive tools that allow users to run various scenarios of selling and storing solar energy."
+          },
+          {
+            "title": "Big Data Optimization & Predictive Analytics",
+            "content": "",
+            "list": [
+              "Battery Usage Optimization: Intelligent algorithms optimize charging and discharging cycles to enhance efficiency and longevity, adapting to grid stability and environmental factors.",
+              "Grid Electricity Provision: Advanced strategies determine optimal energy provision to the grid, factoring in demand, transmission constraints, and weather variations.",
+              "Price Maximization: Data-driven models forecast market prices to optimize solar energy sales, ensuring regulatory compliance and maximizing revenue."
+            ]
+          },
+          {
+            "title": "Seamless Integration",
+            "content": "Expertise in integrating new AI and data solutions with existing insurance systems, ensuring continuity and enhancing overall technological capabilities."
+          }
+        ]
+      }
   },
 
   "industry_banking": {
@@ -1034,7 +1091,7 @@
       "cta_text": "Download the full case study"
     },
     "PlatformCustomization": {
-      "title": "Call for Change",
+      "title": "Improving Banking Experience: Refreshing Channels and Enhancing Microservices",
       "content": "A prestigious banking partner needed a secure, scalable platform for their enterprise microservices. Datum Consulting delivered a customized Amazon EKS workload platform, ensuring high availability, security, and compliance with industry standards. This platform supports the bank's digital transformation, enabling rapid deployment of new services and enhancing customer experiences.",
       "cta_text": "Download the full case study"
     }
@@ -1061,6 +1118,37 @@
         "title": "Lessons Learned",
         "heading": "",
         "content": "A key takeaway from this initiative was the importance of strong collaboration between the bank and its third-party technology providers to prevent misalignment and delays. The integration of off-the-shelf banking products proved more complex than anticipated, requiring additional customization and effort to meet the bank’s operational needs. Through this experience, the bank has strengthened its approach to vendor engagement and technology adoption, ensuring greater agility and efficiency in future transformation initiatives."
+      }
+    },
+    "Platform_Customization": {
+      "challenge": {
+        "title": "Challenge",
+        "heading": "",
+        "items": [
+          "Our client required a scalable and secure containerized infrastructure to support various workloads running on Amazon Elastic Kubernetes Service (EKS).",
+          "The environment needed to accommodate microservices deployed as individual containers, allowing each service to scale independently.",
+          "Additionally, frontend web applications had to seamlessly interact with backend services, while AWS Batch Jobs handled periodic and on-demand data processing tasks.",
+          "Continuous integration and deployment (CI/CD) pipelines leveraged GitLab CI Runner to ensure efficient and automated development workflows."
+        ]
+      },
+      "technical_solutions": {
+        "title": "When Technical Solutions Drive Compliance",
+        "items": [
+          "Streamlining Operations: Implemented a scalable platform to handle diverse workloads (microservices, applications, data processing, and deployments) while maintaining strong departmental isolation for cost and accountability.",
+          "Strengthening Security: Established robust inter-service communications with advanced encryption and integrated tools for monitoring, performance, and security compliance.",
+          "Ensuring Reliability: Delivered high availability and consistent infrastructure management without incurring excessive costs, supporting seamless growth and regulatory standards."
+        ]
+      },
+      "impactful_outcome": {
+        "title": "Impactful Outcome",
+        "items": [
+          "Platform Uptime: Achieved 99.9% uptime for the platform and key services.",
+          "Deployment Efficiency: Fully automated CI/CD pipeline enabled zero downtime deployments.",
+          "Compliance and Security: Customized EKS to meet strict regulatory and security standards.",
+          "Scalability: Supported full front-end refreshes, new backend-for-frontend developments, and integrations for new banking products."
+        ],
+        "percent": "99.9%",
+        "percent_content": "Platform <br class=\"hidden lg:block\" />performance uptime "
       }
     }
   }
