@@ -4,7 +4,7 @@
     <div class="space-x-[50px] mb-9 lg:mb-0">
         <?php foreach ($menu as $item): ?>
         <a href="<?php echo $item['url'] ?>">
-            <?php echo $item['title'] ?>
+            <?php echo datum_get_translation($item['title']) ?>
         </a>
         <?php endforeach; ?>
     </div>

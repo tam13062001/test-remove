@@ -23,7 +23,7 @@ get_template_part('template-parts/content/call-to-action', null, array(
             <!-- Data & AI Card -->
             <?php $items = array(
                 array(
-                    'title' => 'homepage.data-ai.titles',
+                    'title' => 'homepage.data-ai.title',
                     'content' => 'homepage.data-ai.content',
                     'media_url' => get_assets_from_path('videos/homepage_data_ai.mp4'),
                     'media_type' => 'video',

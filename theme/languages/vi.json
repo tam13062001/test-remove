@@ -1,11 +1,11 @@
 {
   "greeting": "Xin chào",
   "menu.services": "Dịch vụ",
-  "menu.services.cloud": "Dịch vụ đám mây",
-  "menu.services.data-ai": "Dữ liệu & AI",
-  "menu.services.software": "Phát triển phần mềm",
+  "menu.services.cloud": "Điện Toán Đám Mây",
+  "menu.services.data-ai": "Dữ Liệu & Trí Tuệ Nhân Tạo",
+  "menu.services.software": "phần mềm",
   "menu.solution": "Giải pháp",
-  "menu.solution.integration": "Tích hợp ",
+  "menu.solution.integration": "Tích Hợp Toàn Diện",
   "menu.solution.platform": "Kỹ thuật nền tảng",
   "menu.solution.digital": "Chuyển đổi số",
   "menu.industry": "Ngành",
@@ -22,9 +22,38 @@
   "menu.about.contact": "Liên hệ",
   "menu.career": "Tuyển dụng",
   "successful_stories": "Câu chuyện thành công",
-  "platform_customization": "Tùy biến nền tảng",
-  "premier_banking": "Ngân hàng ưu tiên",
+  "platform_customization": "Platform Customization",
+  "premier_banking": "Premier Banking",
   "digital_partner": "Đối tác chiến lược của bạn trong chuyển đổi số",
+  "privacy":"Điều khoản sử dụng",
+  "term_of_use":"Chính sách quyền riêng tư",
+  "footer":{
+    "our_offices": "Văn Phòng của Datum",
+    "new_zealand": {
+      "country": "New Zealand",
+      "company": "Văn phòng tại New Zealand",
+      "address": "70 Symonds Street, 1010 Auckland, New Zealand"
+    },
+    "australia": {
+      "country": "Úc",
+      "company": "Văn phòng tại Úc",
+      "address": "Tầng 1, số 8 đường Beulah, Norwood SA 5067 Adelaide, Úc"
+    },
+    "vietnam": {
+      "country": "Việt Nam",
+      "company": "Văn phòng tại Việt Nam",
+      "address": "52-54-56 E. B2, khu đô thị Sala, Quận 2 (Thủ Đức), TP.HCM, Việt Nam",
+      "phone": "Điện thoại",
+      "phone_number": "02822150050",
+      "email": "Email",
+      "email_address": "contacts@datumhq.com"
+    },
+    "philippines": {
+      "country": "Philippines",
+      "company": "Văn phòng tại Philippines",
+      "address": "Tầng 7, Unit B, Center, 8 Rockwell Dr, Makati, 1209 Metro Manila, Philippines"
+    }
+  },
   "pioneering_text": {
     "line1": "Tiên phong",
     "line2": "tương lai của",
@@ -35,11 +64,11 @@
     "cloud" :"Chúng tôi biến hạ tầng đám mây từ một nhu cầu kỹ thuật thành lợi thế chiến lược được thiết kế để phát triển, thích ứng và thúc đẩy doanh nghiệp đối tác tiến xa.",
     "data" :"Quá trình tự động hoá chuyển đổi và phân tích dữ liệu thành thông tin hữu ích giúp doanh nghiệp ra quyết định chính xác hơn - vận hành hiệu quả hơn - đón đầu xu hướng tăng trưởng.",
     "software": "Nâng cấp phần mềm bứt phá tăng trưởng trở thành đòn bẩy chiến lược thúc đẩy hiệu suất",
-    "integration": "Hợp nhất các hệ thống doanh nghiệp, tinh giản quy trình vận hành và nâng cao luồng dữ liệu với các giải pháp tích hợp liền mạch thúc đẩy hiệu quả và đổi mới.",
+    "integration": "Tận hưởng hệ thống kinh doanh đồng nhất, tối ưu hoá hoạt động và cải thiện data flow bằng giải pháp tích hợp liền mạch mang lại hiệu quả và đổi mới tiến trình.",
     "platform": "Nâng tầm hạ tầng công nghệ cho doanh nghiệp với khả năng mở rộng linh hoạt, tăng tốc độ xử lý, bảo mật, giúp doanh nghiệp của đối tác nâng cao năng suất và giảm chi phí vận hành.",
     "digital": "Ứng dụng sức mạnh công nghệ để tinh gọn quy trình, nâng cao trải nghiệm khách hàng và mở ra cơ hội tăng trưởng đột phá."
   },
-  "cta.schedule": "Đặt lịch tư vấn cùng Chuyên gia Datum",
+  "cta.schedule": "Nhận tư vấn từ chuyên gia của chúng tôi!",
   "section.what_sets_us_apart": "Điều Gì Làm Chúng Tôi Trở Nên Khác Biệt",
 
   "homepage.data-ai.title": "Dịch Vụ về Dữ Liệu & Trí Tuệ Nhân Tạo (AI)",
@@ -70,7 +99,7 @@
     "learn_more": "Xem thêm"
   },
   "why_datum_home": {
-    "title": "Tại sao doanh nghiệp nên chọn Datum",
+    "title": "Tại sao doanh nghiệp <br /> nên chọn Datum",
     "items": [
       {
         "title": "Đổi mới hướng tới kết quả",
@@ -89,12 +118,12 @@
   "successful_stories_slide": {
     "items": [
       {
-        "title": "Chuyển đổi số cho khách hàng ngân hàng ưu tiên",
-        "description": "Datum Consulting đã hỗ trợ ngân hàng xây dựng hệ thống đám mây an toàn, hiệu quả để đơn giản hóa ngân hàng số."
+        "title": "Chuyển Đổi Số cho Ngân Hàng Hàng Đầu",
+        "description": "Datum Consulting đồng hành cùng ngân hàng xây dựng hệ thống điện toán đám mây an toàn, tối ưu nền tảng vững chắc cho dịch vụ ngân hàng số linh hoạt và hiệu quả hơn."
       },
       {
-        "title": "Nền tảng EKS tối ưu cho trải nghiệm ngân hàng",
-        "description": "Datum đã cung cấp nền tảng EKS linh hoạt, bảo mật và tự động hoá dành riêng cho hệ vi dịch vụ doanh nghiệp."
+        "title": "Nền Tảng EKS cho Trải Nghiệm Ngân Hàng Vượt Trội",
+        "description": "Datum triển khai nền tảng EKS linh hoạt, bảo mật và tự động hóa – được thiết kế riêng để phục vụ hệ thống microservices quy mô doanh nghiệp."
       }
     ]
   },
@@ -116,7 +145,7 @@
   },
   "locations": {
     "title": "Văn Phòng của Datum",
-    "description": "Chúng tôi đang mở rộng khắp khu vực Châu Á – Thái Bình Dương với chiến lược rõ ràng, sự tận tâm với từng khách hàng và mục tiêu cụ thể. Các giải pháp của chúng tôi được phát triển từ sự thấu hiểu địa phương và hướng đến tạo ra những giá trị thiết thực cho toàn khu vực."
+    "description": "Chúng tôi đang mở rộng tại khu vực Châu Á – Thái Bình Dương với chiến lược rõ ràng, sự tận tâm trong từng dự án và định hướng phát triển nhất quán. Mỗi giải pháp đều được xây dựng từ sự am hiểu thị trường địa phương, nhằm tạo ra tác động thiết thực và bền vững trong toàn khu vực."
   },
 
 "banner": {
@@ -133,7 +162,7 @@
       "title": "Tăng cường doanh nghiệp bằng công nghệ tiên tiến để dẫn đầu trong kỷ nguyên số"
     },
     "Integration": {
-      "title": "Tận hưởng hệ thống kinh doanh đồng nhất, tối ưu hoá hoạt động và cải thiện data flow bằng giải pháp tích hợp liền mạch mang lại hiệu quả và đổi mới tiến trình."
+      "title": "Tích hợp không gián đoạn giúp cho việc mở rộng và bảo mật Digital Transformation tốt hơn"
     },
     "Platform": {
       "title": "Platform engineering là bước đệm cho quá trình chuyển đổi số của doanh nghiệp"
@@ -155,6 +184,9 @@
     },
     "NewsEvents": {
       "title": "Tin tức & Sự kiện"
+    },
+    "About_us":{
+      "title":"VỀ CHÚNG TÔI"
     }
   },
   "breadcrumbs": {
@@ -469,7 +501,7 @@
   },
 
   "why_datum_ai": {
-    "title": "Tại sao doanh nghiệp nên chọn Datum",
+    "title": "Tại sao doanh nghiệp <br /> nên chọn Datum",
     "items": [
       {
         "title": "Định Hướng Chiến Lược",
@@ -650,7 +682,7 @@
         "content": "Bảo mật tích hợp ngay từ đầu trong quy trình phát triển phần mềm, giúp bảo vệ ứng dụng hiệu quả hơn."
       },
       {
-        "title": "Giám Sát & Ghi Log",
+        "title": "Giám Sát và Ghi Log",
         "content": "Giúp theo dõi hiệu suất ứng dụng, phân tích hoạt động hệ thống để phát hiện và xử lý sự cố kịp thời."
       },
       {
@@ -695,19 +727,19 @@
   },
 
   "why_datum_solution": {
-    "title": "Tại sao chọn Datum",
+    "title": "Tại sao doanh nghiệp <br /> nên chọn Datum",
     "items": [
       {
         "title": "Chuyên gia hàng đầu",
-        "content": "Đội ngũ của chúng tôi gồm các chuyên gia hàng đầu với kiến thức chuyên sâu: kiến trúc sư giải pháp, nhà thiết kế, chiến lược nội dung, kiến trúc sư phần mềm và lập trình viên."
+        "content": "Đội ngũ của chúng tôi bao gồm các chuyên gia hàng đầu với chuyên môn sâu, chuyên gia chịu trách nhiệm thiết kế và triển khai, kiến trúc sư phần mềm và nhà phát triển."
       },
       {
-        "title": "Hiểu biết chuyên sâu theo ngành",
-        "content": "Đảm bảo tiêu chuẩn bảo mật và tuân thủ trong các ngành yêu cầu cao như ngân hàng số, đồng thời duy trì khả năng mở rộng và linh hoạt."
+        "title": "Giải pháp vượt trội đáp ứng ngành có yêu cầu bảo mật cao",
+        "content": "Đảm bảo bảo mật và tuân thủ tiêu chuẩn trong các ngành có yêu cầu khắt khe như ngân hàng số, đồng thời nền tảng luôn duy trì tính linh hoạt và khả năng mở rộng."
       },
       {
-        "title": "Đối tác phát triển cùng bạn",
-        "content": "Hợp tác chặt chẽ với đội ngũ của bạn và các lập trình viên khác ngay cả sau khi triển khai nền tảng, nhằm đảm bảo khả năng vận hành và mở rộng theo nhu cầu cụ thể."
+        "title": "Đối tác đồng hành cùng phát triển",
+        "content": "Chúng tôi không chỉ tạo ra nền tảng mà còn cam kết gắn bó lâu dài cùng doanh nghiệp đối tác. Kể cả khi dự án đã hoàn tất, chúng tôi vẫn sát cánh cùng bộ phận phụ trách và các nhà phát triển khác, đảm bảo việc triển khai và mở rộng diễn ra mượt mà, đáp ứng đầy đủ mọi yêu cầu riêng biệt của đối tác."
       }
     ]
   },
@@ -1156,6 +1188,87 @@
         "percent": "99.9%",
         "percent_content": "Thời gian <br class=\"hidden lg:block\" />hoạt động của nền tảng"
       }
+    }
+  },
+
+  "About": {
+    "intro": {
+      "headline": "Tại Datum, chúng tôi không chỉ là công ty tư vấn công nghệ mà còn là đối tác chiến lược trong quá trình chuyển đổi số.",
+      "paragraphs": [
+        "Chuyên môn của chúng tôi gồm: kỹ thuật đám mây (Cloud), dữ liệu và AI, kỹ thuật nền tảng, và tích hợp phần mềm. Các dịch vụ này hỗ trợ doanh nghiệp mở rộng quy mô, tối ưu hóa và bảo mật thông tin quan trọng.",
+        "Với kinh nghiệm chuyên sâu trong các lĩnh vực ngân hàng, tài chính, năng lượng, hàng tiêu dùng và doanh nghiệp số, chúng tôi cung cấp các giải pháp được 'may đo' riêng, mang lại những thay đổi tích cực đổi mới và tăng lợi thế cạnh tranh đến các doanh nghiệp."
+      ]
+    },
+    "what_we_do": {
+      "title": "Chúng tôi giúp các doanh nghiệp khai thác toàn bộ tiềm năng đầu tư vào công nghệ thông qua:",
+      "items": [
+        {
+          "title": "Dữ Liệu và Trí Tuệ Nhân Tạo",
+          "content": "Datum giúp các doanh nghiệp khai thác sức mạnh của cloud and data để hỗ trợ việc ra quyết định và vận hành hiệu quả. Từ việc chuyển đổi cloud đến triển khai data lakehouse, chúng tôi hỗ trợ khách hàng mở rộng hạ tầng và khám phá những insight có giá trị từ dữ liệu của họ."
+        },
+        {
+          "title": "Kỹ Thuật Nền Tảng Số",
+          "content": "Datum Consulting đảm bảo công nghệ của vừa an toàn vừa tuân thủ các quy định ngành. Từ mã hóa dữ liệu bảo mật đến DevSecOps, chúng tôi tích hợp bảo mật vào mọi giai đoạn của quá trình phát triển và vận hành."
+        },
+        {
+          "title": "Hệ thống & Tích Hợp Dữ Liệu Toàn Diện",
+          "content": "Dịch vụ tích hợp của chúng tôi đảm bảo các hệ thống riêng lẻ trong tổ chức của đối tác trở nên đồng bộ, mượt mà. Datum nổi bật trong việc tích hợp hệ thống cũ, chuyển đổi cloud và các cơ chế chia sẻ dữ liệu an toàn, giúp tăng tính linh hoạt và khả năng hợp tác trong kinh doanh."
+        }
+      ]
+    },
+    "we_dont_just": {
+      "title": "Chúng tôi không chỉ triển khai công nghệ, mà còn giải quyết các thách thức kinh doanh với:",
+      "items": [
+        {
+          "title": "Chuyên Gia Về Nghành",
+          "content": "Hàng chục năm kinh nghiệm trong lĩnh vực ngân hàng, tài chính, năng lượng và công nghệ tiêu dùng."
+        },
+        {
+          "title": "Giải Pháp Tùy Biến",
+          "content": "Công nghệ được thiết kế riêng theo từng mục tiêu kinh doanh, yêu cầu ngành và bối cảnh quy định."
+        },
+        {
+          "title": "Thành Tích Đã Được Kiểm Chứng",
+          "content": "Đạt 99,9% thời gian hoạt động ổn định cho các ứng dụng ngân hàng quan trọng, triển khai không gián đoạn, và quan hệ đối tác bền vững."
+        },
+        {
+          "title": "Hỗ Trợ Toàn Diện",
+          "content": "Từ chiến lược đến thực thi và tối ưu hóa liên tục, chúng tôi đảm bảo tối đa hóa ROI cho mọi dự án."
+        }
+      ]
+    },
+    "our_values": {
+      "title": "Giá Trị Cốt Lõi",
+      "items": [
+        {
+          "title": "Chiến Lược Vượt Trội",
+          "content_text": "Chúng tôi luôn chủ động phòng ngừa các thách thức trước khi chúng xảy ra. Các giải pháp công nghệ của chúng tôi luôn dựa trên tiêu chí gắn liền với chiến lược kinh doanh của đối tác, mang đến một lộ trình rõ ràng cho hợp tác thành công lâu dài."
+        },
+        {
+          "title": "Tốc Độ Tối Ưu",
+          "content_text": "Thời gian tạo ra giá trị là yếu tố then chốt. Dù là hiện đại hóa hệ thống hay triển khai AI, chúng tôi thúc đẩy kết quả nhanh chóng với độ chính xác cao – giảm thiểu rủi ro, tối đa hóa lợi nhuận đầu tư."
+        },
+        {
+          "title": "Khách Hàng là Trọng Tâm",
+          "content_text": "Datum đồng hành cùng quý đối tác viết nên câu chuyện thành công thông qua chuyển đổi số. Chúng tôi lắng nghe trước, hành động sau – đồng hành cùng doanh nghiệp tạo giải pháp phù hợp với mục tiêu, văn hóa và thách thức riêng biệt."
+        },
+        {
+          "title": "Tuy Duy Toàn Cầu và Hiểu Biết Về Thị Trường Địa Phương",
+          "content_text": "Chúng tôi kết hợp góc nhìn toàn cầu với sự thấu hiểu bản địa. Mỗi giải pháp đều tôn trọng đặc thù vùng miền và áp dụng những thực tiễn tốt nhất từ các ngành trên toàn thế giới."
+        }
+      ]
+    },
+    "our_team": {
+      "title": "Đội Ngũ của Chúng Tôi",
+      "members": [
+        { "name": "Nguyễn Trung Nghĩa", "title": "Đồng sáng lập" },
+        { "name": "Đỗ Ngọc Linh", "title": "Đồng sáng lập" },
+        { "name": "Nguyễn Quốc Thắng", "title": "CIO - Giám đốc về Kỹ thuật" }
+      ],
+      "summembers": [
+        { "number": "30+", "description": "Kiến trúc sư giải pháp & Trưởng nhóm kỹ thuật" },
+        { "number": "100+", "description": "Chuyên gia về đám mây điện toán (Cloud), AI, DevOps và Kỹ thuật phần mềm" }
+      ]
     }
   }
 }

@@ -34,7 +34,7 @@ body {
 }
 
 #header.has-background .alternative-logo {
-    @apply block;
+    @apply block mx-20;
 }
 
 #header.has-background {

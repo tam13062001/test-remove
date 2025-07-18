@@ -26,34 +26,34 @@
                 
 <!-- Phần Our Offices -->
 <div class="mb-[100px]">
-    <div class="lg:text-[16px] font-bold font-[700] mb-4 uppercase">Our Offices</div>
+    <div class="lg:text-[16px] font-bold font-[700] mb-4 uppercase"><?php echo datum_translate('footer.our_offices') ?></div>
     <div class="flex flex-col gap-8 mt-4">
         <!-- Hàng 1: New Zealand & Australia -->
         <div class="flex flex-row gap-4 lg:gap-8 w-full">
             <div class="flex-1 lg:text-[16px] text-[11px] lg:space-y-2">
-                <h1 class="font-bold text-[#2569ED] py-4">New Zealand</h1>
-                <h1 class="font-bold text-[#000000] lg:text-[16px] text-[10px]">Datum Limited</h1>
-                <p>70 Symonds Street, 1010 Auckland, New Zealand</p>
+                <h1 class="font-bold text-[#2569ED] py-4"><?php echo datum_translate('footer.new_zealand.country') ?></h1>
+                <h1 class="font-bold text-[#000000] lg:text-[16px] text-[10px]"><?php echo datum_translate('footer.new_zealand.company') ?></h1>
+                <p><?php echo datum_translate('footer.new_zealand.address') ?></p>
             </div>
             <div class="flex-1 lg:text-[16px] text-[11px] lg:space-y-2">
-                <h1 class="font-bold text-[#2569ED] py-4">Australia</h1>
-                <h1 class="font-bold text-[#000000] lg:text-[16px] text-[10px]">Datum Consulting AU PTY</h1>
-                <p>Level 1, 8 Beulah Road, Norwood SA 5067 Adelaide, Australia</p>
+                <h1 class="font-bold text-[#2569ED] py-4"><?php echo datum_translate('footer.australia.country') ?></h1>
+                <h1 class="font-bold text-[#000000] lg:text-[16px] text-[10px]"><?php echo datum_translate('footer.australia.company') ?></h1>
+                <p><?php echo datum_translate('footer.australia.address') ?></p>
             </div>
         </div>
         <!-- Hàng 2: VietNam & Philippines -->
         <div class="flex flex-row gap-4 lg:gap-8 w-full">
             <div class="flex-1 lg:text-[16px] text-[11px] lg:space-y-2">
-                <h1 class="font-bold text-[#2569ED] py-4">VietNam</h1>
-                <h1 class="font-bold text-[#000000] lg:text-[16px] text-[10px]">Datum Consulting VN Company LTD</h1>
-                <p>52-54-56 E. B2, Sala Residential Area, District 2 (now Thu Duc) Ho Chi Minh City 700000, Vietnam</p>
-                <p>Phone:<span class="text-[#2569ED] lg:ml-3 lg:text-[16px] text-[10px]">02822150050 </span></p>
-                <p>Email:<span class="text-[#2569ED] lg:ml-5 lg:text-[16px] text-[10px]">contacts@datumhq.com </span></p>
+                <h1 class="font-bold text-[#2569ED] py-4"><?php echo datum_translate('footer.vietnam.country') ?></h1>
+                <h1 class="font-bold text-[#000000] lg:text-[16px] text-[10px]"><?php echo datum_translate('footer.vietnam.company') ?></h1>
+                <p><?php echo datum_translate('footer.vietnam.address') ?></p>
+                <p><?php echo datum_translate('footer.vietnam.phone') ?><span class="text-[#2569ED] lg:ml-3 lg:text-[16px] text-[10px]"><?php echo datum_translate('footer.vietnam.phone_number') ?> </span></p>
+                <p><?php echo datum_translate('footer.vietnam.email') ?><span class="text-[#2569ED] lg:ml-5 lg:text-[16px] text-[10px]"><?php echo datum_translate('footer.vietnam.email_address') ?> </span></p>
             </div>
             <div class="flex-1 lg:text-[16px] text-[11px] lg:space-y-2">
-                <h1 class="font-bold text-[#2569ED] py-4">Philippines</h1>
-                <h1 class="font-bold text-[#000000] lg:text-[16px] text-[10px]">Datum Consulting Philippines, Inc.</h1>
-                <p>7th Floor, Unit B, Center, 8 Rockwell Dr, Makati, 1209 Metro Manila Philippines</p>
+                <h1 class="font-bold text-[#2569ED] py-4"><?php echo datum_translate('footer.philippines.country') ?></h1>
+                <h1 class="font-bold text-[#000000] lg:text-[16px] text-[10px]"><?php echo datum_translate('footer.philippines.company') ?></h1>
+                <p><?php echo datum_translate('footer.philippines.address') ?></p>
             </div>
         </div>
     </div>

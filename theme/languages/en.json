@@ -23,6 +23,35 @@
   "platform_customization": "Platform Customization",
   "premier_banking": "Premier Banking",
   "digital_partner": "Your strategic partner in digital transformation",
+  "privacy":"Privacy",
+  "term_of_use":"Term of use",
+  "footer":{
+    "our_offices": "Our Offices",
+    "new_zealand": {
+      "country": "New Zealand",
+      "company": "Datum Limited",
+      "address": "70 Symonds Street, 1010 Auckland, New Zealand"
+    },
+    "australia": {
+      "country": "Australia",
+      "company": "Datum Consulting AU PTY",
+      "address": "Level 1, 8 Beulah Road, Norwood SA 5067 Adelaide, Australia"
+    },
+    "vietnam": {
+      "country": "Vietnam",
+      "company": "Datum Consulting VN Company LTD",
+      "address": "52-54-56 E. B2, Sala Residential Area, District 2 (now Thu Duc) Ho Chi Minh City 700000, Vietnam",
+      "phone": "Phone: ",
+      "phone_number": "02822150050",
+      "email": "Email: ",
+      "email_address": "contacts@datumhq.com"
+    },
+    "philippines": {
+      "country": "Philippines",
+      "company": "Datum Consulting Philippines, Inc.",
+      "address": "7th Floor, Unit B, Center, 8 Rockwell Dr, Makati, 1209 Metro Manila Philippines"
+    }
+  },
   "pioneering_text": {
       "line1": "Pioneering",
       "line2": "the Future of",
@@ -39,8 +68,13 @@
   },
   "cta.schedule": "Schedule a consultation with our expert",
   "section.what_sets_us_apart": "What Sets Us Apart",
+  "homepage.data-ai.title": "Data & AI",
   "homepage.data-ai.content": "Harness AI insights to turn raw data into smart strategies for better decision-making.",
+
+  "homepage.cloud.title": "Cloud",
   "homepage.cloud.content": "Create a robust cloud ecosystem designed for your needs, optimizing security and efficiency.",
+
+  "homepage.software.title": "Software",
   "homepage.software.content": "Boost your business with tailored software solutions that drive growth.",
   "section.game_changing_solutions": "Game-Changing Solutions",
   "solution": {
@@ -147,6 +181,9 @@
     },
     "NewsEvents": {
       "title": "News & Events"
+    },
+    "About_us":{
+      "title":"About Datum"
     }
   },
   "breadcrumbs": {
@@ -1150,6 +1187,87 @@
         "percent": "99.9%",
         "percent_content": "Platform <br class=\"hidden lg:block\" />performance uptime "
       }
+    }
+  },
+
+  "About": {
+    "intro": {
+      "headline": "At Datum, we are more than just a technology consultancy—we are your strategic partner in digital transformation.",
+      "paragraphs": [
+        "We specialize in cloud engineering, data and AI, platform engineering, and software integration, helping businesses scale, optimize, and secure their technology landscape.",
+        "With deep expertise across banking, finance, energy, consumer goods, and digital enterprises, we deliver tailored, high-impact solutions that drive efficiency, innovation, and competitive advantage."
+      ]
+    },
+    "what_we_do": {
+      "title": "We help businesses unlock the full<br>potential of their technology<br>investments through",
+      "items": [
+        {
+          "title": "Data & AI",
+          "content": "Datum enables businesses to harness the power of the cloud and data for enhanced decision-making and operational efficiency. From cloud migration to data lakehouse implementation, we help clients scale their infrastructure and unlock valuable insights from their data."
+        },
+        {
+          "title": "Platform Engineering",
+          "content": "DatumConsulting ensures that your technology is both secure and compliant with industry regulations. From secure data encryption to DevSecOps, we embed security into every stage of the development and operational process."
+        },
+        {
+          "title": "System & Data Integration",
+          "content": "Our integration services ensure that disparate systems across your organization work together seamlessly. Datum excels in legacy system integration, cloud migration, and secure data sharing mechanisms that enhance business agility and collaboration."
+        }
+      ]
+    },
+    "we_dont_just": {
+      "title": "We don’t just deploy technology,<br>we solve business challenges with:",
+      "items": [
+        {
+          "title": "Industry Expertise",
+          "content": "Decades of experience in banking, finance, energy, and consumer technology."
+        },
+        {
+          "title": "Customized Solutions",
+          "content": "Technology tailored to your business goals, industry requirements, and regulatory landscape."
+        },
+        {
+          "title": "Proven Track Record",
+          "content": "99.9% uptime for critical banking applications, zero-downtime deployments, and long-term partnerships."
+        },
+        {
+          "title": "End-to-End Support",
+          "content": "From strategy to execution and continuous optimization, we ensure maximum ROI on every project."
+        }
+      ]
+    },
+    "our_values": {
+      "title": "Our Values",
+      "items": [
+        {
+          "title": "Strategic Excellence",
+          "content_text": "We anticipate challenges before they arise. Our technology solutions align with your business strategy, providing a clear roadmap for long-term success."
+        },
+        {
+          "title": "Speed with Precision",
+          "content_text": "Time-to-value matters. Whether modernizing systems or deploying AI, we accelerate outcomes with surgical precision, minimizing risk while maximizing ROI."
+        },
+        {
+          "title": "Client Centric Approach",
+          "content_text": "You’re the hero of your transformation story. We listen first, act second, and co-create solutions that align with your unique goals, culture, and challenges."
+        },
+        {
+          "title": "Global Mindset Local Expertise",
+          "content_text": "Your local challenges meet our global perspective. We design solutions that respect regional nuances while harnessing best practices from industries worldwide."
+        }
+      ]
+    },
+    "our_team": {
+      "title": "Our Team",
+      "members": [
+        { "name": "Nghia Nguyen", "title": "Co-founder" },
+        { "name": "Nick Do", "title": "Co-founder" },
+        { "name": "Thang Nguyen", "title": "CIO – Chief of Information Officer" }
+      ],
+      "summembers": [
+        { "number": "20+", "description": "Solution Architects & Technical Leads" },
+        { "number": "100+", "description": "Cloud, AI, DevOps, and Software<br />Engineering Specialists" }
+      ]
     }
   }
 }

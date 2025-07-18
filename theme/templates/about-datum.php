@@ -3,7 +3,7 @@
 <?php get_header(); ?>
 
 <?php get_template_part('template-parts/content/banner', null, array(
-    'title' => 'About Datum',
+    'title' => 'banner.About_us.title',
     'background_image' => get_assets_from_path('images/datum-about-slide.jpg')
 )); ?>
 
@@ -13,8 +13,7 @@
         <div class="flex pt-[60px] lg:pt-[93px] lg:w-[723px]">
             <div class="text-[24px] lg:text-[36px] font-normal lg:leading-[170%] text-black">
                 <div>
-                    At Datum, we are more than just a technology consultancy—we are your strategic partner in digital
-                    transformation.
+                    <?php echo datum_translate('About.intro.headline') ?>
                 </div>
             </div>
         </div>
@@ -23,14 +22,10 @@
             <div class="text-[16px] lg:text-[20px] font-normal leading-[170%] text-black tracking-[-0.2px]">
                 <div>
                     <p class="mb-8">
-                        We specialize in cloud engineering, data and AI, platform engineering, and software integration,
-                        helping
-                        businesses scale, optimize, and secure their technology landscape.
+                        <?php echo datum_translate('About.intro.paragraphs.0') ?>
                     </p>
                     <p>
-                        With deep expertise across banking, finance, energy, consumer goods, and digital enterprises, we
-                        deliver
-                        tailored, high-impact solutions that drive efficiency, innovation, and competitive advantage.
+                        <?php echo datum_translate('About.intro.paragraphs.1') ?>
                     </p>
                 </div>
             </div>
@@ -43,19 +38,19 @@
 
     <?php
     get_template_part('template-parts/content/info-section-list-about', null, array(
-        'title' => 'We help businesses unlock the full<br>potential of their technology<br>investments through',
+        'title' => datum_translate('About.what_we_do.title'),
         'items' => array(
             array(
-                'title' => 'Data &amp; AI',
-                'content' => 'Datum enables businesses to harness the power of the cloud and data for enhanced decision-making and operational efficiency. From cloud migration to data lakehouse implementation, we help clients scale their infrastructure and unlock valuable insights from their data.',
+                'title' => datum_translate('About.what_we_do.items.0.title'),
+                'content' => datum_translate('About.what_we_do.items.0.content'),
             ),
             array(
-                'title' => 'Platform Engineering',
-                'content' => 'DatumConsulting ensures that your technology is both secure and compliant with industry regulations. From secure data encryption to DevSecOps, we embed security into every stage of the development and operational process.',
+                'title' => datum_translate('About.what_we_do.items.1.title'),
+                'content' => datum_translate('About.what_we_do.items.1.content'),
             ),
             array(
-                'title' => 'System & Data Integration',
-                'content' => 'Our integration services ensure that disparate systems across your organization work together seamlessly. Datum excels in legacy system integration, cloud migration, and secure data sharing mechanisms that enhance business agility and collaboration.',
+                'title' => datum_translate('About.what_we_do.items.2.title'),
+                'content' => datum_translate('About.what_we_do.items.2.content'),
             ),
         ),
     )) ;
@@ -65,26 +60,25 @@
 <!-- We dont just -->
 <?php
 get_template_part('template-parts/content/about-we-dont-just', null, array(
-    'title' => 'We don’t just deploy technology,<br>we solve business challenges with:',
+    'title' => datum_translate('About.we_dont_just.title'),
     'image_url' => get_assets_from_path('images/Group 34.jpg'),
     'items' => array(
         array(
-            'title' => 'Industry Expertise',
-            'content' => 'Decades of experience in banking, finance, energy, and consumer technology.',
+            'title' => datum_translate('About.we_dont_just.items.0.title'),
+            'content' => datum_translate('About.we_dont_just.items.0.content'),
         ),
         array(
-            'title' => 'Customized Solutions',
-            'content' => 'Technology tailored to your business goals, industry requirements, and regulatory landscape.',
+            'title' => datum_translate('About.we_dont_just.items.1.title'),
+            'content' => datum_translate('About.we_dont_just.items.1.content'),
         ),
         array(
-            'title' => 'Proven Track Record',
-            'content' => '99.9% uptime for critical banking applications, zero-downtime deployments, and long-term partnerships.',
+            'title' => datum_translate('About.we_dont_just.items.2.title'),
+            'content' => datum_translate('About.we_dont_just.items.2.content'),
         ),
         array(
-            'title' => 'End-to-End Support',
-            'content' => 'From strategy to execution and continuous optimization, we ensure maximum ROI on every project.',
-        )
-       
+            'title' => datum_translate('About.we_dont_just.items.3.title'),
+            'content' => datum_translate('About.we_dont_just.items.3.content'),
+        ),
     )
 )) ;
 ?>
@@ -92,27 +86,25 @@ get_template_part('template-parts/content/about-we-dont-just', null, array(
 
 <?php
 get_template_part('template-parts/content/our-values', null, array(
-    'title' => 'Our Values',
+    'title' => datum_translate('About.our_values.title'),
     'image_url' => get_assets_from_path('images/our_values.jpg'),
     'items' => array(
         array(
-            'title' => 'Strategic Excellence',
-            'content_text' => 'We anticipate challenges before they arise. Our technology solutions align with your business strategy, providing a clear roadmap for long-term success.',
+            'title' => datum_translate('About.our_values.items.0.title'),
+            'content' => datum_translate('About.our_values.items.0.content_text'),
         ),
         array(
-            'title' => 'Speed with Precision',
-            'content_text' => 'Time-to-value matters. Whether modernizing systems or deploying AI, we accelerate outcomes with surgical precision, minimizing risk while maximizing ROI.',
+            'title' => datum_translate('About.our_values.items.1.title'),
+            'content' => datum_translate('About.our_values.items.1.content_text'),
         ),
         array(
-            'title' => 'Client Centric Approach',
-            'content_text' => 'You’re the hero of your transformation story. We listen first, act second, and co-create solutions that align with your unique goals, culture, and challenges.
-',
+            'title' => datum_translate('About.our_values.items.2.title'),
+            'content' => datum_translate('About.our_values.items.2.content_text'),
         ),
         array(
-            'title' => 'Global Mindset Local Expertise',
-            'content_text' => 'Your local challenges meet our global perspective. We design solutions that respect regional nuances while harnessing best practices from industries worldwide.
-',
-        )
+            'title' => datum_translate('About.our_values.items.3.title'),
+            'content' => datum_translate('About.our_values.items.3.content_text'),
+        ),
        
     )
 )) ;
@@ -122,32 +114,32 @@ get_template_part('template-parts/content/our-values', null, array(
 <!-- Our Teams -->
 <?php
 get_template_part('template-parts/content/our-teams', null, array(
-    'title' => 'Our Team',
+    'title' => datum_translate('About.our_team.title'),
     'members' => array(
         array(
-            'name' => 'Nghia Nguyen',
-            'title' => 'Co-founder',
+            'name' => datum_translate('About.our_team.members.0.name'),
+            'title' => datum_translate('About.our_team.members.0.title'),
             'image_url' => get_assets_from_path('images/our_team_1.jpg'),
         ),
         array(
-            'name' => 'Nick Do',
-            'title' => 'Co-founder',
+            'name' => datum_translate('About.our_team.members.1.name'),
+            'title' => datum_translate('About.our_team.members.1.title'),
             'image_url' => get_assets_from_path('images/our_team_2.jpg'),
         ),
         array(
-            'name' => 'Thang Nguyen',
-            'title' => 'CIO – Chief of Information Officer',
+            'name' => datum_translate('About.our_team.members.2.name'),
+            'title' => datum_translate('About.our_team.members.2.title'),
             'image_url' => get_assets_from_path('images/our_team_3.jpg'),
         )
     ),
     'summembers' => array(
         array(
-            'number' => '20+',
-            'description' => 'Solution Architects & Technical Leads',
+            'number' => datum_translate('About.our_team.summembers.0.number'),
+            'description' => datum_translate('About.our_team.summembers.0.description'),
         ),
         array(
-            'number' => '100+',
-            'description' => 'Cloud, AI, DevOps, and Software<br />Engineering Specialists',
+            'number' => datum_translate('About.our_team.summembers.1.number'),
+            'description' => datum_translate('About.our_team.summembers.1.description'),
         )
     )
 )) ;

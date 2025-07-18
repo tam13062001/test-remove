@@ -40,7 +40,7 @@ $markers_ipad = [
 ?>
 
 
-<div class=" hidden 4xl:hidden lg:block pb-[100px] 2xl:pb-[400px] relative overflow-cover">
+<div class=" hidden 4xl:hidden lg:block pb-[100px] 2xl:pb-[600px] relative overflow-cover">
     <div class="mx-auto lg:absolute top-0 w-full lg:h-[957px] 2xl:h-auto 3xl:h-auto">
         <img class="relative h-auto w-full" style="position: relative; height: 100%; width: 100%;"  alt="" src="<?php echo get_stylesheet_directory_uri().'/assets/images/image 27.png' ?>" />
         <?php foreach ($markers as $marker): ?>

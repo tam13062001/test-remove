@@ -40,7 +40,7 @@ $current_id = get_queried_object_id();
 
         <div class="menu group relative">
             <?php if (!empty($menu['children'])): ?>
-                <span class="2xl:mx-4 lg:mx-3 hover:border-b-2 cursor-pointer <?php echo $is_active ? 'active' : ''; ?>">
+                <span class="2xl:mx-4 lg:mx-2 hover:border-b-2 cursor-pointer <?php echo $is_active ? 'active' : ''; ?>">
                     <?php echo datum_get_translation($menu['title']); ?>
                 </span>
                 <ul class="absolute h-fit bottom-0 list-none z-20 w-max m-0 top-[25px] hidden group-hover:block pt-2">
@@ -53,7 +53,7 @@ $current_id = get_queried_object_id();
                     <?php endforeach; ?>
                 </ul>
             <?php else: ?>
-                <a class="2xl:mx-4 lg:mx-3 hover:border-b-2 <?php echo $is_active ? 'active' : ''; ?>" href="<?php echo $menu['url']; ?>">
+                <a class="2xl:mx-4 lg:mx-2 hover:border-b-2 <?php echo $is_active ? 'active' : ''; ?>" href="<?php echo $menu['url']; ?>">
                     <?php echo datum_get_translation($menu['title']); ?>
                 </a>
             <?php endif; ?>
