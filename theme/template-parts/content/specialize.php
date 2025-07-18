@@ -1,5 +1,5 @@
 <?php
-$title = $args['title'] ?? 'We specialize in';
+$title = $args['title'] ?? '';
 $heading = $args['heading'] ?? '';
 $content = $args['content'] ?? '';
 $items = $args['items'] ?? [];
@@ -10,7 +10,7 @@ $items = $args['items'] ?? [];
   
     <div>
       <h2 class="text-[20px] font-bold text-[#315CD4]">
-        <?php echo esc_html($title); ?>
+        <?php echo datum_translate(esc_html($title)); ?>
       </h2>
     </div>
 

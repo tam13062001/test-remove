@@ -870,8 +870,8 @@
     "cta_text": "Download the full case study"
   },
 
-  "insurance":{
-      "solution":{
+  "solution_industry":{
+      "insurance":{
         "title": "Our solution consists of",
         "items": [
           {

@@ -33,7 +33,7 @@ get_template_part('template-parts/content/call-to-action-industry', null, array(
   
     <div>
       <h2 class="text-[20px] font-bold text-[#315CD4] pb-[50px]">
-       Our solution consists of
+        <?php echo datum_translate('solution_industry.insurance.title') ?>
       </h2>
     </div>
 
@@ -44,11 +44,11 @@ get_template_part('template-parts/content/call-to-action-industry', null, array(
             <div class=" w-full overflow-hidden group flex flex-col h-auto lg:min-h-[320px] min-h-[280px]">
                 <div class="inset-0 bg-[#315CD4] lg:py-14 py-8 lg:px-0 px-6 flex flex-col text-white h-full">
                     <h3 class="lg:px-16 px-0 text-[16px] lg:text-[20px] font-semibold leading-[170%]">
-                    Robust Data Platform Engineering
+                        <?php echo datum_translate('solution_industry.insurance.items.0.title') ?>
                     </h3>
                     
                     <p class="lg:px-16 px-0 text-[13px] lg:text-[20px] mt-2 leading-[170%]">
-                        Datum Consulting designs secure, scalable data platforms, integrating data warehousing and vector databases to efficiently process, analyze, and protect vast insurance datasets for evolving business needs.
+                        <?php echo datum_translate('solution_industry.insurance.items.0.content') ?>
                     </p>
                 
                 </div>
@@ -58,11 +58,11 @@ get_template_part('template-parts/content/call-to-action-industry', null, array(
             <div class=" w-full overflow-hidden group flex flex-col h-auto lg:min-h-[320px] min-h-[280px]">
                 <div class="inset-0 bg-[#315CD4] lg:py-14 py-8 lg:px-0 px-6 flex flex-col text-white h-full">
                     <h3 class="lg:px-16 px-0 text-[16px] lg:text-[20px] font-semibold leading-[170%]">
-                    Advanced Analytics & Prediction
+                        <?php echo datum_translate('solution_industry.insurance.items.1.title') ?>
                     </h3>
                     
                     <p class="lg:px-16 px-0 text-[13px] lg:text-[20px] mt-2 leading-[170%]">
-                        Implementing AI models capable of predictive analysis (e.g., revenue growth, claims risk) and anomaly detection to identify unusual trends in claims or revenue.
+                        <?php echo datum_translate('solution_industry.insurance.items.1.content') ?>
                     </p>
                 
                 </div>
@@ -72,11 +72,11 @@ get_template_part('template-parts/content/call-to-action-industry', null, array(
             <div class="h-full w-full overflow-hidden group flex flex-col h-auto lg:min-h-[320px] min-h-[280px]">
                 <div class="inset-0 bg-[#315CD4] lg:py-14 py-8 lg:px-0 px-6 flex flex-col text-white h-full">
                     <h3 class="lg:px-16 px-0 text-[16px] lg:text-[20px] font-semibold leading-[170%]">
-                    Secure Cloud Infrastructure
+                        <?php echo datum_translate('solution_industry.insurance.items.2.title') ?>
                     </h3>
                     
                     <p class="lg:px-16 px-0 text-[13px] lg:text-[20px] mt-2 leading-[170%]">
-                        Leveraging AWS Bedrock and AWS OpenSearch to create highly secure, compliant, and scalable cloud environments for AI and data operations, ensuring data privacy and integrity.
+                        <?php echo datum_translate('solution_industry.insurance.items.2.content') ?>
                     </p>
                 
                 </div>
@@ -86,11 +86,11 @@ get_template_part('template-parts/content/call-to-action-industry', null, array(
             <div class="h-full w-full overflow-hidden group flex flex-col h-auto lg:min-h-[320px] min-h-[280px]">
                 <div class="inset-0 bg-[#315CD4] lg:py-14 py-8 lg:px-0 px-6 flex flex-col text-white h-full">
                     <h3 class="lg:px-16 px-0 text-[16px] lg:text-[20px] font-semibold leading-[170%]">
-                    Role-Based Access Control (RBAC)
+                        <?php echo datum_translate('solution_industry.insurance.items.3.title') ?>
                     </h3>
                     
                     <p class="lg:px-16 px-0 text-[13px] lg:text-[20px] mt-2 leading-[170%]">
-                        Designing and implementing granular access controls to ensure that sensitive insurance data and specific features are only accessible to authorized personnel based on their roles.
+                        <?php echo datum_translate('solution_industry.insurance.items.3.content') ?>
                     </p>
                 
                 </div>
@@ -103,15 +103,15 @@ get_template_part('template-parts/content/call-to-action-industry', null, array(
             <div class="h-auto w-full overflow-hidden group flex flex-col">
                 <div class="inset-0 bg-[#315CD4] lg:py-14 py-8 lg:px-0 px-6 flex flex-col text-white h-full">
                         <h3 class="lg:px-16 px-0 text-[16px] lg:text-[20px] font-semibold leading-[170%]">
-                            Generative AI for Business Intelligence
+                            <?php echo datum_translate('solution_industry.insurance.items.4.title') ?>
                         </h3>
                         <p class="lg:px-16 px-0 text-[13px] lg:text-[20px] mt-2 leading-[170%]">
-                            Developing AI-powered dashboards and conversational interfaces that enable natural language querying of complex insurance data
+                            <?php echo datum_translate('solution_industry.insurance.items.4.content') ?>
                         </p>
                         <ul class="lg:px-16 px-0 text-[13px] lg:text-[20px] mt-2 leading-[170%]">
-                            <li class="relative lg:pl-4 before:absolute before:text-[16px] before:text-black flex"><span class="w-[18px] lg:pr-4">•</span> Natural Language Processing (NLP): Allowing users (e.g., leadership, strategy, finance teams) to ask questions in natural language (e.g., Vietnamese or bilingual) to retrieve specific data, generate reports, and visualize trends.</li>
-                            <li class="relative lg:pl-4 before:absolute before:text-[16px] before:text-black flex"><span class="w-[18px] lg:pr-4">•</span> Contextual Understanding: Maintaining conversation context to provide seamless and relevant follow-up responses.</li>
-                            <li class="relative lg:pl-4 before:absolute before:text-[16px] before:text-black flex"><span class="w-[18px] lg:pr-4">•</span> Automated Report Summarization & Charting: Automatically generating concise summaries and visual charts (bar, pie, line) from large datasets, aiding in quick and accurate decision-making.</li>
+                            <li class="relative lg:pl-4 before:absolute before:text-[16px] before:text-black flex"><span class="w-[18px] lg:pr-4">•</span> <?php echo datum_translate('solution_industry.insurance.items.4.list.0') ?></li>
+                            <li class="relative lg:pl-4 before:absolute before:text-[16px] before:text-black flex"><span class="w-[18px] lg:pr-4">•</span> <?php echo datum_translate('solution_industry.insurance.items.4.list.1') ?></li>
+                            <li class="relative lg:pl-4 before:absolute before:text-[16px] before:text-black flex"><span class="w-[18px] lg:pr-4">•</span> <?php echo datum_translate('solution_industry.insurance.items.4.list.2') ?></li>
                         </ul>
                 </div>
             </div>
@@ -119,11 +119,11 @@ get_template_part('template-parts/content/call-to-action-industry', null, array(
             <div class=" w-full overflow-hidden group flex flex-col h-auto lg:min-h-[320px] min-h-[280px]">
                 <div class="inset-0 bg-[#315CD4] lg:py-14 py-8 lg:px-0 px-6 flex flex-col text-white h-full">
                     <h3 class="lg:px-16 px-0 text-[16px] lg:text-[20px] font-semibold leading-[170%]">
-                        Seamless Integration
+                        <?php echo datum_translate('solution_industry.insurance.items.5.title') ?>
                     </h3>
                     
                     <p class="lg:px-16 px-0 text-[13px] lg:text-[20px] mt-2 leading-[170%]">
-                        Expertise in integrating new AI and data solutions with existing insurance systems, ensuring continuity and enhancing overall technological capabilities.
+                        <?php echo datum_translate('solution_industry.insurance.items.5.content') ?>
                     </p>
                 
                 </div>

@@ -33,7 +33,7 @@ get_template_part('template-parts/content/call-to-action-industry', null, array(
   
     <div>
       <h2 class="text-[20px] font-bold text-[#315CD4] pb-[50px]">
-      Our solution consists of:
+        <?php echo datum_translate('solution_industry.solar_energy.title') ?>
       </h2>
     </div>
 
@@ -44,11 +44,11 @@ get_template_part('template-parts/content/call-to-action-industry', null, array(
             <div class=" w-full overflow-hidden group flex flex-col h-auto lg:min-h-[320px] min-h-[280px]">
                 <div class="inset-0 bg-[#315CD4] lg:py-14 py-8 lg:px-0 px-6 flex flex-col text-white h-full">
                     <h3 class="lg:px-16 px-0 text-[16px] lg:text-[20px] font-semibold leading-[170%]">
-                    Cloud-Based Machine Learning Platforms
+                        <?php echo datum_translate('solution_industry.solar_energy.items.0.title') ?>
                     </h3>
                     
                     <p class="lg:px-16 px-0 text-[13px] lg:text-[20px] mt-2 leading-[170%]">
-                        Design robust machine-learning platforms using AWS for scalable analytics and real-time decision-making in solar energy.
+                        <?php echo datum_translate('solution_industry.solar_energy.items.0.content') ?>
                     </p>
                 
                 </div>
@@ -58,11 +58,11 @@ get_template_part('template-parts/content/call-to-action-industry', null, array(
             <div class="w-full overflow-hidden group flex flex-col h-auto lg:min-h-[320px] min-h-[280px]">
                 <div class="inset-0 bg-[#315CD4] lg:py-14 py-8 lg:px-0 px-6 flex flex-col text-white h-full">
                     <h3 class="lg:px-16 px-0 text-[16px] lg:text-[20px] font-semibold leading-[170%]">
-                    Scenario Simulation and Market Intelligence
+                        <?php echo datum_translate('solution_industry.solar_energy.items.1.title') ?>
                     </h3>
                     
                     <p class="lg:px-16 px-0 text-[13px] lg:text-[20px] mt-2 leading-[170%]">
-                        Developing intuitive tools that allow users to run various scenarios of selling and storing solar energy.
+                        <?php echo datum_translate('solution_industry.solar_energy.items.1.content') ?>
                     </p>
                 
                 </div>
@@ -75,13 +75,13 @@ get_template_part('template-parts/content/call-to-action-industry', null, array(
             <div class="h-full w-full overflow-hidden group flex flex-col ">
                 <div class="inset-0 bg-[#315CD4] lg:py-14 py-8 lg:px-0 px-6 flex flex-col text-white h-full">
                         <h3 class="lg:px-16 px-0 text-[16px] lg:text-[20px] font-semibold leading-[170%]">
-                            Big Data Optimization &  Predictive Analytics
+                            <?php echo datum_translate('solution_industry.solar_energy.items.2.title') ?>
                         </h3>
                     
                         <ul class="lg:px-16 px-0 text-[13px] lg:text-[20px] mt-2 leading-[170%]">
-                            <li class="relative lg:pl-4"><span class="w-[18px] ">•</span> Battery Usage Optimization: Intelligent algorithms optimize charging and discharging cycles to enhance efficiency and longevity, adapting to grid stability and environmental factors.</li>
-                            <li class="relative lg:pl-4"><span class="w-[18px] ">•</span> Grid Electricity Provision: Advanced strategies determine optimal energy provision to the grid, factoring in demand, transmission constraints, and weather variations.</li>
-                            <li class="relative lg:pl-4"><span class="w-[18px] ">•</span> Price Maximization: Data-driven models forecast market prices to optimize solar energy sales, ensuring regulatory compliance and maximizing revenue.</li>
+                            <li class="relative lg:pl-4"><span class="w-[18px] ">•</span><?php echo datum_translate('solution_industry.solar_energy.items.2.list.0') ?></li>
+                            <li class="relative lg:pl-4"><span class="w-[18px] ">•</span><?php echo datum_translate('solution_industry.solar_energy.items.2.list.0') ?></li>
+                            <li class="relative lg:pl-4"><span class="w-[18px] ">•</span><?php echo datum_translate('solution_industry.solar_energy.items.2.list.0') ?></li>
                         </ul>
                 </div>
             </div>

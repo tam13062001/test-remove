@@ -29,31 +29,32 @@ get_template_part('template-parts/content/call-to-action-industry', null, array(
 ?>
 
 <?php get_template_part('template-parts/content/specialize',null ,array(
-    'items' => [
-  [
-    'title' => 'Secure Cloud Adoption',
-    'description' => 'Implementing advanced cloud environments like AWS Landing Zones to establish secure, compliant, and well-governed foundations for your digital assets.',
-  ],
-  [
-    'title' => 'Automated Operations',
-    'description' => 'Developing automated CI/CD pipelines for zero-downtime deployments, dramatically accelerating innovation and minimizing disruptions.',
-  ],
-  [
-    'title' => 'Modern Workload Platforms',
-    'description' => 'Deploying and customizing robust platforms like Amazon EKS to support diverse workloads, from core banking microservices to front-end applications, ensuring high availability and performance.',
-  ],
-  [
-    'title' => 'API Management & Integration',
-    'description' => 'Redefining API strategies and facilitating seamless integration of legacy systems with modern technologies, ensuring continuity and adaptability.',
-  ],
-  [
-    'title' => 'Enhanced Security & Compliance',
-    'description' => 'Implementing stringent security measures, including role-based access, least privilege policies, advanced encryption, and integrated monitoring tools to meet strict regulatory standards.',
-  ],
-  [
-    'title' => 'Financial Technology Integration',
-    'description' => 'Our AWS-certified experts integrate seamlessly with banking experience platforms like Backbase and core banking systems such as ThoughtMachine and Fineract, ensuring smooth interoperability across your tech ecosystem.',
-  ]
+  'title' => 'solution_industry.Banking.title',
+  'items' => [
+    [
+      'title' => datum_translate('solution_industry.Banking.items.0.title'),
+      'description' =>datum_translate('solution_industry.Banking.items.0.content'),
+    ],
+    [
+      'title' => datum_translate('solution_industry.Banking.items.1.title'),
+      'description' =>datum_translate('solution_industry.Banking.items.1.content'),
+    ],
+    [
+      'title' => datum_translate('solution_industry.Banking.items.2.title'),
+      'description' =>datum_translate('solution_industry.Banking.items.2.content'),
+    ],
+    [
+      'title' => datum_translate('solution_industry.Banking.items.3.title'),
+      'description' =>datum_translate('solution_industry.Banking.items.3.content'),
+    ],
+    [
+      'title' => datum_translate('solution_industry.Banking.items.4.title'),
+      'description' =>datum_translate('solution_industry.Banking.items.4.content'),
+    ],
+    [
+      'title' => datum_translate('solution_industry.Banking.items.5.title'),
+      'description' =>datum_translate('solution_industry.Banking.items.5.content'),
+    ],
 ]
 
 )); ?>
