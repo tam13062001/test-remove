@@ -14,14 +14,14 @@ $user_avatar_url = $args['user_avatar_url'] ?? get_assets_from_path('images/our_
     </h2>
     <div class="flex flex-col lg:flex-row">
         <div class="lg:w-1/4">
-            <img class="w-full lg:w-fit" src="<?php echo $user_avatar_url ?>" />
+            <img class="w-auto h-auto " src="<?php echo $user_avatar_url ?>" />
         </div>
-        <div class="lg:w-3/4 py-5 lg:py-[75px] lg:px-[135px]">
+        <div class="lg:w-3/4 py-5  lg:px-[135px]">
             <div class="text-primary font-[700] text-[20px] lg:text-[24px] mb-11">
                 <?php echo datum_translate($content) ?>
             </div>
             <a class="btn font-bold lg:w-fit w-full" href="/contact/">
-                <?php echo datum_get_translation($btn_text) ?>
+                <?php echo datum_translate($btn_text) ?>
             </a>
             <div class="mt-11">
                 <div class="text-primary font-[700] text-[20px] lg:text-[24px]">

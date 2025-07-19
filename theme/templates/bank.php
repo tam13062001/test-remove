@@ -61,7 +61,7 @@ get_template_part('template-parts/content/call-to-action-industry', null, array(
 
 <?php
 get_template_part('template-parts/content/leader-ship', null, array(
-    'title' => 'leadership_section.title',
+    'title' => 'leadership_section.title_bank',
     'heading' => 'leadership_section.heading_banking',
     'image_url' => get_assets_from_path('images/leader.png'),
     'content' => "leadership_section.content_banking",

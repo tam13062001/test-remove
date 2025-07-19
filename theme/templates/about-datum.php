@@ -91,19 +91,19 @@ get_template_part('template-parts/content/our-values', null, array(
     'items' => array(
         array(
             'title' => datum_translate('About.our_values.items.0.title'),
-            'content' => datum_translate('About.our_values.items.0.content_text'),
+            'content_text' => datum_translate('About.our_values.items.0.content_text'),
         ),
         array(
             'title' => datum_translate('About.our_values.items.1.title'),
-            'content' => datum_translate('About.our_values.items.1.content_text'),
+            'content_text' => datum_translate('About.our_values.items.1.content_text'),
         ),
         array(
             'title' => datum_translate('About.our_values.items.2.title'),
-            'content' => datum_translate('About.our_values.items.2.content_text'),
+            'content_text' => datum_translate('About.our_values.items.2.content_text'),
         ),
         array(
             'title' => datum_translate('About.our_values.items.3.title'),
-            'content' => datum_translate('About.our_values.items.3.content_text'),
+            'content_text' => datum_translate('About.our_values.items.3.content_text'),
         ),
        
     )

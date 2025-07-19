@@ -21,7 +21,7 @@ body {
 }
 
 .container {
-    @apply px-10 lg:px-16 2xl:px-80
+    @apply px-10 lg:px-16
 }
 
 /* CSS For custom header */
@@ -34,7 +34,7 @@ body {
 }
 
 #header.has-background .alternative-logo {
-    @apply block mx-20;
+    @apply block lg:mx-20 mx-8;
 }
 
 #header.has-background {

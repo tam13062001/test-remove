@@ -17,7 +17,7 @@ $image_url = $args['image_url'] ?? '';
         <div class="text-[24px] lg:text-[40px] font-bold text-[#315CD4] lg:pb-0 pb-[40px]">
             <?php echo datum_translate($heading); ?>
         </div>
-        <div class="text-[18px] lg:text-[24px] font-bold lg:py-[40px] lg:w-[627px] leading-[170%] text-[#000000]">
+        <div class="text-[18px] lg:text-[24px] font-bold lg:py-[40px] lg:w-[627px] leading-[170%] text-[#000000] tracking-wide">
             <?php echo datum_translate($content); ?>
         </div>
     </div>

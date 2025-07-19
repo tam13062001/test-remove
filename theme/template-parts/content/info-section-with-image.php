@@ -10,11 +10,11 @@ $image_url = $args['image_url'] ?? '';
             <h2 class="text-[32px] lg:text-[40px] font-bold mb-6 lg:mb-10">
                 <?php echo datum_translate($title) ?>
             </h2>
-            <div class="lg:h-[630px] bg-white lg:py-10 leading-[170%] lg:pr-[20%]">
+            <div class="lg:h-[880px] bg-white lg:py-10 leading-[170%] lg:pr-[20%]">
                 <?php foreach($items as $item): ?>
                     <div class="mb-8">
                         <?php if(!empty($item['title'])) {?>
-                            <div class="text-primary lg:text-[24px] text-[20px] font-[700] mb-5 mt-4">
+                            <div class="text-primary lg:text-[24px] text-[20px] font-[700] mb-5 mt-3">
                                 <?php echo datum_translate($item['title']) ?>
                             </div>
                         <?php } ?>
@@ -27,7 +27,7 @@ $image_url = $args['image_url'] ?? '';
     </div>
 
 
-    <div class="lg:w-1/2 lg:absolute right-0 top-0 lg:h-[825px] lg:ml-5 w-full overflow-hidden">
+    <div class="lg:w-1/2 lg:absolute right-0 top-0 lg:h-[880px] lg:ml-5 w-auto overflow-hidden">
         <div class="flex items-end h-full relative">
 <!--            <div class="hidden lg:block absolute bottom-0  w-1/6 bg-white h-[80%]"></div>-->
             <img class="object-cover h-full w-full" src="<?php echo $image_url?>" alt="" />

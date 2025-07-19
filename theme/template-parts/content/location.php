@@ -7,7 +7,7 @@ $bg_image_url = $args['bg_image_url'] ?? '';
 <div class="py-[60px] lg:py-[80px]">
     <div class="container mb-[50px] lg:mb-[100px]">
         <h2 class="text-[32px] lg:text-[40px] font-bold">
-            Locations
+            <?php echo datum_translate('locations.title') ?>
         </h2>
     </div>
     <div class="relative">
@@ -23,41 +23,41 @@ $bg_image_url = $args['bg_image_url'] ?? '';
             <?php
             $data = array(
                 array(
-                    'country' => 'New Zealand',
+                    'country' =>  datum_translate('footer.new_zealand.country'),
                     'locations' => array(
                         array(
-                            'title' => 'Datum Limited',
-                            'address' => '70 Symonds Street, 1010 Auckland, New Zealand'
+                            'title' => datum_translate('footer.new_zealand.company') ,
+                            'address' => datum_translate('footer.australia.company') 
                         )
                     ),
                     'open' => true
 
                 ),
                 array(
-                    'country' => 'Australia',
+                    'country' => datum_translate('footer.australia.country'),
                     'locations' => array(
                         array(
-                            'title' => 'Datum Consulting AU PTY LTD',
-                            'address' => 'Level 1, 8 Beulah Road, Norwood SA 5067 Adelaide, Australia'
+                            'title' => datum_translate('footer.australia.company'),
+                            'address' => datum_translate('footer.australia.address') 
                         )
                     )
 
                 ),
                 array(
-                    'country' => 'Vietnam',
+                    'country' => datum_translate('footer.vietnam.country'),
                     'locations' => array(
                         array(
-                            'title' => 'Datum Consulting VN Company LTD',
-                            'address' => '52-54-56 E. B2, Sala Residential Area, District 2 (now Thu Duc), Ho Chi Minh City 700000, Vietnam'
+                            'title' => datum_translate('footer.vietnam.company') ,
+                            'address' => datum_translate('footer.vietnam.address')
                         )
                     )
                 ),
                 array(
-                    'country' => 'Philippines',
+                    'country' => datum_translate('footer.philippines.country'),
                     'locations' => array(
                         array(
-                            'title' => 'Datum Consulting Philippines, Inc.',
-                            'address' => '7th Floor, Unit B, Center, 8 Rockwell Dr, Makati, 1209 Metro Manila, Philippines'
+                            'title' => datum_translate('footer.philippines.company'),
+                            'address' => datum_translate('footer.philippines.address')
                         )
                     )
                 )

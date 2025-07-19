@@ -39,7 +39,7 @@ export default function CardSliderBlock(props: BaseProps<CardSliderProps>) {
     >
       {
         data.map((item: any, index: number) => (
-          <SwiperSlide key={index} className={'lg:w-[785px] w-[85%] '}>
+          <SwiperSlide key={index} className={'lg:w-[56%] w-[85%] '}>
             <div className="ml-1 lg:ml-10 h-[140px] w-full lg:h-[314px] bg-white flex justify-between flex-row shadow-[0_0_10px_rgba(0,0,0,0.15)] mb-1 mt-1 ">
               <div className="flex-1 flex items-center px-4 text-primary lg:p-4 lg:px-20 text-[16px] lg:text-[24px]">
                 {item.title}

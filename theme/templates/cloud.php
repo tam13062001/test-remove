@@ -153,7 +153,7 @@ get_template_part('template-parts/content/info-section-list', null, array(
 <?php get_template_part('template-parts/content/team', null, array(
     'title' => 'team_section.title_cloud',
     'content' => 'team_section.content',
-    'btn_text' => 'cta.schedule',
+    'btn_text' => 'team_section.get_consulted_service',
     'btn_link' => '#'
 )); ?>
 

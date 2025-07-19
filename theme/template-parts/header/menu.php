@@ -6,7 +6,7 @@ $current_id = get_queried_object_id();
 
 ?>
 
-<div class="hidden lg:flex font-bold mt-2">
+<div class="hidden ipadpro:hidden lg:flex font-bold mt-2">
     <?php foreach ($primary_menu_items as $menu) : ?>
 
         <?php
@@ -40,7 +40,7 @@ $current_id = get_queried_object_id();
 
         <div class="menu group relative">
             <?php if (!empty($menu['children'])): ?>
-                <span class="2xl:mx-4 lg:mx-2 hover:border-b-2 cursor-pointer <?php echo $is_active ? 'active' : ''; ?>">
+                <span class="2xl:mx-4 lg:mx-4 hover:border-b-2 cursor-pointer <?php echo $is_active ? 'active' : ''; ?>">
                     <?php echo datum_get_translation($menu['title']); ?>
                 </span>
                 <ul class="absolute h-fit bottom-0 list-none z-20 w-max m-0 top-[25px] hidden group-hover:block pt-2">
@@ -60,14 +60,27 @@ $current_id = get_queried_object_id();
         </div>
     <?php endforeach; ?>
 </div>
-<div class="lg:hidden">
+
+<?php function translate_menu_items($items) {
+    foreach ($items as &$item) {
+        $item['title'] = datum_get_translation($item['title']);
+        if (!empty($item['children'])) {
+            $item['children'] = translate_menu_items($item['children']);
+        }
+    }
+    return $items;
+}
+
+$translated_menu_items = translate_menu_items($primary_menu_items);
+ ?>
+<div class="lg:hidden ipadpro:block">
     <?php
     global $rocket;
     $logo_url = $rocket->helper->get_custom_logo_url();
     render_rocket_block('mobile-menu', array(
-        'data' => array_values($primary_menu_items),
-        'logo_url_2' => get_stylesheet_directory_uri().'/assets/images/logo.png',
-    ));
+    'data' => array_values($translated_menu_items),
+    'logo_url_2' => get_stylesheet_directory_uri().'/assets/images/logo.png',
+));
 
     ?>
 

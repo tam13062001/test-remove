@@ -87,9 +87,9 @@ get_template_part('template-parts/content/info-section-with-image-story-percent-
 ?>
 
 <?php get_template_part('template-parts/content/team', null, array(
-    'title' => 'Get consulted by our expert',
-    'content' => 'Talk with our expert to start building your platform',
-    'btn_text' => 'Schedule a consultation with our expert',
+    'title' => 'team_section.title_story',
+    'content' => 'team_section.content_story',
+    'btn_text' => 'team_section.get_consulted_story',
     'btn_link' => '#'
 )); ?>
 

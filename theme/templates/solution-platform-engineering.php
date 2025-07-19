@@ -151,9 +151,9 @@ get_template_part('template-parts/content/frequently-asked-questions', null, arr
 ?>
 <?php get_template_part('template-parts/content/Expert-insight'); ?>
 <?php get_template_part('template-parts/content/team', null, array(
-    'title' => 'team_section.get_consulted',
-    'content' => 'team_section.content_1',
-    'btn_text' => 'cta.schedule',
+    'title' => 'team_section.title_story',
+    'content' => 'team_section.content_solution_platform',
+    'btn_text' => 'team_section.get_consulted_solution',
     'btn_link' => '#'
 )); ?>
 <?php get_template_part('template-parts/content/back-to-top'); ?>

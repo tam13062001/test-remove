@@ -1,27 +1,27 @@
 {
   "greeting": "Xin chào",
-  "menu.services": "Dịch vụ",
+  "menu.services": "Dịch Vụ",
   "menu.services.cloud": "Điện Toán Đám Mây",
   "menu.services.data-ai": "Dữ Liệu & Trí Tuệ Nhân Tạo",
-  "menu.services.software": "phần mềm",
+  "menu.services.software": "Phần Mềm",
   "menu.solution": "Giải pháp",
   "menu.solution.integration": "Tích Hợp Toàn Diện",
-  "menu.solution.platform": "Kỹ thuật nền tảng",
-  "menu.solution.digital": "Chuyển đổi số",
-  "menu.industry": "Ngành",
-  "menu.industry.insurance": "Bảo hiểm",
-  "menu.industry.solar-energy": "Năng lượng mặt trời",
-  "menu.industry.banking": "Ngân hàng",
-  "menu.insights": "Chuyên môn",
-  "menu.industry-insights": "Thông tin ngành",
-  "menu.insights.industry-insights": "Góc nhìn ngành",
-  "menu.insights.news-events": "Tin tức & Sự kiện",
-  "menu.insights.knowledge": "Tri thức Datum",
-  "menu.about": "Về chúng tôi",
-  "menu.about.team": "Đội ngũ",
-  "menu.about.contact": "Liên hệ",
-  "menu.career": "Tuyển dụng",
-  "successful_stories": "Câu chuyện thành công",
+  "menu.solution.platform": "Kỹ Thuật Nền Tảng",
+  "menu.solution.digital": "Chuyển Đổi Số",
+  "menu.industry": "Lĩnh Vực",
+  "menu.industry.insurance": "Bảo Hiểm",
+  "menu.industry.solar-energy": "Năng lượng Mặt Trời",
+  "menu.industry.banking": "Ngân Hàng",
+  "menu.insights": "Chuyên Môn",
+  "menu.industry-insights": "Thông Tin Ngành",
+  "menu.insights.industry-insights": "Góc Nhìn Ngành",
+  "menu.insights.news-events": "Tin Tức & Sự Kiện",
+  "menu.insights.knowledge": "Tri Thức Datum",
+  "menu.about": "Về Chúng Tôi",
+  "menu.about.team": "Đội Ngũ",
+  "menu.about.contact": "Liên Hệ",
+  "menu.career": "Tuyển Dụng",
+  "successful_stories": "Câu Chuyện Thành Công",
   "platform_customization": "Platform Customization",
   "premier_banking": "Premier Banking",
   "digital_partner": "Đối tác chiến lược của bạn trong chuyển đổi số",
@@ -159,7 +159,7 @@
       "title": "Tiên phong kỹ thuật phần mềm xây dựng doanh nghiệp đón đầu tương lai"
     },
     "Digital": {
-      "title": "Tăng cường doanh nghiệp bằng công nghệ tiên tiến để dẫn đầu trong kỷ nguyên số"
+      "title": "Tăng cường sức mạnh cho doanh nghiệp bằng công nghệ tiên tiến để dẫn đầu trong kỷ nguyên số"
     },
     "Integration": {
       "title": "Tích hợp không gián đoạn giúp cho việc mở rộng và bảo mật Digital Transformation tốt hơn"
@@ -463,18 +463,25 @@
 
   "banking_stories": {
     "title": "Câu chuyện thành công",
-    "story_1": "Thúc đẩy chuyển đổi kỹ thuật số thông qua áp dụng đám mây và tích hợp dữ liệu",
+    "story_1": "Thúc đẩy chuyển đổi kỹ thuật số thông qua áp dụng đám mây và tích hợp dữ liệu.",
     "story_2": "Cải thiện trải nghiệm khách hàng và quy trình vận hành thông qua AI và machine learning."
   },
 
   "team_section": {
     "title_cloud": "Doanh nghiệp đã sẵn sàng sử dụng dịch vụ điện toán đám mây?",
-    "title_data_ai": "Anh/chị đã sẵn sàng xây dựng phần mềm cho doanh nghiệp?",
-    "title_software": "Anh/chị đã sẵn sàng xây dựng phần mềm cho doanh nghiệp?",
-    "get_consulted": "Đặt lịch tư vấn cùng chuyên gia Datum",
+    "title_data_ai": "Doanh nghiệp đã sẵn sàng sử dụng dịch vụ điện toán đám mây?",
+    "title_software": "Doanh nghiệp đã sẵn sàng sử dụng dịch vụ phần mềm?",
+    "title_story":"Nhận tư vấn từ chuyên gia của chúng tôi",
+    "get_consulted_service": "Đặt lịch tư vấn cùng chuyên gia Datum",
+    "get_consulted_solution": "Đặt lịch tư vấn cùng chuyên gia Datum",
+    "get_consulted_story": "Đặt lịch Tư vấn Chiến lược Miễn phí.",
     "content": "Trò chuyện cùng chuyên gia về Điện Toán Đám Mây của chúng tôi để bắt đầu hành trình chuyển đổi ngay hôm nay!",
     "content_software": "Trò chuyện cùng chuyên gia về Phần mềm của chúng tôi để bắt đầu hành trình chuyển đổi số ngay hôm nay!",
     "content_1": "Trao đổi với chuyên gia của chúng tôi để bắt đầu xây dựng nền tảng của bạn",
+    "content_story": "Trò chuyện cùng chuyên gia của chúng tôi để bắt đầu hành trình xây dựng nền tảng của bạn ngay hôm nay!",
+    "content_solution_platform":"Trò chuyện cùng chuyên gia của chúng tôi để bắt đầu hành trình xây dựng platform engineering ngay hôm nay!",
+    "content_solution_digital":"Trò chuyện cùng chuyên gia của chúng tôi để bắt đầu hành trình digital transformation ngay hôm nay!",
+    "content_solution_integration": "Trò chuyện cùng chuyên gia của chúng tôi để bắt đầu hành trình xây dựng một hệ thống tích hợp toàn diện ngay hôm nay!",
     "name":"Đỗ Ngọc Linh",
     "position":"Đồng sáng lập"
   },
@@ -655,7 +662,7 @@
   },
 
   "platform":{
-    "title": "Phương pháp tiếp cận kỹ thuật nền tảng tại Datum",
+    "title": "Phương Pháp Tiếp Cận Kỹ Thuật Nền Tảng tại Datum",
     "items": [
       {
         "title": "CI/CD Pipelines",
@@ -674,7 +681,7 @@
         "content": "Tự động hóa quản lý hạ tầng với laC, giúp triển khai nhanh chóng, chính xác và linh hoạt hơn."
       },
       {
-        "title": "Phát triển Ứng dụng Cloud-Native",
+        "title": "Phát Triển Ứng Dụng Cloud-Native",
         "content": "Giải pháp phát triển Cloud-Native giúp xây dựng và triển khai ứng dụng linh hoạt, tận dụng tối đa sức mạnh của đám mây."
       },
       {
@@ -713,15 +720,15 @@
     "items": [
       {
         "title": "Chuyên gia hàng đầu",
-        "content": "Đội ngũ của chúng tôi bao gồm các chuyên gia hàng đầu với chuyên môn sâu, chuyên gia chịu trách nhiệm thiết kế và triển khai, kiến trúc sư software và developers."
+        "content": "Đội ngũ của chúng tôi bao gồm các chuyên gia hàng đầu với chuyên môn sâu, chuyên gia chịu trách nhiệm thiết kế và triển khai, kiến trúc sư phần mềm và nhà phát triển."
       },
       {
         "title": "Giải pháp vượt trội đáp ứng ngành có yêu cầu bảo mật cao",
-        "content": "Đảm bảo bảo mật và tuân thủ tiêu chuẩn trong các ngành có yêu cầu khắt khe như digital banking, đồng thời platform luôn duy trì tính linh hoạt và khả năng mở rộng."
+        "content": "Đảm bảo bảo mật và tuân thủ tiêu chuẩn trong các ngành có yêu cầu khắt khe như ngân hàng số, đồng thời nền tảng luôn duy trì tính linh hoạt và khả năng mở rộng."
       },
       {
         "title": "Đối tác đồng hành cùng phát triển",
-        "content": "Chúng tôi không chỉ tạo ra platform mà còn cam kết gắn bó lâu dài cùng doanh nghiệp đối tác. Kể cả khi dự án đã hoàn tất, chúng tôi vẫn sát cánh cùng bộ phận phụ trách và các nhà phát triển khác, đảm bảo việc triển khai và mở rộng diễn ra mượt mà, đáp ứng đầy đủ mọi yêu cầu riêng biệt của đối tác."
+        "content": "Chúng tôi không chỉ tạo ra nền tảng mà còn cam kết gắn bó lâu dài cùng doanh nghiệp đối tác. Kể cả khi dự án đã hoàn tất, chúng tôi vẫn sát cánh cùng bộ phận phụ trách và các nhà phát triển khác, đảm bảo việc triển khai và mở rộng diễn ra mượt mà, đáp ứng đầy đủ mọi yêu cầu riêng biệt của đối tác."
       }
     ]
   },
@@ -757,11 +764,11 @@
       },
       {
         "title": "Mô Hình Máy Học Tùy Biến",
-        "content": "Ứng dụng AI, phân tích dữ liệu dự đoán xu hướng, đánh giá rủi ro và tự động hóa quy trình"
+        "content": "Ứng dụng AI, phân tích dữ liệu dự đoán xu hướng, đánh giá rủi ro và tự động hóa quy trình."
       },
       {
         "title": "MLOps",
-        "content": "Triển khai và giám sát mô hình machine learning, đảm bảo liên tục tối ưu và hiệu suất"
+        "content": "Triển khai và giám sát mô hình machine learning, đảm bảo liên tục tối ưu và hiệu suất."
       },
       {
         "title": "Cân Bằng Tải & Mở Rộng Quy Mô",
@@ -841,7 +848,7 @@
       },
       {
         "title": "Kiến Trúc Chịu Lỗi",
-        "content": "Chúng tôi giúp đối tác của mình thiết kế và triển khai hệ thống bền bỉ, đảm bảo tính khả dụng cao, giảm thiểu gián đoạn hoạt động kinh doanh"
+        "content": "Chúng tôi giúp đối tác của mình thiết kế và triển khai hệ thống bền bỉ, đảm bảo tính khả dụng cao, giảm thiểu gián đoạn hoạt động kinh doanh."
       },
       {
         "title": "Triển Khai Data Lakehouse",
@@ -910,11 +917,11 @@
           ]
       },
       "Banking":{
-        "title": "Giải pháp của chúng tôi bao gồm",
+        "title": "Thế mạnh của chúng tôi",
         "items": [
             {
               "title": "Áp Dụng Điện Toán Đám Mây An Toàn",
-              "content": "Thiết kế các nền tảng học máy đáng tin cậy trên AWS, hỗ trợ phân tích quy mô lớn và ra quyết định theo thời gian thực trong lĩnh vực năng lượng mặt trời."
+              "content": "Thiết lập các môi trường cloud tiên tiến như AWS Landing Zone để xây dựng nền tảng số bảo mật, vận hành và quản trị hiệu quả cho mọi tài sản số của bạn."
             },
             {
               "title": "Tự Động Hoá Vận Hành",
@@ -939,7 +946,7 @@
           ]
       },
       "solar_energy":{
-        "title": "Thế mạnh của chúng tôi ",
+        "title": "Giải pháp của chúng tôi bao gồm: ",
         "items": [
             {
               "title": "Nền Tảng Học Máy Trên Đám Mây",
@@ -950,7 +957,7 @@
               "content": "Phát triển các công cụ trực quan, giúp người dùng dễ dàng mô phỏng nhiều kịch bản khác nhau trong việc bán và lưu trữ điện mặt trời."
             },
             {
-              "title": "Tối ưu Big Data & Phân tích dự báo",
+              "title": "Tối Ưu Big Data & Phân Tích Dự Báo",
               "content": "",
               "list": [
                 "Tối ưu hóa sử dụng pin: Sử dụng các thuật toán thông minh để tối ưu hóa việc sạc và xả pin, giúp tăng hiệu suất và kéo dài tuổi thọ pin. Đồng thời thích ứng với tình trạng của lưới điện và các yếu tố môi trường.",
@@ -985,7 +992,7 @@
     "items": [
       {
         "title": "Thích Ứng Linh Hoạt với Thị Trường Năng Lượng Mặt Trời Đầy Biến Động",
-        "content": "<p>Thị trường năng lượng truyền thống không được thiết kế để xử lý sự biến động của năng lượng tái tạo hay tính linh hoạt của pin lưu trữ. Các trang trại năng lượng mặt trời và nhà sản xuất pin đang đối mặt với nhu cầu cấp thiết về các công cụ tiên tiến để:</p><ul class='lg:p-4 space-y-2'><li>• Dự báo chính xác sản lượng điện và nhu cầu tiêu thụ.</li><li>• Quản lý thông minh chu kỳ sạc và xả pin.</li><li>• Tối ưu hóa việc bán điện lên lưới dựa trên giá thị trường thực tế và dự đoán.</li><li>• Mô phỏng các kịch bản hoạt động và thương mại để giảm rủi ro đầu tư.</li><li>• Khai thác khối lượng lớn dữ liệu vận hành và thị trường để đưa ra chiến lược hiệu quả.</li></ul><p>Việc cân bằng giữa lưu trữ pin, bán điện lên lưới và tối ưu hóa tuổi thọ pin đòi hỏi Machine Learning xử lý dữ liệu đa dạng như thời tiết, giờ cao điểm, và biến động theo mùa nhằm giao dịch năng lượng mặt trời hiệu quả.</p>"
+        "content": "<p>Thị trường năng lượng truyền thống không được thiết kế để xử lý sự biến động của năng lượng tái tạo hay tính linh hoạt của pin lưu trữ. Các trang trại năng lượng mặt trời và nhà sản xuất pin đang đối mặt với nhu cầu cấp thiết về các công cụ tiên tiến để:</p><ul class='lg:p-4 space-y-2'><li>• Dự báo chính xác sản lượng điện và nhu cầu tiêu thụ.</li><li>• Quản lý thông minh chu kỳ sạc và xả pin.</li><li>• Tối ưu hóa việc bán điện lên lưới dựa trên giá thị trường thực tế và dự đoán.</li><li>• Mô phỏng các kịch bản hoạt động và thương mại để giảm rủi ro đầu tư.</li><li>• Khai thác khối lượng lớn dữ liệu vận hành và thị trường để đưa ra chiến lược hiệu quả.</li></ul><p>Việc cân bằng giữa lưu trữ pin, bán điện lên lưới và tối ưu hóa tuổi thọ pin đòi hỏi Machine Learning xử lý dữ liệu đa dạng như thời tiết, giờ cao điểm, và biến động theo mùa nhằm thương mại hoá điện năng lượng mặt trời hiệu quả.</p>"
       },
       {
         "title": "Cách tiếp cận của chúng tôi: Phân tích nâng cao và nền tảng đám mây cho tối ưu hóa năng lượng mặt trời",
@@ -997,6 +1004,7 @@
 
   "leadership_section": {
     "title": "Dẫn Đầu Tư Duy Chiến Lược",
+    "title_bank": "Định Hướng Tư Duy",
     "heading": "Tiềm Năng Đột Phá của Generative AI trong Ngành Bảo Hiểm",
     "heading_banking": "Định Hình Kỷ Nguyên Generative AI trong Ngành Ngân Hàng",
     "content": "Generative AI đang thay đổi cục diện lĩnh vực bảo hiểm thông qua các chính sách cá nhân hóa, tự động hóa xử lý chi trả quyền lợi bảo hiểm, phát hiện gian lận và hỗ trợ khách hàng thông minh.Datum Consulting tiên phong trong làn sóng này bằng cách ứng dụng AI có đạo đức, dựa trên khung hướng dẫn MITRE ATLAS, ưu tiên đổi mới sáng tạo, tuân thủ các quy định như AI TRISM và EU AI Act, đồng thời xây dựng các giải pháp an toàn, có thể mở rộng và phù hợp với đặc thù riêng của ngành bảo hiểm.",
@@ -1203,8 +1211,8 @@
       "title": "Chúng tôi giúp các doanh nghiệp khai thác toàn bộ tiềm năng đầu tư vào công nghệ thông qua:",
       "items": [
         {
-          "title": "Dữ Liệu và Trí Tuệ Nhân Tạo",
-          "content": "Datum giúp các doanh nghiệp khai thác sức mạnh của cloud and data để hỗ trợ việc ra quyết định và vận hành hiệu quả. Từ việc chuyển đổi cloud đến triển khai data lakehouse, chúng tôi hỗ trợ khách hàng mở rộng hạ tầng và khám phá những insight có giá trị từ dữ liệu của họ."
+          "title": "Dữ Liệu và Trí Tuệ Nhân Tạo (AI)",
+          "content": "Datum giúp các doanh nghiệp khai thác sức mạnh của cloud & dữ liệu để hỗ trợ việc ra quyết định và vận hành hiệu quả. Từ việc chuyển đổi cloud đến triển khai data lakehouse, chúng tôi hỗ trợ khách hàng mở rộng hạ tầng và khám phá những insight có giá trị từ dữ liệu của họ."
         },
         {
           "title": "Kỹ Thuật Nền Tảng Số",
