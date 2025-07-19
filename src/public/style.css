@@ -21,7 +21,7 @@ body {
 }
 
 .container {
-    @apply px-10 lg:px-16
+    @apply px-10 lg:px-16 
 }
 
 /* CSS For custom header */

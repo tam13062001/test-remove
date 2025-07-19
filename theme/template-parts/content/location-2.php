@@ -56,7 +56,7 @@ $markers_ipad_pro = [
 ?>
 
 
-<div class=" hidden 2xl:hidden lg:block pb-[100px]  relative overflow-cover">
+<div class="ipadpro:hidden hidden 2xl:hidden  ipadproplus:block pb-[100px]  relative overflow-cover">
     <div class="mx-auto lg:absolute top-0 w-full">
         <img class=" relative h-auto w-auto" style="position: relative; height: 100%; width: 100%;"  alt="" src="<?php echo get_stylesheet_directory_uri().'/assets/images/image 27.png' ?>" />
         <?php foreach ($markers as $marker): ?>
@@ -65,12 +65,12 @@ $markers_ipad_pro = [
                 style="left:<?php echo $marker['x']; ?>; top:<?php echo $marker['y']; ?>;"
             >
                 <img src="<?php echo get_stylesheet_directory_uri().'/assets/images/marker.png' ?>" alt="<?php echo $marker['name']; ?>" class="w-6 h-6" />
-                <?php if ($marker['name'] === 'Bangkok, Thailand'): ?>
+                <?php if ($marker['name'] === 'Bangkok, Thailand' ): ?>
                     <span class="text-xs text-[#315CD4] font-bold bg-gray-50 rounded px-2 py-1 mt-1 whitespace-nowrap"
                           style="position:absolute; right:110%; top:50%; transform:translateY(-50%);">
                         <?php echo $marker['name']; ?>
                     </span>
-                <?php else: ?>
+                <?php  ?>
                     <span class="text-xs text-[#315CD4] font-bold bg-gray-50 rounded px-2 py-1 mt-1 whitespace-nowrap"
                           style="position:absolute; left:110%; top:50%; transform:translateY(-50%);">
                         <?php echo $marker['name']; ?>
@@ -97,7 +97,7 @@ $markers_ipad_pro = [
                 style="left:<?php echo $marker['x']; ?>; top:<?php echo $marker['y']; ?>;"
             >
                 <img src="<?php echo get_stylesheet_directory_uri().'/assets/images/marker.png' ?>" alt="<?php echo $marker['name']; ?>" class="w-6 h-6" />
-                <?php if ($marker['name'] === 'Bangkok, Thailand'): ?>
+                <?php if ($marker['name'] === 'Bangkok, Thailand' || $marker['name'] === 'Aukland, NZ'): ?>
                     <span class="text-xs text-[#315CD4] font-bold bg-gray-50 rounded px-2 py-1 mt-1 whitespace-nowrap"
                           style="position:absolute; right:110%; top:50%; transform:translateY(-50%);">
                         <?php echo $marker['name']; ?>

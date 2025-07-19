@@ -20,7 +20,7 @@ module.exports = {
       },
       screens: {
         'ipadpro':'1024px',
-        'ipadproplus':'1025px',
+        'ipadproplus':'1030px',
         'xxl':'1535px',
         '4xl': '2560px', // cho màn hình 4K trở lên
         '6xl': '3840px', 
