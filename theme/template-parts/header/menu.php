@@ -6,7 +6,7 @@ $current_id = get_queried_object_id();
 
 ?>
 
-<div class="hidden ipadpro:hidden lg:flex font-bold mt-2">
+<div class=" ipadpro:hidden ipadproplus:flex font-bold mt-2">
     <?php foreach ($primary_menu_items as $menu) : ?>
 
         <?php
@@ -73,7 +73,7 @@ $current_id = get_queried_object_id();
 
 $translated_menu_items = translate_menu_items($primary_menu_items);
  ?>
-<div class="lg:hidden ipadpro:block">
+<div class="lg:hidden ipadpro:block ipadproplus:hidden">
     <?php
     global $rocket;
     $logo_url = $rocket->helper->get_custom_logo_url();
